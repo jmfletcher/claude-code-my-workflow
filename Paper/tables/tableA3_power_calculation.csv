@@ -1,0 +1,19 @@
+Design,Comparators,True Effect (log pts),True Effect (%),Approx SE,Power
+Within-Poland (with age trends),N/A,0.01,-1.0%,0.0115,0.14
+Within-Poland (with age trends),N/A,0.02,-2.0%,0.0115,0.41
+Within-Poland (with age trends),N/A,0.03,-3.0%,0.0115,0.74
+Within-Poland (with age trends),N/A,0.05,-4.9%,0.0115,0.99
+Within-Poland (with age trends),N/A,0.08,-7.7%,0.0115,1.00
+Within-Poland (with age trends),N/A,0.1,-9.5%,0.0115,1.00
+Cross-Country (Visegrad),3,0.02,-2.0%,0.0170,0.22
+Cross-Country (Visegrad),3,0.05,-4.9%,0.0170,0.84
+Cross-Country (Visegrad),3,0.1,-9.5%,0.0170,1.00
+Cross-Country (EU New Members),8,0.02,-2.0%,0.0156,0.25
+Cross-Country (EU New Members),8,0.05,-4.9%,0.0156,0.89
+Cross-Country (EU New Members),8,0.1,-9.5%,0.0156,1.00
+Cross-Country (Broader Europe),15,0.02,-2.0%,0.0152,0.26
+Cross-Country (Broader Europe),15,0.05,-4.9%,0.0152,0.91
+Cross-Country (Broader Europe),15,0.1,-9.5%,0.0152,1.00
+Cross-Country (All HMD),38,0.02,-2.0%,0.0149,0.27
+Cross-Country (All HMD),38,0.05,-4.9%,0.0149,0.92
+Cross-Country (All HMD),38,0.1,-9.5%,0.0149,1.00

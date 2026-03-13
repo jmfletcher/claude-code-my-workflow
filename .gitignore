@@ -54,3 +54,6 @@ CLAUDE.local.md
 # Output artifacts — uncomment lines below based on your preference
 # *.rds
 # output/**/*.rds
+
+# Poland project: large data (keep local only)
+Data/
