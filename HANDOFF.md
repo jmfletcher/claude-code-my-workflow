@@ -2,7 +2,8 @@
 
 **Date:** 2026-03-10  
 **Project:** Free Prescription Drugs and Mortality: Evidence from Poland (UW–Madison)  
-**Work directory:** `claude-code-my-workflow` (this folder)
+**Work directory:** `claude-code-my-workflow` (this folder)  
+**Canonical source folder:** `Poland Prescription Drugs Pedro` (Cursor Projects). This repo tracks the Pedro folder only — not the archived `Poland Prescription Drugs` in Completed Projects.
 
 ---
 
