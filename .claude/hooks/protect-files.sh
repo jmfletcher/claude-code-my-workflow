@@ -1,8 +1,11 @@
 #!/bin/bash
 # Block accidental edits to protected files
 # Customize PROTECTED_PATTERNS below for your project
+if ! command -v jq &>/dev/null; then
+  exit 0
+fi
 INPUT=$(cat)
-TOOL=$(echo "$INPUT" | jq -r '.tool_name')
+TOOL=$(echo "$INPUT" | jq -r '.tool_name' 2>/dev/null) || exit 0
 FILE=""
 
 # Extract file path based on tool type

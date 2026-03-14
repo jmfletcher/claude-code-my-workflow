@@ -49,8 +49,10 @@ Attempt 2/
 │       ├── 03_tables.py                # Summary tables (Tables 1, 2, 3)
 │       └── 04_detectability.py         # Power calculations, minimum detectable effects
 ├── Figures/                            # Python-generated figures (300 DPI PNG)
+├── output/                            # Tables (CSV), detectability (CSV, MD)
 ├── Quarto/
 │   ├── report.qmd                      # Main report → PDF
+│   ├── slides.qmd                      # Presentation slides (RevealJS / Beamer)
 │   └── emory-clean.scss                # Theme
 ├── literature/                         # Literature reviews (from Attempt 1)
 ├── reference/                          # Attempt 1 outputs for comparison
