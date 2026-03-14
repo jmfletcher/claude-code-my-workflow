@@ -167,28 +167,31 @@ The current iteration consists of seven bills (Assembly Bills 1082--1088), each 
 
 ## Link to evidence in this report
 
-- **AB 1082 (breastfeeding equipment).** *Supported indirectly:* Breastfeeding is associated with lower infant mortality; DCP3/LiST ranks breastfeeding promotion among interventions that reduce neonatal and child deaths. This report does not cite a study quantifying infant deaths averted by equipment subsidies specifically.
+**AB 1082 (breastfeeding equipment).** *Supported indirectly:* Breastfeeding is associated with lower infant mortality; DCP3/LiST ranks breastfeeding promotion among interventions that reduce neonatal and child deaths. This report does not cite a study quantifying infant deaths averted by equipment subsidies specifically.
 
-- **AB 1083 (no state recovery of birth expenses).** *Supported indirectly:* Reducing financial burden is consistent with evidence that coverage barriers affect maternal and infant care use [@KFF2025_disparities].
+**AB 1083 (no state recovery of birth expenses).** *Supported indirectly:* Reducing financial burden is consistent with evidence that coverage barriers affect maternal and infant care use [@KFF2025_disparities].
 
-- **AB 1084 (Medicaid dental coverage in pregnancy).** *Limited direct evidence:* Dental care in pregnancy is a modifiable risk factor; the literature review does not include a trial quantifying infant deaths averted by Medicaid dental coverage.
+**AB 1084 (Medicaid dental coverage in pregnancy).** *Limited direct evidence:* Dental care in pregnancy is a modifiable risk factor; the literature review does not include a trial quantifying infant deaths averted by Medicaid dental coverage.
 
-- **AB 1085 (Medicaid doula coverage).** *Supported by analogy; direct mortality evidence is limited:* NFP is supported by RCTs [@Miller2015_nfp; @Olds2014_nfp_mortality]. U.S. doula RCTs have shown process improvements but have not demonstrated a statistically significant effect on infant mortality.
+**AB 1085 (Medicaid doula coverage).** *Supported by analogy; direct mortality evidence is limited:* NFP is supported by RCTs [@Miller2015_nfp; @Olds2014_nfp_mortality]. U.S. doula RCTs have shown process improvements but have not demonstrated a statistically significant effect on infant mortality.
 
-- **AB 1086 (maternal mental health screening).** *Supported indirectly:* Perinatal depression is a recognized determinant of maternal and infant wellbeing [@KFF2025_disparities].
+**AB 1086 (maternal mental health screening).** *Supported indirectly:* Perinatal depression is a recognized determinant of maternal and infant wellbeing [@KFF2025_disparities].
 
-- **AB 1087 (special enrollment for pregnancy).** *Supported indirectly:* Timely prenatal care is associated with better birth outcomes; barriers to enrollment delay care.
+**AB 1087 (special enrollment for pregnancy).** *Supported indirectly:* Timely prenatal care is associated with better birth outcomes; barriers to enrollment delay care.
 
-- **AB 1088 (postpartum home visit).** *Most closely aligned with the evidence base:* NFP and the Denmark campaign provide home visiting that reduces preventable child deaths [@Miller2015_nfp; @Olds2014_nfp_mortality; @Altindag2022_denmark]. AB 1088 aligns with that evidence more closely than any other bill in the package.
+**AB 1088 (postpartum home visit).** *Most closely aligned with the evidence base:* NFP and the Denmark campaign provide home visiting that reduces preventable child deaths [@Miller2015_nfp; @Olds2014_nfp_mortality; @Altindag2022_denmark]. AB 1088 aligns with that evidence more closely than any other bill in the package.
 
 Given the data in Section 2, concentrating implementation and evaluation of such policies in Milwaukee would maximize the chance of detecting whether the package reduces infant mortality.
 
 # Conclusion
 
-- Wisconsin has among the worst Black--White infant mortality disparities in the U.S., with Black rates about three times White rates in every geography examined. Milwaukee has the largest number of Black infant deaths (~55 per year) and thus the best setting for measurable impact and evaluation.
-- Evidence-based interventions---home visiting (e.g., NFP), safe sleep campaigns, kangaroo mother care, community-based neonatal care---can achieve substantial reductions (e.g., 17--32% in rate terms) and, for NFP, ~0.31 lives saved per \$1M. Milwaukee is the best-powered county-level setting for evaluating annual Black all-cause infant mortality with one-year data. Focusing implementation and evaluation on Milwaukee is the most practical way to generate interpretable evidence on what works.
-- The Birth Equity Act (State Rep. Shelia Stubbs) proposes seven bills to improve affordability and access to prenatal, birth, postpartum, and infant care. These align with the types of interventions the literature associates with improved outcomes. Prioritizing Milwaukee for implementation and impact evaluation would best use limited resources and data to close the Black--White gap in Wisconsin.
-- **Scope limitation:** This report examines all-cause infant mortality only. Cause-specific analysis (neonatal vs. postneonatal, SIDS, injuries) would better match interventions to the outcomes they plausibly move and is recommended as a direction for future work.
+Wisconsin has among the worst Black--White infant mortality disparities in the U.S., with Black rates about three times White rates in every geography examined. Milwaukee has the largest number of Black infant deaths (~55 per year) and thus the best setting for measurable impact and evaluation.
+
+Evidence-based interventions---home visiting (e.g., NFP), safe sleep campaigns, kangaroo mother care, community-based neonatal care---can achieve substantial reductions (e.g., 17--32% in rate terms) and, for NFP, ~0.31 lives saved per \$1M. Milwaukee is the best-powered county-level setting for evaluating annual Black all-cause infant mortality with one-year data. Focusing implementation and evaluation on Milwaukee is the most practical way to generate interpretable evidence on what works.
+
+The Birth Equity Act (State Rep. Shelia Stubbs) proposes seven bills to improve affordability and access to prenatal, birth, postpartum, and infant care. These align with the types of interventions the literature associates with improved outcomes. Prioritizing Milwaukee for implementation and impact evaluation would best use limited resources and data to close the Black--White gap in Wisconsin.
+
+This report examines all-cause infant mortality only. Cause-specific analysis (neonatal vs. postneonatal, SIDS, injuries) would better match interventions to the outcomes they plausibly move and is recommended as a direction for future work.
 
 # References {.unnumbered}
 
