@@ -205,7 +205,7 @@ pdf.multi_cell(0, 5, ascii_safe(
     "This paper examines the Black-White life expectancy gap in Wisconsin "
     "from 2005 to 2017, disaggregating the state into Milwaukee County, "
     "Dane County (Madison), and the rest of the state. Because Milwaukee "
-    "is home to roughly 60 percent of Wisconsin's Black population and "
+    "is home to about two-thirds of Wisconsin's Black population and "
     "exhibits very poor Black mortality outcomes, statewide statistics are "
     "heavily influenced by conditions in a single county. I construct "
     "abridged life tables by race, sex, geography, and period, validate "
@@ -283,8 +283,8 @@ pdf.body_text(
 
 pdf.body_text(
     "A state-level analysis of Wisconsin is misleading for a specific, "
-    "quantifiable reason: Milwaukee County alone contains roughly two-thirds "
-    "of the state's Black population. Wisconsin is not unique in this "
+    "quantifiable reason: Milwaukee County alone contains about two-thirds "
+    "of the state's Black population (67 percent; see Appendix C). Wisconsin is not unique in this "
     "respect: in many states, a single county holds the largest share of "
     "the state's Black population (see Appendix C). If mortality conditions for Black "
     "residents of Milwaukee are substantially worse than elsewhere in the "
@@ -303,7 +303,7 @@ pdf.body_text(
     "Milwaukee County, Dane County, and the rest of the state\u2014revealing "
     "striking geographic variation. Second, I show that the statewide "
     "gap is dominated by the combination of very poor Black mortality "
-    "conditions in Milwaukee and the fact that roughly two-thirds of "
+    "conditions in Milwaukee and the fact that about two-thirds of "
     "Wisconsin's Black population lives there, yielding a substantial "
     "composition penalty. Third, I use counterfactual mortality-replacement "
     "exercises to quantify how much of the statewide gap would remain "
@@ -321,8 +321,13 @@ pdf.body_text(
 pdf.section_heading("2. Background")
 
 pdf.body_text(
-    "A growing literature documents within-state variation in racial life "
-    "expectancy gaps. Kaufman et al. (2019) showed that Black-White "
+    "A growing literature documents within-state and within-city variation "
+    "in racial life expectancy gaps. Murray et al. (2006) showed that "
+    "life expectancy varied enormously across population subgroups defined "
+    "by geography and race, identifying 'Eight Americas' with gaps "
+    "exceeding 20 years. Chetty et al. (2016) documented large differences "
+    "in life expectancy across US counties, with race and income as key "
+    "correlates. Kaufman et al. (2019) showed that Black-White "
     "differences in life expectancy varied substantially across four US "
     "states from 1969 to 2013. Roesch et al. (2023) found that the "
     "Black-White gap differed markedly across three large US cities, "
@@ -346,7 +351,7 @@ pdf.body_text(
 
 pdf.body_text(
     "This compositional lens is especially relevant for Wisconsin. With "
-    "approximately two-thirds of its Black population in Milwaukee County "
+    "about two-thirds of its Black population in Milwaukee County "
     "(a pattern shared by many states; Appendix C), "
     "any statewide Black health statistic is disproportionately a "
     "Milwaukee statistic. Understanding this is essential for correctly "
@@ -378,7 +383,7 @@ pdf.body_text(
     "Wisconsin from 2005 to 2017, including year of death, county of "
     "residence (FIPS code), age, sex, race, and Hispanic origin. I restrict "
     "the analysis to non-Hispanic Black and non-Hispanic White individuals "
-    "(NCHS Hispanic origin codes < 200). The data contain 614,954 deaths "
+    "(classified as non-Hispanic on the death record). The data contain 614,954 deaths "
     "meeting these criteria."
 )
 
@@ -496,7 +501,14 @@ pdf.body_text(
     "Reported 95% confidence intervals are the 2.5th and 97.5th percentiles "
     "of the bootstrap distribution. This approach reflects sampling "
     "uncertainty in death counts; estimates for small populations "
-    "(e.g., Dane County Black residents) are less precise."
+    "(e.g., Dane County Black residents) are less precise. "
+    "Confidence intervals are reported for life expectancy levels, "
+    "Black-White gaps, and changes in the gap over time. "
+    "Decomposition contributions and counterfactual results are reported "
+    "as point estimates without confidence intervals, because the "
+    "bootstrap would need to jointly resample all geographic cells "
+    "and propagate through the full decomposition machinery; this "
+    "extension is left for future work."
 )
 
 pdf.subsection_heading("3.6 Sensitivity and Uncertainty")
@@ -567,7 +579,8 @@ pdf.body_text(
     "(" + _gap_dane_f + " years) is intermediate, but it features relatively high "
     "Black female life expectancy (78.3 years, the highest of any region). A caveat is "
     "warranted: Dane County's Black population is small relative to the "
-    "other regions (roughly 50,000 over the 3-year window, with "
+    "other regions (roughly 50,000 per sex over the 3-year window, or "
+    "about 103,000 total person-years, with "
     "approximately 260 male and 158 female Black deaths), which limits "
     "the precision of these estimates."
 )
@@ -755,7 +768,7 @@ _gap_sw_m = fmt_gap_ci(2016, "Statewide", "Male", 7.9)
 pdf.body_text(
     "For males in 2016, Milwaukee contributes 5.6 years of the " + _gap_sw_m + "-year "
     "statewide gap -- 70 percent of the total. This dominance reflects "
-    "both Milwaukee's large Black population share (about two-thirds) and its "
+    "both Milwaukee's large Black male population share (about 60 percent) and its "
     "large local gap (" + _gap_mke_m + " years). Dane County's gap is nearly as large "
     "(" + _gap_dane_m + " years), but because only 8.5 percent of the state's Black males "
     "live there, its contribution is just 0.7 years (9 percent). The rest "
@@ -830,7 +843,10 @@ pdf.add_figure(
 
 
 # ---- 4.5 Counterfactual exercises ----
-pdf.add_page()
+if pdf.get_y() > 180:
+    pdf.add_page()
+else:
+    pdf.ln(4)
 pdf.subsection_heading("4.5 Counterfactual Exercises")
 
 pdf.body_text(
@@ -843,11 +859,16 @@ pdf.body_text(
     "Table 4 presents Exercise 1: what if Black Milwaukeeans had the same "
     "age-specific mortality rates as Black people in the rest of Wisconsin? "
     "In 2016, the statewide male gap would fall "
-    "from " + _gap_sw_m + " to 4.2 years -- a reduction of 3.8 years, or nearly half "
+    "from " + _gap_sw_m + " to 4.2 years -- a reduction of 3.75 years, or nearly half "
     "the observed gap. Black male life expectancy would rise from 70.0 to "
     "73.8 years. For females, the gap would narrow from 5.7 to 4.4 years. "
-    "This is consistent with the decomposition finding that Milwaukee "
-    "contributes 70 percent of the statewide male gap."
+    "Note that this ~47 percent counterfactual reduction differs from "
+    "the 70 percent decomposition share reported in Table 3: the former "
+    "measures the fractional reduction in the gap under a specific "
+    "mortality-replacement scenario, while the latter measures "
+    "Milwaukee's share of the gap in a population-weighted accounting. "
+    "Both point to Milwaukee as the dominant driver, but they quantify "
+    "different aspects of its role."
 )
 
 pdf.add_table(
@@ -911,11 +932,12 @@ pdf.body_text(
     "5.4 to 3.8 years. Roughly one-quarter to one-third of Dane County's "
     "gap is attributable to the exceptionally favorable White mortality "
     "environment. The remaining gap of 6.1 years for males is still "
-    "substantial and reflects genuinely disadvantaged Black mortality "
-    "in Dane County, particularly the 2.4-year decline in Black male "
-    "life expectancy documented in Table 2. Thus Dane County's large gap "
-    "is driven by both an unusually healthy White benchmark and a "
-    "deteriorating Black health trajectory."
+    "substantial and suggests disadvantaged Black mortality "
+    "in Dane County. Point estimates in Table 2 suggest a 2.4-year decline "
+    "in Black male life expectancy, although the wide confidence interval "
+    "means this should be interpreted cautiously. Dane County's large gap "
+    "thus reflects an unusually healthy White benchmark combined with "
+    "suggestive evidence of worsening Black health outcomes."
 )
 
 
@@ -925,23 +947,26 @@ pdf.body_text(
 pdf.section_heading("5. Discussion")
 
 pdf.body_text(
-    "This analysis yields four principal findings. First, the statewide "
+    "This analysis yields three principal findings. First, the statewide "
     "Black-White life expectancy gap in Wisconsin masks a nearly 2.5-fold "
     "range across regions: from " + _gap_rest_m + " years in the rest of the state to "
     + _gap_mke_m + " years in Milwaukee for males. Second, the formal decomposition "
     "reveals that Milwaukee contributes 70 percent of the statewide male "
-    "gap -- a dominance driven by the combination of its large Black "
-    "population share (about two-thirds) and its large local gap (" + _gap_mke_m + " years). "
+    "gap -- a dominance driven by the combination of its large Black male "
+    "population share (about 60 percent in 2016) and its large local gap (" + _gap_mke_m + " years). "
     "The geographic concentration of Black Wisconsinites in Milwaukee "
     "adds approximately 2.6 years to the statewide male gap compared to "
     "a scenario in which Black and White residents had the same geographic "
-    "distribution. Third, the gap widened in all regions for males between "
-    "2005-2007 and 2015-2017, with the most dramatic deterioration in "
-    "Dane County, where point estimates suggest a roughly 2.4-year decline in "
-    "Black male life expectancy. Fourth, Dane County's large gap is partly a mechanical "
-    "consequence of its exceptionally healthy White population -- roughly "
-    "a quarter to a third of the gap reflects this benchmark effect "
-    "rather than Black disadvantage per se."
+    "distribution. Third, the male gap widened in all regions between "
+    "2005-2007 and 2015-2017. A cautionary note concerns Dane County, "
+    "where the male gap (" + _gap_dane_m + " years) is nearly as large as Milwaukee's. "
+    "Counterfactual analysis shows that roughly a quarter to a third of "
+    "Dane's gap reflects its exceptionally healthy White population rather "
+    "than Black disadvantage per se. Point estimates also suggest "
+    "deteriorating Black male mortality in Dane County, but this pattern "
+    "is estimated with substantial uncertainty due to the small Black "
+    "population and should be interpreted as a signal warranting "
+    "further investigation rather than an established trend."
 )
 
 pdf.body_text(
@@ -966,8 +991,9 @@ pdf.body_text(
     "large as Milwaukee's, and it widened faster. The counterfactual "
     "decomposition reveals that this gap has two sources: the exceptional "
     "longevity of Dane County's White population (which inflates the "
-    "reference standard by 2.4 years) and a genuine decline in Black male "
-    "life expectancy. The latter is the more actionable concern. "
+    "reference standard by 2.4 years) and what point estimates suggest is a "
+    "decline in Black male life expectancy, though this is imprecisely "
+    "estimated given the small population. The latter is the more actionable concern. "
     "Favorable average conditions do not automatically produce equitable "
     "health outcomes. Social determinants driving mortality disparities "
     "may operate through mechanisms\u2014residential segregation within the "
@@ -979,7 +1005,7 @@ pdf.body_text(
     "The decline in Black male life expectancy in several regions during "
     "the latter years of the study period is consistent with emerging "
     "national trends linked to the opioid epidemic, increases in "
-    "homicide, and rising \"deaths of despair.\" Cause-of-death "
+    "homicide, and rising \"deaths of despair\" (Case & Deaton 2015). Cause-of-death "
     "decomposition (e.g., Arriaga 1984) is needed to identify which "
     "specific causes are driving these reversals and to inform targeted "
     "interventions."
@@ -1023,8 +1049,9 @@ pdf.body_text(
     "disadvantage. Black geographic concentration adds roughly 2.6 years "
     "to the statewide male gap -- a quantifiable composition penalty. "
     "Dane County's gap (" + _gap_dane_m + " years), meanwhile, is inflated by exceptionally high "
-    "White life expectancy but also reflects a genuine and alarming "
-    "decline in Black male life expectancy. Policy responses must be "
+    "White life expectancy but also reflects what appears to be a troubling "
+    "decline in Black male life expectancy, a finding that warrants "
+    "continued monitoring given the small population size. Policy responses must be "
     "geographically targeted: Milwaukee's crisis requires investment in "
     "the structural determinants of Black health in a hyper-segregated "
     "urban environment, while Dane County's growing disparity calls for "
@@ -1207,6 +1234,15 @@ refs = [
     "Arriaga, E. E. (1984). Measuring and explaining the change in life "
     "expectancies. Demography, 21(1), 83\u201396.",
 
+    "Case, A., & Deaton, A. (2015). Rising morbidity and mortality in "
+    "midlife among white non-Hispanic Americans in the 21st century. "
+    "Proceedings of the National Academy of Sciences, 112(49), "
+    "15078\u201315083.",
+
+    "Chetty, R., Stepner, M., Abraham, S., et al. (2016). The "
+    "association between income and life expectancy in the United States, "
+    "2001\u20132014. JAMA, 315(16), 1750\u20131766.",
+
     "Chiang, C. L. (1968). Introduction to Stochastic Processes in "
     "Biostatistics. Wiley.",
 
@@ -1221,6 +1257,11 @@ refs = [
     "Kochanek, K. D., Arias, E., & Anderson, R. N. (2013). How did "
     "cause of death contribute to racial differences in life expectancy "
     "in the United States in 2010? NCHS Data Brief, No. 125.",
+
+    "Murray, C. J. L., Kulkarni, S. C., Michaud, C., et al. (2006). "
+    "Eight Americas: investigating mortality disparities across races, "
+    "counties, and race-counties in the United States. PLoS Medicine, "
+    "3(9), e260.",
 
     "Preston, S. H., Heuveline, P., & Guillot, M. (2001). Demography: "
     "Measuring and Modeling Population Processes. Blackwell.",
