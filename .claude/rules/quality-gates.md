@@ -3,6 +3,7 @@ paths:
   - "Slides/**/*.tex"
   - "Quarto/**/*.qmd"
   - "scripts/**/*.R"
+  - "scripts/**/*.py"
 ---
 
 # Quality Gates & Scoring Rubrics
@@ -37,6 +38,18 @@ paths:
 | Major | Missing set.seed() | -10 |
 | Major | Missing figure generation | -5 |
 
+## Python Scripts (.py)
+
+| Severity | Issue | Deduction |
+|----------|-------|-----------|
+| Critical | Syntax/runtime errors | -100 |
+| Critical | Domain-specific bugs (wrong formula, wrong imputation) | -30 |
+| Critical | Hardcoded absolute paths | -20 |
+| Major | Missing type hints on functions | -5 |
+| Major | Missing figure generation or wrong palette | -5 |
+| Major | No `if __name__ == "__main__"` guard | -5 |
+| Minor | Line > 100 chars (non-math) | -1 per line |
+
 ## Beamer Slides (.tex)
 
 | Severity | Issue | Deduction |
@@ -58,10 +71,9 @@ Save to `quality_reports/merges/YYYY-MM-DD_[branch-name].md`.
 
 ## Tolerance Thresholds (Research)
 
-<!-- Customize for your domain -->
-
 | Quantity | Tolerance | Rationale |
 |----------|-----------|-----------|
-| Point estimates | [e.g., 1e-6] | [Numerical precision] |
-| Standard errors | [e.g., 1e-4] | [MC variability] |
-| Coverage rates | [e.g., +/- 0.01] | [MC with B reps] |
+| Rates (per 1,000) | 0.01 | Rounding in display |
+| Death/birth counts | Exact | Integer values |
+| CI bounds | 0.1 | Rounding from Poisson formula |
+| Percentages | 0.1pp | Display rounding |

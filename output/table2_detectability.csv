@@ -1,0 +1,9 @@
+geography,race,avg_rate,ci_95,margin_to_lower,reduction_17pct,reduction_32pct,detectable_17,detectable_32
+State of Wisconsin,White,4.45,3.8–5.1,0.65,0.76,1.42,Yes,Yes
+State of Wisconsin,Black,13.07,10.1–15.9,2.97,2.22,4.18,No,Yes
+Milwaukee County,White,4.05,2.2–6.1,1.85,0.69,1.3,No,No
+Milwaukee County,Black,13.12,9.7–16.6,3.42,2.23,4.2,No,Yes
+Dane County,White,3.47,1.7–5.4,1.77,0.59,1.11,No,No
+Dane County,Black,11.24,2.4–21.7,8.84,1.91,3.6,No,No
+Rest of Wisconsin (State − Milwaukee − Dane),White,4.61,3.9–5.3,0.71,0.78,1.48,Yes,Yes
+Rest of Wisconsin (State − Milwaukee − Dane),Black,13.56,7.5–19.9,6.06,2.31,4.34,No,No

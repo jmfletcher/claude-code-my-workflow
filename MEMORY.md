@@ -1,4 +1,4 @@
-# Project Memory
+# Project Memory — Wisconsin Infant Mortality (Attempt 2)
 
 Corrections and learned facts that persist across sessions.
 When a mistake is corrected, append a `[LEARN:category]` entry below.
@@ -13,60 +13,56 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:workflow] Spec-then-plan protocol: AskUserQuestion (3-5 questions) → create `quality_reports/specs/YYYY-MM-DD_description.md` with MUST/SHOULD/MAY requirements → declare clarity status (CLEAR/ASSUMED/BLOCKED) → get approval → then draft plan.
 
-[LEARN:workflow] Context survival before compression: (1) Update MEMORY.md with [LEARN] entries, (2) Ensure session log current (last 10 min), (3) Active plan saved to disk, (4) Open questions documented. The pre-compact hook displays checklist.
+[LEARN:workflow] Context survival before compression: (1) Update MEMORY.md with [LEARN] entries, (2) Ensure session log current (last 10 min), (3) Active plan saved to disk, (4) Open questions documented.
 
-[LEARN:workflow] Plans, specs, and session logs must live on disk (not just in conversation) to survive compression and session boundaries. Quality reports only at merge time.
+[LEARN:workflow] Plans, specs, and session logs must live on disk (not just in conversation) to survive compression and session boundaries.
+
+## Project-Specific Learnings (from Attempt 1)
+
+[LEARN:data] WISH suppression: "X" in WISH tables = suppressed count (typically 1–4). Impute Black count as Total − White. Document in report and data README.
+
+[LEARN:data] Processed CSVs columns: year, race, births, deaths, rate_per_1000, rate_lo, rate_hi. Geographies: State, Milwaukee, Dane, Rest of Wisconsin (= State − Milwaukee − Dane).
+
+[LEARN:data] Rest of Wisconsin is computed, not a direct WISH query: State − Milwaukee − Dane for births and deaths separately, then rate and CI from those.
+
+[LEARN:figures] Publication palette: White=#2171b5 (blue), Black=#b2182b (dark red). Resolution: 300 DPI. Title suffix: "(95% CI, Poisson-based)". Do not change without reason.
+
+[LEARN:figures] CI method: Poisson-based 95% CI for rate per 1,000. Formula: rate ± 1.96 × (1000 × √D) / B, where D=deaths, B=births.
+
+[LEARN:report] Table 3 is count-based: detectability = deaths averted so post-intervention count falls below lower bound of 95% CI (Poisson). Min averted = ceil(1.96√D). NFP benchmark $3.2M per life (0.31 per $1M).
+
+[LEARN:report] Section 3 "Link to evidence": each bill (AB 1082–1088) has explicit citations and states where direct infant-mortality evidence is absent.
+
+[LEARN:report] Dane Black count CI (1–11): smallest absolute width, largest relative uncertainty (width/mean).
+
+[LEARN:report] Title page: author line is "Jason Fletcher, University of Wisconsin" with "March 2026" on the next line.
+
+[LEARN:report] Report layout: Executive summary → Introduction → 1. Literature Review → 2. Data and Rates → 3. Birth Equity Act → 4. Conclusion → References.
+
+[LEARN:policy] Birth Equity Act: Rep. Shelia Stubbs, seven bills AB 1082–1088 (Cap Times, March 2026). Applies to all residents regardless of race/ethnicity.
+
+[LEARN:policy] Milwaukee has ~55 Black infant deaths/year — the only county-level geography where intervention effects can be evaluated with current data.
 
 ## Documentation Standards
 
-[LEARN:documentation] When adding new features, update BOTH README and guide immediately to prevent documentation drift. Stale docs break user trust.
+[LEARN:documentation] When adding new features, update BOTH README and guide immediately to prevent documentation drift.
 
-[LEARN:documentation] Always document new templates in README's "What's Included" section with purpose description. Template inventory must be complete and accurate.
-
-[LEARN:documentation] Guide must be generic (framework-oriented) not prescriptive. Provide templates with examples for multiple workflows (LaTeX, R, Python, Jupyter), let users customize. No "thou shalt" rules.
-
-[LEARN:documentation] Date fields in frontmatter and README must reflect latest significant changes. Users check dates to assess currency.
+[LEARN:documentation] Date fields in frontmatter and README must reflect latest significant changes.
 
 ## Design Philosophy
 
-[LEARN:design] Framework-oriented > Prescriptive rules. Constitutional governance works as a TEMPLATE with examples users customize to their domain. Same for requirements specs.
+[LEARN:design] This project uses Python (not R). All .claude/ configs adapted for Python: pandas, matplotlib, pdfplumber. R-specific agents/rules have Python equivalents.
 
-[LEARN:design] Quality standard for guide additions: useful + pedagogically strong + drives usage + leaves great impression + improves upon starting fresh + no redundancy + not slow. All 7 criteria must hold.
-
-[LEARN:design] Generic means working for any academic workflow: pure LaTeX (no Quarto), pure R (no LaTeX), Python/Jupyter, any domain (not just econometrics). Test recommendations across use cases.
+[LEARN:design] Quarto → PDF is the primary output format. No Beamer slides (report project, not lecture).
 
 ## File Organization
 
-[LEARN:files] Specifications go in `quality_reports/specs/YYYY-MM-DD_description.md`, not scattered in root or other directories. Maintains structure.
+[LEARN:files] Specifications go in `quality_reports/specs/YYYY-MM-DD_description.md`.
 
-[LEARN:files] Templates belong in `templates/` directory with descriptive names. Currently have: session-log.md, quality-report.md, exploration-readme.md, archive-readme.md, requirements-spec.md, constitutional-governance.md.
+[LEARN:files] Python scripts in `scripts/python/`. Figures in `Figures/`. Data in `data/input/` (read-only PDFs) and `data/processed/` (CSVs).
 
-## Constitutional Governance
+[LEARN:files] Attempt 1 is read-only reference in `reference/`. Never modify `../Attempt 1/`.
 
-[LEARN:governance] Constitutional articles distinguish immutable principles (non-negotiable for quality/reproducibility) from flexible user preferences. Keep to 3-7 articles max.
+## Scope Decisions
 
-[LEARN:governance] Example articles: Primary Artifact (which file is authoritative), Plan-First Threshold (when to plan), Quality Gate (minimum score), Verification Standard (what must pass), File Organization (where files live).
-
-[LEARN:governance] Amendment process: Ask user if deviating from article is "amending Article X (permanent)" or "overriding for this task (one-time exception)". Preserves institutional memory.
-
-## Skill Creation
-
-[LEARN:skills] Effective skill descriptions use trigger phrases users actually say: "check citations", "format results", "validate protocol" → Claude knows when to load skill.
-
-[LEARN:skills] Skills need 3 sections minimum: Instructions (step-by-step), Examples (concrete scenarios), Troubleshooting (common errors) → users can debug independently.
-
-[LEARN:skills] Domain-specific examples beat generic ones: citation checker (psychology), protocol validator (biology), regression formatter (economics) → shows adaptability.
-
-## Memory System
-
-[LEARN:memory] Two-tier memory solves template vs working project tension: MEMORY.md (generic patterns, committed), personal-memory.md (machine-specific, gitignored) → cross-machine sync + local privacy.
-
-[LEARN:memory] Post-merge hooks prompt reflection, don't auto-append → user maintains control while building habit.
-
-## Meta-Governance
-
-[LEARN:meta] Repository dual nature requires explicit governance: what's generic (commit) vs specific (gitignore) → prevents template pollution.
-
-[LEARN:meta] Dogfooding principles must be enforced: plan-first, spec-then-plan, quality gates, session logs → we follow our own guide.
-
-[LEARN:meta] Template development work (building infrastructure, docs) doesn't create session logs in quality_reports/ → those are for user work (slides, analysis), not meta-work. Keeps template clean for users who fork.
+[LEARN:scope] No cause-specific analysis (neonatal vs postneonatal, SIDS, injuries). The report notes this as a recommendation for future work, but it is out of scope for this project.

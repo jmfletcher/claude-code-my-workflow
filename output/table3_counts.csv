@@ -1,0 +1,9 @@
+geography,race,approx_annual_deaths,ci_95_deaths,min_deaths_averted,est_spend_nfp_M
+State of Wisconsin,White,192,165–219,28,90
+State of Wisconsin,Black,79,62–96,18,58
+Milwaukee County,White,17,9–25,9,29
+Milwaukee County,Black,55,40–70,15,48
+Dane County,White,14,7–21,8,26
+Dane County,Black,6,1–11,5,16
+Rest of Wisconsin (State − Milwaukee − Dane),White,162,137–187,25,80
+Rest of Wisconsin (State − Milwaukee − Dane),Black,19,10–28,9,29

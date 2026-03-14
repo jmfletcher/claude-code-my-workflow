@@ -71,12 +71,12 @@ Browsers cannot render PDF images inline.
 **Decision tree for every figure:**
 1. **Is it a TikZ diagram?** → Reference extracted SVG: `![](../Figures/LectureN/tikz_exact_XX.svg){fig-align="center"}`
 2. **Is it a complex faceted grid?** → Convert PDF to SVG, reference as static
-3. **Is it an R-generated plot with data in RDS?** → Write a `{r}` chunk with plotly code reading from the RDS file
+3. **Is it a script-generated plot with data in RDS/CSV?** → Write an `{r}` or `{python}` chunk reading the data, or reference the static PNG
 4. **Otherwise:** Convert to SVG and reference statically
 
-**Plotly pattern (for R-generated plots):**
-- Load RDS data in setup chunk
-- Use `plot_ly()` with project colors and layout helper
+**Interactive chart pattern (for script-generated plots):**
+- Load data (RDS or CSV) in setup chunk
+- Use `plot_ly()` (R) or `plotly.express` (Python) with project colors
 - Add meaningful hover templates
 - **CRITICAL — RevealJS height override:** Every QMD with plotly MUST include height CSS in YAML
 
@@ -86,8 +86,9 @@ Browsers cannot render PDF images inline.
 3. ALWAYS add `fig-align="center"`
 4. Verify every referenced SVG exists on disk
 
-### R Code Blocks
+### Code Blocks
 - `\begin{lstlisting}[style=Rstyle]` → ` ```{r} ` with `eval: false`, `echo: true`
+- `\begin{lstlisting}[style=Pystyle]` → ` ```{python} ` with `eval: false`, `echo: true`
 - Do NOT use `code-fold: false` on chunks (it suppresses display). Use `echo: true` explicitly.
 
 ### Tables
@@ -123,7 +124,7 @@ Browsers cannot render PDF images inline.
 7. **All images centered** — `fig-align="center"` on every image reference
 8. **No PDF images** — every figure must be SVG
 9. **No raw HTML CSS blocks** — use `include-in-header` in YAML
-10. **Plotly for all R plots** — interactive charts with project colors
+10. **Interactive charts where possible** — plotly (R or Python) with project colors, or static PNG
 
 ## When You're Unsure
 

@@ -2,68 +2,63 @@
 paths:
   - "Figures/**/*"
   - "Quarto/**/*.qmd"
-  - "Slides/**/*.tex"
+  - "scripts/**/*.py"
+  - "data/**/*"
 ---
 
 # Single Source of Truth: Enforcement Protocol
 
-**The Beamer `.tex` file is the authoritative source for ALL content.** Everything else is derived.
+**Python scripts are the authoritative source for ALL data and figures.** The Quarto report derives from their outputs.
 
 ## The SSOT Chain
 
 ```
-Beamer .tex (SOURCE OF TRUTH)
-  ├── extract_tikz.tex → PDF → SVGs (derived)
-  ├── Quarto .qmd → HTML (derived)
-  ├── Bibliography_base.bib (shared)
-  └── Figures/LectureN/*.rds → plotly charts (data source)
+data/processed/*.csv (AUTHORITATIVE DATA)
+  │
+  ├── scripts/python/*.py (AUTHORITATIVE ANALYSIS)
+  │     ├── → Figures/*.png (derived)
+  │     └── → tables, calculations (derived)
+  │
+  └── Quarto/report.qmd (DERIVED REPORT)
+        └── → PDF output (derived)
 
-NEVER edit derived artifacts independently.
-ALWAYS propagate changes from source → derived.
+NEVER manually edit derived artifacts (figures, PDFs).
+ALWAYS regenerate from scripts when data or analysis changes.
 ```
 
 ---
 
-## TikZ Freshness Protocol (MANDATORY)
+## Data Chain
 
-**Before using ANY TikZ SVG in a Quarto slide, verify it matches the current Beamer source.**
-
-### Diff-Check Procedure
-
-1. Read the TikZ block from the Beamer `.tex` file
-2. Read the corresponding block from `Figures/LectureN/extract_tikz.tex`
-3. Compare EVERY coordinate, label, color, opacity, and anchor point
-4. If ANY difference exists: update `extract_tikz.tex` from Beamer, recompile, regenerate SVGs
-5. Only then reference the SVG in the QMD
-
-### When to Re-Extract
-
-Re-extract ALL TikZ diagrams when:
-- The Beamer `.tex` file has been modified since last extraction
-- Starting a new Quarto translation
-- Any TikZ-related quality issue is reported
-- Before any commit that includes QMD changes
+```
+data/input/*.pdf (ORIGINAL SOURCE — read-only, never modify)
+  ↓
+data/processed/*.csv (PROCESSED DATA — from Attempt 1 or regenerated)
+  ↓
+scripts/python/*.py (ANALYSIS — reads CSVs, produces figures + tables)
+  ↓
+Figures/*.png + Quarto/report.qmd (OUTPUT — always derived)
+```
 
 ---
 
-## Environment Parity (MANDATORY)
+## When to Regenerate
 
-**Every Beamer environment MUST have a CSS equivalent before translation begins.**
-
-1. Scan the Beamer source for all custom environments
-2. Check each against your theme SCSS file
-3. If ANY environment is missing from SCSS, create it BEFORE translating
+Regenerate ALL downstream outputs when:
+- Any CSV in `data/processed/` is modified
+- Any Python script in `scripts/python/` is modified
+- Before any commit that includes report changes
+- Before any quality review
 
 ---
 
 ## Content Fidelity Checklist
 
 ```
-[ ] Frame count: Beamer frames == Quarto slides
-[ ] Math check: every equation appears with identical notation
-[ ] Citation check: every \cite has a @key in Quarto
-[ ] Environment check: every Beamer box has CSS equivalent
-[ ] Figure check: every \includegraphics has SVG or plotly equivalent
-[ ] No added content: Quarto does not invent slides not in Beamer
-[ ] No dropped content: every Beamer idea appears in Quarto
+[ ] Table values in report match CSV data
+[ ] Figure descriptions match what figures show
+[ ] CI method description matches code implementation
+[ ] Suppression handling described in report matches code logic
+[ ] All rate calculations use same formula (code and report)
+[ ] Reference to "Attempt 1" outputs verified against reference/ folder
 ```

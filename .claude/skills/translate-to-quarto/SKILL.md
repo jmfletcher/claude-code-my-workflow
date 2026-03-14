@@ -22,8 +22,8 @@ Scan Beamer for all custom environments. Verify CSS equivalents exist in your th
 ### 0B. TikZ Freshness Verification
 Run `/extract-tikz` to verify SVGs match current Beamer source.
 
-### 0C. RDS Data Inventory
-List all RDS files needed for interactive charts.
+### 0C. Data Inventory
+List all data files (RDS, CSV) needed for interactive charts or figures.
 
 ### 0D. Citation Key Mapping
 Extract all citations from Beamer, map to bibliography keys.
@@ -44,8 +44,8 @@ Extract all citations from Beamer, map to bibliography keys.
 ## Phase 4: TikZ Diagram Integration
 Reference extracted SVGs with 0-based indexing.
 
-## Phase 5: R Figure Integration (Plotly-First)
-Interactive plotly from RDS data, static SVG for TikZ/complex figures.
+## Phase 5: Figure Integration
+Interactive charts from data files (R/plotly or Python/matplotlib), static SVG for TikZ/complex figures.
 
 ## Phase 6: First Render & Content Fidelity Check
 Render, count slides, go through EVERY slide checking for issues.

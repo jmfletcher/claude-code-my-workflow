@@ -1,6 +1,8 @@
 # Workflow Quick Reference
 
 **Model:** Contractor (you direct, Claude orchestrates)
+**Project:** Wisconsin Infant Mortality — Evidence, Disparities, Policy
+**Language:** Python | **Output:** Quarto → PDF
 
 ---
 
@@ -24,7 +26,7 @@ Repeat
 
 - **Design forks:** "Option A (fast) vs. Option B (robust). Which?"
 - **Code ambiguity:** "Spec unclear on X. Assume Y?"
-- **Replication edge case:** "Just missed tolerance. Investigate?"
+- **Data edge case:** "Suppressed count — impute as Total − White?"
 - **Scope question:** "Also refactor Y while here, or focus on X?"
 
 ---
@@ -32,10 +34,10 @@ Repeat
 ## I Just Execute When
 
 - Code fix is obvious (bug, pattern application)
-- Verification (tolerance checks, tests, compilation)
+- Verification (running scripts, checking outputs)
 - Documentation (logs, commits)
-- Plotting (per established standards)
-- Deployment (after you approve, I ship automatically)
+- Plotting (per established palette and standards)
+- Rendering Quarto (after you approve content)
 
 ---
 
@@ -48,26 +50,22 @@ Repeat
 
 ---
 
-## Non-Negotiables (Customize These)
+## Non-Negotiables
 
-<!-- Replace with YOUR project's locked-in preferences -->
-
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+- **Paths:** `pathlib.Path(__file__).resolve()` for relative paths in all Python scripts
+- **Figure palette:** White=#2171b5, Black=#b2182b. 300 DPI. "(95% CI, Poisson-based)" in titles
+- **CI method:** Poisson-based: rate ± 1.96 × (1000√D)/B. Do not change formula without discussion
+- **Suppression:** WISH "X" → impute as Total − White; document in code and report
+- **Attempt 1 is read-only:** Never modify files in `../Attempt 1/`
 
 ---
 
 ## Preferences
 
-<!-- Fill in as you discover your working style -->
-
-**Visual:** [How you want figures/plots handled]
-**Reporting:** [Concise bullets? Detailed prose? Details on request?]
+**Visual:** Publication-ready figures, consistent palette, 300 DPI PNG
+**Reporting:** Concise bullets for summaries; detailed prose in the report
 **Session logs:** Always (post-plan, incremental, end-of-session)
-**Replication:** [How strict? Flag near-misses?]
+**Data:** CSVs as interchange format between scripts and Quarto
 
 ---
 

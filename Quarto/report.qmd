@@ -1,0 +1,196 @@
+---
+title: "Infant Mortality in Wisconsin: Evidence, Equity, and Policy"
+subtitle: "A report on rates by race and place, evidence-based interventions, and the Birth Equity Act"
+author: "Jason Fletcher, University of Wisconsin"
+date: "March 2026"
+format:
+  pdf:
+    documentclass: article
+    papersize: letter
+    fontsize: 11pt
+    geometry:
+      - margin=1in
+    number-sections: true
+    toc: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    fig-pos: "H"
+bibliography: ../Bibliography_base.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+---
+
+\newpage
+
+# Executive Summary {.unnumbered}
+
+Wisconsin has among the worst Black--White disparities in infant mortality in the United States; Black infant mortality is about three times the White rate, and Milwaukee has the largest concentration of Black infant deaths in the state. Evidence-based interventions (home visiting, safe sleep, supportive care) can achieve meaningful reductions, but in most of Wisconsin the number of annual deaths is too small to detect such effects in short-term data. **Milwaukee is the best-powered county-level setting** for evaluating whether interventions reduce Black infant mortality; we recommend focusing implementation and impact evaluation there. This report summarizes infant mortality rates by geography and race, links State Rep. Shelia Stubbs's **Birth Equity Act** (seven bills, AB 1082--1088) to the evidence, and notes where support is direct versus indirect.
+
+**Policymakers should be careful when proposing interventions or policies that are very difficult to evaluate.** In settings where infant death counts are low, brief evaluations are often driven by noise and idiosyncratic fluctuation rather than by true program effects. That can suggest a policy is not working when it is, or that a policy worked when it did not---undermining both accountability and public trust. Choosing interventions and geographies where effectiveness can be meaningfully assessed (e.g., Milwaukee for Black infant mortality) improves the chance of learning what works.
+
+**Acknowledgments:** I thank the Herb Kohl Public Service Research Competition for funding. This report used Claude/Cursor for assistance with data management, analysis, and summaries. I am responsible for any errors.
+
+\newpage
+
+# Introduction {.unnumbered}
+
+Wisconsin has among the worst Black--White disparities in infant mortality in the United States. In 2023 (single-year rates), the state's Black infant mortality rate was **14.3 deaths per 1,000 live births** compared with **4.4 for White infants**---a more than threefold gap that has persisted for decades [@WISH_dhs; @CapTimes2026_birth_equity]. State Rep. Shelia Stubbs has called the situation "shameful and unacceptable," noting that "Wisconsin is the worst state to raise a Black family in our nation." Black women in Wisconsin are also at elevated risk of pregnancy-related death: recent Wisconsin data (2020--2022) show pregnancy-related mortality at about **three times** the rate for Non-Hispanic Black birthing people compared with Non-Hispanic White [@WI_maternal_mortality].
+
+This report has four parts. **Section 1** summarizes the evidence on interventions that reduce infant mortality and, where available, effect sizes in terms of lives saved or lives saved per dollar. **Section 2** presents infant mortality rates with 95% confidence intervals by geography (State, Milwaukee, Dane, Rest of Wisconsin) and race, using Wisconsin WISH data (summary rates in Table 1 are 2019--2023 averages); it explains why **Milwaukee is the best-powered county-level setting** for evaluating annual Black all-cause infant mortality and argues for **focusing interventions and evaluation on Milwaukee**. **Section 3** summarizes the **Birth Equity Act**---a package of seven bills proposed by Rep. Stubbs (AB 1082--1088)---and links each bill to the evidence in this report. **Section 4** concludes.
+
+# Literature Review: Interventions That Reduce Infant Mortality
+
+A large body of evidence supports the effectiveness of several interventions in reducing infant or neonatal mortality. **Direct evidence from high-income settings** (United States and Europe) most relevant to Wisconsin includes: Nurse-Family Partnership (U.S.), Back to Sleep / Safe to Sleep (U.S.), and the Denmark information campaign [@Altindag2022_denmark]. **Indirect or mechanism evidence** from low- and middle-income settings (e.g., immediate KMC in Ghana/India/Malawi/Nigeria/Tanzania, CHAMPION in India, Safe Childbirth Checklist in Rajasthan) illustrates effect sizes and types of care but is not a direct transfer to Wisconsin. Global rankings (DCP3 LiST, WHO) emphasize the same *types* of care---care of premature and small newborns, labor and delivery management, neonatal infection treatment, resuscitation, breastfeeding, and safe sleep---but headline counts apply largely to high-burden LMICs. Historically, vaccination has been the single largest infant-life-saving platform globally [@Lancet2024_vaccination]; in the U.S., vaccination is already at high coverage, so the remaining gains for a state like Wisconsin lie in **preterm prevention, perinatal and neonatal care quality, safe sleep, and supportive home visiting**. Effect sizes below are reported where possible as numbers of deaths saved or lives saved per dollar. **Outcome alignment:** KMC and some community trials target *neonatal* mortality; safe-sleep campaigns target *SIDS and sleep-related* deaths; NFP affects preventable child deaths and preterm birth. The 17% and 32% benchmarks in Section 2 are used as illustrative *all-cause* infant mortality reductions for power/detectability; cause-specific evaluation (neonatal vs postneonatal, SIDS, injuries) would better match interventions to the outcomes they plausibly move.
+
+**Home visiting by nurses.** The Nurse-Family Partnership (NFP) provides intensive prenatal and postnatal home visits by registered nurses to low-income first-time mothers (typically 25--30 visits over about 17 months). Multiple randomized controlled trials (Elmira, Memphis, Denver) and replications support its effects. In the Memphis trial, there were zero preventable child deaths (SIDS, unintentional injury, homicide) in the nurse-visited group versus 1.6% in the control group over follow-up. A national projection for the 177,517 women enrolled in NFP through 2013 estimated that the program would prevent approximately 500 infant deaths by 2031, along with roughly 10,000 preterm births and 42,000 child maltreatment incidents. Program cost was about \$1.6 billion (2010 dollars), with estimated savings from reduced Medicaid, TANF, and food stamps of about \$3.0 billion. Cost-effectiveness has been estimated at roughly 0.31 lives saved per \$1 million (about \$3.2 million per infant death averted) [@Miller2015_nfp; @Olds2014_nfp_mortality].
+
+**Safe sleep and SIDS campaigns.** In the United States, the Back to Sleep (Safe to Sleep) campaign, beginning in 1994, recommended supine sleep and other safe sleep practices. U.S. SIDS rates fell by more than 50% after the campaign; back sleeping tripled among African American infants. Thousands of infant deaths have been averted over decades, although campaign cost is not attributed per death. In Denmark, a government-sponsored information campaign delivered in part through universal nurse home visiting reduced infant mortality by 17.2%, saving an estimated 11.6--13.5 deaths per 10,000 births. Effects were 11--14 times larger for low-birthweight and preterm infants and for lower-SES families [@Altindag2022_denmark].
+
+**Kangaroo mother care (KMC).** Immediate, continuous skin-to-skin KMC from birth (compared with conventional care first) for low-birthweight infants was evaluated in a multi-country trial (Ghana, India, Malawi, Nigeria, Tanzania) of 3,211 infants. The intervention group had 58 fewer neonatal deaths (12.0% vs 15.7% mortality; relative risk 0.75, 95% CI 0.64--0.89). WHO has estimated that if immediate KMC were adopted globally where only post-stabilization KMC is currently used, approximately 150,000 additional lives could be saved per year. Meta-analyses associate KMC with about 32% lower neonatal mortality (RR ~0.68), with high-certainty evidence [@NEJM2021_kmc].
+
+**Community-based and facility-based care.** Community health worker--delivered home-based neonatal care has been associated with roughly 25% neonatal mortality reduction (RR ~0.75) in systematic reviews. The CHAMPION cluster randomized trial in India found 92 fewer neonatal deaths (95% CI 31--152) in the intervention arm (24% lower neonatal mortality). In Guinea-Bissau, early BCG and oral polio vaccine at birth resulted in 21 fewer early infant deaths (7 vs 28) in the intervention arm---59% lower early infant mortality. The WHO-style Safe Childbirth Checklist in Rajasthan was associated with about an 11% reduction in facility stillbirths and very early neonatal deaths.
+
+**Summary of effect sizes.** @tbl-effects summarizes key effect sizes and, where reported, lives saved per dollar. Only NFP has a clear lives-saved-per-dollar estimate.
+
+| Intervention | Effect size | Cost | Lives per \$1M |
+|-------------|-------------|------|---------------|
+| Nurse-Family Partnership | ~500 deaths (projected U.S.) | ~\$1.6B | ~0.31 |
+| Denmark SIDS campaign | 17.2% reduction | Not reported | --- |
+| Immediate KMC | 58 in trial; ~150k/yr scale | Low (LMICs) | --- |
+| CHAMPION (India) | 92 deaths (95% CI 31--152) | Not reported | --- |
+| Back to Sleep (U.S.) | >50% SIDS decline | Not attributed | --- |
+| Home-based neonatal care | ~25% (RR 0.75) | Varies | --- |
+| KMC (meta) | ~32% (RR 0.68) | Low (LMICs) | --- |
+
+: Summary of intervention effect sizes {#tbl-effects}
+
+# Infant Mortality by Race and Place in Wisconsin
+
+**Data sources and methods.** Data are from WISH (Wisconsin Interactive Statistics on Health): births and infant deaths by mother's race (Non-Hispanic White, Non-Hispanic Black) [@WISH_dhs]. Source inputs are WISH query outputs and PDF tables: State and Milwaukee birth counts and infant death counts by race and year; Dane County births and infant death counts by race and year; and the WISH Infant Mortality Module query results. WISH data used here span 1999 through 2023. **Table 1 and Table 2** use rates averaged over the five-year period 2019--2023 with approximate 95% CIs (Wald-style: rate $\pm$ 1.96 $\times$ (1000$\sqrt{D}$)/$B$, where $D$ = deaths, $B$ = births, under a Poisson assumption for counts). **Table 3 and the detectability discussion** use approximate *annual* death counts for one-year policy evaluation (same Poisson logic: CI for count $\approx$ [$D - 1.96\sqrt{D}$, $D + 1.96\sqrt{D}$]). **Rest of Wisconsin** = State $-$ Milwaukee $-$ Dane. When the Black death count is suppressed (e.g. "X" for small Black death counts, typically 1--4), the Black count is imputed as **Total $-$ White** for that table. This report uses only Non-Hispanic White and Non-Hispanic Black.
+
+## Wisconsin and national context
+
+Wisconsin has had one of the worst Black infant mortality rates among U.S. states; @Tomlin2021_wisconsin found Wisconsin had the highest Black infant mortality in the nation for their 2011--2016 study period. Using WISH data, they showed that the disparity is driven by two factors: (1) higher rates of premature birth among Black infants and (2) higher mortality among *term* Black infants, with deaths from **SIDS, accidents, and assaults** markedly elevated---pointing to modifiable causes (safe sleep, injury prevention) alongside preterm prevention. Nationally, Black infant mortality remains about twice the White rate (e.g., 10.9 vs 4.5 per 1,000 in 2023), and disparities persist across income and education, reflecting structural racism and access to care rather than biology [@KFF2025_disparities].
+
+Given the number of Black infant deaths in Milwaukee (~55 per year), **Milwaukee is the best-powered county-level geography** for detecting statistically meaningful one-year effects of the size seen in the literature (e.g., a 32% reduction is detectable there; see @tbl-detect-rate and @tbl-detect-count). Evaluation in other geographies or statewide may still be feasible with longer follow-up, pooled years, or cause-specific outcomes.
+
+### Table 1. Infant mortality rate and 95% CI by geography and race, 2019--2023 average
+
+| Geography | Race | Rate (per 1,000) | 95% CI | Approx. annual births | Approx. annual deaths |
+|-----------|------|-------------------|--------|----------------------|----------------------|
+| State | White | 4.45 | 3.8--5.1 | 43,100 | 192 |
+| State | Black | 13.07 | 10.1--15.9 | 6,080 | 79 |
+| **Milwaukee** | White | 4.05 | 2.2--6.1 | 4,100 | 17 |
+| **Milwaukee** | **Black** | **13.12** | **9.7--16.6** | **4,190** | **55** |
+| Dane | White | 3.47 | 1.7--5.4 | 3,920 | 14 |
+| Dane | Black | 11.24 | 2.4--21.7 | 500 | 6 |
+| Rest of Wisconsin | White | 4.61 | 3.9--5.3 | 35,100 | 162 |
+| Rest of Wisconsin | Black | 13.56 | 7.5--19.9 | 1,390 | 19 |
+
+: Infant mortality rate (per 1,000 live births) and 95% CI by geography and race, 2019--2023 average {#tbl-rates}
+
+**Findings:** Black infant mortality is about **three times** White in every geography. **Milwaukee has the largest absolute number of Black infant deaths** (~55 per year) and is the only county-level concentration in Wisconsin where Black births and deaths are large enough to support meaningful program evaluation.
+
+### Table 2. Detectability of rate reductions
+
+| Geography | Race | Avg rate | 95% CI | Margin | 17% red. | 32% red. | 17% det? | 32% det? |
+|-----------|------|----------|--------|--------|----------|----------|----------|----------|
+| State | White | 4.45 | 3.8--5.1 | 0.65 | 0.76 | 1.42 | Yes | Yes |
+| State | Black | 13.07 | 10.1--15.9 | 2.97 | 2.22 | 4.18 | No | Yes |
+| Milwaukee | White | 4.05 | 2.2--6.1 | 1.85 | 0.69 | 1.30 | No | No |
+| **Milwaukee** | **Black** | **13.12** | **9.7--16.6** | **3.42** | **2.23** | **4.20** | **No** | **Yes** |
+| Dane | White | 3.47 | 1.7--5.4 | 1.77 | 0.59 | 1.11 | No | No |
+| Dane | Black | 11.24 | 2.4--21.7 | 8.84 | 1.91 | 3.60 | No | No |
+| Rest of WI | White | 4.61 | 3.9--5.3 | 0.71 | 0.78 | 1.48 | Yes | Yes |
+| Rest of WI | Black | 13.56 | 7.5--19.9 | 6.06 | 2.31 | 4.34 | No | No |
+
+: Detectability of rate reductions: margin to lower bound of 95% CI {#tbl-detect-rate}
+
+**Interpretation:** For **Milwaukee Black** (rate 13.12 per 1,000; CI 9.7--16.6), a **32% reduction** (4.20 per 1,000) would be detectable in one year; a **17% reduction** (2.23) would not. **Milwaukee remains the only county-level geography where a substantial one-year effect on Black infant mortality could be detected.** Statewide aggregation would have more power; evaluation outside Milwaukee may still be feasible with longer follow-up, pooled years, or cause-specific outcomes.
+
+### Table 3. Annual deaths, minimum detectable effect, and estimated spend
+
+| Geography | Race | Deaths/yr | 95% CI | Min. averted | NFP spend (\$M/yr) |
+|-----------|------|-----------|--------|-------------|-------------------|
+| State | White | 192 | 165--219 | 28 | 90 |
+| State | Black | 79 | 62--96 | 18 | 58 |
+| Milwaukee | White | 17 | 9--25 | 9 | 29 |
+| Milwaukee | Black | 55 | 40--70 | 15 | 48 |
+| Dane | White | 14 | 7--21 | 8 | 26 |
+| Dane | Black | 6 | 1--11 | 5 | 16 |
+| Rest of WI | White | 162 | 137--187 | 25 | 80 |
+| Rest of WI | Black | 19 | 10--28 | 9 | 29 |
+
+: Annual infant deaths, minimum detectable effect, and estimated spend (count-based) {#tbl-detect-count}
+
+*Note:* "NFP spend" is spending (\$M/yr) to avert the minimum detectable number of deaths at \$3.2M per life [@Miller2015_nfp].
+
+**Interpretation:** For **Milwaukee Black** infants (55 deaths/year; 95% CI 40--70), at least **15 deaths** must be averted for the count to fall below the lower CI bound. At NFP rates, that implies ~\$48M/year. **Milwaukee is the only county-level geography** where a detectable reduction in the *number* of Black infant deaths is feasible with a single focused program.
+
+## Figures: Infant mortality rates by race over time
+
+![State of Wisconsin infant mortality rate by race (95% CI, Poisson-based).](../Figures/state_infant_mortality_by_race.png){#fig-state width=100%}
+
+At the state level, Black infant mortality is roughly three times the White rate in every year. The wider confidence band for Black infants reflects the smaller number of Black births and deaths statewide.
+
+![Milwaukee County infant mortality rate by race (95% CI, Poisson-based).](../Figures/milwaukee_infant_mortality_by_race.png){#fig-milwaukee width=100%}
+
+Milwaukee has the largest concentration of Black births and infant deaths in Wisconsin (~4,190 Black births and ~55 Black infant deaths per year). Milwaukee is the only geography where evaluation of interventions is feasible.
+
+![Dane County infant mortality rate by race (95% CI, Poisson-based).](../Figures/dane_infant_mortality_by_race.png){#fig-dane width=100%}
+
+In Dane County, Black infant deaths are few (~6 per year), so the Black rate has very wide confidence intervals and substantial year-to-year fluctuation.
+
+![Rest of Wisconsin (State − Milwaukee − Dane) infant mortality rate by race (95% CI, Poisson-based).](../Figures/rest_of_wisconsin_infant_mortality_by_race.png){#fig-rest width=100%}
+
+Together, Figures 1--4 illustrate why evaluation efforts are best concentrated in Milwaukee, where Black infant mortality can be tracked with the least relative uncertainty.
+
+# Policy Proposal: The Birth Equity Act
+
+State Rep. Shelia Stubbs (Madison) has introduced the **Birth Equity Act** in multiple sessions to address Wisconsin's exceedingly high Black infant and maternal mortality rates. As reported by the *Cap Times* (March 12, 2026), the package aims to make "pregnancy, birth, postpartum services and infant care more affordable and accessible" for residents who have faced discrimination and barriers to care; the proposed changes **apply to all residents regardless of race or ethnicity** [@CapTimes2026_birth_equity].
+
+The current iteration consists of **seven bills** (Assembly Bills 1082--1088), each with cosponsorship from more than a dozen Democrats; as of the date of this report, no Republicans had signed on and the Republican-controlled Assembly had largely adjourned, so the bills were not expected to advance in 2026 [@WI_legislature_birth_equity].
+
+## Summary of the seven bills
+
+| Bill | Description |
+|------|-------------|
+| **AB 1082** | Sales tax exception for breastfeeding equipment. |
+| **AB 1083** | Bar the state from seeking recovery of birth expenses from Medicaid enrollees. |
+| **AB 1084** | Require Medicaid to cover dental services during pregnancy. |
+| **AB 1085** | Require Medicaid plans to cover care provided by a **doula**. |
+| **AB 1086** | Require Medicaid to cover maternal mental health screenings; develop **cultural competency** standards. |
+| **AB 1087** | Allow pregnant persons to enroll in health plans **outside standard enrollment periods**. |
+| **AB 1088** | Require hospitals to provide a **postpartum home visit** if requested; require plans to cover these visits. |
+
+: Birth Equity Act bills (AB 1082--1088) {#tbl-bills}
+
+## Link to evidence in this report
+
+- **AB 1082 (breastfeeding equipment).** *Supported indirectly:* Breastfeeding is associated with lower infant mortality; DCP3/LiST ranks breastfeeding promotion among interventions that reduce neonatal and child deaths. This report does not cite a study quantifying infant deaths averted by equipment subsidies specifically.
+
+- **AB 1083 (no state recovery of birth expenses).** *Supported indirectly:* Reducing financial burden is consistent with evidence that coverage barriers affect maternal and infant care use [@KFF2025_disparities].
+
+- **AB 1084 (Medicaid dental coverage in pregnancy).** *Limited direct evidence:* Dental care in pregnancy is a modifiable risk factor; the literature review does not include a trial quantifying infant deaths averted by Medicaid dental coverage.
+
+- **AB 1085 (Medicaid doula coverage).** *Supported by analogy; direct mortality evidence is limited:* NFP is supported by RCTs [@Miller2015_nfp; @Olds2014_nfp_mortality]. U.S. doula RCTs have shown process improvements but have not demonstrated a statistically significant effect on infant mortality.
+
+- **AB 1086 (maternal mental health screening).** *Supported indirectly:* Perinatal depression is a recognized determinant of maternal and infant wellbeing [@KFF2025_disparities].
+
+- **AB 1087 (special enrollment for pregnancy).** *Supported indirectly:* Timely prenatal care is associated with better birth outcomes; barriers to enrollment delay care.
+
+- **AB 1088 (postpartum home visit).** *Most closely aligned with the evidence base:* NFP and the Denmark campaign provide home visiting that reduces preventable child deaths [@Miller2015_nfp; @Olds2014_nfp_mortality; @Altindag2022_denmark]. AB 1088 aligns with that evidence more closely than any other bill in the package.
+
+Given the data in Section 2, concentrating **implementation and evaluation** of such policies in **Milwaukee** would maximize the chance of detecting whether the package reduces infant mortality.
+
+# Conclusion
+
+- **Wisconsin** has among the worst Black--White infant mortality disparities in the U.S., with Black rates about **three times** White rates in every geography examined. Milwaukee has the **largest number of Black infant deaths** (~55 per year) and thus the best setting for measurable impact and evaluation.
+- **Evidence-based interventions**---home visiting (e.g., NFP), safe sleep campaigns, kangaroo mother care, community-based neonatal care---can achieve substantial reductions (e.g., 17--32% in rate terms) and, for NFP, ~0.31 lives saved per \$1M. **Milwaukee is the best-powered county-level setting** for evaluating annual Black all-cause infant mortality with one-year data. **Focusing implementation and evaluation on Milwaukee** is the most practical way to generate interpretable evidence on what works.
+- The **Birth Equity Act** (State Rep. Shelia Stubbs) proposes seven bills to improve affordability and access to prenatal, birth, postpartum, and infant care. These align with the types of interventions the literature associates with improved outcomes. Prioritizing **Milwaukee** for implementation and impact evaluation would best use limited resources and data to close the Black--White gap in Wisconsin.
+- **Scope limitation:** This report examines all-cause infant mortality only. Cause-specific analysis (neonatal vs. postneonatal, SIDS, injuries) would better match interventions to the outcomes they plausibly move and is recommended as a direction for future work.
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

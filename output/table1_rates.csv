@@ -1,0 +1,9 @@
+geography,race,rate_per_1000,ci_lower,ci_upper,approx_annual_births,approx_annual_deaths,ci_95
+State of Wisconsin,White,4.45,3.8,5.1,43079,192,3.8–5.1
+State of Wisconsin,Black,13.07,10.1,15.9,6075,79,10.1–15.9
+Milwaukee County,White,4.05,2.2,6.1,4099,17,2.2–6.1
+Milwaukee County,Black,13.12,9.7,16.6,4191,55,9.7–16.6
+Dane County,White,3.47,1.7,5.4,3918,14,1.7–5.4
+Dane County,Black,11.24,2.4,21.7,498,6,2.4–21.7
+Rest of Wisconsin (State − Milwaukee − Dane),White,4.61,3.9,5.3,35062,162,3.9–5.3
+Rest of Wisconsin (State − Milwaukee − Dane),Black,13.56,7.5,19.9,1386,19,7.5–19.9

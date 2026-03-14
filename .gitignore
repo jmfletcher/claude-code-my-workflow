@@ -51,8 +51,14 @@ CLAUDE.local.md
 # Quarto rendering artifacts
 /.quarto/
 
-# Output artifacts — uncomment lines below based on your preference
+# Output artifacts
 # *.rds
 # output/**/*.rds
 
+# Python virtual environments
+.venv/
+venv/
+env/
 
+# Matplotlib cache
+.matplotlib/

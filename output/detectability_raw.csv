@@ -1,0 +1,9 @@
+geography,geo_key,race,avg_rate,ci_lower,ci_upper,margin,red_17_rate,red_32_rate,det_17_rate,det_32_rate,avg_deaths,avg_births,min_averted,nfp_spend_M,red_17_count,red_32_count,det_17_count,det_32_count
+State of Wisconsin,state,White,4.45,3.8,5.1,0.63,0.76,1.42,True,True,192,43079,28,90,32.6,61.4,True,True
+State of Wisconsin,state,Black,13.07,10.1,15.9,2.93,2.22,4.18,False,True,79,6075,18,58,13.5,25.4,False,True
+Milwaukee County,milwaukee,White,4.05,2.2,6.1,1.87,0.69,1.3,False,False,17,4099,9,29,2.8,5.3,False,False
+Milwaukee County,milwaukee,Black,13.12,9.7,16.6,3.47,2.23,4.2,False,True,55,4191,15,48,9.4,17.6,False,True
+Dane County,dane,White,3.47,1.7,5.4,1.77,0.59,1.11,False,False,14,3918,8,26,2.3,4.4,False,False
+Dane County,dane,Black,11.24,2.4,21.7,8.84,1.91,3.6,False,False,6,498,5,16,1.0,1.8,False,False
+Rest of Wisconsin (State − Milwaukee − Dane),rest_of_wisconsin,White,4.61,3.9,5.3,0.7,0.78,1.47,True,True,162,35062,25,80,27.5,51.7,True,True
+Rest of Wisconsin (State − Milwaukee − Dane),rest_of_wisconsin,Black,13.56,7.5,19.9,6.02,2.31,4.34,False,False,19,1386,9,29,3.2,6.0,False,False
