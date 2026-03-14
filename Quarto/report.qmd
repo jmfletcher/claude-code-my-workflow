@@ -20,8 +20,6 @@ bibliography: ../Bibliography_base.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
 ---
 
-\newpage
-
 # Executive Summary {.unnumbered}
 
 Wisconsin has among the worst Black--White disparities in infant mortality in the United States; Black infant mortality is about three times the White rate, and Milwaukee has the largest concentration of Black infant deaths in the state. Evidence-based interventions (home visiting, safe sleep, supportive care) can achieve meaningful reductions, but in most of Wisconsin the number of annual deaths is too small to detect such effects in short-term data. Milwaukee is the best-powered county-level setting for evaluating whether interventions reduce Black infant mortality; we recommend focusing implementation and impact evaluation there. This report summarizes infant mortality rates by geography and race, links State Rep. Shelia Stubbs's Birth Equity Act (seven bills, AB 1082--1088) to the evidence, and notes where support is direct versus indirect.
