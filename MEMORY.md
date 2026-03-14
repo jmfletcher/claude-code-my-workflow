@@ -1,4 +1,4 @@
-# Project Memory
+# Project Memory — Wisconsin Mortality Project
 
 Corrections and learned facts that persist across sessions.
 When a mistake is corrected, append a `[LEARN:category]` entry below.
@@ -6,6 +6,28 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 ---
 
 <!-- Append new entries below. Most recent at bottom. -->
+
+## Project Context
+
+[LEARN:project] This is a mortality analysis project (not a lecture/slides project). Primary workflow: Python data analysis (pandas, numpy, matplotlib), life tables, publication-ready figures. The Beamer/Quarto/Slides infrastructure from the template is NOT the focus.
+
+[LEARN:project] Key paper to replicate: Roberts et al. (2019) BMC Public Health — "Contributors to Wisconsin's persistent black-white gap in life expectancy." We replicate LE trends only (Figures 1-2), not cause decomposition.
+
+[LEARN:data] Population file is fixed-width CDC bridged-race format. Positions: Year(1-4), State(5-6), FIPS(7-11), spaces, Race(14), Origin(15), Sex(16), Age(17-18), Population(19-26). Must use pd.read_fwf() with explicit colspecs.
+
+[LEARN:data] Mortality CSV columns: deathmonth, race, racer3, sex, age, ICD codes (7/8/9/10 depending on era), deathyear, countyrs (county FIPS), hispanic, mannerdeath. Race: 1=White, 2=Black. Sex: 1=Male, 2=Female.
+
+[LEARN:data] Milwaukee County FIPS = 55079. Dane County FIPS = 55025. All WI counties use 55xxx prefix.
+
+[LEARN:methods] Roberts et al. uses 3-year pooled data (e.g., "2015" = 2014–2016), abridged life tables with 19 age groups (<1, 1-4, 5-9, ..., 80-84, 85+). We replicate LE trends only — no cause-of-death decomposition.
+
+[LEARN:scope] Project scope: life expectancy gaps only (no Arriaga cause decomposition). Geographic extension: statewide WI, Milwaukee County, Dane County, rest of WI (state minus Milwaukee minus Dane).
+
+[LEARN:data] Analysis restricted to 2005-2017 data only. 3-year windows span center years 2006-2016 (underlying data 2005-2017). All 2005+ mortality records have Hispanic origin coded, so non-Hispanic filter is exact.
+
+[LEARN:methods] Pooling: both deaths AND population are SUMMED across the 3-year window. The ratio sum(D)/sum(N) gives the average annual rate. Earlier bug used mean(pop) which inflated rates by ~3x.
+
+[LEARN:tools] Project uses Python (not R). Core stack: pandas, numpy, matplotlib, geopandas. Scripts go in scripts/python/. Intermediate data saved as parquet/pickle.
 
 ## Workflow Patterns
 

@@ -1,0 +1,17 @@
+Geography,Sex,Race,Life Expectancy,LE_lo,LE_hi,Total Deaths (3yr),Total Population (3yr)
+Statewide,Male,White,77.95,77.85,78.05,71483,7705008
+Statewide,Male,Black,70.03,69.58,70.55,4420,622862
+Statewide,Female,White,82.25,82.16,82.35,71313,7707096
+Statewide,Female,Black,76.53,76.05,77.02,3666,639719
+Milwaukee,Male,White,77.48,77.19,77.78,8244,923921
+Milwaukee,Male,Black,68.25,67.63,68.9,3243,376514
+Milwaukee,Female,White,82.05,81.77,82.35,8993,946700
+Milwaukee,Female,Black,75.95,75.45,76.55,2838,434594
+Dane,Male,White,80.21,79.87,80.55,4378,693702
+Dane,Male,Black,71.71,69.7,78.93,260,52777
+Dane,Female,White,83.73,83.37,84.09,4697,699209
+Dane,Female,Black,78.3,76.59,80.53,158,50447
+Rest of WI,Male,White,77.78,77.65,77.89,58861,6087385
+Rest of WI,Male,Black,73.94,72.86,75.16,917,193571
+Rest of WI,Female,White,82.13,82.01,82.25,57623,6061187
+Rest of WI,Female,Black,77.81,76.7,79.1,670,154678

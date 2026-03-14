@@ -1,0 +1,17 @@
+Geography,Sex,Race,Total Deaths (3yr),Total Population (3yr person-years),"Crude Death Rate (per 1,000)"
+Dane,Female,Black,158,50447,3.132
+Dane,Female,White,4697,699209,6.718
+Dane,Male,Black,260,52777,4.926
+Dane,Male,White,4378,693702,6.311
+Milwaukee,Female,Black,2838,434594,6.53
+Milwaukee,Female,White,8993,946700,9.499
+Milwaukee,Male,Black,3243,376514,8.613
+Milwaukee,Male,White,8244,923921,8.923
+Rest of WI,Female,Black,670,154678,4.332
+Rest of WI,Female,White,57623,6061187,9.507
+Rest of WI,Male,Black,917,193571,4.737
+Rest of WI,Male,White,58861,6087385,9.669
+Statewide,Female,Black,3666,639719,5.731
+Statewide,Female,White,71313,7707096,9.253
+Statewide,Male,Black,4420,622862,7.096
+Statewide,Male,White,71483,7705008,9.277

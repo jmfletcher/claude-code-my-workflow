@@ -26,11 +26,19 @@ __pycache__/
 *.pyc
 *.pyo
 
-# R
+# R (legacy from template)
 .Rproj.user/
 .Rhistory
 .RData
 .Rdata
+
+# Python
+*.egg-info/
+*.eggs/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
 
 # OS files
 .DS_Store
@@ -51,8 +59,16 @@ CLAUDE.local.md
 # Quarto rendering artifacts
 /.quarto/
 
-# Output artifacts — uncomment lines below based on your preference
-# *.rds
-# output/**/*.rds
+# Output artifacts (large generated files)
+output/**/*.pkl
+output/**/*.parquet
+output/**/*.html
 
+# Large data files (track the small ones, ignore very large intermediates)
+Data/processed/
 
+# Raw data and reference papers (too large / copyrighted for git)
+Data/mortality/
+Data/population/
+Data/shp/
+Papers/
