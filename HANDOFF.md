@@ -1,8 +1,8 @@
 # Agent Handoff — Wisconsin Mortality Project
 
-**Date:** March 12, 2026
+**Date:** March 14, 2026
 **PI:** Jason Fletcher, University of Wisconsin-Madison
-**Workspace:** `claude-code-my-workflow/`
+**Repo:** `https://github.com/jmfletcher/claude-code-my-workflow` (branch: `Wisconsin-Mortality-Project`)
 
 ---
 
@@ -18,7 +18,7 @@ An empirical analysis of the **Black-White life expectancy gap in Wisconsin, 200
 
 ### Analysis Pipeline (`scripts/python/analysis.py`, ~1780 lines)
 
-A single monolithic script that runs end-to-end in ~60 seconds. It has 7 phases:
+A single monolithic script that runs end-to-end in ~2 minutes. It has 7 phases:
 
 | Phase | What It Does | Key Outputs |
 |-------|-------------|-------------|
@@ -32,23 +32,23 @@ A single monolithic script that runs end-to-end in ~60 seconds. It has 7 phases:
 | **5** | Wisconsin county map with highlighted regions | `Figures/fig6_wisconsin_map_bw_gap.png` |
 | **6** | Publication-ready CSV tables (3 tables + decomposition) | `output/tables/table1-4_*.csv` |
 
-### Paper (`paper/generate_paper.py`, 1003 lines → `paper/wisconsin_mortality_paper.pdf`, 20 pages)
+### Paper (`paper/generate_paper.py`, ~1290 lines → `paper/wisconsin_mortality_paper.pdf`, 21 pages)
 
 A Python script using `fpdf2` that generates the full PDF paper. Structure:
 
 | Section | Content |
 |---------|---------|
-| **Abstract** | Highlights composition + counterfactual findings |
+| **Abstract** | Highlights composition + counterfactual findings; Milwaukee as dominant driver |
 | **1. Introduction** | Frames Milwaukee's population share as central, previews counterfactual contributions |
-| **2. Background** | Compositional lens, counterfactual logic, Wisconsin context |
-| **3. Data and Methods** | 3.1 Data Sources, 3.2 Life Table Construction (notes overlapping 3-year windows / smoothed trends), 3.3 Counterfactual Framework, 3.4 Formal Gap Decomposition, **3.5 Bootstrap Confidence Intervals**, 3.6 Sensitivity and Uncertainty |
-| **4. Results** | 4.1 Geographic Variation (Table 1, Fig 1), 4.2 Trends (Figs 2-3), 4.3 Change Over Time (Table 2), **4.4 Decomposing the Statewide Gap (Table 3, Figs 4-5)**, 4.5 Counterfactual Exercises (Tables 4-5) |
-| **5. Discussion** | Four principal findings including decomposition results |
-| **6. Conclusion** | Policy implications |
+| **2. Background** | Compositional lens, counterfactual logic, Wisconsin context; cites Murray et al. (2006), Chetty et al. (2016) |
+| **3. Data and Methods** | 3.1 Data Sources, 3.2 Life Table Construction (notes overlapping windows), 3.3 Counterfactual Framework, 3.4 Formal Gap Decomposition, **3.5 Bootstrap CIs** (notes decomposition/CF are point estimates), 3.6 Sensitivity and Uncertainty |
+| **4. Results** | 4.1 Geographic Variation (Table 1, Fig 1), 4.2 Trends (Figs 2-3), 4.3 Change Over Time (Table 2), **4.4 Decomposing the Statewide Gap (Table 3, Figs 4-5)**, 4.5 Counterfactual Exercises (Tables 4-5; clarifies 70% decomposition vs ~47% CF reduction) |
+| **5. Discussion** | Three principal findings; Dane County framed as cautionary pattern (not principal finding) |
+| **6. Conclusion** | Policy implications; Dane County decline flagged as warranting monitoring |
 | **Appendix A** | Wisconsin county map (Fig A1) |
 | **Appendix B** | Replication of Roberts et al. (Table B1, Figs B1-B2) |
-| **Appendix C** | C.1 Sample context (Table C1: deaths, person-years, crude rate by geography/sex/race); C.2 County concentration (Table C2); narrative that Wisconsin is not unique |
-| **References** | 9 references |
+| **Appendix C** | C.1 Sample context (Table C1); C.2 County concentration (Table C2) |
+| **References** | 12 references |
 
 **Important:** The paper uses `fpdf2` with default Helvetica fonts. All text is wrapped in an `ascii_safe()` function that converts Unicode characters (en-dashes, curly quotes, etc.) to ASCII equivalents. If you add text with Unicode, it MUST go through `ascii_safe()` or you'll get `UnicodeEncodingException`.
 
@@ -80,12 +80,12 @@ A Python script using `fpdf2` that generates the full PDF paper. Structure:
 - **Composition penalty**: 2.6 years (if Black Wisconsinites were distributed like White Wisconsinites, the weighted gap would drop from 7.5 to 4.9 years)
 
 ### Counterfactual Highlights (2016, Males)
-- **CF1**: If MKE Black had Rest-of-WI Black mortality → statewide gap drops from 7.9 to 4.2 yr (nearly 50% reduction)
+- **CF1**: If MKE Black had Rest-of-WI Black mortality → statewide gap drops from 7.9 to 4.2 yr (reduction of 3.75 yr, ~47%)
 - **CF2**: If MKE Black had Dane Black mortality → gap drops to 5.6 yr
-- **CF3**: If Dane White had Rest-of-WI White mortality → Dane gap drops from 8.5 to 6.1 yr (Dane White advantage accounts for ~28%)
+- **CF3**: If Dane White had Rest-of-WI White mortality → Dane gap drops from 8.5 to 6.1 yr (~28% reduction)
 
 ### Trends (2005-07 → 2015-17)
-- Male gap **widened** in all regions; worst in Dane (+3.2 yr, driven by 2.4-yr decline in Black male LE)
+- Male gap **widened** in all regions; Dane shows largest point-estimate increase (+3.2 yr) but with very wide CI ([-4.1, +11.3])
 - Female gap narrowed statewide (-0.5 yr), roughly stable in Milwaukee
 
 ---
@@ -96,7 +96,7 @@ A Python script using `fpdf2` that generates the full PDF paper. Structure:
 | File | Lines | Purpose |
 |------|:---:|---------|
 | `scripts/python/analysis.py` | ~1780 | All analysis: data prep, life tables, decomposition, counterfactuals, figures, tables |
-| `paper/generate_paper.py` | ~1010 | Generates PDF paper using fpdf2 |
+| `paper/generate_paper.py` | ~1290 | Generates PDF paper using fpdf2 |
 
 ### Data (gitignored, must be present locally)
 | File | Description |
@@ -119,7 +119,7 @@ A Python script using `fpdf2` that generates the full PDF paper. Structure:
 | `output/tables/cf3_dane_white_to_restofwi.csv` | Counterfactual 3 results |
 | `output/tables/le_with_ci.csv` | Life expectancy with 95% bootstrap CI (e0_lo, e0_hi) |
 | `output/tables/gap_ci.csv` | B-W gap 95% bootstrap CI by geography/sex |
-| `output/tables/change_ci.csv` | Gap change 95% bootstrap CI (2005-07 vs 2015-17) when available |
+| `output/tables/change_ci.csv` | Gap change 95% bootstrap CI (2005-07 vs 2015-17) |
 | `output/tables/table6_sample_context_2016.csv` | Deaths, person-years, crude rate by geography/sex/race, 2015-17 (Appendix C.1) |
 | `output/tables/county_black_population_proportions.csv` | State, county with largest share of state Black pop, share % (Appendix C.2) |
 
@@ -138,9 +138,11 @@ A Python script using `fpdf2` that generates the full PDF paper. Structure:
 ### Paper
 | File | Description |
 |------|-------------|
-| `paper/wisconsin_mortality_paper.pdf` | Current 20-page working paper |
+| `paper/wisconsin_mortality_paper.pdf` | Current 21-page working paper |
 | `paper/generate_paper.py` | Script that builds the PDF |
-| `paper/QC_chatgpt_review_verification.md` | QC report: ChatGPT review checklist (Done/Partial/Not done) and recommendations |
+| `paper/QC_chatgpt_review_verification.md` | QC report: ChatGPT review checklist (original: 8 Done, 5 Partial, 2 Not done) |
+| `paper/wisconsin_mortality_paper before CI.pdf` | Earlier version before bootstrap CIs added |
+| `paper/wisconsin_mortality_paper temp.pdf` | Intermediate version |
 
 ---
 
@@ -150,13 +152,13 @@ A Python script using `fpdf2` that generates the full PDF paper. Structure:
 ```bash
 python3 scripts/python/analysis.py
 ```
-Requires: `pandas`, `numpy`, `matplotlib`, `geopandas`, `pathlib`. Takes ~60 seconds. Must run with full permissions (sandbox restriction on sysctlbyname). Outputs all figures, tables, and parquet files.
+Requires: `pandas`, `numpy`, `matplotlib`, `geopandas`, `pathlib`. Takes ~2 minutes. Outputs all figures, tables, and parquet files.
 
 ### Regenerating the paper
 ```bash
 python3 paper/generate_paper.py
 ```
-Requires: `fpdf2`. Reads figures from `Figures/` and tables from `output/tables/`. Takes ~10 seconds.
+Requires: `fpdf2`. Reads figures from `Figures/` and tables from `output/tables/`. Takes ~20 seconds.
 
 ### Life table method
 - **Chiang (1968) abridged life table**, 19 age groups: <1, 1-4, 5-9, ..., 80-84, 85+
@@ -167,8 +169,8 @@ Requires: `fpdf2`. Reads figures from `Figures/` and tables from `output/tables/
 
 ### Data quirks
 - Population file has `origin=9` for all records (no Hispanic breakdown) — minor upward bias in denominators for non-Hispanic groups
-- Mortality data has Hispanic origin coded for 2005+ records, filtered to non-Hispanic (codes < 200)
-- Dane County Black population is small (~50k over 3 years, ~260 male deaths, ~158 female deaths per 3-year window) — estimates are noisy
+- Mortality data has Hispanic origin coded for 2005+ records, filtered to non-Hispanic on the death record
+- Dane County Black population is small (~50k per sex over 3 years, ~103k total person-years, ~260 male deaths, ~158 female deaths per 3-year window) — estimates are noisy
 
 ### Decomposition math
 ```
@@ -191,16 +193,18 @@ Composition effect = Σ(π_g × gap_g) - Σ(ω_g × gap_g)
 
 ## 6. What Has NOT Been Done / Potential Next Steps
 
-**Recent updates (ChatGPT review QC):** A QC agent (`.claude/agents/qc-chatgpt-review.md`) verifies the 14 ChatGPT external-review items. A verification run produced `paper/QC_chatgpt_review_verification.md` (8 Done, 5 Partial, 2 Not done). Two fixes were applied: (1) **Female gap sentence** — text now states rest of Wisconsin has the smallest female gap (4.3 yr) and Dane’s gap (5.4) is intermediate with highest Black female LE (78.3); (2) **Overlapping 3-year windows** — §3.2 now states that moving windows overlap and that trend figures should be interpreted as smoothed, not independent year-by-year. PDF regenerated.
+**Review status (March 14, 2026):** All 14 ChatGPT external-review items addressed (original QC found 8 Done, 5 Partial, 2 Not done; all now resolved). Three-agent simulated referee review conducted; all major issues addressed except: (a) tightening Discussion/Abstract (left per PI preference), (b) adding migration bias to limitations (left per PI preference). Dane County reframed as cautionary pattern. Three citations added (Chetty et al. 2016, Murray et al. 2006, Case & Deaton 2015).
 
 1. **Cause-of-death decomposition** — explicitly excluded from scope, but would identify which causes drive the gap (opioids, homicide, chronic disease)
 2. **Age-specific decomposition (Arriaga)** — would identify which age groups contribute most to the gap
 3. ~~**Confidence intervals / bootstrapping**~~ — **Done.** Phase 2B: 500-replicate Poisson bootstrap; `le_with_ci.csv` and `gap_ci.csv`; paper reports 95% CIs where appropriate.
-4. **Post-2017 data** — analysis stops before COVID-19
-5. **Formal peer review / journal submission** — paper is a working draft
-6. **Sensitivity analyses** — e.g., alternative age groupings, different pooling windows, Hispanic population adjustment
-7. **Modular refactoring** — `analysis.py` is monolithic; could be split into modules
-8. **Git commit** — no commits have been made with the current analysis work (only config changes were committed in earlier sessions)
+4. **Bootstrap CIs for decomposition/counterfactuals** — noted as point estimates without CIs in §3.5; extending the bootstrap to decomposition and CF exercises is left for future work
+5. **Post-2017 data** — analysis stops before COVID-19
+6. **Formal peer review / journal submission** — paper is a working draft
+7. **Sensitivity analyses** — e.g., alternative age groupings (90+ instead of 85+), different pooling windows, Hispanic population adjustment, alternative geographic partitions (splitting Rest-of-WI into urban/rural)
+8. **Modular refactoring** — `analysis.py` is monolithic; could be split into modules
+9. **Migration bias** — mortality by county of residence at death; migration before death could bias small-area estimates (flagged by referee review, not yet added to limitations)
+10. **Bayesian small-area estimation** — would produce more stable Dane County estimates via hierarchical smoothing
 
 ---
 
@@ -217,7 +221,7 @@ Composition effect = Σ(π_g × gap_g) - Σ(ω_g × gap_g)
 | `.claude/rules/replication-protocol.md` | Protocol for validating against Roberts et al. |
 | `.claude/skills/data-analysis/SKILL.md` | End-to-end Python analysis workflow |
 | `.claude/skills/review-python/SKILL.md` | Python code review skill |
-| `.gitignore` | Excludes `Data/`, `Papers/`, `output/`, Python artifacts |
+| `.gitignore` | Excludes `Data/`, `Papers/`, `output/*.parquet`, Python artifacts |
 
 ---
 
@@ -230,6 +234,8 @@ Composition effect = Σ(π_g × gap_g) - Σ(ω_g × gap_g)
 5. **Replication in appendix** — Roberts et al. validation moved to Appendix B; main paper focuses on geographic decomposition and counterfactuals
 6. **Decomposition + counterfactuals as central narrative** — the paper's main argument is that the "Wisconsin gap" is really a Milwaukee story, quantified via the formal decomposition
 7. **fpdf2 for paper generation** — no LaTeX distribution available; PDF built programmatically
+8. **Dane County as cautionary observation** — reframed from principal finding to suggestive pattern given wide CIs on Black male LE trends
+9. **Discussion/Abstract length preserved** — referee review suggested tightening; PI chose to keep current length
 
 ---
 
@@ -246,3 +252,14 @@ python3 paper/generate_paper.py
 ```
 
 Both scripts are self-contained and idempotent. The analysis script reads from `Data/` and writes to `Figures/` and `output/`. The paper script reads from `Figures/` and `output/tables/` and writes the PDF.
+
+---
+
+## 10. Git History
+
+| Commit | Date | Description |
+|--------|------|-------------|
+| `5b0b534` | 2026-03-14 | Add full Wisconsin mortality project files from working copy |
+| `1c469f8` | 2026-03-14 | Address QC review items and referee feedback |
+
+Branch `Wisconsin-Mortality-Project` is up to date with `origin`.
