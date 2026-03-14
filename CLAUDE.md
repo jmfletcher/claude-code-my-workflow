@@ -151,6 +151,11 @@ pdfplumber
 | Figures | Done | 4 PNGs in Figures/ (300 DPI) |
 | Tables + detectability | Done | 3 CSVs + summary in output/ |
 | Quarto report (PDF) | Done | Quarto/report.qmd → report.pdf |
+| Slide deck (HTML + PDF) | Done | Quarto/slides.qmd → slides.html + slides.pdf |
+| Multi-agent review | Done | Proofreader, domain, python, paper, bib, deep-audit |
+| Quality gate scoring | Done | Scripts 99/100, Report 98/100 |
+| Session log | Done | quality_reports/session_logs/2026-03-14 |
+| GitHub Pages deploy | Done | docs/ (slides, report PDF, figures) |
 
 ---
 

@@ -53,7 +53,7 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:design] This project uses Python (not R). All .claude/ configs adapted for Python: pandas, matplotlib, pdfplumber. R-specific agents/rules have Python equivalents.
 
-[LEARN:design] Quarto → PDF is the primary output format. No Beamer slides (report project, not lecture).
+[LEARN:design] Quarto → PDF is the primary output format. Slide deck uses RevealJS (HTML) + Beamer (PDF, Madrid theme with longtable header fix).
 
 ## File Organization
 
@@ -66,3 +66,17 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 ## Scope Decisions
 
 [LEARN:scope] No cause-specific analysis (neonatal vs postneonatal, SIDS, injuries). The report notes this as a recommendation for future work, but it is out of scope for this project.
+
+## Session Learnings (2026-03-14)
+
+[LEARN:python] validate() must early-return when expected columns are missing to avoid downstream KeyError on df["births"].
+
+[LEARN:python] Centralize CSV_FILES dict in config.py — was duplicated across 4 scripts.
+
+[LEARN:bib] Always include author and year fields in bib entries, even for institutional sources (WISH, DHS).
+
+[LEARN:beamer] Beamer PDF chokes on pipe tables (longtable/makesavenoteenv conflict). Fix: add \usepackage{longtable} and guard \makesavenoteenv in header-includes. Use a built-in theme (Madrid) if metropolis unavailable.
+
+[LEARN:tables] Pooled 5-year rates (total deaths / total births) differ slightly from year-by-year averaging; both are valid, document which is used.
+
+[LEARN:review] Six review agents ran: proofreader (12 issues), domain (8), python (14), paper (Accept w/ minor), bib (3 quality fixes), deep-audit (10 bugs). Quality scores: scripts 99/100, report 98/100.
