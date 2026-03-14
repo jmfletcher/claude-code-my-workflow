@@ -11,6 +11,15 @@ format:
     height: 720
     fig-align: center
     transition: fade
+  beamer:
+    aspectratio: 169
+    theme: Madrid
+    colortheme: seahorse
+    header-includes:
+      - \usepackage{longtable}
+      - \makeatletter
+      - \@ifundefined{makesavenoteenv}{}{\makesavenoteenv{longtable}}
+      - \makeatother
 bibliography: ../Bibliography_base.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
 ---
