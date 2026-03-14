@@ -55,5 +55,4 @@ CLAUDE.local.md
 # *.rds
 # output/**/*.rds
 
-# Poland project: large data (keep local only)
-Data/
+
