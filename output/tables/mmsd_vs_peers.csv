@@ -1,0 +1,463 @@
+district_name,race,year,subject,pct_proficient,n_tested,tier
+Appleton Area,Black,2015-16,ELA,19.880593471810087,337.0,Tier 2
+Appleton Area,Black,2015-16,Mathematics,19.881097922848664,337.0,Tier 2
+Appleton Area,Black,2016-17,ELA,17.58861111111111,324.0,Tier 2
+Appleton Area,Black,2016-17,Mathematics,17.59117283950617,324.0,Tier 2
+Appleton Area,Black,2017-18,ELA,14.738843930635836,346.0,Tier 2
+Appleton Area,Black,2017-18,Mathematics,13.581300578034682,346.0,Tier 2
+Appleton Area,Black,2018-19,ELA,16.66840277777778,288.0,Tier 2
+Appleton Area,Black,2018-19,Mathematics,12.848368055555557,288.0,Tier 2
+Appleton Area,Black,2021-22,ELA,15.53514563106796,206.0,Tier 2
+Appleton Area,Black,2021-22,Mathematics,16.020631067961165,206.0,Tier 2
+Appleton Area,Black,2022-23,ELA,14.967664670658685,167.0,Tier 2
+Appleton Area,Black,2022-23,Mathematics,11.378622754491017,167.0,Tier 2
+Appleton Area,Hispanic,2015-16,ELA,24.402963549920763,631.0,Tier 2
+Appleton Area,Hispanic,2015-16,Mathematics,25.198209191759116,631.0,Tier 2
+Appleton Area,Hispanic,2016-17,ELA,25.18219796215429,687.0,Tier 2
+Appleton Area,Hispanic,2016-17,Mathematics,24.308850072780203,687.0,Tier 2
+Appleton Area,Hispanic,2017-18,ELA,23.92914246196404,723.0,Tier 2
+Appleton Area,Hispanic,2017-18,Mathematics,23.096791147994473,723.0,Tier 2
+Appleton Area,Hispanic,2018-19,ELA,23.41186507936508,756.0,Tier 2
+Appleton Area,Hispanic,2018-19,Mathematics,24.604841269841273,756.0,Tier 2
+Appleton Area,Hispanic,2021-22,ELA,20.995114401076716,743.0,Tier 2
+Appleton Area,Hispanic,2021-22,Mathematics,17.629421265141314,743.0,Tier 2
+Appleton Area,Hispanic,2022-23,ELA,24.931253333333338,750.0,Tier 2
+Appleton Area,Hispanic,2022-23,Mathematics,22.800213333333332,750.0,Tier 2
+Appleton Area,White,2015-16,ELA,44.590404781879194,4768.0,Tier 2
+Appleton Area,White,2015-16,Mathematics,53.48084941275168,4768.0,Tier 2
+Appleton Area,White,2016-17,ELA,47.12354162208431,4673.0,Tier 2
+Appleton Area,White,2016-17,Mathematics,49.38947357158142,4673.0,Tier 2
+Appleton Area,White,2017-18,ELA,46.901968675222975,4597.0,Tier 2
+Appleton Area,White,2017-18,Mathematics,51.18750054383293,4597.0,Tier 2
+Appleton Area,White,2018-19,ELA,43.54555679039787,4499.0,Tier 2
+Appleton Area,White,2018-19,Mathematics,48.98898644143143,4499.0,Tier 2
+Appleton Area,White,2021-22,ELA,44.31434008897676,4046.0,Tier 2
+Appleton Area,White,2021-22,Mathematics,46.81250123578843,4046.0,Tier 2
+Appleton Area,White,2022-23,ELA,47.02063144654088,3975.0,Tier 2
+Appleton Area,White,2022-23,Mathematics,50.58882264150944,3975.0,Tier 2
+Beloit,Black,2015-16,ELA,9.337455716586152,621.0,Tier 1
+Beloit,Black,2015-16,Mathematics,7.567890499194847,621.0,Tier 1
+Beloit,Black,2016-17,ELA,12.143375394321767,634.0,Tier 1
+Beloit,Black,2016-17,Mathematics,7.8854889589905355,634.0,Tier 1
+Beloit,Black,2017-18,ELA,9.44049535603715,646.0,Tier 1
+Beloit,Black,2017-18,Mathematics,8.666950464396285,646.0,Tier 1
+Beloit,Black,2018-19,ELA,8.793208469055376,614.0,Tier 1
+Beloit,Black,2018-19,Mathematics,8.303029315960911,614.0,Tier 1
+Beloit,Black,2021-22,ELA,7.174478260869566,460.0,Tier 1
+Beloit,Black,2021-22,Mathematics,5.041326259946949,377.0,Tier 1
+Beloit,Black,2022-23,ELA,9.618076923076924,416.0,Tier 1
+Beloit,Black,2022-23,Mathematics,4.564855769230769,416.0,Tier 1
+Beloit,Hispanic,2015-16,ELA,20.558646694214875,968.0,Tier 1
+Beloit,Hispanic,2015-16,Mathematics,17.770723140495868,968.0,Tier 1
+Beloit,Hispanic,2016-17,ELA,20.530201058201058,945.0,Tier 1
+Beloit,Hispanic,2016-17,Mathematics,15.982613756613757,945.0,Tier 1
+Beloit,Hispanic,2017-18,ELA,15.857022653721682,927.0,Tier 1
+Beloit,Hispanic,2017-18,Mathematics,14.7770334412082,927.0,Tier 1
+Beloit,Hispanic,2018-19,ELA,15.55510729613734,932.0,Tier 1
+Beloit,Hispanic,2018-19,Mathematics,16.952210300429183,932.0,Tier 1
+Beloit,Hispanic,2021-22,ELA,11.245733882030178,729.0,Tier 1
+Beloit,Hispanic,2021-22,Mathematics,8.777064471879287,729.0,Tier 1
+Beloit,Hispanic,2022-23,ELA,11.92566091954023,696.0,Tier 1
+Beloit,Hispanic,2022-23,Mathematics,7.756810344827586,696.0,Tier 1
+Beloit,White,2015-16,ELA,33.04247563352827,1026.0,Tier 1
+Beloit,White,2015-16,Mathematics,30.01853801169591,1026.0,Tier 1
+Beloit,White,2016-17,ELA,33.92789940828402,1014.0,Tier 1
+Beloit,White,2016-17,Mathematics,29.09285996055227,1014.0,Tier 1
+Beloit,White,2017-18,ELA,30.4235167206041,927.0,Tier 1
+Beloit,White,2017-18,Mathematics,29.23382955771305,927.0,Tier 1
+Beloit,White,2018-19,ELA,28.10028441410694,879.0,Tier 1
+Beloit,White,2018-19,Mathematics,29.46456200227531,879.0,Tier 1
+Beloit,White,2021-22,ELA,19.673668639053254,676.0,Tier 1
+Beloit,White,2021-22,Mathematics,15.675902366863905,676.0,Tier 1
+Beloit,White,2022-23,ELA,20.988856655290103,586.0,Tier 1
+Beloit,White,2022-23,Mathematics,13.651996587030716,586.0,Tier 1
+Green Bay Area Public,Black,2015-16,ELA,11.550365497076022,684.0,Tier 1
+Green Bay Area Public,Black,2015-16,Mathematics,8.33187134502924,684.0,Tier 1
+Green Bay Area Public,Black,2016-17,ELA,12.016315086782376,749.0,Tier 1
+Green Bay Area Public,Black,2016-17,Mathematics,7.477009345794392,749.0,Tier 1
+Green Bay Area Public,Black,2017-18,ELA,10.258838071693448,809.0,Tier 1
+Green Bay Area Public,Black,2017-18,Mathematics,7.4185661310259565,809.0,Tier 1
+Green Bay Area Public,Black,2018-19,ELA,11.531899592944367,737.0,Tier 1
+Green Bay Area Public,Black,2018-19,Mathematics,12.07560379918589,737.0,Tier 1
+Green Bay Area Public,Black,2021-22,ELA,10.09422360248447,644.0,Tier 1
+Green Bay Area Public,Black,2021-22,Mathematics,9.93861801242236,644.0,Tier 1
+Green Bay Area Public,Black,2022-23,ELA,10.961627906976746,602.0,Tier 1
+Green Bay Area Public,Black,2022-23,Mathematics,12.72341414141414,495.0,Tier 1
+Green Bay Area Public,Hispanic,2015-16,ELA,16.084142614601017,2356.0,Tier 1
+Green Bay Area Public,Hispanic,2015-16,Mathematics,12.7768039049236,2356.0,Tier 1
+Green Bay Area Public,Hispanic,2016-17,ELA,15.521046887631366,2474.0,Tier 1
+Green Bay Area Public,Hispanic,2016-17,Mathematics,11.64250606305578,2474.0,Tier 1
+Green Bay Area Public,Hispanic,2017-18,ELA,15.844360963658637,2449.0,Tier 1
+Green Bay Area Public,Hispanic,2017-18,Mathematics,14.332298897509189,2449.0,Tier 1
+Green Bay Area Public,Hispanic,2018-19,ELA,15.380380456547856,2497.0,Tier 1
+Green Bay Area Public,Hispanic,2018-19,Mathematics,18.780700841009214,2497.0,Tier 1
+Green Bay Area Public,Hispanic,2021-22,ELA,12.463397052966947,2511.0,Tier 1
+Green Bay Area Public,Hispanic,2021-22,Mathematics,13.938359219434489,2511.0,Tier 1
+Green Bay Area Public,Hispanic,2022-23,ELA,11.462135007849295,2548.0,Tier 1
+Green Bay Area Public,Hispanic,2022-23,Mathematics,14.087492150706437,2548.0,Tier 1
+Green Bay Area Public,White,2015-16,ELA,45.824057729007635,4192.0,Tier 1
+Green Bay Area Public,White,2015-16,Mathematics,43.6759088740458,4192.0,Tier 1
+Green Bay Area Public,White,2016-17,ELA,46.24214004914005,4070.0,Tier 1
+Green Bay Area Public,White,2016-17,Mathematics,44.911663390663385,4070.0,Tier 1
+Green Bay Area Public,White,2017-18,ELA,45.92372686995049,3837.0,Tier 1
+Green Bay Area Public,White,2017-18,Mathematics,44.61692989314569,3837.0,Tier 1
+Green Bay Area Public,White,2018-19,ELA,42.98049826805222,3753.0,Tier 1
+Green Bay Area Public,White,2018-19,Mathematics,48.200271782573935,3753.0,Tier 1
+Green Bay Area Public,White,2021-22,ELA,35.13619987269255,3142.0,Tier 1
+Green Bay Area Public,White,2021-22,Mathematics,41.47051559516232,3142.0,Tier 1
+Green Bay Area Public,White,2022-23,ELA,37.37547011417059,2978.0,Tier 1
+Green Bay Area Public,White,2022-23,Mathematics,45.53138683680322,2978.0,Tier 1
+Janesville,Black,2015-16,ELA,23.267029702970294,202.0,Tier 2
+Janesville,Black,2015-16,Mathematics,16.832475247524755,202.0,Tier 2
+Janesville,Black,2016-17,ELA,24.644976303317538,211.0,Tier 2
+Janesville,Black,2016-17,Mathematics,18.00824644549763,211.0,Tier 2
+Janesville,Black,2017-18,ELA,25.44705357142857,224.0,Tier 2
+Janesville,Black,2017-18,Mathematics,19.198169642857142,224.0,Tier 2
+Janesville,Black,2018-19,ELA,20.833333333333332,216.0,Tier 2
+Janesville,Black,2018-19,Mathematics,14.351574074074074,216.0,Tier 2
+Janesville,Black,2021-22,ELA,15.427287234042552,188.0,Tier 2
+Janesville,Black,2021-22,Mathematics,13.831382978723402,188.0,Tier 2
+Janesville,Black,2022-23,ELA,14.814567901234568,162.0,Tier 2
+Janesville,Black,2022-23,Mathematics,13.492857142857142,126.0,Tier 2
+Janesville,Hispanic,2015-16,ELA,33.52599229287091,519.0,Tier 2
+Janesville,Hispanic,2015-16,Mathematics,26.39670520231214,519.0,Tier 2
+Janesville,Hispanic,2016-17,ELA,38.04119565217392,552.0,Tier 2
+Janesville,Hispanic,2016-17,Mathematics,28.076304347826085,552.0,Tier 2
+Janesville,Hispanic,2017-18,ELA,35.41491743119266,545.0,Tier 2
+Janesville,Hispanic,2017-18,Mathematics,29.358587155963303,545.0,Tier 2
+Janesville,Hispanic,2018-19,ELA,32.056921675774134,549.0,Tier 2
+Janesville,Hispanic,2018-19,Mathematics,29.143479052823313,549.0,Tier 2
+Janesville,Hispanic,2021-22,ELA,29.965053191489364,564.0,Tier 2
+Janesville,Hispanic,2021-22,Mathematics,27.484024822695034,564.0,Tier 2
+Janesville,Hispanic,2022-23,ELA,29.26025817555938,581.0,Tier 2
+Janesville,Hispanic,2022-23,Mathematics,25.81753872633391,581.0,Tier 2
+Janesville,White,2015-16,ELA,49.44832829808661,2979.0,Tier 2
+Janesville,White,2015-16,Mathematics,43.90755287009063,2979.0,Tier 2
+Janesville,White,2016-17,ELA,53.84657815126051,2975.0,Tier 2
+Janesville,White,2016-17,Mathematics,47.092302521008406,2975.0,Tier 2
+Janesville,White,2017-18,ELA,48.901445008460236,2955.0,Tier 2
+Janesville,White,2017-18,Mathematics,45.78668358714044,2955.0,Tier 2
+Janesville,White,2018-19,ELA,45.46582543978349,2956.0,Tier 2
+Janesville,White,2018-19,Mathematics,41.87994587280109,2956.0,Tier 2
+Janesville,White,2021-22,ELA,42.796353790613715,2493.0,Tier 2
+Janesville,White,2021-22,Mathematics,41.793485760128355,2493.0,Tier 2
+Janesville,White,2022-23,ELA,42.55120954692556,2472.0,Tier 2
+Janesville,White,2022-23,Mathematics,43.084894822006476,2472.0,Tier 2
+Kenosha,Black,2015-16,ELA,17.552584541062807,1242.0,Tier 1
+Kenosha,Black,2015-16,Mathematics,13.609565217391305,1242.0,Tier 1
+Kenosha,Black,2016-17,ELA,19.416921862667717,1267.0,Tier 1
+Kenosha,Black,2016-17,Mathematics,13.17986582478295,1267.0,Tier 1
+Kenosha,Black,2017-18,ELA,17.479393455706308,1253.0,Tier 1
+Kenosha,Black,2017-18,Mathematics,13.967629688747007,1253.0,Tier 1
+Kenosha,Black,2018-19,ELA,16.763831544178366,1211.0,Tier 1
+Kenosha,Black,2018-19,Mathematics,13.29619322873658,1211.0,Tier 1
+Kenosha,Black,2021-22,ELA,10.38793203883495,1030.0,Tier 1
+Kenosha,Black,2021-22,Mathematics,8.254106796116504,1030.0,Tier 1
+Kenosha,Black,2022-23,ELA,12.125070140280561,998.0,Tier 1
+Kenosha,Black,2022-23,Mathematics,9.615661322645291,998.0,Tier 1
+Kenosha,Hispanic,2015-16,ELA,29.12388733519776,2503.0,Tier 1
+Kenosha,Hispanic,2015-16,Mathematics,25.326927686775868,2503.0,Tier 1
+Kenosha,Hispanic,2016-17,ELA,31.333372534142644,2636.0,Tier 1
+Kenosha,Hispanic,2016-17,Mathematics,23.63320561456753,2636.0,Tier 1
+Kenosha,Hispanic,2017-18,ELA,29.225354065192956,2669.0,Tier 1
+Kenosha,Hispanic,2017-18,Mathematics,27.163877856875235,2669.0,Tier 1
+Kenosha,Hispanic,2018-19,ELA,29.58373926036608,2677.0,Tier 1
+Kenosha,Hispanic,2018-19,Mathematics,26.85845349271573,2677.0,Tier 1
+Kenosha,Hispanic,2021-22,ELA,20.766820330969264,2538.0,Tier 1
+Kenosha,Hispanic,2021-22,Mathematics,19.34455082742317,2538.0,Tier 1
+Kenosha,Hispanic,2022-23,ELA,24.638916357643183,2427.0,Tier 1
+Kenosha,Hispanic,2022-23,Mathematics,22.576934487021013,2427.0,Tier 1
+Kenosha,White,2015-16,ELA,55.050437612208256,4456.0,Tier 1
+Kenosha,White,2015-16,Mathematics,50.586149012567326,4456.0,Tier 1
+Kenosha,White,2016-17,ELA,56.451299539170506,4340.0,Tier 1
+Kenosha,White,2016-17,Mathematics,51.31382718894008,4340.0,Tier 1
+Kenosha,White,2017-18,ELA,52.27196366177498,4293.0,Tier 1
+Kenosha,White,2017-18,Mathematics,51.758839972047525,4293.0,Tier 1
+Kenosha,White,2018-19,ELA,49.65712165450121,4110.0,Tier 1
+Kenosha,White,2018-19,Mathematics,50.41195377128954,4110.0,Tier 1
+Kenosha,White,2021-22,ELA,41.642598039215684,3672.0,Tier 1
+Kenosha,White,2021-22,Mathematics,41.42218409586057,3672.0,Tier 1
+Kenosha,White,2022-23,ELA,46.41471145804294,3587.0,Tier 1
+Kenosha,White,2022-23,Mathematics,45.55545302481181,3587.0,Tier 1
+Madison Metropolitan,Black,2015-16,ELA,9.033708399366086,1893.0,MMSD
+Madison Metropolitan,Black,2015-16,Mathematics,8.294696249339673,1893.0,MMSD
+Madison Metropolitan,Black,2016-17,ELA,10.463462157809984,1863.0,MMSD
+Madison Metropolitan,Black,2016-17,Mathematics,8.749114331723028,1863.0,MMSD
+Madison Metropolitan,Black,2017-18,ELA,9.841398936170213,1880.0,MMSD
+Madison Metropolitan,Black,2017-18,Mathematics,9.786813829787233,1880.0,MMSD
+Madison Metropolitan,Black,2018-19,ELA,10.039665271966527,1912.0,MMSD
+Madison Metropolitan,Black,2018-19,Mathematics,10.406579497907948,1912.0,MMSD
+Madison Metropolitan,Black,2021-22,ELA,7.9435178082191795,1825.0,MMSD
+Madison Metropolitan,Black,2021-22,Mathematics,5.754701369863013,1825.0,MMSD
+Madison Metropolitan,Black,2022-23,ELA,8.022434065934066,1820.0,MMSD
+Madison Metropolitan,Black,2022-23,Mathematics,5.659456043956045,1820.0,MMSD
+Madison Metropolitan,Hispanic,2015-16,ELA,16.52428082191781,2336.0,MMSD
+Madison Metropolitan,Hispanic,2015-16,Mathematics,15.83980308219178,2336.0,MMSD
+Madison Metropolitan,Hispanic,2016-17,ELA,17.45015643802647,2493.0,MMSD
+Madison Metropolitan,Hispanic,2016-17,Mathematics,16.44837545126354,2493.0,MMSD
+Madison Metropolitan,Hispanic,2017-18,ELA,16.766262505002,2499.0,MMSD
+Madison Metropolitan,Hispanic,2017-18,Mathematics,19.408835534213686,2499.0,MMSD
+Madison Metropolitan,Hispanic,2018-19,ELA,16.087191055315813,2549.0,MMSD
+Madison Metropolitan,Hispanic,2018-19,Mathematics,19.691082777559824,2549.0,MMSD
+Madison Metropolitan,Hispanic,2021-22,ELA,14.767913322632424,2492.0,MMSD
+Madison Metropolitan,Hispanic,2021-22,Mathematics,13.847536115569822,2492.0,MMSD
+Madison Metropolitan,Hispanic,2022-23,ELA,16.228113590263693,2465.0,MMSD
+Madison Metropolitan,Hispanic,2022-23,Mathematics,14.846945233265721,2465.0,MMSD
+Madison Metropolitan,White,2015-16,ELA,54.22926505762122,4599.0,MMSD
+Madison Metropolitan,White,2015-16,Mathematics,55.404046531854746,4599.0,MMSD
+Madison Metropolitan,White,2016-17,ELA,57.532865599649206,4561.0,MMSD
+Madison Metropolitan,White,2016-17,Mathematics,56.39287436965578,4561.0,MMSD
+Madison Metropolitan,White,2017-18,ELA,58.98209989142236,4605.0,MMSD
+Madison Metropolitan,White,2017-18,Mathematics,59.76104451682953,4605.0,MMSD
+Madison Metropolitan,White,2018-19,ELA,57.16272178770949,4475.0,MMSD
+Madison Metropolitan,White,2018-19,Mathematics,60.5790972067039,4475.0,MMSD
+Madison Metropolitan,White,2021-22,ELA,61.68668610301263,4116.0,MMSD
+Madison Metropolitan,White,2021-22,Mathematics,58.91758503401361,4116.0,MMSD
+Madison Metropolitan,White,2022-23,ELA,64.28276926817408,4113.0,MMSD
+Madison Metropolitan,White,2022-23,Mathematics,60.735575006078285,4113.0,MMSD
+Middleton-Cross Plains Area,Black,2017-18,ELA,15.0,20.0,Madison region
+Middleton-Cross Plains Area,Black,2017-18,Mathematics,30.0,20.0,Madison region
+Middleton-Cross Plains Area,Black,2021-22,ELA,23.255581395348838,43.0,Madison region
+Middleton-Cross Plains Area,Black,2021-22,Mathematics,18.601395348837208,43.0,Madison region
+Middleton-Cross Plains Area,Black,2022-23,ELA,18.515,54.0,Madison region
+Middleton-Cross Plains Area,Black,2022-23,Mathematics,22.215,54.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2015-16,ELA,32.65534693877551,245.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2015-16,Mathematics,39.59208163265306,245.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2016-17,ELA,34.31690036900369,271.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2016-17,Mathematics,38.3750184501845,271.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2017-18,ELA,35.21176056338028,284.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2017-18,Mathematics,38.38091549295774,284.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2018-19,ELA,30.07130434782609,276.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2018-19,Mathematics,35.505905797101455,276.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2021-22,ELA,31.008048780487805,287.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2021-22,Mathematics,32.05742160278746,287.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2022-23,ELA,30.47993150684931,292.0,Madison region
+Middleton-Cross Plains Area,Hispanic,2022-23,Mathematics,31.504828767123286,292.0,Madison region
+Middleton-Cross Plains Area,White,2015-16,ELA,65.12518820861678,2205.0,Madison region
+Middleton-Cross Plains Area,White,2015-16,Mathematics,76.77717913832201,2205.0,Madison region
+Middleton-Cross Plains Area,White,2016-17,ELA,66.53284300494826,2223.0,Madison region
+Middleton-Cross Plains Area,White,2016-17,Mathematics,75.03440845704003,2223.0,Madison region
+Middleton-Cross Plains Area,White,2017-18,ELA,65.77345479704796,2168.0,Madison region
+Middleton-Cross Plains Area,White,2017-18,Mathematics,73.1552536900369,2168.0,Madison region
+Middleton-Cross Plains Area,White,2018-19,ELA,63.183105002253264,2219.0,Madison region
+Middleton-Cross Plains Area,White,2018-19,Mathematics,69.93929247408742,2219.0,Madison region
+Middleton-Cross Plains Area,White,2021-22,ELA,62.06688921859544,2022.0,Madison region
+Middleton-Cross Plains Area,White,2021-22,Mathematics,64.1435756676558,2022.0,Madison region
+Middleton-Cross Plains Area,White,2022-23,ELA,62.918971399899654,1993.0,Madison region
+Middleton-Cross Plains Area,White,2022-23,Mathematics,65.42630707476167,1993.0,Madison region
+Milwaukee,Black,2015-16,ELA,10.57495661679306,14637.0,Tier 1
+Milwaukee,Black,2015-16,Mathematics,7.11701168272187,14637.0,Tier 1
+Milwaukee,Black,2016-17,ELA,11.794709015328658,15396.0,Tier 1
+Milwaukee,Black,2016-17,Mathematics,8.425807352559104,15396.0,Tier 1
+Milwaukee,Black,2017-18,ELA,10.539038860103625,15440.0,Tier 1
+Milwaukee,Black,2017-18,Mathematics,9.081400259067358,15440.0,Tier 1
+Milwaukee,Black,2018-19,ELA,10.557001890112756,15343.0,Tier 1
+Milwaukee,Black,2018-19,Mathematics,9.362382845597342,15343.0,Tier 1
+Milwaukee,Black,2021-22,ELA,6.954943980750433,13299.0,Tier 1
+Milwaukee,Black,2021-22,Mathematics,4.118754793593503,13299.0,Tier 1
+Milwaukee,Black,2022-23,ELA,7.715311977049965,12549.0,Tier 1
+Milwaukee,Black,2022-23,Mathematics,5.083588333731771,12549.0,Tier 1
+Milwaukee,Hispanic,2015-16,ELA,21.450583692073945,7898.0,Tier 1
+Milwaukee,Hispanic,2015-16,Mathematics,16.243202076475058,7898.0,Tier 1
+Milwaukee,Hispanic,2016-17,ELA,21.60369719581177,8309.0,Tier 1
+Milwaukee,Hispanic,2016-17,Mathematics,16.46310867733783,8309.0,Tier 1
+Milwaukee,Hispanic,2017-18,ELA,20.02034976721977,8377.0,Tier 1
+Milwaukee,Hispanic,2017-18,Mathematics,16.85668497075325,8377.0,Tier 1
+Milwaukee,Hispanic,2018-19,ELA,19.199545401425734,8557.0,Tier 1
+Milwaukee,Hispanic,2018-19,Mathematics,16.17416968563749,8557.0,Tier 1
+Milwaukee,Hispanic,2021-22,ELA,13.130256180350965,7807.0,Tier 1
+Milwaukee,Hispanic,2021-22,Mathematics,9.287228128602537,7807.0,Tier 1
+Milwaukee,Hispanic,2022-23,ELA,15.64467497080576,7707.0,Tier 1
+Milwaukee,Hispanic,2022-23,Mathematics,10.612545737641105,7707.0,Tier 1
+Milwaukee,White,2015-16,ELA,44.590237121831564,3669.0,Tier 1
+Milwaukee,White,2015-16,Mathematics,36.410517852275824,3669.0,Tier 1
+Milwaukee,White,2016-17,ELA,45.88346055254914,3511.0,Tier 1
+Milwaukee,White,2016-17,Mathematics,37.34091426943891,3511.0,Tier 1
+Milwaukee,White,2017-18,ELA,45.754440199823684,3403.0,Tier 1
+Milwaukee,White,2017-18,Mathematics,38.55406699970614,3403.0,Tier 1
+Milwaukee,White,2018-19,ELA,45.34405298416565,3284.0,Tier 1
+Milwaukee,White,2018-19,Mathematics,39.523842874543234,3284.0,Tier 1
+Milwaukee,White,2021-22,ELA,40.472193858675546,2703.0,Tier 1
+Milwaukee,White,2021-22,Mathematics,30.88992230854606,2703.0,Tier 1
+Milwaukee,White,2022-23,ELA,47.50339192968438,2503.0,Tier 1
+Milwaukee,White,2022-23,Mathematics,35.71831801837795,2503.0,Tier 1
+Racine Unified,Black,2015-16,ELA,7.442094627895514,2029.0,Tier 1
+Racine Unified,Black,2015-16,Mathematics,6.703001478560868,2029.0,Tier 1
+Racine Unified,Black,2016-17,ELA,8.226773067331672,2005.0,Tier 1
+Racine Unified,Black,2016-17,Mathematics,7.928773067331671,2005.0,Tier 1
+Racine Unified,Black,2017-18,ELA,6.872019781363873,1921.0,Tier 1
+Racine Unified,Black,2017-18,Mathematics,7.2876262363352415,1921.0,Tier 1
+Racine Unified,Black,2018-19,ELA,5.671712587790384,1851.0,Tier 1
+Racine Unified,Black,2018-19,Mathematics,5.291993517017829,1851.0,Tier 1
+Racine Unified,Black,2021-22,ELA,6.18492594977463,1553.0,Tier 1
+Racine Unified,Black,2021-22,Mathematics,3.0271410173857047,1553.0,Tier 1
+Racine Unified,Black,2022-23,ELA,5.932351724137931,1450.0,Tier 1
+Racine Unified,Black,2022-23,Mathematics,3.586503448275862,1450.0,Tier 1
+Racine Unified,Hispanic,2015-16,ELA,14.209139733840304,2104.0,Tier 1
+Racine Unified,Hispanic,2015-16,Mathematics,12.548379277566541,2104.0,Tier 1
+Racine Unified,Hispanic,2016-17,ELA,16.524864232209737,2136.0,Tier 1
+Racine Unified,Hispanic,2016-17,Mathematics,14.605725655430712,2136.0,Tier 1
+Racine Unified,Hispanic,2017-18,ELA,15.411774500475737,2102.0,Tier 1
+Racine Unified,Hispanic,2017-18,Mathematics,15.364695528068507,2102.0,Tier 1
+Racine Unified,Hispanic,2018-19,ELA,15.108658823529412,2125.0,Tier 1
+Racine Unified,Hispanic,2018-19,Mathematics,17.506009411764705,2125.0,Tier 1
+Racine Unified,Hispanic,2021-22,ELA,11.652041116005876,2043.0,Tier 1
+Racine Unified,Hispanic,2021-22,Mathematics,9.29907488986784,2043.0,Tier 1
+Racine Unified,Hispanic,2022-23,ELA,14.148317938745747,2057.0,Tier 1
+Racine Unified,Hispanic,2022-23,Mathematics,10.356217792902285,2057.0,Tier 1
+Racine Unified,White,2015-16,ELA,31.58602500822639,3039.0,Tier 1
+Racine Unified,White,2015-16,Mathematics,30.177936821322803,3039.0,Tier 1
+Racine Unified,White,2016-17,ELA,35.49080053368913,2998.0,Tier 1
+Racine Unified,White,2016-17,Mathematics,34.1550967311541,2998.0,Tier 1
+Racine Unified,White,2017-18,ELA,34.48085956006768,2955.0,Tier 1
+Racine Unified,White,2017-18,Mathematics,35.601370558375635,2955.0,Tier 1
+Racine Unified,White,2018-19,ELA,32.428995543366476,2917.0,Tier 1
+Racine Unified,White,2018-19,Mathematics,33.18538567020912,2917.0,Tier 1
+Racine Unified,White,2021-22,ELA,25.806691887347622,2379.0,Tier 1
+Racine Unified,White,2021-22,Mathematics,22.109365279529214,2379.0,Tier 1
+Racine Unified,White,2022-23,ELA,29.291360973411447,2219.0,Tier 1
+Racine Unified,White,2022-23,Mathematics,25.327972059486253,2219.0,Tier 1
+Sun Prairie Area,Black,2015-16,ELA,12.040501672240802,299.0,Tier 2
+Sun Prairie Area,Black,2015-16,Mathematics,11.371036789297658,299.0,Tier 2
+Sun Prairie Area,Black,2016-17,ELA,10.593239875389406,321.0,Tier 2
+Sun Prairie Area,Black,2016-17,Mathematics,10.90588785046729,321.0,Tier 2
+Sun Prairie Area,Black,2017-18,ELA,9.973076923076924,351.0,Tier 2
+Sun Prairie Area,Black,2017-18,Mathematics,11.679914529914528,351.0,Tier 2
+Sun Prairie Area,Black,2018-19,ELA,12.426694915254238,354.0,Tier 2
+Sun Prairie Area,Black,2018-19,Mathematics,12.42813559322034,354.0,Tier 2
+Sun Prairie Area,Black,2021-22,ELA,10.476888888888888,315.0,Tier 2
+Sun Prairie Area,Black,2021-22,Mathematics,11.428412698412698,315.0,Tier 2
+Sun Prairie Area,Black,2022-23,ELA,13.011635687732342,269.0,Tier 2
+Sun Prairie Area,Black,2022-23,Mathematics,13.00732342007435,269.0,Tier 2
+Sun Prairie Area,Hispanic,2015-16,ELA,32.47280442804428,271.0,Tier 2
+Sun Prairie Area,Hispanic,2015-16,Mathematics,30.99516605166052,271.0,Tier 2
+Sun Prairie Area,Hispanic,2016-17,ELA,28.00128888888889,225.0,Tier 2
+Sun Prairie Area,Hispanic,2016-17,Mathematics,29.335866666666664,225.0,Tier 2
+Sun Prairie Area,Hispanic,2017-18,ELA,27.4965,280.0,Tier 2
+Sun Prairie Area,Hispanic,2017-18,Mathematics,28.928821428571432,280.0,Tier 2
+Sun Prairie Area,Hispanic,2018-19,ELA,27.369087719298246,285.0,Tier 2
+Sun Prairie Area,Hispanic,2018-19,Mathematics,25.96333333333333,285.0,Tier 2
+Sun Prairie Area,Hispanic,2021-22,ELA,17.74955631399317,293.0,Tier 2
+Sun Prairie Area,Hispanic,2021-22,Mathematics,15.362047781569965,293.0,Tier 2
+Sun Prairie Area,Hispanic,2022-23,ELA,20.872959501557634,321.0,Tier 2
+Sun Prairie Area,Hispanic,2022-23,Mathematics,17.756417445482867,321.0,Tier 2
+Sun Prairie Area,White,2015-16,ELA,54.13351239669422,2178.0,Tier 2
+Sun Prairie Area,White,2015-16,Mathematics,58.31234618916437,2178.0,Tier 2
+Sun Prairie Area,White,2016-17,ELA,52.31074275362319,2208.0,Tier 2
+Sun Prairie Area,White,2016-17,Mathematics,53.48487771739131,2208.0,Tier 2
+Sun Prairie Area,White,2017-18,ELA,51.71016216216217,2220.0,Tier 2
+Sun Prairie Area,White,2017-18,Mathematics,57.61385585585586,2220.0,Tier 2
+Sun Prairie Area,White,2018-19,ELA,49.653470132238944,2193.0,Tier 2
+Sun Prairie Area,White,2018-19,Mathematics,55.674254445964436,2193.0,Tier 2
+Sun Prairie Area,White,2021-22,ELA,43.84358358358358,1998.0,Tier 2
+Sun Prairie Area,White,2021-22,Mathematics,48.347752752752754,1998.0,Tier 2
+Sun Prairie Area,White,2022-23,ELA,49.13558883248731,1970.0,Tier 2
+Sun Prairie Area,White,2022-23,Mathematics,51.01740101522842,1970.0,Tier 2
+Verona Area,Black,2015-16,ELA,13.570785714285714,140.0,Madison region
+Verona Area,Black,2015-16,Mathematics,13.572785714285716,140.0,Madison region
+Verona Area,Black,2016-17,ELA,16.291292134831462,178.0,Madison region
+Verona Area,Black,2016-17,Mathematics,14.603258426966292,178.0,Madison region
+Verona Area,Black,2017-18,ELA,10.61441340782123,179.0,Madison region
+Verona Area,Black,2017-18,Mathematics,16.20078212290503,179.0,Madison region
+Verona Area,Black,2018-19,ELA,14.815238095238096,189.0,Madison region
+Verona Area,Black,2018-19,Mathematics,13.757037037037037,189.0,Madison region
+Verona Area,Black,2021-22,ELA,15.267786259541984,131.0,Madison region
+Verona Area,Black,2021-22,Mathematics,13.131414141414139,99.0,Madison region
+Verona Area,Black,2022-23,ELA,15.151363636363635,132.0,Madison region
+Verona Area,Black,2022-23,Mathematics,11.3625,132.0,Madison region
+Verona Area,Hispanic,2015-16,ELA,16.775275938189846,453.0,Madison region
+Verona Area,Hispanic,2015-16,Mathematics,16.117770419426048,453.0,Madison region
+Verona Area,Hispanic,2016-17,ELA,19.156080178173717,449.0,Madison region
+Verona Area,Hispanic,2016-17,Mathematics,14.255300668151445,449.0,Madison region
+Verona Area,Hispanic,2017-18,ELA,14.908807157057652,503.0,Madison region
+Verona Area,Hispanic,2017-18,Mathematics,13.917395626242543,503.0,Madison region
+Verona Area,Hispanic,2018-19,ELA,15.36874251497006,501.0,Madison region
+Verona Area,Hispanic,2018-19,Mathematics,14.573313373253491,501.0,Madison region
+Verona Area,Hispanic,2021-22,ELA,17.20046,500.0,Madison region
+Verona Area,Hispanic,2021-22,Mathematics,19.60056,500.0,Madison region
+Verona Area,Hispanic,2022-23,ELA,22.288391472868216,516.0,Madison region
+Verona Area,Hispanic,2022-23,Mathematics,17.830251937984496,516.0,Madison region
+Verona Area,White,2015-16,ELA,58.1663967611336,1482.0,Madison region
+Verona Area,White,2015-16,Mathematics,56.948211875843455,1482.0,Madison region
+Verona Area,White,2016-17,ELA,58.18047811447811,1485.0,Madison region
+Verona Area,White,2016-17,Mathematics,55.69053872053872,1485.0,Madison region
+Verona Area,White,2017-18,ELA,56.104609053497946,1458.0,Madison region
+Verona Area,White,2017-18,Mathematics,51.91995884773663,1458.0,Madison region
+Verona Area,White,2018-19,ELA,56.414024556616646,1466.0,Madison region
+Verona Area,White,2018-19,Mathematics,53.34107776261938,1466.0,Madison region
+Verona Area,White,2021-22,ELA,55.62665569453589,1519.0,Madison region
+Verona Area,White,2021-22,Mathematics,53.6524555628703,1519.0,Madison region
+Verona Area,White,2022-23,ELA,62.26451132686084,1545.0,Madison region
+Verona Area,White,2022-23,Mathematics,59.74130097087377,1545.0,Madison region
+Waukesha,Black,2015-16,ELA,13.55271062271062,273.0,Tier 2
+Waukesha,Black,2015-16,Mathematics,12.08864468864469,273.0,Tier 2
+Waukesha,Black,2016-17,ELA,17.054782608695653,299.0,Tier 2
+Waukesha,Black,2016-17,Mathematics,13.712006688963212,299.0,Tier 2
+Waukesha,Black,2017-18,ELA,16.27734219269103,301.0,Tier 2
+Waukesha,Black,2017-18,Mathematics,15.944285714285712,301.0,Tier 2
+Waukesha,Black,2018-19,ELA,21.23438356164384,292.0,Tier 2
+Waukesha,Black,2018-19,Mathematics,15.409383561643835,292.0,Tier 2
+Waukesha,Black,2021-22,ELA,13.566240310077518,258.0,Tier 2
+Waukesha,Black,2021-22,Mathematics,13.56484496124031,258.0,Tier 2
+Waukesha,Black,2022-23,ELA,18.419624060150376,266.0,Tier 2
+Waukesha,Black,2022-23,Mathematics,15.037518796992483,266.0,Tier 2
+Waukesha,Hispanic,2015-16,ELA,24.978684429641966,1201.0,Tier 2
+Waukesha,Hispanic,2015-16,Mathematics,22.981765195670278,1201.0,Tier 2
+Waukesha,Hispanic,2016-17,ELA,25.184753036437247,1235.0,Tier 2
+Waukesha,Hispanic,2016-17,Mathematics,23.48438866396761,1235.0,Tier 2
+Waukesha,Hispanic,2017-18,ELA,24.85571892770105,1231.0,Tier 2
+Waukesha,Hispanic,2017-18,Mathematics,24.127351746547525,1231.0,Tier 2
+Waukesha,Hispanic,2018-19,ELA,26.01682113821138,1230.0,Tier 2
+Waukesha,Hispanic,2018-19,Mathematics,28.048414634146344,1230.0,Tier 2
+Waukesha,Hispanic,2021-22,ELA,25.12834179357022,1182.0,Tier 2
+Waukesha,Hispanic,2021-22,Mathematics,24.787233502538076,1182.0,Tier 2
+Waukesha,Hispanic,2022-23,ELA,26.526016949152538,1180.0,Tier 2
+Waukesha,Hispanic,2022-23,Mathematics,26.69658474576271,1180.0,Tier 2
+Waukesha,White,2015-16,ELA,48.55284505398308,3427.0,Tier 2
+Waukesha,White,2015-16,Mathematics,52.5522877152028,3427.0,Tier 2
+Waukesha,White,2016-17,ELA,50.571251504211794,3324.0,Tier 2
+Waukesha,White,2016-17,Mathematics,53.401134175691936,3324.0,Tier 2
+Waukesha,White,2017-18,ELA,48.37344806201551,3225.0,Tier 2
+Waukesha,White,2017-18,Mathematics,53.6109488372093,3225.0,Tier 2
+Waukesha,White,2018-19,ELA,47.64365822378968,3119.0,Tier 2
+Waukesha,White,2018-19,Mathematics,54.25266110932991,3119.0,Tier 2
+Waukesha,White,2021-22,ELA,45.0632545201669,2876.0,Tier 2
+Waukesha,White,2021-22,Mathematics,48.85037204450625,2876.0,Tier 2
+Waukesha,White,2022-23,ELA,49.58931404072884,2799.0,Tier 2
+Waukesha,White,2022-23,Mathematics,52.233186852447304,2799.0,Tier 2
+West Allis-West Milwaukee,Black,2015-16,ELA,20.10027989821883,393.0,Tier 2
+West Allis-West Milwaukee,Black,2015-16,Mathematics,13.740890585241727,393.0,Tier 2
+West Allis-West Milwaukee,Black,2016-17,ELA,26.89404699738903,383.0,Tier 2
+West Allis-West Milwaukee,Black,2016-17,Mathematics,14.881227154046998,383.0,Tier 2
+West Allis-West Milwaukee,Black,2017-18,ELA,24.794986225895318,363.0,Tier 2
+West Allis-West Milwaukee,Black,2017-18,Mathematics,14.601652892561983,363.0,Tier 2
+West Allis-West Milwaukee,Black,2018-19,ELA,22.664050991501416,353.0,Tier 2
+West Allis-West Milwaukee,Black,2018-19,Mathematics,16.99750708215298,353.0,Tier 2
+West Allis-West Milwaukee,Black,2021-22,ELA,15.215962732919255,322.0,Tier 2
+West Allis-West Milwaukee,Black,2021-22,Mathematics,6.521304347826088,322.0,Tier 2
+West Allis-West Milwaukee,Black,2022-23,ELA,13.747285223367697,291.0,Tier 2
+West Allis-West Milwaukee,Black,2022-23,Mathematics,8.246735395189004,291.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2015-16,ELA,31.237082324455205,826.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2015-16,Mathematics,27.844866828087167,826.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2016-17,ELA,31.771004366812225,916.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2016-17,Mathematics,26.091310043668123,916.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2017-18,ELA,30.985882990249188,923.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2017-18,Mathematics,29.250877573131092,923.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2018-19,ELA,30.17217484008529,938.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2018-19,Mathematics,26.547452025586352,938.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2021-22,ELA,19.32091334894614,854.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2021-22,Mathematics,14.869859484777518,854.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2022-23,ELA,20.900291616038885,823.0,Tier 2
+West Allis-West Milwaukee,Hispanic,2022-23,Mathematics,13.242928311057106,823.0,Tier 2
+West Allis-West Milwaukee,White,2015-16,ELA,46.15323471400394,2028.0,Tier 2
+West Allis-West Milwaukee,White,2015-16,Mathematics,43.194151873767254,2028.0,Tier 2
+West Allis-West Milwaukee,White,2016-17,ELA,51.914943123061015,1934.0,Tier 2
+West Allis-West Milwaukee,White,2016-17,Mathematics,46.279632885211996,1934.0,Tier 2
+West Allis-West Milwaukee,White,2017-18,ELA,48.92084946236558,1860.0,Tier 2
+West Allis-West Milwaukee,White,2017-18,Mathematics,46.074747311827956,1860.0,Tier 2
+West Allis-West Milwaukee,White,2018-19,ELA,50.351477139507615,1706.0,Tier 2
+West Allis-West Milwaukee,White,2018-19,Mathematics,46.839109026963655,1706.0,Tier 2
+West Allis-West Milwaukee,White,2021-22,ELA,36.30378497790869,1358.0,Tier 2
+West Allis-West Milwaukee,White,2021-22,Mathematics,29.527673048600885,1358.0,Tier 2
+West Allis-West Milwaukee,White,2022-23,ELA,37.167569944044764,1251.0,Tier 2
+West Allis-West Milwaukee,White,2022-23,Mathematics,31.814324540367707,1251.0,Tier 2

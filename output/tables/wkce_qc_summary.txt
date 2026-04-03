@@ -1,0 +1,27 @@
+WKCE Scale Score Summary — QC Report
+============================================================
+
+ERA NOTE: WKCE era is NON-BRIDGED with Forward Exam era.
+Do not trend WKCE scale scores with Forward Exam proficiency rates.
+
+RACE CATEGORY NOTE: Pre-2010-11 uses 5 categories (Asian/PI combined).
+Post-2010-11 uses 7+ categories. Flag pre_race_split==True for caution.
+
+Coverage by year:
+   year  n_rows  n_suppressed  pct_suppressed  pre_race_split
+2006-07   73100         65612            89.8            True
+2007-08   73500         73500           100.0            True
+2008-09   73750         66008            89.5            True
+2009-10   73725         65820            89.3            True
+2010-11   73725         65397            88.7           False
+2011-12   73675         65150            88.4           False
+2012-13   73825         65190            88.3           False
+2013-14   64375         57366            89.1           False
+
+Column definitions:
+  mean_ss    = Mean WKCE scale score
+  sd_ss      = Standard deviation of scale score
+  p10/p25/median_ss/p75/p90 = Scale score percentiles
+  n_tested   = Number of students tested
+  suppressed = True if n_tested < 10 or missing
+  pre_race_split = True if year < 2010-11 (Asian/PI not yet split)
