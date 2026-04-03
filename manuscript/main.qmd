@@ -56,7 +56,7 @@ abstract: |
   while the majority of the racial disparity would remain unaffected by student
   reassignment alone.
 
-keywords: [racial achievement gaps, within-between decomposition, Wisconsin, MMSD, school boundaries, Forward Exam]
+keywords: [racial achievement gaps, within-between decomposition, Wisconsin, MMSD, school boundaries, Forward Exam, WKCE]
 ---
 
 ```{python}
@@ -471,6 +471,18 @@ the gap — instructional quality, early intervention, teacher distribution,
 and the school poverty concentration that underlies the gap — would need
 to be central to any comprehensive equity strategy.
 
+Finally, a supplemental analysis using the prior Wisconsin Knowledge and
+Concepts Examination (WKCE) scale-score data (2008–09 to 2013–14, presented
+in Appendix D) confirms that the patterns documented above are not
+artifacts of the Forward Exam era. Statewide Black-White scale-score gaps
+of 44–55 points were persistent across the WKCE era, and approximately
+55–58% was attributable to between-district sorting — broadly consistent
+with the Forward Exam decomposition. MMSD Black students also performed
+comparably to Milwaukee Black students on the WKCE, reinforcing the
+conclusion that MMSD's large overall racial gap is driven primarily by its
+exceptional White student population rather than by above-average outcomes
+for its minority students.
+
 # Data Availability
 
 All analysis code, data download scripts, and figure-generation scripts
@@ -499,3 +511,297 @@ and are publicly available via WISEdash.
 ## C. COVID Sensitivity Check {.unnumbered}
 
 *[Table to be added: key results including 2020-21, showing robustness of main findings]*
+
+---
+
+## D. WKCE-Era Supplemental Analysis (2008–09 to 2013–14) {#sec-wkce .unnumbered}
+
+```{python}
+#| label: wkce-setup
+#| echo: false
+from pathlib import Path
+import pandas as pd, numpy as np
+
+ROOT = Path("..").resolve()
+wkce_gaps    = pd.read_csv(ROOT / "output/tables/wkce_state_gaps.csv")
+wkce_decomp  = pd.read_csv(ROOT / "output/tables/wkce_decomposition.csv")
+wkce_peers   = pd.read_csv(ROOT / "output/tables/wkce_mmsd_peers.csv")
+wkce_nonmmsd = pd.read_csv(ROOT / "output/tables/wkce_mmsd_vs_nonmmsd_white.csv")
+```
+
+### Overview
+
+This appendix presents parallel analyses to the main body of the paper,
+using the Wisconsin Knowledge and Concepts Examination (WKCE) scale-score
+data for the school years 2008–09 through 2013–14.
+
+**Why a separate era?** The WKCE and the Forward Exam are distinct assessment
+instruments with different items, scales, and proficiency thresholds. They
+cannot be bridged or placed on a common scale. We therefore treat them as
+entirely separate analytical windows: the Forward Exam era (2015–2023)
+constitutes the main analysis, while this appendix provides a historical
+cross-check using the WKCE era.
+
+**What the WKCE measures.** The WKCE uses a *vertically scaled*
+developmental score in each subject. Unlike proficiency rates, scale scores
+are designed to be comparable across grade levels and across years within the
+same assessment program. For the purposes of comparing group means, scale
+scores have the advantage of preserving the full distribution rather than
+collapsing it to a binary above/below threshold. The substantive
+interpretation is that a gap of, say, 45 scale-score points represents the
+difference in average developmental standing between White and Black
+students.
+
+**Analysis window.** We restrict to school years 2008–09 through 2013–14.
+The year 2006–07 produced no valid data in the processed panel. The year
+2007–08 has valid scale scores but entirely missing enrollment denominators,
+precluding enrollment-weighted aggregation. The year 2013–14 is the final
+WKCE administration; the Forward Exam debuted in 2014–15.
+
+**Subjects and grades.** We focus on Reading and Mathematics, grades 3–8,
+to mirror the main Forward Exam analysis.
+
+**Suppression.** WKCE files report a district-level scale score as missing
+("suppressed") when the student subgroup had fewer than approximately 10
+students tested in that grade. After aggregating across grades 3–8 within
+each district–race–year–subject cell, the district-level suppression rate
+for Black students is approximately **35%** and for Hispanic students
+approximately **45%**. The within-between decomposition is therefore based on
+the subset of districts (58–79 for Black-White cells) where both racial
+groups have valid data.
+
+---
+
+### D.1 Statewide Racial Scale-Score Gaps
+
+@fig-wkce-trends shows the enrollment-weighted statewide gap between White
+and minority students in each year of the WKCE era, for Reading and
+Mathematics.
+
+![Statewide WKCE Racial Scale-Score Gaps by Year (Grades 3–8)](../output/figures/fig_A1_wkce_gap_trends.png){#fig-wkce-trends width=100%}
+
+```{python}
+#| label: tbl-wkce-gaps
+#| tbl-cap: "Statewide WKCE Scale-Score Gaps by Year and Subject (Grades 3–8, Enrollment-Weighted)"
+tbl = (
+    wkce_gaps[["year","subject","gap_pair","gap","mean_ss_white","mean_ss_minority"]]
+    .rename(columns={
+        "year": "Year",
+        "subject": "Subject",
+        "gap_pair": "Gap",
+        "gap": "White − Minority SS",
+        "mean_ss_white": "White Mean SS",
+        "mean_ss_minority": "Minority Mean SS",
+    })
+    .round(1)
+)
+print(tbl.to_markdown(index=False))
+```
+
+**Key findings:**
+
+- The Black-White gap in Reading is **44–48 scale-score points** and is
+  remarkably stable over 2008–2014, with no consistent upward or downward
+  trend.
+- The Black-White gap in Mathematics is **49–55 scale-score points** and
+  exhibits a modest *widening* trend over the WKCE era, reaching 55 points
+  in 2013–14.
+- The Hispanic-White gap is smaller than the Black-White gap in both
+  subjects: approximately **34–37 points** in Reading and **34–36 points**
+  in Mathematics, consistent with the pattern in the Forward Exam era.
+- White statewide mean scale scores are stable around **504** in Reading
+  and **512** in Mathematics, while Black mean scores are stable around
+  **457–461** in Reading. This stability across six years indicates the gap
+  is structural, not driven by year-to-year fluctuations.
+
+---
+
+### D.2 Scale-Score Gaps by Grade
+
+@fig-wkce-grade shows average BW and HW gaps by grade (pooled across all
+WKCE years).
+
+![WKCE Racial Scale-Score Gaps by Grade (Pooled 2008–09 to 2013–14)](../output/figures/fig_A2_wkce_gaps_by_grade.png){#fig-wkce-grade width=100%}
+
+The grade gradient in the WKCE era shows **little systematic widening**
+with grade in Reading, with BW gaps ranging from roughly 43–48 points
+across grades 3–8. In Mathematics, there is evidence of a slight upward
+gradient, with gaps somewhat larger in grades 6–8 than in grades 3–5.
+This pattern — larger math gaps at higher grades — is consistent with
+cumulative disadvantage or differential access to advanced coursework,
+and echoes similar patterns in national data [@reardon2019geography].
+
+---
+
+### D.3 Within-Between Decomposition
+
+We apply the same T = B + W decomposition as in Section [-@sec-decomp] of
+the main text, replacing proficiency rates with mean scale scores.
+The decomposition is performed at the district level, aggregating grades
+3–8 within each district-race-year-subject cell.
+
+@fig-wkce-decomp shows the within and between shares of the BW and HW gap
+for each year and subject. The total gap T (in scale-score points) is
+printed above each bar.
+
+![WKCE Within-Between Decomposition of Racial Scale-Score Gaps](../output/figures/fig_A3_wkce_decomposition.png){#fig-wkce-decomp width=100%}
+
+```{python}
+#| label: tbl-wkce-decomp
+#| tbl-cap: "WKCE Within-Between Decomposition Summary (District Level, Grades 3–8 Aggregated)"
+tbl2 = (
+    wkce_decomp[wkce_decomp["T"].notna()]
+    [["year","subject","gap_pair","T","B","W","B_pct","W_pct","n_units_both"]]
+    .rename(columns={
+        "year": "Year",
+        "subject": "Subject",
+        "gap_pair": "Gap",
+        "T": "T (total SS gap)",
+        "B": "B (between)",
+        "W": "W (within)",
+        "B_pct": "Between %",
+        "W_pct": "Within %",
+        "n_units_both": "N Districts",
+    })
+    .round(1)
+)
+print(tbl2.to_markdown(index=False))
+```
+
+**Key findings from the WKCE-era decomposition:**
+
+- For the **Black-White** gap, **55–58% is attributable to between-district
+  sorting** in Reading, and **57–60%** in Mathematics. This is somewhat
+  *higher* than the Forward Exam era estimate of ~47%, potentially reflecting
+  greater residential segregation in the earlier period or differences in
+  the set of districts included (the WKCE decomposition includes only
+  the smaller set of districts with valid data for both races).
+- The between share of the BW gap shows a **modest declining trend** over
+  the WKCE era, from 58% in 2008–09 to 55% in 2013–14 (Reading). This
+  suggests a slight increase in within-district sorting or integration
+  at the district level over this period.
+- For the **Hispanic-White** gap, the between share is substantially lower:
+  only **37–40% in Reading** and similar in Mathematics. The majority of
+  the HW gap is therefore *within* districts — consistent with the
+  Forward Exam era and with the broader pattern that Hispanic students
+  in Wisconsin are more geographically integrated across districts than
+  Black students.
+
+---
+
+### D.4 MMSD vs. Peer Districts (WKCE Era)
+
+@fig-wkce-peers compares MMSD Black and Hispanic mean scale scores in
+Reading and Mathematics to those of the same peer districts used in the
+main analysis.
+
+![WKCE-Era Mean Scale Scores: MMSD vs. Peer Districts](../output/figures/fig_A4_wkce_mmsd_vs_peers.png){#fig-wkce-peers width=100%}
+
+```{python}
+#| label: tbl-wkce-peers
+#| tbl-cap: "WKCE-Era Black and Hispanic Mean Scale Scores: MMSD and Selected Peers (Reading, All Years)"
+tbl3 = (
+    wkce_peers[
+        (wkce_peers["race"].isin(["Black","Hispanic"])) &
+        (wkce_peers["subject"] == "Reading")
+    ]
+    .groupby(["district_label","tier","race"])["mean_ss"]
+    .mean()
+    .reset_index()
+    .rename(columns={
+        "district_label": "District",
+        "tier": "Tier",
+        "race": "Race",
+        "mean_ss": "Avg. Mean SS (Reading)",
+    })
+    .round(1)
+    .sort_values(["Race","Avg. Mean SS (Reading)"], ascending=[True, False])
+)
+print(tbl3.to_markdown(index=False))
+```
+
+**Key findings:**
+
+- **MMSD Black students** (mean Reading score ~453) perform almost
+  identically to **Milwaukee Black students** (~451) across the entire
+  WKCE era. This directly mirrors the Forward Exam finding and is
+  particularly striking given that Milwaukee serves roughly 7× as many
+  Black students as MMSD.
+- **MMSD Hispanic students** score slightly *above* several Tier 1
+  peers (Milwaukee Hispanic, Racine Hispanic) in Reading, though the
+  differences are modest (3–6 scale-score points).
+- Tier 1 urban districts (Milwaukee, Racine, Kenosha) consistently
+  cluster together at the lower end of the distribution, while
+  Madison-region peers (Verona, Middleton) and some mid-size districts
+  (Waukesha, Janesville) show higher minority mean scores.
+- These patterns provide historical confirmation that MMSD's large
+  overall racial gap in the Forward Exam era is not a new phenomenon —
+  it was equally present in the WKCE era.
+
+---
+
+### D.5 MMSD Minority vs. Non-MMSD White (WKCE Era)
+
+@fig-wkce-nonmmsd extends the peer comparison in @sec-mmsd by comparing
+MMSD minority students directly to non-MMSD White students statewide.
+
+![WKCE-Era Mean Scale Scores: MMSD Minorities vs. Non-MMSD Wisconsin White Students](../output/figures/fig_A5_wkce_mmsd_vs_nonmmsd_white.png){#fig-wkce-nonmmsd width=100%}
+
+Non-MMSD White students average approximately **504 scale-score points** in
+Reading and **512–515** in Mathematics, stable across all WKCE years.
+MMSD Black students average approximately **453 points** in Reading — a gap
+of roughly **50–51 points** from the non-MMSD White average. MMSD Hispanic
+students average approximately **459–463 points** in Reading — a gap of
+roughly **41–45 points**.
+
+These WKCE-era results are closely analogous to the Forward Exam finding
+that MMSD Black students score approximately 40–43 percentage points below
+the non-MMSD White proficiency rate. Both measures confirm that MMSD minority
+students are substantially below the statewide White benchmark, and that
+this gap has been persistent for at least a decade before the current
+Forward Exam era began.
+
+---
+
+### D.6 Cross-Era Comparison Summary
+
+```{python}
+#| label: tbl-crossera
+#| tbl-cap: "Cross-Era Comparison of Key Racial Gap Indicators"
+rows = [
+    ("WKCE era (2008–14)", "Reading", "Black-White", "44–48 SS pts", "55–58%", "42–45%",
+     "MMSD ≈ Milwaukee"),
+    ("WKCE era (2008–14)", "Math",    "Black-White", "49–55 SS pts", "57–60%", "40–43%",
+     "MMSD ≈ Milwaukee"),
+    ("WKCE era (2008–14)", "Reading", "Hispanic-White", "34–37 SS pts", "37–40%", "60–63%",
+     "MMSD slightly above peers"),
+    ("Forward era (2015–23)", "ELA",  "Black-White", "38–40 pp profic.", "~47%", "~53%",
+     "MMSD below Milwaukee"),
+    ("Forward era (2015–23)", "Math", "Black-White", "42–44 pp profic.", "~45%", "~55%",
+     "MMSD below Milwaukee"),
+    ("Forward era (2015–23)", "ELA",  "Hispanic-White", "~24 pp profic.", "~40%", "~60%",
+     "MMSD ≈ peers"),
+]
+cross_df = pd.DataFrame(rows, columns=[
+    "Era", "Subject", "Gap Pair", "Magnitude", "Between %", "Within %", "MMSD vs Peers"
+])
+print(cross_df.to_markdown(index=False))
+```
+
+The cross-era comparison reveals striking **consistency** in the structure
+of Wisconsin's racial achievement gap across two entirely different
+assessment instruments and two separate time periods spanning approximately
+15 years. The between-district share of the BW gap is somewhat higher in
+the WKCE era (55–60%) than the Forward era (~45–47%), though this
+difference may partly reflect the smaller number of districts included
+in the WKCE decomposition. The conclusion that a substantial portion of
+the Black-White gap is between districts — and therefore cannot be
+addressed by within-district school boundary changes — is robust across
+both eras.
+
+The MMSD-specific finding is also confirmed across eras: MMSD Black and
+Hispanic students perform at approximately the same level as their peers
+in Milwaukee and other urban districts. MMSD's extraordinary overall
+reputation and its extraordinarily high-SES White population generate a
+large racial gap in test scores, but this gap does not reflect above-average
+outcomes for MMSD minority students. This finding holds in 2008 and in 2023.
