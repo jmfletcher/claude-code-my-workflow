@@ -1,136 +1,85 @@
-# CLAUDE.MD -- Academic Project Development with Claude Code
+# Wisconsin Schools — Racial Achievement Gap Analysis
 
-<!-- HOW TO USE: Replace [BRACKETED PLACEHOLDERS] with your project info.
-     Customize Beamer environments and CSS classes for your theme.
-     Keep this file under ~150 lines — Claude loads it every session.
-     See the guide at docs/workflow-guide.html for full documentation. -->
+## Project identity
 
-**Project:** [YOUR PROJECT NAME]
-**Institution:** [YOUR INSTITUTION]
-**Branch:** main
+**Working title:** Racial achievement gaps in Wisconsin public schools.
 
----
+**Research question:** How large are racial achievement gaps (Black–White, Hispanic–White) across Wisconsin public schools, and how do they vary by school characteristics (urbanicity, FRPL rate, district size)? Can we construct school-level proficiency rates by race from DPI administrative data and link them to enrollment and school characteristics to explain cross-school variation in gaps?
 
-## Core Principles
+**Design:** Merge Forward Exam proficiency data (by race/ethnicity, school level) from Wisconsin DPI with enrollment-by-race data and school characteristics. Build school-level racial gap measures. Aggregate to district and county level. Explore predictors of gap size.
 
-- **Plan first** -- enter plan mode before non-trivial tasks; save plans to `quality_reports/plans/`
-- **Verify after** -- compile/render and confirm output at the end of every task
-- **Single source of truth** -- Beamer `.tex` is authoritative; Quarto `.qmd` derives from it
-- **Quality gates** -- nothing ships below 80/100
-- **[LEARN] tags** -- when corrected, save `[LEARN:category] wrong → right` to MEMORY.md
+**Principal investigator:** Jason Fletcher, University of Wisconsin–Madison.
+
+**Repository:** Working research project using the Claude Code academic workflow ([fork lineage](https://github.com/jmfletcher/claude-code-my-workflow/tree/Wisconsin-Schools)).
 
 ---
 
-## Folder Structure
+## Data sources
 
-```
-[YOUR-PROJECT]/
-├── CLAUDE.MD                    # This file
-├── .claude/                     # Rules, skills, agents, hooks
-├── Bibliography_base.bib        # Centralized bibliography
-├── Figures/                     # Figures and images
-├── Preambles/header.tex         # LaTeX headers
-├── Slides/                      # Beamer .tex files
-├── Quarto/                      # RevealJS .qmd files + theme
-├── docs/                        # GitHub Pages (auto-generated)
-├── scripts/                     # Utility scripts + R code
-├── quality_reports/             # Plans, session logs, merge reports
-├── explorations/                # Research sandbox (see rules)
-├── templates/                   # Session log, quality report templates
-└── master_supporting_docs/      # Papers and existing slides
-```
+| Source | Description | Access |
+|--------|-------------|--------|
+| WISEdash Forward Exam | School-level proficiency by race, grades 3–8 | [WISEdash Public Portal](https://wisedash.dpi.wi.gov/Dashboard/portalHome) → Topics → Assessment → Forward Exam |
+| DPI Assessment Downloads | Raw CSV files with school IDs, more granular breakdowns | DPI site → Assessment → Forward Exam → Data & Results |
+| DPI Enrollment by Race | School-level enrollment counts by race/ethnicity | DPI downloads (merge key: school ID) |
+| School characteristics | Urbanicity, FRPL %, district size | DPI or NCES Common Core of Data |
+
+See `DATA.md` for download instructions and placement.
 
 ---
 
-## Commands
+## Deliverables (in priority order)
 
-```bash
-# LaTeX (3-pass, XeLaTeX only)
-cd Slides && TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-BIBINPUTS=..:$BIBINPUTS bibtex file
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
+1. **End-to-end analysis pipeline** — reproducible code, documented denominators, versioned outputs.
+2. **School-level dataset** — race-specific proficiency rates by school, merged with characteristics.
+3. **Summary tables and figures** — gap distributions, correlates, county/district aggregations.
+4. **Manuscript or report** (as scope develops).
 
-# Deploy Quarto to GitHub Pages
-./scripts/sync_to_docs.sh LectureN
+Planned locations:
 
-# Quality score
-python scripts/quality_score.py Quarto/file.qmd
-```
-
----
-
-## Quality Thresholds
-
-| Score | Gate | Meaning |
-|-------|------|---------|
-| 80 | Commit | Good enough to save |
-| 90 | PR | Ready for deployment |
-| 95 | Excellence | Aspirational |
+| Artifact | Location |
+|----------|----------|
+| Analysis scripts (Python) | `analysis/` |
+| Figures | `output/figures/` |
+| Tables | `output/tables/` |
+| Manuscript | `manuscript/` |
+| Exploratory / scratch | `explorations/` |
+| Raw data (not tracked) | `Data/` |
 
 ---
 
-## Skills Quick Reference
+## Workflow (non-negotiable)
 
-| Command | What It Does |
-|---------|-------------|
-| `/compile-latex [file]` | 3-pass XeLaTeX + bibtex |
-| `/deploy [LectureN]` | Render Quarto + sync to docs/ |
-| `/extract-tikz [LectureN]` | TikZ → PDF → SVG |
-| `/proofread [file]` | Grammar/typo/overflow review |
-| `/visual-audit [file]` | Slide layout audit |
-| `/pedagogy-review [file]` | Narrative, notation, pacing review |
-| `/review-r [file]` | R code quality review |
-| `/qa-quarto [LectureN]` | Adversarial Quarto vs Beamer QA |
-| `/slide-excellence [file]` | Combined multi-agent review |
-| `/translate-to-quarto [file]` | Beamer → Quarto translation |
-| `/validate-bib` | Cross-reference citations |
-| `/devils-advocate` | Challenge slide design |
-| `/create-lecture` | Full lecture creation |
-| `/commit [msg]` | Stage, commit, PR, merge |
-| `/lit-review [topic]` | Literature search + synthesis |
-| `/research-ideation [topic]` | Research questions + strategies |
-| `/interview-me [topic]` | Interactive research interview |
-| `/review-paper [file]` | Manuscript review |
-| `/data-analysis [dataset]` | End-to-end R analysis |
-| `/learn [skill-name]` | Extract discovery into persistent skill |
-| `/context-status` | Show session health + context usage |
-| `/deep-audit` | Repository-wide consistency audit |
+- **Plan-first** for any non-trivial task. Save plans to `quality_reports/plans/YYYY-MM-DD_description.md`.
+- **Contractor mode after approval:** implement → verify → review → fix → score.
+- **Memory:** append `[LEARN:…]` entries to `MEMORY.md` when decisions or corrections should persist.
+- **Quality gates:** default **80/100** to commit.
 
 ---
 
-<!-- CUSTOMIZE: Replace the example entries below with your own
-     Beamer environments and Quarto CSS classes. These are examples
-     from the original project — delete them and add yours. -->
+## Domain standards
 
-## Beamer Custom Environments
-
-| Environment       | Effect        | Use Case       |
-|-------------------|---------------|----------------|
-| `[your-env]`      | [Description] | [When to use]  |
-
-<!-- Example entries (delete and replace with yours):
-| `keybox` | Gold background box | Key points |
-| `highlightbox` | Gold left-accent box | Highlights |
-| `definitionbox[Title]` | Blue-bordered titled box | Formal definitions |
--->
-
-## Quarto CSS Classes
-
-| Class              | Effect        | Use Case       |
-|--------------------|---------------|----------------|
-| `[.your-class]`    | [Description] | [When to use]  |
-
-<!-- Example entries (delete and replace with yours):
-| `.smaller` | 85% font | Dense content slides |
-| `.positive` | Green bold | Good annotations |
--->
+- **Suppression:** Small cells (<10 students) are suppressed in DPI data at school level. Document which schools/subgroups are excluded due to suppression; do not impute.
+- **Denominators:** Proficiency rates require both numerator (proficient students) and denominator (tested students). Track both; never use percentages without confirming the underlying N.
+- **Standard changes:** DPI changed proficiency cut scores; time trends across years require checking whether standards changed. Document any year where comparisons are unreliable.
+- **Test coverage:** Forward Exam (grades 3–8); PreACT (9–10); ACT (11). Do not mix tests unless explicitly modeling cross-test comparisons.
+- **Figures:** Publication-ready: consistent fonts, colors, labels, legible legends.
 
 ---
 
-## Current Project State
+## Pointers
 
-| Lecture | Beamer | Quarto | Key Content |
-|---------|--------|--------|-------------|
-| 1: [Topic] | `Lecture01_Topic.tex` | `Lecture1_Topic.qmd` | [Brief description] |
-| 2: [Topic] | `Lecture02_Topic.tex` | -- | [Brief description] |
+| Resource | Purpose |
+|----------|---------|
+| `DATA.md` | Data download instructions |
+| `MEMORY.md` | Cross-session learnings |
+| `.claude/rules/` | Workflow rules |
+| `PROJECT_NOTES.md` | Initial research notes (ChatGPT briefing) |
+| `Bibliography_base.bib` | Shared citations |
+
+---
+
+## Commands (typical)
+
+- **Python (primary):** `python3 analysis/script.py` from repo root; `pip install -r requirements.txt`.
+- **Quarto (manuscript):** `quarto render manuscript/main.qmd`.
+- **Git:** conventional commits; do not commit raw data — document paths in `Data/` and ignore via `.gitignore`.
