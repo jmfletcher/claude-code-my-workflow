@@ -422,14 +422,25 @@ within MMSD by race and year, pooled across grade and subject.
 
 ![Distribution of School-Level Proficiency Within MMSD by Race](../output/figures/fig08_mmsd_within_schools.png){#fig-mmsd-schools width=100%}
 
-*Note: Each box represents the distribution of school-level proficiency rates for that race group across MMSD's elementary schools, for non-suppressed schools only.*
+*Note: Each box represents the distribution of school-level proficiency rates for that race group across MMSD schools, for non-suppressed schools only. School-level rates are enrollment-weighted averages across all non-suppressed grade × subject cells.*
 
 Several features of this figure are noteworthy. First, the *level* of Black
 proficiency in MMSD schools is uniformly low — the median MMSD school has
-Black ELA proficiency of approximately 5–12%, and there is no MMSD school
+Black proficiency of approximately 5–12%, and there is no MMSD school
 where Black students approach the White proficiency rate. Second, the
 within-school decomposition reveals that approximately **82% of the MMSD
-BW gap is within individual schools**, and only **18% is between schools**.
+BW gap is within individual schools**, and only **18% is between schools**.[^subj-robust]
+
+[^subj-robust]: The school-level proficiency rate used in Figure @fig-mmsd-schools and the
+    decomposition pools ELA and Mathematics scores into a single
+    enrollment-weighted average per school–race–year cell. We verify that
+    this pooling does not affect the main result: running the decomposition
+    separately for ELA only and Mathematics only yields within-school shares
+    of **82.2%** and **82.2%**, respectively — indistinguishable from the
+    pooled estimate of **82.1%**. The between-school share ranges from 15.6%
+    to 19.1% across individual years and subjects, with no systematic
+    difference between ELA and Mathematics. Full subject-specific results
+    are reported in @tbl-decomp-subject.
 
 This decomposition is the central policy-relevant finding of this paper.
 The MMSD attendance boundary review could, in principle, redistribute
@@ -625,6 +636,41 @@ component. W = within-district component. "Avg. N Dist." is the
 average number of districts with valid data for both racial groups
 across grades. Values are averaged across grades 3–8; grade-specific
 results are available in the replication data.
+
+### B.2 Within-MMSD School Decomposition by Subject {.unnumbered}
+
+@tbl-decomp-subject reports the school-level within-between decomposition
+for MMSD run separately for ELA, Mathematics, and the pooled
+specification. This table supports the footnote in Section [-@sec-mmsd]
+showing that the 82% within-school share is robust to the choice of subject.
+
+```{python}
+#| label: tbl-decomp-subject
+#| tbl-cap: "MMSD School-Level BW Decomposition by Subject (Primary Years)"
+decomp_subj = pd.read_csv(ROOT_A / "output/tables/mmsd_school_decomp_by_subject.csv")
+bw_subj = (
+    decomp_subj[decomp_subj["gap_pair"] == "BW"]
+    [["subject_scope","year","T","B_pct","W_pct","n_schools"]]
+    .sort_values(["year","subject_scope"])
+    .rename(columns={
+        "subject_scope": "Subject scope",
+        "year": "Year",
+        "T": "T (pp gap)",
+        "B_pct": "Between schools %",
+        "W_pct": "Within schools %",
+        "n_schools": "N schools",
+    })
+    .round(1)
+)
+print(bw_subj.to_markdown(index=False))
+```
+
+Across all six primary years, the between-school share for the BW gap
+ranges from 15.6% to 19.1% regardless of whether ELA, Mathematics, or
+both subjects are used. The within-school share is consistently
+80–84%. Post-COVID years (2021–22, 2022–23) show somewhat larger
+total gaps (T ≈ 49–52 pp vs. 43–47 pp pre-COVID), consistent with
+differential learning recovery by race and school type.
 
 ---
 
