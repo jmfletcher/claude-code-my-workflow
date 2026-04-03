@@ -1,0 +1,97 @@
+======================================================================
+QC Report: Forward Exam Panel (02_load_and_clean.py)
+======================================================================
+
+SCHOOL PANEL
+  Total rows:         365,756
+  Primary years:      243,460
+  COVID year:          40,862
+  New-std years:       81,434
+
+Rows per year (school panel):
+  2015-16      11,221 rows    249 schools  suppressed: 71.7%
+  2016-17      11,702 rows    253 schools  suppressed: 71.0%
+  2017-18      12,100 rows    250 schools  suppressed: 70.0%
+  2018-19      12,232 rows    255 schools  suppressed: 70.0%
+  2020-21      11,076 rows    259 schools  suppressed: 72.9%  ← COVID
+  2021-22      11,895 rows    265 schools  suppressed: 71.2%
+  2022-23      12,192 rows    273 schools  suppressed: 70.4%
+  2023-24       9,595 rows    274 schools  suppressed: 76.6%  ← new standards
+  2024-25       9,851 rows    266 schools  suppressed: 75.7%  ← new standards
+
+Suppression rate by race (primary years, school panel):
+  Unknown/Suppressed        100.0%
+  Pacific Islander          99.9%
+  American Indian           94.2%
+  Unknown                   92.9%
+  Two or More Races         88.0%
+  Black                     81.7%
+  Asian                     80.4%
+  Hispanic                  70.6%
+  White                     36.9%
+
+MMSD (Madison Metropolitan) school panel:
+  Total rows:      11,534
+  Unique schools:  53
+  Years present:   ['2015-16', '2016-17', '2017-18', '2018-19', '2020-21', '2021-22', '2022-23', '2023-24', '2024-25']
+
+MMSD proficiency by race (ELA, grade 5, primary years — spot check):
+  (District-level rows from DPI pre-computed district data)
+  Race                      Year        pct_prof  n_tested
+  American Indian           2015-16      suppressed         8 *
+  American Indian           2016-17      suppressed         3 *
+  American Indian           2017-18      suppressed         5 *
+  American Indian           2018-19      suppressed         3 *
+  American Indian           2021-22      suppressed         4 *
+  American Indian           2022-23      suppressed         3 *
+  Asian                     2015-16         43.4       159
+  Asian                     2016-17         35.9       167
+  Asian                     2017-18      suppressed       158 *
+  Asian                     2018-19      suppressed       137 *
+  Asian                     2021-22      suppressed       112 *
+  Asian                     2022-23      suppressed       122 *
+  Black                     2015-16          7.1       311
+  Black                     2016-17         15.9       333
+  Black                     2017-18         13.7       315
+  Black                     2018-19          8.0       313
+  Black                     2021-22          7.1       324
+  Black                     2022-23          6.9       291
+  Hispanic                  2015-16         18.2       413
+  Hispanic                  2016-17         22.5       422
+  Hispanic                  2017-18         18.9       417
+  Hispanic                  2018-19         17.5       480
+  Hispanic                  2021-22         17.1       410
+  Hispanic                  2022-23         15.7       428
+  Pacific Islander          2015-16      suppressed         2 *
+  Pacific Islander          2016-17      suppressed         1 *
+  Pacific Islander          2018-19      suppressed         2 *
+  Pacific Islander          2021-22      suppressed         1 *
+  Two or More Races         2015-16         31.2       186
+  Two or More Races         2016-17      suppressed       152 *
+  Two or More Races         2017-18         35.8       179
+  Two or More Races         2018-19         38.6       171
+  Two or More Races         2021-22         39.0       172
+  Two or More Races         2022-23         27.0       163
+  White                     2015-16         54.4       774
+  White                     2016-17         63.6       729
+  White                     2017-18         62.4       777
+  White                     2018-19         62.0       749
+  White                     2021-22         66.6       710
+  White                     2022-23         66.5       672
+
+State-level Black–White ELA gap (grade 5, district panel, primary years):
+  (No explicit state-level rows; computing from school panel by year)
+  Year          White    Black      Gap
+  2015-16        50.6     16.0     34.6
+  2016-17        56.3     18.4     37.9
+  2017-18        53.9     16.4     37.5
+  2018-19        49.5     15.6     33.9
+  2021-22        49.5     13.0     36.5
+  2022-23        48.4     12.9     35.5
+
+OUTPUT FILES:
+  /Users/jasonfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_school_race.parquet
+  /Users/jasonfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_district_race.parquet
+
+NEXT STEP:
+  python3 analysis/03_state_gaps.py

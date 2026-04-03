@@ -37,6 +37,14 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:data] Race labels are IDENTICAL across all 9 Forward Exam years (confirmed 2026-04-03). All labels: "Amer Indian", "Asian", "Black", "Hispanic", "Pacific Isle", "Two or More", "Unknown", "White", "[Data Suppressed]". ELL Status → EL Status label change in 2020-21 onward (same concept).
 
+[LEARN:data] AGENCY_TYPE values (full strings, not codes): "Public school" = school-level, "School District" = district-level, NaN = statewide, plus charter types. Do NOT use "03"/"04" codes — those are WINSS/old format.
+
+[LEARN:data] Suppression in school panel: ~70-77% of cells suppressed (race group too small at school level). By race: Pacific Islander ~100%, American Indian ~94%, Black ~82%, White ~37%. Suppression = pct_proficient is NaN (no valid Proficient/Advanced rows for that group). n_tested is often non-NaN even for suppressed cells (group exists but performance breakdown is hidden).
+
+[LEARN:analysis] Statewide Black–White ELA proficiency gap (grade 5, school-weighted): ~34-38 pp in primary years (2015-22). MMSD Black ELA grade 5: 7-16% proficient; MMSD White: 54-67%. Gap within MMSD: ~47-55 pp — much larger than statewide because MMSD White students are high-SES outliers.
+
+[LEARN:data] Panel datasets saved to output/data/: panel_school_race.parquet (365K rows, ~1.8 MB), panel_district_race.parquet (171K rows, ~0.9 MB). School panel includes all years 2015-16 to 2024-25; use primary_analysis==True to filter to clean years.
+
 ## Workflow Patterns
 
 [LEARN:workflow] Requirements specification phase catches ambiguity before planning → reduces rework 30-50%. Use spec-then-plan for complex/ambiguous tasks (>1 hour or >3 files).

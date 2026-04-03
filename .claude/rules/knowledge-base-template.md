@@ -42,7 +42,7 @@ Confirmed from `01_inspect_data.py` run on 2022-23 file (2026-04-03).
 | Canonical name (our code) | DPI source column | Notes |
 |--------------------------|------------------|-------|
 | `year` | `SCHOOL_YEAR` | String e.g. `"2022-23"` |
-| `agency_type` | `AGENCY_TYPE` | e.g. `"03"` = district, `"04"` = school |
+| `agency_type` | `AGENCY_TYPE` | `"School District"` = district; `"Public school"` = school; `NaN` = statewide |
 | `cesa` | `CESA` | Cooperative Educational Service Agency region |
 | `county` | `COUNTY` | County name string |
 | `district_id` | `DISTRICT_CODE` | DPI-assigned district code |
