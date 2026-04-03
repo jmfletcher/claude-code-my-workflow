@@ -24,7 +24,7 @@ Repeat
 
 - **Design forks:** "Option A (fast) vs. Option B (robust). Which?"
 - **Code ambiguity:** "Spec unclear on X. Assume Y?"
-- **Replication edge case:** "Just missed tolerance. Investigate?"
+- **Comparison group choice:** "Use Milwaukee as comparison, or all non-MMSD districts?"
 - **Scope question:** "Also refactor Y while here, or focus on X?"
 
 ---
@@ -34,7 +34,7 @@ Repeat
 - Code fix is obvious (bug, pattern application)
 - Verification (tolerance checks, tests, compilation)
 - Documentation (logs, commits)
-- Plotting (per established standards)
+- Plotting (per established standards below)
 - Deployment (after you approve, I ship automatically)
 
 ---
@@ -44,30 +44,60 @@ Repeat
 | Score | Action |
 |-------|--------|
 | >= 80 | Ready to commit |
+| >= 90 | Required for manuscript figures and tables |
 | < 80  | Fix blocking issues |
 
 ---
 
-## Non-Negotiables (Customize These)
+## Non-Negotiables
 
-<!-- Replace with YOUR project's locked-in preferences -->
+**Path convention:**
+```python
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]  # repo root
+DATA_DIR = ROOT / "Data"
+OUTPUT_DIR = ROOT / "output"
+```
+No hardcoded absolute paths anywhere.
 
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+**Figure standards:**
+- White background, minimum 9pt font, consistent font family (Helvetica or DejaVu Sans)
+- Save every figure as both PDF and PNG (150 DPI minimum for PNG)
+- Suppressed or missing subgroup values must be visually distinguished from zero (hollow marker, dashed line, or caption note)
+
+**Color palette (colorblind-safe, race groups):**
+```python
+RACE_COLORS = {
+    "White":                  "#1b7837",
+    "Black or African American": "#762a83",
+    "Hispanic":               "#f1a340",
+    "Asian":                  "#2166ac",
+    "American Indian":        "#d7191c",
+    "Two or More Races":      "#878787",
+}
+```
+
+**Suppression rule:**
+- DPI cells with N < 10 → replace with `NaN` (never impute)
+- Log every suppressed cell: `output/tables/suppression_log.csv` with columns `[school_id, district_id, race_group, grade, subject, year]`
+
+**Denominator rule:**
+- Always carry `n_tested` alongside `pct_proficient` in every intermediate and output dataset
+- Never plot a proficiency rate without documenting or annotating N
 
 ---
 
 ## Preferences
 
-<!-- Fill in as you discover your working style -->
+**Visual:** Figures as specified above. Consistent axis labels and titles. Legends inside plot frame when space allows. Grid lines: light gray horizontal only.
 
-**Visual:** [How you want figures/plots handled]
-**Reporting:** [Concise bullets? Detailed prose? Details on request?]
-**Session logs:** Always (post-plan, incremental, end-of-session)
-**Replication:** [How strict? Flag near-misses?]
+**Reporting:** Concise bullet-point summaries. Details on request. Flag suppression rates and coverage gaps proactively.
+
+**Session logs:** Always — post-plan entry, incremental updates during long tasks, end-of-session summary. Save to `quality_reports/session_logs/YYYY-MM-DD_task-name.md`.
+
+**Replication:** Scripts must be runnable from repo root with no arguments. All random seeds set explicitly if any stochastic step exists.
+
+**Check-in cadence:** More frequent check-ins during first few sessions; taper as patterns stabilize.
 
 ---
 

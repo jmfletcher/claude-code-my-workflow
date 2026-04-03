@@ -7,6 +7,22 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 <!-- Append new entries below. Most recent at bottom. -->
 
+## Wisconsin Schools Project (initialized 2026-04-03)
+
+[LEARN:data] Primary data source is Wisconsin DPI Forward Exam downloads (CSV), accessed via WISEdash Public Portal or DPI direct download. School-level, broken down by race/ethnicity, grades 3–8, ELA and Math. Merge key is DPI/NCES school ID. See DATA.md for download instructions.
+
+[LEARN:data] DPI suppresses cells where N < 10 students. Suppressed cells appear as `*` or blank in downloaded files. Decision: treat as NaN, do not impute, log to `output/tables/suppression_log.csv`. Report suppression rate in any summary of coverage.
+
+[LEARN:data] Test type separation is non-negotiable: Forward Exam (grades 3–8), PreACT (9–10), ACT (11). Never mix in a single analysis without explicit cross-test documentation. Initial analysis focuses exclusively on Forward Exam.
+
+[LEARN:data] DPI changed proficiency cut scores in recent years. Time trends that cross a standard-revision year are unreliable. Document the revision year as soon as data is inspected. Default to same-standard years for trend analysis.
+
+[LEARN:analysis] MMSD comparison framework: two priority cross-district comparisons are (1) MMSD minority students vs. same-race students in Milwaukee / other WI districts, and (2) MMSD minority students vs. non-MMSD white students statewide. These address the outlier-SES problem — MMSD white students have very high parental education and income, so raw within-MMSD gaps overstate "typical" racial gaps.
+
+[LEARN:analysis] Within–between decomposition: decompose statewide racial gap at three levels — county, district, school. Both weighted and unweighted versions needed. Components must sum to total gap ± 0.001 pp tolerance.
+
+[LEARN:workflow] Deliverables for this project: Python analysis pipeline + school-level merged dataset + professional Quarto report (PDF) + Quarto RevealJS slide deck (PDF). Manuscript in manuscript/main.qmd, slides in Slides/main.qmd.
+
 ## Workflow Patterns
 
 [LEARN:workflow] Requirements specification phase catches ambiguity before planning → reduces rework 30-50%. Use spec-then-plan for complex/ambiguous tasks (>1 hour or >3 files).

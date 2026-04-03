@@ -51,6 +51,10 @@ CLAUDE.local.md
 # Quarto rendering artifacts
 .quarto/
 
+# Raw data directory — never commit raw DPI files
+Data/*
+!Data/.gitkeep
+
 # Output artifacts — uncomment lines below based on your preference
 # *.rds
 # output/**/*.rds
