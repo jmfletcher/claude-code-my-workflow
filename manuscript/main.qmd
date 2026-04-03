@@ -49,12 +49,13 @@ abstract: |
   is within districts. Within MMSD, a surprising finding emerges: MMSD Black
   students (8–10% proficient in ELA) perform at lower rates than Black students
   in Milwaukee and other peer districts, despite MMSD's higher overall district
-  reputation. Furthermore, 82% of the MMSD Black-White gap exists within
+  reputation.   Furthermore, 82% of the MMSD Black-White gap exists within
   individual schools — not between schools. This final result has direct
-  implications for MMSD's ongoing attendance boundary review: even optimal
-  boundary redesign can address only the 18% between-school component of the gap,
-  while the majority of the racial disparity would remain unaffected by student
-  reassignment alone.
+  descriptive implications for MMSD's ongoing attendance boundary review: the
+  between-school component (18% of the gap, roughly 8 percentage points) is the
+  portion most directly targeted by student reassignment, while the
+  within-school majority of the disparity reflects factors that boundary
+  changes alone cannot alter.
 
 keywords: [racial achievement gaps, within-between decomposition, Wisconsin, MMSD, school boundaries, Forward Exam, WKCE]
 ---
@@ -174,9 +175,9 @@ data and should be interpreted with caution.
 
 ## The MMSD Context and the Boundary Review
 
-MMSD serves approximately 26,000 students across 51 elementary schools and
-is one of the most racially diverse districts in Wisconsin outside of
-Milwaukee. The district's White student population is an outlier by
+MMSD serves approximately 26,000 students across 51 elementary schools
+and additional middle and high schools, and is one of the most racially
+diverse districts in Wisconsin outside of Milwaukee. The district's White student population is an outlier by
 state standards: Madison is a college town anchored by the University of
 Wisconsin-Madison, and MMSD White families have unusually high parental
 education and income. This demographic fact has important methodological
@@ -187,11 +188,18 @@ Black students.
 The ongoing "Building for the Future" boundary review [@mmsd2025boundary]
 is being conducted with third-party vendor MGT and will evaluate enrollment
 trends, programming, and diversity outcomes through 2027. The boundary
-review raises the question of whether and how much student reassignment
-across MMSD schools could reduce the racial achievement gap. The answer
-depends critically on how much of the gap is between schools (potentially
-addressable by boundary changes) versus within schools (unaffected by
-student reassignment).
+review raises a descriptive question: what share of the racial achievement
+gap is between schools versus within schools? The between-school component
+is the portion most directly targeted by student reassignment — by
+definition, redistributing students can only affect where they sit, not
+what happens inside classrooms. The within-school component reflects
+instructional quality, tracking, peer composition, and out-of-school
+factors that attendance-zone changes cannot directly alter. We stress
+that the decomposition provides an *upper bound* on the gap reduction
+achievable through boundary redesign: actual policy effects depend on
+whether transferring students gain or lose resources, how course
+placement and school climate respond, and dynamics that our cross-sectional
+design cannot identify.
 
 The research literature on boundary redrawing provides important context.
 @gillani2023redrawing simulated alternative attendance boundaries for 98
@@ -201,9 +209,10 @@ redesign, while requiring approximately 20% of students to switch schools.
 At the district level, @sorensen2024desegregation find that while
 redrawing attendance zones within a district reduces segregation by less
 than 5% in typical cases, redrawing school *district* boundaries could
-reduce more than 40% of segregation. These findings frame our decomposition
-analysis: the boundary review has the potential to affect only the
-between-school component of the gap.
+reduce more than 40% of segregation. We note that a reduction in
+segregation is not the same as a reduction in the achievement gap; we
+do not directly translate these simulation findings into gap-reduction
+estimates.
 
 # Data and Methods {#sec-data}
 
@@ -262,10 +271,21 @@ excluded from the primary analysis.
 
 DPI suppresses results for race groups with fewer than 10 tested students.
 Suppressed cells are coded as `NaN` and excluded from all analyses. We
-report suppression rates throughout the paper. At the district level (our
-primary unit for the decomposition), Black student suppression is
-approximately 18%, making district-level analysis feasible for nearly all
-large and mid-size districts.
+report suppression rates throughout the paper.
+
+Suppression is substantial because the vast majority of Wisconsin's
+approximately 421 school districts are small and enroll very few Black
+students. Across all district × race × year × subject cells, the Black
+student suppression rate is **82%** (see Appendix A for details). However,
+this high overall rate is driven almost entirely by small districts where
+Black enrollment is negligible. Among districts with substantial Black
+enrollment (average ≥ 30 tested Black students), suppression falls to
+approximately 7%. More practically, our within-between decomposition
+requires only that a district have valid data for both racial groups
+in a given year; 30–39 districts meet this criterion each year, and these
+districts collectively enroll the large majority of Wisconsin's Black
+public school students. Results should be interpreted as representative
+of districts with meaningful Black enrollment, not of all districts statewide.
 
 ## Decomposition Method
 
@@ -597,9 +617,25 @@ below the exceptional MMSD White population.
 @fig-mmsd-schools shows the distribution of school-level proficiency
 within MMSD by race and year, pooled across grade and subject.
 
+**Analytic sample note.** The Forward Exam covers grades 3–8, which spans
+both elementary schools (grades 3–5) and middle schools or K–8 schools
+(grades 6–8) in MMSD. The MMSD boundary review specifically targets
+*elementary school* attendance zones, but we include all school levels
+in the decomposition to maximize statistical power and to characterize
+the full picture of within- vs. between-school sorting. Of MMSD's
+approximately 51 elementary and K–8 schools, between 27 and 36 schools
+have sufficient non-suppressed data for both Black and White students
+in a given year (see Appendix A for suppression details). The schools
+excluded from the decomposition are predominantly smaller schools where
+one or both race groups fall below the DPI reporting threshold of 10
+students; they are not systematically different in overall proficiency.
+Readers interested specifically in the elementary-school context should
+note that the between-school share of the gap would likely differ
+somewhat if the analysis were restricted to grades 3–5 alone.
+
 ![Distribution of School-Level Proficiency Within MMSD by Race](../output/figures/fig08_mmsd_within_schools.png){#fig-mmsd-schools width=100%}
 
-*Note: Each box represents the distribution of school-level proficiency rates for that race group across MMSD schools, for non-suppressed schools only. School-level rates are enrollment-weighted averages across all non-suppressed grade × subject cells.*
+*Note: Each box represents the distribution of school-level proficiency rates for that race group across MMSD schools, for non-suppressed schools only. School-level rates are enrollment-weighted averages across all non-suppressed grade × subject cells. The analytic sample covers 27–36 schools per year (of MMSD's ~51 elementary and K–8 buildings).*
 
 Several features of this figure are noteworthy. First, the *level* of Black
 proficiency in MMSD schools is uniformly low — the median MMSD school has
@@ -619,14 +655,22 @@ BW gap is within individual schools**, and only **18% is between schools**.[^sub
     difference between ELA and Mathematics. Full subject-specific results
     are reported in @tbl-decomp-subject.
 
-This decomposition is the central policy-relevant finding of this paper.
-The MMSD attendance boundary review could, in principle, redistribute
-students across schools and thereby reduce the between-school component
-of the gap. Under the most optimistic assumptions — complete equalization
-of racial composition across schools, comparable to the best-case
-simulations in @gillani2023redrawing — the boundary review would reduce
-the MMSD BW gap by approximately 14% × 18% ≈ 2.5 percentage points out of
-a roughly 47 pp within-MMSD gap. The gap would remain approximately 44 pp.
+This decomposition is the central descriptive finding for the policy
+context. The MMSD attendance boundary review could, in principle,
+redistribute students across schools and thereby affect the between-school
+component of the gap. The full between-school component — approximately
+18% of a roughly 47 pp gap, or about **8–9 percentage points** — represents
+the *upper bound* on gap reduction achievable through complete equalization
+of racial composition across schools. In practice, the achievable
+reduction would be smaller: @gillani2023redrawing found that optimal
+algorithmic redesign achieved a median 14% reduction in *segregation*
+(not the achievement gap directly) across 98 US elementary districts,
+and even that required approximately 20% of students to change schools.
+The pathway from reduced school segregation to reduced achievement gaps
+is not direct, and the actual impact of MMSD's boundary review will
+depend on how instructional resources, course placement, peer effects,
+and school climate respond to reassignment — factors outside the scope
+of this analysis.
 
 # Conclusion {#sec-conclusion}
 
@@ -647,14 +691,19 @@ average BW gap, underlining that MMSD minority students are struggling
 relative to a representative White comparison group, not just relative to
 the extraordinary MMSD White population. Third, and most directly relevant
 to the boundary review, 82% of the MMSD BW gap exists *within* individual
-schools. Redistricting can address only the 18% between-school component.
+schools. The between-school component — approximately 8–9 percentage
+points — is the portion most directly targeted by student reassignment;
+the remaining within-school 82% reflects factors that boundary changes
+cannot directly alter.
 
 These findings do not imply that boundary changes are without value — school
 integration has other benefits beyond direct test score effects, including
 exposure to diverse peers and reduced concentration of poverty in
-individual schools [@reardon2024separate]. But they do suggest that
-boundary changes alone are unlikely to produce large reductions in the
-racial achievement gap. Policies targeting the within-school component of
+individual schools [@reardon2024separate]. But the decomposition suggests
+that boundary redesign, even under optimistic assumptions, would address
+at most the between-school share of the gap. The actual achievable reduction
+will depend on whether and how instructional quality, course placement,
+and school climate change in response to reassignment. Policies targeting the within-school component of
 the gap — instructional quality, early intervention, teacher distribution,
 and the school poverty concentration that underlies the gap — would need
 to be central to any comprehensive equity strategy.
