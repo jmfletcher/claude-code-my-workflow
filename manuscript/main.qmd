@@ -69,10 +69,42 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from tabulate import tabulate
 
 ROOT = Path("..").resolve()
 OUT_FIGS   = ROOT / "output" / "figures"
 OUT_TABLES = ROOT / "output" / "tables"
+
+def pub_table(df, colalign=None, floatfmt=".1f", note=None, small=False):
+    """Print a publication-quality booktabs LaTeX table (use with #| output: asis).
+
+    Parameters
+    ----------
+    df       : DataFrame with columns already renamed for display.
+    colalign : tuple of 'left'/'right'/'center' per column; defaults to
+               left for first column, right for remainder.
+    floatfmt : tabulate float format string (default '.1f').
+    note     : Optional note string (plain text; will be wrapped in footnotesize).
+    small    : If True, wraps table in footnotesize (for wide/long appendix tables).
+    """
+    if colalign is None:
+        colalign = ("left",) + ("right",) * (len(df.columns) - 1)
+    latex = tabulate(
+        df,
+        headers="keys",
+        tablefmt="latex_booktabs",
+        showindex=False,
+        colalign=colalign,
+        floatfmt=floatfmt,
+    )
+    if small:
+        print(r"{\footnotesize")
+    print(latex)
+    if small:
+        print(r"}")
+    if note:
+        print(r"\vspace{0.35em}")
+        print(r"{\footnotesize\textit{Note:} " + note + r"}")
 ```
 
 # Introduction {#sec-intro}
@@ -346,7 +378,8 @@ approximately 10 percentage points smaller: **25–26 pp in ELA** and
 
 ```{python}
 #| label: tbl-gaps-summary
-#| tbl-cap: "Statewide Proficiency Gaps by Year and Subject (Grade-Weighted, Primary Years)"
+#| tbl-cap: "Statewide Racial Proficiency Gaps by Year and Subject (Grade-Enrollment-Weighted, Primary Years)"
+#| output: asis
 
 gaps = pd.read_csv(OUT_TABLES / "state_gaps_summary.csv")
 summary = (
@@ -358,10 +391,22 @@ summary = (
     .reset_index()
 )
 pivot = summary.pivot_table(index="year", columns="subject", values=["BW_gap", "HW_gap"])
-pivot.columns = ["BW ELA", "BW Math", "HW ELA", "HW Math"]
-pivot = pivot.round(1)
-pivot.index.name = "School Year"
-print(pivot.to_markdown())
+pivot.columns = ["B--W ELA", "B--W Math", "H--W ELA", "H--W Math"]
+pivot = pivot.round(1).reset_index()
+pivot = pivot.rename(columns={"year": "School Year"})
+
+pub_table(
+    pivot,
+    colalign=("left", "right", "right", "right", "right"),
+    floatfmt=".1f",
+    note=(
+        r"Gaps = White proficiency rate minus minority proficiency rate, in percentage points (pp). "
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"Values are grade-enrollment-weighted averages across grades 3--8. "
+        r"Primary years exclude 2019--20 (no testing) and 2020--21 (COVID disruption). "
+        r"ELA = English Language Arts."
+    ),
+)
 ```
 
 ## Gap Stability
@@ -447,18 +492,43 @@ Hispanic-White gaps in ACT Composite, Mathematics, and English scores from
 
 ```{python}
 #| label: tbl-act-gaps
-#| tbl-cap: "Statewide ACT Score Gaps by Year and Subject (Grade 11, Enrollment-Weighted)"
-act_tbl = (
-    act_gaps[["year","subject","gap_pair","avg_score_white","avg_score_minority","gap"]]
-    .rename(columns={
-        "year": "Year", "subject": "Subject", "gap_pair": "Gap",
-        "avg_score_white": "White Mean", "avg_score_minority": "Minority Mean",
-        "gap": "White − Minority",
-    })
-    .round(2)
-    .sort_values(["Gap","Subject","Year"])
+#| tbl-cap: "Statewide ACT Score Gaps by Year (Grade 11, Enrollment-Weighted)"
+#| output: asis
+
+# Pivot to wide: rows = year, columns = gap by subject (BW and HW, key subjects)
+_keep_subj = ["Composite", "Mathematics", "English"]
+_g = act_gaps[act_gaps["subject"].isin(_keep_subj)].copy()
+
+_bw = (
+    _g[_g["gap_pair"] == "BW"]
+    .pivot(index="year", columns="subject", values="gap")
+    .rename(columns={s: f"B--W {s}" for s in _keep_subj})
 )
-print(act_tbl.to_markdown(index=False))
+_hw = (
+    _g[_g["gap_pair"] == "HW"]
+    .pivot(index="year", columns="subject", values="gap")
+    .rename(columns={s: f"H--W {s}" for s in _keep_subj})
+)
+act_tbl_wide = (
+    _bw.join(_hw)
+    .round(2)
+    .reset_index()
+    .rename(columns={"year": "Year"})
+)[["Year",
+   "B--W Composite", "B--W Mathematics", "B--W English",
+   "H--W Composite", "H--W Mathematics", "H--W English"]]
+
+pub_table(
+    act_tbl_wide,
+    colalign=("left",) + ("right",) * 6,
+    floatfmt=".2f",
+    note=(
+        r"Gaps = White mean ACT score minus minority mean ACT score (ACT scale: 1--36). "
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"Values are district-enrollment-weighted state averages. Grade 11 only. "
+        r"COVID year 2020--21 excluded; 2019--20 had no state testing."
+    ),
+)
 ```
 
 **Key findings:**
@@ -483,17 +553,49 @@ to ACT scores.
 
 ```{python}
 #| label: tbl-act-decomp
-#| tbl-cap: "ACT Within-Between Decomposition: BW Composite (District Level)"
-act_d = (
-    act_decomp[(act_decomp["gap_pair"]=="BW") & (act_decomp["subject"]=="Composite")]
-    [["year","T","B","W","B_pct","W_pct","n_units_both"]]
+#| tbl-cap: "Black-White ACT Composite Score Gap: Within-Between District Decomposition (Grade 11)"
+#| output: asis
+from tabulate import tabulate
+
+_d = (
+    act_decomp[
+        (act_decomp["gap_pair"] == "BW") & (act_decomp["subject"] == "Composite")
+    ][["year", "T", "B", "W", "B_pct", "W_pct", "n_units_both"]]
+    .assign(
+        T      = lambda x: x["T"].round(2),
+        B      = lambda x: x["B"].round(2),
+        W      = lambda x: x["W"].round(2),
+        B_pct  = lambda x: x["B_pct"].round(1),
+        W_pct  = lambda x: x["W_pct"].round(1),
+    )
     .rename(columns={
-        "year":"Year","T":"T (pts)","B":"B (pts)","W":"W (pts)",
-        "B_pct":"Between %","W_pct":"Within %","n_units_both":"N Districts",
+        "year":         "Year",
+        "T":            "Total Gap",
+        "B":            "Between",
+        "W":            "Within",
+        "B_pct":        r"\% Between",
+        "W_pct":        r"\% Within",
+        "n_units_both": r"\textit{N}",
     })
-    .round(1)
 )
-print(act_d.to_markdown(index=False))
+
+print(tabulate(
+    _d,
+    headers="keys",
+    tablefmt="latex_booktabs",
+    showindex=False,
+    colalign=("left", "right", "right", "right", "right", "right", "right"),
+))
+```
+
+```{=latex}
+\vspace{0.4em}
+{\footnotesize\textit{Note:} All gaps are in ACT scale-score points (White minus Black). Total
+Gap ($T$) $=$ Between ($B$) + Within ($W$) by construction. ``Between'' is the share of the
+gap attributable to Black and White students attending districts with different average ACT
+scores; ``Within'' is the share present within the same district. $N$ = number of districts
+with non-suppressed data for both racial groups in that year. COVID year 2020--21 excluded;
+2019--20 had no state testing.}
 ```
 
 **Key findings from the ACT decomposition:**
@@ -544,20 +646,44 @@ scores relative to peer districts.
 
 ```{python}
 #| label: tbl-act-mmsd
-#| tbl-cap: "ACT Composite Scores: MMSD and Selected Peers (Black Students, Primary Years)"
-act_mmsd_tbl = (
+#| tbl-cap: "ACT Composite Score for Black Students: MMSD and Peer Districts (Grade 11, 2015--16 to 2022--23)"
+#| output: asis
+
+_peers_bw = (
     act_peers[
-        (act_peers["race"]=="Black") &
-        (act_peers["subject"]=="Composite")
+        (act_peers["race"] == "Black") &
+        (act_peers["subject"] == "Composite")
     ]
-    .groupby(["district_label","tier"])["avg_score"]
-    .mean()
+    .groupby(["district_label", "tier"])
+    .agg(
+        mean_score = ("avg_score", "mean"),
+        n_years    = ("avg_score", "count"),
+    )
     .reset_index()
-    .rename(columns={"district_label":"District","tier":"Tier","avg_score":"Avg ACT Composite"})
-    .round(2)
-    .sort_values("Avg ACT Composite", ascending=False)
+    .rename(columns={
+        "district_label": "District",
+        "tier":           "Tier",
+        "mean_score":     "Mean ACT Composite",
+        "n_years":        "Years observed",
+    })
+    .sort_values(["Tier", "Mean ACT Composite"], ascending=[True, False])
+    .round({"Mean ACT Composite": 2})
 )
-print(act_mmsd_tbl.to_markdown(index=False))
+
+pub_table(
+    _peers_bw,
+    colalign=("left", "left", "right", "right"),
+    floatfmt=".2f",
+    note=(
+        r"Mean ACT Composite score (1--36 scale) for Black students, averaged across all "
+        r"available primary years (2015--16 to 2022--23, excluding 2019--20 and 2020--21). "
+        r"Tier 0 = MMSD (focal district); Tier 1 = large urban districts "
+        r"(Milwaukee, Racine, Kenosha, Green Bay); "
+        r"Tier 2 = mid-size districts with substantial minority enrollment; "
+        r"Tier 3 = Madison-region suburban districts. "
+        r"``Years observed'' = number of school years with non-suppressed Black ACT data."
+    ),
+)
 ```
 
 The ACT peer comparison confirms the Forward Exam findings at grade 11.
@@ -772,19 +898,32 @@ the Forward Exam panel (primary years 2015–16 to 2022–23, excluding
 ```{python}
 #| label: tbl-supp-level
 #| tbl-cap: "Forward Exam Suppression Rates by Race and Analysis Level (Primary Years)"
+#| output: asis
+
 records = []
 for race in PRIMARY_RACES_A:
     d_r = dist_a[(dist_a['race']==race) & (dist_a['year'].isin(PRIMARY_YEARS_A))]
     s_r = school_a[(school_a['race']==race) & (school_a['year'].isin(PRIMARY_YEARS_A))]
     records.append({
-        'Race': race,
-        'District obs.': len(d_r),
-        'District supp. %': round(d_r['pct_proficient'].isna().mean()*100, 1),
-        'School obs.': len(s_r),
-        'School supp. %': round(s_r['pct_proficient'].isna().mean()*100, 1),
+        'Race Group':        race,
+        'Dist. cells':       len(d_r),
+        'Dist. supp. (\\%)': round(d_r['pct_proficient'].isna().mean()*100, 1),
+        'School cells':      len(s_r),
+        'School supp. (\\%)':round(s_r['pct_proficient'].isna().mean()*100, 1),
     })
 supp_tbl = pd.DataFrame(records)
-print(supp_tbl.to_markdown(index=False))
+pub_table(
+    supp_tbl,
+    colalign=("left", "right", "right", "right", "right"),
+    floatfmt=".1f",
+    note=(
+        r"A cell is suppressed when the tested count for that race group is $<10$ "
+        r"(DPI reporting threshold). "
+        r"``Cells'' = total district $\times$ race $\times$ year $\times$ subject $\times$ grade observations "
+        r"in the primary years (2015--16 through 2022--23, excluding 2019--20 and 2020--21). "
+        r"Suppression rates reflect missingness in the \textit{pct\_proficient} column."
+    ),
+)
 ```
 
 White students have the lowest suppression rates (≈36% at both levels)
@@ -801,7 +940,9 @@ decompositions is 30–45 districts per year.
 
 ```{python}
 #| label: tbl-supp-year
-#| tbl-cap: "District-Level Suppression Rate by Race and Year (Forward Exam)"
+#| tbl-cap: "District-Level Suppression Rate by Race and Year (Forward Exam, \\%)"
+#| output: asis
+
 d2 = dist_a[dist_a['year'].isin(PRIMARY_YEARS_A) & dist_a['race'].isin(PRIMARY_RACES_A)]
 supp_yr = (
     d2.groupby(['year','race'])['pct_proficient']
@@ -810,7 +951,19 @@ supp_yr = (
     .reset_index()
     .rename(columns={'year': 'Year'})
 )
-print(supp_yr.to_markdown(index=False))
+supp_yr.columns.name = None
+pub_table(
+    supp_yr,
+    colalign=("left",) + ("right",) * (len(supp_yr.columns) - 1),
+    floatfmt=".1f",
+    note=(
+        r"Entries are the percentage of district $\times$ year $\times$ subject $\times$ grade "
+        r"cells with suppressed proficiency data in that year. "
+        r"A cell is suppressed when the tested count is $<10$. "
+        r"Stable rates across years confirm that time-series findings are not driven "
+        r"by year-specific changes in tested population coverage."
+    ),
+)
 ```
 
 Suppression rates are stable across years within each race group, which
@@ -831,38 +984,51 @@ in `output/tables/decomposition_results.csv`.
 ```{python}
 #| label: tbl-decomp-full
 #| tbl-cap: "Forward Exam Within-Between Decomposition: District Level, Grade-Averaged (Primary Years)"
-decomp_b = pd.read_csv(ROOT_A / "output/tables/decomposition_results.csv")
+#| output: asis
 
+decomp_b = pd.read_csv(ROOT_A / "output/tables/decomposition_results.csv")
 dist_d = decomp_b[
-    (decomp_b['level']=='District') &
-    (decomp_b['gap_pair'].isin(['BW','HW']))
+    (decomp_b['level'] == 'District') &
+    (decomp_b['gap_pair'].isin(['BW', 'HW']))
 ]
 agg_d = (
-    dist_d.groupby(['year','subject','gap_pair'])
+    dist_d.groupby(['year', 'subject', 'gap_pair'])
     .agg(
-        T=('T','mean'),
-        B=('B','mean'),
-        W=('W','mean'),
-        B_pct=('B_pct','mean'),
-        W_pct=('W_pct','mean'),
-        N_districts=('n_units_both','mean'),
+        T           = ('T',            'mean'),
+        B           = ('B',            'mean'),
+        W           = ('W',            'mean'),
+        B_pct       = ('B_pct',        'mean'),
+        W_pct       = ('W_pct',        'mean'),
+        N_districts = ('n_units_both', 'mean'),
     )
     .reset_index()
     .round(1)
-    .sort_values(['gap_pair','subject','year'])
+    .sort_values(['gap_pair', 'subject', 'year'])
     .rename(columns={
-        'year': 'Year',
-        'subject': 'Subject',
-        'gap_pair': 'Gap',
-        'T': 'T (pp)',
-        'B': 'B (pp)',
-        'W': 'W (pp)',
-        'B_pct': 'Between %',
-        'W_pct': 'Within %',
-        'N_districts': 'Avg. N Dist.',
+        'year':        'Year',
+        'subject':     'Subject',
+        'gap_pair':    'Gap',
+        'T':           'Total (pp)',
+        'B':           'Between (pp)',
+        'W':           'Within (pp)',
+        'B_pct':       r'\\% Between',
+        'W_pct':       r'\\% Within',
+        'N_districts': 'Avg. $N$',
     })
 )
-print(agg_d.to_markdown(index=False))
+pub_table(
+    agg_d,
+    colalign=("left", "left", "left", "right", "right", "right", "right", "right", "right"),
+    floatfmt=".1f",
+    small=True,
+    note=(
+        r"T = total enrollment-weighted statewide gap (White minus minority proficiency rate, pp). "
+        r"T = B + W by construction. B = between-district component; W = within-district component. "
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"``Avg.\ $N$'' = average number of districts with valid data for both racial groups, "
+        r"across grades 3--8. Values are unweighted averages across grades."
+    ),
+)
 ```
 
 **Notes:** T = total statewide enrollment-weighted gap (White minus
@@ -881,23 +1047,37 @@ showing that the 82% within-school share is robust to the choice of subject.
 
 ```{python}
 #| label: tbl-decomp-subject
-#| tbl-cap: "MMSD School-Level BW Decomposition by Subject (Primary Years)"
+#| tbl-cap: "MMSD School-Level Black--White Decomposition by Subject (Primary Years)"
+#| output: asis
+
 decomp_subj = pd.read_csv(ROOT_A / "output/tables/mmsd_school_decomp_by_subject.csv")
 bw_subj = (
     decomp_subj[decomp_subj["gap_pair"] == "BW"]
-    [["subject_scope","year","T","B_pct","W_pct","n_schools"]]
-    .sort_values(["year","subject_scope"])
+    [["subject_scope", "year", "T", "B_pct", "W_pct", "n_schools"]]
+    .sort_values(["year", "subject_scope"])
     .rename(columns={
-        "subject_scope": "Subject scope",
-        "year": "Year",
-        "T": "T (pp gap)",
-        "B_pct": "Between schools %",
-        "W_pct": "Within schools %",
-        "n_schools": "N schools",
+        "subject_scope": "Subject Scope",
+        "year":          "Year",
+        "T":             "Total Gap (pp)",
+        "B_pct":         r"\\% Between Schools",
+        "W_pct":         r"\\% Within Schools",
+        "n_schools":     "$N$ Schools",
     })
     .round(1)
 )
-print(bw_subj.to_markdown(index=False))
+pub_table(
+    bw_subj,
+    colalign=("left", "left", "right", "right", "right", "right"),
+    floatfmt=".1f",
+    note=(
+        r"School-level within-between decomposition of the MMSD Black--White proficiency gap. "
+        r"T = total gap (White minus Black, pp). T = Between + Within by construction. "
+        r"``ELA+Math (pooled)'' averages ELA and Mathematics scores into a single "
+        r"school $\times$ race $\times$ year cell. "
+        r"$N$ Schools = number of MMSD schools with non-suppressed data for both "
+        r"Black and White students in that year."
+    ),
+)
 ```
 
 Across all six primary years, the between-school share for the BW gap
@@ -928,32 +1108,42 @@ def weighted_mean_c(vals, weights):
 
 ```{python}
 #| label: tbl-covid-gaps
-#| tbl-cap: "State-Level Racial Proficiency Gaps With and Without COVID Year (All Subjects/Grades Combined)"
-ALL_YEARS_C = ['2015-16','2016-17','2017-18','2018-19','2020-21','2021-22','2022-23']
+#| tbl-cap: "Proficiency Rates and Racial Gaps With and Without the COVID Year (All Subjects/Grades)"
+#| output: asis
+
+ALL_YEARS_C     = ['2015-16','2016-17','2017-18','2018-19','2020-21','2021-22','2022-23']
 PRIMARY_RACES_C = ['White','Black','Hispanic']
 
 d_c = dist_a[dist_a['race'].isin(PRIMARY_RACES_C) & dist_a['year'].isin(ALL_YEARS_C)].copy()
-
 state_c = (
     d_c.groupby(['year','race'])
     .apply(
-        lambda g: pd.Series({
-            'pct_prof': weighted_mean_c(g['pct_proficient'], g['n_tested'])
-        }),
+        lambda g: pd.Series({'pct_prof': weighted_mean_c(g['pct_proficient'], g['n_tested'])}),
         include_groups=False,
     )
     .reset_index()
 )
-
 pivot_c = state_c.pivot(index='year', columns='race', values='pct_prof').reset_index()
-pivot_c['BW Gap'] = pivot_c['White'] - pivot_c['Black']
-pivot_c['HW Gap'] = pivot_c['White'] - pivot_c['Hispanic']
-pivot_c['In primary analysis'] = pivot_c['year'].isin(
+pivot_c['B--W Gap'] = pivot_c['White'] - pivot_c['Black']
+pivot_c['H--W Gap'] = pivot_c['White'] - pivot_c['Hispanic']
+pivot_c['Primary sample'] = pivot_c['year'].isin(
     ['2015-16','2016-17','2017-18','2018-19','2021-22','2022-23']
-).map({True: 'Yes', False: 'No (COVID year)'})
-covid_tbl = pivot_c[['year','White','Black','Hispanic','BW Gap','HW Gap','In primary analysis']].round(1)
-covid_tbl.columns = ['Year','White %','Black %','Hispanic %','BW Gap (pp)','HW Gap (pp)','In primary analysis']
-print(covid_tbl.to_markdown(index=False))
+).map({True: 'Yes', False: 'No (COVID)'})
+covid_tbl = pivot_c[['year','White','Black','Hispanic','B--W Gap','H--W Gap','Primary sample']].round(1)
+covid_tbl.columns = ['Year', 'White (\\%)', 'Black (\\%)', 'Hispanic (\\%)',
+                     'B--W Gap (pp)', 'H--W Gap (pp)', 'Primary sample']
+pub_table(
+    covid_tbl,
+    colalign=("left", "right", "right", "right", "right", "right", "left"),
+    floatfmt=".1f",
+    note=(
+        r"Proficiency rates and gaps are enrollment-weighted averages across all "
+        r"subjects (ELA and Mathematics) and grades 3--8. "
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"2019--20 is excluded (no assessment administered). "
+        r"2020--21 is the COVID disruption year: lower and non-representative participation."
+    ),
+)
 ```
 
 **Key findings:**
@@ -1052,20 +1242,34 @@ Mathematics.
 
 ```{python}
 #| label: tbl-wkce-gaps
-#| tbl-cap: "Statewide WKCE Scale-Score Gaps by Year and Subject (Grades 3–8, Enrollment-Weighted)"
+#| tbl-cap: "Statewide WKCE Scale-Score Gaps by Year and Subject (Grades 3--8, Enrollment-Weighted)"
+#| output: asis
+
 tbl = (
-    wkce_gaps[["year","subject","gap_pair","gap","mean_ss_white","mean_ss_minority"]]
+    wkce_gaps[["year", "subject", "gap_pair", "mean_ss_white", "mean_ss_minority", "gap"]]
     .rename(columns={
-        "year": "Year",
-        "subject": "Subject",
-        "gap_pair": "Gap",
-        "gap": "White − Minority SS",
-        "mean_ss_white": "White Mean SS",
+        "year":             "Year",
+        "subject":          "Subject",
+        "gap_pair":         "Gap",
+        "mean_ss_white":    "White Mean SS",
         "mean_ss_minority": "Minority Mean SS",
+        "gap":              "Gap (pts)",
     })
     .round(1)
+    .sort_values(["Gap", "Subject", "Year"])
 )
-print(tbl.to_markdown(index=False))
+pub_table(
+    tbl,
+    colalign=("left", "left", "left", "right", "right", "right"),
+    floatfmt=".1f",
+    note=(
+        r"WKCE scale scores are on a developmental scale; values are not comparable "
+        r"across subjects or grades. Gap = White mean minus minority mean scale score. "
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"Values are district-enrollment-weighted state averages across grades 3--8. "
+        r"Years 2009--10 through 2013--14 (2007--08 excluded due to data issues)."
+    ),
+)
 ```
 
 **Key findings:**
@@ -1118,24 +1322,38 @@ printed above each bar.
 
 ```{python}
 #| label: tbl-wkce-decomp
-#| tbl-cap: "WKCE Within-Between Decomposition Summary (District Level, Grades 3–8 Aggregated)"
+#| tbl-cap: "WKCE Within-Between Decomposition Summary (District Level, Grades 3--8 Aggregated)"
+#| output: asis
+
 tbl2 = (
     wkce_decomp[wkce_decomp["T"].notna()]
-    [["year","subject","gap_pair","T","B","W","B_pct","W_pct","n_units_both"]]
+    [["year", "subject", "gap_pair", "T", "B", "W", "B_pct", "W_pct", "n_units_both"]]
     .rename(columns={
-        "year": "Year",
-        "subject": "Subject",
-        "gap_pair": "Gap",
-        "T": "T (total SS gap)",
-        "B": "B (between)",
-        "W": "W (within)",
-        "B_pct": "Between %",
-        "W_pct": "Within %",
-        "n_units_both": "N Districts",
+        "year":         "Year",
+        "subject":      "Subject",
+        "gap_pair":     "Gap",
+        "T":            "Total (pts)",
+        "B":            "Between (pts)",
+        "W":            "Within (pts)",
+        "B_pct":        r"\\% Between",
+        "W_pct":        r"\\% Within",
+        "n_units_both": "$N$ Dist.",
     })
     .round(1)
+    .sort_values(["Gap", "Subject", "Year"])
 )
-print(tbl2.to_markdown(index=False))
+pub_table(
+    tbl2,
+    colalign=("left", "left", "left", "right", "right", "right", "right", "right", "right"),
+    floatfmt=".1f",
+    small=True,
+    note=(
+        r"T = total district-enrollment-weighted statewide scale-score gap (White minus minority). "
+        r"T = B + W by construction. B--W = Black--White; H--W = Hispanic--White. "
+        r"Grades 3--8 aggregated (enrollment-weighted within district). "
+        r"$N$ Dist.\ = districts with valid data for both racial groups."
+    ),
+)
 ```
 
 **Key findings from the WKCE-era decomposition:**
@@ -1169,25 +1387,38 @@ main analysis.
 
 ```{python}
 #| label: tbl-wkce-peers
-#| tbl-cap: "WKCE-Era Black and Hispanic Mean Scale Scores: MMSD and Selected Peers (Reading, All Years)"
+#| tbl-cap: "WKCE-Era Mean Reading Scale Scores: MMSD and Peer Districts (Black and Hispanic, 2009--14)"
+#| output: asis
+
 tbl3 = (
     wkce_peers[
-        (wkce_peers["race"].isin(["Black","Hispanic"])) &
+        (wkce_peers["race"].isin(["Black", "Hispanic"])) &
         (wkce_peers["subject"] == "Reading")
     ]
-    .groupby(["district_label","tier","race"])["mean_ss"]
+    .groupby(["district_label", "tier", "race"])["mean_ss"]
     .mean()
     .reset_index()
     .rename(columns={
         "district_label": "District",
-        "tier": "Tier",
-        "race": "Race",
-        "mean_ss": "Avg. Mean SS (Reading)",
+        "tier":           "Tier",
+        "race":           "Race",
+        "mean_ss":        "Mean SS (Reading)",
     })
     .round(1)
-    .sort_values(["Race","Avg. Mean SS (Reading)"], ascending=[True, False])
+    .sort_values(["Race", "Mean SS (Reading)"], ascending=[True, False])
 )
-print(tbl3.to_markdown(index=False))
+pub_table(
+    tbl3,
+    colalign=("left", "left", "left", "right"),
+    floatfmt=".1f",
+    note=(
+        r"Mean WKCE Reading scale score, averaged across all available years "
+        r"(2009--10 through 2013--14). "
+        r"Tier 0 = MMSD; Tier 1 = large urban districts; "
+        r"Tier 2 = mid-size urban; Tier 3 = Madison-region suburban. "
+        r"WKCE scale scores have statewide White mean $\approx 504$."
+    ),
+)
 ```
 
 **Key findings:**
@@ -1248,14 +1479,34 @@ grades 3–8 to that at grade 10, for Reading and Mathematics.
 
 ```{python}
 #| label: tbl-wkce-gr10
-#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps (Reading and Math)"
+#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps (Reading and Mathematics)"
+#| output: asis
+
 wkce_g10 = pd.read_csv(ROOT / "output/tables/wkce_grade10_gaps.csv")
-print(
-    wkce_g10[["year","subject","gap_pair","mean_ss_white","mean_ss_minority","gap"]]
-    .rename(columns={"year":"Year","subject":"Subject","gap_pair":"Gap",
-                     "mean_ss_white":"White Mean SS","mean_ss_minority":"Minority Mean SS","gap":"Gap (pts)"})
+g10_tbl = (
+    wkce_g10[["year", "subject", "gap_pair", "mean_ss_white", "mean_ss_minority", "gap"]]
+    .rename(columns={
+        "year":             "Year",
+        "subject":          "Subject",
+        "gap_pair":         "Gap",
+        "mean_ss_white":    "White Mean SS",
+        "mean_ss_minority": "Minority Mean SS",
+        "gap":              "Gap (pts)",
+    })
     .round(1)
-    .to_markdown(index=False)
+    .sort_values(["Gap", "Subject", "Year"])
+)
+pub_table(
+    g10_tbl,
+    colalign=("left", "left", "left", "right", "right", "right"),
+    floatfmt=".1f",
+    note=(
+        r"Grade-10 WKCE scale scores are on a higher part of the developmental scale than "
+        r"grades 3--8; absolute gaps are not directly comparable across grade bands. "
+        r"Gap = White mean minus minority mean scale score. "
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"2013--14 grade-10 data are incomplete and excluded."
+    ),
 )
 ```
 
@@ -1276,25 +1527,32 @@ era showing no convergence through grade 11.
 
 ```{python}
 #| label: tbl-crossera
-#| tbl-cap: "Cross-Era Comparison of Key Racial Gap Indicators"
+#| tbl-cap: "Cross-Era Summary: Key Racial Achievement Gap Indicators (WKCE vs.\ Forward Exam)"
+#| output: asis
+
 rows = [
-    ("WKCE era (2008–14)", "Reading", "Black-White", "44–48 SS pts", "55–58%", "42–45%",
-     "MMSD ≈ Milwaukee"),
-    ("WKCE era (2008–14)", "Math",    "Black-White", "49–55 SS pts", "57–60%", "40–43%",
-     "MMSD ≈ Milwaukee"),
-    ("WKCE era (2008–14)", "Reading", "Hispanic-White", "34–37 SS pts", "37–40%", "60–63%",
-     "MMSD slightly above peers"),
-    ("Forward era (2015–23)", "ELA",  "Black-White", "38–40 pp profic.", "~47%", "~53%",
-     "MMSD below Milwaukee"),
-    ("Forward era (2015–23)", "Math", "Black-White", "42–44 pp profic.", "~45%", "~55%",
-     "MMSD below Milwaukee"),
-    ("Forward era (2015–23)", "ELA",  "Hispanic-White", "~24 pp profic.", "~40%", "~60%",
-     "MMSD ≈ peers"),
+    ("WKCE (2009--14)",    "Reading", "Black--White",    "44--48 SS pts",      "55--58\\%", "42--45\\%", "MMSD $\\approx$ Milwaukee"),
+    ("WKCE (2009--14)",    "Math",    "Black--White",    "49--55 SS pts",      "57--60\\%", "40--43\\%", "MMSD $\\approx$ Milwaukee"),
+    ("WKCE (2009--14)",    "Reading", "Hispanic--White", "34--37 SS pts",      "37--40\\%", "60--63\\%", "MMSD slightly above peers"),
+    ("Forward (2015--23)", "ELA",     "Black--White",    "38--40 pp profic.",  "$\\sim$47\\%", "$\\sim$53\\%", "MMSD below Milwaukee"),
+    ("Forward (2015--23)", "Math",    "Black--White",    "42--44 pp profic.",  "$\\sim$45\\%", "$\\sim$55\\%", "MMSD below Milwaukee"),
+    ("Forward (2015--23)", "ELA",     "Hispanic--White", "$\\sim$24 pp profic.", "$\\sim$40\\%", "$\\sim$60\\%", "MMSD $\\approx$ peers"),
 ]
 cross_df = pd.DataFrame(rows, columns=[
-    "Era", "Subject", "Gap Pair", "Magnitude", "Between %", "Within %", "MMSD vs Peers"
+    "Era", "Subject", "Gap", "Magnitude", r"\\% Between", r"\\% Within", "MMSD vs.\ Peers"
 ])
-print(cross_df.to_markdown(index=False))
+pub_table(
+    cross_df,
+    colalign=("left", "left", "left", "left", "right", "right", "left"),
+    small=True,
+    note=(
+        r"WKCE magnitude is in scale-score points; Forward Exam magnitude is in proficiency-rate "
+        r"percentage points. The two metrics are not directly comparable. "
+        r"Between/Within shares are district-level decomposition estimates. "
+        r"MMSD comparisons refer to minority student outcomes relative to same-race "
+        r"students in peer districts (primarily Milwaukee)."
+    ),
+)
 ```
 
 The cross-era comparison reveals striking **consistency** in the structure
