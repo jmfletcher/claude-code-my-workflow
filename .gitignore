@@ -55,4 +55,17 @@ CLAUDE.local.md
 # *.rds
 # output/**/*.rds
 
+# Project-specific: raw data and legacy files (too large / not reproducibility-critical)
+Data/
+Papers/
+Old\ Attempts\ and\ Results/
+Data\ Request\ Background\ Files/
+
+# Generated self-contained print HTML (rebuilt by analysis/08_build_pdf.py)
+manuscript/main_print.html
+
+# Python cache
+analysis/__pycache__/
+output/.mpl/
+
 
