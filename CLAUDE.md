@@ -1,136 +1,79 @@
-# CLAUDE.MD -- Academic Project Development with Claude Code
+# Panel Conditioning in UK Cohort Studies
 
-<!-- HOW TO USE: Replace [BRACKETED PLACEHOLDERS] with your project info.
-     Customize Beamer environments and CSS classes for your theme.
-     Keep this file under ~150 lines — Claude loads it every session.
-     See the guide at docs/workflow-guide.html for full documentation. -->
+## Project identity
 
-**Project:** [YOUR PROJECT NAME]
-**Institution:** [YOUR INSTITUTION]
-**Branch:** main
+**Working title:** Panel conditioning in UK cohort studies (mortality comparison).
 
----
+**Research question:** Do people born in birth weeks **selected for** major UK panel/cohort studies have **different mortality** than people born in **similar non-selected weeks**, as cohorts age? The three studies used a **week-of-birth** sampling frame—treating survey participation as a natural experiment of being “surveyed” vs not, holding calendar cohort roughly fixed.
 
-## Core Principles
+**Design:** Compare mortality profiles (and clear reporting of **numerators and denominators** / at-risk populations) for **treated** (selected week(s)) vs **control** weeks using **administrative vital statistics** (counts by year and week of birth). Examine whether profiles **diverge** over age relative to controls.
 
-- **Plan first** -- enter plan mode before non-trivial tasks; save plans to `quality_reports/plans/`
-- **Verify after** -- compile/render and confirm output at the end of every task
-- **Single source of truth** -- Beamer `.tex` is authoritative; Quarto `.qmd` derives from it
-- **Quality gates** -- nothing ships below 80/100
-- **[LEARN] tags** -- when corrected, save `[LEARN:category] wrong → right` to MEMORY.md
+**Principal investigator:** Jason Fletcher (adapt `CLAUDE.local.md` for affiliation if needed).
+
+**Repository:** Working research project using the Claude Code academic workflow ([fork lineage](https://github.com/jmfletcher/claude-code-my-workflow/tree/Panel-Conditioning-in-UK)). This checkout is **project-first**, not a generic template.
 
 ---
 
-## Folder Structure
+## Deliverables (in priority order)
 
-```
-[YOUR-PROJECT]/
-├── CLAUDE.MD                    # This file
-├── .claude/                     # Rules, skills, agents, hooks
-├── Bibliography_base.bib        # Centralized bibliography
-├── Figures/                     # Figures and images
-├── Preambles/header.tex         # LaTeX headers
-├── Slides/                      # Beamer .tex files
-├── Quarto/                      # RevealJS .qmd files + theme
-├── docs/                        # GitHub Pages (auto-generated)
-├── scripts/                     # Utility scripts + R code
-├── quality_reports/             # Plans, session logs, merge reports
-├── explorations/                # Research sandbox (see rules)
-├── templates/                   # Session log, quality report templates
-└── master_supporting_docs/      # Papers and existing slides
-```
+1. **End-to-end analysis pipeline** — reproducible code, documented denominators, versioned outputs.
+2. **Preprint-ready manuscript** — clear tables and **publication-quality figures** (polished, consistent theme).
+3. **Short slide deck** — main findings; source in Markdown; export PDF.
+
+Planned locations (create as work proceeds):
+
+| Artifact | Location |
+|----------|----------|
+| Analysis (R) | `analysis/` |
+| Figures (from code) | `output/figures/` or `analysis/figures/` (pick one convention in first analysis plan; document in knowledge base) |
+| Manuscript | `manuscript/` |
+| Slides | `slides/` |
+| Exploratory / scratch | `explorations/` |
+| Prior partial work (reference only) | `Old Attempts and Results/`, `Data/`, `Papers/` |
 
 ---
 
-## Commands
+## Workflow (non-negotiable)
 
-```bash
-# LaTeX (3-pass, XeLaTeX only)
-cd Slides && TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-BIBINPUTS=..:$BIBINPUTS bibtex file
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
+- **Plan-first** for any non-trivial task (multi-step, multi-file, or ambiguous). Save plans to `quality_reports/plans/YYYY-MM-DD_description.md`; use `quality_reports/specs/` + `templates/requirements-spec.md` when requirements are fuzzy.
+- **Contractor mode after approval:** implement → verify → review → fix → score (see `.claude/rules/orchestrator-protocol.md` and `orchestrator-research.md` for R/analysis).
+- **Memory:** append `[LEARN:…]` entries to `MEMORY.md` when decisions or corrections should persist. Use `.claude/state/personal-memory.md` for machine-local notes (gitignored).
+- **Quality gates:** default **80/100** to commit; aim higher for manuscript figures and tables.
 
-# Deploy Quarto to GitHub Pages
-./scripts/sync_to_docs.sh LectureN
-
-# Quality score
-python scripts/quality_score.py Quarto/file.qmd
-```
+**Collaboration cadence:** For the **first few sessions**, pause more often for confirmation (plan boundaries, identification narrative, figure conventions). Taper to standard contractor autonomy as patterns stabilize.
 
 ---
 
-## Quality Thresholds
+## Domain standards (summary)
 
-| Score | Gate | Meaning |
-|-------|------|---------|
-| 80 | Commit | Good enough to save |
-| 90 | PR | Ready for deployment |
-| 95 | Excellence | Aspirational |
+- **Denominators:** Never silently merge treated/control populations; every rate or count series should trace to documented at-risk denominators (see `.claude/rules/knowledge-base-template.md`).
+- **Figures:** Publication-ready: consistent fonts, colors, labels, legible legends; no placeholder styling in outputs intended for the manuscript.
+- **Prior work:** Review `Old Attempts and Results/` for context; **do not** treat it as authoritative—rebuild analysis cleanly with explicit replication checks where possible.
 
 ---
 
-## Skills Quick Reference
+## Pointers
 
-| Command | What It Does |
-|---------|-------------|
-| `/compile-latex [file]` | 3-pass XeLaTeX + bibtex |
-| `/deploy [LectureN]` | Render Quarto + sync to docs/ |
-| `/extract-tikz [LectureN]` | TikZ → PDF → SVG |
-| `/proofread [file]` | Grammar/typo/overflow review |
-| `/visual-audit [file]` | Slide layout audit |
-| `/pedagogy-review [file]` | Narrative, notation, pacing review |
-| `/review-r [file]` | R code quality review |
-| `/qa-quarto [LectureN]` | Adversarial Quarto vs Beamer QA |
-| `/slide-excellence [file]` | Combined multi-agent review |
-| `/translate-to-quarto [file]` | Beamer → Quarto translation |
-| `/validate-bib` | Cross-reference citations |
-| `/devils-advocate` | Challenge slide design |
-| `/create-lecture` | Full lecture creation |
-| `/commit [msg]` | Stage, commit, PR, merge |
-| `/lit-review [topic]` | Literature search + synthesis |
-| `/research-ideation [topic]` | Research questions + strategies |
-| `/interview-me [topic]` | Interactive research interview |
-| `/review-paper [file]` | Manuscript review |
-| `/data-analysis [dataset]` | End-to-end R analysis |
-| `/learn [skill-name]` | Extract discovery into persistent skill |
-| `/context-status` | Show session health + context usage |
-| `/deep-audit` | Repository-wide consistency audit |
+| Resource | Purpose |
+|----------|---------|
+| `.claude/rules/knowledge-base-template.md` | Notation, cohorts, estimands, pitfalls |
+| `.claude/WORKFLOW_QUICK_REF.md` | Non-negotiables and preferences |
+| `MEMORY.md` | Cross-session learnings |
+| `Bibliography_base.bib` | Shared citations (expand as needed) |
+| `.claude/agents/domain-reviewer.md` | Substance review for manuscript/analysis claims |
 
 ---
 
-<!-- CUSTOMIZE: Replace the example entries below with your own
-     Beamer environments and Quarto CSS classes. These are examples
-     from the original project — delete them and add yours. -->
+## Commands (typical)
 
-## Beamer Custom Environments
-
-| Environment       | Effect        | Use Case       |
-|-------------------|---------------|----------------|
-| `[your-env]`      | [Description] | [When to use]  |
-
-<!-- Example entries (delete and replace with yours):
-| `keybox` | Gold background box | Key points |
-| `highlightbox` | Gold left-accent box | Highlights |
-| `definitionbox[Title]` | Blue-bordered titled box | Formal definitions |
--->
-
-## Quarto CSS Classes
-
-| Class              | Effect        | Use Case       |
-|--------------------|---------------|----------------|
-| `[.your-class]`    | [Description] | [When to use]  |
-
-<!-- Example entries (delete and replace with yours):
-| `.smaller` | 85% font | Dense content slides |
-| `.positive` | Green bold | Good annotations |
--->
+- **Python (primary):** `python3 analysis/script.py` from repo root; `pip install -r requirements.txt` to install deps.
+- **Quarto (manuscript/slides):** `quarto render manuscript/main.qmd` or `quarto render slides/main.qmd`.
+- **R (legacy/optional):** `Rscript path/to/script.R` from repo root.
+- **Stata (reference only):** scripts in `Old Attempts and Results/Terrence/`; do not modify.
+- **Git:** conventional commits; do not commit large raw data—document paths in `Data/` and ignore binaries via `.gitignore`.
 
 ---
 
-## Current Project State
+## Out of scope unless added later
 
-| Lecture | Beamer | Quarto | Key Content |
-|---------|--------|--------|-------------|
-| 1: [Topic] | `Lecture01_Topic.tex` | `Lecture1_Topic.qmd` | [Brief description] |
-| 2: [Topic] | `Lecture02_Topic.tex` | -- | [Brief description] |
+- Beamer lecture decks and Beamer↔Quarto **lecture** sync are **not** part of this project unless you create `Slides/` + paired Quarto lectures. Path-scoped rules that only match those paths stay dormant.

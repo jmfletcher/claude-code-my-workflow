@@ -1,0 +1,3 @@
+total_excess_per1000=6.5755
+le_diff_years=0.1138
+le_diff_months=1.37
