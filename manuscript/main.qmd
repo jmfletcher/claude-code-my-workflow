@@ -500,6 +500,15 @@ All analysis code, data download scripts, and figure-generation scripts
 are available at [GitHub repository link]. Raw data are from Wisconsin DPI
 and are publicly available via WISEdash.
 
+# Acknowledgments {.unnumbered}
+
+During the preparation of this work the author used Cursor 2.6.22 in order
+to assist in code editing, text edits, and reference management. After using
+this tool/service, the author reviewed and edited the content as needed and
+takes full responsibility for its content. The AI-assisted workflow used in
+this project is built on the academic template developed by
+@santanna_claudecode.
+
 ---
 
 # References {.unnumbered}
