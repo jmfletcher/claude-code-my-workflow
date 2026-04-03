@@ -30,6 +30,33 @@ How large are racial gaps within MMSD, and what drives them? Two key thought exp
 
 ---
 
+## Analysis framework
+
+### Two-era structure
+
+All analysis is split into two **non-bridged** eras. Results from each era are reported separately and never trended together.
+
+| Era | Assessment | Years | Primary data | Key limitation |
+|-----|-----------|-------|-------------|----------------|
+| WKCE Era | Wisconsin Knowledge and Concepts Exam | 2003-04 to 2013-14 | `Data/raw/wkce_sss/` (Keo SSS TXT files) | Scale scores only; race categories change at 2010-11; district/state level only |
+| Forward Era | Forward Exam | 2015-16 to 2022-23 (primary); 2023-24+ (new standards) | `Data/raw/forward/` (DPI zips) | Proficiency rates only (not scale scores); 2019-20 missing; COVID disruption 2020-21 |
+
+The 2014-15 Smarter Balanced year was never certified and is treated as a permanent gap between eras.
+
+### Peer district sub-analysis
+
+A curated comparison set of Wisconsin districts with substantial minority enrollment (Black OR Hispanic n≥30, 5+ years of Forward Exam data) is used for RQ3 cross-district comparisons. Designated tiers:
+
+| Tier | Districts |
+|------|-----------|
+| Tier 1 — Major urban | Milwaukee, Racine Unified, Kenosha, Green Bay Area Public, Beloit |
+| Tier 2 — Mid-size | Sun Prairie Area, Appleton Area, Waukesha, Janesville, West Allis-West Milwaukee |
+| Madison region | Verona Area, Middleton-Cross Plains Area |
+
+82 total eligible districts meet the data sufficiency threshold (Black AND Hispanic n≥30 in ≥5 years). The designated peer set above captures the most policy-relevant comparators. All peer comparisons label the tier used.
+
+---
+
 ## Data sources
 
 | Source | Description | Access |

@@ -45,6 +45,14 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:data] Panel datasets saved to output/data/: panel_school_race.parquet (365K rows, ~1.8 MB), panel_district_race.parquet (171K rows, ~0.9 MB). School panel includes all years 2015-16 to 2024-25; use primary_analysis==True to filter to clean years.
 
+[LEARN:analysis] TWO-ERA ANALYSIS FRAMEWORK: This project runs two separate, non-bridged analyses. (1) WKCE Era (2003-04 to 2013-14): statewide scale score data from Keo SSS TXT files; statewide and district-level mean scale scores and percentile distributions; 5→7 race categories change at 2010-11 boundary. (2) Forward Exam Era (2015-16 to present): school-level proficiency rates; primary window 2015-16 to 2022-23 (same standards, no COVID); new-standards sub-era 2023-24 onward labeled separately. Never trend across eras. 2014-15 (Smarter Balanced) is a permanent gap year.
+
+[LEARN:data] Keo Data reorganized (2026-04-03): Raw WKCE SSS TXT files (64 files, 11 year-directories) copied to Data/raw/wkce_sss/. Excel and Stata compiled files archived to Data/archive/keo_compiled/ (reference only — do not use for analysis). The layout file layout_EXW_IAS_SPS_SSS (1).xls and MMSD Data Documentation.docx are also in Data/archive/keo_compiled/ for codebook reference.
+
+[LEARN:analysis] PEER DISTRICT SUB-ANALYSIS: A curated set of Wisconsin districts with substantial and consistent Black AND Hispanic enrollment (n>=30, 5+ Forward Exam years) is used to compare MMSD minority students to comparable districts. From 82 eligible districts, the designated peer set is: (Tier 1 — major urban) Milwaukee, Racine Unified, Kenosha, Green Bay Area Public, Beloit; (Tier 2 — mid-size) Sun Prairie Area, Appleton Area, Waukesha, Janesville, West Allis-West Milwaukee; (Madison region) Verona Area, Middleton-Cross Plains Area. All peer comparisons should label which tier. Median district-level n_tested for Black students in primary years: Milwaukee ~30k, Racine ~3.8k, Madison ~3.7k, Kenosha ~2.5k, Green Bay ~1.4k, Beloit ~1.2k.
+
+[LEARN:analysis] AGGREGATION STRATEGY (confirmed 2026-04-03): (1) Statewide decomposition → use district × race (district panel); suppression not a concern at this level. (2) MMSD within-district school analysis → use school × race (collapse across grade/subject); suppression drops to ~16% for Black, ~12% for Hispanic in MMSD — feasible. (3) Peer district comparison → use district × race for cross-district gaps; school × race within each peer district for within-district patterns.
+
 ## Workflow Patterns
 
 [LEARN:workflow] Requirements specification phase catches ambiguity before planning → reduces rework 30-50%. Use spec-then-plan for complex/ambiguous tasks (>1 hour or >3 files).

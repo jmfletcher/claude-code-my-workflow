@@ -73,21 +73,53 @@ Data/
 
 ---
 
-## 2. WKCE / WINSS Historical Data (pre-Forward era)
+## 2. WKCE Scale Score Summary Data (pre-Forward era, Keo files)
+
+**Source:** Wisconsin DPI statewide WKCE Scale Score Summary (SSS) files, compiled ~2013-2014 by prior research team.
+
+**Coverage:** 2003-04 through 2013-14 (11 years). Statewide and district-level. Five subjects: Reading, Language Arts, Mathematics, Science, Social Studies. Grades 3–8 and 10.
+
+**Key variables:** Mean scale score, percentile distributions (10th, 25th, 50th, 75th, 90th) by race/ethnicity, gender, EL status, Special Education status, Economic status.
+
+**Race categories:**
+- Pre-2010-11: 5 categories (American Indian, Asian/Pacific Islander, Black, Hispanic, White)
+- 2010-11 onward: 7 categories (split Asian/Pacific Islander; added Two or More Races)
+
+**Codebook:** See `Data/archive/keo_compiled/layout_EXW_IAS_SPS_SSS (1).xls` for student group codes and column definitions. See `Data/archive/keo_compiled/MMSD Data Documentation.docx` for field descriptions.
+
+### Placement (already populated from Keo Data)
+
+```
+Data/
+└── raw/
+│   └── wkce_sss/
+│       ├── 2003 raw/       ← 3 TXT files (Grade03, Grade04, Grade05 subjects)
+│       ├── 2004 raw/
+│       ├── 2005 raw/
+│       ├── 2006 raw/       ← 7 TXT files (grades 3–8 + 10)
+│       ├── 2007 raw/
+│       ├── 2008 raw/
+│       ├── 2009 raw/
+│       ├── 2010 raw/
+│       ├── 2011 raw/
+│       ├── 2012 raw/
+│       └── 2013-14 raw/    ← 6 TXT files
+└── archive/
+    └── keo_compiled/       ← Excel and Stata files (reference only; do not use for analysis)
+```
+
+**Analysis script:** `analysis/03_load_wkce.py` (skeleton created; reads SSS TXT files using the layout codebook).
+
+---
+
+## 2b. WKCE / WINSS All-Topics Historical Data (optional, large files)
 
 **Source:** WINSS Historical Data Files via DPI
 **DPI page:** https://dpi.wi.gov/wisedash/public/download-files/winss-historical
 
-These are ALL-TOPICS files (large: 50–300 MB each). Assessment data is one topic among many inside each zip.
+These are ALL-TOPICS files (large: 50–300 MB each). Assessment data is one topic among many inside each zip. The Keo SSS TXT files (section 2 above) are a pre-extracted, cleaner version of the same WKCE data — prefer those for assessment analysis.
 
-### Available years
-
-| School Year | File | Race Flag |
-|-------------|------|-----------|
-| 2003-04 through 2009-10 | `all_topics_winss_YYYY-YY.zip` | 5 race/ethnicity categories |
-| 2010-11 onward | `all_topics_winss_2010-11.zip` etc. | **6→7 categories** (added "Two or More Races"; refined Asian subcategories) |
-
-### Placement
+### Placement (if downloaded)
 
 ```
 Data/
