@@ -1,4 +1,16 @@
-# Meta-Governance: This Repository's Dual Nature
+# Meta-Governance: This Repository's Nature
+
+**Primary identity:** This checkout is a **working research project** — *Panel conditioning in UK cohort studies* (mortality comparisons using week-of-birth designs). Configuration in `CLAUDE.md` and `.claude/rules/` is tailored to that goal.
+
+**Secondary identity:** The repo still **forks** [claude-code-my-workflow](https://github.com/jmfletcher/claude-code-my-workflow); generic workflow patterns (plan-first, quality gates, MEMORY.md) remain useful for collaborators and future forks.
+
+When deciding what to commit: prefer **project-specific analysis, manuscript, and documented decisions** over preserving generic template README text unchanged. Upstream merge conflicts may occur; resolve in favor of **this project’s** deliverables unless explicitly syncing the template.
+
+---
+
+## Historical note: Dual Nature (upstream template language below)
+
+The following sections describe the **upstream** template design (working project + public template). They still apply where this repo shares infrastructure with forks.
 
 **This repository is BOTH a working project AND a template for others.**
 

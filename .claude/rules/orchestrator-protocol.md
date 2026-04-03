@@ -2,6 +2,8 @@
 
 **After a plan is approved, the orchestrator takes over autonomously.**
 
+**Panel Conditioning (UK):** Respect **early-session check-ins** (see `CLAUDE.md` and `plan-first-workflow.md`)—pause for confirmation on estimands, denominators, and figure conventions until the user tapers cadence.
+
 ## The Loop
 
 ```

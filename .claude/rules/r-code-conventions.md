@@ -1,11 +1,11 @@
 ---
 paths:
   - "**/*.R"
-  - "Figures/**/*.R"
+  - "analysis/**/*.R"
   - "scripts/**/*.R"
 ---
 
-# R Code Standards
+# R Code Standards — Panel Conditioning (UK)
 
 **Standard:** Senior Principal Data Engineer + PhD researcher quality
 
@@ -25,11 +25,13 @@ paths:
 - Default parameters, no magic numbers
 - Named return values (lists or tibbles)
 
-## 3. Domain Correctness
+## 3. Domain Correctness (mortality / week-of-birth)
 
-<!-- Customize for your field's known pitfalls -->
-- Verify estimator implementations match slide formulas
-- Check known package bugs (document below in Common Pitfalls)
+- **Denominators:** Any rate or ratio must trace to explicit population at risk or documented rule; store treated/control **N** alongside rates.
+- **Week alignment:** Confirm week-of-birth coding matches source documentation (ISO vs provider; week 53).
+- **Geography:** Do not mix England & Wales tables with UK-wide series without an explicit bridge.
+- **Replication:** When comparing to legacy Stata/CSV outputs, use tolerance rules from the active plan.
+- Verify estimator implementations match **manuscript** definitions (not slide sketches).
 
 ## 4. Visual Identity
 
@@ -53,14 +55,15 @@ theme_custom <- function(base_size = 14) {
 }
 ```
 
-### Figure Dimensions for Beamer
+### Figure dimensions (publication / manuscript)
 ```r
-ggsave(filepath, width = 12, height = 5, bg = "transparent")
+# Typical single-column width ~6 in; use vector PDF for submission
+ggsave(filepath, width = 7, height = 4, dpi = 300)
 ```
 
 ## 5. RDS Data Pattern
 
-**Heavy computations saved as RDS; slide rendering loads pre-computed data.**
+**Heavy computations saved as RDS; manuscript/slides load pre-computed objects where appropriate.**
 
 ```r
 saveRDS(result, file.path(out_dir, "descriptive_name.rds"))
@@ -68,11 +71,11 @@ saveRDS(result, file.path(out_dir, "descriptive_name.rds"))
 
 ## 6. Common Pitfalls
 
-<!-- Add your field-specific pitfalls here -->
 | Pitfall | Impact | Prevention |
 |---------|--------|------------|
-| Missing `bg = "transparent"` | White boxes on slides | Always include in ggsave() |
-| Hardcoded paths | Breaks on other machines | Use relative paths |
+| Missing `bg = "white"` or transparent where needed | Poor print/PDF appearance | Set explicitly per output |
+| Hardcoded paths | Breaks on other machines | Use relative paths / `here::here()` |
+| Silent row drops in joins | Wrong Ns | Assert row counts; anti-join checks |
 
 ## 7. Line Length & Mathematical Exceptions
 

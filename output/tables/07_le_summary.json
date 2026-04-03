@@ -1,0 +1,13 @@
+{
+  "e0_baseline_yrs": 88.016,
+  "e0_treated_yrs": 87.737,
+  "delta_e0_yrs": -0.2789,
+  "delta_e0_months": -3.35,
+  "e10_baseline_yrs": 79.835,
+  "delta_e10_yrs": -0.2257,
+  "delta_e10_months": -2.71,
+  "total_excess_deaths_per_1000_to_age69": 7.73,
+  "delta_e0_sensitivity_yrs": -0.3449,
+  "delta_e0_sensitivity_months": -4.14,
+  "notes": "Effect applied only to observed ages (data window) in main estimate. Extension applies mean adult-age coefficient beyond observed ages. Life table extended to age 100 using ONS 2019-21 period rates (both tables); LE difference beyond observed ages is therefore zero in the main estimate."
+}

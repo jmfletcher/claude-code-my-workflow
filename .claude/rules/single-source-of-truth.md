@@ -1,69 +1,38 @@
 ---
 paths:
+  - "analysis/**/*"
+  - "manuscript/**/*"
+  - "slides/**/*"
+  - "output/**/*"
   - "Figures/**/*"
-  - "Quarto/**/*.qmd"
-  - "Slides/**/*.tex"
 ---
 
-# Single Source of Truth: Enforcement Protocol
+# Single Source of Truth (Research Project)
 
-**The Beamer `.tex` file is the authoritative source for ALL content.** Everything else is derived.
+**This project does not use Beamer lecture decks.** Authority flows from **version-controlled analysis and prose**, not from hand-edited exports.
 
-## The SSOT Chain
-
-```
-Beamer .tex (SOURCE OF TRUTH)
-  ├── extract_tikz.tex → PDF → SVGs (derived)
-  ├── Quarto .qmd → HTML (derived)
-  ├── Bibliography_base.bib (shared)
-  └── Figures/LectureN/*.rds → plotly charts (data source)
-
-NEVER edit derived artifacts independently.
-ALWAYS propagate changes from source → derived.
-```
-
----
-
-## TikZ Freshness Protocol (MANDATORY)
-
-**Before using ANY TikZ SVG in a Quarto slide, verify it matches the current Beamer source.**
-
-### Diff-Check Procedure
-
-1. Read the TikZ block from the Beamer `.tex` file
-2. Read the corresponding block from `Figures/LectureN/extract_tikz.tex`
-3. Compare EVERY coordinate, label, color, opacity, and anchor point
-4. If ANY difference exists: update `extract_tikz.tex` from Beamer, recompile, regenerate SVGs
-5. Only then reference the SVG in the QMD
-
-### When to Re-Extract
-
-Re-extract ALL TikZ diagrams when:
-- The Beamer `.tex` file has been modified since last extraction
-- Starting a new Quarto translation
-- Any TikZ-related quality issue is reported
-- Before any commit that includes QMD changes
-
----
-
-## Environment Parity (MANDATORY)
-
-**Every Beamer environment MUST have a CSS equivalent before translation begins.**
-
-1. Scan the Beamer source for all custom environments
-2. Check each against your theme SCSS file
-3. If ANY environment is missing from SCSS, create it BEFORE translating
-
----
-
-## Content Fidelity Checklist
+## The chain
 
 ```
-[ ] Frame count: Beamer frames == Quarto slides
-[ ] Math check: every equation appears with identical notation
-[ ] Citation check: every \cite has a @key in Quarto
-[ ] Environment check: every Beamer box has CSS equivalent
-[ ] Figure check: every \includegraphics has SVG or plotly equivalent
-[ ] No added content: Quarto does not invent slides not in Beamer
-[ ] No dropped content: every Beamer idea appears in Quarto
+analysis/ (R scripts, documented parameters)
+  ├── clean → analytic tables (CSV/RDS) with README or codebook
+  ├── estimates → saved objects + session info (seed, package versions)
+  └── figures → vector PDF/SVG + source script line ranges referenced in manuscript
+
+manuscript/ (.qmd / .md + BibTeX)
+  ├── numbers and claims trace to analysis outputs (or inline computed with same repo)
+  └── tables: generated from code or pinned values with explicit provenance
+
+slides/ (.qmd / .md)
+  └── Key statistics and figures copied from the same outputs as the manuscript (no orphan numbers)
 ```
+
+## Rules
+
+1. **Do not** “fix” a number in the manuscript or slides without updating the analysis pipeline (or documenting a one-off exception in the session log and MEMORY.md).
+2. **Figures** in `output/` or `analysis/figures/` must be reproducible from script; avoid pasting screenshots as final artifacts.
+3. **Prior folders** (`Old Attempts and Results/`, ad hoc Excel) are **reference only**, not SSOT.
+
+## When this overlaps legacy template paths
+
+If `Slides/**/*.tex` and `Quarto/**` lecture pairs are added later, the Beamer-centric SSOT rule applies **only** to those paths; this file governs **manuscript and panel-conditioning analysis** first.

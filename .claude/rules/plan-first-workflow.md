@@ -75,6 +75,10 @@ The pre-compact hook will remind you of this checklist.
 **After Compression:**
 First message should be: "Resuming after compression. Last task: [read most recent plan + git log]. Status: [next step]."
 
+## Collaboration cadence (this project)
+
+**Panel Conditioning (UK):** For the **first several sessions**, the user wants **more frequent check-ins**—confirm plan boundaries, estimands, denominator handling, and figure conventions before long autonomous stretches. **Taper** toward standard contractor autonomy once patterns are stable (user will say when).
+
 ## Session Recovery
 
 After compression or new session:

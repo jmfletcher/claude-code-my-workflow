@@ -1,0 +1,108 @@
+---
+title: "Panel Conditioning and Mortality"
+subtitle: "Evidence from UK Birth Cohort Studies"
+author: "Jason Fletcher"
+date: today
+bibliography: ../Bibliography_base.bib
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    toc: false
+    width: 1280
+    height: 720
+    embed-resources: true
+execute:
+  echo: false
+  warning: false
+---
+
+## Motivation
+
+- Long-run cohort studies are a cornerstone of social and health science research.
+- But **does being surveyed change you?** — *panel conditioning*
+- If so: cohort participants ≠ a random sample; conclusions may be confounded.
+
+**Key question:** Do individuals born in weeks *selected* for UK panel studies
+have **different mortality** than similar individuals born in nearby, unselected weeks?
+
+---
+
+## The UK natural experiment
+
+Three major UK studies each selected **a single birth week**:
+
+| Study | Birth week | N (approx.) |
+|-------|-----------|-------------|
+| NSHD | 3–9 March **1946** | ~5,000 followed |
+| NCDS | 3–9 March **1958** | ~17,000 followed |
+| BCS70 | 5–11 April **1970** | ~17,000 followed |
+
+Adjacent weeks provide a natural **control group** — same cohort, same season, never surveyed.
+
+---
+
+## Data
+
+- **ONS administrative vital statistics**: deaths by week of birth × calendar year,
+  England and Wales, 1970–2013.
+- Covers all deaths registered; not self-reported.
+- Unit of analysis: birth week × calendar year (mortality rate).
+- Three cohort groups × 9 weeks (1 treated + 8 control) each.
+
+---
+
+## Empirical strategy
+
+$$\text{rate}_{b,t} = \alpha + \beta \cdot \mathbf{1}[\text{treated week}]_b
+  + \gamma_a + \delta_t + \eta_w + \varepsilon_{b,t}$$
+
+- $\beta$ = panel conditioning effect on mortality rate
+- Controls: **age FE**, **calendar year FE**, **week-of-year FE**
+- Standard errors clustered by birth week
+- Also estimated by **10-year age intervals**
+
+---
+
+## Main result — pooled
+
+[INSERT: TABLE/FIGURE with pooled $\hat\beta$ and 95% CI from `output/tables/`]
+
+---
+
+## By age interval
+
+[INSERT: FIGURE — $\hat\beta$ by age bin (0–9, 10–19, ..., 60–69) with 95% CI]
+
+---
+
+## Robustness
+
+[FILL IN after analysis]
+
+---
+
+## Comparison: Wisconsin Longitudinal Study
+
+@Warren2022_wls_mortality use a true experimental design (WLS):
+
+- 1/3 of 1957 Wisconsin HS seniors randomly selected to participate
+- **50+ years** of intensive survey follow-up
+- Result: **no effect on longevity** (full sample + subgroups)
+
+Our UK evidence: [FILL IN — complement or contrast]
+
+---
+
+## Conclusion
+
+- [FILL IN after results]
+- Denominator note: treated and control at-risk populations are balanced by design
+  (same birth calendar cluster, same geography).
+
+---
+
+## References
+
+::: {#refs}
+:::

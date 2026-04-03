@@ -1,266 +1,152 @@
-# My Claude Code Setup
+# Panel Conditioning and Mortality in UK Birth Cohort Studies
 
-> **Work in progress.** This is not meant to be a polished guide for everyone. It's mostly a summary of how I've been using Claude Code for academic work — slides, papers, data analysis, and more. I keep learning new things, and as I do, I keep updating these files. This is just a way for me to share what I've figured out with friends and colleagues.
+**Replication package** · Jason Fletcher · University of Wisconsin–Madison
 
-**Live site:** [psantanna.com/claude-code-my-workflow](https://psantanna.com/claude-code-my-workflow/)
-**Last Updated:** 2026-02-27
-
-A ready-to-fork foundation for AI-assisted academic work. You describe what you want — lecture slides, a research paper, a data analysis, a replication package — and Claude plans the approach, runs specialized agents, fixes issues, verifies quality, and presents results. Like a contractor who handles the entire job. Extracted from a production PhD course and extended by a growing [community](#community--extensions).
+> Do people born in weeks selected for major UK panel studies have different
+> mortality than people born in adjacent non-selected weeks?
 
 ---
 
-## Quick Start (5 minutes)
+## Overview
 
-### 1. Fork & Clone
+Three major UK birth cohort studies — the NSHD (1946), NCDS (1958), and BCS70 (1970) —
+each enrolled all births occurring within a single target week. This design creates a
+natural comparison group: births in adjacent weeks share the same calendar-time environment
+but were never recruited. Using administrative vital statistics from England and Wales
+(1970–2013), we compare mortality trajectories for selected ("treated") birth weeks against
+eight adjacent control weeks within each cluster.
 
-```bash
-# Fork this repo on GitHub (click "Fork" on the repo page), then:
-git clone https://github.com/YOUR_USERNAME/claude-code-my-workflow.git my-project
-cd my-project
+The pooled treatment estimate is positive but fragile: it attenuates to statistical
+insignificance under narrow control windows, and an exact permutation test yields
+$p = 0.222$. The NCDS — the cohort most comparable to the experimental WLS design —
+shows a null effect, consistent with prior evidence from Warren et al. (2022).
+
+**Manuscript:** `manuscript/main.qmd` (rendered to `manuscript/main.pdf`)
+
+---
+
+## Repository structure
+
+```
+.
+├── analysis/               # Python analysis pipeline (scripts 00–08)
+├── Data/                   # Raw data (NOT tracked; see DATA.md for access)
+│   └── HMD/                # Human Mortality Database (NOT tracked; see DATA.md)
+├── manuscript/             # Quarto source (.qmd) and rendered PDF
+├── output/
+│   ├── figures/            # All figures (PDF + PNG); tracked
+│   └── tables/             # All tables (CSV + LaTeX + JSON); tracked
+├── quality_reports/        # Analysis plans and session logs
+├── Bibliography_base.bib   # BibTeX bibliography
+├── requirements.txt        # Python dependencies (pinned)
+├── DATA.md                 # Data access instructions
+└── CLAUDE.md               # AI-assistant configuration (project rules)
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username.
+---
 
-### 2. Start Claude Code and Paste This Prompt
+## Reproducing the results
+
+### 1. Requirements
+
+Python ≥ 3.10. Install dependencies:
 
 ```bash
-claude
+pip install -r requirements.txt
 ```
 
-**Using VS Code?** Open the Claude Code panel instead. Everything works the same — see the [full guide](https://psantanna.com/claude-code-my-workflow/workflow-guide.html#sec-setup) for details.
+Quarto ≥ 1.5 is required to render the manuscript:
 
-Then paste the [starter prompt](https://psantanna.com/claude-code-my-workflow/workflow-guide.html#sec-first-session) from the guide, filling in your project details:
+```bash
+# macOS (Homebrew)
+brew install quarto
+# or download from https://quarto.org/docs/get-started/
+```
 
-> I am starting to work on **[PROJECT NAME]** in this repo. **[Describe your project in 2–3 sentences.]** I've set up the Claude Code academic workflow... Please read the configuration files and adapt them for my project. Enter plan mode and start.
+### 2. Data
 
-The [full guide](https://psantanna.com/claude-code-my-workflow/workflow-guide.html#sec-first-session) has the complete starter prompt with all the details.
+Raw data files are **not tracked** in this repository (large ONS `.xls` files and
+licensed HMD data). See [`DATA.md`](DATA.md) for download instructions and placement.
 
-**What this does:** Claude reads all the configuration files, fills in your project name, institution, and preferences, then enters contractor mode — planning, implementing, reviewing, and verifying autonomously. You approve the plan and Claude handles the rest.
+Pre-computed output tables and figures **are** tracked in `output/`, so you can
+read the manuscript and inspect all results without re-running the pipeline.
 
----
+### 3. Running the pipeline
 
-## How It Works
+Run from the repository root, in order:
 
-### Contractor Mode
+```bash
+python3 analysis/00_data_overview.py   # inspect raw files
+python3 analysis/01_load_and_clean.py  # build tidy panel → output/tables/01_*.csv
+python3 analysis/02_replicate_stata.py # legacy replication check
+python3 analysis/03_figures.py         # mortality trajectory figures
+python3 analysis/04_main_tables.py     # pooled + by-cohort coefficient tables
+python3 analysis/05_cause_of_death.py  # cause-specific decomposition
+python3 analysis/06_robustness.py      # robustness checks + permutation test
+python3 analysis/07_life_expectancy.py # back-of-envelope life-expectancy exercise
+python3 analysis/08_descriptive_stats.py # descriptive table + HMD validation
+```
 
-You describe a task. For complex or ambiguous requests, Claude first creates a requirements specification with MUST/SHOULD/MAY priorities and clarity status (CLEAR/ASSUMED/BLOCKED). You approve the spec, then Claude plans the approach, implements it, runs specialized review agents, fixes issues, re-verifies, and scores against quality gates — all autonomously. You see a summary when the work meets quality standards. Say "just do it" and it auto-commits too.
+Each script prints a summary and writes outputs to `output/figures/` and `output/tables/`.
+Scripts 03–08 depend on `output/tables/01_age_aggregated.csv` produced by script 01.
 
-### Specialized Agents
+### 4. Rendering the manuscript
 
-Instead of one general-purpose reviewer, 10 focused agents each check one dimension:
+```bash
+cd manuscript
+quarto render main.qmd --to pdf
+```
 
-- **proofreader** — grammar/typos
-- **slide-auditor** — visual layout
-- **pedagogy-reviewer** — teaching quality
-- **r-reviewer** — R code quality
-- **domain-reviewer** — field-specific correctness (template — customize for your field)
-
-Each is better at its narrow task than a generalist would be. The `/slide-excellence` skill runs them all in parallel. The same pattern extends to any academic artifact — manuscripts, data pipelines, proposals.
-
-### Adversarial QA
-
-Two agents work in opposition: the **critic** reads both Beamer and Quarto and produces harsh findings. The **fixer** implements exactly what the critic found. They loop until the critic says "APPROVED" (or 5 rounds max). This catches errors that single-pass review misses.
-
-### Quality Gates
-
-Every file gets a score (0–100). Scores below threshold block the action:
-- **80** — commit threshold
-- **90** — PR threshold
-- **95** — excellence (aspirational)
-
-### Context Survival
-
-Plans, specifications, and session logs survive auto-compression and session boundaries. The PreCompact hook saves a context snapshot before Claude's auto-compression triggers, ensuring critical decisions are never lost. MEMORY.md accumulates learning across sessions, so patterns discovered in one session inform future work.
-
----
-
-## The Guide
-
-For a comprehensive walkthrough, read the **[full guide](https://psantanna.com/claude-code-my-workflow/workflow-guide.html)** (or see the [source](guide/workflow-guide.qmd)).
-
-It covers:
-1. **Why This Workflow Exists** — the problem and the vision
-2. **Getting Started** — fork, paste one prompt, and Claude sets up the rest
-3. **The System in Action** — specialized agents, adversarial QA, quality scoring
-4. **The Building Blocks** — CLAUDE.md, rules, skills, agents, hooks, memory
-5. **Workflow Patterns** — slides, research, reproducibility, presentation rhetoric, and more
-6. **The Ecosystem** — extensions by clo-author, claudeblattman, MixtapeTools, and others
-7. **Customizing for Your Domain** — creating your own reviewers and knowledge bases
+The manuscript embeds all tables and figures dynamically from `output/`. Rendering
+requires the full Python environment (the `.qmd` executes Python code blocks).
 
 ---
 
-## Use Cases
+## Analysis overview
 
-| Academic Task | How This Workflow Helps |
-|---------------|----------------------|
-| Lecture slides (Beamer/Quarto) | Full creation, translation, multi-agent review, deployment |
-| Research papers | Literature review, manuscript review, simulated peer review |
-| Data analysis | End-to-end R pipelines, replication verification, publication-ready output |
-| Replication packages | AEA-compliant packaging, reproducibility audit trails |
-| Presentations | Rhetoric of decks principles, visual audit, cognitive load review |
-| Research proposals | Structured drafting with adversarial critique |
-
----
-
-## What's Included
-
-<details>
-<summary><strong>10 agents, 22 skills, 18 rules, 7 hooks</strong> (click to expand)</summary>
-
-### Agents (`.claude/agents/`)
-
-| Agent | What It Does |
-|-------|-------------|
-| `proofreader` | Grammar, typos, overflow, consistency review |
-| `slide-auditor` | Visual layout audit (overflow, font consistency, spacing) |
-| `pedagogy-reviewer` | 13-pattern pedagogical review (narrative arc, notation density, pacing) |
-| `r-reviewer` | R code quality, reproducibility, and domain correctness |
-| `tikz-reviewer` | Merciless TikZ diagram visual critique |
-| `beamer-translator` | Beamer-to-Quarto translation specialist |
-| `quarto-critic` | Adversarial QA comparing Quarto against Beamer benchmark |
-| `quarto-fixer` | Implements fixes from the critic agent |
-| `verifier` | End-to-end task completion verification |
-| `domain-reviewer` | **Template** for your field-specific substance reviewer |
-
-### Skills (`.claude/skills/`)
-
-| Skill | What It Does |
-|-------|-------------|
-| `/compile-latex` | 3-pass XeLaTeX compilation with bibtex |
-| `/deploy` | Render Quarto + sync to GitHub Pages |
-| `/extract-tikz` | TikZ diagrams to PDF to SVG pipeline |
-| `/proofread` | Launch proofreader on a file |
-| `/visual-audit` | Launch slide-auditor on a file |
-| `/pedagogy-review` | Launch pedagogy-reviewer on a file |
-| `/review-r` | Launch R code reviewer |
-| `/qa-quarto` | Adversarial critic-fixer loop (max 5 rounds) |
-| `/slide-excellence` | Combined multi-agent review |
-| `/translate-to-quarto` | Full 11-phase Beamer-to-Quarto translation |
-| `/validate-bib` | Cross-reference citations against bibliography |
-| `/devils-advocate` | Challenge design decisions before committing |
-| `/create-lecture` | Full lecture creation workflow |
-| `/commit` | Stage, commit, create PR, and merge to main |
-| `/lit-review` | Literature search, synthesis, and gap identification |
-| `/research-ideation` | Generate research questions and empirical strategies |
-| `/interview-me` | Interactive interview to formalize a research idea |
-| `/review-paper` | Manuscript review: structure, econometrics, referee objections |
-| `/data-analysis` | End-to-end R analysis with publication-ready output |
-| `/learn` | Extract non-obvious discoveries into persistent skills |
-| `/context-status` | Show session health and context usage |
-| `/deep-audit` | Repository-wide consistency audit |
-
-### Research Workflow
-
-| Feature | What It Does |
-|---------|-------------|
-| Exploration folder | Structured `explorations/` sandbox with graduate/archive lifecycle |
-| Fast-track workflow | 60/100 quality threshold for rapid prototyping |
-| Simplified orchestrator | implement → verify → score → done (no multi-round reviews) |
-| Enhanced session logging | Structured tables for changes, decisions, verification |
-| Merge-only reporting | Quality reports at merge time only |
-| Math line-length exception | Long lines acceptable for documented formulas |
-| Workflow quick reference | One-page cheat sheet at `.claude/WORKFLOW_QUICK_REF.md` |
-
-### Rules (`.claude/rules/`)
-
-Rules use path-scoped loading: **always-on** rules load every session (~100 lines total); **path-scoped** rules load only when Claude works on matching files. Claude follows ~150 instructions reliably, so less is more.
-
-**Always-on** (no `paths:` frontmatter — load every session):
-
-| Rule | What It Enforces |
-|------|-----------------|
-| `plan-first-workflow` | Plan mode for non-trivial tasks + context preservation |
-| `orchestrator-protocol` | Contractor mode: implement → verify → review → fix → score |
-| `session-logging` | Three logging triggers: post-plan, incremental, end-of-session |
-| `meta-governance` | Template vs. working project distinctions |
-
-**Path-scoped** (load only when working on matching files):
-
-| Rule | Triggers On | What It Enforces |
-|------|------------|-----------------|
-| `verification-protocol` | `.tex`, `.qmd`, `docs/` | Task completion checklist |
-| `single-source-of-truth` | `Figures/`, `.tex`, `.qmd` | No content duplication; Beamer is authoritative |
-| `quality-gates` | `.tex`, `.qmd`, `*.R` | 80/90/95 scoring + tolerance thresholds |
-| `r-code-conventions` | `*.R` | R coding standards + math line-length exception |
-| `tikz-visual-quality` | `.tex` | TikZ diagram visual standards |
-| `beamer-quarto-sync` | `.tex`, `.qmd` | Auto-sync Beamer edits to Quarto |
-| `pdf-processing` | `master_supporting_docs/` | Safe large PDF handling |
-| `proofreading-protocol` | `.tex`, `.qmd`, `quality_reports/` | Propose-first, then apply with approval |
-| `no-pause-beamer` | `.tex` | No overlay commands in Beamer |
-| `replication-protocol` | `*.R` | Replicate original results before extending |
-| `knowledge-base-template` | `.tex`, `.qmd`, `*.R` | Notation/application registry template |
-| `orchestrator-research` | `*.R`, `explorations/` | Simple orchestrator for research (no multi-round reviews) |
-| `exploration-folder-protocol` | `explorations/` | Structured sandbox for experimental work |
-| `exploration-fast-track` | `explorations/` | Lightweight exploration workflow (60/100 threshold) |
-
-### Templates (`templates/`)
-
-| Template | What It Does |
-|----------|-------------|
-| `session-log.md` | Structured session logging format |
-| `quality-report.md` | Merge-time quality report format |
-| `exploration-readme.md` | Exploration project README template |
-| `archive-readme.md` | Archive documentation template |
-| `requirements-spec.md` | MUST/SHOULD/MAY requirements framework with clarity status |
-| `constitutional-governance.md` | Template for defining non-negotiable principles vs. preferences |
-| `skill-template.md` | Academic skill creation template with domain-specific examples |
-
-</details>
+| Script | Output | Description |
+|--------|--------|-------------|
+| `00_data_overview.py` | (console) | Inspect raw ONS files |
+| `01_load_and_clean.py` | `01_*.csv` | Tidy long panel; impute denominators |
+| `02_replicate_stata.py` | `02_*.csv` | Port Stata regressions; verify parity |
+| `03_figures.py` | `fig02_*.png`, `fig03_*.png` | Mortality trajectory plots |
+| `04_main_tables.py` | `04_*.csv/json/tex` | Pooled + age-interval + by-cohort tables |
+| `05_cause_of_death.py` | `05_*.csv` | Cause-specific coefficients |
+| `06_robustness.py` | `06_*.csv/json`, `fig06_*.png` | Window, log, LOO, permutation test |
+| `07_life_expectancy.py` | `07_*.csv/json`, `fig07_*.png` | Life-table translation (appendix) |
+| `08_descriptive_stats.py` | `08_*.csv/tex` | Descriptive table; HMD validation |
 
 ---
 
-## Prerequisites
+## Key findings
 
-| Tool | Required For | Install |
-|------|-------------|---------|
-| [Claude Code](https://code.claude.com/docs/en/overview) | Everything | `npm install -g @anthropic-ai/claude-code` |
-| XeLaTeX | LaTeX compilation | [TeX Live](https://tug.org/texlive/) or [MacTeX](https://tug.org/mactex/) |
-| [Quarto](https://quarto.org) | Web slides | [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) |
-| R | Figures & analysis | [r-project.org](https://www.r-project.org/) |
-| pdf2svg | TikZ to SVG | `brew install pdf2svg` (macOS) |
-| [gh CLI](https://cli.github.com/) | PR workflow | `brew install gh` (macOS) |
-
-Not all tools are needed — install only what your project uses. Claude Code is the only hard requirement.
+- **Pooled ITT:** $\hat\beta = 0.060$ (SE = 0.027, $p = 0.024$), but sensitive to
+  control window width and not significant under exact permutation inference ($p = 0.222$).
+- **NCDS (closest parallel to WLS):** $\hat\beta = -0.021$ ($p = 0.36$) — null.
+- **Narrow window (4 nearest controls):** $\hat\beta = 0.039$ ($p = 0.105$) — insignificant.
+- Cause-of-death decomposition is exploratory; multiple-testing concern applies.
+- Ages 0–9 estimate is mechanically implausible as a panel conditioning effect.
 
 ---
 
-## Adapting for Your Field
+## Data sources
 
-1. **Fill in the knowledge base** (`.claude/rules/knowledge-base-template.md`) with your notation, applications, and design principles
-2. **Customize the domain reviewer** (`.claude/agents/domain-reviewer.md`) with review lenses specific to your field
-3. **Update the color palette** in your Quarto theme SCSS file — change the color variables at the top
-4. **Add field-specific R pitfalls** to `.claude/rules/r-code-conventions.md`
-5. **Fill in the lecture mapping** in `.claude/rules/beamer-quarto-sync.md`
-6. **Customize the workflow quick reference** (`.claude/WORKFLOW_QUICK_REF.md`) with your non-negotiables and preferences
-7. **Set up the exploration folder** (`explorations/`) for experimental work
+| Source | Description | Access |
+|--------|-------------|--------|
+| ONS deaths by week of birth | Death counts by year, week of birth, cause; E&W 1970–2013 | See `DATA.md` |
+| Human Mortality Database (GBRTENW) | Period death rates for England and Wales | See `DATA.md` |
 
 ---
 
-## Additional Resources
+## Citation
 
-- [Claude Code Documentation](https://code.claude.com/docs/en/overview)
-- [Writing a Good CLAUDE.md](https://code.claude.com/docs/en/memory) — official guidance on project memory
-
----
-
-## Origin
-
-This infrastructure was extracted from **Econ 730: Causal Panel Data** at Emory University, developed by Pedro Sant'Anna using Claude Code over 6+ sessions. The course produced 6 complete PhD lecture decks with 800+ slides, interactive Quarto versions with plotly charts, and full R replication packages — all managed through this multi-agent workflow. The patterns are domain-agnostic: the same agents, rules, and orchestrator work for any academic project.
-
----
-
-## Community & Extensions
-
-This repo is the foundation. Others have extended it for specific workflows:
-
-- **[clo-author](https://github.com/hsantanna88/clo-author)** by Hugo Sant'Anna (UAB) — Paper-centric research workflows with 15 adversarial worker-critic agent pairs, simulated blind peer review, AEA replication compliance, and full research lifecycle management
-- **[claudeblattman](https://github.com/chrisblattman/claudeblattman)** by Chris Blattman (U Chicago) — Comprehensive guide for non-technical academics: executive assistant workflows, proposal writing, agent debates, and self-improving configuration
-- **[MixtapeTools](https://github.com/scunning1975/MixtapeTools)** by Scott Cunningham (Baylor) — The Rhetoric of Decks: philosophy and practice of beautiful, rhetorically effective academic presentations
-
-See the [guide's ecosystem section](https://psantanna.com/claude-code-my-workflow/workflow-guide.html#sec-ecosystem) for detailed descriptions, design principles, and more resources.
+Fletcher, Jason (2026). "Panel Conditioning and Mortality in UK Birth Cohort Studies:
+Evidence from Administrative Vital Statistics." Working paper, University of
+Wisconsin–Madison.
 
 ---
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+Code: MIT. See `LICENSE`.
+Data: see `DATA.md` for terms of the underlying sources.

@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+  \centering
+  \small
+
+  \caption{Pooled OLS estimate of panel conditioning effect on mortality}
+  \label{tab:pooled}
+  \begin{tabular}{lcccccc}
+  \toprule
+  \textbf{Specification} & \textbf{Dependent variable} & \textbf{Cohort coefficient} & \textbf{(SE)} & \textbf{p-value} & \textbf{N} & \textbf{R²} \\
+  \midrule
+  Pooled OLS (all ages, all cohorts) & Mortality rate & 0.061** & (0.029) & 0.036 &  &  \\
+  \bottomrule
+  \end{tabular}
+  \begin{tablenotes}
+    \footnotesize
+    \item \textit{Notes:} OLS with age, birth-year, and week-of-year fixed effects.
+    Standard errors (in parentheses) clustered by birth week.
+    $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+    Data: ONS deaths by week of birth, England and Wales 1970--2013.
+  \end{tablenotes}
+\end{table}

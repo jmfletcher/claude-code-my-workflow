@@ -4,6 +4,8 @@ paths:
   - "Quarto/**/*.qmd"
 ---
 
+<!-- Panel Conditioning (UK): This rule applies only if you create paired Beamer + Quarto *lecture* decks. The main project uses manuscript/ + slides/ without Beamer. -->
+
 # Beamer → Quarto Auto-Sync Rule (MANDATORY)
 
 **Every edit to a Beamer `.tex` file MUST be immediately synced to the corresponding Quarto `.qmd` file — automatically, without the user asking.** This is non-negotiable.

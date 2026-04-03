@@ -1,12 +1,14 @@
 ---
 paths:
+  - "analysis/**/*.R"
   - "scripts/**/*.R"
-  - "Figures/**/*.R"
 ---
 
 # Replication-First Protocol
 
-**Core principle:** Replicate original results to the dot BEFORE extending.
+**Core principle:** Replicate **prior agreed targets** (published paper, legacy Stata/CSV in `Old Attempts and Results/`, or pinned outputs) **before** extending estimators or samples.
+
+**Panel Conditioning (UK):** “Original” may mean **team baseline scripts** rather than an external journal package—document targets in `quality_reports/specs/` or the active plan.
 
 ---
 

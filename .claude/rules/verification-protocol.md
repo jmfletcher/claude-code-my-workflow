@@ -3,51 +3,64 @@ paths:
   - "Slides/**/*.tex"
   - "Quarto/**/*.qmd"
   - "docs/**"
+  - "manuscript/**"
+  - "analysis/**"
+  - "slides/**"
 ---
 
 # Task Completion Verification Protocol
 
 **At the end of EVERY task, Claude MUST verify the output works correctly.** This is non-negotiable.
 
-## For Quarto/HTML Slides:
-1. Run `./scripts/sync_to_docs.sh` (or `./scripts/sync_to_docs.sh LectureN`) to render and deploy
-2. Open the HTML in browser: `open docs/slides/LectureX.html` (macOS) or `xdg-open` (Linux)
-3. Verify images display by reading 2-3 image files to confirm valid content
-4. Check HTML source for correct image paths
-5. Check for overflow by scanning dense slides
-6. Verify environment parity: every Beamer box environment has a CSS equivalent in the QMD
-7. Report verification results
+## For manuscript (`manuscript/`) — Quarto / Markdown
 
-## For LaTeX/Beamer Slides:
-1. Compile with xelatex and check for errors
-2. Open the PDF to verify figures render (`open` on macOS, `xdg-open` on Linux)
-3. Check for overfull hbox warnings
+1. `quarto render` (or agreed build) on the target file; fix errors until clean.
+2. Open the PDF/HTML output; spot-check **tables and figures** for truncation and correct cross-references.
+3. Confirm **numbers in text** match pipeline outputs referenced in the methods or captions.
 
-## For TikZ Diagrams in HTML/Quarto:
-1. Browsers **cannot** display PDF images inline — ALWAYS convert to SVG
-2. Use SVG (vector format) for crisp rendering: `pdf2svg input.pdf output.svg`
-3. **NEVER use PNG for diagrams** — PNG is raster and looks blurry
-4. Verify SVG files contain valid XML/SVG markup
-5. Copy SVGs to `docs/Figures/LectureX/` via `sync_to_docs.sh`
-6. **Freshness check:** Before using any TikZ SVG, verify extract_tikz.tex matches current Beamer source
+## For project slides (`slides/`)
 
-## For R Scripts:
-1. Run `Rscript scripts/R/filename.R`
-2. Verify output files (PDF, RDS) were created with non-zero size
-3. Spot-check estimates for reasonable magnitude
+1. `quarto render` (or Pandoc) per project convention; confirm **PDF** (or HTML) builds.
+2. Visual scan: **fonts, axis labels, legends** readable; no placeholder titles on final exports.
+3. Figures match the **same files or values** as the manuscript (no divergent “magic” numbers).
 
-## Common Pitfalls:
-- **PDF images in HTML**: Browsers don't render PDFs inline → convert to SVG
-- **Relative paths**: `../Figures/` works from `Quarto/` but not from `docs/slides/` → use `sync_to_docs.sh`
-- **Assuming success**: Always verify output files exist AND contain correct content
-- **Stale TikZ SVGs**: extract_tikz.tex diverges from Beamer source → always diff-check
+## For analysis (`analysis/**/*.R`)
 
-## Verification Checklist:
+1. Run `Rscript analysis/path/to/script.R` from repo root (or documented entrypoint).
+2. Confirm outputs (CSV, RDS, figures) exist, non-zero size, **sensible row counts** for denominators.
+3. If comparing to **legacy Stata/CSV**, run tolerance checks defined in the active plan.
+
+## For Quarto/HTML (legacy lecture site in `docs/`)
+
+1. Run `./scripts/sync_to_docs.sh` (or `./scripts/sync_to_docs.sh LectureN`) when editing upstream lecture Quarto that syncs to `docs/`.
+2. Open HTML in browser; verify images and paths.
+3. Beamer environment parity applies **only** if Beamer sources exist.
+
+## For LaTeX/Beamer Slides (`Slides/`)
+
+1. Compile with xelatex; check for errors and overfull boxes.
+2. Open PDF to verify figures.
+
+## For TikZ → HTML (only if using lecture TikZ pipeline)
+
+1. Use SVG for HTML; verify freshness vs Beamer source if applicable.
+
+## For R Scripts (generic)
+
+1. `Rscript` the script; verify outputs.
+2. Spot-check magnitudes and **N** columns where present.
+
+## Common pitfalls
+
+- **PDF in HTML:** browsers need SVG or embedded raster for inline diagrams.
+- **Path drift:** `../Figures/` vs `docs/` — use project `output/` conventions for Panel Conditioning.
+- **Stale outputs:** re-run pipeline after code changes before declaring success.
+
+## Verification checklist
+
 ```
-[ ] Output file created successfully
-[ ] No compilation/render errors
-[ ] Images/figures display correctly
-[ ] Paths resolve in deployment location (docs/)
-[ ] Opened in browser/viewer to confirm visual appearance
+[ ] Build/run completed without errors
+[ ] Outputs exist and pass sanity checks (including Ns/denominators)
+[ ] Visual check for manuscript PDFs and slide PDFs
 [ ] Reported results to user
 ```

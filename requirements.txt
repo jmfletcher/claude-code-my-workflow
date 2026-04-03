@@ -1,0 +1,23 @@
+# Panel Conditioning (UK) — Python dependencies
+# Tested with Python 3.10+
+# Install: pip install -r requirements.txt
+
+# Core data and statistics
+pandas==2.3.3
+numpy==2.3.3
+statsmodels==0.14.5
+scipy==1.16.2
+
+# Plotting
+matplotlib==3.10.7
+seaborn==0.13.2
+
+# Excel I/O
+openpyxl==3.1.5    # .xlsx files
+xlrd==2.0.2        # legacy .xls files (ONS data)
+
+# Quarto / Jupyter rendering
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6.0
+jupyter-core>=5.0

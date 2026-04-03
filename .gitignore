@@ -1,8 +1,24 @@
 # ==============================================================================
-# .gitignore for Academic Claude Code Projects
+# .gitignore — Panel Conditioning (UK cohorts)
 # ==============================================================================
 
+# ------------------------------------------------------------------------------
+# Raw data — NOT tracked (large files; see DATA.md for download instructions)
+# ------------------------------------------------------------------------------
+Data/
+
+# Legacy partial analyses — large and not part of current pipeline
+Old Attempts and Results/
+
+# IRB forms and data request documents — sensitive, not for public repo
+Data Request Background Files/
+
+# Reference papers — copyrighted PDFs, not redistributable
+Papers/
+
+# ------------------------------------------------------------------------------
 # LaTeX build artifacts
+# ------------------------------------------------------------------------------
 *.aux
 *.bbl
 *.blg
@@ -18,41 +34,51 @@
 *.run.xml
 *-blx.bib
 
-# Compiled PDFs (uncomment to track specific PDFs)
-# *.pdf
+# Track manuscript PDF (pre-built for readers who cannot render Quarto)
+# *.pdf is NOT ignored so that manuscript/main.pdf is committed
 
+# ------------------------------------------------------------------------------
 # Python
+# ------------------------------------------------------------------------------
 __pycache__/
 *.pyc
 *.pyo
 
-# R
+# ------------------------------------------------------------------------------
+# R (not used in current pipeline; kept for safety)
+# ------------------------------------------------------------------------------
 .Rproj.user/
 .Rhistory
 .RData
 .Rdata
 
-# OS files
+# ------------------------------------------------------------------------------
+# OS / editor files
+# ------------------------------------------------------------------------------
 .DS_Store
 Thumbs.db
-
-# Claude Code local files (not shared across machines)
-.claude/settings.local.json
-.claude/state/
-CLAUDE.local.md
-
-# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Quarto rendering artifacts
-/.quarto/
+# ------------------------------------------------------------------------------
+# Claude Code local / machine-specific files
+# ------------------------------------------------------------------------------
+.claude/settings.local.json
+.claude/state/
+CLAUDE.local.md
 
-# Output artifacts — uncomment lines below based on your preference
-# *.rds
-# output/**/*.rds
+# ------------------------------------------------------------------------------
+# Quarto rendering artifacts
+# ------------------------------------------------------------------------------
+/.quarto/
+**/.quarto/
+manuscript/main_files/
+manuscript/main.html
+manuscript/output/
+Slides/main.html
+output/.mpl/
 
 

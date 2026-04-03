@@ -1,86 +1,82 @@
-# Workflow Quick Reference
+# Workflow Quick Reference — Panel Conditioning (UK)
 
-**Model:** Contractor (you direct, Claude orchestrates)
+**Model:** Contractor (you direct; Claude orchestrates). **Early sessions:** more frequent check-ins until you signal to taper.
 
 ---
 
-## The Loop
+## The loop
 
 ```
 Your instruction
     ↓
-[PLAN] (if multi-file or unclear) → Show plan → Your approval
+[PLAN] if multi-file, ambiguous, or >1 hour → save plan → your approval
     ↓
-[EXECUTE] Implement, verify, done
+[EXECUTE] Implement → verify → review → score
     ↓
-[REPORT] Summary + what's ready
+[REPORT] Summary + what’s ready + open questions
     ↓
 Repeat
 ```
 
 ---
 
-## I Ask You When
+## I ask you when
 
-- **Design forks:** "Option A (fast) vs. Option B (robust). Which?"
-- **Code ambiguity:** "Spec unclear on X. Assume Y?"
-- **Replication edge case:** "Just missed tolerance. Investigate?"
-- **Scope question:** "Also refactor Y while here, or focus on X?"
-
----
-
-## I Just Execute When
-
-- Code fix is obvious (bug, pattern application)
-- Verification (tolerance checks, tests, compilation)
-- Documentation (logs, commits)
-- Plotting (per established standards)
-- Deployment (after you approve, I ship automatically)
+- **Identification / estimand:** treated vs control weeks, parallel trends, scope (E&W vs UK).
+- **Denominator source:** which column/file defines \(N_{b,t}\) or population counts.
+- **Figure or table fork:** e.g., cumulative vs annual; age vs calendar time.
+- **Scope creep:** “Also rerun Stata legacy?” vs fresh R-only pipeline.
 
 ---
 
-## Quality Gates (No Exceptions)
+## I execute when
+
+- Running agreed analysis scripts, regenerating figures, updating manuscript/slides from same outputs.
+- Verification (R runs, `quarto render`, file sanity checks).
+- Logging decisions to `quality_reports/session_logs/` and `[LEARN]` to `MEMORY.md`.
+
+---
+
+## Quality gates
 
 | Score | Action |
 |-------|--------|
-| >= 80 | Ready to commit |
-| < 80  | Fix blocking issues |
+| ≥ 80 | OK to commit |
+| < 80 | Fix blocking issues |
+| ≥ 90 | Target for manuscript figures and core tables |
 
 ---
 
-## Non-Negotiables (Customize These)
+## Non-negotiables
 
-<!-- Replace with YOUR project's locked-in preferences -->
-
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+- **Paths:** `here::here()` or repo-root-relative paths in R; no machine-specific absolute paths in committed code.
+- **Reproducibility:** `set.seed()` once at top when relevant; record key package versions (sessionInfo or renv).
+- **Denominators:** treated and control **N** must be explicit wherever rates appear; no orphan rates in prose.
+- **Figures:** publication-ready — consistent theme, axis labels with units, readable fonts; vector PDF for print pipeline.
+- **Numerical tolerance:** define in plan when comparing to legacy Stata/CSV outputs (e.g. rounding vs exact match).
 
 ---
 
 ## Preferences
 
-<!-- Fill in as you discover your working style -->
+**Visual:** ggplot2 + shared theme; colorblind-safe palettes; avoid chartjunk.
 
-**Visual:** [How you want figures/plots handled]
-**Reporting:** [Concise bullets? Detailed prose? Details on request?]
-**Session logs:** Always (post-plan, incremental, end-of-session)
-**Replication:** [How strict? Flag near-misses?]
+**Reporting:** Precise, structured; prefer tables + figure notes that stand alone for a referee.
 
----
+**Session logs:** Post-plan, incremental on decisions/corrections, end-of-session summary.
 
-## Exploration Mode
-
-For experimental work, use the **Fast-Track** workflow:
-- Work in `explorations/` folder
-- 60/100 quality threshold (vs. 80/100 for production)
-- No plan needed — just a research value check (2 min)
-- See `.claude/rules/exploration-fast-track.md`
+**Replication:** Rebuild end-to-end from documented inputs; legacy `Old Attempts and Results/` for parity checks only.
 
 ---
 
-## Next Step
+## Exploration mode
 
-You provide task → I plan (if needed) → Your approval → Execute → Done.
+Experimental ideas → `explorations/` with **fast-track** rules (lower threshold). Promote stable code into `analysis/`.
+
+---
+
+## Pointers
+
+- Constitution: `CLAUDE.md`
+- Domain registry: `.claude/rules/knowledge-base-template.md`
+- SSOT: `.claude/rules/single-source-of-truth.md`
