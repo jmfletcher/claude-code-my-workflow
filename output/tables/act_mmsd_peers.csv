@@ -1,0 +1,703 @@
+district_label,tier,year,subject,race,avg_score,n_tested
+Madison Metropolitan,MMSD,2015-16,Composite,Black,16.03,281
+Madison Metropolitan,MMSD,2015-16,Composite,Hispanic,18.04,250
+Madison Metropolitan,MMSD,2015-16,Composite,White,24.57,764
+Madison Metropolitan,MMSD,2015-16,English,Black,14.54,281
+Madison Metropolitan,MMSD,2015-16,English,Hispanic,16.95,250
+Madison Metropolitan,MMSD,2015-16,English,White,24.52,764
+Madison Metropolitan,MMSD,2015-16,Mathematics,Black,16.47,281
+Madison Metropolitan,MMSD,2015-16,Mathematics,Hispanic,18.17,250
+Madison Metropolitan,MMSD,2015-16,Mathematics,White,24.01,764
+Madison Metropolitan,MMSD,2016-17,Composite,Black,16.12,259
+Madison Metropolitan,MMSD,2016-17,Composite,Hispanic,17.68,277
+Madison Metropolitan,MMSD,2016-17,Composite,White,24.59,795
+Madison Metropolitan,MMSD,2016-17,English,Black,14.61,259
+Madison Metropolitan,MMSD,2016-17,English,Hispanic,16.16,277
+Madison Metropolitan,MMSD,2016-17,English,White,24.64,795
+Madison Metropolitan,MMSD,2016-17,Mathematics,Black,16.41,259
+Madison Metropolitan,MMSD,2016-17,Mathematics,Hispanic,17.99,277
+Madison Metropolitan,MMSD,2016-17,Mathematics,White,23.97,795
+Madison Metropolitan,MMSD,2017-18,Composite,Black,15.48,253
+Madison Metropolitan,MMSD,2017-18,Composite,Hispanic,17.26,286
+Madison Metropolitan,MMSD,2017-18,Composite,White,25.04,793
+Madison Metropolitan,MMSD,2017-18,English,Black,13.92,253
+Madison Metropolitan,MMSD,2017-18,English,Hispanic,16.17,286
+Madison Metropolitan,MMSD,2017-18,English,White,25.26,793
+Madison Metropolitan,MMSD,2017-18,Mathematics,Black,16.13,253
+Madison Metropolitan,MMSD,2017-18,Mathematics,Hispanic,17.48,286
+Madison Metropolitan,MMSD,2017-18,Mathematics,White,24.42,793
+Madison Metropolitan,MMSD,2018-19,Composite,Black,15.49,283
+Madison Metropolitan,MMSD,2018-19,Composite,Hispanic,17.52,339
+Madison Metropolitan,MMSD,2018-19,Composite,White,24.96,799
+Madison Metropolitan,MMSD,2018-19,English,Black,13.99,283
+Madison Metropolitan,MMSD,2018-19,English,Hispanic,16.31,339
+Madison Metropolitan,MMSD,2018-19,English,White,24.94,799
+Madison Metropolitan,MMSD,2018-19,Mathematics,Black,15.98,283
+Madison Metropolitan,MMSD,2018-19,Mathematics,Hispanic,17.66,339
+Madison Metropolitan,MMSD,2018-19,Mathematics,White,24.44,799
+Madison Metropolitan,MMSD,2021-22,Composite,Black,15.91,151
+Madison Metropolitan,MMSD,2021-22,Composite,Hispanic,16.74,249
+Madison Metropolitan,MMSD,2021-22,Composite,White,23.88,662
+Madison Metropolitan,MMSD,2021-22,English,Black,14.54,151
+Madison Metropolitan,MMSD,2021-22,English,Hispanic,14.82,249
+Madison Metropolitan,MMSD,2021-22,English,White,23.48,662
+Madison Metropolitan,MMSD,2021-22,Mathematics,Black,15.99,151
+Madison Metropolitan,MMSD,2021-22,Mathematics,Hispanic,16.8,249
+Madison Metropolitan,MMSD,2021-22,Mathematics,White,22.48,662
+Madison Metropolitan,MMSD,2022-23,Composite,Black,14.82,197
+Madison Metropolitan,MMSD,2022-23,Composite,Hispanic,16.87,368
+Madison Metropolitan,MMSD,2022-23,Composite,White,23.08,719
+Madison Metropolitan,MMSD,2022-23,English,Black,12.81,197
+Madison Metropolitan,MMSD,2022-23,English,Hispanic,15.08,368
+Madison Metropolitan,MMSD,2022-23,English,White,22.39,719
+Madison Metropolitan,MMSD,2022-23,Mathematics,Black,15.28,197
+Madison Metropolitan,MMSD,2022-23,Mathematics,Hispanic,16.76,368
+Madison Metropolitan,MMSD,2022-23,Mathematics,White,21.92,719
+Milwaukee,Tier 1,2015-16,Composite,Black,15.09,1969
+Milwaukee,Tier 1,2015-16,Composite,Hispanic,16.54,823
+Milwaukee,Tier 1,2015-16,Composite,White,19.8,403
+Milwaukee,Tier 1,2015-16,English,Black,13.44,1969
+Milwaukee,Tier 1,2015-16,English,Hispanic,15.23,823
+Milwaukee,Tier 1,2015-16,English,White,19.36,403
+Milwaukee,Tier 1,2015-16,Mathematics,Black,15.45,1969
+Milwaukee,Tier 1,2015-16,Mathematics,Hispanic,16.77,823
+Milwaukee,Tier 1,2015-16,Mathematics,White,19.08,403
+Milwaukee,Tier 1,2016-17,Composite,Black,15.53,1847
+Milwaukee,Tier 1,2016-17,Composite,Hispanic,17.21,797
+Milwaukee,Tier 1,2016-17,Composite,White,20.52,386
+Milwaukee,Tier 1,2016-17,English,Black,13.92,1847
+Milwaukee,Tier 1,2016-17,English,Hispanic,15.93,797
+Milwaukee,Tier 1,2016-17,English,White,20.13,386
+Milwaukee,Tier 1,2016-17,Mathematics,Black,15.57,1847
+Milwaukee,Tier 1,2016-17,Mathematics,Hispanic,17.23,797
+Milwaukee,Tier 1,2016-17,Mathematics,White,19.47,386
+Milwaukee,Tier 1,2017-18,Composite,Black,15.32,1861
+Milwaukee,Tier 1,2017-18,Composite,Hispanic,17.11,748
+Milwaukee,Tier 1,2017-18,Composite,White,20.44,388
+Milwaukee,Tier 1,2017-18,English,Black,14.22,1861
+Milwaukee,Tier 1,2017-18,English,Hispanic,16.36,748
+Milwaukee,Tier 1,2017-18,English,White,20.16,388
+Milwaukee,Tier 1,2017-18,Mathematics,Black,15.47,1861
+Milwaukee,Tier 1,2017-18,Mathematics,Hispanic,17.26,748
+Milwaukee,Tier 1,2017-18,Mathematics,White,19.73,388
+Milwaukee,Tier 1,2018-19,Composite,Black,15.11,1765
+Milwaukee,Tier 1,2018-19,Composite,Hispanic,16.7,864
+Milwaukee,Tier 1,2018-19,Composite,White,20.8,326
+Milwaukee,Tier 1,2018-19,English,Black,13.88,1765
+Milwaukee,Tier 1,2018-19,English,Hispanic,15.79,864
+Milwaukee,Tier 1,2018-19,English,White,20.87,326
+Milwaukee,Tier 1,2018-19,Mathematics,Black,15.34,1765
+Milwaukee,Tier 1,2018-19,Mathematics,Hispanic,16.81,864
+Milwaukee,Tier 1,2018-19,Mathematics,White,19.92,326
+Milwaukee,Tier 1,2021-22,Composite,Black,15.12,823
+Milwaukee,Tier 1,2021-22,Composite,Hispanic,16.62,656
+Milwaukee,Tier 1,2021-22,Composite,White,21.97,259
+Milwaukee,Tier 1,2021-22,English,Black,14.1,823
+Milwaukee,Tier 1,2021-22,English,Hispanic,15.72,656
+Milwaukee,Tier 1,2021-22,English,White,22.02,259
+Milwaukee,Tier 1,2021-22,Mathematics,Black,14.72,823
+Milwaukee,Tier 1,2021-22,Mathematics,Hispanic,16.25,656
+Milwaukee,Tier 1,2021-22,Mathematics,White,20.25,259
+Milwaukee,Tier 1,2022-23,Composite,Black,14.34,1259
+Milwaukee,Tier 1,2022-23,Composite,Hispanic,16.08,889
+Milwaukee,Tier 1,2022-23,Composite,White,21.08,284
+Milwaukee,Tier 1,2022-23,English,Black,12.99,1259
+Milwaukee,Tier 1,2022-23,English,Hispanic,14.9,889
+Milwaukee,Tier 1,2022-23,English,White,21.03,284
+Milwaukee,Tier 1,2022-23,Mathematics,Black,14.05,1259
+Milwaukee,Tier 1,2022-23,Mathematics,Hispanic,15.77,889
+Milwaukee,Tier 1,2022-23,Mathematics,White,19.55,284
+Racine Unified,Tier 1,2015-16,Composite,Black,15.25,273
+Racine Unified,Tier 1,2015-16,Composite,Hispanic,17.02,304
+Racine Unified,Tier 1,2015-16,Composite,White,19.65,650
+Racine Unified,Tier 1,2015-16,English,Black,13.48,273
+Racine Unified,Tier 1,2015-16,English,Hispanic,15.86,304
+Racine Unified,Tier 1,2015-16,English,White,19.05,650
+Racine Unified,Tier 1,2015-16,Mathematics,Black,15.52,273
+Racine Unified,Tier 1,2015-16,Mathematics,Hispanic,16.96,304
+Racine Unified,Tier 1,2015-16,Mathematics,White,18.84,650
+Racine Unified,Tier 1,2016-17,Composite,Black,15.53,280
+Racine Unified,Tier 1,2016-17,Composite,Hispanic,16.39,294
+Racine Unified,Tier 1,2016-17,Composite,White,19.8,600
+Racine Unified,Tier 1,2016-17,English,Black,13.73,280
+Racine Unified,Tier 1,2016-17,English,Hispanic,14.65,294
+Racine Unified,Tier 1,2016-17,English,White,19.08,600
+Racine Unified,Tier 1,2016-17,Mathematics,Black,15.85,280
+Racine Unified,Tier 1,2016-17,Mathematics,Hispanic,16.41,294
+Racine Unified,Tier 1,2016-17,Mathematics,White,19.1,600
+Racine Unified,Tier 1,2017-18,Composite,Black,15.17,300
+Racine Unified,Tier 1,2017-18,Composite,Hispanic,16.29,347
+Racine Unified,Tier 1,2017-18,Composite,White,19.77,540
+Racine Unified,Tier 1,2017-18,English,Black,13.93,300
+Racine Unified,Tier 1,2017-18,English,Hispanic,14.99,347
+Racine Unified,Tier 1,2017-18,English,White,19.38,540
+Racine Unified,Tier 1,2017-18,Mathematics,Black,15.22,300
+Racine Unified,Tier 1,2017-18,Mathematics,Hispanic,16.23,347
+Racine Unified,Tier 1,2017-18,Mathematics,White,18.92,540
+Racine Unified,Tier 1,2018-19,Composite,Black,15.11,287
+Racine Unified,Tier 1,2018-19,Composite,Hispanic,16.34,315
+Racine Unified,Tier 1,2018-19,Composite,White,19.58,461
+Racine Unified,Tier 1,2018-19,English,Black,13.75,287
+Racine Unified,Tier 1,2018-19,English,Hispanic,15.1,315
+Racine Unified,Tier 1,2018-19,English,White,18.93,461
+Racine Unified,Tier 1,2018-19,Mathematics,Black,15.29,287
+Racine Unified,Tier 1,2018-19,Mathematics,Hispanic,16.33,315
+Racine Unified,Tier 1,2018-19,Mathematics,White,18.81,461
+Racine Unified,Tier 1,2021-22,Composite,Black,14.15,220
+Racine Unified,Tier 1,2021-22,Composite,Hispanic,15.5,274
+Racine Unified,Tier 1,2021-22,Composite,White,19.18,413
+Racine Unified,Tier 1,2021-22,English,Black,12.58,220
+Racine Unified,Tier 1,2021-22,English,Hispanic,14.09,274
+Racine Unified,Tier 1,2021-22,English,White,18.37,413
+Racine Unified,Tier 1,2021-22,Mathematics,Black,14.07,220
+Racine Unified,Tier 1,2021-22,Mathematics,Hispanic,15.13,274
+Racine Unified,Tier 1,2021-22,Mathematics,White,18.05,413
+Racine Unified,Tier 1,2022-23,Composite,Black,13.49,169
+Racine Unified,Tier 1,2022-23,Composite,Hispanic,15.06,302
+Racine Unified,Tier 1,2022-23,Composite,White,18.5,410
+Racine Unified,Tier 1,2022-23,English,Black,12.01,169
+Racine Unified,Tier 1,2022-23,English,Hispanic,13.93,302
+Racine Unified,Tier 1,2022-23,English,White,18.11,410
+Racine Unified,Tier 1,2022-23,Mathematics,Black,13.56,169
+Racine Unified,Tier 1,2022-23,Mathematics,Hispanic,14.8,302
+Racine Unified,Tier 1,2022-23,Mathematics,White,17.33,410
+Kenosha,Tier 1,2015-16,Composite,Black,15.71,209
+Kenosha,Tier 1,2015-16,Composite,Hispanic,16.57,332
+Kenosha,Tier 1,2015-16,Composite,White,20.01,936
+Kenosha,Tier 1,2015-16,English,Black,14.14,209
+Kenosha,Tier 1,2015-16,English,Hispanic,14.95,332
+Kenosha,Tier 1,2015-16,English,White,19.35,936
+Kenosha,Tier 1,2015-16,Mathematics,Black,15.98,209
+Kenosha,Tier 1,2015-16,Mathematics,Hispanic,16.73,332
+Kenosha,Tier 1,2015-16,Mathematics,White,19.58,936
+Kenosha,Tier 1,2016-17,Composite,Black,15.69,202
+Kenosha,Tier 1,2016-17,Composite,Hispanic,16.75,378
+Kenosha,Tier 1,2016-17,Composite,White,20.16,951
+Kenosha,Tier 1,2016-17,English,Black,13.74,202
+Kenosha,Tier 1,2016-17,English,Hispanic,15.0,378
+Kenosha,Tier 1,2016-17,English,White,19.57,951
+Kenosha,Tier 1,2016-17,Mathematics,Black,16.03,202
+Kenosha,Tier 1,2016-17,Mathematics,Hispanic,16.88,378
+Kenosha,Tier 1,2016-17,Mathematics,White,19.29,951
+Kenosha,Tier 1,2017-18,Composite,Black,15.41,228
+Kenosha,Tier 1,2017-18,Composite,Hispanic,16.81,408
+Kenosha,Tier 1,2017-18,Composite,White,20.4,899
+Kenosha,Tier 1,2017-18,English,Black,13.92,228
+Kenosha,Tier 1,2017-18,English,Hispanic,15.71,408
+Kenosha,Tier 1,2017-18,English,White,20.12,899
+Kenosha,Tier 1,2017-18,Mathematics,Black,15.56,228
+Kenosha,Tier 1,2017-18,Mathematics,Hispanic,16.59,408
+Kenosha,Tier 1,2017-18,Mathematics,White,19.66,899
+Kenosha,Tier 1,2018-19,Composite,Black,15.27,197
+Kenosha,Tier 1,2018-19,Composite,Hispanic,16.55,446
+Kenosha,Tier 1,2018-19,Composite,White,20.53,857
+Kenosha,Tier 1,2018-19,English,Black,13.97,197
+Kenosha,Tier 1,2018-19,English,Hispanic,15.36,446
+Kenosha,Tier 1,2018-19,English,White,20.14,857
+Kenosha,Tier 1,2018-19,Mathematics,Black,15.48,197
+Kenosha,Tier 1,2018-19,Mathematics,Hispanic,16.48,446
+Kenosha,Tier 1,2018-19,Mathematics,White,19.79,857
+Kenosha,Tier 1,2021-22,Composite,Black,14.63,141
+Kenosha,Tier 1,2021-22,Composite,Hispanic,15.62,331
+Kenosha,Tier 1,2021-22,Composite,White,19.36,655
+Kenosha,Tier 1,2021-22,English,Black,12.96,141
+Kenosha,Tier 1,2021-22,English,Hispanic,14.06,331
+Kenosha,Tier 1,2021-22,English,White,18.67,655
+Kenosha,Tier 1,2021-22,Mathematics,Black,15.21,141
+Kenosha,Tier 1,2021-22,Mathematics,Hispanic,15.83,331
+Kenosha,Tier 1,2021-22,Mathematics,White,18.92,655
+Kenosha,Tier 1,2022-23,Composite,Black,15.07,164
+Kenosha,Tier 1,2022-23,Composite,Hispanic,16.09,403
+Kenosha,Tier 1,2022-23,Composite,White,19.65,662
+Kenosha,Tier 1,2022-23,English,Black,13.8,164
+Kenosha,Tier 1,2022-23,English,Hispanic,14.61,403
+Kenosha,Tier 1,2022-23,English,White,18.95,662
+Kenosha,Tier 1,2022-23,Mathematics,Black,14.73,164
+Kenosha,Tier 1,2022-23,Mathematics,Hispanic,16.01,403
+Kenosha,Tier 1,2022-23,Mathematics,White,18.85,662
+Green Bay Area,Tier 1,2015-16,Composite,Black,14.22,86
+Green Bay Area,Tier 1,2015-16,Composite,Hispanic,15.85,262
+Green Bay Area,Tier 1,2015-16,Composite,White,20.72,680
+Green Bay Area,Tier 1,2015-16,English,Black,11.83,86
+Green Bay Area,Tier 1,2015-16,English,Hispanic,13.92,262
+Green Bay Area,Tier 1,2015-16,English,White,19.5,680
+Green Bay Area,Tier 1,2015-16,Mathematics,Black,15.48,86
+Green Bay Area,Tier 1,2015-16,Mathematics,Hispanic,16.61,262
+Green Bay Area,Tier 1,2015-16,Mathematics,White,21.31,680
+Green Bay Area,Tier 1,2016-17,Composite,Black,15.09,103
+Green Bay Area,Tier 1,2016-17,Composite,Hispanic,16.21,252
+Green Bay Area,Tier 1,2016-17,Composite,White,20.27,655
+Green Bay Area,Tier 1,2016-17,English,Black,13.03,103
+Green Bay Area,Tier 1,2016-17,English,Hispanic,14.13,252
+Green Bay Area,Tier 1,2016-17,English,White,18.9,655
+Green Bay Area,Tier 1,2016-17,Mathematics,Black,15.9,103
+Green Bay Area,Tier 1,2016-17,Mathematics,Hispanic,16.7,252
+Green Bay Area,Tier 1,2016-17,Mathematics,White,20.75,655
+Green Bay Area,Tier 1,2017-18,Composite,Black,14.97,118
+Green Bay Area,Tier 1,2017-18,Composite,Hispanic,15.81,320
+Green Bay Area,Tier 1,2017-18,Composite,White,20.85,675
+Green Bay Area,Tier 1,2017-18,English,Black,13.36,118
+Green Bay Area,Tier 1,2017-18,English,Hispanic,14.12,320
+Green Bay Area,Tier 1,2017-18,English,White,19.72,675
+Green Bay Area,Tier 1,2017-18,Mathematics,Black,15.68,118
+Green Bay Area,Tier 1,2017-18,Mathematics,Hispanic,16.43,320
+Green Bay Area,Tier 1,2017-18,Mathematics,White,21.24,675
+Green Bay Area,Tier 1,2018-19,Composite,Black,14.21,92
+Green Bay Area,Tier 1,2018-19,Composite,Hispanic,15.55,302
+Green Bay Area,Tier 1,2018-19,Composite,White,20.11,631
+Green Bay Area,Tier 1,2018-19,English,Black,12.25,92
+Green Bay Area,Tier 1,2018-19,English,Hispanic,13.68,302
+Green Bay Area,Tier 1,2018-19,English,White,18.66,631
+Green Bay Area,Tier 1,2018-19,Mathematics,Black,15.28,92
+Green Bay Area,Tier 1,2018-19,Mathematics,Hispanic,16.31,302
+Green Bay Area,Tier 1,2018-19,Mathematics,White,20.45,631
+Green Bay Area,Tier 1,2021-22,Composite,Black,13.68,97
+Green Bay Area,Tier 1,2021-22,Composite,Hispanic,14.77,287
+Green Bay Area,Tier 1,2021-22,Composite,White,19.21,511
+Green Bay Area,Tier 1,2021-22,English,Black,11.4,97
+Green Bay Area,Tier 1,2021-22,English,Hispanic,12.39,287
+Green Bay Area,Tier 1,2021-22,English,White,17.32,511
+Green Bay Area,Tier 1,2021-22,Mathematics,Black,14.53,97
+Green Bay Area,Tier 1,2021-22,Mathematics,Hispanic,15.54,287
+Green Bay Area,Tier 1,2021-22,Mathematics,White,19.35,511
+Green Bay Area,Tier 1,2022-23,Composite,Black,14.14,86
+Green Bay Area,Tier 1,2022-23,Composite,Hispanic,14.96,324
+Green Bay Area,Tier 1,2022-23,Composite,White,19.25,496
+Green Bay Area,Tier 1,2022-23,English,Black,12.2,86
+Green Bay Area,Tier 1,2022-23,English,Hispanic,12.84,324
+Green Bay Area,Tier 1,2022-23,English,White,17.69,496
+Green Bay Area,Tier 1,2022-23,Mathematics,Black,14.05,86
+Green Bay Area,Tier 1,2022-23,Mathematics,Hispanic,15.38,324
+Green Bay Area,Tier 1,2022-23,Mathematics,White,19.29,496
+Beloit,Tier 1,2015-16,Composite,Black,15.09,95
+Beloit,Tier 1,2015-16,Composite,Hispanic,16.1,141
+Beloit,Tier 1,2015-16,Composite,White,18.38,178
+Beloit,Tier 1,2015-16,English,Black,13.08,95
+Beloit,Tier 1,2015-16,English,Hispanic,14.1,141
+Beloit,Tier 1,2015-16,English,White,17.14,178
+Beloit,Tier 1,2015-16,Mathematics,Black,15.63,95
+Beloit,Tier 1,2015-16,Mathematics,Hispanic,16.72,141
+Beloit,Tier 1,2015-16,Mathematics,White,18.23,178
+Beloit,Tier 1,2016-17,Composite,Black,15.55,94
+Beloit,Tier 1,2016-17,Composite,Hispanic,15.86,125
+Beloit,Tier 1,2016-17,Composite,White,18.6,186
+Beloit,Tier 1,2016-17,English,Black,13.7,94
+Beloit,Tier 1,2016-17,English,Hispanic,13.76,125
+Beloit,Tier 1,2016-17,English,White,17.45,186
+Beloit,Tier 1,2016-17,Mathematics,Black,15.94,94
+Beloit,Tier 1,2016-17,Mathematics,Hispanic,16.54,125
+Beloit,Tier 1,2016-17,Mathematics,White,18.18,186
+Beloit,Tier 1,2017-18,Composite,Black,14.61,89
+Beloit,Tier 1,2017-18,Composite,Hispanic,16.25,134
+Beloit,Tier 1,2017-18,Composite,White,18.26,176
+Beloit,Tier 1,2017-18,English,Black,13.19,89
+Beloit,Tier 1,2017-18,English,Hispanic,14.22,134
+Beloit,Tier 1,2017-18,English,White,17.07,176
+Beloit,Tier 1,2017-18,Mathematics,Black,15.12,89
+Beloit,Tier 1,2017-18,Mathematics,Hispanic,16.66,134
+Beloit,Tier 1,2017-18,Mathematics,White,18.15,176
+Beloit,Tier 1,2018-19,Composite,Black,14.79,80
+Beloit,Tier 1,2018-19,Composite,Hispanic,15.87,143
+Beloit,Tier 1,2018-19,Composite,White,18.14,161
+Beloit,Tier 1,2018-19,English,Black,13.25,80
+Beloit,Tier 1,2018-19,English,Hispanic,14.15,143
+Beloit,Tier 1,2018-19,English,White,16.94,161
+Beloit,Tier 1,2018-19,Mathematics,Black,15.54,80
+Beloit,Tier 1,2018-19,Mathematics,Hispanic,16.55,143
+Beloit,Tier 1,2018-19,Mathematics,White,17.71,161
+Beloit,Tier 1,2021-22,Composite,Black,14.01,80
+Beloit,Tier 1,2021-22,Composite,Hispanic,14.9,130
+Beloit,Tier 1,2021-22,Composite,White,17.1,119
+Beloit,Tier 1,2021-22,English,Black,12.0,80
+Beloit,Tier 1,2021-22,English,Hispanic,12.99,130
+Beloit,Tier 1,2021-22,English,White,14.95,119
+Beloit,Tier 1,2021-22,Mathematics,Black,15.04,80
+Beloit,Tier 1,2021-22,Mathematics,Hispanic,15.35,130
+Beloit,Tier 1,2021-22,Mathematics,White,17.08,119
+Beloit,Tier 1,2022-23,Composite,Black,13.47,59
+Beloit,Tier 1,2022-23,Composite,Hispanic,14.7,130
+Beloit,Tier 1,2022-23,Composite,White,16.24,104
+Beloit,Tier 1,2022-23,English,Black,11.15,59
+Beloit,Tier 1,2022-23,English,Hispanic,12.18,130
+Beloit,Tier 1,2022-23,English,White,14.45,104
+Beloit,Tier 1,2022-23,Mathematics,Black,14.61,59
+Beloit,Tier 1,2022-23,Mathematics,Hispanic,15.55,130
+Beloit,Tier 1,2022-23,Mathematics,White,16.26,104
+Sun Prairie Area,Tier 2,2015-16,Composite,Black,15.77,57
+Sun Prairie Area,Tier 2,2015-16,Composite,Hispanic,17.78,40
+Sun Prairie Area,Tier 2,2015-16,Composite,White,22.6,370
+Sun Prairie Area,Tier 2,2015-16,English,Black,13.91,57
+Sun Prairie Area,Tier 2,2015-16,English,Hispanic,16.25,40
+Sun Prairie Area,Tier 2,2015-16,English,White,21.88,370
+Sun Prairie Area,Tier 2,2015-16,Mathematics,Black,16.19,57
+Sun Prairie Area,Tier 2,2015-16,Mathematics,Hispanic,18.38,40
+Sun Prairie Area,Tier 2,2015-16,Mathematics,White,22.34,370
+Sun Prairie Area,Tier 2,2016-17,Composite,Black,16.46,48
+Sun Prairie Area,Tier 2,2016-17,Composite,Hispanic,19.73,45
+Sun Prairie Area,Tier 2,2016-17,Composite,White,22.84,376
+Sun Prairie Area,Tier 2,2016-17,English,Black,14.33,48
+Sun Prairie Area,Tier 2,2016-17,English,Hispanic,18.33,45
+Sun Prairie Area,Tier 2,2016-17,English,White,22.24,376
+Sun Prairie Area,Tier 2,2016-17,Mathematics,Black,16.71,48
+Sun Prairie Area,Tier 2,2016-17,Mathematics,Hispanic,19.8,45
+Sun Prairie Area,Tier 2,2016-17,Mathematics,White,22.78,376
+Sun Prairie Area,Tier 2,2017-18,Composite,Black,16.0,56
+Sun Prairie Area,Tier 2,2017-18,Composite,Hispanic,19.12,25
+Sun Prairie Area,Tier 2,2017-18,Composite,White,23.11,370
+Sun Prairie Area,Tier 2,2017-18,English,Black,14.46,56
+Sun Prairie Area,Tier 2,2017-18,English,Hispanic,17.32,25
+Sun Prairie Area,Tier 2,2017-18,English,White,22.45,370
+Sun Prairie Area,Tier 2,2017-18,Mathematics,Black,16.45,56
+Sun Prairie Area,Tier 2,2017-18,Mathematics,Hispanic,19.44,25
+Sun Prairie Area,Tier 2,2017-18,Mathematics,White,22.92,370
+Sun Prairie Area,Tier 2,2018-19,Composite,Black,15.47,70
+Sun Prairie Area,Tier 2,2018-19,Composite,Hispanic,19.34,56
+Sun Prairie Area,Tier 2,2018-19,Composite,White,22.62,393
+Sun Prairie Area,Tier 2,2018-19,English,Black,13.4,70
+Sun Prairie Area,Tier 2,2018-19,English,Hispanic,18.39,56
+Sun Prairie Area,Tier 2,2018-19,English,White,21.73,393
+Sun Prairie Area,Tier 2,2018-19,Mathematics,Black,16.19,70
+Sun Prairie Area,Tier 2,2018-19,Mathematics,Hispanic,19.38,56
+Sun Prairie Area,Tier 2,2018-19,Mathematics,White,22.79,393
+Sun Prairie Area,Tier 2,2021-22,Composite,Black,15.23,31
+Sun Prairie Area,Tier 2,2021-22,Composite,Hispanic,19.05,43
+Sun Prairie Area,Tier 2,2021-22,Composite,White,21.51,377
+Sun Prairie Area,Tier 2,2021-22,English,Black,13.06,31
+Sun Prairie Area,Tier 2,2021-22,English,Hispanic,17.53,43
+Sun Prairie Area,Tier 2,2021-22,English,White,20.68,377
+Sun Prairie Area,Tier 2,2021-22,Mathematics,Black,14.77,31
+Sun Prairie Area,Tier 2,2021-22,Mathematics,Hispanic,17.93,43
+Sun Prairie Area,Tier 2,2021-22,Mathematics,White,20.43,377
+Sun Prairie Area,Tier 2,2022-23,Composite,Black,15.64,42
+Sun Prairie Area,Tier 2,2022-23,Composite,Hispanic,17.8,55
+Sun Prairie Area,Tier 2,2022-23,Composite,White,21.09,356
+Sun Prairie Area,Tier 2,2022-23,English,Black,14.64,42
+Sun Prairie Area,Tier 2,2022-23,English,Hispanic,16.2,55
+Sun Prairie Area,Tier 2,2022-23,English,White,20.53,356
+Sun Prairie Area,Tier 2,2022-23,Mathematics,Black,15.12,42
+Sun Prairie Area,Tier 2,2022-23,Mathematics,Hispanic,17.31,55
+Sun Prairie Area,Tier 2,2022-23,Mathematics,White,20.02,356
+Appleton Area,Tier 2,2015-16,Composite,Black,17.29,38
+Appleton Area,Tier 2,2015-16,Composite,Hispanic,17.54,76
+Appleton Area,Tier 2,2015-16,Composite,White,22.33,901
+Appleton Area,Tier 2,2015-16,English,Black,15.97,38
+Appleton Area,Tier 2,2015-16,English,Hispanic,16.36,76
+Appleton Area,Tier 2,2015-16,English,White,21.75,901
+Appleton Area,Tier 2,2015-16,Mathematics,Black,17.34,38
+Appleton Area,Tier 2,2015-16,Mathematics,Hispanic,17.46,76
+Appleton Area,Tier 2,2015-16,Mathematics,White,21.98,901
+Appleton Area,Tier 2,2016-17,Composite,Black,18.46,48
+Appleton Area,Tier 2,2016-17,Composite,Hispanic,17.76,76
+Appleton Area,Tier 2,2016-17,Composite,White,21.87,829
+Appleton Area,Tier 2,2016-17,English,Black,17.1,48
+Appleton Area,Tier 2,2016-17,English,Hispanic,16.18,76
+Appleton Area,Tier 2,2016-17,English,White,21.17,829
+Appleton Area,Tier 2,2016-17,Mathematics,Black,18.25,48
+Appleton Area,Tier 2,2016-17,Mathematics,Hispanic,18.05,76
+Appleton Area,Tier 2,2016-17,Mathematics,White,21.63,829
+Appleton Area,Tier 2,2017-18,Composite,Black,16.9,41
+Appleton Area,Tier 2,2017-18,Composite,Hispanic,17.64,107
+Appleton Area,Tier 2,2017-18,Composite,White,21.73,897
+Appleton Area,Tier 2,2017-18,English,Black,15.39,41
+Appleton Area,Tier 2,2017-18,English,Hispanic,16.27,107
+Appleton Area,Tier 2,2017-18,English,White,21.02,897
+Appleton Area,Tier 2,2017-18,Mathematics,Black,16.61,41
+Appleton Area,Tier 2,2017-18,Mathematics,Hispanic,17.98,107
+Appleton Area,Tier 2,2017-18,Mathematics,White,21.51,897
+Appleton Area,Tier 2,2018-19,Composite,Black,16.32,57
+Appleton Area,Tier 2,2018-19,Composite,Hispanic,17.09,100
+Appleton Area,Tier 2,2018-19,Composite,White,21.34,827
+Appleton Area,Tier 2,2018-19,English,Black,14.98,57
+Appleton Area,Tier 2,2018-19,English,Hispanic,15.4,100
+Appleton Area,Tier 2,2018-19,English,White,20.67,827
+Appleton Area,Tier 2,2018-19,Mathematics,Black,16.28,57
+Appleton Area,Tier 2,2018-19,Mathematics,Hispanic,17.59,100
+Appleton Area,Tier 2,2018-19,Mathematics,White,21.08,827
+Appleton Area,Tier 2,2021-22,Composite,Black,15.92,36
+Appleton Area,Tier 2,2021-22,Composite,Hispanic,15.8,105
+Appleton Area,Tier 2,2021-22,Composite,White,19.61,795
+Appleton Area,Tier 2,2021-22,English,Black,14.44,36
+Appleton Area,Tier 2,2021-22,English,Hispanic,14.04,105
+Appleton Area,Tier 2,2021-22,English,White,18.22,795
+Appleton Area,Tier 2,2021-22,Mathematics,Black,16.06,36
+Appleton Area,Tier 2,2021-22,Mathematics,Hispanic,16.4,105
+Appleton Area,Tier 2,2021-22,Mathematics,White,19.37,795
+Appleton Area,Tier 2,2022-23,Composite,Black,14.71,51
+Appleton Area,Tier 2,2022-23,Composite,Hispanic,16.67,125
+Appleton Area,Tier 2,2022-23,Composite,White,20.45,772
+Appleton Area,Tier 2,2022-23,English,Black,12.78,51
+Appleton Area,Tier 2,2022-23,English,Hispanic,15.1,125
+Appleton Area,Tier 2,2022-23,English,White,19.41,772
+Appleton Area,Tier 2,2022-23,Mathematics,Black,15.18,51
+Appleton Area,Tier 2,2022-23,Mathematics,Hispanic,16.48,125
+Appleton Area,Tier 2,2022-23,Mathematics,White,19.96,772
+Waukesha,Tier 2,2015-16,Composite,Black,16.4,53
+Waukesha,Tier 2,2015-16,Composite,Hispanic,17.26,145
+Waukesha,Tier 2,2015-16,Composite,White,21.53,739
+Waukesha,Tier 2,2015-16,English,Black,15.45,53
+Waukesha,Tier 2,2015-16,English,Hispanic,15.83,145
+Waukesha,Tier 2,2015-16,English,White,21.07,739
+Waukesha,Tier 2,2015-16,Mathematics,Black,17.04,53
+Waukesha,Tier 2,2015-16,Mathematics,Hispanic,17.45,145
+Waukesha,Tier 2,2015-16,Mathematics,White,21.14,739
+Waukesha,Tier 2,2016-17,Composite,Black,15.54,46
+Waukesha,Tier 2,2016-17,Composite,Hispanic,17.04,171
+Waukesha,Tier 2,2016-17,Composite,White,21.52,758
+Waukesha,Tier 2,2016-17,English,Black,14.3,46
+Waukesha,Tier 2,2016-17,English,Hispanic,15.57,171
+Waukesha,Tier 2,2016-17,English,White,20.92,758
+Waukesha,Tier 2,2016-17,Mathematics,Black,15.74,46
+Waukesha,Tier 2,2016-17,Mathematics,Hispanic,17.26,171
+Waukesha,Tier 2,2016-17,Mathematics,White,21.26,758
+Waukesha,Tier 2,2017-18,Composite,Black,16.84,44
+Waukesha,Tier 2,2017-18,Composite,Hispanic,17.05,170
+Waukesha,Tier 2,2017-18,Composite,White,21.67,744
+Waukesha,Tier 2,2017-18,English,Black,15.82,44
+Waukesha,Tier 2,2017-18,English,Hispanic,15.76,170
+Waukesha,Tier 2,2017-18,English,White,21.15,744
+Waukesha,Tier 2,2017-18,Mathematics,Black,16.59,44
+Waukesha,Tier 2,2017-18,Mathematics,Hispanic,17.21,170
+Waukesha,Tier 2,2017-18,Mathematics,White,20.94,744
+Waukesha,Tier 2,2018-19,Composite,Black,15.4,40
+Waukesha,Tier 2,2018-19,Composite,Hispanic,17.45,206
+Waukesha,Tier 2,2018-19,Composite,White,21.53,711
+Waukesha,Tier 2,2018-19,English,Black,14.1,40
+Waukesha,Tier 2,2018-19,English,Hispanic,15.88,206
+Waukesha,Tier 2,2018-19,English,White,20.7,711
+Waukesha,Tier 2,2018-19,Mathematics,Black,15.68,40
+Waukesha,Tier 2,2018-19,Mathematics,Hispanic,17.46,206
+Waukesha,Tier 2,2018-19,Mathematics,White,21.09,711
+Waukesha,Tier 2,2021-22,Composite,Black,15.03,34
+Waukesha,Tier 2,2021-22,Composite,Hispanic,16.17,202
+Waukesha,Tier 2,2021-22,Composite,White,20.23,634
+Waukesha,Tier 2,2021-22,English,Black,13.47,34
+Waukesha,Tier 2,2021-22,English,Hispanic,14.94,202
+Waukesha,Tier 2,2021-22,English,White,19.22,634
+Waukesha,Tier 2,2021-22,Mathematics,Black,14.85,34
+Waukesha,Tier 2,2021-22,Mathematics,Hispanic,16.14,202
+Waukesha,Tier 2,2021-22,Mathematics,White,19.65,634
+Waukesha,Tier 2,2022-23,Composite,Black,15.07,43
+Waukesha,Tier 2,2022-23,Composite,Hispanic,16.94,196
+Waukesha,Tier 2,2022-23,Composite,White,20.47,598
+Waukesha,Tier 2,2022-23,English,Black,13.63,43
+Waukesha,Tier 2,2022-23,English,Hispanic,15.4,196
+Waukesha,Tier 2,2022-23,English,White,19.44,598
+Waukesha,Tier 2,2022-23,Mathematics,Black,15.3,43
+Waukesha,Tier 2,2022-23,Mathematics,Hispanic,16.9,196
+Waukesha,Tier 2,2022-23,Mathematics,White,19.93,598
+Janesville,Tier 2,2015-16,Composite,Black,16.9,30
+Janesville,Tier 2,2015-16,Composite,Hispanic,16.82,66
+Janesville,Tier 2,2015-16,Composite,White,19.52,576
+Janesville,Tier 2,2015-16,English,Black,14.63,30
+Janesville,Tier 2,2015-16,English,Hispanic,15.11,66
+Janesville,Tier 2,2015-16,English,White,18.66,576
+Janesville,Tier 2,2015-16,Mathematics,Black,17.4,30
+Janesville,Tier 2,2015-16,Mathematics,Hispanic,17.64,66
+Janesville,Tier 2,2015-16,Mathematics,White,19.2,576
+Janesville,Tier 2,2016-17,Composite,Black,16.24,29
+Janesville,Tier 2,2016-17,Composite,Hispanic,17.24,74
+Janesville,Tier 2,2016-17,Composite,White,19.86,600
+Janesville,Tier 2,2016-17,English,Black,14.76,29
+Janesville,Tier 2,2016-17,English,Hispanic,16.03,74
+Janesville,Tier 2,2016-17,English,White,19.18,600
+Janesville,Tier 2,2016-17,Mathematics,Black,16.48,29
+Janesville,Tier 2,2016-17,Mathematics,Hispanic,17.61,74
+Janesville,Tier 2,2016-17,Mathematics,White,19.74,600
+Janesville,Tier 2,2017-18,Composite,Black,16.14,35
+Janesville,Tier 2,2017-18,Composite,Hispanic,16.71,93
+Janesville,Tier 2,2017-18,Composite,White,19.72,618
+Janesville,Tier 2,2017-18,English,Black,15.2,35
+Janesville,Tier 2,2017-18,English,Hispanic,15.38,93
+Janesville,Tier 2,2017-18,English,White,19.09,618
+Janesville,Tier 2,2017-18,Mathematics,Black,16.11,35
+Janesville,Tier 2,2017-18,Mathematics,Hispanic,17.31,93
+Janesville,Tier 2,2017-18,Mathematics,White,19.33,618
+Janesville,Tier 2,2018-19,Composite,Black,14.9,39
+Janesville,Tier 2,2018-19,Composite,Hispanic,17.1,80
+Janesville,Tier 2,2018-19,Composite,White,19.61,613
+Janesville,Tier 2,2018-19,English,Black,13.46,39
+Janesville,Tier 2,2018-19,English,Hispanic,16.13,80
+Janesville,Tier 2,2018-19,English,White,18.84,613
+Janesville,Tier 2,2018-19,Mathematics,Black,15.62,39
+Janesville,Tier 2,2018-19,Mathematics,Hispanic,17.29,80
+Janesville,Tier 2,2018-19,Mathematics,White,19.45,613
+Janesville,Tier 2,2021-22,Composite,Black,13.75,32
+Janesville,Tier 2,2021-22,Composite,Hispanic,15.75,88
+Janesville,Tier 2,2021-22,Composite,White,18.33,467
+Janesville,Tier 2,2021-22,English,Black,11.59,32
+Janesville,Tier 2,2021-22,English,Hispanic,14.02,88
+Janesville,Tier 2,2021-22,English,White,17.1,467
+Janesville,Tier 2,2021-22,Mathematics,Black,14.31,32
+Janesville,Tier 2,2021-22,Mathematics,Hispanic,16.16,88
+Janesville,Tier 2,2021-22,Mathematics,White,18.11,467
+Janesville,Tier 2,2022-23,Composite,Black,14.41,32
+Janesville,Tier 2,2022-23,Composite,Hispanic,16.83,93
+Janesville,Tier 2,2022-23,Composite,White,18.79,525
+Janesville,Tier 2,2022-23,English,Black,12.53,32
+Janesville,Tier 2,2022-23,English,Hispanic,14.78,93
+Janesville,Tier 2,2022-23,English,White,17.63,525
+Janesville,Tier 2,2022-23,Mathematics,Black,14.94,32
+Janesville,Tier 2,2022-23,Mathematics,Hispanic,16.66,93
+Janesville,Tier 2,2022-23,Mathematics,White,17.95,525
+West Allis-W. Milw.,Tier 2,2015-16,Composite,Black,15.19,96
+West Allis-W. Milw.,Tier 2,2015-16,Composite,Hispanic,16.61,199
+West Allis-W. Milw.,Tier 2,2015-16,Composite,White,19.61,418
+West Allis-W. Milw.,Tier 2,2015-16,English,Black,13.16,96
+West Allis-W. Milw.,Tier 2,2015-16,English,Hispanic,15.14,199
+West Allis-W. Milw.,Tier 2,2015-16,English,White,18.85,418
+West Allis-W. Milw.,Tier 2,2015-16,Mathematics,Black,15.83,96
+West Allis-W. Milw.,Tier 2,2015-16,Mathematics,Hispanic,16.75,199
+West Allis-W. Milw.,Tier 2,2015-16,Mathematics,White,19.49,418
+West Allis-W. Milw.,Tier 2,2016-17,Composite,Black,15.4,109
+West Allis-W. Milw.,Tier 2,2016-17,Composite,Hispanic,16.71,210
+West Allis-W. Milw.,Tier 2,2016-17,Composite,White,19.53,403
+West Allis-W. Milw.,Tier 2,2016-17,English,Black,13.97,109
+West Allis-W. Milw.,Tier 2,2016-17,English,Hispanic,15.26,210
+West Allis-W. Milw.,Tier 2,2016-17,English,White,18.76,403
+West Allis-W. Milw.,Tier 2,2016-17,Mathematics,Black,15.76,109
+West Allis-W. Milw.,Tier 2,2016-17,Mathematics,Hispanic,16.63,210
+West Allis-W. Milw.,Tier 2,2016-17,Mathematics,White,19.15,403
+West Allis-W. Milw.,Tier 2,2017-18,Composite,Black,15.68,92
+West Allis-W. Milw.,Tier 2,2017-18,Composite,Hispanic,16.44,169
+West Allis-W. Milw.,Tier 2,2017-18,Composite,White,19.42,388
+West Allis-W. Milw.,Tier 2,2017-18,English,Black,14.59,92
+West Allis-W. Milw.,Tier 2,2017-18,English,Hispanic,15.59,169
+West Allis-W. Milw.,Tier 2,2017-18,English,White,19.09,388
+West Allis-W. Milw.,Tier 2,2017-18,Mathematics,Black,15.88,92
+West Allis-W. Milw.,Tier 2,2017-18,Mathematics,Hispanic,16.4,169
+West Allis-W. Milw.,Tier 2,2017-18,Mathematics,White,19.16,388
+West Allis-W. Milw.,Tier 2,2018-19,Composite,Black,15.45,78
+West Allis-W. Milw.,Tier 2,2018-19,Composite,Hispanic,16.7,159
+West Allis-W. Milw.,Tier 2,2018-19,Composite,White,19.58,316
+West Allis-W. Milw.,Tier 2,2018-19,English,Black,14.31,78
+West Allis-W. Milw.,Tier 2,2018-19,English,Hispanic,15.31,159
+West Allis-W. Milw.,Tier 2,2018-19,English,White,18.86,316
+West Allis-W. Milw.,Tier 2,2018-19,Mathematics,Black,15.74,78
+West Allis-W. Milw.,Tier 2,2018-19,Mathematics,Hispanic,17.03,159
+West Allis-W. Milw.,Tier 2,2018-19,Mathematics,White,19.59,316
+West Allis-W. Milw.,Tier 2,2021-22,Composite,Black,13.78,64
+West Allis-W. Milw.,Tier 2,2021-22,Composite,Hispanic,15.71,142
+West Allis-W. Milw.,Tier 2,2021-22,Composite,White,17.84,268
+West Allis-W. Milw.,Tier 2,2021-22,English,Black,12.34,64
+West Allis-W. Milw.,Tier 2,2021-22,English,Hispanic,14.53,142
+West Allis-W. Milw.,Tier 2,2021-22,English,White,16.75,268
+West Allis-W. Milw.,Tier 2,2021-22,Mathematics,Black,14.73,64
+West Allis-W. Milw.,Tier 2,2021-22,Mathematics,Hispanic,16.06,142
+West Allis-W. Milw.,Tier 2,2021-22,Mathematics,White,17.5,268
+West Allis-W. Milw.,Tier 2,2022-23,Composite,Black,14.94,63
+West Allis-W. Milw.,Tier 2,2022-23,Composite,Hispanic,15.25,142
+West Allis-W. Milw.,Tier 2,2022-23,Composite,White,18.66,244
+West Allis-W. Milw.,Tier 2,2022-23,English,Black,13.52,63
+West Allis-W. Milw.,Tier 2,2022-23,English,Hispanic,13.73,142
+West Allis-W. Milw.,Tier 2,2022-23,English,White,17.64,244
+West Allis-W. Milw.,Tier 2,2022-23,Mathematics,Black,15.19,63
+West Allis-W. Milw.,Tier 2,2022-23,Mathematics,Hispanic,15.8,142
+West Allis-W. Milw.,Tier 2,2022-23,Mathematics,White,18.15,244
+Verona Area,Madison region,2015-16,Composite,Black,15.9,30
+Verona Area,Madison region,2015-16,Composite,Hispanic,18.69,39
+Verona Area,Madison region,2015-16,Composite,White,23.82,273
+Verona Area,Madison region,2015-16,English,Black,13.93,30
+Verona Area,Madison region,2015-16,English,Hispanic,17.74,39
+Verona Area,Madison region,2015-16,English,White,23.46,273
+Verona Area,Madison region,2015-16,Mathematics,Black,16.03,30
+Verona Area,Madison region,2015-16,Mathematics,Hispanic,18.67,39
+Verona Area,Madison region,2015-16,Mathematics,White,23.79,273
+Verona Area,Madison region,2016-17,Composite,Black,17.04,26
+Verona Area,Madison region,2016-17,Composite,Hispanic,16.94,47
+Verona Area,Madison region,2016-17,Composite,White,23.81,216
+Verona Area,Madison region,2016-17,English,Black,16.08,26
+Verona Area,Madison region,2016-17,English,Hispanic,15.13,47
+Verona Area,Madison region,2016-17,English,White,23.55,216
+Verona Area,Madison region,2016-17,Mathematics,Black,17.46,26
+Verona Area,Madison region,2016-17,Mathematics,Hispanic,17.81,47
+Verona Area,Madison region,2016-17,Mathematics,White,23.52,216
+Verona Area,Madison region,2017-18,Composite,Black,15.83,24
+Verona Area,Madison region,2017-18,Composite,Hispanic,17.38,52
+Verona Area,Madison region,2017-18,Composite,White,24.45,243
+Verona Area,Madison region,2017-18,English,Black,14.5,24
+Verona Area,Madison region,2017-18,English,Hispanic,16.12,52
+Verona Area,Madison region,2017-18,English,White,24.59,243
+Verona Area,Madison region,2017-18,Mathematics,Black,16.17,24
+Verona Area,Madison region,2017-18,Mathematics,Hispanic,17.73,52
+Verona Area,Madison region,2017-18,Mathematics,White,23.63,243
+Verona Area,Madison region,2018-19,Composite,Black,15.88,16
+Verona Area,Madison region,2018-19,Composite,Hispanic,16.59,73
+Verona Area,Madison region,2018-19,Composite,White,23.62,226
+Verona Area,Madison region,2018-19,English,Black,14.56,16
+Verona Area,Madison region,2018-19,English,Hispanic,15.01,73
+Verona Area,Madison region,2018-19,English,White,23.59,226
+Verona Area,Madison region,2018-19,Mathematics,Black,16.25,16
+Verona Area,Madison region,2018-19,Mathematics,Hispanic,16.96,73
+Verona Area,Madison region,2018-19,Mathematics,White,23.31,226
+Verona Area,Madison region,2021-22,Composite,Black,14.26,23
+Verona Area,Madison region,2021-22,Composite,Hispanic,14.8,81
+Verona Area,Madison region,2021-22,Composite,White,21.46,237
+Verona Area,Madison region,2021-22,English,Black,13.3,23
+Verona Area,Madison region,2021-22,English,Hispanic,13.47,81
+Verona Area,Madison region,2021-22,English,White,20.7,237
+Verona Area,Madison region,2021-22,Mathematics,Black,14.61,23
+Verona Area,Madison region,2021-22,Mathematics,Hispanic,15.42,81
+Verona Area,Madison region,2021-22,Mathematics,White,20.78,237
+Verona Area,Madison region,2022-23,Composite,Black,16.87,23
+Verona Area,Madison region,2022-23,Composite,Hispanic,16.44,87
+Verona Area,Madison region,2022-23,Composite,White,22.57,244
+Verona Area,Madison region,2022-23,English,Black,15.48,23
+Verona Area,Madison region,2022-23,English,Hispanic,14.83,87
+Verona Area,Madison region,2022-23,English,White,21.99,244
+Verona Area,Madison region,2022-23,Mathematics,Black,16.96,23
+Verona Area,Madison region,2022-23,Mathematics,Hispanic,16.51,87
+Verona Area,Madison region,2022-23,Mathematics,White,21.74,244
+Middleton-C.P. Area,Madison region,2015-16,Composite,Black,16.52,27
+Middleton-C.P. Area,Madison region,2015-16,Composite,Hispanic,18.44,32
+Middleton-C.P. Area,Madison region,2015-16,Composite,White,24.69,387
+Middleton-C.P. Area,Madison region,2015-16,English,Black,15.07,27
+Middleton-C.P. Area,Madison region,2015-16,English,Hispanic,16.84,32
+Middleton-C.P. Area,Madison region,2015-16,English,White,24.29,387
+Middleton-C.P. Area,Madison region,2015-16,Mathematics,Black,17.19,27
+Middleton-C.P. Area,Madison region,2015-16,Mathematics,Hispanic,18.59,32
+Middleton-C.P. Area,Madison region,2015-16,Mathematics,White,24.37,387
+Middleton-C.P. Area,Madison region,2016-17,Composite,Black,19.0,20
+Middleton-C.P. Area,Madison region,2016-17,Composite,Hispanic,20.57,28
+Middleton-C.P. Area,Madison region,2016-17,Composite,White,24.85,397
+Middleton-C.P. Area,Madison region,2016-17,English,Black,17.85,20
+Middleton-C.P. Area,Madison region,2016-17,English,Hispanic,19.11,28
+Middleton-C.P. Area,Madison region,2016-17,English,White,24.64,397
+Middleton-C.P. Area,Madison region,2016-17,Mathematics,Black,19.4,20
+Middleton-C.P. Area,Madison region,2016-17,Mathematics,Hispanic,20.64,28
+Middleton-C.P. Area,Madison region,2016-17,Mathematics,White,24.71,397
+Middleton-C.P. Area,Madison region,2017-18,Composite,Black,18.59,17
+Middleton-C.P. Area,Madison region,2017-18,Composite,Hispanic,20.27,33
+Middleton-C.P. Area,Madison region,2017-18,Composite,White,24.98,377
+Middleton-C.P. Area,Madison region,2017-18,English,Black,16.82,17
+Middleton-C.P. Area,Madison region,2017-18,English,Hispanic,19.18,33
+Middleton-C.P. Area,Madison region,2017-18,English,White,25.01,377
+Middleton-C.P. Area,Madison region,2017-18,Mathematics,Black,18.47,17
+Middleton-C.P. Area,Madison region,2017-18,Mathematics,Hispanic,20.3,33
+Middleton-C.P. Area,Madison region,2017-18,Mathematics,White,24.47,377
+Middleton-C.P. Area,Madison region,2018-19,Composite,Black,18.17,23
+Middleton-C.P. Area,Madison region,2018-19,Composite,Hispanic,19.29,45
+Middleton-C.P. Area,Madison region,2018-19,Composite,White,24.64,384
+Middleton-C.P. Area,Madison region,2018-19,English,Black,17.43,23
+Middleton-C.P. Area,Madison region,2018-19,English,Hispanic,18.58,45
+Middleton-C.P. Area,Madison region,2018-19,English,White,24.76,384
+Middleton-C.P. Area,Madison region,2018-19,Mathematics,Black,18.26,23
+Middleton-C.P. Area,Madison region,2018-19,Mathematics,Hispanic,19.02,45
+Middleton-C.P. Area,Madison region,2018-19,Mathematics,White,23.85,384
+Middleton-C.P. Area,Madison region,2021-22,Composite,Black,17.56,18
+Middleton-C.P. Area,Madison region,2021-22,Composite,Hispanic,17.88,43
+Middleton-C.P. Area,Madison region,2021-22,Composite,White,22.91,381
+Middleton-C.P. Area,Madison region,2021-22,English,Black,15.83,18
+Middleton-C.P. Area,Madison region,2021-22,English,Hispanic,16.7,43
+Middleton-C.P. Area,Madison region,2021-22,English,White,22.39,381
+Middleton-C.P. Area,Madison region,2021-22,Mathematics,Black,17.78,18
+Middleton-C.P. Area,Madison region,2021-22,Mathematics,Hispanic,18.14,43
+Middleton-C.P. Area,Madison region,2021-22,Mathematics,White,22.15,381
+Middleton-C.P. Area,Madison region,2022-23,Composite,Black,17.74,23
+Middleton-C.P. Area,Madison region,2022-23,Composite,Hispanic,17.49,43
+Middleton-C.P. Area,Madison region,2022-23,Composite,White,23.6,412
+Middleton-C.P. Area,Madison region,2022-23,English,Black,16.0,23
+Middleton-C.P. Area,Madison region,2022-23,English,Hispanic,15.81,43
+Middleton-C.P. Area,Madison region,2022-23,English,White,22.64,412
+Middleton-C.P. Area,Madison region,2022-23,Mathematics,Black,17.78,23
+Middleton-C.P. Area,Madison region,2022-23,Mathematics,Hispanic,17.63,43
+Middleton-C.P. Area,Madison region,2022-23,Mathematics,White,22.71,412

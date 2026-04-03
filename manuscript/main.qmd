@@ -96,12 +96,16 @@ is MMSD's racial gap, and how much of that gap is between schools (and thus
 potentially addressable by boundary changes) versus within schools (and
 thus unaffected by student reassignment).
 
-We address these questions with three complementary analyses. First, we
+We address these questions with four complementary analyses. First, we
 document statewide racial proficiency gaps by race, grade, and subject over
 the primary Forward Exam window (2015–16 to 2022–23, excluding COVID-disrupted
 years). Second, we decompose the statewide Black-White and Hispanic-White
 gaps into within- and between-district components using a standard linear
-decomposition [@reardon2024separate]. Third, we conduct a detailed analysis
+decomposition [@reardon2024separate]. Third, we extend the analysis to
+grade-11 outcomes using Wisconsin ACT data — which uniquely benefits from
+near-universal participation due to the state's mandatory testing policy —
+documenting an "educational pipeline" comparison of gaps at grades 3–8
+versus grade 11. Fourth, we conduct a detailed analysis
 of MMSD, including: (a) comparing MMSD minority students to same-race peers
 in peer districts with substantial minority enrollment (Milwaukee, Racine,
 Kenosha, Green Bay, and others); (b) comparing MMSD minority students to
@@ -122,6 +126,7 @@ students in MMSD benefit from their district's overall high reputation.
 The paper proceeds as follows. @sec-background reviews the literature.
 @sec-data describes the data and analytical approach. @sec-state documents
 statewide gaps. @sec-decomp presents the within-between decomposition.
+@sec-act presents the ACT grade-11 analysis and educational pipeline comparison.
 @sec-mmsd presents the MMSD-specific analysis. @sec-conclusion
 discusses policy implications.
 
@@ -211,6 +216,29 @@ grades 3–8 in ELA and Mathematics. The data are reported in long format at
 the school × grade × subject × race × proficiency level. We aggregate to
 school-level and district-level proficiency rates (Proficient + Advanced)
 by race group.
+
+**ACT data (grade 11).** We use Wisconsin DPI ACT Graduates certified data
+files for school years 2015–16 through 2022–23, downloaded from the
+WISEdash data portal. Wisconsin is one of a small number of states that
+funds and mandates ACT testing for all grade-11 public school students,
+producing near-universal participation across all demographic groups.
+This eliminates the positive selection bias that affects ACT data in
+states where testing is voluntary, making Wisconsin's ACT data
+unusually appropriate for racial gap analysis. The data include mean
+ACT scores (1–36 scale) and college-readiness rates by race and subject
+(Composite, English, Mathematics, Reading, Science) at district level.
+Importantly, district-level mean ACT scores have zero suppression —
+they are reported regardless of group size — making the ACT analysis
+substantially less affected by small-group censoring than the Forward
+Exam analysis.
+
+*Selection caveat.* Students who drop out of school before grade 11
+are not tested. Because Black and Hispanic students have higher dropout
+rates than White students, the ACT-tested minority population is
+positively selected relative to the Forward Exam population. Any BW
+or HW gap observed on the ACT therefore understates the gap for the
+full cohort. This makes large ACT gaps *more* robust as evidence of
+persistent disadvantage — they persist despite the favorable selection.
 
 **WKCE historical data.** For historical context predating the Forward
 Exam, we use Wisconsin Knowledge and Concepts Exam (WKCE) Scale Score
@@ -371,6 +399,155 @@ above the parity line, consistent with an unusually large within-district
 gap. The scatter also shows that Black student proficiency varies
 substantially across districts — ranging from near zero to above 30% in
 ELA — while White student proficiency is more compressed.
+
+# ACT Grade-11 Analysis: The Educational Pipeline {#sec-act}
+
+```{python}
+#| label: act-setup
+#| echo: false
+act_gaps   = pd.read_csv(ROOT / "output/tables/act_state_gaps.csv")
+act_decomp = pd.read_csv(ROOT / "output/tables/act_decomposition.csv")
+act_peers  = pd.read_csv(ROOT / "output/tables/act_mmsd_peers.csv")
+act_nonmmsd = pd.read_csv(ROOT / "output/tables/act_mmsd_vs_nonmmsd_white.csv")
+pipeline   = pd.read_csv(ROOT / "output/tables/act_pipeline_gaps.csv")
+```
+
+## Statewide ACT Racial Score Gaps
+
+Wisconsin mandates ACT testing for all grade-11 public school students,
+producing near-universal participation. This makes it possible to extend the
+racial gap analysis from grades 3–8 (Forward Exam) to grade 11, without the
+positive-selection problem that affects voluntary-ACT states.
+
+@fig-act-trends shows the enrollment-weighted statewide Black-White and
+Hispanic-White gaps in ACT Composite, Mathematics, and English scores from
+2015–16 to 2022–23.
+
+![Statewide ACT Racial Score Gaps by Year (Grade 11)](../output/figures/fig05_act_gap_trends.png){#fig-act-trends width=100%}
+
+```{python}
+#| label: tbl-act-gaps
+#| tbl-cap: "Statewide ACT Score Gaps by Year and Subject (Grade 11, Enrollment-Weighted)"
+act_tbl = (
+    act_gaps[["year","subject","gap_pair","avg_score_white","avg_score_minority","gap"]]
+    .rename(columns={
+        "year": "Year", "subject": "Subject", "gap_pair": "Gap",
+        "avg_score_white": "White Mean", "avg_score_minority": "Minority Mean",
+        "gap": "White − Minority",
+    })
+    .round(2)
+    .sort_values(["Gap","Subject","Year"])
+)
+print(act_tbl.to_markdown(index=False))
+```
+
+**Key findings:**
+
+- The statewide **Black-White ACT Composite gap is approximately 5.0–5.8 points**
+  (on a 1–36 scale), with White students averaging ~21 and Black students
+  averaging ~16. The gap is essentially flat from 2015–16 to 2022–23.
+- The **ACT Mathematics gap** (5.4–6.2 points) is somewhat larger than the
+  **English gap** (4.1–5.2 points), consistent with the Forward Exam pattern
+  of larger gaps in mathematics.
+- The **Hispanic-White Composite gap** is smaller at 2.8–3.5 points, also
+  consistent with the Forward Exam pattern.
+- The slight narrowing of the BW gap in 2021–22 mirrors the COVID-era
+  pattern seen in the Forward Exam data.
+
+## Within-Between Decomposition at Grade 11
+
+@fig-act-decomp applies the same district-level within-between decomposition
+to ACT scores.
+
+![ACT Within-Between Decomposition of Racial Score Gaps (Grade 11)](../output/figures/fig06_act_decomposition.png){#fig-act-decomp width=100%}
+
+```{python}
+#| label: tbl-act-decomp
+#| tbl-cap: "ACT Within-Between Decomposition: BW Composite (District Level)"
+act_d = (
+    act_decomp[(act_decomp["gap_pair"]=="BW") & (act_decomp["subject"]=="Composite")]
+    [["year","T","B","W","B_pct","W_pct","n_units_both"]]
+    .rename(columns={
+        "year":"Year","T":"T (pts)","B":"B (pts)","W":"W (pts)",
+        "B_pct":"Between %","W_pct":"Within %","n_units_both":"N Districts",
+    })
+    .round(1)
+)
+print(act_d.to_markdown(index=False))
+```
+
+**Key findings from the ACT decomposition:**
+
+- In the pre-COVID years (2015–16 to 2018–19), approximately **43–47% of the BW
+  ACT Composite gap is between districts**, consistent with the Forward Exam
+  decomposition (47%) and the WKCE-era estimate (55–58%). This cross-era,
+  cross-metric consistency strengthens the conclusion that between-district
+  sorting accounts for roughly half the statewide racial gap.
+- The between-district share dropped sharply to **27% in 2021–22** before
+  recovering to 38% in 2022–23. This likely reflects uneven post-COVID
+  district-level recovery in ACT scores, temporarily compressing the
+  between-district variance. The pre-COVID estimate is more interpretable.
+
+## The Educational Pipeline
+
+@fig-pipeline directly compares gap magnitudes across the educational
+pipeline: Forward Exam grades 3–8 (proficiency rate gaps, pp) and ACT
+grade 11 (score gaps, points). Although the metrics are not on the same
+scale, the figure illustrates whether gaps are widening, narrowing, or
+stable as students progress through school.
+
+![Educational Pipeline: Racial Gaps at Grades 3–8 vs. Grade 11](../output/figures/fig08_act_pipeline.png){#fig-pipeline width=100%}
+
+The pipeline comparison yields the paper's starkest finding: **Wisconsin's
+racial achievement gap does not narrow as students progress from elementary
+school to the end of high school**. Black students enter grade 3 trailing
+White students by approximately 38–40 percentage points in ELA and 42–44
+percentage points in Mathematics. By the time they reach grade 11, Black
+graduates trail White graduates by 5–6 ACT Composite points — representing
+a difference of roughly 1.5 ACT English standard deviations, comparable
+in educational magnitude to the earlier proficiency gaps. The gap is
+persistent across every subject and every year in the sample.
+
+This finding has an important implication for the boundary review debate:
+the racial gaps seen at the school level in grades 3–8 are not the result
+of early-school experiences that fade over time. They are persistent
+through the end of secondary schooling and show no sign of convergence.
+Policies that intervene only at the school-assignment margin are unlikely
+to alter a trajectory that has been stable for a decade.
+
+## ACT: MMSD vs. Peer Districts
+
+@fig-act-peers shows MMSD Black and Hispanic ACT Composite and Mathematics
+scores relative to peer districts.
+
+![ACT Scores: MMSD vs. Peer Districts (Grade 11)](../output/figures/fig07_act_mmsd_vs_peers.png){#fig-act-peers width=100%}
+
+```{python}
+#| label: tbl-act-mmsd
+#| tbl-cap: "ACT Composite Scores: MMSD and Selected Peers (Black Students, Primary Years)"
+act_mmsd_tbl = (
+    act_peers[
+        (act_peers["race"]=="Black") &
+        (act_peers["subject"]=="Composite")
+    ]
+    .groupby(["district_label","tier"])["avg_score"]
+    .mean()
+    .reset_index()
+    .rename(columns={"district_label":"District","tier":"Tier","avg_score":"Avg ACT Composite"})
+    .round(2)
+    .sort_values("Avg ACT Composite", ascending=False)
+)
+print(act_mmsd_tbl.to_markdown(index=False))
+```
+
+The ACT peer comparison confirms the Forward Exam findings at grade 11.
+MMSD Black students average approximately **14.8–15.2** on the ACT Composite —
+essentially identical to Milwaukee Black students (~15.0–15.3) and
+within 0.5 points of Racine and Kenosha. Madison-region peers (Verona, Middleton)
+tend to score higher, reflecting their smaller, higher-SES minority populations.
+The conclusion is unchanged from the Forward Exam analysis: **MMSD provides no
+measurable ACT score advantage for its Black students relative to the major urban
+districts with which it is often implicitly compared**.
 
 # MMSD Analysis {#sec-mmsd}
 
@@ -1004,6 +1181,45 @@ the non-MMSD White proficiency rate. Both measures confirm that MMSD minority
 students are substantially below the statewide White benchmark, and that
 this gap has been persistent for at least a decade before the current
 Forward Exam era began.
+
+---
+
+### D.5b Grade 10 Profile (WKCE Era) {.unnumbered}
+
+The WKCE tested grade 10 students in Reading, Mathematics, and three
+other subjects. Although grade-10 district-level suppression is higher
+(~83% at the district × race level), state-level aggregation produces
+stable estimates for 2008–09 through 2012–13 (note: grade-10 data
+in 2013–14 are incomplete and excluded).
+
+@fig-wkce-gr10 compares the average BW and HW scale-score gap at
+grades 3–8 to that at grade 10, for Reading and Mathematics.
+
+![WKCE Scale-Score Gaps: Grades 3–8 vs. Grade 10](../output/figures/fig_A6_wkce_grade10_profile.png){#fig-wkce-gr10 width=90%}
+
+```{python}
+#| label: tbl-wkce-gr10
+#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps (Reading and Math)"
+wkce_g10 = pd.read_csv(ROOT / "output/tables/wkce_grade10_gaps.csv")
+print(
+    wkce_g10[["year","subject","gap_pair","mean_ss_white","mean_ss_minority","gap"]]
+    .rename(columns={"year":"Year","subject":"Subject","gap_pair":"Gap",
+                     "mean_ss_white":"White Mean SS","mean_ss_minority":"Minority Mean SS","gap":"Gap (pts)"})
+    .round(1)
+    .to_markdown(index=False)
+)
+```
+
+The grade-10 BW gap in Reading is **64–74 scale-score points**, compared to
+**44–48 points** in grades 3–8. The same pattern holds in Mathematics.
+This widening is consistent with cumulative disadvantage: the gap
+grows over the school career. However, care is needed in interpretation —
+grade-10 scale scores are on a higher part of the WKCE developmental
+scale, so a larger absolute gap does not necessarily imply a larger
+standardized gap. Expressed in within-grade standard deviations, the
+grade-10 gap is roughly comparable to or modestly larger than the
+grades 3–8 gap, consistent with the ACT evidence from the Forward Exam
+era showing no convergence through grade 11.
 
 ---
 

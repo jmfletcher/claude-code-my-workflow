@@ -10,7 +10,7 @@ Analysis window: 2008-09 through 2013-14
   • 2007-08 excluded: n_tested is entirely missing (cannot weight state averages)
 
 Subjects: Reading, Math  (parallel to Forward Exam ELA / Mathematics)
-Grades  : 3–8           (parallel to Forward Exam; grade 10 excluded for comparability)
+Grades  : 3–8 (primary), plus grade 10 sub-analysis (fig_A6)
 Races   : White, Black, Hispanic (primary analysis); Amer Indian, Asian/PI noted)
 
 Decomposition formula (identical to 05_decomposition.py):
@@ -30,6 +30,8 @@ Outputs:
   output/figures/fig_A3_wkce_decomposition.{pdf,png}
   output/figures/fig_A4_wkce_mmsd_vs_peers.{pdf,png}
   output/figures/fig_A5_wkce_mmsd_vs_nonmmsd_white.{pdf,png}
+  output/figures/fig_A6_wkce_grade10_profile.{pdf,png}
+  output/tables/wkce_grade10_gaps.csv
 """
 
 from pathlib import Path
@@ -740,6 +742,124 @@ def fig_mmsd_vs_nonmmsd_white(comp: pd.DataFrame) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Grade 10 sub-analysis
+# ---------------------------------------------------------------------------
+
+def compute_grade10_gaps(raw_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    State-level BW and HW scale-score gaps for grade 10 only.
+    Returns a DataFrame with columns [year, subject, gap_pair, gap,
+    mean_ss_white, mean_ss_minority].
+    Grade 10 has higher district-level suppression (~82%) but state-level
+    aggregation is feasible because the large statewide sample overcomes
+    individual district missingness.
+    Uses the same analysis years as grades 3-8 (excluding 2013-14 which
+    has lower grade 10 coverage).
+    """
+    g10 = raw_df[
+        (raw_df["grade"] == 10)
+        & (raw_df["year"].isin(ANALYSIS_YEARS))
+        & (raw_df["subject"].isin(PRIMARY_SUBJECTS))
+        & (raw_df["race"].isin(PRIMARY_RACES))
+    ].copy()
+
+    state = (
+        g10.groupby(["year", "subject", "race"])
+        .apply(
+            lambda g: pd.Series({"mean_ss": weighted_mean(g["mean_ss"], g["n_tested"])}),
+            include_groups=False,
+        )
+        .reset_index()
+    )
+
+    records = []
+    for year in ANALYSIS_YEARS:
+        for subj in PRIMARY_SUBJECTS:
+            cell = (
+                state[(state["year"] == year) & (state["subject"] == subj)]
+                .set_index("race")["mean_ss"]
+            )
+            if "White" not in cell or pd.isna(cell["White"]):
+                continue
+            for _ra, rb, pair_label, pair_desc in GAP_PAIRS:
+                if rb not in cell or pd.isna(cell.get(rb, np.nan)):
+                    continue
+                records.append({
+                    "year": year, "subject": subj,
+                    "gap_pair": pair_label, "gap_desc": pair_desc,
+                    "mean_ss_white": cell["White"],
+                    "mean_ss_minority": cell[rb],
+                    "gap": cell["White"] - cell[rb],
+                })
+    return pd.DataFrame(records)
+
+
+def fig_grade10_profile(gaps_38: pd.DataFrame, gaps_10: pd.DataFrame) -> None:
+    """
+    fig_A6: Side-by-side comparison of BW and HW gaps at grades 3-8 (average)
+    and grade 10, for Reading and Math, across WKCE years.
+    """
+    # Average grades 3-8 across all years → single bar per subject × gap pair
+    avg_38 = (
+        gaps_38.groupby(["subject", "gap_pair"])["gap"]
+        .mean()
+        .reset_index()
+        .rename(columns={"gap": "gap_38"})
+    )
+    # Average grade 10 across years → single bar
+    avg_10 = (
+        gaps_10.groupby(["subject", "gap_pair"])["gap"]
+        .mean()
+        .reset_index()
+        .rename(columns={"gap": "gap_10"})
+    )
+    combined = avg_38.merge(avg_10, on=["subject", "gap_pair"], how="outer")
+
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4.5), sharey=True)
+    fig.suptitle(
+        "WKCE Racial Scale-Score Gaps: Grades 3–8 vs. Grade 10\n"
+        "(Pooled 2008–09 to 2013–14, Statewide Enrollment-Weighted Average)",
+        fontsize=11, fontweight="bold", y=1.01,
+    )
+
+    bar_width = 0.3
+    x = np.array([0, 1])  # BW, HW
+
+    for ax, subj in zip(axes, PRIMARY_SUBJECTS):
+        sub = combined[combined["subject"] == subj]
+        bw_row = sub[sub["gap_pair"] == "BW"]
+        hw_row = sub[sub["gap_pair"] == "HW"]
+
+        vals_38 = [
+            bw_row["gap_38"].values[0] if not bw_row.empty else np.nan,
+            hw_row["gap_38"].values[0] if not hw_row.empty else np.nan,
+        ]
+        vals_10 = [
+            bw_row["gap_10"].values[0] if not bw_row.empty else np.nan,
+            hw_row["gap_10"].values[0] if not hw_row.empty else np.nan,
+        ]
+
+        ax.bar(x - bar_width / 2, vals_38, bar_width, label="Gr 3–8", color="#4d9de0", alpha=0.85)
+        ax.bar(x + bar_width / 2, vals_10, bar_width, label="Gr 10",  color="#e15554", alpha=0.85)
+
+        for xi, (v38, v10) in enumerate(zip(vals_38, vals_10)):
+            if not np.isnan(v38):
+                ax.text(xi - bar_width / 2, v38 + 0.5, f"{v38:.1f}", ha="center", fontsize=8)
+            if not np.isnan(v10):
+                ax.text(xi + bar_width / 2, v10 + 0.5, f"{v10:.1f}", ha="center", fontsize=8)
+
+        ax.set_xticks(x)
+        ax.set_xticklabels(["Black–White", "Hispanic–White"])
+        ax.set_title(SUBJECT_LABEL[subj], fontsize=11, fontweight="bold")
+        ax.set_ylabel("White minus Minority Mean Scale Score (points)")
+        ax.legend(fontsize=9)
+
+    fig.tight_layout()
+    _save_fig("fig_A6_wkce_grade10_profile")
+    print("  Saved fig_A6_wkce_grade10_profile")
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -795,6 +915,20 @@ def main() -> None:
     nonmmsd_df.to_csv(OUT_TABLES / "wkce_mmsd_vs_nonmmsd_white.csv", index=False)
     print()
 
+    # ---- Grade 10 sub-analysis ------------------------------------------
+    print("Computing grade 10 gaps …")
+    # Load full panel (without grade filter) for grade 10
+    raw = pd.read_parquet(PANEL)
+    raw["grade"] = raw["grade"].astype(str).str.lstrip("0").replace("", "0").astype(int)
+    raw["is_mmsd"] = raw["district_name"].isin(MMSD_NAMES)
+    gaps_10 = compute_grade10_gaps(raw)
+    gaps_10.to_csv(OUT_TABLES / "wkce_grade10_gaps.csv", index=False)
+    print(f"  Grade 10 gap records: {len(gaps_10)}")
+    if not gaps_10.empty:
+        bw10 = gaps_10[(gaps_10["gap_pair"] == "BW") & (gaps_10["subject"] == "Reading")]
+        print(bw10[["year", "gap"]].to_string(index=False))
+    print()
+
     # ---- Figures ---------------------------------------------------------
     print("Generating figures …")
     fig_gap_trends(gaps_df)
@@ -802,6 +936,8 @@ def main() -> None:
     fig_decomposition(decomp)
     fig_mmsd_vs_peers(peers_df)
     fig_mmsd_vs_nonmmsd_white(nonmmsd_df)
+    if not gaps_10.empty:
+        fig_grade10_profile(gaps_df, gaps_10)
     print()
 
     print("Done — WKCE appendix analysis complete.")
