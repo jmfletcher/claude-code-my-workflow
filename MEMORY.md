@@ -23,6 +23,20 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:workflow] Deliverables for this project: Python analysis pipeline + school-level merged dataset + professional Quarto report (PDF) + Quarto RevealJS slide deck (PDF). Manuscript in manuscript/main.qmd, slides in Slides/main.qmd.
 
+[LEARN:data] Forward Exam zip files contain two files: a data CSV and a layout CSV. Data CSV confirmed: 21 columns, 925K rows for 2022-23. Format is LONG: one row per school × grade × subject × GROUP_BY × GROUP_BY_VALUE × TEST_RESULT. Proficiency rate = sum of PERCENT_OF_GROUP for TEST_RESULT in ('Proficient', 'Advanced'). PERCENT_OF_GROUP is 0-100 scale. Suppression symbol is "*" in STUDENT_COUNT, PERCENT_OF_GROUP, GROUP_COUNT.
+
+[LEARN:data] Race labels in DPI Forward Exam (GROUP_BY_VALUE when GROUP_BY=="Race/Ethnicity"): "White", "Black", "Hispanic", "Asian", "Amer Indian", "Pacific Isle", "Two or More", "Unknown", "[Data Suppressed]". Note: "Black" NOT "Black or African American".
+
+[LEARN:data] MMSD district name in DPI data: "Madison Metropolitan". Filter: df[df.DISTRICT_NAME=="Madison Metropolitan"]. District-level rows have blank SCHOOL_CODE; school-level rows have populated SCHOOL_CODE.
+
+[LEARN:data] TEST_GROUP column: use only "Forward" rows. "DLM" = Dynamic Learning Maps (students with severe disabilities tested on alternate assessment) — exclude from proficiency rate calculations.
+
+[LEARN:data] Forward Exam available years: 2015-16, 2016-17, 2017-18, 2018-19, [2019-20 MISSING], 2020-21, 2021-22, 2022-23, 2023-24, 2024-25. Download script: python3 analysis/00_download_data.py --era forward. Files land in Data/raw/forward/.
+
+[LEARN:data] 2023-24 and 2024-25 zips each contain TWO CSVs split by subject (ELA_RDG_WRT and MTH_SCN_SOC). Load script must concatenate both. 2015-16 through 2022-23 each have one CSV.
+
+[LEARN:data] Race labels are IDENTICAL across all 9 Forward Exam years (confirmed 2026-04-03). All labels: "Amer Indian", "Asian", "Black", "Hispanic", "Pacific Isle", "Two or More", "Unknown", "White", "[Data Suppressed]". ELL Status → EL Status label change in 2020-21 onward (same concept).
+
 ## Workflow Patterns
 
 [LEARN:workflow] Requirements specification phase catches ambiguity before planning → reduces rework 30-50%. Use spec-then-plan for complex/ambiguous tasks (>1 hour or >3 files).

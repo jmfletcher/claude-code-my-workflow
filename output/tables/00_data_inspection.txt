@@ -1,0 +1,273 @@
+======================================================================
+Wisconsin Forward Exam — Data Inspection Report
+======================================================================
+
+Found 9 zip files in /Users/jasonfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/Data/raw/forward
+
+--- 2015-16 ---
+  CSV files in zip: ['forward_certified_2015-16.csv', 'forward_certified_2015-16_layout.csv']
+  Rows: 903,148   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'ELL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 159516}
+    TEST_RESULT_CODE: {'*': 159516}
+    STUDENT_COUNT: {'*': 159516}
+    PERCENT_OF_GROUP: {'*': 159516}
+    GROUP_COUNT: {'*': 62710}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 21403
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3153
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2016-17 ---
+  CSV files in zip: ['forward_certified_2016-17.csv', 'forward_certified_2016-17_layout.csv']
+  Rows: 904,547   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'ELL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 159332}
+    TEST_RESULT_CODE: {'*': 159332}
+    STUDENT_COUNT: {'*': 159332}
+    PERCENT_OF_GROUP: {'*': 159332}
+    GROUP_COUNT: {'*': 63237}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 22359
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3200
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2017-18 ---
+  CSV files in zip: ['forward_certified_2017-18.csv', 'forward_certified_2017-18_layout.csv']
+  Rows: 910,615   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'ELL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 153984}
+    TEST_RESULT_CODE: {'*': 153984}
+    STUDENT_COUNT: {'*': 153984}
+    PERCENT_OF_GROUP: {'*': 153984}
+    GROUP_COUNT: {'*': 60735}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 21165
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3191
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2018-19 ---
+  CSV files in zip: ['forward_certified_2018-19.csv', 'forward_certified_2018-19_layout.csv']
+  Rows: 912,893   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'ELL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 153251}
+    TEST_RESULT_CODE: {'*': 153251}
+    STUDENT_COUNT: {'*': 153251}
+    PERCENT_OF_GROUP: {'*': 153251}
+    GROUP_COUNT: {'*': 59565}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 21273
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3301
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2020-21 [COVID-DISRUPTED] ---
+  CSV files in zip: ['forward_certified_2020-21.csv', 'forward_certified_2020-21_layout.csv']
+  Rows: 947,510   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'EL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 148313}
+    TEST_RESULT_CODE: {'*': 148313}
+    STUDENT_COUNT: {'*': 148313}
+    PERCENT_OF_GROUP: {'*': 148313}
+    GROUP_COUNT: {'*': 56342}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 18666
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3391
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2021-22 ---
+  CSV files in zip: ['forward_certified_2021-22.csv', 'forward_certified_2021-22_layout.csv']
+  Rows: 925,139   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'EL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 153283}
+    TEST_RESULT_CODE: {'*': 153283}
+    STUDENT_COUNT: {'*': 153283}
+    PERCENT_OF_GROUP: {'*': 153283}
+    GROUP_COUNT: {'*': 59498}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 20973
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3070
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2022-23 ---
+  CSV files in zip: ['forward_certified_2022-23.csv', 'forward_certified_2022-23_layout.csv']
+  Rows: 925,068   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'EL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 154090}
+    TEST_RESULT_CODE: {'*': 154090}
+    STUDENT_COUNT: {'*': 154090}
+    PERCENT_OF_GROUP: {'*': 154090}
+    GROUP_COUNT: {'*': 61230}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 20320
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3098
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Academic Campus']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8, 10]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Mathematics', 'Science', 'Social Studies']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Basic', 'Below Basic', 'No Test', 'Proficient']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2023-24 [NEW-STANDARDS] ---
+  CSV files in zip: ['forward_certified_ELA_RDG_WRT_2023-24.csv', 'forward_certified_ELA_RDG_WRT_2023-24_layout.csv', 'forward_certified_MTH_SCN_SOC_2023-24.csv', 'forward_certified_MTH_SCN_SOC_2023-24_layout.csv']
+  Rows: 961,226   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'EL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 126627}
+    TEST_RESULT_CODE: {'*': 126627}
+    STUDENT_COUNT: {'*': 126627}
+    PERCENT_OF_GROUP: {'*': 126627}
+    GROUP_COUNT: {'*': 29326}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 21934
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3149
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Elementary']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Reading', 'Writing']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Approaching', 'Developing', 'Meeting', 'No Score', 'No Test']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+--- 2024-25 [NEW-STANDARDS] ---
+  CSV files in zip: ['forward_certified_ELA_RDG_WRT_2024-25.csv', 'forward_certified_ELA_RDG_WRT_2024-25_layout.csv', 'forward_certified_MTH_SCN_SOC_2024-25.csv', 'forward_certified_MTH_SCN_SOC_2024-25_layout.csv']
+  Rows: 952,785   Columns: 21
+  Columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'CESA', 'COUNTY', 'DISTRICT_CODE', 'SCHOOL_CODE', 'GRADE_GROUP', 'CHARTER_IND', 'DISTRICT_NAME', 'SCHOOL_NAME', 'TEST_SUBJECT', 'GRADE_LEVEL', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_GROUP', 'GROUP_BY', 'GROUP_BY_VALUE', 'STUDENT_COUNT', 'PERCENT_OF_GROUP', 'GROUP_COUNT', 'FORWARD_AVERAGE_SCALE_SCORE']
+  GROUP_BY categories: ['All Students', 'Disability Status', 'EL Status', 'Economic Status', 'Gender', 'Migrant Status', 'Race/Ethnicity']
+  Race/Ethnicity labels: ['Amer Indian', 'Asian', 'Black', 'Hispanic', 'Pacific Isle', 'Two or More', 'Unknown', 'White', '[Data Suppressed]']
+  Suppression symbols found:
+    TEST_RESULT: {'*': 125886}
+    TEST_RESULT_CODE: {'*': 125886}
+    STUDENT_COUNT: {'*': 125886}
+    PERCENT_OF_GROUP: {'*': 125886}
+    GROUP_COUNT: {'*': 28823}
+  District/School ID columns: ['SCHOOL_YEAR', 'AGENCY_TYPE', 'DISTRICT_CODE', 'SCHOOL_CODE', 'DISTRICT_NAME', 'SCHOOL_NAME']
+  MMSD rows in 'DISTRICT_NAME': 21575
+    Sample MMSD names: ['Madison Metropolitan']
+  MMSD rows in 'SCHOOL_NAME': 3396
+    Sample MMSD names: ['Madison Middle', 'Madison Elementary', 'James Madison Elementary']
+  Proficiency-related columns: ['PERCENT_OF_GROUP']
+  Unique values in 'GRADE_GROUP': ['Combined Elementary/Secondary School', 'Elementary School', 'High School', 'Junior High School', 'Middle School', '[All]']
+  Unique values in 'GRADE_LEVEL': [3, 4, 5, 6, 7, 8]
+  Unique values in 'TEST_SUBJECT': ['ELA', 'Reading', 'Writing']
+  Unique values in 'TEST_RESULT': ['*', 'Advanced', 'Approaching', 'Developing', 'Meeting', 'No Score', 'No Test']
+  Unique values in 'TEST_RESULT_CODE': ['*', '1', '2', '3', '4', 'No Test']
+  Unique values in 'TEST_GROUP': ['DLM', 'Forward']
+
+======================================================================
+CROSS-YEAR COLUMN CONSISTENCY
+======================================================================
+
+Columns present in ALL years (21):
+  ['AGENCY_TYPE', 'CESA', 'CHARTER_IND', 'COUNTY', 'DISTRICT_CODE', 'DISTRICT_NAME', 'FORWARD_AVERAGE_SCALE_SCORE', 'GRADE_GROUP', 'GRADE_LEVEL', 'GROUP_BY', 'GROUP_BY_VALUE', 'GROUP_COUNT', 'PERCENT_OF_GROUP', 'SCHOOL_CODE', 'SCHOOL_NAME', 'SCHOOL_YEAR', 'STUDENT_COUNT', 'TEST_GROUP', 'TEST_RESULT', 'TEST_RESULT_CODE', 'TEST_SUBJECT']
+
+======================================================================
+CROSS-YEAR RACE LABEL CONSISTENCY (Race/Ethnicity GROUP_BY_VALUE)
+======================================================================
+
+All unique Race/Ethnicity labels across all years:
+  'Amer Indian': ALL YEARS
+  'Asian': ALL YEARS
+  'Black': ALL YEARS
+  'Hispanic': ALL YEARS
+  'Pacific Isle': ALL YEARS
+  'Two or More': ALL YEARS
+  'Unknown': ALL YEARS
+  'White': ALL YEARS
+  '[Data Suppressed]': ALL YEARS
+
+======================================================================
+RECOMMENDED ANALYSIS FLAGS
+======================================================================
+
+  Year       Status               Recommendation
+  ---------- -------------------- ----------------------------------------
+  2019-20    MISSING              Exclude — no state testing (COVID waiver)
+  2015-16    Clean                Include in main analysis
+  2016-17    Clean                Include in main analysis
+  2017-18    Clean                Include in main analysis
+  2018-19    Clean                Include in main analysis
+  2020-21    COVID-DISRUPTED      Exclude from trends; flag if included
+  2021-22    Clean                Include in main analysis
+  2022-23    Clean                Include in main analysis
+  2023-24    NEW STANDARDS        Do not compare to 2015-22 without caveats
+  2024-25    NEW STANDARDS        Do not compare to 2015-22 without caveats
+
+NEXT STEPS:
+  1. Fill in .claude/rules/knowledge-base-template.md with confirmed column names
+  2. Run: python3 analysis/01_load_and_clean.py

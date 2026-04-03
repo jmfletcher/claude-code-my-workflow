@@ -35,24 +35,42 @@ Tolerance: components must sum to total gap ± 0.001 percentage points.
 
 ## Variable Naming Conventions
 
-<!-- Fill in once DPI CSV files are downloaded and inspected.
-     Use EXACTLY the column names that appear in the raw files. -->
+Confirmed from `01_inspect_data.py` run on 2022-23 file (2026-04-03).
+
+**Raw DPI column names (21 columns, consistent across all Forward Exam years):**
 
 | Canonical name (our code) | DPI source column | Notes |
 |--------------------------|------------------|-------|
-| `school_id` | [PENDING] | NCES or DPI format — confirm on download |
-| `district_id` | [PENDING] | |
-| `district_name` | [PENDING] | |
-| `school_name` | [PENDING] | |
-| `county` | [PENDING] | |
-| `race_group` | [PENDING] | See Race Category Labels below |
-| `grade` | [PENDING] | Integer or string? Confirm |
-| `subject` | [PENDING] | ELA / Math — confirm exact strings |
-| `year` | [PENDING] | School year (e.g., 2022–23 or 2023) |
-| `n_tested` | [PENDING] | Denominator — confirm column name |
-| `n_proficient` | [PENDING] | Numerator — may need to compute from pct |
-| `pct_proficient` | [PENDING] | May be 0–100 or 0–1 — confirm on load |
-| `suppressed` | (derived) | `True` where DPI cell is `*` or N < 10 |
+| `year` | `SCHOOL_YEAR` | String e.g. `"2022-23"` |
+| `agency_type` | `AGENCY_TYPE` | e.g. `"03"` = district, `"04"` = school |
+| `cesa` | `CESA` | Cooperative Educational Service Agency region |
+| `county` | `COUNTY` | County name string |
+| `district_id` | `DISTRICT_CODE` | DPI-assigned district code |
+| `school_id` | `SCHOOL_CODE` | DPI-assigned school code (blank for district rows) |
+| `grade_group` | `GRADE_GROUP` | e.g. `"Elementary School"`, `"[All]"` |
+| `charter` | `CHARTER_IND` | Charter indicator |
+| `district_name` | `DISTRICT_NAME` | Full district name e.g. `"Madison Metropolitan"` |
+| `school_name` | `SCHOOL_NAME` | Full school name (blank for district rows) |
+| `subject` | `TEST_SUBJECT` | `"ELA"`, `"Mathematics"`, `"Science"`, `"Social Studies"` |
+| `grade` | `GRADE_LEVEL` | Integer: 3, 4, 5, 6, 7, 8, 10 |
+| `test_result` | `TEST_RESULT` | `"Proficient"`, `"Advanced"`, `"Basic"`, `"Below Basic"`, `"No Test"`, `"*"` |
+| `test_result_code` | `TEST_RESULT_CODE` | Numeric code for TEST_RESULT |
+| `test_group` | `TEST_GROUP` | `"Forward"` or `"DLM"` (Dynamic Learning Maps = severe disabilities) |
+| `group_by` | `GROUP_BY` | Category type: `"Race/Ethnicity"`, `"Gender"`, `"Economic Status"`, etc. |
+| `group_by_value` | `GROUP_BY_VALUE` | Value within category (see Race Category Labels) |
+| `n_at_level` | `STUDENT_COUNT` | Count of students at this TEST_RESULT level (`"*"` if suppressed) |
+| `pct_at_level` | `PERCENT_OF_GROUP` | % of group at this TEST_RESULT level, 0–100 scale (`"*"` if suppressed) |
+| `n_tested` | `GROUP_COUNT` | Total students tested in this group at this school/grade/subject (`"*"` if suppressed) |
+| `scale_score` | `FORWARD_AVERAGE_SCALE_SCORE` | Average scale score (additional metric) |
+
+**Data structure note:** The data is LONG format. One row = one school × grade × subject × group_by × group_by_value × test_result combination. To compute proficiency rate for a group:
+```python
+# Filter to Forward test, Race/Ethnicity group, grades 3-8, ELA or Math
+# Proficiency rate = pct_at_level where test_result in ('Proficient', 'Advanced')
+# Or compute as: (n_proficient + n_advanced) / n_tested
+```
+
+**Suppression:** Symbol is `"*"` in `STUDENT_COUNT`, `PERCENT_OF_GROUP`, `GROUP_COUNT`, `TEST_RESULT`, `TEST_RESULT_CODE`. In 2022-23: ~154K suppressed rows out of 925K total (~17%). Set all `"*"` values to `NaN`.
 
 ---
 
@@ -61,29 +79,51 @@ Tolerance: components must sum to total gap ± 0.001 percentage points.
 <!-- Fill in EXACTLY as they appear in the raw DPI CSV.
      Wrong labels cause silent merge failures. -->
 
-| Our label | DPI string (raw) | Notes |
-|-----------|-----------------|-------|
-| White | [PENDING] | |
-| Black | [PENDING] | Likely "Black or African American" |
-| Hispanic | [PENDING] | Likely "Hispanic" |
-| Asian | [PENDING] | |
-| American Indian | [PENDING] | |
-| Two or More Races | [PENDING] | |
-| All students | [PENDING] | Used for total/denominator checks |
+Confirmed from 2022-23 file. These are values of `GROUP_BY_VALUE` when `GROUP_BY == "Race/Ethnicity"`.
 
-**[LEARN action]:** As soon as `01_load_and_clean.py` is run, paste the actual race strings here and add a `[LEARN:data]` entry to `MEMORY.md`.
+| Our label | DPI `GROUP_BY_VALUE` string (exact) | Notes |
+|-----------|-------------------------------------|-------|
+| White | `"White"` | |
+| Black | `"Black"` | Note: NOT "Black or African American" — shorter label |
+| Hispanic | `"Hispanic"` | |
+| Asian | `"Asian"` | |
+| American Indian | `"Amer Indian"` | Abbreviated |
+| Pacific Islander | `"Pacific Isle"` | Abbreviated |
+| Two or More Races | `"Two or More"` | |
+| Unknown | `"Unknown"` | |
+| Suppressed group | `"[Data Suppressed]"` | Treat as NaN |
+| All students | `"All Students"` | In GROUP_BY_VALUE when GROUP_BY == "All Students" |
+
+**Other GROUP_BY_VALUE values** (non-race): `"EL"`, `"Econ Disadv"`, `"Eng Prof"`, `"Female"`, `"Male"`, `"Migrant"`, `"Non-binary"`, `"Not Econ Disadv"`, `"Not Migrant"`, `"SwD"` (students with disabilities), `"SwoD"` (students without disabilities).
 
 ---
 
 ## School ID Format
 
-- DPI data may use a state-assigned ID, an NCES ID, or both.
-- NCES format: 7-digit state code + 5-digit district + 5-digit school = 12 digits total.
-- Confirm format on first download; document in `MEMORY.md` and update this table.
-- MMSD district ID: [PENDING — confirm from DPI data]
-- Milwaukee district ID: [PENDING — confirm from DPI data]
+- DPI uses its own `DISTRICT_CODE` and `SCHOOL_CODE` (NOT NCES format).
+- `DISTRICT_CODE`: DPI-assigned district number (integer in data)
+- `SCHOOL_CODE`: DPI-assigned school number (integer; blank/0 for district-level rows)
+- Merge key for joining datasets: `(DISTRICT_CODE, SCHOOL_CODE)` or `(DISTRICT_CODE, SCHOOL_CODE, SCHOOL_YEAR)`
+- MMSD `DISTRICT_NAME` = `"Madison Metropolitan"` (confirmed)
+- MMSD `DISTRICT_CODE`: [PENDING — extract from data with `df[df.DISTRICT_NAME=="Madison Metropolitan"].DISTRICT_CODE.unique()`]
+- Milwaukee `DISTRICT_CODE`: [PENDING — extract similarly]
 
 ---
+
+## Zip File Structure (CRITICAL for load script)
+
+- **2015-16 through 2022-23**: Each zip has ONE data CSV + ONE layout CSV.
+  - `forward_certified_YYYY-YY.csv`
+- **2023-24 and 2024-25**: Each zip has TWO data CSVs (split by subject group) + layout files.
+  - `forward_certified_ELA_RDG_WRT_YYYY-YY.csv`
+  - `forward_certified_MTH_SCN_SOC_YYYY-YY.csv`
+  - **Load script must read and concatenate BOTH CSVs for 2023-24 and 2024-25.**
+
+## ELL vs. EL Status Label
+
+- 2015-16 through 2018-19: `GROUP_BY == "ELL Status"`
+- 2020-21 onward: `GROUP_BY == "EL Status"` (same concept, relabeled)
+- Harmonize: `df["GROUP_BY"] = df["GROUP_BY"].replace("ELL Status", "EL Status")`
 
 ## Test Coverage
 
