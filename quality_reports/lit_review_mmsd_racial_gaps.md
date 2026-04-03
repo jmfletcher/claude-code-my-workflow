@@ -17,26 +17,32 @@ The literature does not contain a rigorous peer-to-peer comparison of MMSD minor
 
 ## Key Papers and Reports
 
-### Reardon, S.F., et al. (2019) — Geographic Variation in Racial Achievement Gaps
-- **Main contribution:** Estimates Black-White and Hispanic-White achievement gaps for hundreds of metro areas and thousands of school districts using standardized test data from SEDA; identifies correlates of geographic variation.
-- **Method:** Scaling of state accountability tests to NAEP; multilevel regression of gap magnitude on district characteristics.
-- **Key finding:** Achievement gaps range from near zero to >1.5 SD across districts. Economic, demographic, segregation, and schooling factors explain 44-72% of variation. The strongest correlates are racial differences in parental income, parental education, and racial school segregation.
-- **Relevance:** Foundational framework for our decomposition analysis. Establishes that MMSD's large gap is likely driven by the extreme SES difference between its White and Black populations rather than unusually poor outcomes for minority students.
-- **Citation status:** Published; verify exact journal in CEPA publications listing.
+### Reardon, Kalogrides & Shores (2019) — The Geography of Racial/Ethnic Test Score Gaps
+- **Main contribution:** Estimates Black-White and Hispanic-White achievement gaps for hundreds of metro areas and thousands of school districts using ~200 million standardized tests (2009-2013); identifies correlates of geographic variation.
+- **Method:** State accountability tests scaled to NAEP via equipercentile linking (SEDA); multilevel regression of gap magnitude on district and metro-area characteristics.
+- **Key finding:** Achievement gaps range from near zero to >1.5 SD across districts. Economic, demographic, segregation, and schooling factors explain 43-72% of variation. The strongest correlates are racial differences in parental income, parental education, and racial school segregation.
+- **Relevance:** Foundational framework for our decomposition analysis. Establishes that MMSD's large gap is most likely driven by the extreme SES difference between its White and Black populations rather than unusually poor outcomes for minority students. Directly motivates our comparison of MMSD minority students to non-MMSD Wisconsin White students.
+- **Citation (verified):** Reardon, S.F., Kalogrides, D., & Shores, K. (2019). The geography of racial/ethnic test score gaps. *American Journal of Sociology*, 124(4), 1164-1221. DOI: 10.1086/700678. CEPA working paper wp16-10.
 
-### Reardon, S.F., et al. (2022) — Uneven Progress: Trends in Achievement Disparities 2009-2019
-- **Main contribution:** Documents that Black-White and poor-nonpoor achievement gaps grew between 2009 and 2019 using SEDA data. No correlation between overall achievement gains and gap reduction.
-- **Method:** SEDA panel (2009-2019); district-level regression of gap trends on segregation levels and teacher quality.
+### Matheny, Thompson, Townley-Flores & Reardon (2023) — Uneven Progress: Recent Trends in Achievement Disparities 2009-2019
+- **Main contribution:** Documents that Black-White and poor-nonpoor achievement gaps grew between 2009 and 2019 using SEDA data. White-Hispanic gaps shrank. No correlation between overall achievement gains and gap reduction.
+- **Method:** SEDA district-level panel 2009-2019; regression of gap trends on within-district segregation, teacher certification, and school characteristics.
 - **Key finding:** Within-district racial and socioeconomic segregation levels and trends are the strongest predictors of achievement disparity trends. Districts that increased racial segregation over this period showed widening gaps.
-- **Relevance:** Provides national baseline for interpreting MMSD's stable gaps over our Forward Exam window (2015-2023). The stability of MMSD's gap is consistent with national pattern.
-- **Citation status:** Published in *Educational Research* (verify journal/volume). Sagepub DOI: 10.3102/00028312221134769.
+- **Relevance:** Provides the national baseline for interpreting MMSD's stable gaps across our Forward Exam window (2015-2023). The stability of MMSD's BW gap is the norm nationally, not an exception.
+- **Citation (verified):** Matheny, K.T., Thompson, M.E., Townley-Flores, C., & Reardon, S.F. (2023). Uneven progress: Recent trends in academic performance among U.S. school districts. *American Educational Research Journal*, 60(3). DOI: 10.3102/00028312221134769.
 
-### Reardon, S.F. (2016) — Achievement Gaps and Racial Segregation: An Insidious Cycle
-- **Main contribution:** Shows that racial school segregation is associated with the magnitude of 3rd grade gaps and rate of growth from 3rd to 8th grade. Crucially, the association is fully mediated by school poverty concentration — segregation is harmful primarily because it concentrates minority students in high-poverty schools.
-- **Method:** Cross-district regression using SEDA and Common Core of Data.
-- **Key finding:** Racial segregation per se does not independently predict gaps after controlling for school poverty exposure. This suggests poverty, not segregation per se, is the proximate cause.
-- **Relevance:** Important caution for MMSD boundary debate: if integration moves minority students to schools with lower poverty but similar absolute SES, gains may be modest. Also implies that comparing MMSD Black students to Milwaukee Black students (who face more concentrated poverty) is methodologically essential.
-- **Citation status:** Working paper / Ed Week blog summary; verify CEPA working paper number.
+### Reardon, Weathers, Fahle, Jang & Kalogrides (2024) — Is Separate Still Unequal? School Segregation and Achievement Gaps
+- **Main contribution:** 11 years of data from all U.S. public school districts; establishes that current-day school segregation strongly predicts gap magnitude in 3rd grade and gap growth from 3rd to 8th grade. The mechanism is school poverty concentration — racial segregation matters because it concentrates minority students in high-poverty schools. Teacher quality differences explain ~20% of the effect.
+- **Method:** Panel regression using SEDA and CCD; instrumental variable approach for causal identification.
+- **Key finding:** Racial segregation per se does not independently predict gaps after controlling for school poverty exposure. This suggests poverty concentration, not racial mixing per se, is the proximate mechanism.
+- **Relevance:** Critical caution for MMSD boundary debate: rezoning that moves minority students to schools with lower poverty but leaves underlying SES drivers unchanged will produce limited gains. Also implies that comparing MMSD Black students to Milwaukee Black students (who face more concentrated school poverty) requires poverty controls to isolate school effects.
+- **Citation (verified):** Reardon, S.F., Weathers, E.S., Fahle, E.M., Jang, H., & Kalogrides, D. (2024). Is separate still unequal? New evidence on school segregation and racial academic achievement gaps. *American Sociological Review*, 89(6), 971-1010. Originally CEPA Working Paper No. 19-06 (2019).
+
+### Fahle, Reardon, Shear, Ho, Saliba & Kalogrides (2023) — Stanford Education Data Archive (SEDA) Technical Documentation
+- **Main contribution:** Documents construction of SEDA2022 — the primary national dataset linking state test scores to NAEP for cross-district and cross-state achievement comparisons. Methods applicable for placing Wisconsin and MMSD gaps in national context.
+- **Key details:** District-level math and reading achievement, grades 3-8, 2019 and 2022; created for COVID-era comparison in partnership with Harvard CEPR.
+- **Relevance:** If we want to formally place MMSD's BW gap in the national distribution (rather than just comparing to Wisconsin districts), SEDA is the tool. Edopportunity.org provides public access.
+- **Citation (verified):** Fahle, E.M., Reardon, S.F., Shear, B.R., Ho, A.D., Saliba, J., & Kalogrides, D. (2023). Stanford Education Data Archive Technical Documentation (SEDA2022, Version 2.0). Educational Opportunity Project at Stanford University. DOI: purl.stanford.edu/db586ns4974.
 
 ### Gillani, N., Beeferman, D., Vega-Pourheydarian, C., Overney, C., Van Hentenryck, P., and Roy, D. (2023) — Redrawing Attendance Boundaries to Promote Racial and Ethnic Diversity
 - **Main contribution:** Uses combinatorial optimization algorithms to simulate redrawn attendance zones for 98 US elementary districts. Shows meaningful but limited segregation reduction potential.
@@ -148,13 +154,54 @@ Neither framework has been applied specifically to decompose the MMSD gap into i
 ## BibTeX Entries
 
 ```bibtex
+@article{reardon2019geography,
+  title     = {The Geography of Racial/Ethnic Test Score Gaps},
+  author    = {Reardon, Sean F. and Kalogrides, Demetra and Shores, Kenneth},
+  journal   = {American Journal of Sociology},
+  volume    = {124},
+  number    = {4},
+  pages     = {1164--1221},
+  year      = {2019},
+  doi       = {10.1086/700678},
+  note      = {CEPA working paper wp16-10}
+}
+
+@article{matheny2023uneven,
+  title     = {Uneven Progress: Recent Trends in Academic Performance Among {U.S.} School Districts},
+  author    = {Matheny, Kaylee T. and Thompson, Marissa E. and Townley-Flores, Carrie and Reardon, Sean F.},
+  journal   = {American Educational Research Journal},
+  volume    = {60},
+  number    = {3},
+  year      = {2023},
+  doi       = {10.3102/00028312221134769}
+}
+
+@article{reardon2024separate,
+  title     = {Is Separate Still Unequal? {New} Evidence on School Segregation and Racial Academic Achievement Gaps},
+  author    = {Reardon, Sean F. and Weathers, Ericka S. and Fahle, Erin M. and Jang, Heewon and Kalogrides, Demetra},
+  journal   = {American Sociological Review},
+  volume    = {89},
+  number    = {6},
+  pages     = {971--1010},
+  year      = {2024},
+  note      = {Originally CEPA Working Paper No.\ 19-06, 2019}
+}
+
+@techreport{fahle2023seda,
+  title     = {Stanford Education Data Archive Technical Documentation ({SEDA2022}, Version 2.0)},
+  author    = {Fahle, Erin M. and Reardon, Sean F. and Shear, Benjamin R. and Ho, Andrew D. and Saliba, Jim and Kalogrides, Demetra},
+  institution = {Educational Opportunity Project at Stanford University},
+  year      = {2023},
+  url       = {https://purl.stanford.edu/db586ns4974}
+}
+
 @article{gillani2023redrawing,
   title     = {Redrawing Attendance Boundaries to Promote Racial and Ethnic Diversity in Elementary Schools},
   author    = {Gillani, Nabeel and Beeferman, Doug and Vega-Pourheydarian, Cesar and Overney, Cassandra and Van Hentenryck, Pascal and Roy, Deb},
   journal   = {Educational Researcher},
   year      = {2023},
   doi       = {10.3102/0013189X231170858},
-  note      = {Also available as arXiv:2303.07603}
+  note      = {Also arXiv:2303.07603}
 }
 
 @article{sorensen2024desegregation,
@@ -166,26 +213,8 @@ Neither framework has been applied specifically to decompose the MMSD gap into i
   pmcid     = {PMC11436629}
 }
 
-@article{reardon2022uneven,
-  title     = {Uneven Progress: Recent Trends in Academic Performance Among U.S. School Districts},
-  author    = {Reardon, Sean F. and others},
-  journal   = {American Educational Research Journal},
-  year      = {2022},
-  doi       = {10.3102/00028312221134769},
-  note      = {Verify full author list from CEPA}
-}
-
-@article{reardon2019geography,
-  title     = {What Levels of Racial/Ethnic Segregation Are Associated with Substantially Lower Achievement?},
-  author    = {Reardon, Sean F. and Fahle, Erin M. and Kalogrides, Demetra and Podolsky, Anne and T{\'o}th, Rosalia},
-  journal   = {Working paper, Stanford CEPA},
-  year      = {2019},
-  url       = {https://edopportunity.org/papers/wp19-06-v092019.pdf},
-  note      = {Verify journal publication status}
-}
-
 @article{richards2014gerrymandering,
-  title     = {The Gerrymandering of School Attendance Zones and the Segregation of Public Schools: A Geospatial Analysis},
+  title     = {The Gerrymandering of School Attendance Zones and the Segregation of Public Schools: {A} Geospatial Analysis},
   author    = {Richards, Meredith P.},
   journal   = {American Educational Research Journal},
   year      = {2014},
@@ -193,7 +222,7 @@ Neither framework has been applied specifically to decompose the MMSD gap into i
 }
 
 @report{will2026beyondrace,
-  title     = {Beyond Race: What Really Drives Wisconsin's Achievement Gap},
+  title     = {Beyond Race: What Really Drives {Wisconsin}'s Achievement Gap},
   author    = {{Wisconsin Institute for Law \& Liberty}},
   year      = {2026},
   url       = {https://will-law.org/wp-content/uploads/2026/03/RaceAchievementStudy-web.pdf},
@@ -204,8 +233,7 @@ Neither framework has been applied specifically to decompose the MMSD gap into i
   title     = {North Side Schools Failing Black Students},
   author    = {{City Forward Collective}},
   year      = {2026},
-  url       = {https://milwaukeenns.org/2026/02/26/new-report-finds-that-north-side-schools-are-failing-black-students/},
-  note      = {Policy report}
+  url       = {https://milwaukeenns.org/2026/02/26/new-report-finds-that-north-side-schools-are-failing-black-students/}
 }
 
 @misc{mmsd2025boundary,
@@ -216,14 +244,14 @@ Neither framework has been applied specifically to decompose the MMSD gap into i
 }
 
 @misc{mmsd2023annual,
-  title     = {MMSD 2022-2023 Annual Report},
+  title     = {{MMSD} 2022--2023 Annual Report},
   author    = {{Madison Metropolitan School District}},
   year      = {2023},
   url       = {https://accountability.madison.k12.wi.us/about/mmsd-excellence-together/strategic-framework/2023-2024-annual-report}
 }
 
 @misc{dpi_wisedash_gap,
-  title     = {WISEdash for Districts Achievement Gap Dashboard},
+  title     = {{WISEdash} for Districts Achievement Gap Dashboard},
   author    = {{Wisconsin Department of Public Instruction}},
   url       = {https://dpi.wi.gov/wisedash/districts/about-data/achievement-gap}
 }
@@ -231,9 +259,9 @@ Neither framework has been applied specifically to decompose the MMSD gap into i
 
 ---
 
-## Important Caveats
+## Citation Status Notes
 
-- **Citation verification required:** Several citations above (especially Reardon working papers) should be verified against the CEPA publications page before inclusion in the manuscript. Working paper year/version may differ from final publication.
-- **WILL report (2026):** This is a policy advocacy report, not peer-reviewed. Use for descriptive context only; do not treat its causal claims as established.
-- **City Forward Collective (2026):** Policy report; useful for North Side Milwaukee context but methodology is not specified in detail.
-- **Boundary review documents:** MMSD's boundary review is ongoing; check mmsd.org for updated materials as the review progresses through 2027.
+- **Reardon et al. citations:** All verified against CEPA publications page and journal DOIs (April 2026). Note that "Is Separate Still Unequal?" circulated as CEPA WP 19-06 for several years before its 2024 ASR publication — use the journal citation (Reardon et al. 2024) in the manuscript.
+- **WILL report (2026):** Policy advocacy report, not peer-reviewed. Use for descriptive context only; flag that its causal claims (family structure as driver) are not established by the cross-sectional design.
+- **City Forward Collective (2026):** Policy report; useful for North Side Milwaukee enrollment and performance context. Methodology not specified in detail.
+- **MMSD boundary review:** Ongoing through 2027; check mmsd.org for preliminary boundary scenarios as they are released.

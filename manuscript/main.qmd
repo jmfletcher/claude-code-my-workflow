@@ -1,0 +1,501 @@
+---
+title: "Racial Achievement Gaps in Wisconsin Public Schools"
+subtitle: "A Decomposition Analysis with Focus on the Madison Metropolitan School District"
+author:
+  - name: Jason Fletcher
+    affiliation: University of Wisconsin–Madison
+    email: jmfletcher@wisc.edu
+date: today
+date-format: "MMMM YYYY"
+
+format:
+  pdf:
+    documentclass: article
+    classoption: [12pt, letterpaper]
+    geometry: margin=1in
+    fontfamily: palatino
+    colorlinks: true
+    linkcolor: "NavyBlue"
+    citecolor: "NavyBlue"
+    keep-tex: false
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \usepackage{dcolumn}
+        \usepackage{setspace}
+        \doublespacing
+        \usepackage{caption}
+        \captionsetup[figure]{font=small}
+        \captionsetup[table]{font=small}
+
+bibliography: references.bib
+csl: chicago-author-date.csl
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+abstract: |
+  Wisconsin has the largest Black-White achievement gap in fourth-grade reading in
+  the nation. Using Wisconsin Department of Public Instruction Forward Exam data
+  (2015–2023), we document statewide racial proficiency gaps, decompose them into
+  within- and between-district components, and conduct a deep-dive analysis of the
+  Madison Metropolitan School District (MMSD). We find that the statewide
+  Black-White gap is approximately 38–40 percentage points in ELA and 42–44
+  percentage points in mathematics, and has been stable across the entire sample
+  period. About 47% of the Black-White gap is between school districts and 53%
+  is within districts. Within MMSD, a surprising finding emerges: MMSD Black
+  students (8–10% proficient in ELA) perform at lower rates than Black students
+  in Milwaukee and other peer districts, despite MMSD's higher overall district
+  reputation. Furthermore, 82% of the MMSD Black-White gap exists within
+  individual schools — not between schools. This final result has direct
+  implications for MMSD's ongoing attendance boundary review: even optimal
+  boundary redesign can address only the 18% between-school component of the gap,
+  while the majority of the racial disparity would remain unaffected by student
+  reassignment alone.
+
+keywords: [racial achievement gaps, within-between decomposition, Wisconsin, MMSD, school boundaries, Forward Exam]
+---
+
+```{python}
+#| label: setup
+#| include: false
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+ROOT = Path("..").resolve()
+OUT_FIGS   = ROOT / "output" / "figures"
+OUT_TABLES = ROOT / "output" / "tables"
+```
+
+# Introduction {#sec-intro}
+
+Wisconsin's racial achievement gap is among the most severe in the nation.
+On the 2024 National Assessment of Educational Progress (NAEP), Wisconsin
+posted the largest Black-White gap in fourth-grade reading nationwide,
+exceeding states historically associated with school segregation such as
+Louisiana, Mississippi, and South Carolina [@reardon2019geography].
+On the Wisconsin Forward Exam — the state's primary accountability
+assessment for grades 3–8 — the Black-White proficiency gap stands at
+approximately 43 percentage points, with Black students proficient at a
+rate of 18% compared to 61% for White students [@dpi_forward].
+
+This paper is motivated by a concrete policy question: the Madison
+Metropolitan School District (MMSD) is conducting a two-year attendance
+boundary review (2025–2027) with the stated goal of promoting
+"socio-economic, linguistic, and racial diversity within and across
+schools" [@mmsd2025boundary]. To assess the potential impact of boundary
+changes on racial achievement gaps, we need to know two things: how large
+is MMSD's racial gap, and how much of that gap is between schools (and thus
+potentially addressable by boundary changes) versus within schools (and
+thus unaffected by student reassignment).
+
+We address these questions with three complementary analyses. First, we
+document statewide racial proficiency gaps by race, grade, and subject over
+the primary Forward Exam window (2015–16 to 2022–23, excluding COVID-disrupted
+years). Second, we decompose the statewide Black-White and Hispanic-White
+gaps into within- and between-district components using a standard linear
+decomposition [@reardon2024separate]. Third, we conduct a detailed analysis
+of MMSD, including: (a) comparing MMSD minority students to same-race peers
+in peer districts with substantial minority enrollment (Milwaukee, Racine,
+Kenosha, Green Bay, and others); (b) comparing MMSD minority students to
+White students in non-MMSD Wisconsin districts, to account for the
+outlier-SES status of MMSD White students; and (c) decomposing the MMSD
+gap into within- and between-school components.
+
+Our main findings are as follows. The statewide BW gap is large (~38–44 pp
+depending on subject), persistent (no trend toward closure 2015–2023), and
+approximately equally split between within- and between-district
+components. Within MMSD, however, the within-school component dominates:
+82% of the MMSD BW gap exists within individual schools, and only 18% is
+between schools. Perhaps most strikingly, MMSD Black students perform at
+*lower* proficiency rates than Black students in Milwaukee and several
+other peer districts — undermining the common assumption that minority
+students in MMSD benefit from their district's overall high reputation.
+
+The paper proceeds as follows. @sec-background reviews the literature.
+@sec-data describes the data and analytical approach. @sec-state documents
+statewide gaps. @sec-decomp presents the within-between decomposition.
+@sec-mmsd presents the MMSD-specific analysis. @sec-conclusion
+discusses policy implications.
+
+# Background {#sec-background}
+
+## The National Literature on Racial Achievement Gaps
+
+Racial achievement gaps are a persistent feature of American public
+education. Using data from the Stanford Education Data Archive (SEDA) —
+which links state accountability tests from approximately 200 million
+students to a common NAEP scale — @reardon2019geography document that
+Black-White achievement gaps vary enormously across school districts,
+ranging from near zero to greater than 1.5 standard deviations. Economic,
+demographic, segregation, and schooling characteristics explain 43–72% of
+this geographic variation. The strongest correlates are racial differences
+in parental income and education, and patterns of racial school segregation.
+
+More recent work using SEDA data through 2019 finds that
+Black-White gaps have been growing modestly, not converging
+[@matheny2023uneven]. There is no evidence that districts that improve
+overall achievement simultaneously narrow racial gaps — suggesting that
+general academic improvement is not sufficient to reduce racial disparities.
+
+The mechanism linking school segregation to achievement gaps has been
+clarified by @reardon2024separate, who find that racial segregation affects
+gaps primarily through "racial economic segregation" — concentrating
+minority students in high-poverty schools. After controlling for racial
+differences in school poverty exposure, racial segregation has little
+independent predictive power. This finding implies that the relevant
+policy lever is not racial mixing per se but reducing minority students'
+exposure to concentrated poverty.
+
+## Wisconsin's Exceptional Gap
+
+Wisconsin's position at the top of the national BW gap distribution has
+been documented since at least the early 2000s using WKCE (Wisconsin
+Knowledge and Concepts Exam) data and subsequently on the Forward Exam.
+The @will2026beyondrace policy report attributes approximately 42% of
+the school-level relationship between Black student share and proficiency
+to poverty rates, and an additional 3.6% to disability identification
+rates. The remaining gap — after controlling for poverty and disability —
+is attributed to unmeasured factors including family structure and early
+literacy practices, though these claims rest on cross-sectional ecological
+data and should be interpreted with caution.
+
+## The MMSD Context and the Boundary Review
+
+MMSD serves approximately 26,000 students across 51 elementary schools and
+is one of the most racially diverse districts in Wisconsin outside of
+Milwaukee. The district's White student population is an outlier by
+state standards: Madison is a college town anchored by the University of
+Wisconsin-Madison, and MMSD White families have unusually high parental
+education and income. This demographic fact has important methodological
+implications: the MMSD within-district BW gap is partly a reflection of
+unusually advantaged White students rather than unusually disadvantaged
+Black students.
+
+The ongoing "Building for the Future" boundary review [@mmsd2025boundary]
+is being conducted with third-party vendor MGT and will evaluate enrollment
+trends, programming, and diversity outcomes through 2027. The boundary
+review raises the question of whether and how much student reassignment
+across MMSD schools could reduce the racial achievement gap. The answer
+depends critically on how much of the gap is between schools (potentially
+addressable by boundary changes) versus within schools (unaffected by
+student reassignment).
+
+The research literature on boundary redrawing provides important context.
+@gillani2023redrawing simulated alternative attendance boundaries for 98
+US elementary districts and found a median 14% relative decrease in
+White/non-White segregation achievable under optimal algorithmic
+redesign, while requiring approximately 20% of students to switch schools.
+At the district level, @sorensen2024desegregation find that while
+redrawing attendance zones within a district reduces segregation by less
+than 5% in typical cases, redrawing school *district* boundaries could
+reduce more than 40% of segregation. These findings frame our decomposition
+analysis: the boundary review has the potential to affect only the
+between-school component of the gap.
+
+# Data and Methods {#sec-data}
+
+## Data Sources
+
+**Forward Exam data.** Our primary data source is Wisconsin DPI Forward
+Exam assessment data for school years 2015–16 through 2024–25, downloaded
+from the DPI assessment portal [@dpi_forward]. The Forward Exam covers
+grades 3–8 in ELA and Mathematics. The data are reported in long format at
+the school × grade × subject × race × proficiency level. We aggregate to
+school-level and district-level proficiency rates (Proficient + Advanced)
+by race group.
+
+**WKCE historical data.** For historical context predating the Forward
+Exam, we use Wisconsin Knowledge and Concepts Exam (WKCE) Scale Score
+Summary (SSS) files for 2003–04 through 2013–14 [@dpi_wkce]. The WKCE era
+provides mean scale scores and percentile distributions by race at the
+district level. Results from the two assessment eras are reported
+separately and are not directly compared.
+
+**Analysis window.** We use two primary analysis windows:
+
+| Window | Years | Rationale |
+|--------|-------|-----------|
+| **Primary** | 2015-16, 2016-17, 2017-18, 2018-19, 2021-22, 2022-23 | Same standards, no COVID disruption |
+| **New standards** | 2023-24, 2024-25 | Cut scores revised; not comparable to prior years |
+
+The 2019-20 school year had no testing (federal COVID waiver). The
+2020-21 school year had low and non-representative participation and is
+excluded from the primary analysis.
+
+## Suppression
+
+DPI suppresses results for race groups with fewer than 10 tested students.
+Suppressed cells are coded as `NaN` and excluded from all analyses. We
+report suppression rates throughout the paper. At the district level (our
+primary unit for the decomposition), Black student suppression is
+approximately 18%, making district-level analysis feasible for nearly all
+large and mid-size districts.
+
+## Decomposition Method
+
+We decompose the statewide Black-White gap into within- and between-district
+components using the following linear decomposition. Let $p_w^d$, $p_b^d$
+denote White and Black proficiency rates in district $d$, and $n_w^d$,
+$n_b^d$ denote the corresponding counts of tested students. Then:
+
+$$
+T = \bar{p}_w - \bar{p}_b = \sum_d \frac{n_w^d}{N_w} p_w^d - \sum_d \frac{n_b^d}{N_b} p_b^d
+$$
+
+where $N_w = \sum_d n_w^d$ and $N_b = \sum_d n_b^d$. The between-district
+component $B$ captures the gap attributable to racial groups attending
+districts with systematically different average performance:
+
+$$
+B = \sum_d \bar{p}_d \left(\frac{n_w^d}{N_w} - \frac{n_b^d}{N_b}\right), \quad \text{where } \bar{p}_d = \frac{n_w^d p_w^d + n_b^d p_b^d}{n_w^d + n_b^d}
+$$
+
+The within-district component $W = T - B$ captures the enrollment-weighted
+average within-district gap. By construction, $T = B + W$ exactly.
+We apply this decomposition at three levels of geographic aggregation:
+district, county, and school.
+
+## Peer District Comparison
+
+For the MMSD analysis, we identify a set of peer districts with sufficient
+Black and Hispanic enrollment for reliable year-over-year comparisons.
+Using the criterion of at least 30 tested students in a given race group
+in at least 5 primary years, we find 82 eligible districts statewide. We
+designate three tiers for the peer comparison:
+
+| Tier | Districts |
+|------|-----------|
+| Tier 1 — major urban | Milwaukee, Racine Unified, Kenosha, Green Bay Area Public, Beloit |
+| Tier 2 — mid-size | Sun Prairie Area, Appleton Area, Waukesha, Janesville, West Allis-West Milwaukee |
+| Madison region | Verona Area, Middleton-Cross Plains Area |
+
+# Statewide Racial Proficiency Gaps {#sec-state}
+
+## Gap Magnitudes
+
+@fig-gap-trends shows enrollment-weighted statewide proficiency gaps
+between White and Black students, and between White and Hispanic students,
+for each primary year. Thin lines represent individual grades (3–8); the
+bold line is the grade-enrollment-weighted average.
+
+![Statewide Racial Proficiency Gaps over Time — Forward Exam Primary Years 2015–2023](../output/figures/fig01_gap_trends.png){#fig-gap-trends width=95%}
+
+*Note: Thin lines = individual grades 3–8; bold line = grade-enrollment-weighted average. Primary years exclude 2019-20 (no testing) and 2020-21 (COVID disruption).*
+
+The statewide Black-White gap averages approximately **38–40 percentage
+points in ELA** and **42–44 percentage points in Mathematics** across
+primary years (see @tbl-gaps-summary). The Hispanic-White gap is
+approximately 10 percentage points smaller: **25–26 pp in ELA** and
+**29–31 pp in Mathematics**. Math gaps exceed ELA gaps for both comparisons.
+
+```{python}
+#| label: tbl-gaps-summary
+#| tbl-cap: "Statewide Proficiency Gaps by Year and Subject (Grade-Weighted, Primary Years)"
+
+gaps = pd.read_csv(OUT_TABLES / "state_gaps_summary.csv")
+summary = (
+    gaps.groupby(["year", "subject"])
+    .apply(lambda g: pd.Series({
+        "BW_gap": np.average(g["BW_gap"].dropna(), weights=g.loc[g["BW_gap"].notna(), "White"].fillna(1)),
+        "HW_gap": np.average(g["HW_gap"].dropna(), weights=g.loc[g["HW_gap"].notna(), "White"].fillna(1)),
+    }), include_groups=False)
+    .reset_index()
+)
+pivot = summary.pivot_table(index="year", columns="subject", values=["BW_gap", "HW_gap"])
+pivot.columns = ["BW ELA", "BW Math", "HW ELA", "HW Math"]
+pivot = pivot.round(1)
+pivot.index.name = "School Year"
+print(pivot.to_markdown())
+```
+
+## Gap Stability
+
+A striking feature of @fig-gap-trends is the near-complete *stability* of
+the BW and HW gaps across the entire 2015–2023 primary window. Neither gap
+shows a meaningful trend toward closure. This is consistent with national
+evidence from @matheny2023uneven, who find that BW gaps grew slightly in
+the 2009–2019 period nationally, and with the general conclusion that
+improvements in overall district achievement do not translate into gap
+reduction.
+
+## Gaps by Grade
+
+@fig-grade-gaps shows gaps pooled across primary years by grade.
+
+![Proficiency Gaps by Grade — Pooled Across Primary Years](../output/figures/fig02_gaps_by_grade.png){#fig-grade-gaps width=90%}
+
+The BW gap is broadly similar across grades 3–8, ranging from approximately
+36 to 42 pp in ELA and 40 to 46 pp in Math, with no consistent pattern of
+widening or narrowing across the elementary-middle school transition.
+
+# Within-Between Decomposition {#sec-decomp}
+
+## District-Level Results
+
+@fig-decomp shows the within-between decomposition of the BW and HW gaps
+at the district, county, and school levels.
+
+![Within-Between Decomposition of Racial Proficiency Gaps](../output/figures/fig03_decomposition_bw.png){#fig-decomp width=100%}
+
+At the **district level**, approximately **47% of the BW gap is between
+districts** (explained by White and Black students attending different
+districts with different average performance) and **53% is within
+districts** (gaps that exist even within the same district). For the HW
+gap, the split is more skewed toward within districts: approximately 35%
+between, 65% within. These results are stable across all primary years.
+
+The district-level decomposition implies that even if students were
+perfectly distributed across districts — eliminating all between-district
+variation — the statewide BW gap would still be approximately 20 percentage
+points (the within component). District-level boundary changes, while
+potentially valuable for integration, cannot eliminate the gap by themselves.
+
+## Relationship Between School Districts
+
+@fig-scatter shows the district-level scatterplot of Black vs. White ELA
+proficiency, averaged across primary years.
+
+![District-Level Black vs. White ELA Proficiency (Pooled 2015–2023)](../output/figures/fig04_district_scatter.png){#fig-scatter width=80%}
+
+Each point above the parity line (dashed) represents a district where
+White students outperform Black students. MMSD (labeled in red) sits far
+above the parity line, consistent with an unusually large within-district
+gap. The scatter also shows that Black student proficiency varies
+substantially across districts — ranging from near zero to above 30% in
+ELA — while White student proficiency is more compressed.
+
+# MMSD Analysis {#sec-mmsd}
+
+## MMSD Minority Students vs. Peer Districts
+
+A natural question is whether MMSD minority students perform well relative
+to their same-race peers in other districts. The commonly assumed story is
+that MMSD, as a high-performing district, provides better outcomes for all
+students including minorities. @fig-peers-black challenges this assumption.
+
+![MMSD Black Students vs. Peer District Black Students](../output/figures/fig05_mmsd_vs_peers_black.png){#fig-peers-black width=100%}
+
+MMSD Black students achieve ELA proficiency rates of approximately **8–10%**
+across primary years. This is substantially *below* Milwaukee Black students
+(approximately 16–22%) and below several Tier 2 peer districts as well.
+The same pattern holds in Mathematics. @fig-peers-hispanic shows a similar
+pattern for Hispanic students: MMSD Hispanic proficiency (~15–17%) is
+broadly comparable to or below peer districts.
+
+![MMSD Hispanic Students vs. Peer District Hispanic Students](../output/figures/fig06_mmsd_vs_peers_hispanic.png){#fig-peers-hispanic width=100%}
+
+These findings imply that the large within-MMSD racial gap is not primarily
+the result of minority students performing unusually *well* in MMSD — rather,
+it reflects the unusually high performance of MMSD White students combined
+with minority students performing no better (and in some dimensions, worse)
+than in peer districts.
+
+## MMSD Minority vs. Non-MMSD Wisconsin White
+
+To further underscore the outlier-SES status of MMSD White students, @fig-nonmmsd
+compares MMSD Black and Hispanic proficiency directly to the proficiency
+of White students in all Wisconsin districts *except* MMSD.
+
+![MMSD Minority Students vs. Non-MMSD Wisconsin White Students](../output/figures/fig07_mmsd_vs_nonmmsd_white.png){#fig-nonmmsd width=100%}
+
+Non-MMSD Wisconsin White students achieve ELA proficiency rates of
+approximately **45–53%**, while MMSD Black students achieve only **8–10%**
+and MMSD Hispanic students achieve **15–17%**. The gap between MMSD Black
+students and non-MMSD Wisconsin White students is approximately **40–43
+percentage points** — comparable to the statewide Black-White gap reported
+in @sec-state. This comparison illustrates that MMSD minority students are
+performing substantially below even the statewide White average, not merely
+below the exceptional MMSD White population.
+
+## Within-MMSD School Distribution
+
+@fig-mmsd-schools shows the distribution of school-level proficiency
+within MMSD by race and year, pooled across grade and subject.
+
+![Distribution of School-Level Proficiency Within MMSD by Race](../output/figures/fig08_mmsd_within_schools.png){#fig-mmsd-schools width=100%}
+
+*Note: Each box represents the distribution of school-level proficiency rates for that race group across MMSD's elementary schools, for non-suppressed schools only.*
+
+Several features of this figure are noteworthy. First, the *level* of Black
+proficiency in MMSD schools is uniformly low — the median MMSD school has
+Black ELA proficiency of approximately 5–12%, and there is no MMSD school
+where Black students approach the White proficiency rate. Second, the
+within-school decomposition reveals that approximately **82% of the MMSD
+BW gap is within individual schools**, and only **18% is between schools**.
+
+This decomposition is the central policy-relevant finding of this paper.
+The MMSD attendance boundary review could, in principle, redistribute
+students across schools and thereby reduce the between-school component
+of the gap. Under the most optimistic assumptions — complete equalization
+of racial composition across schools, comparable to the best-case
+simulations in @gillani2023redrawing — the boundary review would reduce
+the MMSD BW gap by approximately 14% × 18% ≈ 2.5 percentage points out of
+a roughly 47 pp within-MMSD gap. The gap would remain approximately 44 pp.
+
+# Conclusion {#sec-conclusion}
+
+Wisconsin's racial achievement gap is large, national in rank, and
+persistent over time. Our analysis documents a statewide Black-White
+proficiency gap of approximately 38–44 pp on the Forward Exam (depending
+on subject), with roughly half attributable to between-district sorting
+and half within districts.
+
+For MMSD specifically, three findings stand out. First, MMSD Black and
+Hispanic students perform no better than — and in some cases worse than —
+same-race students in Milwaukee and other peer districts, despite MMSD's
+higher overall district ranking. This reflects the outlier-SES composition
+of MMSD White students, not unusually good outcomes for minority students.
+Second, the gap between MMSD minority students and non-MMSD Wisconsin White
+students (approximately 40 pp in ELA) is nearly as large as the statewide
+average BW gap, underlining that MMSD minority students are struggling
+relative to a representative White comparison group, not just relative to
+the extraordinary MMSD White population. Third, and most directly relevant
+to the boundary review, 82% of the MMSD BW gap exists *within* individual
+schools. Redistricting can address only the 18% between-school component.
+
+These findings do not imply that boundary changes are without value — school
+integration has other benefits beyond direct test score effects, including
+exposure to diverse peers and reduced concentration of poverty in
+individual schools [@reardon2024separate]. But they do suggest that
+boundary changes alone are unlikely to produce large reductions in the
+racial achievement gap. Policies targeting the within-school component of
+the gap — instructional quality, early intervention, teacher distribution,
+and the school poverty concentration that underlies the gap — would need
+to be central to any comprehensive equity strategy.
+
+# Data Availability
+
+All analysis code, data download scripts, and figure-generation scripts
+are available at [GitHub repository link]. Raw data are from Wisconsin DPI
+and are publicly available via WISEdash.
+
+---
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
+
+---
+
+# Appendix {.unnumbered}
+
+## A. Suppression Rates by Race and Level {.unnumbered}
+
+*[Table to be added: suppression rates at district level by race × year]*
+
+## B. Decomposition Results — Full Table {.unnumbered}
+
+*[Table to be added: full T, B, W, B\_pct, W\_pct by level × year × subject × gap pair]*
+
+## C. COVID Sensitivity Check {.unnumbered}
+
+*[Table to be added: key results including 2020-21, showing robustness of main findings]*
