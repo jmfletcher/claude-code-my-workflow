@@ -24,6 +24,7 @@ format:
         \usepackage{longtable}
         \usepackage{float}
         \usepackage{dcolumn}
+        \usepackage{graphicx}
         \usepackage{setspace}
         \doublespacing
         \usepackage{caption}
@@ -76,17 +77,19 @@ ROOT = Path("..").resolve()
 OUT_FIGS   = ROOT / "output" / "figures"
 OUT_TABLES = ROOT / "output" / "tables"
 
-def pub_table(df, colalign=None, floatfmt=".1f", note=None, small=False):
+def pub_table(df, colalign=None, floatfmt=".1f", note=None, small=False, resizebox=False):
     """Print a publication-quality booktabs LaTeX table (use with #| output: asis).
 
     Parameters
     ----------
-    df       : DataFrame with columns already renamed for display.
-    colalign : tuple of 'left'/'right'/'center' per column; defaults to
-               left for first column, right for remainder.
-    floatfmt : tabulate float format string (default '.1f').
-    note     : Optional note string (plain text; will be wrapped in footnotesize).
-    small    : If True, wraps table in footnotesize (for wide/long appendix tables).
+    df        : DataFrame with columns already renamed for display.
+    colalign  : tuple of 'left'/'right'/'center' per column; defaults to
+                left for first column, right for remainder.
+    floatfmt  : tabulate float format string (default '.1f').
+    note      : Optional note string (plain text; wrapped in footnotesize minipage).
+    small     : If True, wraps table in footnotesize environment.
+    resizebox : If True, wraps table in resizebox to fit text width.
+                Do not combine with small=True.
     """
     if colalign is None:
         colalign = ("left",) + ("right",) * (len(df.columns) - 1)
@@ -98,14 +101,18 @@ def pub_table(df, colalign=None, floatfmt=".1f", note=None, small=False):
         colalign=colalign,
         floatfmt=floatfmt,
     )
+    if resizebox:
+        latex = r"\resizebox{\textwidth}{!}{" + "\n" + latex + "\n" + r"}"
     if small:
-        print(r"{\footnotesize")
-    print(latex)
-    if small:
-        print(r"}")
+        latex = r"\begin{footnotesize}" + "\n" + latex + "\n" + r"\end{footnotesize}"
     if note:
-        print(r"\vspace{0.35em}")
-        print(r"{\footnotesize\textit{Note:} " + note + r"}")
+        note_block = (
+            r"\begin{minipage}{\linewidth}" + "\n"
+            + r"\vspace{4pt}\raggedright\footnotesize\textit{Note:} " + note + "\n"
+            + r"\end{minipage}"
+        )
+        latex = latex + "\n" + note_block
+    print(latex)
 ```
 
 # Introduction {#sec-intro}
@@ -525,6 +532,7 @@ pub_table(
     act_tbl_wide,
     colalign=("left",) + ("right",) * 6,
     floatfmt=".2f",
+    resizebox=True,
     note=(
         r"Gaps = White mean ACT score minus minority mean ACT score (ACT scale: 1--36). "
         r"B--W = Black--White; H--W = Hispanic--White. "
@@ -586,6 +594,7 @@ pub_table(
     _d,
     colalign=("left", "right", "right", "right", "right", "right", "right"),
     floatfmt=".2f",
+    small=True,
     note=(
         r"Black--White gap only; ACT Composite scale (1--36). "
         r"Total Gap ($T$) = Between ($B$) + Within ($W$) by construction. "
@@ -959,6 +968,7 @@ pub_table(
     supp_yr,
     colalign=("left",) + ("right",) * (len(supp_yr.columns) - 1),
     floatfmt=".1f",
+    small=True,
     note=(
         r"Entries are the percentage of district $\times$ year $\times$ subject $\times$ grade "
         r"cells with suppressed proficiency data in that year. "
@@ -1025,7 +1035,7 @@ pub_table(
     agg_d,
     colalign=("left", "left", "left", "right", "right", "right", "right", "right", "right"),
     floatfmt=".1f",
-    small=True,
+    resizebox=True,
     note=(
         r"T = total enrollment-weighted statewide gap (White minus minority proficiency rate, pp). "
         r"T = B + W by construction. B = between-district component; W = within-district component. "
@@ -1359,7 +1369,7 @@ pub_table(
     tbl2,
     colalign=("left", "left", "left", "right", "right", "right", "right", "right", "right"),
     floatfmt=".1f",
-    small=True,
+    resizebox=True,
     note=(
         r"T = total district-enrollment-weighted statewide scale-score gap (White minus minority). "
         r"T = B + W by construction. B--W = Black--White; H--W = Hispanic--White. "
@@ -1552,26 +1562,32 @@ era showing no convergence through grade 11.
 #| output: asis
 
 rows = [
-    ("WKCE (2009--14)",    "Reading", "Black--White",    "44--48 SS pts",      "55--58\\%", "42--45\\%", "MMSD $\\approx$ Milwaukee"),
-    ("WKCE (2009--14)",    "Math",    "Black--White",    "49--55 SS pts",      "57--60\\%", "40--43\\%", "MMSD $\\approx$ Milwaukee"),
-    ("WKCE (2009--14)",    "Reading", "Hispanic--White", "34--37 SS pts",      "37--40\\%", "60--63\\%", "MMSD slightly above peers"),
-    ("Forward (2015--23)", "ELA",     "Black--White",    "38--40 pp profic.",  "$\\sim$47\\%", "$\\sim$53\\%", "MMSD below Milwaukee"),
-    ("Forward (2015--23)", "Math",    "Black--White",    "42--44 pp profic.",  "$\\sim$45\\%", "$\\sim$55\\%", "MMSD below Milwaukee"),
-    ("Forward (2015--23)", "ELA",     "Hispanic--White", "$\\sim$24 pp profic.", "$\\sim$40\\%", "$\\sim$60\\%", "MMSD $\\approx$ peers"),
+    ("WKCE (2009--14)",    "Reading", "Black--White",    "44--48 pts",       "55--58\\%", "42--45\\%"),
+    ("WKCE (2009--14)",    "Math",    "Black--White",    "49--55 pts",       "57--60\\%", "40--43\\%"),
+    ("WKCE (2009--14)",    "Reading", "Hispanic--White", "34--37 pts",       "37--40\\%", "60--63\\%"),
+    ("Forward (2015--23)", "ELA",     "Black--White",    "$\\sim$38--40 pp", "$\\sim$47\\%", "$\\sim$53\\%"),
+    ("Forward (2015--23)", "Math",    "Black--White",    "$\\sim$42--44 pp", "$\\sim$45\\%", "$\\sim$55\\%"),
+    ("Forward (2015--23)", "ELA",     "Hispanic--White", "$\\sim$24 pp",     "$\\sim$40\\%", "$\\sim$60\\%"),
 ]
 cross_df = pd.DataFrame(rows, columns=[
-    "Era", "Subject", "Comparison", "Magnitude", r"\% Between", r"\% Within", "MMSD vs. Peers"
+    "Era", "Subject", "Comparison", "Gap Magnitude", r"\% Between", r"\% Within"
 ])
 pub_table(
     cross_df,
-    colalign=("left", "left", "left", "left", "right", "right", "left"),
-    small=True,
+    colalign=("left", "left", "left", "left", "right", "right"),
+    resizebox=True,
     note=(
-        r"WKCE magnitude is in scale-score points; Forward Exam magnitude is in proficiency-rate "
-        r"percentage points. The two metrics are not directly comparable. "
+        r"WKCE Gap Magnitude is in scale-score points (WKCE developmental scale); "
+        r"Forward Exam Gap Magnitude is in proficiency-rate percentage points (pp). "
+        r"The two metrics are not directly comparable across eras. "
         r"Between/Within shares are district-level decomposition estimates. "
-        r"MMSD comparisons refer to minority student outcomes relative to same-race "
-        r"students in peer districts (primarily Milwaukee)."
+        r"B--W = Black--White; H--W = Hispanic--White. "
+        r"MMSD vs.\ peer districts: in the WKCE era, MMSD Black students perform "
+        r"comparably to Milwaukee Black students (Reading $\approx$453 vs.\ 451 pts); "
+        r"in the Forward era, MMSD Black students perform \textit{below} Milwaukee "
+        r"Black students (8--10\% vs.\ 16--22\% proficient in ELA). "
+        r"MMSD Hispanic students perform slightly above peers in the WKCE era "
+        r"and approximately at peers in the Forward era."
     ),
 )
 ```
