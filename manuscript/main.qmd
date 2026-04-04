@@ -22,12 +22,13 @@ format:
       text: |
         \usepackage{booktabs}
         \usepackage{longtable}
+        \usepackage{float}
         \usepackage{dcolumn}
         \usepackage{setspace}
         \doublespacing
         \usepackage{caption}
         \captionsetup[figure]{font=small}
-        \captionsetup[table]{font=small}
+        \captionsetup[table]{font=small,justification=raggedright,singlelinecheck=false}
 
 bibliography: references.bib
 csl: chicago-author-date.csl
@@ -379,6 +380,7 @@ approximately 10 percentage points smaller: **25–26 pp in ELA** and
 ```{python}
 #| label: tbl-gaps-summary
 #| tbl-cap: "Statewide Racial Proficiency Gaps by Year and Subject (Grade-Enrollment-Weighted, Primary Years)"
+#| tbl-pos: H
 #| output: asis
 
 gaps = pd.read_csv(OUT_TABLES / "state_gaps_summary.csv")
@@ -493,6 +495,7 @@ Hispanic-White gaps in ACT Composite, Mathematics, and English scores from
 ```{python}
 #| label: tbl-act-gaps
 #| tbl-cap: "Statewide ACT Score Gaps by Year (Grade 11, Enrollment-Weighted)"
+#| tbl-pos: H
 #| output: asis
 
 # Pivot to wide: rows = year, columns = gap by subject (BW and HW, key subjects)
@@ -553,9 +556,9 @@ to ACT scores.
 
 ```{python}
 #| label: tbl-act-decomp
-#| tbl-cap: "Black-White ACT Composite Score Gap: Within-Between District Decomposition (Grade 11)"
+#| tbl-cap: "Black--White ACT Composite Score Gap: Within-Between District Decomposition (Grade 11)"
+#| tbl-pos: H
 #| output: asis
-from tabulate import tabulate
 
 _d = (
     act_decomp[
@@ -570,32 +573,29 @@ _d = (
     )
     .rename(columns={
         "year":         "Year",
-        "T":            "Total Gap",
-        "B":            "Between",
-        "W":            "Within",
+        "T":            "Total Gap (pts)",
+        "B":            "Between (pts)",
+        "W":            "Within (pts)",
         "B_pct":        r"\% Between",
         "W_pct":        r"\% Within",
-        "n_units_both": r"\textit{N}",
+        "n_units_both": "$N$ Dist.",
     })
 )
 
-print(tabulate(
+pub_table(
     _d,
-    headers="keys",
-    tablefmt="latex_booktabs",
-    showindex=False,
     colalign=("left", "right", "right", "right", "right", "right", "right"),
-))
-```
-
-```{=latex}
-\vspace{0.4em}
-{\footnotesize\textit{Note:} All gaps are in ACT scale-score points (White minus Black). Total
-Gap ($T$) $=$ Between ($B$) + Within ($W$) by construction. ``Between'' is the share of the
-gap attributable to Black and White students attending districts with different average ACT
-scores; ``Within'' is the share present within the same district. $N$ = number of districts
-with non-suppressed data for both racial groups in that year. COVID year 2020--21 excluded;
-2019--20 had no state testing.}
+    floatfmt=".2f",
+    note=(
+        r"Black--White gap only; ACT Composite scale (1--36). "
+        r"Total Gap ($T$) = Between ($B$) + Within ($W$) by construction. "
+        r"``Between'' = share attributable to Black and White students attending "
+        r"districts with different average ACT scores; ``Within'' = share present "
+        r"within the same district. $N$ Dist.\ = number of districts with "
+        r"non-suppressed data for both racial groups. "
+        r"COVID year 2020--21 excluded; 2019--20 had no state testing."
+    ),
+)
 ```
 
 **Key findings from the ACT decomposition:**
@@ -647,6 +647,7 @@ scores relative to peer districts.
 ```{python}
 #| label: tbl-act-mmsd
 #| tbl-cap: "ACT Composite Score for Black Students: MMSD and Peer Districts (Grade 11, 2015--16 to 2022--23)"
+#| tbl-pos: H
 #| output: asis
 
 _peers_bw = (
@@ -898,6 +899,7 @@ the Forward Exam panel (primary years 2015–16 to 2022–23, excluding
 ```{python}
 #| label: tbl-supp-level
 #| tbl-cap: "Forward Exam Suppression Rates by Race and Analysis Level (Primary Years)"
+#| tbl-pos: H
 #| output: asis
 
 records = []
@@ -940,7 +942,8 @@ decompositions is 30–45 districts per year.
 
 ```{python}
 #| label: tbl-supp-year
-#| tbl-cap: "District-Level Suppression Rate by Race and Year (Forward Exam, \\%)"
+#| tbl-cap: "District-Level Suppression Rates by Race and Year (Forward Exam)"
+#| tbl-pos: H
 #| output: asis
 
 d2 = dist_a[dist_a['year'].isin(PRIMARY_YEARS_A) & dist_a['race'].isin(PRIMARY_RACES_A)]
@@ -984,6 +987,7 @@ in `output/tables/decomposition_results.csv`.
 ```{python}
 #| label: tbl-decomp-full
 #| tbl-cap: "Forward Exam Within-Between Decomposition: District Level, Grade-Averaged (Primary Years)"
+#| tbl-pos: H
 #| output: asis
 
 decomp_b = pd.read_csv(ROOT_A / "output/tables/decomposition_results.csv")
@@ -1004,15 +1008,16 @@ agg_d = (
     .reset_index()
     .round(1)
     .sort_values(['gap_pair', 'subject', 'year'])
+    .assign(gap_pair=lambda x: x['gap_pair'].map({'BW': 'Black--White', 'HW': 'Hispanic--White'}))
     .rename(columns={
         'year':        'Year',
         'subject':     'Subject',
-        'gap_pair':    'Gap',
+        'gap_pair':    'Comparison',
         'T':           'Total (pp)',
         'B':           'Between (pp)',
         'W':           'Within (pp)',
-        'B_pct':       r'\\% Between',
-        'W_pct':       r'\\% Within',
+        'B_pct':       r'\% Between',
+        'W_pct':       r'\% Within',
         'N_districts': 'Avg. $N$',
     })
 )
@@ -1031,13 +1036,6 @@ pub_table(
 )
 ```
 
-**Notes:** T = total statewide enrollment-weighted gap (White minus
-minority proficiency rate, in percentage points). B = between-district
-component. W = within-district component. "Avg. N Dist." is the
-average number of districts with valid data for both racial groups
-across grades. Values are averaged across grades 3–8; grade-specific
-results are available in the replication data.
-
 ### B.2 Within-MMSD School Decomposition by Subject {.unnumbered}
 
 @tbl-decomp-subject reports the school-level within-between decomposition
@@ -1048,6 +1046,7 @@ showing that the 82% within-school share is robust to the choice of subject.
 ```{python}
 #| label: tbl-decomp-subject
 #| tbl-cap: "MMSD School-Level Black--White Decomposition by Subject (Primary Years)"
+#| tbl-pos: H
 #| output: asis
 
 decomp_subj = pd.read_csv(ROOT_A / "output/tables/mmsd_school_decomp_by_subject.csv")
@@ -1059,8 +1058,8 @@ bw_subj = (
         "subject_scope": "Subject Scope",
         "year":          "Year",
         "T":             "Total Gap (pp)",
-        "B_pct":         r"\\% Between Schools",
-        "W_pct":         r"\\% Within Schools",
+        "B_pct":         r"\% Between Schools",
+        "W_pct":         r"\% Within Schools",
         "n_schools":     "$N$ Schools",
     })
     .round(1)
@@ -1109,6 +1108,7 @@ def weighted_mean_c(vals, weights):
 ```{python}
 #| label: tbl-covid-gaps
 #| tbl-cap: "Proficiency Rates and Racial Gaps With and Without the COVID Year (All Subjects/Grades)"
+#| tbl-pos: H
 #| output: asis
 
 ALL_YEARS_C     = ['2015-16','2016-17','2017-18','2018-19','2020-21','2021-22','2022-23']
@@ -1243,20 +1243,22 @@ Mathematics.
 ```{python}
 #| label: tbl-wkce-gaps
 #| tbl-cap: "Statewide WKCE Scale-Score Gaps by Year and Subject (Grades 3--8, Enrollment-Weighted)"
+#| tbl-pos: H
 #| output: asis
 
 tbl = (
     wkce_gaps[["year", "subject", "gap_pair", "mean_ss_white", "mean_ss_minority", "gap"]]
+    .assign(gap_pair=lambda x: x["gap_pair"].map({"BW": "Black--White", "HW": "Hispanic--White"}))
     .rename(columns={
         "year":             "Year",
         "subject":          "Subject",
-        "gap_pair":         "Gap",
+        "gap_pair":         "Comparison",
         "mean_ss_white":    "White Mean SS",
         "mean_ss_minority": "Minority Mean SS",
         "gap":              "Gap (pts)",
     })
     .round(1)
-    .sort_values(["Gap", "Subject", "Year"])
+    .sort_values(["Comparison", "Subject", "Year"])
 )
 pub_table(
     tbl,
@@ -1323,24 +1325,26 @@ printed above each bar.
 ```{python}
 #| label: tbl-wkce-decomp
 #| tbl-cap: "WKCE Within-Between Decomposition Summary (District Level, Grades 3--8 Aggregated)"
+#| tbl-pos: H
 #| output: asis
 
 tbl2 = (
     wkce_decomp[wkce_decomp["T"].notna()]
     [["year", "subject", "gap_pair", "T", "B", "W", "B_pct", "W_pct", "n_units_both"]]
+    .assign(gap_pair=lambda x: x["gap_pair"].map({"BW": "Black--White", "HW": "Hispanic--White"}))
     .rename(columns={
         "year":         "Year",
         "subject":      "Subject",
-        "gap_pair":     "Gap",
+        "gap_pair":     "Comparison",
         "T":            "Total (pts)",
         "B":            "Between (pts)",
         "W":            "Within (pts)",
-        "B_pct":        r"\\% Between",
-        "W_pct":        r"\\% Within",
+        "B_pct":        r"\% Between",
+        "W_pct":        r"\% Within",
         "n_units_both": "$N$ Dist.",
     })
     .round(1)
-    .sort_values(["Gap", "Subject", "Year"])
+    .sort_values(["Comparison", "Subject", "Year"])
 )
 pub_table(
     tbl2,
@@ -1387,7 +1391,8 @@ main analysis.
 
 ```{python}
 #| label: tbl-wkce-peers
-#| tbl-cap: "WKCE-Era Mean Reading Scale Scores: MMSD and Peer Districts (Black and Hispanic, 2009--14)"
+#| tbl-cap: "WKCE-Era Mean Reading Scale Scores: MMSD and Peer Districts (Black and Hispanic, 2009--10 to 2013--14)"
+#| tbl-pos: H
 #| output: asis
 
 tbl3 = (
@@ -1479,22 +1484,24 @@ grades 3–8 to that at grade 10, for Reading and Mathematics.
 
 ```{python}
 #| label: tbl-wkce-gr10
-#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps (Reading and Mathematics)"
+#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps (Reading and Mathematics, 2009--10 to 2012--13)"
+#| tbl-pos: H
 #| output: asis
 
 wkce_g10 = pd.read_csv(ROOT / "output/tables/wkce_grade10_gaps.csv")
 g10_tbl = (
     wkce_g10[["year", "subject", "gap_pair", "mean_ss_white", "mean_ss_minority", "gap"]]
+    .assign(gap_pair=lambda x: x["gap_pair"].map({"BW": "Black--White", "HW": "Hispanic--White"}))
     .rename(columns={
         "year":             "Year",
         "subject":          "Subject",
-        "gap_pair":         "Gap",
+        "gap_pair":         "Comparison",
         "mean_ss_white":    "White Mean SS",
         "mean_ss_minority": "Minority Mean SS",
         "gap":              "Gap (pts)",
     })
     .round(1)
-    .sort_values(["Gap", "Subject", "Year"])
+    .sort_values(["Comparison", "Subject", "Year"])
 )
 pub_table(
     g10_tbl,
@@ -1527,7 +1534,8 @@ era showing no convergence through grade 11.
 
 ```{python}
 #| label: tbl-crossera
-#| tbl-cap: "Cross-Era Summary: Key Racial Achievement Gap Indicators (WKCE vs.\ Forward Exam)"
+#| tbl-cap: "Cross-Era Comparison: Key Racial Achievement Gap Indicators (WKCE 2009--14 vs. Forward Exam 2015--23)"
+#| tbl-pos: H
 #| output: asis
 
 rows = [
@@ -1539,7 +1547,7 @@ rows = [
     ("Forward (2015--23)", "ELA",     "Hispanic--White", "$\\sim$24 pp profic.", "$\\sim$40\\%", "$\\sim$60\\%", "MMSD $\\approx$ peers"),
 ]
 cross_df = pd.DataFrame(rows, columns=[
-    "Era", "Subject", "Gap", "Magnitude", r"\\% Between", r"\\% Within", "MMSD vs.\ Peers"
+    "Era", "Subject", "Comparison", "Magnitude", r"\% Between", r"\% Within", "MMSD vs. Peers"
 ])
 pub_table(
     cross_df,
