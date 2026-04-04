@@ -1068,6 +1068,7 @@ pub_table(
     bw_subj,
     colalign=("left", "left", "right", "right", "right", "right"),
     floatfmt=".1f",
+    small=True,
     note=(
         r"School-level within-between decomposition of the MMSD Black--White proficiency gap. "
         r"T = total gap (White minus Black, pp). T = Between + Within by construction. "
@@ -1136,6 +1137,7 @@ pub_table(
     covid_tbl,
     colalign=("left", "right", "right", "right", "right", "right", "left"),
     floatfmt=".1f",
+    small=True,
     note=(
         r"Proficiency rates and gaps are enrollment-weighted averages across all "
         r"subjects (ELA and Mathematics) and grades 3--8. "
@@ -1242,34 +1244,37 @@ Mathematics.
 
 ```{python}
 #| label: tbl-wkce-gaps
-#| tbl-cap: "Statewide WKCE Scale-Score Gaps by Year and Subject (Grades 3--8, Enrollment-Weighted)"
+#| tbl-cap: "Statewide WKCE Scale-Score Gaps by Year (Grades 3--8, Enrollment-Weighted)"
 #| tbl-pos: H
 #| output: asis
 
-tbl = (
-    wkce_gaps[["year", "subject", "gap_pair", "mean_ss_white", "mean_ss_minority", "gap"]]
-    .assign(gap_pair=lambda x: x["gap_pair"].map({"BW": "Black--White", "HW": "Hispanic--White"}))
-    .rename(columns={
-        "year":             "Year",
-        "subject":          "Subject",
-        "gap_pair":         "Comparison",
-        "mean_ss_white":    "White Mean SS",
-        "mean_ss_minority": "Minority Mean SS",
-        "gap":              "Gap (pts)",
-    })
+# Pivot to wide: rows = year (6), cols = B--W/H--W × Reading/Math gap values
+_bw = wkce_gaps[wkce_gaps["gap_pair"] == "BW"].pivot(
+    index="year", columns="subject", values="gap"
+).rename(columns={"Reading": "B--W Reading", "Math": "B--W Math"})
+
+_hw = wkce_gaps[wkce_gaps["gap_pair"] == "HW"].pivot(
+    index="year", columns="subject", values="gap"
+).rename(columns={"Reading": "H--W Reading", "Math": "H--W Math"})
+
+wkce_wide = (
+    _bw.join(_hw)
     .round(1)
-    .sort_values(["Comparison", "Subject", "Year"])
-)
+    .reset_index()
+    .rename(columns={"year": "Year"})
+)[["Year", "B--W Reading", "B--W Math", "H--W Reading", "H--W Math"]]
+
 pub_table(
-    tbl,
-    colalign=("left", "left", "left", "right", "right", "right"),
+    wkce_wide,
+    colalign=("left", "right", "right", "right", "right"),
     floatfmt=".1f",
     note=(
-        r"WKCE scale scores are on a developmental scale; values are not comparable "
-        r"across subjects or grades. Gap = White mean minus minority mean scale score. "
+        r"Entries are district-enrollment-weighted state-average scale-score gaps "
+        r"(White mean minus minority mean, WKCE scale-score points), "
+        r"aggregated across grades 3--8. "
         r"B--W = Black--White; H--W = Hispanic--White. "
-        r"Values are district-enrollment-weighted state averages across grades 3--8. "
-        r"Years 2009--10 through 2013--14 (2007--08 excluded due to data issues)."
+        r"White statewide mean $\approx 504$ (Reading) and $\approx 512$ (Math). "
+        r"Years 2009--10 through 2013--14; 2007--08 excluded due to data issues."
     ),
 )
 ```
@@ -1321,6 +1326,10 @@ for each year and subject. The total gap T (in scale-score points) is
 printed above each bar.
 
 ![WKCE Within-Between Decomposition of Racial Scale-Score Gaps](../output/figures/fig_A3_wkce_decomposition.png){#fig-wkce-decomp width=100%}
+
+```{=latex}
+\clearpage
+```
 
 ```{python}
 #| label: tbl-wkce-decomp
@@ -1416,6 +1425,7 @@ pub_table(
     tbl3,
     colalign=("left", "left", "left", "right"),
     floatfmt=".1f",
+    small=True,
     note=(
         r"Mean WKCE Reading scale score, averaged across all available years "
         r"(2009--10 through 2013--14). "
@@ -1484,33 +1494,36 @@ grades 3–8 to that at grade 10, for Reading and Mathematics.
 
 ```{python}
 #| label: tbl-wkce-gr10
-#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps (Reading and Mathematics, 2009--10 to 2012--13)"
+#| tbl-cap: "WKCE Grade-10 State-Level Scale-Score Gaps by Year (Reading and Mathematics, 2009--10 to 2012--13)"
 #| tbl-pos: H
 #| output: asis
 
 wkce_g10 = pd.read_csv(ROOT / "output/tables/wkce_grade10_gaps.csv")
-g10_tbl = (
-    wkce_g10[["year", "subject", "gap_pair", "mean_ss_white", "mean_ss_minority", "gap"]]
-    .assign(gap_pair=lambda x: x["gap_pair"].map({"BW": "Black--White", "HW": "Hispanic--White"}))
-    .rename(columns={
-        "year":             "Year",
-        "subject":          "Subject",
-        "gap_pair":         "Comparison",
-        "mean_ss_white":    "White Mean SS",
-        "mean_ss_minority": "Minority Mean SS",
-        "gap":              "Gap (pts)",
-    })
+
+# Pivot to wide: rows = year (5), cols = B--W/H--W × Reading/Math
+_bw10 = wkce_g10[wkce_g10["gap_pair"] == "BW"].pivot(
+    index="year", columns="subject", values="gap"
+).rename(columns={"Reading": "B--W Reading", "Math": "B--W Math"})
+
+_hw10 = wkce_g10[wkce_g10["gap_pair"] == "HW"].pivot(
+    index="year", columns="subject", values="gap"
+).rename(columns={"Reading": "H--W Reading", "Math": "H--W Math"})
+
+g10_wide = (
+    _bw10.join(_hw10)
     .round(1)
-    .sort_values(["Comparison", "Subject", "Year"])
-)
+    .reset_index()
+    .rename(columns={"year": "Year"})
+)[["Year", "B--W Reading", "B--W Math", "H--W Reading", "H--W Math"]]
+
 pub_table(
-    g10_tbl,
-    colalign=("left", "left", "left", "right", "right", "right"),
+    g10_wide,
+    colalign=("left", "right", "right", "right", "right"),
     floatfmt=".1f",
     note=(
-        r"Grade-10 WKCE scale scores are on a higher part of the developmental scale than "
-        r"grades 3--8; absolute gaps are not directly comparable across grade bands. "
-        r"Gap = White mean minus minority mean scale score. "
+        r"WKCE scale-score gaps (White mean minus minority mean, scale-score points) at grade 10. "
+        r"Grade-10 scale scores are on a higher part of the developmental scale than grades 3--8; "
+        r"absolute gaps are not directly comparable across grade bands. "
         r"B--W = Black--White; H--W = Hispanic--White. "
         r"2013--14 grade-10 data are incomplete and excluded."
     ),
