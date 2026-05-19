@@ -40,9 +40,23 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 SEX_MAP = {"Female": "f", "Male": "m", "F": "f", "M": "m"}
 
-# Map CDC WONDER (Race, Ethnicity) -> our race_eth label, sticking to the
-# nine bridged-race published groups.
+# Map CDC WONDER (Race, Ethnicity) -> our race_eth label.
+#
+# Bridged-race files for 1990-2019 use the older 4-category race scheme:
+#   White / Black or African American / Asian or Pacific Islander / AIAN
+#
+# Beginning with the 2020-2021 single-race population vintage CDC WONDER
+# switched to the post-OMB-1997 disaggregated codes:
+#   White / Black or African American / Asian / Native Hawaiian or Other
+#   Pacific Islander / American Indian or Alaska Native / More than one race
+#
+# We collapse the new codes back onto the bridged 5-category schema by
+# pooling Asian and NHPI into a single "Asian or Pacific Islander" bucket
+# matching the NCHS death file's race.eth label "Non-Hispanic Asian". The
+# "More than one race" bucket has no exact pre-2020 analog and is dropped
+# (matches the Villaveces sensitivity treatment).
 RACE_BRIDGE = {
+    # 1990-2019 bridged-race codes
     ("White", "Not Hispanic or Latino"):
         "Non-Hispanic White",
     ("Black or African American", "Not Hispanic or Latino"):
@@ -51,12 +65,18 @@ RACE_BRIDGE = {
         "Non-Hispanic Asian or Pacific Islander",
     ("American Indian or Alaska Native", "Not Hispanic or Latino"):
         "Non-Hispanic American Indian or Alaska Native",
-    # Hispanic is collapsed across race per the standard bridged-race
-    # presentation used by Villaveces et al.
     ("White", "Hispanic or Latino"): "Hispanic",
     ("Black or African American", "Hispanic or Latino"): "Hispanic",
     ("Asian or Pacific Islander", "Hispanic or Latino"): "Hispanic",
     ("American Indian or Alaska Native", "Hispanic or Latino"): "Hispanic",
+
+    # 2020+ disaggregated codes
+    ("Asian", "Not Hispanic or Latino"):
+        "Non-Hispanic Asian or Pacific Islander",
+    ("Native Hawaiian or Other Pacific Islander", "Not Hispanic or Latino"):
+        "Non-Hispanic Asian or Pacific Islander",
+    ("Asian", "Hispanic or Latino"): "Hispanic",
+    ("Native Hawaiian or Other Pacific Islander", "Hispanic or Latino"): "Hispanic",
 }
 
 RACE_ETH = [

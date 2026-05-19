@@ -19,16 +19,17 @@
 >
 > | Group | 2021 baseline | 2021 calibrated | Δ % |
 > |---|---|---|---|
-> | All | 2,269,875 | 2,193,408 | **-3.4 %** |
+> | All | 2,240,912 | 2,165,354 | **-3.4 %** |
 > | Non-Hispanic White | 1,176,062 | 1,014,424 | **-13.7 %** |
 > | Non-Hispanic Black | 456,694 | 429,032 | **-6.1 %** |
-> | Hispanic | 363,281 | 360,176 | **-0.9 %** |
+> | Hispanic | 368,360 | 365,202 | **-0.9 %** |
+> | Non-Hispanic Asian / PI | 59,414 | 47,651 | **-19.8 %** |
 > | Non-Hispanic AIAN | 34,750 | 43,913 | **+26.4 %** |
-> | Non-Hispanic Asian/PI | (data issue) | (data issue) | n/a |
 >
-> The standard model *overstates* orphan counts in three of the four sound
-> groups and *understates* them in NH American Indian / Alaska Native children
-> by more than a quarter. The "All" headline understates this dispersion.
+> The standard model *overstates* orphan counts in four of the five race
+> groups and *understates* them in NH American Indian / Alaska Native
+> children by more than a quarter. The "All" headline understates this
+> dispersion.
 
 ---
 
@@ -160,10 +161,10 @@ mortality in middle age followed by the deaths-of-despair / COVID era).
 | Race/ethnicity | Baseline | Calibrated | Δ (count) | Δ (%) |
 |---|---:|---:|---:|---:|
 | Non-Hispanic White | 1,176,062 | 1,014,424 | -161,639 | -13.7 % |
+| Non-Hispanic Asian or PI | 59,414 | 47,651 | -11,763 | **-19.8 %** |
 | Non-Hispanic Black | 456,694 | 429,032 | -27,662 | -6.1 % |
-| Hispanic | 363,281 | 360,176 | -3,105 | -0.9 % |
+| Hispanic | 368,360 | 365,202 | -3,158 | -0.9 % |
 | Non-Hispanic AIAN | 34,750 | 43,913 | **+9,163** | **+26.4 %** |
-| Non-Hispanic Asian or PI | (data issue) | (data issue) | -- | -- |
 
 Across the time series (2000-2021):
 - NH White Δ stays in the -10 % to -16 % band throughout.
@@ -225,10 +226,11 @@ the year before death); ours is data-driven and group-specific.
 2. **Sex-pooled child mortality and population.** We split single-year
    child mortality and population 51/49 by sex; this is a uniform
    approximation. Effect on parental orphanhood is negligible.
-3. **NH Asian or PI 2021 reads 0.** A residual mismatch between the
-   bridged-race coding of the 2020-2021 CDC WONDER pop file and the NCHS
-   death file's Asian categorization. Fixable; treated as known data issue
-   here.
+3. **NH Asian or PI now uses post-2020 disaggregated CDC WONDER codes.**
+   The 2020-2021 file splits "Asian or Pacific Islander" into "Asian" and
+   "Native Hawaiian or Other Pacific Islander" plus "More than one race".
+   We pool the first two back into the bridged-race "Asian or PI" bucket
+   to align with the NCHS death file; "More than one race" is dropped.
 4. **κ from co-resident minors, not lifetime parity.** NHIS measures
    `n_fam_childminor017` at survey interview, not lifetime fertility. This
    is the right concept for orphanhood (children-under-18 affected) but
