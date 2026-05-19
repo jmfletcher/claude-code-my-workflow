@@ -267,9 +267,17 @@ the annual series is in `annual_by_cause.csv`. Reproduce with
 
 ## 5. Caveats
 
-1. **Parental, not parental + caregiver.** Our 2.27 M is below Villaveces'
-   2.91 M because we do not layer grandparent caregiver loss. The
-   calibration deltas reported here are parental-only.
+1. **Parental + grandparent caregiver.** We add a simple flow-stock
+   accounting layer (`scripts/run_grandparent_layer.py`) using ACS S1002
+   "grandparents responsible for grandchildren" counts (~2.5 M in 2019)
+   and CDC WONDER ages 50-79 mortality. For 2021 it adds **546 K**
+   children with a deceased custodial grandparent, bringing the
+   combined total to **2.71 M** -- within ~7 % of Villaveces' 2.91 M.
+   This layer is uncalibrated by NHIS (NHIS has no grandchild head-count
+   variable). The residual ~200 K gap likely reflects (i) the
+   children-per-caregiver multiplier (we use 1.7, ACS national average),
+   (ii) the linear-decay residual-duration assumption (7 y midpoint),
+   and (iii) the age-weighted vs flat 50-79 mortality average.
 2. **Sex-pooled child mortality and population.** We split single-year
    child mortality and population 51/49 by sex; this is a uniform
    approximation. Effect on parental orphanhood is negligible.
