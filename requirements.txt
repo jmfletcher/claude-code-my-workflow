@@ -1,0 +1,18 @@
+# Python dependencies for the NHIS Mortality pipeline.
+#
+# Tested 2026-05 with Python 3.14.2. Versions here are >= the floor that
+# supports the APIs used in scripts/nhis_coresident_minors.py and
+# scripts/nhis_svy_mortality_logit.py; newer point releases should be fine.
+#
+# Install:
+#     pip install -r requirements.txt
+
+pandas>=2.2,<3
+numpy>=2.0,<3
+statsmodels>=0.14,<0.16
+pyarrow>=16,<25
+scipy>=1.12,<2
+
+# Kinship-matrix replication (pykin / Villaveces ingestion)
+pyreadr>=0.5,<1
+
