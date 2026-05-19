@@ -222,6 +222,49 @@ the year before death); ours is data-driven and group-specific.
 
 ---
 
+## 4b. Cause-specific extension: Schlüter 2024 (drugs + firearms)
+
+We applied the same NHIS-calibrated counting logic to the cause-specific
+target in Schlüter et al. 2024 (JAMA Pediatrics): *cumulative US
+children experiencing parental death from drug-overdose or firearm
+causes, 1999-2020*. The mechanics are simpler than the matrix kinship
+recurrence:
+
+> cumulative children = ∑ over (year, sex, race, age band) of
+> *D_c(cell) × K(cell)*
+
+where *D_c* is cause-specific parental deaths from the NCHS
+multiple-cause file (ICD-10 X40-X44, X60-X64, X85, Y10-Y14 for drugs;
+W32-W34, X72-X74, X93-X95, Y22-Y24, Y35.0 for firearms; parent age
+15-79) and *K* is either the population mean of co-resident minors among
+living adults of that cell (*naive*) or among decedents (*NHIS*).
+
+| | Drug | Firearm | Combined |
+|---|---:|---:|---:|
+| Parental deaths 1999-2020 | 920,301 | 691,877 | 1,612,178 |
+| Children, naive (kids-per-living-adult) | 650,192 | 418,213 | 1,068,405 |
+| Children, NHIS-calibrated | 473,274 | 336,066 | 809,340 |
+| Δ % | **-27.2 %** | **-19.6 %** | **-24.2 %** |
+| Schlüter 2024 published target | -- | -- | ~1,190,000 |
+
+Our naive total (1.07 M) sits ~10 % below the published 1.19 M; the gap
+is from (i) Schlüter's broader race universe (we drop "Others" /
+multiracial) and (ii) their use of vital-statistics-derived fertility
+profiles rather than NHIS averages. The headline finding still goes
+through: the NHIS calibration shrinks the cumulative count by roughly a
+quarter, with the biggest effect concentrated in NH White decedents
+(-30 % for both drugs and firearms) where the gap between
+kids-per-living-adult and kids-per-decedent is widest. NH Hispanic
+firearm deaths show the smallest gap (-4 %) -- decedents and living
+adults in that cell have very similar co-resident-minor counts.
+
+Race-stratified cumulative totals are in
+`results/kinship/schluter_drugs_firearms/cumulative_1999_2020_by_race.csv`;
+the annual series is in `annual_by_cause.csv`. Reproduce with
+`python scripts/run_schluter_cause_specific.py`.
+
+---
+
 ## 5. Caveats
 
 1. **Parental, not parental + caregiver.** Our 2.27 M is below Villaveces'
