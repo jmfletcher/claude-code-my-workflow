@@ -156,15 +156,19 @@ mortality in middle age followed by the deaths-of-despair / COVID era).
 
 **Pooled (All), 2021:** baseline 2.27 M → calibrated 2.19 M (Δ = -76 K, **-3.4 %**).
 
-**Race-stratified, 2021:**
+**Race-stratified, 2021 with bootstrap 95 % CIs (B=200):**
 
-| Race/ethnicity | Baseline | Calibrated | Δ (count) | Δ (%) |
-|---|---:|---:|---:|---:|
-| Non-Hispanic White | 1,176,062 | 1,014,424 | -161,639 | -13.7 % |
-| Non-Hispanic Asian or PI | 59,414 | 47,651 | -11,763 | **-19.8 %** |
-| Non-Hispanic Black | 456,694 | 429,032 | -27,662 | -6.1 % |
-| Hispanic | 368,360 | 365,202 | -3,158 | -0.9 % |
-| Non-Hispanic AIAN | 34,750 | 43,913 | **+9,163** | **+26.4 %** |
+| Race/ethnicity | Baseline | Calibrated point | Δ % | 95 % CI on Δ % |
+|---|---:|---:|---:|---|
+| Non-Hispanic White | 1,176,062 | 1,014,424 | **-13.7 %** | (-18.6 %, -8.0 %) |
+| Non-Hispanic Asian or PI | 59,414 | 47,651 | **-19.8 %** | (-27.2 %, +10.7 %) |
+| Non-Hispanic Black | 456,694 | 429,032 | -6.1 % | (-12.9 %, +4.0 %) |
+| Hispanic | 368,360 | 365,202 | -0.9 % | (-7.4 %, +6.4 %) |
+| Non-Hispanic AIAN | 34,750 | 43,982 | +26.6 % | (-40.3 %, +90.0 %) |
+| All | 2,240,912 | 2,166,268 | -3.3 % | (-17.2 %, +15.9 %) |
+
+The bootstrap CIs reflect uncertainty in κ from finite NHIS PSU samples
+within strata; they hold the demographic denominators fixed.
 
 Across the time series (2000-2021):
 - NH White Δ stays in the -10 % to -16 % band throughout.
@@ -231,7 +235,15 @@ the year before death); ours is data-driven and group-specific.
    "Native Hawaiian or Other Pacific Islander" plus "More than one race".
    We pool the first two back into the bridged-race "Asian or PI" bucket
    to align with the NCHS death file; "More than one race" is dropped.
-4. **κ from co-resident minors, not lifetime parity.** NHIS measures
+4. **Bootstrap CIs** are from NHIS PSU-within-stratum resampling, B=200
+   (`scripts/bootstrap_calibration.py`). They quantify uncertainty in κ
+   only; they do not include sampling error in the NCHS denominators or
+   CDC WONDER population estimates, nor model uncertainty in the kinship
+   recurrence. For NH White the CI is well below zero (significant
+   overestimate); for NH AIAN the small sample of NHIS deaths yields a
+   very wide CI (-40 % to +90 %) so the +26 % point estimate is not
+   statistically distinguishable from "no effect".
+5. **κ from co-resident minors, not lifetime parity.** NHIS measures
    `n_fam_childminor017` at survey interview, not lifetime fertility. This
    is the right concept for orphanhood (children-under-18 affected) but
    conflates parity with custody / co-residence patterns. NH Black and
