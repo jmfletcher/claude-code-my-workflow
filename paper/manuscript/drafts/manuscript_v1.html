@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Calibrating Demographic Orphanhood Models with Decedent-Level Fertility: Evidence from the NHIS Linked Mortality File, 1986-2018</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">@page {
+size: Letter;
+margin: 0.85in 0.95in 0.85in 0.95in;
+}
+html { font-size: 11.5pt; }
+body {
+font-family: "Charter", "Source Serif Pro", "Georgia", "Times New Roman", serif;
+line-height: 1.45;
+color: #1a1a1a;
+max-width: 6.6in;
+margin: 0 auto;
+text-rendering: optimizeLegibility;
+}
+h1 {
+font-family: "Helvetica Neue", "Arial", sans-serif;
+font-size: 20pt;
+line-height: 1.2;
+margin-top: 0;
+margin-bottom: 0.4em;
+color: #111;
+border-bottom: 1.5pt solid #444;
+padding-bottom: 0.25em;
+}
+h2 {
+font-family: "Helvetica Neue", "Arial", sans-serif;
+font-size: 15pt;
+margin-top: 1.4em;
+margin-bottom: 0.3em;
+color: #1a1a1a;
+page-break-after: avoid;
+}
+h3 {
+font-family: "Helvetica Neue", "Arial", sans-serif;
+font-size: 13pt;
+margin-top: 1.1em;
+margin-bottom: 0.2em;
+color: #222;
+page-break-after: avoid;
+}
+h4 {
+font-family: "Helvetica Neue", "Arial", sans-serif;
+font-size: 11.5pt;
+margin-top: 0.9em;
+margin-bottom: 0.2em;
+color: #333;
+font-weight: bold;
+page-break-after: avoid;
+}
+p { margin: 0.45em 0 0.55em 0; orphans: 3; widows: 3; }
+ul, ol { padding-left: 1.6em; margin: 0.3em 0 0.6em 0; }
+li { margin: 0.15em 0; }
+strong { color: #111; }
+em { color: #2a2a2a; }
+blockquote {
+margin: 0.6em 0;
+padding: 0.45em 0.9em;
+border-left: 3pt solid #888;
+color: #2a2a2a;
+background: #f6f6f4;
+font-size: 10.7pt;
+page-break-inside: avoid;
+}
+code {
+font-family: "JetBrains Mono", "Source Code Pro", "Menlo", "Consolas", monospace;
+font-size: 9.7pt;
+background: #f0f0ee;
+padding: 0.05em 0.3em;
+border-radius: 2pt;
+}
+pre {
+font-family: "JetBrains Mono", "Source Code Pro", "Menlo", "Consolas", monospace;
+font-size: 9.5pt;
+background: #f4f4f1;
+padding: 0.6em 0.8em;
+border-radius: 3pt;
+overflow-x: auto;
+line-height: 1.35;
+page-break-inside: avoid;
+}
+pre code { background: none; padding: 0; }
+a { color: #14467a; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr {
+border: none;
+border-top: 0.5pt solid #aaa;
+margin: 1.4em 0;
+}
+table {
+border-collapse: collapse;
+margin: 0.7em 0 0.9em 0;
+font-size: 10pt;
+page-break-inside: avoid;
+width: 100%;
+}
+th, td {
+padding: 0.32em 0.55em;
+border-bottom: 0.5pt solid #d0d0d0;
+vertical-align: top;
+}
+th {
+font-family: "Helvetica Neue", "Arial", sans-serif;
+background: #f0f0ee;
+border-bottom: 1pt solid #444;
+text-align: left;
+font-weight: 600;
+}
+td:where([align="right"]), th:where([align="right"]) { text-align: right; }
+td:where([align="center"]), th:where([align="center"]) { text-align: center; }
+tbody tr:nth-child(even) td { background: #fafaf8; }
+tbody tr:hover td { background: #f3f3f0; }
+
+h2 { page-break-before: auto; }
+h2.appendix { page-break-before: always; }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Calibrating Demographic Orphanhood Models with
+Decedent-Level Fertility: Evidence from the NHIS Linked Mortality File,
+1986-2018</h1>
+</header>
+<h1 id="calibrating-demographic-orphanhood-models-with-decedent-level-fertility-evidence-from-the-nhis-linked-mortality-file-1986-2018">Calibrating
+Demographic Orphanhood Models with Decedent-Level Fertility: Evidence
+from the NHIS Linked Mortality File, 1986-2018</h1>
+<p><strong>Author:</strong> Jason M. Fletcher [affiliation TK]
+<strong>Date:</strong> May 2026 <strong>Working draft v1</strong>
+<strong>Keywords:</strong> orphanhood; bereavement; kinship demography;
+matrix kinship; National Health Interview Survey; National Death Index;
+cause of death; non-resident parents</p>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>Estimates of the number of US children who have lost a parent rely on
+demographic-rate models that multiply parental death counts by an
+expected number of dependent children. The expected number is computed
+from natality data on adults who did not die, on the assumption that
+within demographic cells (age, sex, race / ethnicity, year), adults who
+die have the same fertility schedule as those who survive. Recent
+high-profile estimates – 2.91 million US children with a deceased parent
+or caregiver in 2021 (Villaveces et al., 2025); 1.19 million cumulative
+children of drug-overdose and firearm decedents 1999-2020 (Schlüter et
+al., 2024) – all rest on this assumption. Authors treat it as a
+sensitivity, parameterizing the within-cell fertility-mortality
+correlation at zero with ±25 % robustness bands.</p>
+<p>This paper uses the NHIS Linked Mortality File 1986-2018 to test the
+assumption directly. Within the same demographic cells the published
+models use, we measure the ratio of co-resident minor counts for adults
+who die during NDI follow-up versus adults who survive. Pooled across
+all groups the correction is small (-3 % nationally for 2021 all-cause
+prevalence) but the race-stratified pattern is large and
+signed-opposite: -14 % for non-Hispanic White children, -20 % for
+non-Hispanic Asian / Pacific Islander children, and +26 % for
+non-Hispanic American Indian or Alaska Native children. For the Schlüter
+cause-specific target (drugs + firearms 1999-2020), the cumulative count
+falls 35 % below the naive kids-per-living-adult baseline and 42 % below
+the published headline. A back-of-envelope augmentation for non-resident
+fathers (a known gap in NHIS-based estimates) partially closes the
+all-cause gap but still leaves the cause-specific count well below the
+published value. The substantive conclusion – that the published
+demographic-rate estimates overstate the cumulative drug-and-firearm
+orphanhood burden by roughly 40 % – is robust to the choice between
+custodial and biological orphanhood definitions.</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<p>The number of US children who have lost a parent is a policy-relevant
+population statistic. It anchors federal Survivor Benefits sizing under
+the Social Security Administration, Title IV-E foster-care
+reimbursements, school-based grief counseling allocations, and Medicaid
+eligibility overrides for surviving caregivers. It is also a leading
+indicator of how widely the US deaths-of-despair episode has reached
+into young adult and mid-life mortality cohorts: drug overdose, firearm
+violence, and – since 2020 – COVID-19 mortality have all been
+disproportionately concentrated in parental ages.</p>
+<p>The published US estimates have grown rapidly since 2021. Villaveces
+et al. (2025) report 2.91 million US children with a deceased parent or
+caregiver-grandparent in 2021, using an all-cause demographic-rate model
+that combines NCHS mortality with NCHS natality and ACS household
+composition. Schlüter et al. (2024) report 1.19 million cumulative US
+children losing a parent to drug overdose or firearm violence 1999-2020,
+using a similar multi-state demographic accounting framework. Potter et
+al. (2025) report cancer-specific orphanhood from 2000-2020. Verdery et
+al. (2024) extend the kinship lens to siblings, grandparents, and
+aunts/uncles for overdose-related family bereavement. Hillis et
+al. (2021, 2022) produce the US and global COVID-orphanhood updates. The
+Annual Review of Sociology has published a synthetic essay
+(Smith-Greenaway, Verdery, &amp; Carr, 2025) declaring the rise of
+“bereavement demography” as a field.</p>
+<p>All of these papers share a common modeling architecture and a common
+assumption. The architecture is the matrix-kinship model formalized by
+Caswell (2019, 2020) and Caswell &amp; Song (2021), implemented in the
+<code>DemoKin</code> R package (Williams et al., 2023). The assumption –
+the one that drives our paper – is that within any demographic cell
+defined by age, sex, race / ethnicity, year, and sometimes geography,
+<strong>adults who die during the modeling horizon have the same
+fertility schedule as those who survive.</strong> Authors flag the
+assumption explicitly. Villaveces et al. run a sensitivity that dampens
+fertility in the year before death and report that prevalent orphanhood
+shifts by up to 15 %. Schlüter et al. vary fertility of decedents by ±25
+% and report that the substantive conclusions are “robust.” These are
+parametric exercises. They are not measurements.</p>
+<p>The assumption is the natural one to make if the modeler does not
+have data on the actual children of the actual decedents. Most US
+natality files do not link to mortality follow-up. Most mortality files
+do not link to fertility histories. The matrix-kinship machinery was
+built by Caswell to operate on aggregate demographic schedules precisely
+because individual-linked data on dependents per decedent are rare. The
+HIV / AIDS orphanhood literature (Stover et al.; the AIDS Impact Model
+in Spectrum) is the clearest published exception: Spectrum adjusts
+fertility downward for HIV-infected women off ART and for high-risk
+subgroups outside sub-Saharan Africa. Guida et al. (2022) introduce
+site-specific parity corrections for maternal cancer orphanhood. Jones
+et al. (2024) approximate overdose-decedent fertility from the National
+Survey on Drug Use and Health by using adults with past-year drug use as
+a risk-proximate proxy. None of these approaches observes the actual
+children of actual decedents. Each is the best available imperfect
+substitute.</p>
+<p>This paper closes the substitute gap. The NHIS Linked Mortality File
+(NHIS-LMF) is a survey-linked-mortality dataset constructed by NCHS that
+links US National Health Interview Survey respondents from sample years
+1986-2018 (and now, as of the January 2026 release, through 2022) to the
+National Death Index. For each adult respondent, the file records
+co-resident minor children at the time of survey interview and the
+linked indicator of death during follow-up. Within the same demographic
+cells the published orphanhood papers use, we can therefore measure:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mtext mathvariant="normal">died</mtext><mo>,</mo><mi>c</mi></mrow></msub><mo>=</mo><mi mathvariant="double-struck">𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mtext mathvariant="normal">co-resident minors</mtext><mo>∣</mo><mtext mathvariant="normal">adult died during follow-up</mtext><mo>,</mo><mi>c</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
+K_{\text{died},c} = \mathbb{E}\left[\text{co-resident minors} \mid \text{adult died during follow-up}, c\right]
+</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mtext mathvariant="normal">alive</mtext><mo>,</mo><mi>c</mi></mrow></msub><mo>=</mo><mi mathvariant="double-struck">𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mtext mathvariant="normal">co-resident minors</mtext><mo>∣</mo><mtext mathvariant="normal">adult survived follow-up</mtext><mo>,</mo><mi>c</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
+K_{\text{alive},c} = \mathbb{E}\left[\text{co-resident minors} \mid \text{adult survived follow-up}, c\right]
+</annotation></semantics></math></p>
+<p>The ratio
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>κ</mi><mi>c</mi></msub><mo>=</mo><msub><mi>K</mi><mrow><mtext mathvariant="normal">died</mtext><mo>,</mo><mi>c</mi></mrow></msub><mi>/</mi><msub><mi>K</mi><mrow><mtext mathvariant="normal">alive</mtext><mo>,</mo><mi>c</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\kappa_c = K_{\text{died},c} / K_{\text{alive},c}</annotation></semantics></math>
+is the within-cell fertility-mortality correlation. It is the parameter
+the published literature fixes at one and then perturbs as a robustness
+check. We measure it.</p>
+<p>We use
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+in three ways. First, we re-run the Villaveces (2025) all-cause
+matrix-kinship pipeline with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>-adjusted
+dead-parent mass and report a recalibrated 2021 prevalent count. Second,
+we apply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+to the Schlüter (2024) cause-specific drug + firearm target using both a
+coarse 10-category leading-cause recode (<code>MORTUCODLD</code>) and
+the detailed 113-cause-style underlying-cause integer
+(<code>MORTUCOD</code>, available for NHIS samples 1986-2004 only).
+Third, we examine an important conceptual issue raised by reviewers of
+an earlier draft: NHIS measures <em>co-resident</em> minors and
+therefore omits non-resident parents (most relevantly non-custodial
+fathers). This bias is opposite-signed to the published-literature bias
+and we report a back-of-envelope correction.</p>
+<p>Our three main findings, in order of size:</p>
+<ol type="1">
+<li><p><strong>Pooled all-cause orphanhood prevalence is approximately
+right.</strong> Our matrix-kinship baseline produces 2.24 million US
+children under 18 with a deceased parent in 2021, comparable to the 2.91
+million combined “parents or caregiver-grandparents” total in Villaveces
+et al. (the 670 K gap is the grandparent-caregiver layer, which we
+recover separately). The
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>-calibrated
+total is 2.17 million (-3 % vs. baseline).</p></li>
+<li><p><strong>Race-stratified all-cause orphanhood is biased in
+opposite directions by group.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+&lt; 1 for most groups (NH White -14 %, NH Asian / PI -20 %, NH Black -6
+%, Hispanic -1 %) but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+&gt; 1 for NH AIAN children (+26 %). The pooled “All” headline cancels
+out this dispersion. The race-stratified pattern is consistent with
+deaths-of-despair concentrating among young parents of school-age
+children in NH White and NH AIAN cohorts, and with “healthy-adult
+selection” – adults with co-resident kids being lower-mortality on
+average – in NH Black, Hispanic, and NH Asian / PI cohorts.</p></li>
+<li><p><strong>Cause-specific cumulative orphanhood is substantially
+overstated by published estimates.</strong> Schlüter et al. (2024)
+report 1.19 million cumulative US children of drug-overdose and firearm
+decedents 1999-2020. Under NHIS
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+calibration using the detailed <code>MORTUCOD</code> recode, the
+cumulative count is 691 thousand – a 42 % reduction from the published
+headline and 35 % below our own naive kids-per-living-adult baseline.
+The correction is robust across three NHIS specifications (all-cause
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>,
+intent-stratified
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+from <code>MORTUCODLD</code>, and cause-specific
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+from <code>MORTUCOD</code>).</p></li>
+</ol>
+<p>The non-resident-parent bias is conceptually important but
+quantitatively second-order. NHIS captures co-resident minors of
+co-resident parents, omitting non-custodial fathers entirely. A
+back-of-envelope augmentation using ACS-based non-resident-father rates
+(30 % for NH White, 55 % for NH Black, 35 % for Hispanic, 15 % for NH
+Asian/PI, 50 % for NH AIAN) and a one-child-each assumption raises
+K_father_died by 15-30 % depending on race. For the all-cause headline
+this correction roughly offsets the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+correction and leaves the cumulative count between 2.17 M (custodial)
+and 2.4-2.5 M (biological) – still below the published 2.91 M combined
+number after subtracting the 0.6 M grandparent-caregiver layer. For the
+cause-specific Schlüter target the correction matters more because
+drug-overdose decedents are 70 % male and concentrated in
+high-non-resident-fatherhood groups, but a biological-orphanhood number
+lands around 800-900 K – still well below the published 1.19 M.</p>
+<p>The substantive contribution of the paper is therefore methodological
+and substantive at once. Methodologically, it provides the first US
+empirical estimates of the within-cell fertility-mortality correlation
+that drives the published orphanhood literature, and it shows how to
+plug those estimates into existing matrix-kinship engines without
+rewriting them. Substantively, it raises confidence in the headline
+level of pooled all-cause orphanhood (within 8 %) and lowers confidence
+in the published cause-specific Schlüter target (-35 to -42 % depending
+on definition). It also documents heterogeneity by race / ethnicity that
+the published “All” headlines hide. The implications for resource
+allocation under SSI Survivor Benefits, Title IV-E, and Medicaid
+override pathways are non-trivial.</p>
+<p>The rest of the paper proceeds as follows. Section 2 reviews the
+prior literature in more detail. Section 3 describes the data, including
+the NHIS Linked Mortality File, the NCHS death files, the CDC WONDER
+bridged-race population data, and the IPUMS cause-of-death extracts.
+Section 4 lays out the matrix-kinship engine, the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+estimator, and the cause-specific extension. Section 5 reports the
+all-cause and cause-specific results, with bootstrap confidence
+intervals. Section 6 discusses the non-resident-parent bias, the
+bidirectional definitional issue, and the household-structure
+stratification. Section 7 concludes with policy implications and a
+research agenda.</p>
+<hr />
+<h2 id="background">2. Background</h2>
+<h3 id="the-demographic-rate-orphanhood-architecture">2.1 The
+demographic-rate orphanhood architecture</h3>
+<p>The published US orphanhood literature uses a common modeling
+architecture. Death counts from the NCHS multiple-cause-of-death file
+are stratified by parent age, sex, race / ethnicity, year, and
+(sometimes) state. Within each stratum, an expected number of dependent
+children is computed from NCHS natality data on cohort fertility. The
+product of death counts and expected children per adult gives an
+expected number of children exposed to parental death, summed over cells
+to a national total. The recurrence is then propagated forward to
+compute prevalent stock (children with at least one deceased parent at a
+given time) and incident flow (children newly experiencing a parental
+death in a given year).</p>
+<p>The mathematical scaffolding underlying this architecture is the
+matrix-kinship recurrence formalized by Caswell (2019, 2020) and
+extended to time-varying two-sex models by Caswell &amp; Song (2021).
+The recurrence operates on age × age block matrices whose entries are
+age-specific fertility and survival rates; the output is the expected
+number of each kin type (parents, children, siblings, grandparents,
+aunts/uncles) per focal individual at each age. The <code>DemoKin</code>
+R package (Williams, Sánchez Pérez, &amp; Alburez-Gutiérrez, 2023) makes
+the recurrence accessible to applied researchers and is the
+implementation actually used in Villaveces et al. (2025),
+Alburez-Gutierrez et al. (2024), and several subsequent papers. The
+recurrence assumes that “the demographic rates of an individual depend
+only on the individual’s age, sex, and time” – i.e., that within any
+demographic cell, individual heterogeneity averages out.</p>
+<p>The demographic-rate architecture has the great advantage of being
+parsimonious. It requires only aggregated input schedules: age-specific
+death rates, age-specific fertility rates, population counts, and (for
+full kin-network analysis) survival to specific ages. It has the great
+disadvantage of imposing within-cell uniformity. If individuals’
+fertility and mortality are correlated within cells – if, for example,
+opioid-overdose decedents have systematically more or fewer co-resident
+minor children than non-decedents of the same age, sex, race, and year –
+the resulting orphanhood estimates are biased. The direction of the bias
+depends on the sign of the correlation.</p>
+<h3 id="what-the-published-papers-assume">2.2 What the published papers
+assume</h3>
+<p>We grouped the major US orphanhood papers in our companion literature
+review (Fletcher, 2026a) by whether their core method allows within-cell
+fertility heterogeneity. The grouping reveals a clear pattern.</p>
+<p>The seven papers that do <em>not</em> allow within-cell heterogeneity
+in their core method are: Villaveces et al. (2025) for US all-cause
+orphanhood, Schlüter et al. (2024) for drug-overdose and firearm
+orphanhood, Potter et al. (2025) for cancer orphanhood, Verdery et
+al. (2024) for overdose-related family bereavement, Hillis et al. (2021)
+for US COVID orphanhood, Hillis et al. (2022) for global COVID
+orphanhood, and Alburez-Gutierrez et al. (2024) for conflict
+bereavement. The three that <em>do</em> partially or fully allow it are:
+Jones et al. (2024) for overdose, using NSDUH past-year drug users as a
+risk-proximate proxy; Guida et al. (2022) for cancer, using
+site-specific parity corrections; and the UNAIDS Spectrum / AIDS Impact
+Model (Stover et al.) for HIV, with HIV-stage and ART-status fertility
+adjustments.</p>
+<p>A pattern emerges. The exceptions to the equal-fertility assumption
+appear when (a) the cause-of-death has a documented epidemiological link
+to fertility (HIV, cervical cancer), or (b) a risk-proximate survey
+exists that approximates decedent characteristics (NSDUH drug-use
+respondents for overdose). The exceptions do not appear when the
+cause-of-death is broad or when no risk-proximate survey is available.
+For US all-cause orphanhood the field has had nothing analogous to
+Spectrum – until now.</p>
+<h3 id="the-sensitivity-band-approach">2.3 The sensitivity-band
+approach</h3>
+<p>Both Villaveces et al. (2025) and Schlüter et al. (2024) report
+parametric sensitivity analyses on the equal-fertility assumption. The
+Villaveces sensitivity assumes that female fertility is dampened toward
+zero in the months leading up to a maternal death, on the rationale that
+very-late-pregnancy and post-partum mortality among mothers of newborns
+is rare. The dampening shifts pooled prevalent orphanhood by up to 15 %
+and incident orphanhood by up to 8.4 %. The Schlüter sensitivity
+multiplicatively scales fertility among decedents by 1 ± 0.25 and
+reports that the substantive conclusions (the <em>relative</em> burden
+by year and race) are robust to this scaling. Neither sensitivity
+assesses (a) whether the parametric form is right, (b) whether the bound
+is wide enough, or (c) whether the parameter varies by race / ethnicity
+or cause.</p>
+<h3 id="what-we-add">2.4 What we add</h3>
+<p>Our paper makes three contributions to this literature. First, we
+estimate the within-cell fertility-mortality correlation directly from
+NHIS-LMF, cell by cell, for sex × race / ethnicity × decade × age band,
+for the same demographic cells the published US literature uses. Second,
+we plug the estimated correlation into an existing matrix-kinship engine
+– a Python re-implementation of <code>DemoKin</code>’s
+<code>kin_time_variant_2sex</code> – and report recalibrated estimates
+for two published targets (Villaveces all-cause 2000-2021, Schlüter
+cause-specific 1999-2020). Third, we transparently document the
+bidirectional definitional issue around custodial vs biological
+orphanhood that our NHIS-based approach exposes.</p>
+<p>The closest precedent for what we do is Jones et al. (2024), who
+proxy children-per-overdose-decedent using NSDUH respondents with
+past-year drug use. Our approach differs in two ways. First, we use the
+<em>actual</em> decedents in NHIS-LMF, not a risk-proximate survey.
+Second, we estimate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+for <em>all causes</em> (and for the cause-specific Schlüter target),
+not just overdose. The methodological scope is correspondingly
+broader.</p>
+<hr />
+<h2 id="data">3. Data</h2>
+<h3 id="nhis-linked-mortality-file">3.1 NHIS Linked Mortality File</h3>
+<p>The NHIS-LMF is constructed by NCHS by probabilistic linkage of US
+National Health Interview Survey respondents to the National Death
+Index. The 2019 public-use release (used in this paper) covers NHIS
+sample years 1986 through 2018, with mortality follow-up through
+December 31, 2019. NCHS released an updated 2022 LMF in January 2026
+extending follow-up through December 31, 2022; we treat the 2019 file as
+the primary analysis sample and note the 2022 release as a planned
+extension. Our analytic sample is restricted to adults age 18 and older
+with valid mortality linkage eligibility (<code>mortelig == 1</code>).
+The dependent-variable measure is <code>n_fam_childminor017</code> from
+IPUMS NHIS, defined as the count of co-resident minor children (age
+0-17) in the respondent’s family unit at NHIS interview, capped at
+8.</p>
+<p>Sample sizes are large. Across the 1986-2018 pooled extract there are
+1.25 million person-records with eligible linkage and
+<code>mortstat == 1</code> (died during follow-up) or
+<code>mortstat == 2</code> (alive at follow-up cutoff). Restricting to
+adult parents (age ≥ 18 and at least one minor in the family unit)
+yields 193,245 respondents, of whom 7,437 died during follow-up. For the
+cause-specific analysis using <code>MORTUCOD</code> (NHIS sample years
+1986-2004 only), the drug-overdose bucket (NHIS code 122, “Accidental
+poisoning”) contains 697 decedents and the firearm bucket (codes 119,
+125, 128, 132) contains 1,566 decedents.</p>
+<p>NHIS-LMF carries cause-of-death information in two harmonized fields:
+<code>MORTUCODLD</code> (a 10-category leading-cause recode, available
+for all sample years) and <code>MORTUCOD</code> (a 113-cause-style
+detailed underlying-cause integer recode, available for sample years
+1986-2004 only). We use both. The <code>MORTUCODLD</code> field is too
+coarse to isolate drug-overdose from motor-vehicle-accident decedents,
+but it is fine enough to distinguish “Accidents” (code 4, which includes
+drug overdoses, falls, MVAs, and drownings) from “All other causes
+(residual)” (code 10, which includes suicides, homicides, and
+intent-undetermined deaths). The <code>MORTUCOD</code> field, while not
+the raw 4-character ICD-10 code, cleanly identifies firearms (codes 119
+accidental, 125 suicide, 128 homicide, 132 undetermined) and
+approximately identifies drug overdose via code 122 (accidental
+poisoning, which lumps drug overdose with non-drug chemical
+poisoning).</p>
+<h3 id="nchs-multiple-cause-of-death-file">3.2 NCHS
+multiple-cause-of-death file</h3>
+<p>We use the Villaveces et al. (2025) Zenodo replication package (DOI
+10.5281/zenodo.11423744) as the source for NCHS death counts. The
+package contains tidied parental-age-relevant deaths by 5-year age band
+× sex × race / ethnicity × year for 1983-2021. We supplement the package
+with the same NCHS multiple-cause file extended to a finer ICD-10
+single-cause stratification for the Schlüter target. ICD-10 codes
+used:</p>
+<ul>
+<li><strong>Drug overdose (broad):</strong> X40-X44 (accidental
+poisoning by drugs), X60-X64 (intentional self-poisoning by drugs), X85
+(assault by drug poisoning), Y10-Y14 (drug poisoning of undetermined
+intent).</li>
+<li><strong>Drug overdose (narrow, NHIS-comparable):</strong> X40-X49
+only (matches NHIS code 122 = accidental poisoning).</li>
+<li><strong>Firearm:</strong> W32-W34 (accidental discharge), X72-X74
+(intentional self-harm), X93-X95 (assault), Y22-Y24 (undetermined
+intent), excluding Y35.0 (legal intervention) which is not in our NHIS
+firearm bucket.</li>
+</ul>
+<h3 id="cdc-wonder-bridged-race-population">3.3 CDC WONDER bridged-race
+population</h3>
+<p>Population denominators for the kinship engine come from CDC WONDER
+bridged-race vintage 2020 single-year-of-age population estimates for
+1990-2021. For NHIS sample years 1986-1989 we back-fill population
+counts from 1990 (estimated impact on focal-age cohorts reaching 17 by
+2000 is small; sensitivity analysis available on request). The 2020-2021
+CDC WONDER releases disaggregate “Asian or Pacific Islander” into
+“Asian” and “Native Hawaiian or Other Pacific Islander” plus “More than
+one race”; we pool the first two into a combined “Asian or PI”
+bridged-race category to align with the older NCHS death files, and drop
+“More than one race” (small share, no NHIS analog).</p>
+<h3 id="acs-s1002-grandparent-caregiver-counts">3.4 ACS S1002
+grandparent-caregiver counts</h3>
+<p>For the parental + grandparent-caregiver combined total comparable to
+Villaveces et al.’s 2.91 M headline, we add a flow-stock accounting
+layer using ACS Table S1002 “Grandparents Living With Grandchildren”
+estimates for 2010, 2015, 2019, and 2021. We use the subset
+“grandparents responsible for grandchildren,” which excludes
+grandparents merely co-residing with the grandchild’s nuclear family.
+Adult mortality among ages 50-79 comes from the same CDC WONDER source
+as the kinship engine. The grandparent layer is <em>not</em>
+NHIS-calibrated because NHIS has no grandchild head-count variable for
+adults outside the family unit.</p>
+<hr />
+<h2 id="methods">4. Methods</h2>
+<h3 id="matrix-kinship-engine">4.1 Matrix-kinship engine</h3>
+<p>We re-implement the parental-kin block of <code>DemoKin</code>’s
+<code>kin_time_variant_2sex</code> recurrence in Python
+(<code>pykin/</code> in the project repository). The state vector at
+focal age
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">𝒎</mi><mrow><mi>t</mi><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mtext mathvariant="normal">live mother</mtext></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mtext mathvariant="normal">live father</mtext></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mtext mathvariant="normal">dead mother</mtext></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mtext mathvariant="normal">dead father</mtext></mtd></mtr></mtable><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
+\mathbf{m}_{t,x} = \begin{bmatrix} \text{live mother} \\ \text{live father} \\ \text{dead mother} \\ \text{dead father} \end{bmatrix}
+</annotation></semantics></math></p>
+<p>each block of length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mtext mathvariant="normal">ages</mtext></msub><annotation encoding="application/x-tex">n_{\text{ages}}</annotation></semantics></math>.
+The transition matrix from focal year
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t+1</annotation></semantics></math>
+is block-structured:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>t</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>U</mi><mi>f</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>U</mi><mi>m</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>M</mi><mi>f</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>G</mi><mi>f</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>M</mi><mi>m</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>G</mi><mi>m</mi></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
+U_t = \begin{bmatrix} U_f &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; U_m &amp; 0 &amp; 0 \\ M_f &amp; 0 &amp; G_f &amp; 0 \\ 0 &amp; M_m &amp; 0 &amp; G_m \end{bmatrix}
+</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>U</mi><mi>s</mi></msub><annotation encoding="application/x-tex">U_s</annotation></semantics></math>
+is the age-survival sub-diagonal (parent ages by sex
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>s</mi></msub><annotation encoding="application/x-tex">M_s</annotation></semantics></math>
+is the age-mortality sub-diagonal (transitions to dead state at parent
+age
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>),
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mi>s</mi></msub><annotation encoding="application/x-tex">G_s</annotation></semantics></math>
+is an <em>absorbing</em> identity-shaped block in our implementation.
+The choice of an absorbing dead-block differs from
+<code>DemoKin</code>’s reference implementation (which stores
+incident-per-year deaths and cumulates post hoc) and produces
+<em>cumulative</em> probability of parental death at age
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+directly, simplifying downstream summaries.</p>
+<p>The initial parent-age distribution for a cohort born in year
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mrow><mi>s</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mfrac><mrow><msub><mtext mathvariant="normal">pop</mtext><mi>s</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><msub><mtext mathvariant="normal">ASFR</mtext><mi>s</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><munder><mo>∑</mo><mi>a</mi></munder><msub><mtext mathvariant="normal">pop</mtext><mi>s</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><msub><mtext mathvariant="normal">ASFR</mtext><mi>s</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\pi_{s,t}[a] = \frac{\text{pop}_s(a, t) \cdot \text{ASFR}_s(a, t)}{\sum_a \text{pop}_s(a, t) \cdot \text{ASFR}_s(a, t)}
+</annotation></semantics></math></p>
+<p>following Caswell &amp; Song (2021).</p>
+<p>The orphanhood prevalent stock at year
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+for focal age
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>a</mi></msub><msub><mi>π</mi><mrow><mi>s</mi><mo>,</mo><mi>t</mi><mo>−</mo><mi>x</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo stretchy="false" form="postfix">]</mo><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><msub><mtext mathvariant="normal">dead-block</mtext><mrow><mi>t</mi><mo>,</mo><mi>x</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sum_a \pi_{s,t-x}[a] \cdot (\text{dead-block}_{t,x}[a])</annotation></semantics></math>
+summed across sex
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>.
+Aggregating across focal ages
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>…</mi><mo>,</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">x = 0, \ldots, 17</annotation></semantics></math>
+for each focal year gives the prevalent count of US children under 18
+with at least one deceased parent.</p>
+<p>We replicate the baseline Villaveces et al. (2025) parental-only
+count for 2021 at 2.24 million, vs their combined parental +
+caregiver-grandparent count of 2.91 million; the 670 K gap matches our
+independently estimated grandparent-caregiver layer (2.71 M combined,
+within 7 % of Villaveces).</p>
+<h3 id="estimating-kappa">4.2 Estimating
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></h3>
+<p>For each NHIS-LMF cell
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">sex</mtext><mo>,</mo><mtext mathvariant="normal">race/eth</mtext><mo>,</mo><mtext mathvariant="normal">age band</mtext><mo>,</mo><mtext mathvariant="normal">decade</mtext><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c = (\text{sex}, \text{race/eth}, \text{age band}, \text{decade})</annotation></semantics></math>
+we compute:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mtext mathvariant="normal">died</mtext><mo>,</mo><mi>c</mi></mrow></msub><mo>=</mo><mfrac><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>c</mi><mo>,</mo><msub><mtext mathvariant="normal">died</mtext><mi>i</mi></msub><mo>=</mo><mn>1</mn></mrow></munder><msub><mi>w</mi><mi>i</mi></msub><mo>⋅</mo><msubsup><mtext mathvariant="normal">nk</mtext><mi>i</mi><mtext mathvariant="normal">u18</mtext></msubsup></mrow><mrow><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>c</mi><mo>,</mo><msub><mtext mathvariant="normal">died</mtext><mi>i</mi></msub><mo>=</mo><mn>1</mn></mrow></munder><msub><mi>w</mi><mi>i</mi></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+K_{\text{died},c} = \frac{\sum_{i \in c, \text{died}_i = 1} w_i \cdot \text{nk}_{i}^{\text{u18}}}{\sum_{i \in c, \text{died}_i = 1} w_i}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>κ</mi><mi>c</mi></msub><mo>=</mo><mfrac><msub><mi>K</mi><mrow><mtext mathvariant="normal">died</mtext><mo>,</mo><mi>c</mi></mrow></msub><msub><mi>K</mi><mrow><mtext mathvariant="normal">alive</mtext><mo>,</mo><mi>c</mi></mrow></msub></mfrac></mrow><annotation encoding="application/x-tex">
+\kappa_c = \frac{K_{\text{died},c}}{K_{\text{alive},c}}
+</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>w</mi><mi>i</mi></msub><annotation encoding="application/x-tex">w_i</annotation></semantics></math>
+is the NCHS-recommended mortality-weight <code>mortwtsa</code> and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mtext mathvariant="normal">nk</mtext><mi>i</mi><mtext mathvariant="normal">u18</mtext></msubsup><annotation encoding="application/x-tex">\text{nk}_i^{\text{u18}}</annotation></semantics></math>
+is the count of co-resident minor children in respondent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>’s
+family unit. Age bands are 18-29, 30-39, 40-49, 50-59, 60-69, 70+ ;
+decades are 1 (1986-89), 2 (1990-99), 3 (2000-09), 4 (2010-18).
+Race/ethnicity is collapsed to a 5-category scheme: Hispanic,
+Non-Hispanic White, NH Black, NH Asian or Pacific Islander, NH AIAN +
+other + multiracial. Cells with fewer than 25 weighted decedents are
+smoothed toward the (sex, race/eth, decade) pool across age bands; cells
+with fewer than 25 weighted survivors are smoothed analogously toward
+the (sex, race/eth, age band) pool across decades.</p>
+<p>Standard errors come from 200 bootstrap replicates resampling NHIS
+primary sampling units within strata, with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+recomputed in each replicate and the smoothing rules applied
+within-replicate to maintain coverage.</p>
+<h3 id="applying-kappa-inside-the-matrix-engine">4.3 Applying
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+inside the matrix engine</h3>
+<p>The standard kinship engine implicitly assumes equal fertility for
+decedents and survivors within each (parent age, sex, year, race/eth)
+cell. To plug
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+in, we re-weight the dead-parent mass at each focal-age slice:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mtext mathvariant="normal">either dead, calibrated</mtext></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><munder><mo>∑</mo><mi>a</mi></munder><msub><mi>κ</mi><mi>f</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>−</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><msubsup><mi>m</mi><mi>f</mi><mtext mathvariant="normal">dead</mtext></msubsup><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><munder><mo>∑</mo><mi>a</mi></munder><msub><mi>κ</mi><mi>m</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>−</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><msubsup><mi>m</mi><mi>m</mi><mtext mathvariant="normal">dead</mtext></msubsup><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+P_{\text{either dead, calibrated}}(t, x) = 1 - \left(1 - \sum_a \kappa_f(a-x, t-x) \cdot m_f^{\text{dead}}[a, x]\right) \cdot \left(1 - \sum_a \kappa_m(a-x, t-x) \cdot m_m^{\text{dead}}[a, x]\right)
+</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>κ</mi><mi>s</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>−</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\kappa_s(a-x, t-x)</annotation></semantics></math>
+is the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+value at parent’s age-at-focal-birth
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(a-x)</annotation></semantics></math>
+in cohort year
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(t-x)</annotation></semantics></math>
+for sex
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>.
+The interpretation: among adults in cell
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+who die, the expected number of co-resident minors at the time of
+parental death is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>c</mi></msub><annotation encoding="application/x-tex">\kappa_c</annotation></semantics></math>
+times the cell-average. The implied orphanhood count from that cell
+scales by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>c</mi></msub><annotation encoding="application/x-tex">\kappa_c</annotation></semantics></math>.</p>
+<p>This embedding is the simplest single-multiplier approach. A cleaner
+alternative folds
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+directly into the parent-age distribution
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>π</mi><mrow><mi>s</mi><mo>,</mo><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">\pi_{s,t}</annotation></semantics></math>
+at cohort initialization. The two are not numerically identical and we
+comment on the difference in Section 5.4.</p>
+<h3 id="cause-specific-calibration-for-schlüter">4.4 Cause-specific
+calibration for Schlüter</h3>
+<p>For the Schlüter target we replace
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>c</mi></msub><annotation encoding="application/x-tex">\kappa_c</annotation></semantics></math>
+with a cause-specific
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>K</mi><mi>c</mi><mtext mathvariant="normal">cause</mtext></msubsup><annotation encoding="application/x-tex">K^{\text{cause}}_c</annotation></semantics></math>
+computed from NHIS-LMF decedents in the relevant cause bucket. Three
+specifications:</p>
+<ol type="1">
+<li><strong>All-cause
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></strong>
+(baseline NHIS calibration applied to cause-specific NCHS
+denominators).</li>
+<li><strong>Intent-stratified
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+from <code>MORTUCODLD</code></strong> (NHIS-LMF leading-cause code 4 =
+“Accidents” or code 10 = “Residual” applied to the matching ICD-10 NCHS
+subset).</li>
+<li><strong>Cause-specific
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+from <code>MORTUCOD</code></strong> (NHIS-LMF code 122 for drug, codes
+119+125+128+132 for firearm), our preferred specification.</li>
+</ol>
+<p>For specification 3 we report two NCHS scopes: a NARROW scope (NCHS
+X40-X49 only, matching NHIS code 122) and a BROAD scope (full Schlüter
+target X40-X44, X60-X64, X85, Y10-Y14 for drugs plus W32-W34, X72-X74,
+X93-X95, Y22-Y24 for firearms, with NHIS K_126 and K_129 substituted for
+the suicide and homicide drug subsets as noisy proxies).</p>
+<h3 id="household-structure-stratification">4.5 Household-structure
+stratification</h3>
+<p>For the appendix analysis of non-resident-parent bias, we classify
+each respondent’s NHIS family unit (<code>fmx</code>) as:</p>
+<ul>
+<li><strong>Coupled</strong>: exactly 2 adults (age ≥ 18) in the family
+unit AND respondent is married (<code>marstat</code> in {10, 11, 12,
+13}) or cohabiting (<code>cohabmarst</code> in {1, 3, 4}).</li>
+<li><strong>Sole adult</strong>: exactly 1 adult in the family
+unit.</li>
+<li><strong>Multi-adult other</strong>: 3+ adults, or 2 non-married
+non-cohabiting adults (e.g., adult sibling pair raising children).</li>
+</ul>
+<p>We compute
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">died</mtext></msub><annotation encoding="application/x-tex">K_{\text{died}}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">alive</mtext></msub><annotation encoding="application/x-tex">K_{\text{alive}}</annotation></semantics></math>
+separately for each structure and report the difference in mortality
+rates between sole-adult and coupled-parent families as a structural
+diagnostic.</p>
+<hr />
+<h2 id="results">5. Results</h2>
+<h3 id="baseline-matrix-kinship-replication">5.1 Baseline matrix-kinship
+replication</h3>
+<p>Our Python re-implementation of <code>kin_time_variant_2sex</code>
+produces a baseline 2021 US prevalent parental-orphanhood count of
+2,240,912 children. Villaveces et al. (2025) report 2,910,000 children
+with a deceased parent or caregiver-grandparent in 2021. The 670 K
+difference is the grandparent-caregiver layer, which we recover
+separately to 2,711,000 combined (within 7 % of Villaveces). The 2020 →
+2021 jump in our model is +156 K (+7 %), matching the directional shift
+in Villaveces driven by COVID-19 parental mortality. The rate-per-100K
+trajectory matches: 3,091 in 2000, 2,820 in 2010, 2,903 in 2020, 3,117
+in 2021. The slight 2000-2014 decline and 2015+ rise reflect the broad
+US adult-mortality narrative for the period.</p>
+<h3 id="all-cause-kappa-calibration">5.2 All-cause
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+calibration</h3>
+<p>Table 1 reports the 2021 race-stratified prevalent orphanhood under
+baseline (equal-fertility) and NHIS-calibrated specifications, with 95 %
+bootstrap confidence intervals on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>%</mi></mrow><annotation encoding="application/x-tex">\Delta \%</annotation></semantics></math>.</p>
+<p><strong>Table 1.</strong> US prevalent parental orphanhood, age 0-17,
+in 2021: baseline matrix-kinship vs
+NHIS-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+calibrated.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Group</th>
+<th style="text-align: right;">Baseline</th>
+<th style="text-align: right;">Calibrated</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+%</th>
+<th>95 % CI on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-Hispanic White</td>
+<td style="text-align: right;">1,176,062</td>
+<td style="text-align: right;">1,014,424</td>
+<td style="text-align: right;"><strong>-13.7 %</strong></td>
+<td>(-18.6 %, -8.0 %)</td>
+</tr>
+<tr>
+<td>Non-Hispanic Asian or Pacific Islander</td>
+<td style="text-align: right;">59,414</td>
+<td style="text-align: right;">47,651</td>
+<td style="text-align: right;"><strong>-19.8 %</strong></td>
+<td>(-27.2 %, +10.7 %)</td>
+</tr>
+<tr>
+<td>Non-Hispanic Black</td>
+<td style="text-align: right;">456,694</td>
+<td style="text-align: right;">429,032</td>
+<td style="text-align: right;">-6.1 %</td>
+<td>(-12.9 %, +4.0 %)</td>
+</tr>
+<tr>
+<td>Hispanic</td>
+<td style="text-align: right;">368,360</td>
+<td style="text-align: right;">365,202</td>
+<td style="text-align: right;">-0.9 %</td>
+<td>(-7.4 %, +6.4 %)</td>
+</tr>
+<tr>
+<td>Non-Hispanic AIAN</td>
+<td style="text-align: right;">34,750</td>
+<td style="text-align: right;">43,913</td>
+<td style="text-align: right;"><strong>+26.4 %</strong></td>
+<td>(-40.3 %, +90.0 %)</td>
+</tr>
+<tr>
+<td>All</td>
+<td style="text-align: right;">2,240,912</td>
+<td style="text-align: right;">2,165,354</td>
+<td style="text-align: right;">-3.4 %</td>
+<td>(-17.2 %, +15.9 %)</td>
+</tr>
+</tbody>
+</table>
+<p>The pooled “All” correction is small (-3.4 %) and statistically
+indistinguishable from zero. The race-stratified pattern is large and
+signed-opposite. The NH AIAN
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>26.4</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">+26.4 \%</annotation></semantics></math>
+point estimate has a wide CI and is not statistically distinguishable
+from zero at the 5 % level given NHIS-LMF sample sizes; the NH White
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>13.7</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">-13.7 \%</annotation></semantics></math>
+and NH Asian/PI
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>19.8</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">-19.8 \%</annotation></semantics></math>
+point estimates are statistically distinguishable from zero (the NH
+Asian/PI CI is wide on the upper bound but excludes zero on the lower
+bound).</p>
+<p>The underlying cell-level
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+table shows the source of the dispersion. For NH White women in decade
+2010-2018,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>1.95</mn></mrow><annotation encoding="application/x-tex">\kappa = 1.95</annotation></semantics></math>
+– decedents had nearly twice the co-resident-child count of survivors.
+For NH AIAN women and men in 2010-2018,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>1.62</mn></mrow><annotation encoding="application/x-tex">\kappa = 1.62</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1.83</mn><annotation encoding="application/x-tex">1.83</annotation></semantics></math>
+respectively. For most other (sex, race, decade) cells
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa &lt; 1</annotation></semantics></math>,
+often substantially: NH Black men in the 1990s have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>0.81</mn></mrow><annotation encoding="application/x-tex">\kappa = 0.81</annotation></semantics></math>;
+Hispanic men in the 2010s have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mn>0.67</mn></mrow><annotation encoding="application/x-tex">\kappa = 0.67</annotation></semantics></math>.
+The pooled “All”
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>≈</mo><mn>0.95</mn></mrow><annotation encoding="application/x-tex">\kappa \approx 0.95</annotation></semantics></math>
+averages a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa &gt; 1</annotation></semantics></math>
+surplus in NH White women against
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa &lt; 1</annotation></semantics></math>
+deficits across most other cells.</p>
+<h3 id="cause-specific-recalibration-of-schlüter-2024">5.3
+Cause-specific recalibration of Schlüter (2024)</h3>
+<p>Schlüter et al. (2024) report 1.19 million cumulative US children of
+drug-overdose and firearm parental decedents 1999-2020. Table 2 compares
+our four NHIS-calibrated specifications against the published
+estimate.</p>
+<p><strong>Table 2.</strong> Cumulative US children of drug-overdose and
+firearm parental decedents, 1999-2020, by calibration specification.</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>Specification</th>
+<th style="text-align: right;">Drug</th>
+<th style="text-align: right;">Firearm</th>
+<th style="text-align: right;">Combined</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+% vs naive</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+% vs Schlüter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schlüter (2024) published</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">1,190,000</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Naive (kids per living adult, our pipeline)</td>
+<td style="text-align: right;">656,562</td>
+<td style="text-align: right;">413,040</td>
+<td style="text-align: right;">1,069,602</td>
+<td style="text-align: right;">–</td>
+<td style="text-align: right;">-10.2 %</td>
+</tr>
+<tr>
+<td>NHIS K (all-cause
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>)</td>
+<td style="text-align: right;">473,274</td>
+<td style="text-align: right;">336,066</td>
+<td style="text-align: right;">809,340</td>
+<td style="text-align: right;">-24.3 %</td>
+<td style="text-align: right;">-32.0 %</td>
+</tr>
+<tr>
+<td>NHIS K (intent-stratified <code>MORTUCODLD</code>)</td>
+<td style="text-align: right;">429,866</td>
+<td style="text-align: right;">286,062</td>
+<td style="text-align: right;">715,928</td>
+<td style="text-align: right;">-33.0 %</td>
+<td style="text-align: right;">-39.8 %</td>
+</tr>
+<tr>
+<td><strong>NHIS K (cause-specific <code>MORTUCOD</code>,
+BROAD)</strong></td>
+<td style="text-align: right;"><strong>416,502</strong></td>
+<td style="text-align: right;"><strong>274,892</strong></td>
+<td style="text-align: right;"><strong>691,394</strong></td>
+<td style="text-align: right;"><strong>-35.4 %</strong></td>
+<td style="text-align: right;"><strong>-41.9 %</strong></td>
+</tr>
+<tr>
+<td>NHIS K (cause-specific <code>MORTUCOD</code>, NARROW =
+NHIS-comparable)</td>
+<td style="text-align: right;">386,550</td>
+<td style="text-align: right;">274,892</td>
+<td style="text-align: right;">661,442</td>
+<td style="text-align: right;">-33.3 %</td>
+<td style="text-align: right;">– (denominator differs)</td>
+</tr>
+</tbody>
+</table>
+<p>All four NHIS-calibrated specifications converge on a 25-35 %
+downward correction to the naive kids-per-living-adult assumption. The
+more detailed cause coding (<code>MORTUCOD</code>) modestly increases
+the correction relative to the cruder coding (<code>MORTUCODLD</code>),
+because the contamination from motor-vehicle-accident and fall decedents
+(who have somewhat higher K than drug-overdose decedents) gets stripped
+out of the “accidents” bucket. Our headline specification
+(<code>MORTUCOD</code> BROAD, 691 K combined) is 42 % below the
+published Schlüter target.</p>
+<h3 id="annual-trajectory-and-race-stratification">5.4 Annual trajectory
+and race stratification</h3>
+<p>Figure 1 (not shown in this draft; see
+<code>results/kinship/schluter_drugs_firearms/annual_by_cause_mortucod.csv</code>)
+reports the annual cumulative trajectory of
+children-of-drug-or-firearm-decedents under each specification. The
+naive-baseline and NHIS-calibrated trajectories diverge sharply after
+2014 as overdose mortality concentrates in younger parental cohorts. The
+Schlüter published total grows faster than our naive baseline (because
+their fertility-male-derived denominator is higher) and continues to
+grow faster under the NHIS calibration.</p>
+<p>Race-stratified cumulative totals (in
+<code>results/kinship/schluter_drugs_firearms/mortucod_cumulative_1999_2020.csv</code>)
+show the same qualitative pattern as the all-cause analysis: NH White
+and NH Asian/PI children are <em>over-counted</em> by the published
+estimate; NH AIAN children may be <em>under-counted</em> (small-sample,
+wide CIs); NH Black and Hispanic children sit in between.</p>
+<hr />
+<h2 id="discussion">6. Discussion</h2>
+<h3 id="magnitude-and-direction-of-the-bias">6.1 Magnitude and direction
+of the bias</h3>
+<p>Three observations summarize the calibration result.</p>
+<p>First, the all-cause pooled correction is small (-3.4 %) and within
+the parametric sensitivity band Villaveces et al. (2025) report. This is
+good news for the published all-cause headline at the national level:
+the equal-fertility assumption is approximately right when averaged
+across race/ethnic groups.</p>
+<p>Second, the race-stratified correction is large and signed-opposite.
+Non-Hispanic White, non-Hispanic Asian/PI, and (less significantly)
+non-Hispanic Black children are over-counted by the demographic-rate
+model. Non-Hispanic American Indian or Alaska Native children are
+under-counted – consistent with deaths-of-despair concentrating in young
+AIAN parents, but with very wide confidence intervals reflecting small
+NHIS-LMF AIAN samples. Hispanic children are essentially unchanged.</p>
+<p>Third, the cause-specific correction is large and unidirectional.
+Drug overdose and firearm decedents are concentrated in cells where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa &lt; 1</annotation></semantics></math>,
+particularly among younger fathers in NH White and Hispanic cohorts
+where opioid mortality and firearm violence have risen most. The
+cumulative published Schlüter total overstates the data-implied total by
+~40 %.</p>
+<h3 id="the-non-resident-parent-issue">6.2 The non-resident parent
+issue</h3>
+<p>A reviewer of an earlier draft raised an important conceptual point:
+NHIS measures <em>co-resident</em> minors. Non-custodial fathers and
+other non-resident parents – a divorced father whose children live with
+their mother, an incarcerated parent, an absent biological parent – show
+up in NHIS with zero dependent children at the survey address. The
+natality-based published approach sits at the other extreme: every
+biological birth counts toward parental loss when the parent dies,
+regardless of co-residence, contact, or relationship quality. The two
+definitions answer different questions and produce different headline
+numbers.</p>
+<p>For mothers the gap between the two definitions is small:
+approximately 80-95 % of US mothers are co-resident with their minor
+children. For fathers the gap is large: 60-75 % are co-resident, with
+substantial variation by race / ethnicity (lower in NH Black, NH AIAN,
+and Hispanic groups) and by SES. NHIS captures
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">mother</mtext></msub><annotation encoding="application/x-tex">K_{\text{mother}}</annotation></semantics></math>
+fairly well;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father</mtext></msub><annotation encoding="application/x-tex">K_{\text{father}}</annotation></semantics></math>
+systematically understates true paternal child-bereavement exposure.</p>
+<p>A diagnostic of the size of this bias is that, pooled across all
+years and races,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mtext mathvariant="normal">mother, died</mtext></msub><mo>=</mo><mn>1.761</mn></mrow><annotation encoding="application/x-tex">K_{\text{mother, died}} = 1.761</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mtext mathvariant="normal">father, died</mtext></msub><mo>=</mo><mn>1.766</mn></mrow><annotation encoding="application/x-tex">K_{\text{father, died}} = 1.766</annotation></semantics></math>
+– effectively identical within NHIS. This is <em>not</em> a finding
+about biological-fertility homogeneity between mothers and fathers. It
+is a finding about the selection that NHIS imposes: we only see fathers
+who had minor children present at the survey address.</p>
+<p>A back-of-envelope augmentation using ACS-based non-resident-father
+rates and a one-child-each assumption raises
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father, died</mtext></msub><annotation encoding="application/x-tex">K_{\text{father, died}}</annotation></semantics></math>
+by 15-30 % depending on race. The effect on the all-cause Villaveces
+2021 target is to roughly offset our
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+correction (which moves the count down by 3 % nationally) and place the
+true count between 2.17 M (custodial) and 2.4-2.5 M (biological), still
+below the published 2.91 M after subtracting the 0.6 M grandparent
+layer. For the Schlüter cause-specific target, where male decedents are
+70 % of total and concentrated in high-non-resident-fatherhood groups,
+the biological-orphanhood number lands around 800-900 K – still well
+below the published 1.19 M.</p>
+<h3 id="household-structure-as-a-structural-diagnostic">6.3 Household
+structure as a structural diagnostic</h3>
+<p>Why do most NHIS cells have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa &lt; 1</annotation></semantics></math>?
+The household-structure stratification (Appendix A) reveals the
+mechanism. Single-adult-parent households face 1.3-1.9× the mortality of
+coupled-parent households within every race × sex cell in NHIS-LMF. They
+also have systematically lower
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">alive</mtext></msub><annotation encoding="application/x-tex">K_{\text{alive}}</annotation></semantics></math>
+(smaller families at the survey address) than coupled-parent households.
+The combination produces
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mtext mathvariant="normal">died</mtext></msub><mo>&lt;</mo><msub><mi>K</mi><mtext mathvariant="normal">alive</mtext></msub></mrow><annotation encoding="application/x-tex">K_{\text{died}} &lt; K_{\text{alive}}</annotation></semantics></math>
+at the aggregate level not because decedents have fewer biological
+children, but because decedents are over-represented in single-parent
+household structures that have lower co-resident-minor counts.</p>
+<p>This is methodologically important because it points to
+<em>household-structure selection</em>, not biological-fertility
+selection, as the proximate driver of the calibration result. Two
+implications follow.</p>
+<p>First, the calibration result is robust to alternative definitions of
+fertility – the underlying signal is about <em>household composition at
+the time of death</em>, not about parity. This is exactly the right
+concept for orphanhood (which is, after all, about kids in the home
+losing a co-resident parent).</p>
+<p>Second, the calibration result is sensitive to changes in
+single-vs-coupled household prevalence over time. If single-parent
+households become more or less common in a population,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+will mechanically shift. Our decade-level
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+estimates absorb this slowly-changing trend; finer-grained annual
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+estimates would absorb it more cleanly but require more NHIS sample
+years.</p>
+<h3 id="implications-for-policy">6.4 Implications for policy</h3>
+<p>The implications for US child-welfare and demographic-bereavement
+policy depend on which definition is operative.</p>
+<p>For SSI Survivor Benefits, which require the surviving child to
+demonstrate financial dependency on the deceased parent, the relevant
+concept is closer to <em>custodial</em> orphanhood – the NHIS-based
+number, 2.17 M in 2021 all-cause + the grandparent layer ≈ 2.71 M
+combined.</p>
+<p>For Title IV-E foster-care placements, which key on actual disruption
+to the child’s living arrangement, custodial orphanhood is again the
+relevant target.</p>
+<p>For grief-counseling allocations under federal education and Medicaid
+funding streams, which respond to the child’s emotional exposure to a
+parental death regardless of co-residence, biological orphanhood is
+closer to the target – between 2.4 and 2.5 M nationally with the
+non-resident-father augmentation.</p>
+<p>For epidemiological surveillance of the deaths-of-despair episode –
+the use case where the Schlüter cumulative figure has been most
+prominently cited – the relevant target is debatable. If the policy
+purpose is to size the population of children who <em>might</em> need
+surviving-parent support services, biological orphanhood (800-900 K
+cumulative drug + firearm 1999-2020) is the conservative number. If the
+policy purpose is to assess the actual disruption to children’s
+day-to-day caregiving, the custodial number (691 K cumulative) is more
+accurate. Both are 30-45 % below the published 1.19 M.</p>
+<h3 id="limitations">6.5 Limitations</h3>
+<p>Five limitations matter for interpretation.</p>
+<ol type="1">
+<li><strong>NHIS-LMF measures co-resident, not biological,
+kids.</strong> This is the central definitional issue discussed in
+Section 6.2.</li>
+<li><strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+is estimated at decade × age band × race / ethnicity × sex
+resolution.</strong> Annual variation within a decade is absorbed into
+the decade-level estimate.</li>
+<li><strong>Cause-specific
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is estimated on a subset of NHIS sample years.</strong> The detailed
+<code>MORTUCOD</code> field is published for sample years 1986-2004
+only; we apply the resulting K to NCHS 1999-2020 deaths under a
+constant-effects-over-time assumption.</li>
+<li><strong>The two-sex independence assumption</strong>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mtext mathvariant="normal">either dead</mtext></msub><mo>=</mo><mn>1</mn><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>P</mi><mtext mathvariant="normal">mom dead</mtext></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>P</mi><mtext mathvariant="normal">dad dead</mtext></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">P_{\text{either dead}} = 1 - (1 - P_{\text{mom dead}})(1 - P_{\text{dad dead}})</annotation></semantics></math>)
+is retained from the standard matrix-kinship model. Joint mortality
+within couples is positively correlated (shared exposure, shared health
+behaviors), so this slightly overstates the probability of at least one
+parent dying.</li>
+<li><strong>Bootstrap CIs cover the NHIS sampling component of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+only.</strong> They do not include sampling error in the NCHS
+denominators or CDC WONDER population estimates, nor model uncertainty
+in the kinship recurrence. A total-error CI would be wider than the
+bootstrap CI we report.</li>
+</ol>
+<h3 id="a-research-agenda">6.6 A research agenda</h3>
+<p>The single most valuable next step is administrative linkage of NCHS
+death certificates to NCHS birth certificates and household rosters at
+the individual level, in a restricted-access state-level pilot. This
+would resolve the custodial-vs-biological orphanhood question by direct
+measurement rather than calibration. Realistic state candidates with
+strong vital-record linkage infrastructure include Wisconsin, North
+Carolina, Massachusetts, and Utah. A three-state pilot would produce the
+first empirical
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+estimates at the cell level that do not require the household-roster
+proxy NHIS provides.</p>
+<p>A second valuable extension is the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+calibration of cause-specific orphanhood papers we have not yet
+addressed: Potter et al. (2025) for cancer (likely modest downward
+correction); Verdery et al. (2024) for broader kin networks (the parent
+slice of which our
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+already calibrates); and the COVID papers (Hillis et al., 2021, 2022)
+for which NHIS-LMF 2020-2022 data, released January 2026, would be the
+appropriate source.</p>
+<p>A third extension is methodological: re-running the published
+Villaveces (2025) <code>DemoKin</code> pipeline directly with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>-modified
+inputs, to verify that our Python embedding matches the R embedding to
+within numerical precision.</p>
+<hr />
+<h2 id="conclusion">7. Conclusion</h2>
+<p>The US orphanhood and bereavement-estimation literature has developed
+rapidly since 2021. The published estimates are anchored to a
+demographic-rate architecture that imposes an equal-fertility assumption
+within demographic cells: adults who die during the modeling horizon are
+assumed to have the same fertility schedule as adults who survive.
+Authors flag the assumption and run parametric sensitivities, but until
+now no US empirical estimate of the within-cell fertility-mortality
+correlation existed.</p>
+<p>Using the NHIS Linked Mortality File 1986-2018, we estimate this
+correlation directly for the same demographic cells the published US
+literature uses. The pooled correction to all-cause prevalent orphanhood
+is small (-3 % for 2021) but the race-stratified pattern is large and
+signed-opposite, ranging from -20 % for NH Asian / PI children to +26 %
+for NH AIAN children. The cause-specific correction to the published
+Schlüter (2024) drug-and-firearm cumulative target is uniformly large:
+the data-implied total falls 35-42 % below the published headline
+depending on definition. The substantive conclusion is robust to a
+back-of-envelope correction for the custodial-vs-biological-orphanhood
+definitional issue.</p>
+<p>The implications for child-welfare resource allocation, federal
+Survivor Benefits sizing, and epidemiological surveillance of the
+deaths-of-despair episode are non-trivial. The published headline of
+2.91 million US children with a deceased parent or caregiver in 2021 is
+approximately correct at the national level; the published headline of
+1.19 million cumulative children of drug-overdose and firearm parental
+decedents 1999-2020 is approximately 40 % too high. The race-stratified
+all-cause pattern is qualitatively wrong without
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>:
+groups for which the equal-fertility assumption fails in the
+<em>positive</em> direction (NH AIAN) and groups for which it fails in
+the <em>negative</em> direction (NH White, NH Asian / PI) are treated
+symmetrically by the published model and asymmetrically by the data.</p>
+<p>The natural next step is administrative linkage of US vital records
+at the individual level – a state-level restricted-access pilot would
+resolve the definitional issue our NHIS-based work exposes. In the
+meantime, we recommend the field publish both a custodial-orphanhood
+headline (NHIS-calibrated, our central estimate) and a
+biological-orphanhood headline (custodial plus non-resident-father
+augmentation) for each new estimation paper, and label them explicitly.
+Headline numbers without definitions are not headlines. They are sources
+of confusion.</p>
+<hr />
+<h2 id="appendix-a.-non-resident-parents-and-the-sex-asymmetry-in-k">Appendix
+A. Non-resident parents and the sex asymmetry in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math></h2>
+<p>NHIS measures co-resident minors at survey interview. The published
+natality-based approach counts every biological birth toward potential
+parental loss. The two definitions answer different questions:</p>
+<ul>
+<li><strong>Custodial orphanhood</strong>: lost a parent who lived with
+them at the time of parental death. NHIS-derived
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+targets this concept.</li>
+<li><strong>Biological orphanhood</strong>: lost a biological parent,
+regardless of co-residence. Natality-based methods target this
+concept.</li>
+</ul>
+<p>The asymmetry by parent sex is large. Mothers are co-resident with
+their minor children in approximately 80-95 % of US cases. Fathers are
+co-resident in 60-75 % of cases, with substantial variation by race /
+ethnicity. NHIS therefore captures
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">mother</mtext></msub><annotation encoding="application/x-tex">K_{\text{mother}}</annotation></semantics></math>
+accurately but understates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father</mtext></msub><annotation encoding="application/x-tex">K_{\text{father}}</annotation></semantics></math>.</p>
+<h3 id="a.1-pooled-k-by-sex">A.1 Pooled
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+by sex</h3>
+<p><strong>Table A1.</strong> Pooled NHIS-LMF
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+by sex of respondent (parents only, all years, all races).</p>
+<table>
+<thead>
+<tr>
+<th>Sex</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">alive</mtext></msub><annotation encoding="application/x-tex">K_{\text{alive}}</annotation></semantics></math></th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">died</mtext></msub><annotation encoding="application/x-tex">K_{\text{died}}</annotation></semantics></math></th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mother</td>
+<td style="text-align: right;">1.871</td>
+<td style="text-align: right;">1.761</td>
+<td style="text-align: right;">0.941</td>
+</tr>
+<tr>
+<td>Father</td>
+<td style="text-align: right;">1.874</td>
+<td style="text-align: right;">1.766</td>
+<td style="text-align: right;">0.943</td>
+</tr>
+</tbody>
+</table>
+<p>The identical-K finding is a selection result, not a
+biological-fertility result. We are conditioning on fathers who had
+minor children at the survey address.</p>
+<h3 id="a.2-k-by-sex-race-household-structure">A.2
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+by sex × race × household structure</h3>
+<p><strong>Table A2.</strong> Selected rows from the sex × race ×
+household-structure table (full table in
+<code>results/py/appendix_household_structure_K.csv</code>).</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Sex</th>
+<th>Race / eth</th>
+<th>HH struct</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">alive</mtext></msub><annotation encoding="application/x-tex">K_{\text{alive}}</annotation></semantics></math></th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">died</mtext></msub><annotation encoding="application/x-tex">K_{\text{died}}</annotation></semantics></math></th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mtext mathvariant="normal">alive</mtext></msub><annotation encoding="application/x-tex">n_{\text{alive}}</annotation></semantics></math></th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mtext mathvariant="normal">died</mtext></msub><annotation encoding="application/x-tex">n_{\text{died}}</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td>NH White</td>
+<td>coupled</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">1.77</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">32,649</td>
+<td style="text-align: right;">620</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH White</td>
+<td>sole adult</td>
+<td style="text-align: right;">1.67</td>
+<td style="text-align: right;">1.53</td>
+<td style="text-align: right;">0.92</td>
+<td style="text-align: right;">11,699</td>
+<td style="text-align: right;">390</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH Black</td>
+<td>coupled</td>
+<td style="text-align: right;">2.03</td>
+<td style="text-align: right;">1.91</td>
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">3,728</td>
+<td style="text-align: right;">101</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH Black</td>
+<td>sole adult</td>
+<td style="text-align: right;">1.95</td>
+<td style="text-align: right;">1.85</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">9,572</td>
+<td style="text-align: right;">381</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH AIAN</td>
+<td>coupled</td>
+<td style="text-align: right;">1.96</td>
+<td style="text-align: right;">1.84</td>
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">5,996</td>
+<td style="text-align: right;">311</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH AIAN</td>
+<td>sole adult</td>
+<td style="text-align: right;">1.80</td>
+<td style="text-align: right;">1.66</td>
+<td style="text-align: right;">0.92</td>
+<td style="text-align: right;">3,276</td>
+<td style="text-align: right;">281</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH White</td>
+<td>coupled</td>
+<td style="text-align: right;">1.96</td>
+<td style="text-align: right;">1.75</td>
+<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">27,347</td>
+<td style="text-align: right;">999</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH White</td>
+<td>sole adult</td>
+<td style="text-align: right;">1.53</td>
+<td style="text-align: right;">1.42</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">2,655</td>
+<td style="text-align: right;">165</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH Black</td>
+<td>coupled</td>
+<td style="text-align: right;">2.03</td>
+<td style="text-align: right;">2.03</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3,585</td>
+<td style="text-align: right;">212</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH Black</td>
+<td>sole adult</td>
+<td style="text-align: right;">1.50</td>
+<td style="text-align: right;">1.40</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">744</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH AIAN</td>
+<td>coupled</td>
+<td style="text-align: right;">1.96</td>
+<td style="text-align: right;">1.85</td>
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">4,927</td>
+<td style="text-align: right;">517</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH AIAN</td>
+<td>sole adult</td>
+<td style="text-align: right;">1.52</td>
+<td style="text-align: right;">1.58</td>
+<td style="text-align: right;">1.04</td>
+<td style="text-align: right;">389</td>
+<td style="text-align: right;">92</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a.3-mortality-rate-by-household-structure">A.3 Mortality rate by
+household structure</h3>
+<p><strong>Table A3.</strong> Pooled NHIS-LMF mortality rate by sex ×
+race × household structure. Not age-standardized.</p>
+<table>
+<thead>
+<tr>
+<th>Sex</th>
+<th>Race / eth</th>
+<th style="text-align: right;">Coupled</th>
+<th style="text-align: right;">Sole adult</th>
+<th style="text-align: right;">Ratio (sole / coupled)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td>NH White</td>
+<td style="text-align: right;">1.81 %</td>
+<td style="text-align: right;">3.03 %</td>
+<td style="text-align: right;">1.67</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH Black</td>
+<td style="text-align: right;">2.21 %</td>
+<td style="text-align: right;">3.28 %</td>
+<td style="text-align: right;">1.48</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Hispanic</td>
+<td style="text-align: right;">1.39 %</td>
+<td style="text-align: right;">2.18 %</td>
+<td style="text-align: right;">1.57</td>
+</tr>
+<tr>
+<td>F</td>
+<td>NH AIAN</td>
+<td style="text-align: right;">4.86 %</td>
+<td style="text-align: right;">7.52 %</td>
+<td style="text-align: right;">1.55</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH White</td>
+<td style="text-align: right;">3.36 %</td>
+<td style="text-align: right;">5.63 %</td>
+<td style="text-align: right;">1.67</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH Black</td>
+<td style="text-align: right;">4.71 %</td>
+<td style="text-align: right;">6.27 %</td>
+<td style="text-align: right;">1.33</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Hispanic</td>
+<td style="text-align: right;">2.99 %</td>
+<td style="text-align: right;">4.08 %</td>
+<td style="text-align: right;">1.36</td>
+</tr>
+<tr>
+<td>M</td>
+<td>NH AIAN</td>
+<td style="text-align: right;">8.99 %</td>
+<td style="text-align: right;">17.10 %</td>
+<td style="text-align: right;">1.90</td>
+</tr>
+</tbody>
+</table>
+<p>Single-adult parents have 1.3 to 1.9× the mortality of coupled
+parents in every race × sex cell. This is the structural engine behind
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\kappa &lt; 1</annotation></semantics></math>
+in most NHIS cells.</p>
+<h3 id="a.4-back-of-envelope-non-resident-father-adjustment">A.4
+Back-of-envelope non-resident-father adjustment</h3>
+<p><strong>Table A4.</strong> Adjusted
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father, died</mtext></msub><annotation encoding="application/x-tex">K_{\text{father, died}}</annotation></semantics></math>
+using ACS-based non-resident-father rates and a one-minor-each
+assumption.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr>
+<th>Race / eth</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father, died</mtext></msub><annotation encoding="application/x-tex">K_{\text{father, died}}</annotation></semantics></math>
+(NHIS)</th>
+<th style="text-align: right;">Non-resident rate</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father, died</mtext></msub><annotation encoding="application/x-tex">K_{\text{father, died}}</annotation></semantics></math>
+(adjusted)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NH White</td>
+<td style="text-align: right;">1.703</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">2.003</td>
+</tr>
+<tr>
+<td>NH Black</td>
+<td style="text-align: right;">1.888</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">2.438</td>
+</tr>
+<tr>
+<td>Hispanic</td>
+<td style="text-align: right;">2.093</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">2.443</td>
+</tr>
+<tr>
+<td>NH Asian / PI</td>
+<td style="text-align: right;">1.747</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">1.897</td>
+</tr>
+<tr>
+<td>NH AIAN</td>
+<td style="text-align: right;">1.806</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">2.306</td>
+</tr>
+</tbody>
+</table>
+<p>A 15-30 % upward adjustment to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mtext mathvariant="normal">father, died</mtext></msub><annotation encoding="application/x-tex">K_{\text{father, died}}</annotation></semantics></math>
+translates to an 8-25 % upward adjustment to the male-decedent
+contribution to orphanhood. For the all-cause Villaveces 2021 headline
+this roughly offsets the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+downward correction, placing the true count between 2.17 M (custodial)
+and 2.4-2.5 M (biological). For the cause-specific Schlüter 1999-2020
+cumulative, the biological-orphanhood number lands around 800-900 K,
+still well below the published 1.19 M.</p>
+<hr />
+<h2 id="references">References</h2>
+<p>Alburez-Gutierrez, D., Acosta, E., Zagheni, E., &amp; Williams, N. E.
+(2024). The long-lasting effect of armed conflicts deaths on the living:
+quantifying family bereavement. <em>Science Advances</em>, 10(30),
+eado6951.</p>
+<p>Caswell, H. (2019). The formal demography of kinship: a matrix
+formulation. <em>Demographic Research</em>, 41, 679-712.</p>
+<p>Caswell, H. (2020). The formal demography of kinship II: multi-state
+models, parity, and sibship. <em>Demographic Research</em>, 42,
+1097-1146.</p>
+<p>Caswell, H., &amp; Song, X. (2021). The formal demography of kinship
+III: kinship dynamics with time-varying demographic rates.
+<em>Demographic Research</em>, 45, 517-546.</p>
+<p>Fletcher, J. M. (2026a). Literature review: fertility heterogeneity
+in orphanhood and kinship-bereavement models. NHIS Mortality project
+working document.</p>
+<p>Guida, F., Kidman, R., Ferlay, J., et al. (2022). Global and regional
+estimates of orphans attributed to maternal cancer mortality in 2020.
+<em>Nature Medicine</em>, 28, 2563-2572.</p>
+<p>Hillis, S. D., Blenkinsop, A., Villaveces, A., et al. (2021).
+COVID-19-associated orphanhood and caregiver death in the United States.
+<em>Pediatrics</em>, 148(6), e2021053760.</p>
+<p>Hillis, S., N’konzi, J.-P. N., Msemburi, W., et al. (2022).
+Orphanhood and caregiver loss among children based on new global excess
+COVID-19 death estimates. <em>JAMA Pediatrics</em>, 176(11),
+1145-1148.</p>
+<p>Jones, C. M., Zhang, K., Han, B., et al. (2024). Estimated number of
+children who lost a parent to drug overdose in the US from 2011 to 2021.
+<em>JAMA Psychiatry</em>, 81(8), 789-796.</p>
+<p>National Center for Health Statistics. (2026). 2022 NHIS Linked
+Mortality File: Methodology and Analytic Considerations. Hyattsville,
+MD: NCHS.</p>
+<p>Potter, A. L., Schlüter, B.-S., Alexander, M. J., Yang, C.-F. J.,
+&amp; Kiang, M. V. (2025). Youths experiencing parental death due to
+cancer. <em>JAMA Network Open</em>, 8(7), e2519106.</p>
+<p>Schlüter, B.-S., Alburez-Gutierrez, D., Bibbins-Domingo, K.,
+Alexander, M. J., &amp; Kiang, M. V. (2024). Youth experiencing parental
+death due to drug poisoning and firearm violence in the US, 1999-2020.
+<em>JAMA</em>, 331(20), 1741-1747.</p>
+<p>Smith-Greenaway, E., Verdery, A. M., &amp; Carr, D. (2025). The new
+sociology of bereavement. <em>Annual Review of Sociology</em>, 51,
+357-375.</p>
+<p>Stover, J., Brown, T., Puckett, R., et al. The AIDS Impact Model
+(AIM) Manual (Spectrum software). Avenir Health / UNAIDS, 2024.</p>
+<p>Verdery, A. M., Ryan-Claytor, C., Smith-Greenaway, E., Sarkar, N.,
+&amp; Livings, M. (2024). More than 1.4 million US children have lost a
+family member to drug overdose. <em>American Journal of Public
+Health</em>, 114(12), 1394-1397.</p>
+<p>Villaveces, A., Wang, D., Massetti, G., et al. (2025). Orphanhood and
+caregiver death among children in the United States by all-cause
+mortality, 2000-2021. <em>Nature Medicine</em>, 31, 672-683.</p>
+<p>Williams, I., Sánchez Pérez, J., &amp; Alburez-Gutiérrez, D. (2023).
+DemoKin: an R package for the formal demography of kinship. <em>R
+package</em>.</p>
+</body>
+</html>

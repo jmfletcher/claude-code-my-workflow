@@ -37,13 +37,17 @@ TITLE="$(head -1 "$INPUT" | sed 's/^# *//' | sed 's/ *$//')"
 
 echo "[render_report_pdf] $INPUT -> $OUTPUT"
 
+INPUT_DIR="$(cd "$(dirname "$INPUT")" && pwd)"
+
 pandoc "$INPUT" \
-  --from gfm+pipe_tables+smart \
+  --from markdown+pipe_tables+smart+tex_math_dollars+tex_math_single_backslash \
   --to html5 \
   --standalone \
   --metadata title="$TITLE" \
   --css "$CSS" \
+  --mathml \
   --embed-resources \
+  --resource-path="$INPUT_DIR:$PROJECT_ROOT" \
   -o "$HTML_TMP"
 
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
