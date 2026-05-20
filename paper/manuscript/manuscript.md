@@ -1,8 +1,8 @@
 # Calibrating US Orphanhood Estimates with Decedent-Level Co-Resident Children: Evidence from the NHIS Linked Mortality File, 1986-2018
 
-**Author:** Jason M. Fletcher [affiliation TK]
-**Date:** May 2026
-**Keywords:** orphanhood; bereavement demography; matrix kinship; National Health Interview Survey; National Death Index; cause of death; non-resident parents; deaths of despair
+Author: Jason M. Fletcher [affiliation TK]
+Date: May 2026
+Keywords: orphanhood; bereavement demography; matrix kinship; National Health Interview Survey; National Death Index; cause of death; non-resident parents; deaths of despair
 
 ---
 
@@ -10,7 +10,7 @@
 
 When the bereavement-demography field reports 1.19 million US children orphaned by drug overdose and firearm violence over 1999-2020 (Schlüter et al., 2024), the number is a calculation, not a count. The calculation multiplies parental death counts by the dependent-child schedule of *average same-cell adults* -- adults who did not die -- on the assumption that decedents have the same family configuration as survivors of the same age, sex, race / ethnicity, and year. The assumption is treated as a parametric sensitivity. It has never been measured.
 
-Using the NHIS Linked Mortality File 1986-2018, we measure it. Within the demographic cells the published literature uses, the cumulative count of US children of drug-overdose and firearm parental decedents 1999-2020 is **691,000** under our preferred specification -- **42 % below the published 1.19 million**. The correction is robust across four NHIS calibration paths and survives a transparent back-of-envelope augmentation for non-resident fathers. For the Villaveces et al. (2025) all-cause 2021 prevalent estimate, the pooled US correction is small (-3 %) -- but race-stratified corrections range from **-20 % for non-Hispanic Asian / Pacific Islander children** to **+26 % for non-Hispanic American Indian or Alaska Native children**, with **-14 %** for non-Hispanic White, **-6 %** for non-Hispanic Black, and **-1 %** for Hispanic children. The pooled headline is approximately right by accident; the cell-level structure is systematically wrong.
+Using the NHIS Linked Mortality File 1986-2018, we measure it. Within the demographic cells the published literature uses, the cumulative count of US children of drug-overdose and firearm parental decedents 1999-2020 is 691,000 under our preferred specification, 42 % below the published 1.19 million. The correction is robust across four NHIS calibration paths and survives a transparent back-of-envelope augmentation for non-resident fathers. For the Villaveces et al. (2025) all-cause 2021 prevalent estimate, the pooled US correction is small (-3 %) but race-stratified corrections range from -20 % for non-Hispanic Asian / Pacific Islander children to +26 % for non-Hispanic American Indian or Alaska Native children, with -14 % for non-Hispanic White, -6 % for non-Hispanic Black, and -1 % for Hispanic children. The pooled headline is approximately right by accident; the cell-level structure is systematically wrong.
 
 A more subtle point. The calibration effect is structurally driven by *household composition* on the day of death, not by within-cell biological-fertility heterogeneity. Single-adult parents face 1.3-1.9× the mortality of coupled parents in every race × sex cell in NHIS-LMF and have lower co-resident-child counts at the survey address; decedents are over-represented in single-parent households, and that is what drives $\kappa < 1$ in most cells. The published estimates therefore answer a *custodial-orphanhood* question with *biological-orphanhood* inputs. These are different concepts. We argue the field should report two numbers per paper -- and label them.
 
@@ -20,7 +20,7 @@ A more subtle point. The calibration effect is structurally driven by *household
 
 The US bereavement-demography literature has matured rapidly since 2021. Villaveces et al. (2025) report 2.91 million US children with a deceased parent or caregiver-grandparent in 2021. Schlüter et al. (2024) report 1.19 million cumulative children of drug-overdose or firearm parental decedents over 1999-2020. Potter et al. (2025), Verdery et al. (2024), Hillis et al. (2021, 2022), and the *Annual Review of Sociology* essay of Smith-Greenaway, Verdery, & Carr (2025) round out a field that has grown from a handful of papers to a body of work in five years.
 
-These estimates share a modeling architecture and an assumption. The architecture is the matrix-kinship recurrence of Caswell (2019, 2020) and Caswell and Song (2021), operationalized for applied research in the `DemoKin` R package (Williams, Sánchez Pérez, & Alburez-Gutiérrez, 2023). The assumption is that within demographic cells defined by parent age, sex, race / ethnicity, year, and sometimes geography, **adults who die during the modeling horizon have the same dependent-child count as adults who survive.** This is the natural assumption to make when the modeler does not have data on the actual children of the actual decedents. It is also a load-bearing assumption: if decedents have systematically fewer (or more) dependent children than same-cell survivors, the demographic-rate orphanhood total is biased correspondingly.
+These estimates share a modeling architecture and an assumption. The architecture is the matrix-kinship recurrence of Caswell (2019, 2020) and Caswell and Song (2021), operationalized for applied research in the `DemoKin` R package (Williams, Sánchez Pérez, & Alburez-Gutiérrez, 2023). The assumption is that within demographic cells defined by parent age, sex, race / ethnicity, year, and sometimes geography, adults who die during the modeling horizon have the same dependent-child count as adults who survive. This is the natural assumption to make when the modeler does not have data on the actual children of the actual decedents. It is also a load-bearing assumption: if decedents have systematically fewer (or more) dependent children than same-cell survivors, the demographic-rate orphanhood total is biased correspondingly.
 
 Authors flag the assumption. Villaveces et al. dampen female fertility in the year before a maternal death and report that 2021 prevalent orphanhood moves by up to 15 %. Schlüter et al. multiply decedent fertility by 1 ± 0.25 and report that substantive conclusions are robust. These are parametric exercises. They are not measurements.
 
@@ -28,13 +28,11 @@ The published US literature has had nothing analogous to the UNAIDS Spectrum fra
 
 This paper supplies the missing input. The NHIS Linked Mortality File (NHIS-LMF) is an NCHS data product that links US National Health Interview Survey respondents from sample years 1986-2018 to the National Death Index. For each adult respondent, NHIS-LMF records co-resident minor children at the time of interview and the linked indicator of death during NDI follow-up. Within each demographic cell $c = (\text{sex}, \text{race / eth}, \text{age band}, \text{decade})$ we can therefore compare the weighted-mean co-resident-minor count for adults who died during follow-up to adults who survived. Their ratio, call it $\kappa_c$, is the calibration parameter the published literature fixes at 1.0 and perturbs in robustness checks.
 
-Three findings, in order of substantive importance.
+The paper has three findings, in order of substantive importance. The first is that the published Schlüter cumulative is approximately 40 % too high. Cumulative US children of drug-overdose and firearm parental decedents 1999-2020 number 691,000 under our preferred specification using the detailed `MORTUCOD` underlying-cause recode, 716,000 using the coarser `MORTUCODLD` leading-cause field, and 809,000 using all-cause $\kappa$. The published Schlüter total is 1.19 million. The downward correction is uniform across NHIS calibration paths and across NCHS cause-of-death definitions.
 
-First, **the published Schlüter cumulative is approximately 40 % too high.** Cumulative US children of drug-overdose and firearm parental decedents 1999-2020 number 691,000 under our preferred specification using the detailed `MORTUCOD` underlying-cause recode; 716,000 using the coarser `MORTUCODLD` leading-cause field; 809,000 using all-cause $\kappa$. The published Schlüter total is 1.19 million. The downward correction is uniform across NHIS calibration paths and across NCHS cause-of-death definitions.
+The second is that the all-cause 2021 prevalence is approximately right at the national level but biased in opposite directions by race / ethnicity. $\Delta \%$ vs the equal-fertility baseline ranges from -20 % for NH Asian / PI children to +26 % for NH AIAN children, with intermediate corrections of -14 % (NH White), -6 % (NH Black), and -1 % (Hispanic). The pooled "All" correction is -3 %. It masks about 50 percentage points of cell-level dispersion.
 
-Second, **the all-cause 2021 prevalence is approximately right at the national level but biased in opposite directions by race / ethnicity.** $\Delta \%$ vs the equal-fertility baseline ranges from **-20 % for NH Asian / PI children** to **+26 % for NH AIAN children**, with intermediate corrections of -14 % (NH White), -6 % (NH Black), and -1 % (Hispanic). The pooled "All" correction is -3 %. It masks about 50 percentage points of cell-level dispersion.
-
-Third, **the calibration parameter measures household-composition selection on mortality, not biological-fertility heterogeneity.** Single-adult parents face 1.3-1.9× the mortality of coupled parents in every race × sex cell in NHIS-LMF and have lower mean co-resident-child counts at the survey address. Decedents are over-represented in single-parent households, and that is what drives $\kappa < 1$ in most cells. The published estimates measure *biological* orphanhood; our $\kappa$-calibrated estimates measure *custodial* orphanhood. These are different policy concepts and the field should report both.
+The third is that the calibration parameter measures household-composition selection on mortality, not biological-fertility heterogeneity. Single-adult parents face 1.3-1.9× the mortality of coupled parents in every race × sex cell in NHIS-LMF and have lower mean co-resident-child counts at the survey address. Decedents are over-represented in single-parent households, and that is what drives $\kappa < 1$ in most cells. The published estimates measure *biological* orphanhood; our $\kappa$-calibrated estimates measure *custodial* orphanhood. These are different policy concepts and the field should report both.
 
 Section 2 reviews the published literature and locates our contribution. Section 3 describes the data. Section 4 lays out the matrix-kinship engine, the $\kappa$ estimator, and the cause-specific extension; technical details are deferred to a Supplementary Methods Appendix. Section 5 reports the all-cause and cause-specific results with bootstrap confidence intervals. Section 6 discusses two implications: $\kappa$ measures household structure (not biological fertility), and custodial versus biological orphanhood are different quantities. Section 7 concludes with a research agenda anchored on a state-level vital-records linkage pilot.
 
@@ -52,7 +50,7 @@ The architecture is parsimonious. It requires only aggregated input schedules: a
 
 We grouped the major US bereavement papers (Fletcher, 2026a) by whether their core method allows within-cell fertility heterogeneity (Table N1).
 
-**Table N1.** Treatment of within-cell fertility heterogeneity in major US bereavement papers.
+Table N1. Treatment of within-cell fertility heterogeneity in major US bereavement papers.
 
 | Paper | Population | Allows within-cell heterogeneity? |
 |---|---|---|
@@ -67,19 +65,15 @@ We grouped the major US bereavement papers (Fletcher, 2026a) by whether their co
 | Guida et al. (2022) | Global maternal cancer | Partial (site-specific parity) |
 | Stover et al. (2014, Spectrum) | UNAIDS HIV/AIDS | Yes (HIV stage, ART status) |
 
-The exceptions cluster. They appear when (a) the cause of death has a documented epidemiological link to fertility (HIV, cervical cancer), or (b) a risk-proximate survey approximates decedent characteristics (NSDUH past-year drug users). They do not appear for the US all-cause case or for non-overdose causes. Until now nothing analogous to UNAIDS Spectrum has existed for the US literature.
+The exceptions cluster. They appear when the cause of death has a documented epidemiological link to fertility (HIV, cervical cancer) or when a risk-proximate survey approximates decedent characteristics (NSDUH past-year drug users). They do not appear for the US all-cause case or for non-overdose causes. Until now nothing analogous to UNAIDS Spectrum has existed for the US literature.
 
 ### 2.3 What the published sensitivities do not test
 
-Both Villaveces and Schlüter perturb their fertility input parametrically and report that the substantive conclusion is robust. The framing is reassuring; the construction is less so. The published sensitivities do not assess:
-
-- Whether the parametric form is right. If the true $\kappa$ varies by race / ethnicity and the parametric sensitivity is applied uniformly, the sensitivity passes for the pooled headline and tells us nothing about the race-stratified one.
-- Whether the bound is wide enough. A ±25 % bound is a guess at the magnitude, not a measurement.
-- Whether the bias is correlated with cause of death. The same proportional dampening is applied to motor-vehicle-accident decedents and opioid-overdose decedents, even though their epidemiological profiles differ.
+Both Villaveces and Schlüter perturb their fertility input parametrically and report that the substantive conclusion is robust. The framing is reassuring; the construction is less so. The published sensitivities do not assess whether the parametric form is right -- if the true $\kappa$ varies by race / ethnicity and the parametric sensitivity is applied uniformly, the sensitivity passes for the pooled headline and tells us nothing about the race-stratified one. They do not assess whether the ±25 % bound is wide enough, since the bound is a guess at the magnitude rather than a measurement of it. And they do not assess whether the bias is correlated with cause of death, since the same proportional dampening is applied to motor-vehicle-accident decedents and opioid-overdose decedents even though their epidemiological profiles differ.
 
 ### 2.4 What we add
 
-Three contributions. First, the first US empirical estimate of the within-cell decedent-versus-survivor ratio that drives the demographic-rate orphanhood architecture, for the same demographic cells the published literature uses. Second, an embedding of $\kappa$ inside a Python re-implementation of `DemoKin`'s `kin_time_variant_2sex` recurrence, applied to two published US targets (Villaveces 2025 all-cause and Schlüter 2024 cause-specific). Third, a structural diagnostic showing that the calibration parameter measures *household-composition selection on mortality*, not biological-fertility heterogeneity, with implications for the choice between custodial and biological orphanhood as policy targets.
+The paper makes three contributions. The first is the first US empirical estimate of the within-cell decedent-versus-survivor ratio that drives the demographic-rate orphanhood architecture, for the same demographic cells the published literature uses. The second is an embedding of $\kappa$ inside a Python re-implementation of `DemoKin`'s `kin_time_variant_2sex` recurrence, applied to two published US targets (Villaveces 2025 all-cause and Schlüter 2024 cause-specific). The third is a structural diagnostic showing that the calibration parameter measures household-composition selection on mortality, not biological-fertility heterogeneity, with implications for the choice between custodial and biological orphanhood as policy targets.
 
 Our approach differs from Jones et al. (2024) in two ways. We use decedents directly observed in NHIS-LMF, not a risk-proximate survey of substance users. And we estimate $\kappa$ for all-cause mortality and for the Schlüter cause-specific target, not only overdose. The methodological scope is correspondingly broader.
 
@@ -93,15 +87,11 @@ The NHIS-LMF is built by NCHS by probabilistic linkage of National Health Interv
 
 Our analytic sample restricts to adults aged 18+ with valid mortality linkage eligibility (`mortelig == 1`). The dependent variable is `n_fam_childminor017` from IPUMS NHIS: a count of co-resident minor children (age 0-17) in the respondent's family unit at NHIS interview, top-coded at 8. Because `n_fam_childminor017` is family-level rather than respondent-level, we collapse to the family-unit (`fmx`) level before computing the weighted mean. The resulting $\bar{n}_k$ for parents only is 1.87 (alive) and 1.76 (died), figures consistent with published US estimates for children-per-parent.
 
-Sample sizes are large for the all-cause analysis and tighter for the cause-specific cells. There are 1.25 million person-records across 1986-2018 with eligible linkage and either `mortstat == 1` (died) or `mortstat == 2` (alive at follow-up cutoff). Restricting to adult parents (age ≥ 18 with at least one co-resident minor) yields **193,245 parent-respondents, of whom 7,437 died during follow-up.** Cause-specific subsamples: 697 drug-overdose decedents and 1,566 firearm decedents under the `MORTUCOD` definitions in §3.5.
+Sample sizes are large for the all-cause analysis and tighter for the cause-specific cells. There are 1.25 million person-records across 1986-2018 with eligible linkage and either `mortstat == 1` (died) or `mortstat == 2` (alive at follow-up cutoff). Restricting to adult parents (age ≥ 18 with at least one co-resident minor) yields 193,245 parent-respondents, of whom 7,437 died during follow-up. Cause-specific subsamples are smaller: 697 drug-overdose decedents and 1,566 firearm decedents under the `MORTUCOD` definitions in §3.5.
 
 ### 3.2 NCHS multiple-cause-of-death
 
-We use the Villaveces et al. (2025) Zenodo replication package (DOI: 10.5281/zenodo.11423744) for NCHS deaths tidied to 5-year age × sex × race / ethnicity × year. For the Schlüter target we supplement the package with ICD-10 single-cause stratification:
-
-- **Drug overdose (broad / Schlüter-aligned):** X40-X44, X60-X64, X85, Y10-Y14.
-- **Drug overdose (narrow / NHIS-comparable):** X40-X49 only (matches NHIS code 122 = accidental poisoning).
-- **Firearm:** W32-W34, X72-X74, X93-X95, Y22-Y24.
+We use the Villaveces et al. (2025) Zenodo replication package (DOI: 10.5281/zenodo.11423744) for NCHS deaths tidied to 5-year age × sex × race / ethnicity × year. For the Schlüter target we supplement the package with three ICD-10 single-cause stratifications. A broad, Schlüter-aligned drug-overdose definition covers X40-X44, X60-X64, X85, and Y10-Y14. A narrow, NHIS-comparable drug-overdose definition uses X40-X49 only, which matches NHIS code 122 (accidental poisoning). The firearm definition covers W32-W34, X72-X74, X93-X95, and Y22-Y24.
 
 ### 3.3 CDC WONDER population
 
@@ -109,7 +99,7 @@ CDC WONDER bridged-race single-year-of-age population estimates 1990-2021. We ba
 
 ### 3.4 ACS S1002 grandparent caregivers
 
-For the parental + grandparent-caregiver combined total comparable to Villaveces's 2.91 M headline, we add a flow-stock accounting layer using ACS Table S1002 ("grandparents responsible for grandchildren") for 2010, 2015, 2019, and 2021. Adult mortality among ages 50-79 comes from CDC WONDER. The grandparent layer is *not* NHIS-calibrated because NHIS has no grandchild head-count variable for adults outside the family unit.
+For the parental + grandparent-caregiver combined total comparable to Villaveces's 2.91 M headline, we add a flow-stock accounting layer using ACS Table S1002 ("grandparents responsible for grandchildren") for 2010, 2015, 2019, and 2021. Adult mortality among ages 50-79 comes from CDC WONDER. The grandparent layer is not NHIS-calibrated because NHIS has no grandchild head-count variable for adults outside the family unit.
 
 ### 3.5 NHIS-LMF cause-of-death coding
 
@@ -117,12 +107,7 @@ NHIS-LMF carries two cause fields. `MORTUCODLD` is a 10-category leading-cause r
 
 ### 3.6 Notation
 
-Throughout the paper:
-
-- $\bar{n}_{k,c}^{\text{alive}}$, $\bar{n}_{k,c}^{\text{died}}$: weighted mean co-resident minor count for adults in cell $c$ who survived or died during NDI follow-up.
-- $\kappa_c \equiv \bar{n}_{k,c}^{\text{died}} / \bar{n}_{k,c}^{\text{alive}}$: the calibration ratio.
-- $D_c(t)$: NCHS deaths in cell $c$ at year $t$.
-- $\pi_{s,t}[a]$: parent-age distribution for sex $s$, focal birth year $t$, parent age $a$.
+Throughout the paper, $\bar{n}_{k,c}^{\text{alive}}$ and $\bar{n}_{k,c}^{\text{died}}$ denote the weighted mean co-resident minor counts for adults in cell $c$ who survived or died during NDI follow-up; $\kappa_c \equiv \bar{n}_{k,c}^{\text{died}} / \bar{n}_{k,c}^{\text{alive}}$ is the calibration ratio; $D_c(t)$ is NCHS deaths in cell $c$ at year $t$; and $\pi_{s,t}[a]$ is the parent-age distribution for sex $s$, focal birth year $t$, and parent age $a$.
 
 ---
 
@@ -144,9 +129,7 @@ $$
 
 where $w_i$ is the NCHS-recommended mortality weight `mortwtsa` and $\text{nk}_i^{\text{u18}}$ is the count of co-resident minor children. Age bands are 18-29, 30-39, 40-49, 50-59, 60-69, 70+; decades are 1 (1986-89), 2 (1990-99), 3 (2000-09), 4 (2010-18); race / ethnicity is collapsed to five categories (Hispanic, NH White, NH Black, NH Asian or PI, NH AIAN + multiracial). The calibration ratio is $\kappa_c = \bar{n}_{k,c}^{\text{died}} / \bar{n}_{k,c}^{\text{alive}}$.
 
-**Cell smoothing.** All-cause cells with fewer than 25 weighted decedents are smoothed toward the (sex, race / eth, decade) pool across age bands; cells with fewer than 25 weighted survivors are smoothed analogously toward the (sex, race / eth, age band) pool across decades. Of the 240 all-cause cells, 47 require smoothing for $\bar{n}_{k}^{\text{died}}$ and 12 for $\bar{n}_{k}^{\text{alive}}$. Cause-specific cells are sparser: all 60 cells in the `MORTUCOD` drug subset and 28 of 60 cells in the firearm subset require smoothing. We report the headline under the documented smoothing rule and provide robustness to alternative thresholds (10, 50, no smoothing) in Supplementary Table S1.
-
-**Bootstrap CIs.** 200 bootstrap replicates resample NHIS primary sampling units within strata, with $\kappa$ recomputed and smoothing rules re-applied within each replicate.
+All-cause cells with fewer than 25 weighted decedents are smoothed toward the (sex, race / eth, decade) pool across age bands; cells with fewer than 25 weighted survivors are smoothed analogously toward the (sex, race / eth, age band) pool across decades. Of the 240 all-cause cells, 47 require smoothing for $\bar{n}_{k}^{\text{died}}$ and 12 for $\bar{n}_{k}^{\text{alive}}$. Cause-specific cells are sparser: all 60 cells in the `MORTUCOD` drug subset and 28 of 60 cells in the firearm subset require smoothing. We report the headline under the documented smoothing rule and provide robustness to alternative thresholds (10, 50, no smoothing) in Supplementary Table S1. Confidence intervals come from 200 bootstrap replicates that resample NHIS primary sampling units within strata, with $\kappa$ recomputed and smoothing rules re-applied within each replicate.
 
 ### 4.3 Applying $\kappa$ inside the matrix engine
 
@@ -160,34 +143,15 @@ where $\kappa_s(a-x, t-x)$ is the calibration ratio at parent-age-at-focal-birth
 
 ### 4.4 Cause-specific calibration for Schlüter (2024)
 
-We replace $\kappa_c$ with a cause-specific $\kappa^{\text{cause}}_c$ computed from NHIS-LMF decedents in the relevant cause bucket. Four specifications, listed in order of cause-specificity:
-
-1. **All-cause $\kappa$**: NHIS calibration applied to cause-specific NCHS denominators.
-2. **Intent-stratified ($\kappa$ from `MORTUCODLD`)**: NHIS leading-cause code 4 = "Accidents" or 10 = "Residual" applied to matching ICD-10 NCHS subset.
-3. **Cause-specific ($\kappa$ from `MORTUCOD`), NARROW**: NHIS code 122 = accidental poisoning matched to NCHS X40-X49.
-4. **Cause-specific ($\kappa$ from `MORTUCOD`), BROAD (preferred)**: NHIS code 122 + 126 + 129 mapped to NCHS X40-X44, X60-X64, X85, Y10-Y14 (drug); NHIS codes 119+125+128+132 mapped to NCHS W32-W34, X72-X74, X93-X95, Y22-Y24 (firearm).
-
-The BROAD specification matches the Schlüter (2024) target denominator and is the closest apples-to-apples comparison.
+We replace $\kappa_c$ with a cause-specific $\kappa^{\text{cause}}_c$ computed from NHIS-LMF decedents in the relevant cause bucket, and we report four specifications listed in order of cause-specificity. The first, "all-cause $\kappa$," applies the NHIS all-cause calibration to cause-specific NCHS denominators. The second, "intent-stratified $\kappa$ from `MORTUCODLD`," uses NHIS leading-cause code 4 ("Accidents") or 10 ("Residual") applied to the matching ICD-10 NCHS subset. The third, "cause-specific $\kappa$ from `MORTUCOD`, NARROW," uses NHIS code 122 (accidental poisoning) matched to NCHS X40-X49. The fourth -- our preferred specification -- is "cause-specific $\kappa$ from `MORTUCOD`, BROAD," which maps NHIS codes 122 + 126 + 129 to NCHS X40-X44, X60-X64, X85, and Y10-Y14 (drug) and NHIS codes 119+125+128+132 to NCHS W32-W34, X72-X74, X93-X95, and Y22-Y24 (firearm). The BROAD specification matches the Schlüter (2024) target denominator and is the closest apples-to-apples comparison.
 
 ### 4.5 Decomposition of the Schlüter gap
 
-The published 1.19 M minus our 691 K = 499 K gap can be decomposed:
-
-- **(i) Pipeline differences** (different male-fertility assumptions, age-band aggregation, denominator coverage): our pipeline run with $\kappa = 1$ versus the published Schlüter total.
-- **(ii) Within-cell calibration effect** (the $\kappa$ correction itself): difference between $\kappa = 1$ run and $\kappa$-calibrated run, holding pipeline fixed.
-- **(iii) Definitional gap** (custodial versus biological orphanhood): magnitude of the non-resident-father augmentation discussed in §6.2.
-
-Results in §5.3.
+The published 1.19 M minus our 691 K = 499 K gap can be decomposed into three components. Pipeline differences -- different male-fertility assumptions, age-band aggregation, denominator coverage -- show up as the gap between our pipeline run under $\kappa = 1$ and the published Schlüter total. The within-cell calibration effect, $\kappa$ itself, is the gap between the $\kappa = 1$ run and the $\kappa$-calibrated run with pipeline held fixed. The definitional gap between custodial and biological orphanhood is the magnitude of the non-resident-father augmentation discussed in §6.2. Results are in §5.3.
 
 ### 4.6 Household-structure stratification
 
-For the appendix analysis we classify each respondent's NHIS family unit (`fmx`) as:
-
-- **Coupled**: exactly 2 adults (age ≥ 18) in the family unit AND respondent is married (`marstat` in {10, 11, 12, 13}) or cohabiting (`cohabmarst` in {1, 3, 4}).
-- **Sole adult**: exactly 1 adult in the family unit.
-- **Multi-adult other**: 3+ adults, or 2 non-married non-cohabiting adults.
-
-We compute $\bar{n}_k^{\text{alive}}$, $\bar{n}_k^{\text{died}}$, and the mortality rate separately for each structure.
+For the appendix analysis we classify each respondent's NHIS family unit (`fmx`) into one of three structures. A coupled family unit has exactly two adults (age ≥ 18) and a respondent who is either married (`marstat` in {10, 11, 12, 13}) or cohabiting (`cohabmarst` in {1, 3, 4}). A sole-adult unit has exactly one adult. A multi-adult-other unit has either three or more adults, or two adults who are neither married nor cohabiting. We compute $\bar{n}_k^{\text{alive}}$, $\bar{n}_k^{\text{died}}$, and the mortality rate separately for each structure.
 
 ---
 
@@ -201,22 +165,22 @@ Our Python re-implementation of the time-varying two-sex matrix-kinship recurren
 
 Table 1 reports 2021 race-stratified prevalent orphanhood under baseline (equal-fertility) and NHIS-calibrated specifications.
 
-**Table 1.** US prevalent parental orphanhood, age 0-17, in 2021: baseline matrix-kinship vs NHIS-$\kappa$ calibrated.
+Table 1. US prevalent parental orphanhood, age 0-17, in 2021: baseline matrix-kinship vs NHIS-$\kappa$ calibrated.
 
 | Group | Baseline | Calibrated | $\Delta$ % | 95 % CI on $\Delta$ % |
 |---|---:|---:|---:|---|
-| Non-Hispanic White | 1,176,062 | 1,014,424 | **-13.7 %** | (-18.6 %, -8.0 %) |
-| Non-Hispanic Asian or Pacific Islander | 59,414 | 47,651 | **-19.8 %** | (-27.2 %, +10.7 %) |
+| Non-Hispanic White | 1,176,062 | 1,014,424 | -13.7 % | (-18.6 %, -8.0 %) |
+| Non-Hispanic Asian or Pacific Islander | 59,414 | 47,651 | -19.8 % | (-27.2 %, +10.7 %) |
 | Non-Hispanic Black | 456,694 | 429,032 | -6.1 % | (-12.9 %, +4.0 %) |
 | Hispanic | 368,360 | 365,202 | -0.9 % | (-7.4 %, +6.4 %) |
-| Non-Hispanic AIAN | 34,750 | 43,913 | **+26.4 %** | (-40.3 %, +90.0 %) |
+| Non-Hispanic AIAN | 34,750 | 43,913 | +26.4 % | (-40.3 %, +90.0 %) |
 | All | 2,240,912 | 2,165,354 | -3.4 % | (-17.2 %, +15.9 %) |
 
 *Notes:* Unit of observation: US child age 0-17. Baseline: matrix-kinship engine under $\kappa = 1$ (equal-fertility). Calibrated: same engine with $\kappa$ from NHIS-LMF cell-level estimates per §4.3. CIs from 200 PSU-clustered bootstrap replicates on the NHIS calibration component.
 
 The pooled "All" correction is -3.4 % and statistically indistinguishable from zero. The race-stratified pattern is large and signed-opposite. NH White (-14 %) and NH Asian / PI (-20 %) are statistically distinguishable from zero on the lower bound; NH AIAN (+26 %) is point-significant but with a wide CI given small NHIS-LMF sample sizes for that group; NH Black and Hispanic point estimates are near zero with wide CIs.
 
-**Figure 1.** Race-stratified NHIS-$\kappa$ correction to US prevalent parental orphanhood, 2000-2021.
+Figure 1. Race-stratified NHIS-$\kappa$ correction to US prevalent parental orphanhood, 2000-2021.
 
 ![Figure 1: race-stratified Δ % over 2000-2021](figures/figure2_race_stratified.png)
 
@@ -226,7 +190,7 @@ The time trajectory in Figure 1 reveals dynamics invisible in a single-year snap
 
 Figure 2 plots the annual cumulative trajectory under each calibration specification.
 
-**Figure 2.** Cumulative US children of drug-overdose and firearm parental decedents, 1999-2020, by calibration specification.
+Figure 2. Cumulative US children of drug-overdose and firearm parental decedents, 1999-2020, by calibration specification.
 
 ![Figure 2: cumulative Schlüter trajectory by specification](figures/figure1_schluter_cumulative.png)
 
@@ -234,18 +198,18 @@ All four NHIS-calibrated trajectories track each other closely from 1999-2010, t
 
 Table 2 reports the 2020 cumulative under each specification and decomposes the gap with Schlüter.
 
-**Table 2.** Cumulative US children of drug-overdose and firearm parental decedents, 1999-2020, by specification, with decomposition.
+Table 2. Cumulative US children of drug-overdose and firearm parental decedents, 1999-2020, by specification, with decomposition.
 
 | Specification | Drug | Firearm | Combined | $\Delta$ vs naive | $\Delta$ vs Schlüter |
 |---|---:|---:|---:|---:|---:|
-| Schlüter (2024) published | -- | -- | **1,190,000** | -- | -- |
+| Schlüter (2024) published | -- | -- | 1,190,000 | -- | -- |
 | Naive (our pipeline, $\kappa = 1$) | 656,562 | 413,040 | 1,069,602 | -- | -10.2 % |
 | NHIS K (all-cause $\kappa$) | 473,274 | 336,066 | 809,340 | -24.3 % | -32.0 % |
 | NHIS K (intent-stratified `MORTUCODLD`) | 429,866 | 286,062 | 715,928 | -33.0 % | -39.8 % |
-| **NHIS K (`MORTUCOD` BROAD, preferred)** | **416,502** | **274,892** | **691,394** | **-35.4 %** | **-41.9 %** |
+| NHIS K (`MORTUCOD` BROAD, preferred) | 416,502 | 274,892 | 691,394 | -35.4 % | -41.9 % |
 | NHIS K (`MORTUCOD` NARROW = NHIS-comparable) | 386,550 | 274,892 | 661,442 | -33.3 % | -- |
 
-*Notes:* The 1.19 M - 691 K = 499 K gap decomposes as: (i) **pipeline differences** (1.19 M Schlüter - 1.07 M our naive) = 120 K, ~24 % of the gap; (ii) **within-cell $\kappa$ correction** (1.07 M naive - 691 K calibrated) = 379 K, ~76 % of the gap; (iii) **custodial-vs-biological definition gap** (§6.2) = 100-200 K bound. The dominant component is the within-cell calibration effect.
+*Notes:* The 1.19 M - 691 K = 499 K gap decomposes as follows. Pipeline differences (1.19 M Schlüter - 1.07 M our naive) account for 120 K, roughly 24 % of the gap. The within-cell $\kappa$ correction (1.07 M naive - 691 K calibrated) accounts for 379 K, roughly 76 % of the gap. The custodial-vs-biological definitional gap (§6.2) bounds out at 100-200 K. The dominant component is the within-cell calibration effect.
 
 The four NHIS-calibrated specifications converge on a 25-35 % downward correction to the naive kids-per-living-adult baseline. Our preferred specification (`MORTUCOD` BROAD) is 42 % below the published Schlüter target and 35 % below our own naive baseline. The substantive conclusion -- that the published cumulative is materially too high -- is robust to specification choice.
 
@@ -253,7 +217,7 @@ The four NHIS-calibrated specifications converge on a 25-35 % downward correctio
 
 A more subtle point. Why is $\kappa < 1$ in most cells? Table 3 uses the household-structure stratification of §4.6 to document the mechanism.
 
-**Table 3.** Pooled NHIS-LMF mortality rate by sex × race / ethnicity × household structure. Not age-standardized.
+Table 3. Pooled NHIS-LMF mortality rate by sex × race / ethnicity × household structure. Not age-standardized.
 
 | Sex | Race / eth | Coupled | Sole adult | Ratio (sole / coupled) |
 |---|---|---:|---:|---:|
@@ -270,7 +234,7 @@ A more subtle point. Why is $\kappa < 1$ in most cells? Table 3 uses the househo
 
 In every cell, single-adult parents face 1.3-1.9× the mortality of coupled parents. They also have lower mean dependent-child counts at the survey address ($\bar{n}_k$ for sole-adult NH White women = 1.67 vs 1.97 for coupled). The combination produces $\bar{n}_k^{\text{died}} < \bar{n}_k^{\text{alive}}$ in the aggregate -- not because decedents have fewer biological children, but because decedents are over-represented in the household structure that has lower co-resident-minor counts.
 
-Within household structure, $\kappa$ is much closer to 1.0: $\kappa_{\text{coupled, NH White, F}} = 0.90$; $\kappa_{\text{sole-adult, NH White, F}} = 0.92$. The aggregate $\kappa < 1$ is composition-driven. The published demographic-rate model is missing not biological fertility heterogeneity but household-structure selection.
+Within household structure, $\kappa$ is much closer to 1.0: $\kappa_{\text{coupled, NH White, F}} = 0.90$ and $\kappa_{\text{sole-adult, NH White, F}} = 0.92$. The aggregate $\kappa < 1$ is composition-driven. The published demographic-rate model is missing not biological fertility heterogeneity but household-structure selection.
 
 ---
 
@@ -286,35 +250,25 @@ This is a general methodological lesson, not a US-specific one. Anywhere a demog
 
 ### 6.2 Custodial versus biological orphanhood is a definitional choice
 
-NHIS measures *co-resident* minor children at survey interview. The published natality-based approach counts every biological birth toward potential parental loss. The two definitions answer different questions:
-
-- **Custodial orphanhood**: lost a parent who lived with the child at the time of parental death. NHIS-derived $\kappa$ targets this concept directly.
-- **Biological orphanhood**: lost a biological parent, regardless of co-residence. Natality-based methods (Schlüter, Villaveces, Potter, Verdery) target this concept.
+NHIS measures *co-resident* minor children at survey interview; the published natality-based approach counts every biological birth toward potential parental loss. These two definitions answer different questions. *Custodial* orphanhood asks how many children have lost a parent who lived with them at the time of parental death, and NHIS-derived $\kappa$ targets this concept directly. *Biological* orphanhood asks how many children have lost a biological parent regardless of co-residence, and the natality-based methods of Schlüter, Villaveces, Potter, and Verdery target this concept.
 
 The asymmetry by parent sex is large. Mothers are co-resident with their minor children in approximately 80-95 % of US cases. Fathers are co-resident in 60-75 % of cases, with substantial variation by race / ethnicity (lower in NH Black, NH AIAN, and Hispanic groups) and by SES (American Community Survey, pooled 2010-2021; Current Population Survey, March supplements). NHIS therefore captures $\bar{n}_{k,\text{mother}}$ accurately and understates $\bar{n}_{k,\text{father}}$ systematically.
 
-The bidirectional definitional issue cuts both ways for the published literature:
+The bidirectional definitional issue cuts both ways for the published literature. The published estimates may be too low for the custodial concept, because they include biological-only relationships that do not capture day-to-day care loss. The NHIS-calibrated estimates may in turn be too low for the biological concept, because they omit non-resident fathers.
 
-- The published estimates may be too low for the *custodial* concept (because they include biological-only relationships that do not capture day-to-day care loss).
-- The NHIS-calibrated estimates may be too low for the *biological* concept (because they omit non-resident fathers).
+A back-of-envelope augmentation using ACS-based non-resident-father rates (30 % for NH White, 55 % for NH Black, 35 % for Hispanic, 15 % for NH Asian / PI, 50 % for NH AIAN) and a one-minor-child-each assumption raises $\bar{n}_{k,\text{father}}^{\text{died}}$ by 15-30 % (Appendix A.4). For the all-cause Villaveces 2021 target, this places the data-implied count between 2.17 M (custodial, NHIS-calibrated) and 2.4-2.5 M (biological, NHIS + non-resident-father). Villaveces's published parental-only number (2.91 M combined minus her 0.55 M caregiver-grandparent layer = 2.36 M parental-only) lands inside this range, consistent with the biological interpretation. For the Schlüter 1999-2020 cumulative, the same augmentation places the biological-orphanhood number around 800-900 K -- still well below the published 1.19 M.
 
-A back-of-envelope augmentation using ACS-based non-resident-father rates (30 % for NH White, 55 % for NH Black, 35 % for Hispanic, 15 % for NH Asian / PI, 50 % for NH AIAN) and a one-minor-child-each assumption raises $\bar{n}_{k,\text{father}}^{\text{died}}$ by 15-30 % (Appendix A.4). For the all-cause Villaveces 2021 target, this places the data-implied count between **2.17 M (custodial, NHIS-calibrated) and 2.4-2.5 M (biological, NHIS + non-resident-father)**. Villaveces's published parental-only number (2.91 M combined minus her 0.55 M caregiver-grandparent layer = 2.36 M parental-only) lands inside this range, consistent with the biological interpretation. For the Schlüter 1999-2020 cumulative, the same augmentation places the biological-orphanhood number around 800-900 K -- still well below the published 1.19 M.
-
-We caveat the back-of-envelope explicitly: ACS non-resident-father rates are not conditioned on the father's eventual mortality status; drug-overdose decedents may have substantially higher non-resident-father rates than the population average; the flat "one minor child" assumption is itself an equal-fertility imposition. The augmentation is a transparent upper-bound construction, not a robust counter-correction. A proper sensitivity would use NSDUH or CPS-SCF respondent-level data on non-resident-father status by mortality risk profile. We mark this as the most important next step in the research agenda (§7).
+We caveat the back-of-envelope explicitly. ACS non-resident-father rates are not conditioned on the father's eventual mortality status; drug-overdose decedents may have substantially higher non-resident-father rates than the population average; and the flat "one minor child" assumption is itself an equal-fertility imposition. The augmentation is a transparent upper-bound construction, not a robust counter-correction. A proper sensitivity would use NSDUH or CPS-SCF respondent-level data on non-resident-father status by mortality risk profile. We mark this as the most important next step in the research agenda (§7).
 
 ### 6.3 Which definition does the policy purpose require?
 
-The implications for US policy depend on the operational definition. Tradeoffs, not verdicts: each program key on a different concept and so will get a different answer to "how many US children lost a parent?"
+The implications for US policy depend on the operational definition. Tradeoffs, not verdicts: each program keys on a different concept and so will get a different answer to "how many US children lost a parent?"
 
-**SSI Survivor Benefits** require the surviving child to demonstrate financial dependency on the deceased parent. The relevant concept is custodial orphanhood. NHIS-calibrated number: **2.17 M in 2021 all-cause** + 0.47 M (our) caregiver-grandparent layer = 2.64 M combined.
+SSI Survivor Benefits require the surviving child to demonstrate financial dependency on the deceased parent, so the relevant concept is custodial orphanhood. The NHIS-calibrated number for 2021 all-cause is 2.17 M, plus our 0.47 M caregiver-grandparent layer for a combined total of 2.64 M. Title IV-E foster-care placements key on actual disruption to the child's living arrangement, and custodial orphanhood is again the relevant target. Grief-counseling allocations under federal education and Medicaid funding streams respond to the child's emotional exposure to parental death regardless of co-residence, so biological orphanhood is closer to the policy target -- 2.4-2.5 M nationally with the non-resident-father augmentation.
 
-**Title IV-E foster-care placements** key on actual disruption to the child's living arrangement. Custodial orphanhood is again the relevant target.
+Epidemiological surveillance of the deaths-of-despair episode -- the use case where the Schlüter 1.19 M figure has been most prominently cited (Case and Deaton, 2015, 2020) -- is the most ambiguous. For sizing surviving-parent support services, the conservative biological number is around 800-900 K cumulative drug + firearm 1999-2020. For assessing actual disruption to children's day-to-day caregiving, the custodial number of 691 K cumulative is more accurate. Both are 30-45 % below the published 1.19 M.
 
-**Grief-counseling allocations** under federal education and Medicaid funding streams respond to the child's emotional exposure to parental death regardless of co-residence. Biological orphanhood is closer to the policy target: **2.4-2.5 M nationally** with the non-resident-father augmentation.
-
-**Epidemiological surveillance of the deaths-of-despair episode** -- the use case where the Schlüter 1.19 M figure has been most prominently cited (Case and Deaton, 2015, 2020) -- the relevant target is debatable. For sizing surviving-parent support services: biological (~800-900 K cumulative drug + firearm 1999-2020). For assessing actual disruption to children's day-to-day caregiving: custodial (691 K cumulative). Both are 30-45 % below the published 1.19 M.
-
-The general principle: headline numbers without definitions are not headlines. We recommend the field publish both a custodial-orphanhood and a biological-orphanhood headline for each new estimation paper and label them explicitly.
+The general principle is that headline numbers without definitions are not headlines. We recommend the field publish both a custodial-orphanhood and a biological-orphanhood headline for each new estimation paper and label them explicitly.
 
 ### 6.4 Why doesn't the all-cause pooled correction look worse?
 
@@ -326,13 +280,7 @@ The headline national number is approximately right by accident. This does not r
 
 ### 6.5 Limitations
 
-Five limitations matter for interpretation.
-
-1. **NHIS-LMF measures co-resident, not biological, kids.** Discussed at length in §6.2.
-2. **$\kappa$ is estimated at decade × age band × race / ethnicity × sex resolution.** Annual variation within a decade is absorbed into the decade-level estimate. Figure 1 partially mitigates this concern by showing the cohort-induced annual variation that survives the decade-level smoothing.
-3. **Cause-specific $\kappa$ is estimated on NHIS sample years 1986-2004 only**, because the detailed `MORTUCOD` field is not published for later years. We apply the resulting $\kappa$ to NCHS 1999-2020 deaths under a constant-effects-over-time assumption and test stability by re-running with the coarser `MORTUCODLD` field (available all years); the headline shifts by less than 5 %.
-4. **The two-sex independence assumption** is retained from the standard matrix-kinship model. Joint mortality within couples is positively correlated; this slightly overstates the probability of at least one parent dying.
-5. **Bootstrap CIs cover the NHIS sampling component only.** They do not include sampling error in NCHS denominators or CDC WONDER population estimates, nor model uncertainty in the kinship recurrence. A total-error CI would be wider.
+Five limitations matter for interpretation. The first is the central definitional issue discussed at length in §6.2: NHIS-LMF measures co-resident, not biological, children. The second is that $\kappa$ is estimated at decade × age band × race / ethnicity × sex resolution, so annual variation within a decade is absorbed into the decade-level estimate; Figure 1 partially mitigates this concern by showing the cohort-induced annual variation that survives the decade-level smoothing. The third is that cause-specific $\kappa$ is estimated on NHIS sample years 1986-2004 only, because the detailed `MORTUCOD` field is not published for later years; we apply the resulting $\kappa$ to NCHS 1999-2020 deaths under a constant-effects-over-time assumption and test stability by re-running with the coarser `MORTUCODLD` field, which is available all years and shifts the headline by less than 5 %. The fourth is the two-sex independence assumption retained from the standard matrix-kinship model: joint mortality within couples is positively correlated, so the assumption slightly overstates the probability of at least one parent dying. The fifth is that the bootstrap CIs cover the NHIS sampling component only and do not include sampling error in NCHS denominators or CDC WONDER population estimates, nor model uncertainty in the kinship recurrence; a total-error CI would be wider.
 
 ---
 
@@ -340,11 +288,11 @@ Five limitations matter for interpretation.
 
 The US bereavement-demography literature has matured rapidly since 2021. The published estimates rest on an equal-fertility assumption -- adults who die during the modeling horizon have the same dependent-child count as adults who survive -- that has been treated as a parametric sensitivity rather than an empirical claim. Using NHIS-LMF 1986-2018 we measure the underlying calibration parameter $\kappa$ directly.
 
-Three findings stand. First, the published Schlüter (2024) cumulative drug-and-firearm orphanhood 1999-2020 is approximately 40 % too high. Second, the published Villaveces (2025) 2021 all-cause headline is approximately right at the national level but biased in opposite directions by race / ethnicity, with corrections ranging from -20 % to +26 %. Third, the calibration parameter measures household-composition selection on mortality, not biological-fertility heterogeneity, and the consequence is that the demographic-rate orphanhood literature answers a custodial-orphanhood question with biological-orphanhood inputs.
+Three findings stand. The published Schlüter (2024) cumulative drug-and-firearm orphanhood 1999-2020 is approximately 40 % too high. The published Villaveces (2025) 2021 all-cause headline is approximately right at the national level but biased in opposite directions by race / ethnicity, with corrections ranging from -20 % to +26 %. And the calibration parameter measures household-composition selection on mortality, not biological-fertility heterogeneity, with the consequence that the demographic-rate orphanhood literature answers a custodial-orphanhood question with biological-orphanhood inputs.
 
 The most important next step is administrative linkage of NCHS death certificates to NCHS birth certificates and household rosters at the individual level, in a restricted-access state-level pilot. This would resolve the custodial-versus-biological orphanhood question by direct measurement rather than calibration. Realistic candidates with strong vital-record linkage infrastructure include Wisconsin, North Carolina, Massachusetts, and Utah. A three-state pilot would produce the first US empirical $\kappa$ estimates that do not require the NHIS household-roster proxy.
 
-Two further extensions: refresh to NHIS-LMF 2022 (released January 2026, extending follow-up through end-2022) to absorb the full COVID-19 parental-mortality spike; and apply the calibration to Potter et al. (2025) for cancer, Verdery et al. (2024) for broader kin networks, and the Hillis et al. (2021, 2022) COVID papers.
+Two further extensions are worth flagging. Refreshing to NHIS-LMF 2022 (released January 2026, extending follow-up through end-2022) would absorb the full COVID-19 parental-mortality spike. Applying the calibration to Potter et al. (2025) for cancer, Verdery et al. (2024) for broader kin networks, and the Hillis et al. (2021, 2022) COVID papers would extend the methodological footprint to the cause-specific literatures we have not yet recalibrated.
 
 Future bereavement-demography papers should report two headlines -- custodial and biological -- and label them. The two concepts answer different policy questions and produce different numbers. A field that reports a single number ambiguously is a field that lets the headline do work the definition cannot bear.
 
@@ -356,7 +304,7 @@ NHIS measures co-resident minors at survey interview. The published natality-bas
 
 ### A.1 Pooled $\bar{n}_k$ by sex
 
-**Table A1.** Pooled NHIS-LMF $\bar{n}_k$ by sex of respondent (parents only, all years, all races).
+Table A1. Pooled NHIS-LMF $\bar{n}_k$ by sex of respondent (parents only, all years, all races).
 
 | Sex | $\bar{n}_k^{\text{alive}}$ | $\bar{n}_k^{\text{died}}$ | $\kappa$ |
 |---|---:|---:|---:|
@@ -367,7 +315,7 @@ NHIS measures co-resident minors at survey interview. The published natality-bas
 
 ### A.2 Within-structure $\kappa$ stays close to 1.0
 
-**Table A2.** Selected rows from the sex × race × household-structure table.
+Table A2. Selected rows from the sex × race × household-structure table.
 
 | Sex | Race / eth | HH struct | $\bar{n}_k^{\text{alive}}$ | $\bar{n}_k^{\text{died}}$ | $\kappa$ | $n_{\text{alive}}$ | $n_{\text{died}}$ |
 |---|---|---|---:|---:|---:|---:|---:|
@@ -392,7 +340,7 @@ Within-structure $\kappa$ ranges from 0.89 to 1.04; the aggregate $\kappa$ is dr
 
 ### A.4 Back-of-envelope non-resident-father adjustment
 
-**Table A4.** Adjusted $\bar{n}_{k,\text{father}}^{\text{died}}$ using ACS-based non-resident-father rates and a one-minor-each assumption.
+Table A4. Adjusted $\bar{n}_{k,\text{father}}^{\text{died}}$ using ACS-based non-resident-father rates and a one-minor-each assumption.
 
 | Race / eth | $\bar{n}_{k,\text{father}}^{\text{died}}$ (NHIS) | Non-resident rate | $\bar{n}_{k,\text{father}}^{\text{died}}$ (adjusted) |
 |---|---:|---:|---:|
