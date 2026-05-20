@@ -286,13 +286,19 @@ adults of the same age (K_accident ≈ 0.6 vs K_alive ≈ 1.3 at 30-39).
 Both NHIS-calibrated scenarios produce a roughly 25-33 % shrinkage
 relative to the naive Schlüter assumption.
 
-**Important limitation:** NHIS-LMF carries cause of death only at the
-10-category leading-cause recode (`MORTUCODLD`); we cannot extract a
-drug-overdose-specific K. The NHIS "Accidents" bucket lumps drug-overdose
-accidents in with the much-larger MV-crash and fall categories whose
-demographic profile differs from drug-overdose victims. A
-drug-overdose-specific calibration would require linking NHIS to
-restricted-access NDI ICD-10 codes.
+**Limitation and queued fix:** in the current extract NHIS-LMF carries
+cause of death only at the 10-category leading-cause recode
+(`MORTUCODLD`), which lumps drug-overdose accidents in with the
+much-larger MV-crash and fall categories. IPUMS NHIS also publishes
+`MORTUCOD` -- the **detailed ICD-10 underlying cause** -- but only for
+samples 1986-2004 (NDI restricted publication after 2004). We have
+drafted `scripts/run_schluter_mortucod.py` and
+`IPUMS_EXTRACT_INSTRUCTIONS.md` to (a) add `MORTUCOD` to the IPUMS
+extract, (b) build cause-specific K's separately for the ICD-10 NHIS
+era (1999-2004) and the ICD-9 NHIS era (1986-1998, as a sensitivity
+check), and (c) apply the ICD-10 era K to NCHS 1999-2020 under the
+"effects are constant over time" assumption. The headline numbers in
+this table will be revised once the new extract lands.
 
 Race-stratified cumulative totals are in
 `results/kinship/schluter_drugs_firearms/cumulative_1999_2020*.csv`;

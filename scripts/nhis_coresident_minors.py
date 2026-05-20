@@ -82,6 +82,16 @@ def _colspecs() -> tuple[list[tuple[int, int]], list[str], dict[str, str]]:
         ("mortdodq",   167, 167, "Int8",    None),
         ("mortdody",   168, 171, "Int16",   None),
         ("mortucodld", 172, 173, "Int8",    None),
+        # TODO[mortucod]: ADD HERE WHEN MORTUCOD IS IN THE EXTRACT.
+        # See IPUMS_EXTRACT_INSTRUCTIONS.md. After IPUMS regenerates
+        # nhis_00002.dat with MORTUCOD, read its start/end column
+        # positions from the auto-generated nhis_00002.do and insert
+        # exactly one tuple here:
+        #     ("mortucod", <START>, <END>, "string", None),
+        # If IPUMS placed MORTUCOD between MORTUCODLD and MORTWT, also
+        # bump the start/end columns of mortwt and mortwtsa to match
+        # the new .do file (they will shift by the width of MORTUCOD,
+        # typically 4 characters).
         ("mortwt",     174, 181, "float64", None),
         ("mortwtsa",   182, 189, "float64", None),
     ]
