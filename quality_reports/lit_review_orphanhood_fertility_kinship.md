@@ -146,9 +146,13 @@ Our NHIS calibration is best read as a third innovation in this family: **decede
 
 - **How much does within-cell selection actually move the published estimates?** Until now, the answer was "Villaveces says up to 15 %, Schlüter says ±25 % doesn't change the story." We can now refine: 3-25 % nationally depending on race stratification; ~30-40 % for the Schlüter cause-specific cumulative; the sign reverses within race groups.
 
+- **Custodial vs biological orphanhood.** NHIS measures **co-resident** minors at survey; natality-based methods count **biological** births regardless of co-residence. The two definitions answer different questions. For mothers the gap is small (~80-95 % of mothers are co-resident with their minor children). For fathers it is large (60-75 % across groups, lower in NH Black and NH AIAN). Pooled NHIS K is essentially identical for mothers (1.76) and fathers (1.77) -- but that identical-K finding is *itself* a selection result: we only see fathers who had kids at home at the interview. A 30-55 % non-resident-father rate (varies by group, ACS-based) implies a 15-30 % upward augmentation to K_father that NHIS cannot directly measure. The published natality approach is at the upper bound (every birth counts); the raw NHIS κ is at the lower bound (no non-resident fathers); the truth is between. We discuss this in Appendix A of the project report.
+
 - **Should kinship engines incorporate κ as a first-class input?** A natural next step. Our embedding multiplies dead-parent mass; an equivalent and arguably cleaner approach is to fold κ directly into the parent-age distribution `π_t` at cohort initialization. The two are not numerically identical and the choice should be explicit in any future implementation.
 
 - **Cause-of-death scope.** NHIS-LMF carries the 10-category `MORTUCODLD` for all sample years and the 113-cause-style `MORTUCOD` for sample years 1986-2004 only. For 2005+ cause-specific calibration we rely on a constant-effects-over-time assumption that is testable in principle but not in our current data.
+
+- **Single-parent vs coupled-parent mortality.** Single-adult parent households have 1.3-1.9× the mortality rate of coupled-parent households within every race × sex cell of NHIS-LMF. This is the structural engine behind κ < 1: decedents are over-represented in single-adult families, which have smaller K_alive than coupled families to begin with. The κ correction is not "people who die had fewer biological children" but "people who die were systematically in lower-K household structures."
 
 ---
 

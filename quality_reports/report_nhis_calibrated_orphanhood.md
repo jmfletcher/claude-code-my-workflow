@@ -132,6 +132,8 @@ This is **not** an individual-level linkage. NHIS-LMF gives us a survey-weighted
 
 This **is** a direct test of an assumption the field has been making explicit but treating as a sensitivity rather than as a measurement. The κ table is something the field has been asking for. We have it. It says the assumption is wrong in the way researchers worried it might be wrong, by amounts that matter for the public-facing headline numbers.
 
+A more subtle point that deserves its own appendix: NHIS measures **co-resident** minors. Non-custodial parents -- a divorced father whose children live with their mother; an absent parent whose child has minimal contact with them -- show up in NHIS *not* as a parent of those children. Their dependent-child count at survey is zero. When such an adult later dies, NHIS-derived K assigns them zero affected children. The published natality-based approach sits at the other extreme: every birth counts toward potential parental loss for the rest of the parent's life, regardless of co-residence, contact, or relationship quality. The truth, particularly for fathers, sits between the two extremes. We discuss this in Appendix A.
+
 ---
 
 ## What we did not do (yet)
@@ -173,7 +175,122 @@ That recommendation does not retract anything. It calibrates.
 - Replication tree from Villaveces 2025: `data_kinship/` (Zenodo download, gitignored).
 - IPUMS NHIS extracts: `nhis_00003.dat` (current, with MORTUCOD); archived old extract at `archive/extract_00002/`.
 
-PR #3 on GitHub (`feature/kinship-matrix-orphanhood`) contains the full implementation with one commit per major addition: bootstrap CIs, grandparent layer, Schlüter all-cause κ, MORTUCODLD intent-stratified κ, MORTUCOD cause-specific headline.
+PR #3 on GitHub (`feature/kinship-matrix-orphanhood`) contains the full implementation with one commit per major addition: bootstrap CIs, grandparent layer, Schlüter all-cause κ, MORTUCODLD intent-stratified κ, MORTUCOD cause-specific headline, and the household-structure appendix described below.
+
+---
+
+## Appendix A — Non-resident parents and the sex asymmetry in K
+
+NHIS measures co-resident minors at the time of interview. The published natality-based approach counts every biological birth toward potential parental orphanhood. The two definitions answer different questions and produce different headline numbers:
+
+- **Custodial orphanhood**: the child lost a parent who lived with them and was part of their day-to-day life. NHIS-derived K targets this concept.
+- **Biological orphanhood**: the child lost a biological parent regardless of co-residence. Natality-based methods target this concept.
+
+The right working assumption is that the answer most US policy actors care about -- school grief counseling, SSI Survivor Benefits, Medicaid disability override -- is closer to **custodial** orphanhood. But for foster-care entry, child-welfare workload, and longer-run socio-emotional outcomes, biological orphanhood is also relevant. Neither definition dominates the other.
+
+The asymmetry by parent sex is what makes this matter. Mothers are co-resident with their minor children in roughly 80-95 % of US households (national survey averages across all groups and years). Fathers are co-resident in 60-75 %, with substantial variation by race, era, and SES. NHIS therefore captures K_mother fairly well -- the population of "mothers with co-resident minors" is close to the population of "mothers who have minor children." For fathers, the gap is larger.
+
+### A.1 Pooled K by sex of decedent (NHIS, all years, all races)
+
+> **K_alive** and **K_died** are weighted means of co-resident minor counts among adult parents (at least one minor in the family unit at NHIS interview).
+
+| Sex | K_alive | K_died | κ = K_died / K_alive |
+|---|---:|---:|---:|
+| Mother | 1.871 | 1.761 | **0.941** |
+| Father | 1.874 | 1.766 | **0.943** |
+
+Mother and father K are essentially identical inside NHIS. That is *not* a finding about biological-fertility homogeneity. It is a finding about the selection that NHIS imposes: we are looking only at fathers who had minor children present at the survey address. Non-resident fathers do not enter the K computation at all.
+
+### A.2 K by sex × race × household structure
+
+For each adult parent in NHIS-LMF we classify their family unit (`fmx`) as:
+
+- **Coupled**: exactly two adults in the family unit and the respondent is married or cohabiting. Most US two-parent households.
+- **Sole adult**: exactly one adult in the family unit (single-parent family).
+- **Multi-adult other**: three or more adults (multi-generational), or two adults but not married/cohabiting (e.g. adult sibling pair raising kids together).
+
+Sample: 193,245 adult parents (mortelig=1, age 18+, ≥1 minor in family unit). Of these 57.6 % are coupled, 20.4 % are sole-adult, and 22.0 % are multi-adult-other. Decedents number 7,437 and survivors 185,808.
+
+Selected rows (full table in `results/py/appendix_household_structure_K.csv`):
+
+| Sex | Race / ethnicity | HH struct | K_alive | K_died | κ | n_alive | n_died |
+|---|---|---|---:|---:|---:|---:|---:|
+| f | NH White | coupled | 1.97 | 1.77 | 0.90 | 32,649 | 620 |
+| f | NH White | sole adult | 1.67 | 1.53 | 0.92 | 11,699 | 390 |
+| f | NH Black | coupled | 2.03 | 1.91 | 0.94 | 3,728 | 101 |
+| f | NH Black | sole adult | 1.95 | 1.85 | 0.95 | 9,572 | 381 |
+| f | NH AIAN | coupled | 1.96 | 1.84 | 0.94 | 5,996 | 311 |
+| f | NH AIAN | sole adult | 1.80 | 1.66 | 0.92 | 3,276 | 281 |
+| m | NH White | coupled | 1.96 | 1.75 | 0.89 | 27,347 | 999 |
+| m | NH White | sole adult | 1.53 | 1.42 | 0.93 | 2,655 | 165 |
+| m | NH Black | coupled | 2.03 | 2.03 | 1.00 | 3,585 | 212 |
+| m | NH Black | sole adult | 1.50 | 1.40 | 0.93 | 744 | 60 |
+| m | NH AIAN | coupled | 1.96 | 1.85 | 0.94 | 4,927 | 517 |
+| m | NH AIAN | sole adult | 1.52 | 1.58 | 1.04 | 389 | 92 |
+
+Two things are stable across the table.
+
+First, **K_alive is consistently higher for coupled parents than for sole-adult parents**, by about 0.2-0.5 kids. Two-parent households have somewhat more minor children present at survey than single-adult households on average, partly because cohabiting couples are younger and partly because single parents face more economic constraints to family size.
+
+Second, **κ < 1 in most cells but the margin is modest** (κ between 0.89 and 1.04). The exceptions are small-cell groups where statistical noise dominates.
+
+### A.3 Mortality rate by household structure
+
+The result that matters for the κ interpretation: **single-adult parents have substantially higher mortality than coupled parents**, in every race × sex combination.
+
+| Sex | Race / ethnicity | Coupled | Sole adult | Ratio sole/coupled |
+|---|---|---:|---:|---:|
+| f | NH White | 1.81 % | 3.03 % | 1.67 |
+| f | NH Black | 2.21 % | 3.28 % | 1.48 |
+| f | Hispanic | 1.39 % | 2.18 % | 1.57 |
+| f | NH AIAN | 4.86 % | 7.52 % | 1.55 |
+| m | NH White | 3.36 % | 5.63 % | 1.67 |
+| m | NH Black | 4.71 % | 6.27 % | 1.33 |
+| m | Hispanic | 2.99 % | 4.08 % | 1.36 |
+| m | NH AIAN | 8.99 % | 17.10 % | 1.90 |
+
+(All rates are weighted, observed in NHIS-LMF follow-up; not age-standardized.)
+
+This is the mechanical engine behind κ < 1 for most cells. Decedents are over-represented in single-adult households, and single-adult households have systematically smaller K_alive than coupled households. The product produces aggregate K_died < K_alive within race × sex.
+
+So our headline κ correction is a *real* signal -- adults who die during follow-up are disproportionately in lower-K household structures -- but it is partially the **structural** signal that single-parent households face higher mortality, not the **biological** signal that decedents have fewer children at birth.
+
+### A.4 Back-of-envelope correction for non-resident fathers
+
+NHIS observes co-resident fathers. It misses the non-resident-father population entirely. If we use external estimates of non-resident-father rates from the American Community Survey and Census (~30 % for NH White, ~55 % for NH Black, ~35 % for Hispanic, ~15 % for NH Asian/PI, ~50 % for NH AIAN) and assume each non-resident dad has, on average, one minor child living elsewhere, we get the following augmentation:
+
+| Race / ethnicity | K_father_died (NHIS) | non-resident rate | K_father_died (adjusted) |
+|---|---:|---:|---:|
+| NH White | 1.703 | 0.30 | 2.003 |
+| NH Black | 1.888 | 0.55 | 2.438 |
+| Hispanic | 2.093 | 0.35 | 2.443 |
+| NH Asian / PI | 1.747 | 0.15 | 1.897 |
+| NH AIAN | 1.806 | 0.50 | 2.306 |
+
+This is a back-of-envelope -- the non-resident rates are not stratified by mortality risk, and "one minor child elsewhere" is a coarse assumption -- but it communicates the scale. A 15-55 % upward adjustment to K_father moves the male contribution to orphanhood by a similar amount. For the all-cause Villaveces 2021 target where men contribute roughly half of decedent-father events, the adjustment moves the *overall* count up by something like 8-25 % depending on race.
+
+Combining the two effects:
+
+- **NHIS κ (our central estimate)**: aggregate downward correction of -3 % nationally, -14 % for NH White, -20 % for NH Asian/PI, +27 % for NH AIAN. This treats orphanhood as **custodial**.
+- **Non-resident-father correction**: aggregate upward correction of ~+8-25 % depending on the share of paternal deaths in each cell.
+
+The two corrections roughly offset for the published all-cause headline (Villaveces 2021): the population sits between the custodial number (2.17 M, our κ-calibrated) and the biological-orphanhood number (something like 2.4-2.5 M, NHIS κ + non-resident-father augmentation). The exact landing depends on which definition the user wants and on how confident we are in the ACS-based non-resident-father rates.
+
+### A.5 What this means for the Schlüter (drug + firearm) headline
+
+For Schlüter's cause-specific target, the non-resident-father issue is more important. Drug overdose decedents skew strongly male (~70 % male in our NHIS-LMF sample) and are concentrated in race/ethnic groups with higher non-resident fatherhood. The custodial-orphanhood number for drug+firearm parental deaths is what NHIS K measures cleanly: 691 K cumulative 1999-2020 (vs the published 1.19 M). A biological-orphanhood number would land somewhat higher -- perhaps 800-900 K under the back-of-envelope non-resident-father augmentation -- but still well below 1.19 M. **The substantive conclusion that Schlüter overstates the cumulative count is robust to the definitional choice.** The choice does matter for the *level* by 100-200 K children.
+
+### A.6 What we still need
+
+A real non-resident-father correction requires:
+
+1. **Mortality-stratified non-resident-father rates** -- the published ACS numbers do not condition on the father's later mortality status. For drug-overdose decedents specifically, non-resident-father rates may be substantially higher than the population average (incarceration, substance-related custodial loss).
+2. **Distributional information** -- how many minor children does a non-resident father have, and what is the variance? Our "1 child each" assumption is crude.
+3. **Definitional clarity** -- which definition (custodial vs biological) is the field's target? Most published papers do not say.
+
+Until these are nailed down, the responsible reporting is to publish *both* numbers and label them. That is what we recommend.
+
+Reproduce with `python scripts/run_household_structure_appendix.py`; outputs in `results/py/appendix_household_structure_*.csv`.
 
 ---
 

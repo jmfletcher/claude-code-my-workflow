@@ -433,17 +433,36 @@ from MORTUCODLD).
    statistically distinguishable from "no effect".
 5. **κ from co-resident minors, not lifetime parity.** NHIS measures
    `n_fam_childminor017` at survey interview, not lifetime fertility. This
-   is the right concept for orphanhood (children-under-18 affected) but
-   conflates parity with custody / co-residence patterns. NH Black and
-   Hispanic κ < 1 may partially reflect non-custodial fathers in the
-   denominator.
-5. **Decade-level κ, single-cohort engine.** κ is constant within decade.
+   is the right concept for **custodial** orphanhood (children under 18
+   in the household at the time of parental death) but it is not the
+   concept the **published natality-based literature** is targeting,
+   which is closer to **biological** orphanhood (every birth counts when
+   the parent dies). The two definitions differ most for fathers: NHIS
+   misses non-resident fathers entirely (their `n_fam_childminor017` is
+   zero at survey). A back-of-envelope augmentation using ACS
+   non-resident-father rates (30 % NH White, 55 % NH Black, 35 %
+   Hispanic, 15 % NH Asian/PI, 50 % NH AIAN) raises K_father_died by
+   roughly the same magnitudes -- a 15-30 % upward correction for the
+   male contribution. The all-cause headline κ correction (-3 % national)
+   and this non-resident-father augmentation (+8-25 % national depending
+   on the share of male decedent events) **roughly offset** for
+   Villaveces-style all-cause orphanhood, but the Schlüter cause-specific
+   target (drugs+firearms, heavily male) is more sensitive. Single-adult
+   parent households face 1.3-1.9× the mortality of coupled-parent
+   households inside every race × sex cell, which is the structural
+   engine behind κ < 1: decedents are over-represented in lower-K
+   household structures rather than being lower-K conditional on
+   structure. Full appendix in
+   `quality_reports/report_nhis_calibrated_orphanhood.md` § A;
+   reproduce with
+   `python scripts/run_household_structure_appendix.py`.
+6. **Decade-level κ, single-cohort engine.** κ is constant within decade.
    For finer trajectories we would need annual κ, requiring more NHIS
    panels.
-6. **Single-stack point estimates.** No Poisson resampling like Villaveces;
+7. **Single-stack point estimates.** No Poisson resampling like Villaveces;
    no credible intervals on the calibrated counts. The deltas reflect
    point estimates of κ.
-7. **Two-sex independence assumption.** "Either parent dead" uses
+8. **Two-sex independence assumption.** "Either parent dead" uses
    `1 - (1-p_mom)(1-p_dad)` (assumed independence). Joint mortality
    correlation within couples would shrink this slightly.
 

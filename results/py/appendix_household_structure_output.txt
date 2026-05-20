@@ -1,0 +1,100 @@
+[hh] loading parquet ...
+[hh] adult parent sample N = 193,245
+[hh]   decedents: 7,437
+[hh]   survivors: 185,808
+
+[hh] HH structure distribution among adult parents:
+hh_struct
+coupled              57.6
+multi_adult_other    22.0
+sole_adult           20.4
+Name: share %, dtype: float64
+
+[hh] K by sex of respondent (parents only, all years/races):
+died_label  alive   died  kappa
+sex_label                      
+f           1.871  1.761  0.941
+m           1.874  1.766  0.943
+
+[hh] K by sex x race x hh_struct (parents):
+sex                                      race/eth         hh_struct K_alive K_died  kappa n_alive n_died
+  f                                      Hispanic           coupled   2.162  2.162  1.000  12,971    255
+  f                                      Hispanic multi_adult_other   1.807  1.870  1.035   8,638    295
+  f                                      Hispanic        sole_adult   2.056  1.921  0.934   7,953    228
+  f                            Non-Hispanic White           coupled   1.969  1.771  0.900  32,649    620
+  f                            Non-Hispanic White multi_adult_other   1.560  1.669  1.070   8,458    413
+  f                            Non-Hispanic White        sole_adult   1.667  1.525  0.915  11,699    390
+  f                            Non-Hispanic Black           coupled   2.034  1.906  0.937   3,728    101
+  f                            Non-Hispanic Black multi_adult_other   1.734  1.716  0.990   3,642    214
+  f                            Non-Hispanic Black        sole_adult   1.954  1.854  0.949   9,572    381
+  f        Non-Hispanic Asian or Pacific Islander           coupled   1.819  1.768  0.972   3,026     62
+  f        Non-Hispanic Asian or Pacific Islander multi_adult_other   1.610  1.946  1.208   1,091     52
+  f        Non-Hispanic Asian or Pacific Islander        sole_adult   1.649  2.210  1.341     539     18
+  f Non-Hispanic American Indian or Alaska Native           coupled   1.961  1.842  0.939   5,996    311
+  f Non-Hispanic American Indian or Alaska Native multi_adult_other   1.664  1.630  0.980   1,751    181
+  f Non-Hispanic American Indian or Alaska Native        sole_adult   1.800  1.661  0.923   3,276    281
+  m                                      Hispanic           coupled   2.152  2.139  0.994  10,848    445
+  m                                      Hispanic multi_adult_other   1.817  1.787  0.983   6,178    294
+  m                                      Hispanic        sole_adult   1.669  1.645  0.986     784     46
+  m                            Non-Hispanic White           coupled   1.957  1.749  0.894  27,347    999
+  m                            Non-Hispanic White multi_adult_other   1.565  1.582  1.011   6,457    335
+  m                            Non-Hispanic White        sole_adult   1.529  1.419  0.928   2,655    165
+  m                            Non-Hispanic Black           coupled   2.026  2.027  1.000   3,585    212
+  m                            Non-Hispanic Black multi_adult_other   1.712  1.773  1.036   2,166    147
+  m                            Non-Hispanic Black        sole_adult   1.504  1.398  0.930     744     60
+  m        Non-Hispanic Asian or Pacific Islander           coupled   1.781  1.794  1.008   2,599     81
+  m        Non-Hispanic Asian or Pacific Islander multi_adult_other   1.706  1.920  1.126     816     54
+  m        Non-Hispanic Asian or Pacific Islander        sole_adult   1.475  1.197  0.811     116      7
+  m Non-Hispanic American Indian or Alaska Native           coupled   1.962  1.846  0.941   4,927    517
+  m Non-Hispanic American Indian or Alaska Native multi_adult_other   1.634  1.602  0.980   1,208    181
+  m Non-Hispanic American Indian or Alaska Native        sole_adult   1.520  1.584  1.043     389     92
+
+[hh] Mortality probability by sex x race x hh_struct (pooled across age bands; raw, not standardized):
+sex_label                                 raceth5_label         hh_struct    p_died
+        f                                      Hispanic           coupled   0.01389
+        f                                      Hispanic multi_adult_other  0.027412
+        f                                      Hispanic        sole_adult   0.02178
+        f                            Non-Hispanic White           coupled  0.018108
+        f                            Non-Hispanic White multi_adult_other   0.04335
+        f                            Non-Hispanic White        sole_adult  0.030277
+        f                            Non-Hispanic Black           coupled  0.022141
+        f                            Non-Hispanic Black multi_adult_other  0.045208
+        f                            Non-Hispanic Black        sole_adult  0.032781
+        f        Non-Hispanic Asian or Pacific Islander           coupled  0.018286
+        f        Non-Hispanic Asian or Pacific Islander multi_adult_other  0.033448
+        f        Non-Hispanic Asian or Pacific Islander        sole_adult  0.026606
+        f Non-Hispanic American Indian or Alaska Native           coupled  0.048588
+        f Non-Hispanic American Indian or Alaska Native multi_adult_other  0.081589
+        f Non-Hispanic American Indian or Alaska Native        sole_adult   0.07518
+        m                                      Hispanic           coupled  0.029857
+        m                                      Hispanic multi_adult_other  0.034497
+        m                                      Hispanic        sole_adult  0.040775
+        m                            Non-Hispanic White           coupled  0.033635
+        m                            Non-Hispanic White multi_adult_other  0.043105
+        m                            Non-Hispanic White        sole_adult  0.056297
+        m                            Non-Hispanic Black           coupled  0.047133
+        m                            Non-Hispanic Black multi_adult_other  0.054119
+        m                            Non-Hispanic Black        sole_adult   0.06269
+        m        Non-Hispanic Asian or Pacific Islander           coupled  0.027554
+        m        Non-Hispanic Asian or Pacific Islander multi_adult_other  0.051321
+        m        Non-Hispanic Asian or Pacific Islander        sole_adult  0.061449
+        m Non-Hispanic American Indian or Alaska Native           coupled  0.089935
+        m Non-Hispanic American Indian or Alaska Native multi_adult_other  0.129897
+        m Non-Hispanic American Indian or Alaska Native        sole_adult  0.171035
+
+[hh] Sex composition of NHIS-LMF adult parent decedents by race:
+sex_label                                          f      m
+raceth5_label                                              
+Hispanic                                       0.416  0.584
+Non-Hispanic American Indian or Alaska Native  0.422  0.578
+Non-Hispanic Asian or Pacific Islander         0.434  0.566
+Non-Hispanic Black                             0.508  0.492
+Non-Hispanic White                              0.45   0.55
+
+[hh] Back-of-envelope: NHIS K_father_died augmented with non-resident-father rate (assumes 1 child per non-resident dad):
+                                raceth5_label K_father_died_nhis nonres_father_rate K_father_died_adj
+                                     Hispanic              2.093               0.35             2.443
+                           Non-Hispanic White              1.703               0.30             2.003
+                           Non-Hispanic Black              1.888               0.55             2.438
+       Non-Hispanic Asian or Pacific Islander              1.747               0.15             1.897
+Non-Hispanic American Indian or Alaska Native              1.806               0.50             2.306
