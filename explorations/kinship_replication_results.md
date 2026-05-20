@@ -224,6 +224,36 @@ the year before death); ours is data-driven and group-specific.
 
 ## 4b. Cause-specific extension: Schlüter 2024 (drugs + firearms)
 
+> **Update (after we realized NHIS-LMF *does* carry cause of death):**
+> the NHIS-LMF `MORTUCODLD` variable encodes a 10-category leading-cause
+> recode (heart, cancer, CLRD, accidents, stroke, Alzheimer, diabetes,
+> flu/pneumonia, nephritis, residual). It does *not* let us isolate
+> drug-overdose vs firearm; both intent groups land in either code 4
+> "Accidents (unintentional injuries)" (accidental overdose X40-X44,
+> accidental firearm W32-W34) or code 10 "All other causes (residual)"
+> (suicide, homicide, undetermined intent). This is too coarse for a
+> drug-specific κ, but it is fine enough to test whether the *cause
+> heterogeneity* in κ matters for the Schlüter target.
+
+**National-pooled NHIS K's by intent bucket (using `mortwtsa`):**
+
+| Bucket | E[nk_under18 | died, ·] |
+|---|---:|
+| alive (living-adult comparison) | 0.681 |
+| code 4 = Accidents (any) | 0.363 |
+| code 10 = All other causes (residual) | 0.169 |
+| code 1-2 = Heart + cancer (for comparison) | 0.15 |
+
+K is *much* higher for accident decedents than for the residual category
+(0.36 vs 0.17), confirming the intuition that accident victims tend to
+be younger and so have more co-resident minors. But K_accident is still
+below K_alive at most age bands (0.469 vs 1.007 at 40-49) because
+selection into accidents is correlated with non-conventional life-course
+states. So even the more-targeted cause-stratified K *lowers* the
+naive Schlüter estimate.
+
+**Result, three scenarios:**
+
 We applied the same NHIS-calibrated counting logic to the cause-specific
 target in Schlüter et al. 2024 (JAMA Pediatrics): *cumulative US
 children experiencing parental death from drug-overdose or firearm
@@ -242,26 +272,33 @@ living adults of that cell (*naive*) or among decedents (*NHIS*).
 | | Drug | Firearm | Combined |
 |---|---:|---:|---:|
 | Parental deaths 1999-2020 | 920,301 | 691,877 | 1,612,178 |
-| Children, naive (kids-per-living-adult) | 650,192 | 418,213 | 1,068,405 |
-| Children, NHIS-calibrated | 473,274 | 336,066 | 809,340 |
-| Δ % | **-27.2 %** | **-19.6 %** | **-24.2 %** |
+| Children, naive (kids-per-living-adult) | 650,213 | 418,310 | 1,068,522 |
+| Children, NHIS K_all-cause | 473,274 | 336,066 | 809,340 |
+| Children, NHIS K_cause-stratified | 429,866 | 286,062 | **715,928** |
+| Δ % vs naive (cause-stratified) | -33.9 % | -31.6 % | **-33.0 %** |
 | Schlüter 2024 published target | -- | -- | ~1,190,000 |
 
-Our naive total (1.07 M) sits ~10 % below the published 1.19 M; the gap
-is from (i) Schlüter's broader race universe (we drop "Others" /
-multiracial) and (ii) their use of vital-statistics-derived fertility
-profiles rather than NHIS averages. The headline finding still goes
-through: the NHIS calibration shrinks the cumulative count by roughly a
-quarter, with the biggest effect concentrated in NH White decedents
-(-30 % for both drugs and firearms) where the gap between
-kids-per-living-adult and kids-per-decedent is widest. NH Hispanic
-firearm deaths show the smallest gap (-4 %) -- decedents and living
-adults in that cell have very similar co-resident-minor counts.
+The cause-stratified K is *lower* than the all-cause K because the
+NHIS-code-4 "Accidents" bucket is dominated by motor-vehicle, falls,
+and drowning -- not drug overdoses -- and accident decedents at ages
+30-49 have systematically *fewer* co-resident minors than living
+adults of the same age (K_accident ≈ 0.6 vs K_alive ≈ 1.3 at 30-39).
+Both NHIS-calibrated scenarios produce a roughly 25-33 % shrinkage
+relative to the naive Schlüter assumption.
+
+**Important limitation:** NHIS-LMF carries cause of death only at the
+10-category leading-cause recode (`MORTUCODLD`); we cannot extract a
+drug-overdose-specific K. The NHIS "Accidents" bucket lumps drug-overdose
+accidents in with the much-larger MV-crash and fall categories whose
+demographic profile differs from drug-overdose victims. A
+drug-overdose-specific calibration would require linking NHIS to
+restricted-access NDI ICD-10 codes.
 
 Race-stratified cumulative totals are in
-`results/kinship/schluter_drugs_firearms/cumulative_1999_2020_by_race.csv`;
-the annual series is in `annual_by_cause.csv`. Reproduce with
-`python scripts/run_schluter_cause_specific.py`.
+`results/kinship/schluter_drugs_firearms/cumulative_1999_2020*.csv`;
+annual series in `annual_by_cause*.csv`. Reproduce with
+`python scripts/run_schluter_cause_specific.py` (all-cause κ) and
+`python scripts/run_schluter_cause_stratified.py` (cause-stratified K).
 
 ---
 
