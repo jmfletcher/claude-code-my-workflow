@@ -62,8 +62,11 @@ data_kinship/
 agent-tools/
 *.parquet
 
-# IPUMS NHIS extract (588 MB fixed-width, redownload from IPUMS)
+# IPUMS NHIS extracts (large fixed-width data, redownload from IPUMS).
+# Current extract is nhis_00003 (with MORTUCOD); older 00002 is archived.
 nhis_00002.dat
+nhis_00003.dat
+archive/extract_00002/nhis_00002.dat
 
 # Local-only reference docs and PDFs
 Papers/

@@ -81,19 +81,16 @@ def _colspecs() -> tuple[list[tuple[int, int]], list[str], dict[str, str]]:
         ("mortstat",   166, 166, "Int8",    None),
         ("mortdodq",   167, 167, "Int8",    None),
         ("mortdody",   168, 171, "Int16",   None),
-        ("mortucodld", 172, 173, "Int8",    None),
-        # TODO[mortucod]: ADD HERE WHEN MORTUCOD IS IN THE EXTRACT.
-        # See IPUMS_EXTRACT_INSTRUCTIONS.md. After IPUMS regenerates
-        # nhis_00002.dat with MORTUCOD, read its start/end column
-        # positions from the auto-generated nhis_00002.do and insert
-        # exactly one tuple here:
-        #     ("mortucod", <START>, <END>, "string", None),
-        # If IPUMS placed MORTUCOD between MORTUCODLD and MORTWT, also
-        # bump the start/end columns of mortwt and mortwtsa to match
-        # the new .do file (they will shift by the width of MORTUCOD,
-        # typically 4 characters).
-        ("mortwt",     174, 181, "float64", None),
-        ("mortwtsa",   182, 189, "float64", None),
+        # nhis_00003 column layout (MORTUCOD inserted before MORTUCODLD,
+        # shifting MORTUCODLD/MORTWT/MORTWTSA by 3 bytes).
+        # MORTUCOD is the IPUMS 3-digit NCHS-style cause recode (not the
+        # raw 4-character ICD-10 code) -- coverage 1986-2004 only;
+        # later samples carry 999 (NIU) which we keep as integer and
+        # filter downstream.
+        ("mortucod",   172, 174, "Int16",   None),
+        ("mortucodld", 175, 176, "Int8",    None),
+        ("mortwt",     177, 184, "float64", None),
+        ("mortwtsa",   185, 192, "float64", None),
     ]
     colspecs = [(s - 1, e) for (_, s, e, _, _) in spec_table]
     names    = [n for (n, _, _, _, _) in spec_table]
@@ -192,7 +189,7 @@ def build_minor_aggregates(df: pd.DataFrame) -> pd.DataFrame:
 
 def main() -> int:
     proj_root = Path(__file__).resolve().parent.parent
-    dat_path  = proj_root / "nhis_00002.dat"
+    dat_path  = proj_root / "nhis_00003.dat"
     out_path  = proj_root / "nhis_with_coresident_minors.parquet"
 
     if not dat_path.exists():

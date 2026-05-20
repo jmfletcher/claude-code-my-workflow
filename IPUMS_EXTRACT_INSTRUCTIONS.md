@@ -1,9 +1,24 @@
 # Updating the IPUMS NHIS extract to add detailed cause of death
 
-Your current extract (`nhis_00002.dat`) carries only `MORTUCODLD`, the
-10-category leading-cause recode. We want to add `MORTUCOD`, the detailed
-ICD-10 underlying cause of death, which is published by IPUMS for
-samples 1986-2004 only.
+> **STATUS (May 20, 2026): DONE.** `nhis_00003.dat` now contains
+> `MORTUCOD` at columns 172-174 (3-byte integer). The old `nhis_00002`
+> extract has been moved to `archive/extract_00002/`. This document is
+> kept for reproducibility and for the next time we revise the extract.
+>
+> **Important nuance found on inspection:** IPUMS publishes `MORTUCOD`
+> as a 3-digit NCHS-style cause recode (similar to the 113-cause group
+> with codes like 119 = "Accidental discharge of firearms",
+> 122 = "Accidental poisoning"), *not* the raw 4-character ICD-10
+> field. The integer code is harmonized across the ICD-9 and ICD-10
+> eras, so the same codes apply to both sample year ranges without an
+> era split. See
+> `explorations/kinship_replication_results.md` -> "MORTUCOD
+> refinement" for the resulting K values and Schlüter recalibration.
+
+The earlier extract (`nhis_00002.dat`) carried only `MORTUCODLD`, the
+10-category leading-cause recode. We added `MORTUCOD`, the detailed
+underlying cause of death, which is published by IPUMS for samples
+1986-2004 only.
 
 ## Steps
 

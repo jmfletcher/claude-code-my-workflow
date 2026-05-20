@@ -286,25 +286,119 @@ adults of the same age (K_accident ≈ 0.6 vs K_alive ≈ 1.3 at 30-39).
 Both NHIS-calibrated scenarios produce a roughly 25-33 % shrinkage
 relative to the naive Schlüter assumption.
 
-**Limitation and queued fix:** in the current extract NHIS-LMF carries
-cause of death only at the 10-category leading-cause recode
-(`MORTUCODLD`), which lumps drug-overdose accidents in with the
-much-larger MV-crash and fall categories. IPUMS NHIS also publishes
-`MORTUCOD` -- the **detailed ICD-10 underlying cause** -- but only for
-samples 1986-2004 (NDI restricted publication after 2004). We have
-drafted `scripts/run_schluter_mortucod.py` and
-`IPUMS_EXTRACT_INSTRUCTIONS.md` to (a) add `MORTUCOD` to the IPUMS
-extract, (b) build cause-specific K's separately for the ICD-10 NHIS
-era (1999-2004) and the ICD-9 NHIS era (1986-1998, as a sensitivity
-check), and (c) apply the ICD-10 era K to NCHS 1999-2020 under the
-"effects are constant over time" assumption. The headline numbers in
-this table will be revised once the new extract lands.
+### MORTUCOD refinement (NHIS sample years 1986-2004)
 
-Race-stratified cumulative totals are in
-`results/kinship/schluter_drugs_firearms/cumulative_1999_2020*.csv`;
-annual series in `annual_by_cause*.csv`. Reproduce with
+> **Update (May 20, 2026):** IPUMS NHIS now ships the detailed
+> underlying-cause variable `MORTUCOD` for sample years 1986-2004. The
+> field is a *3-digit NCHS-style cause recode* (similar to the 113-cause
+> group, not raw ICD-10). The Schlüter-relevant codes:
+>
+> | code | label | maps to ICD-10 |
+> |---|---|---|
+> | 119 | Accidental discharge of firearms | W32-W34 |
+> | 122 | Accidental poisoning | X40-X49 |
+> | 125 | Suicide by discharge of firearms | X72-X74 |
+> | 126 | Suicide by other or means | X60-X84 |
+> | 128 | Homicide by firearm discharge | X93-X95 |
+> | 129 | Homicide by other means | X85-X92 |
+> | 132 | Firearm discharge, unknown intent | Y22-Y24 |
+>
+> Firearms are cleanly identifiable (119+125+128+132); drug overdose is
+> approximated by code 122 (lumps drug X40-X44 with chemical X45-X49)
+> with 126/129 used as noisy proxies for drug-suicide / drug-homicide
+> in the broad scope.
+
+IPUMS already harmonized ICD-9 and ICD-10 era deaths into the same
+integer recode, so we **pool all NHIS-LMF decedents** (sample years
+1986-2004, deaths across the full follow-up) rather than splitting by
+ICD era. Bucket sample sizes after pooling: drug (122) = 697
+decedents; firearm (119+125+128+132) = 1,566; suicide-other (126) = 53;
+homicide-other (129) = 13.
+
+**National-pooled K by bucket (MORTUCOD):**
+
+| Bucket | E[nk_under18 \| died, ·] |
+|---|---:|
+| alive | 0.680 |
+| drug (122) | 0.585 |
+| firearm (119+125+128+132) | 0.577 |
+| suicide_other (126) | 0.610 |
+| homicide_other (129) | 0.344 |
+
+These pooled values look close to K_alive only because they average
+across all ages including older bands where K_alive is small. Within
+the *ages where drug and firearm deaths concentrate* (30-49), K_drug ≈
+0.56 vs K_alive ≈ 1.0-1.3, so the cell-level multiplication drives a
+sizable downward correction.
+
+**Two NCHS scope scenarios, cumulative 1999-2020:**
+
+| | Drug | Firearm | Combined |
+|---|---:|---:|---:|
+| NARROW deaths (NHIS-bucket-matched: drug=X40-X49 only) | 803,538 | 682,963 | 1,486,501 |
+| Children, naive (NARROW) | 578,043 | 413,040 | 991,083 |
+| **Children, NHIS K_mortucod (NARROW)** | 386,550 | 274,892 | **661,442** |
+| Δ % vs naive (NARROW) | -33.1 % | -33.4 % | **-33.3 %** |
+| | | | |
+| BROAD deaths (Schlüter scope: drug = X40-44, X60-64, X85, Y10-14) | 920,301 | 682,963 | 1,603,264 |
+| Children, naive (BROAD) | 656,562 | 413,040 | 1,069,602 |
+| **Children, NHIS K_mortucod (BROAD)** | 416,502 | 274,892 | **691,394** |
+| Δ % vs naive (BROAD) | -36.6 % | -33.4 % | **-35.4 %** |
+| Schlüter 2024 published target | -- | -- | ~1,190,000 |
+
+In the BROAD (Schlüter-scope) row, NHIS K_122 is applied to NCHS
+X40-X44 and Y10-Y14 (accidental + undetermined drug), K_126 to X60-X64
+(drug suicide), and K_129 to X85 (drug homicide). The 126 / 129 buckets
+pool drug- and non-drug methods, so the broad drug K is a noisy
+proxy -- but the result (-35 %) is close to the narrow apples-to-apples
+result (-33 %), suggesting the headline is not very sensitive to that
+mismatch.
+
+**Comparison across all four NHIS-calibrated scenarios:**
+
+| Scenario | Combined children | Δ % vs naive | Δ % vs Schlüter |
+|---|---:|---:|---:|
+| Naive (kids per living adult) | 1,068,522 | -- | -10.2 % |
+| NHIS K_all-cause | 809,340 | -24.3 % | -32.0 % |
+| NHIS K_intent-stratified (MORTUCODLD) | 715,928 | -33.0 % | -39.8 % |
+| **NHIS K_mortucod NARROW** | **661,442** | -33.3 % | -- (denominator differs) |
+| **NHIS K_mortucod BROAD (headline)** | **691,394** | **-35.4 %** | **-41.9 %** |
+
+All four NHIS-calibrated specifications converge on a ~25-35 % downward
+correction to the naive kids-per-decedent assumption, and the MORTUCOD
+refinement modestly *lowers* the count further relative to the
+intent-stratified MORTUCODLD version (1.0 percentage points smaller
+Δ vs naive). The substantive conclusion -- that Schlüter's headline of
+~1.19 M children almost certainly **overstates** the true cumulative
+total -- is reinforced rather than overturned by the more detailed
+cause coding.
+
+Caveats specific to this refinement:
+
+1. **No drug cells have raw n ≥ 25.** All K_drug cells are smoothed
+   toward (sex, raceth5) pooled means. With 697 decedents spread across
+   the 60 age × race × sex cells (~12 per cell on average), this is
+   unavoidable. K_firearm has more raw support (1,566 decedents).
+2. **Drug bucket scope mismatch.** NHIS code 122 includes X45-X49 (a
+   small share of non-drug accidental poisonings) and excludes the
+   intentional-drug subsets X60-X64 / X85 that are inside Schlüter's
+   target. The BROAD scenario re-projects from 126 and 129, but those
+   K's are non-drug-dominated, so they are best read as sensitivity
+   bounds rather than precise estimates.
+3. **Constant-effects assumption preserved.** K is estimated on
+   1986-2004 sample respondents (full follow-up) and applied to
+   1999-2020 NCHS deaths. We do not have NHIS-LMF cause-specific data
+   for sample years 2005+.
+
+Cumulative race-stratified totals are in
+`results/kinship/schluter_drugs_firearms/mortucod_cumulative_1999_2020.csv`;
+the K table is in `mortucod_K_tables.csv`. Reproduce with
+`python scripts/run_schluter_mortucod.py`.
+
+Earlier specifications remain reproducible:
 `python scripts/run_schluter_cause_specific.py` (all-cause κ) and
-`python scripts/run_schluter_cause_stratified.py` (cause-stratified K).
+`python scripts/run_schluter_cause_stratified.py` (intent-stratified κ
+from MORTUCODLD).
 
 ---
 
