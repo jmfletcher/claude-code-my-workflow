@@ -54,3 +54,21 @@ CLAUDE.local.md
 # Output artifacts — uncomment lines below based on your preference
 # *.rds
 # output/**/*.rds
+
+# Kinship replication data (Zenodo download, ~716 MB)
+data_kinship/
+
+# Cached parquet / agent tool outputs
+agent-tools/
+*.parquet
+
+# IPUMS NHIS extracts (large fixed-width data, redownload from IPUMS).
+# Current extract is nhis_00003 (with MORTUCOD); older 00002 is archived.
+nhis_00002.dat
+nhis_00003.dat
+archive/extract_00002/nhis_00002.dat
+
+# Local-only reference docs and PDFs
+Papers/
+*.docx
+

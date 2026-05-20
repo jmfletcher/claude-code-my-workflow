@@ -1,0 +1,180 @@
+sex_label,raceth5,hh_struct,age_band,sum_w,sum_w_died,n_died,p_died,raceth5_label
+f,1,coupled,18-29,19529734.0,205144.0,51,0.010504188126679042,Hispanic
+f,1,coupled,30-39,34651286.0,442057.0,122,0.012757304303222685,Hispanic
+f,1,coupled,40-49,15471140.0,252355.0,59,0.016311338401695026,Hispanic
+f,1,coupled,50-59,2312832.0,87954.0,19,0.03802870247385024,Hispanic
+f,1,coupled,60-69,82527.0,4804.0,2,0.05821125207507846,Hispanic
+f,1,coupled,70-100,16934.0,8634.0,2,0.5098618164639187,Hispanic
+f,1,multi_adult_other,18-29,27550605.0,186249.0,33,0.006760250818448451,Hispanic
+f,1,multi_adult_other,30-39,15773545.0,289108.0,48,0.01832866359464534,Hispanic
+f,1,multi_adult_other,40-49,18483920.0,479373.0,72,0.025934596124631573,Hispanic
+f,1,multi_adult_other,50-59,5222610.0,390914.0,49,0.07485031430644831,Hispanic
+f,1,multi_adult_other,60-69,2200313.0,185798.0,30,0.08444162262369036,Hispanic
+f,1,multi_adult_other,70-100,1473465.0,406699.0,63,0.27601537871615545,Hispanic
+f,1,sole_adult,18-29,6282603.0,54972.0,27,0.008749876444524666,Hispanic
+f,1,sole_adult,30-39,9531387.0,190454.0,86,0.019981771802991526,Hispanic
+f,1,sole_adult,40-49,4790998.0,172825.0,84,0.03607285997614693,Hispanic
+f,1,sole_adult,50-59,1173608.0,48986.0,26,0.041739660943006525,Hispanic
+f,1,sole_adult,60-69,60877.0,5005.0,3,0.08221495803012632,Hispanic
+f,1,sole_adult,70-100,9069.0,3630.0,2,0.4002646377770427,Hispanic
+f,2,coupled,18-29,53554536.0,549555.0,61,0.01026159576847048,Non-Hispanic White
+f,2,coupled,30-39,139071383.0,1899823.0,218,0.013660775919658467,Non-Hispanic White
+f,2,coupled,40-49,98515458.0,2289711.0,246,0.02324214947059374,Non-Hispanic White
+f,2,coupled,50-59,17464005.0,748598.0,80,0.04286519615632268,Non-Hispanic White
+f,2,coupled,60-69,573932.0,79420.0,11,0.13837876264087035,Non-Hispanic White
+f,2,coupled,70-100,47003.0,32260.0,4,0.6863391698402229,Non-Hispanic White
+f,2,multi_adult_other,18-29,45033738.0,367378.0,31,0.008157839351465784,Non-Hispanic White
+f,2,multi_adult_other,30-39,17361244.0,469236.0,46,0.02702778671850934,Non-Hispanic White
+f,2,multi_adult_other,40-49,39029814.0,1314861.0,101,0.03368863095273782,Non-Hispanic White
+f,2,multi_adult_other,50-59,14029848.0,865846.0,77,0.06171456739944724,Non-Hispanic White
+f,2,multi_adult_other,60-69,2615394.0,602197.0,45,0.23025096792299746,Non-Hispanic White
+f,2,multi_adult_other,70-100,2668302.0,1614503.0,113,0.6050675673143445,Non-Hispanic White
+f,2,sole_adult,18-29,12052251.0,183118.0,38,0.015193676268441472,Non-Hispanic White
+f,2,sole_adult,30-39,21333363.0,542139.0,128,0.025412730285421948,Non-Hispanic White
+f,2,sole_adult,40-49,18275686.0,698108.0,155,0.03819873026927689,Non-Hispanic White
+f,2,sole_adult,50-59,4261451.0,260262.0,63,0.061073563910508416,Non-Hispanic White
+f,2,sole_adult,60-69,232750.0,13335.0,4,0.057293233082706764,Non-Hispanic White
+f,2,sole_adult,70-100,21048.0,3889.0,2,0.1847681489927784,Non-Hispanic White
+f,3,coupled,18-29,5972227.0,77105.0,10,0.012910594322687333,Non-Hispanic Black
+f,3,coupled,30-39,13937751.0,192499.0,30,0.013811338715980791,Non-Hispanic Black
+f,3,coupled,40-49,7909279.0,249265.0,40,0.031515514878157666,Non-Hispanic Black
+f,3,coupled,50-59,1640766.0,108339.0,16,0.0660295252339456,Non-Hispanic Black
+f,3,coupled,60-69,121963.0,22279.0,4,0.1826701540631175,Non-Hispanic Black
+f,3,coupled,70-100,20775.0,5962.0,1,0.2869795427196149,Non-Hispanic Black
+f,3,multi_adult_other,18-29,14385472.0,172296.0,16,0.011977083546511369,Non-Hispanic Black
+f,3,multi_adult_other,30-39,8638098.0,279607.0,35,0.03236904698233338,Non-Hispanic Black
+f,3,multi_adult_other,40-49,9959734.0,519475.0,64,0.05215751745980365,Non-Hispanic Black
+f,3,multi_adult_other,50-59,3213218.0,268202.0,36,0.08346834855275925,Non-Hispanic Black
+f,3,multi_adult_other,60-69,936925.0,222125.0,29,0.23707874162819864,Non-Hispanic Black
+f,3,multi_adult_other,70-100,648066.0,246321.0,34,0.38008628750775386,Non-Hispanic Black
+f,3,sole_adult,18-29,13674327.0,193877.0,53,0.01417817491127717,Non-Hispanic Black
+f,3,sole_adult,30-39,16455804.0,437207.0,135,0.026568559032424062,Non-Hispanic Black
+f,3,sole_adult,40-49,7425621.0,434899.0,124,0.058567357531444174,Non-Hispanic Black
+f,3,sole_adult,50-59,1456790.0,139877.0,45,0.09601727084892125,Non-Hispanic Black
+f,3,sole_adult,60-69,183873.0,60466.0,18,0.32884654081893483,Non-Hispanic Black
+f,3,sole_adult,70-100,46062.0,20063.0,6,0.4355651078980505,Non-Hispanic Black
+f,4,coupled,18-29,2573140.0,34953.0,6,0.013583792564726365,Non-Hispanic Asian or Pacific Islander
+f,4,coupled,30-39,12673280.0,181742.0,25,0.014340565346934652,Non-Hispanic Asian or Pacific Islander
+f,4,coupled,40-49,8836270.0,218606.0,27,0.024739624298487937,Non-Hispanic Asian or Pacific Islander
+f,4,coupled,50-59,1278077.0,20788.0,3,0.0162650607123045,Non-Hispanic Asian or Pacific Islander
+f,4,coupled,60-69,18597.0,0.0,0,0.0,Non-Hispanic Asian or Pacific Islander
+f,4,coupled,70-100,8154.0,8154.0,1,1.0,Non-Hispanic Asian or Pacific Islander
+f,4,multi_adult_other,18-29,3664837.0,38353.0,4,0.010465131191373586,Non-Hispanic Asian or Pacific Islander
+f,4,multi_adult_other,30-39,2893073.0,41000.0,4,0.014171782046287806,Non-Hispanic Asian or Pacific Islander
+f,4,multi_adult_other,40-49,4294438.0,123794.0,10,0.028826589183497352,Non-Hispanic Asian or Pacific Islander
+f,4,multi_adult_other,50-59,1514072.0,20372.0,3,0.01345510649427504,Non-Hispanic Asian or Pacific Islander
+f,4,multi_adult_other,60-69,1040748.0,76852.0,9,0.07384304365706204,Non-Hispanic Asian or Pacific Islander
+f,4,multi_adult_other,70-100,773290.0,173944.0,22,0.22494019061412923,Non-Hispanic Asian or Pacific Islander
+f,4,sole_adult,18-29,285770.0,3739.0,1,0.013083948630017146,Non-Hispanic Asian or Pacific Islander
+f,4,sole_adult,30-39,772032.0,8297.0,3,0.010746963856420459,Non-Hispanic Asian or Pacific Islander
+f,4,sole_adult,40-49,968667.0,33935.0,9,0.035032678928878555,Non-Hispanic Asian or Pacific Islander
+f,4,sole_adult,50-59,232709.0,14463.0,5,0.06215058291686183,Non-Hispanic Asian or Pacific Islander
+f,4,sole_adult,60-69,12295.0,0.0,0,0.0,Non-Hispanic Asian or Pacific Islander
+f,5,coupled,18-29,9748914.0,338398.0,45,0.03471135349024517,Non-Hispanic American Indian or Alaska Native
+f,5,coupled,30-39,22326085.0,784060.0,105,0.03511856198702101,Non-Hispanic American Indian or Alaska Native
+f,5,coupled,40-49,11680214.0,804930.0,119,0.06891397708980332,Non-Hispanic American Indian or Alaska Native
+f,5,coupled,50-59,1446219.0,214669.0,33,0.14843464233286938,Non-Hispanic American Indian or Alaska Native
+f,5,coupled,60-69,77577.0,45049.0,7,0.5807004653441097,Non-Hispanic American Indian or Alaska Native
+f,5,coupled,70-100,22809.0,14021.0,2,0.6147134902889211,Non-Hispanic American Indian or Alaska Native
+f,5,multi_adult_other,18-29,7483070.0,103431.0,11,0.01382200086328205,Non-Hispanic American Indian or Alaska Native
+f,5,multi_adult_other,30-39,3436821.0,265490.0,33,0.07724871327310907,Non-Hispanic American Indian or Alaska Native
+f,5,multi_adult_other,40-49,6248532.0,484923.0,58,0.07760590807568882,Non-Hispanic American Indian or Alaska Native
+f,5,multi_adult_other,50-59,1417049.0,274722.0,32,0.1938690899185561,Non-Hispanic American Indian or Alaska Native
+f,5,multi_adult_other,60-69,309343.0,138178.0,15,0.4466821618720967,Non-Hispanic American Indian or Alaska Native
+f,5,multi_adult_other,70-100,381904.0,306020.0,32,0.8013008504755121,Non-Hispanic American Indian or Alaska Native
+f,5,sole_adult,18-29,3760104.0,135337.0,37,0.03599288743077319,Non-Hispanic American Indian or Alaska Native
+f,5,sole_adult,30-39,5064574.0,355703.0,105,0.07023354777716743,Non-Hispanic American Indian or Alaska Native
+f,5,sole_adult,40-49,2967165.0,336208.0,109,0.1133095058751367,Non-Hispanic American Indian or Alaska Native
+f,5,sole_adult,50-59,426607.0,82471.0,26,0.19331844062568124,Non-Hispanic American Indian or Alaska Native
+f,5,sole_adult,60-69,26759.0,8912.0,3,0.3330468253671662,Non-Hispanic American Indian or Alaska Native
+f,5,sole_adult,70-100,2125.0,2125.0,1,1.0,Non-Hispanic American Indian or Alaska Native
+m,1,coupled,18-29,14405291.0,269857.0,50,0.018733186299395133,Hispanic
+m,1,coupled,30-39,37780102.0,777173.0,140,0.02057096087247197,Hispanic
+m,1,coupled,40-49,21398933.0,802779.0,150,0.03751490786947181,Hispanic
+m,1,coupled,50-59,5526002.0,377322.0,68,0.06828119135678923,Hispanic
+m,1,coupled,60-69,837585.0,119492.0,27,0.14266253574264104,Hispanic
+m,1,coupled,70-100,88562.0,43010.0,10,0.4856484722567241,Hispanic
+m,1,multi_adult_other,18-29,28782943.0,394154.0,47,0.013694013152164461,Hispanic
+m,1,multi_adult_other,30-39,13892287.0,375575.0,47,0.027034785561225447,Hispanic
+m,1,multi_adult_other,40-49,14912476.0,645189.0,84,0.04326504867468018,Hispanic
+m,1,multi_adult_other,50-59,6139568.0,459119.0,54,0.07478034285148401,Hispanic
+m,1,multi_adult_other,60-69,1545099.0,128156.0,22,0.0829435524843392,Hispanic
+m,1,multi_adult_other,70-100,847728.0,278753.0,40,0.32882363210841214,Hispanic
+m,1,sole_adult,18-29,414724.0,17445.0,7,0.0420641197519314,Hispanic
+m,1,sole_adult,30-39,1125383.0,28277.0,10,0.025126556914401587,Hispanic
+m,1,sole_adult,40-49,1040186.0,19604.0,9,0.01884662935282728,Hispanic
+m,1,sole_adult,50-59,362426.0,40044.0,12,0.11048876184379708,Hispanic
+m,1,sole_adult,60-69,54622.0,12613.0,6,0.23091428362198382,Hispanic
+m,1,sole_adult,70-100,4413.0,4413.0,2,1.0,Hispanic
+m,2,coupled,18-29,31327468.0,561788.0,52,0.01793276111558074,Non-Hispanic White
+m,2,coupled,30-39,118590317.0,2335329.0,229,0.019692408782413493,Non-Hispanic White
+m,2,coupled,40-49,112639713.0,4312173.0,413,0.03828288340898028,Non-Hispanic White
+m,2,coupled,50-59,29419120.0,2061445.0,225,0.07007160649264832,Non-Hispanic White
+m,2,coupled,60-69,3668469.0,495106.0,57,0.1349625688536553,Non-Hispanic White
+m,2,coupled,70-100,420985.0,192205.0,23,0.45656020998372865,Non-Hispanic White
+m,2,multi_adult_other,18-29,43569464.0,694438.0,47,0.015938639961235235,Non-Hispanic White
+m,2,multi_adult_other,30-39,13286369.0,355341.0,33,0.026744778802997266,Non-Hispanic White
+m,2,multi_adult_other,40-49,28760237.0,1304517.0,91,0.04535835361857415,Non-Hispanic White
+m,2,multi_adult_other,50-59,15369254.0,1098733.0,81,0.07148902607764827,Non-Hispanic White
+m,2,multi_adult_other,60-69,2716110.0,454291.0,34,0.16725795347022027,Non-Hispanic White
+m,2,multi_adult_other,70-100,1114136.0,610705.0,49,0.5481422375724329,Non-Hispanic White
+m,2,sole_adult,18-29,992401.0,9795.0,2,0.009870002146309809,Non-Hispanic White
+m,2,sole_adult,30-39,4966339.0,150086.0,30,0.030220651469825156,Non-Hispanic White
+m,2,sole_adult,40-49,6324712.0,397181.0,78,0.06279827445107382,Non-Hispanic White
+m,2,sole_adult,50-59,2264745.0,223445.0,44,0.09866232180664931,Non-Hispanic White
+m,2,sole_adult,60-69,272468.0,49863.0,10,0.18300497673121247,Non-Hispanic White
+m,2,sole_adult,70-100,17506.0,4980.0,1,0.28447389466468637,Non-Hispanic White
+m,3,coupled,18-29,4871281.0,130563.0,14,0.02680260079432905,Non-Hispanic Black
+m,3,coupled,30-39,15137353.0,446645.0,50,0.029506149456909672,Non-Hispanic Black
+m,3,coupled,40-49,11509863.0,577585.0,71,0.05018174412675459,Non-Hispanic Black
+m,3,coupled,50-59,3587109.0,344686.0,47,0.09609019408108312,Non-Hispanic Black
+m,3,coupled,60-69,600542.0,130319.0,20,0.2170023079151833,Non-Hispanic Black
+m,3,coupled,70-100,133993.0,59465.0,10,0.44379183987223214,Non-Hispanic Black
+m,3,multi_adult_other,18-29,14034921.0,336260.0,28,0.023958809600709546,Non-Hispanic Black
+m,3,multi_adult_other,30-39,5626512.0,167852.0,17,0.029832336623471168,Non-Hispanic Black
+m,3,multi_adult_other,40-49,5931218.0,385443.0,32,0.06498547178673925,Non-Hispanic Black
+m,3,multi_adult_other,50-59,3275837.0,354772.0,28,0.10829964982995186,Non-Hispanic Black
+m,3,multi_adult_other,60-69,641290.0,216992.0,21,0.33836797704626614,Non-Hispanic Black
+m,3,multi_adult_other,70-100,297125.0,151804.0,21,0.5109095498527556,Non-Hispanic Black
+m,3,sole_adult,18-29,478735.0,27107.0,3,0.056622139597063095,Non-Hispanic Black
+m,3,sole_adult,30-39,1320549.0,38533.0,8,0.02917953063460727,Non-Hispanic Black
+m,3,sole_adult,40-49,1251649.0,80344.0,21,0.06419051986619252,Non-Hispanic Black
+m,3,sole_adult,50-59,493288.0,54899.0,17,0.11129198358768103,Non-Hispanic Black
+m,3,sole_adult,60-69,110565.0,22097.0,7,0.19985528874417763,Non-Hispanic Black
+m,3,sole_adult,70-100,19241.0,7345.0,4,0.3817369159607089,Non-Hispanic Black
+m,4,coupled,18-29,1027043.0,4869.0,1,0.004740794689219439,Non-Hispanic Asian or Pacific Islander
+m,4,coupled,30-39,9464562.0,172495.0,24,0.01822535474964399,Non-Hispanic Asian or Pacific Islander
+m,4,coupled,40-49,9770713.0,244266.0,28,0.02499981321731587,Non-Hispanic Asian or Pacific Islander
+m,4,coupled,50-59,2610933.0,181519.0,21,0.06952265722636314,Non-Hispanic Asian or Pacific Islander
+m,4,coupled,60-69,314312.0,32567.0,6,0.10361360686197155,Non-Hispanic Asian or Pacific Islander
+m,4,coupled,70-100,18519.0,3706.0,1,0.20011879691128032,Non-Hispanic Asian or Pacific Islander
+m,4,multi_adult_other,18-29,3162444.0,74862.0,5,0.023672197831803504,Non-Hispanic Asian or Pacific Islander
+m,4,multi_adult_other,30-39,1667452.0,23578.0,2,0.014140137167366737,Non-Hispanic Asian or Pacific Islander
+m,4,multi_adult_other,40-49,3489715.0,85942.0,5,0.02462722600556206,Non-Hispanic Asian or Pacific Islander
+m,4,multi_adult_other,50-59,2548794.0,130085.0,12,0.05103786339735577,Non-Hispanic Asian or Pacific Islander
+m,4,multi_adult_other,60-69,744613.0,95933.0,9,0.1288360530906659,Non-Hispanic Asian or Pacific Islander
+m,4,multi_adult_other,70-100,717982.0,222439.0,21,0.30981138802922636,Non-Hispanic Asian or Pacific Islander
+m,4,sole_adult,18-29,16515.0,0.0,0,0.0,Non-Hispanic Asian or Pacific Islander
+m,4,sole_adult,30-39,128469.0,0.0,0,0.0,Non-Hispanic Asian or Pacific Islander
+m,4,sole_adult,40-49,258215.0,7150.0,3,0.027690103208566505,Non-Hispanic Asian or Pacific Islander
+m,4,sole_adult,50-59,60019.0,14887.0,2,0.2480381212616005,Non-Hispanic Asian or Pacific Islander
+m,4,sole_adult,60-69,22658.0,5825.0,1,0.2570835907847118,Non-Hispanic Asian or Pacific Islander
+m,4,sole_adult,70-100,2125.0,2125.0,1,1.0,Non-Hispanic Asian or Pacific Islander
+m,5,coupled,18-29,6019669.0,185067.0,22,0.030743716971813568,Non-Hispanic American Indian or Alaska Native
+m,5,coupled,30-39,20144783.0,1239133.0,159,0.06151136003798105,Non-Hispanic American Indian or Alaska Native
+m,5,coupled,40-49,14763242.0,1602970.0,206,0.10857845451561385,Non-Hispanic American Indian or Alaska Native
+m,5,coupled,50-59,2819789.0,726748.0,97,0.2577313408911092,Non-Hispanic American Indian or Alaska Native
+m,5,coupled,60-69,275095.0,170859.0,27,0.621090895872335,Non-Hispanic American Indian or Alaska Native
+m,5,coupled,70-100,37789.0,37789.0,6,1.0,Non-Hispanic American Indian or Alaska Native
+m,5,multi_adult_other,18-29,7599709.0,514172.0,33,0.0676568010696199,Non-Hispanic American Indian or Alaska Native
+m,5,multi_adult_other,30-39,2302200.0,222027.0,19,0.09644123012770393,Non-Hispanic American Indian or Alaska Native
+m,5,multi_adult_other,40-49,4574344.0,683691.0,55,0.14946208680414066,Non-Hispanic American Indian or Alaska Native
+m,5,multi_adult_other,50-59,1521589.0,412746.0,41,0.2712598474358056,Non-Hispanic American Indian or Alaska Native
+m,5,multi_adult_other,60-69,291493.0,180774.0,19,0.620165835886282,Non-Hispanic American Indian or Alaska Native
+m,5,multi_adult_other,70-100,178144.0,125659.0,14,0.7053787946829532,Non-Hispanic American Indian or Alaska Native
+m,5,sole_adult,18-29,222268.0,11759.0,4,0.05290460165205967,Non-Hispanic American Indian or Alaska Native
+m,5,sole_adult,30-39,686496.0,71227.0,19,0.10375442828508834,Non-Hispanic American Indian or Alaska Native
+m,5,sole_adult,40-49,755882.0,128993.0,35,0.17065229758083933,Non-Hispanic American Indian or Alaska Native
+m,5,sole_adult,50-59,186837.0,84025.0,24,0.4497235558267367,Non-Hispanic American Indian or Alaska Native
+m,5,sole_adult,60-69,37098.0,22436.0,8,0.6047765378187503,Non-Hispanic American Indian or Alaska Native
+m,5,sole_adult,70-100,5518.0,5518.0,2,1.0,Non-Hispanic American Indian or Alaska Native

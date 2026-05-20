@@ -1,0 +1,670 @@
+Description: Revision of (First Look at NHIS Mortality and Fertility and Household Structure)--add more detailed cause of death
+Samples selected:
+      1986 NHIS
+      1987 NHIS
+      1988 NHIS
+      1989 NHIS
+      1990 NHIS
+      1991 NHIS
+      1992 NHIS
+      1993 NHIS
+      1994 NHIS
+      1995 NHIS
+      1996 NHIS
+      1997 NHIS
+      1998 NHIS
+      1999 NHIS
+      2000 NHIS
+      2001 NHIS
+      2002 NHIS
+      2003 NHIS
+      2004 NHIS
+      2005 NHIS
+      2006 NHIS
+      2007 NHIS
+      2008 NHIS
+      2009 NHIS
+      2010 NHIS
+      2011 NHIS
+      2012 NHIS
+      2013 NHIS
+      2014 NHIS
+      2015 NHIS
+      2016 NHIS
+      2017 NHIS
+      2018 NHIS
+File Type:                    rectangular
+Case Selection:               No
+  Variable                         Columns        Len   1986    1987    1988    1989    1990    1991    1992    1993    1994    1995    1996    1997    1998    1999    2000    2001    2002    2003    2004    2005    2006    2007    2008    2009    2010    2011    2012    2013    2014    2015    2016    2017    2018    
+  YEAR                         H   1-4            4     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  SERIAL                       H   5-10           6     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  NUMPREC                      H  11-13           3     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  STRATA                       H  14-17           4     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  PSU                          H  18-20           3     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  NHISHID                      H  21-34          14     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  HHWEIGHT                     H  35-40           6     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  REGION                       H  41-42           2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  PERNUM                       P  43-44           2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  NHISPID                      P  45-60          16     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  HHX                          P  61-67           7     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  FMX                          P  68-69           2     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  PX                           P  70-71           2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  PERWEIGHT                    P  72-83          12     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  SAMPWEIGHT                   P  84-95          12     .       X       X       X       X       X       X       X       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  FWEIGHT                      P  96-107         12     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  SUPP3WT                      P 108-116          9     .       .       .       .       .       .       .       .       X       X       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       .       .       .       .       .       .       
+  INTERVWMO                    P 117-118          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  INTERVWYR                    P 119-122          4     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  ASTATFLG                     P 123              1     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  CSTATFLG                     P 124              1     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  SCRESPOND                    P 125-126          2     .       .       .       .       .       .       .       .       X       X       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  RESPOND                      P 127-128          2     X       X       X       X       X       X       X       X       X       X       X       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       
+  AGE                          P 129-131          3     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  SEX                          P 132              1     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  SEXORIEN                     P 133              1     .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       
+  MARSTCUR                     P 134              1     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MARSTAT                      P 135-136          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MARST                        P 137-138          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MARSTCOHAB                   P 139              1     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  COHABMARST                   P 140              1     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  COHABEVMAR                   P 141              1     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  BIRTHMO                      P 142-143          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       .       .       .       .       
+  BIRTHYR                      P 144-147          4     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       .       .       
+  RELATE                       P 148-149          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  RACENEW                      P 150-152          3     .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  RACEA                        P 153-155          3     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  HISPETH                      P 156-157          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  RACESR                       P 158-160          3     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  EDUCREC2                     P 161-162          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  EDUCREC1                     P 163-164          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MORTELIG                     P 165              1     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MORTSTAT                     P 166              1     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MORTDODQ                     P 167              1     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MORTDODY                     P 168-171          4     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MORTUCOD                     P 172-174          3     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       .       .       .       .       .       .       .       .       .       .       .       .       .       .       
+  MORTUCODLD                   P 175-176          2     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+  MORTWT                       P 177-184          8     X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       .       .       .       .       
+  MORTWTSA                     P 185-192          8     .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       
+
+Variable Availability Key:
+All Years X - available in this sample
+All Years . - not available in this sample
+
+RECTYPE   Record type
+H         Household
+P         Person
+I         Injury
+X         Condition
+D         Dr. visits
+A         Hospital record
+M         Prescribed medicine
+O         Non-prescribed medicine
+S         X-ray record
+Z         Poison record
+V         Motor vehicle person accident
+G         Pregnancy
+Y         Soa/condtion
+L         Vitamin/mineral
+B         Disability condition
+
+REGION              Region of residence
+01                  Northeast
+02                  North Central/Midwest
+03                  South
+04                  West
+08                  NO DATA IN ROUND
+09                  Unknown
+
+INTERVWMO           Month of NHIS interview
+01                  January
+02                  February
+03                  March
+04                  April
+05                  May
+06                  June
+07                  July
+08                  August
+09                  September
+10                  October
+11                  November
+12                  December
+98                  Unknown-not ascertained
+
+ASTATFLG            Sample adult flag
+0                   NIU
+1                   Sample adult, has record
+2                   Sample adult, no record
+3                   Not selected as sample adult
+4                   No one selected as sample adult
+5                   Armed forces member
+6                   AF member, selected as sample adult
+
+CSTATFLG            Sample child flag
+0                   NIU
+1                   Sample child-has record
+2                   Sample child-no record
+3                   Not selected as sample child
+4                   No one selected as sample child
+5                   Emancipated minor
+
+SCRESPOND           Relationship of respondent to sample child
+00                  NIU
+10                  Parent (biological, adoptive, or step)
+11                  Mother
+12                  Father
+20                  Grandparent
+30                  Aunt/uncle
+40                  Brother/sister
+50                  Other relative
+51                  Other relative or other non-relative
+60                  Legal guardian
+70                  Foster parent
+80                  Other non-relative
+91                  Self
+92                  Spouse
+97                  Unknown-refused
+98                  Unknown-not ascertained
+99                  Unknown-don't know
+
+RESPOND             Respondent
+00                  NIU (Under 17)
+20                  Self entirely
+30                  Self partly
+40                  Proxy
+41                  Spouse
+42                  Mother
+43                  Father
+44                  Other female family member
+45                  Other male family member
+46                  Other
+99                  Unknown/not reported
+
+SEX                 Sex
+1                   Male
+2                   Female
+7                   Unknown-refused
+8                   Unknown-not ascertained
+9                   Unknown-don't know
+
+SEXORIEN            Sexual orientation
+0                   NIU
+1                   Lesbian or gay
+2                   Straight, that is, not lesbian or gay
+3                   Bisexual
+4                   Something else
+5                   I don't know the answer
+7                   Unknown-refused
+8                   Unknown-not ascertained
+
+MARSTCUR            Current marital status
+0                   NIU
+1                   Married, spouse present
+2                   Married, spouse absent
+3                   Married, spouse in household unknown
+4                   Separated
+5                   Divorced
+6                   Widowed
+7                   Living with partner
+8                   Never married
+9                   Unknown marital status
+
+MARSTAT             Legal marital status
+00                  NIU
+10                  Married
+11                  Married - Spouse present
+12                  Married - Spouse not in household
+13                  Married - Spouse in household unknown
+20                  Widowed
+30                  Divorced
+40                  Separated
+50                  Never married
+99                  Unknown marital status
+
+MARST               Current marital status
+00                  NIU
+10                  Married
+11                  Married - Spouse present
+12                  Married - Spouse not in household
+13                  Married - Spouse in household unknown
+20                  Widowed
+30                  Divorced
+40                  Separated
+50                  Never married
+99                  Unknown marital status
+
+MARSTCOHAB          Marital status, including living with partner
+0                   NIU
+1                   Married, spouse present
+2                   Married, spouse absent
+3                   Married, spouse in household unknown
+4                   Separated
+5                   Divorced
+6                   Widowed
+7                   Living with partner
+8                   Never married
+9                   Unknown marital status
+
+COHABMARST          Legal marital status of cohabiting person
+0                   NIU
+1                   Married
+2                   Widowed
+3                   Divorced
+4                   Separated
+7                   Unknown-refused
+8                   Unknown-not ascertained
+9                   Unknown-don't know
+
+COHABEVMAR          Cohabiting person ever married
+0                   NIU
+1                   Not married
+2                   Married
+7                   Unknown-refused
+8                   Unknown-not ascertained
+9                   Unknown-don't know
+
+BIRTHMO             Month of birth
+00                  NIU
+01                  January
+02                  February
+03                  March
+04                  April
+05                  May
+06                  June
+07                  July
+08                  August
+09                  September
+10                  October
+11                  November
+12                  December
+97                  Unknown-refused
+98                  Unknown-not ascertained
+99                  Unknown-don't know
+
+RELATE              Relationship to householder
+10                  Householder
+20                  Spouse
+21                  Spouse, other spouse at home and NOT in Armed forces
+22                  Spouse, other spouse at home and in Armed Forces
+30                  Unmarried partner
+40                  Child
+41                  Child (bio/adopt/in-law/step/foster) of householder
+43                  Child of partner
+44                  Child of ineligible householder
+50                  Other relative 1  (not wife, child)
+60                  Grandchild
+70                  Other relative 2 (not grandkid, child, spouse, parent)
+71                  Parent (bio/adopt/in-law/step/foster) of householder
+72                  Brother/sister (bio/adopt/in-law/step/foster)
+73                  Grandparent (Grandma/Grandpa)
+74                  Aunt/uncle
+75                  Niece/nephew
+76                  Other relative 3 (no named category)
+80                  Nonrelative
+81                  Housemate/roommate
+82                  Roomer/boarder
+83                  Legal guardian
+84                  Ward
+85                  Other nonrelative
+90                  Unknown
+96                  Unknown - Don't know or refused
+97                  Unknown-Refused
+98                  Unknown - Not ascertained
+99                  Unknown-Don't know
+
+RACENEW             Self-reported Race (Post-1997 OMB standards)
+100                 White only
+200                 Black/African American only
+300                 American Indian/Alaska Native only
+400                 Asian only
+500                 Other Race and Multiple Race
+510                 Other Race and Multiple Race (2019-forward: Excluding American Indian/Alaska Native)
+520                 Other Race
+530                 Race Group Not Releasable
+540                 Multiple Race
+541                 Multiple Race (1999-2018: Including American Indian/Alaska Native)
+542                 American Indian/Alaska Native and Any Other Race
+997                 Unknown-Refused
+998                 Unknown-Not ascertained
+999                 Unknown-Don't Know
+
+RACEA               Main Racial Background (Pre-1997 Revised OMB Standards), self-reported or interviewer reported
+100                 White
+200                 Black/African-American
+300                 Aleut, Alaskan Native, or American Indian
+310                 Alaskan Native or American Indian
+320                 Alaskan Native/Eskimo
+330                 Aleut
+340                 American Indian
+350                 American Indian or Alaskan Native and any other group
+400                 Asian or Pacific Islander
+410                 Asian
+411                 Chinese
+412                 Filipino
+413                 Korean
+414                 Vietnamese
+415                 Japanese
+416                 Asian Indian
+420                 Pacific Islander
+421                 Hawaiian
+422                 Samoan
+423                 Guamanian
+430                 Other Asian or Pacific Islander
+431                 Other Asian or Pacific Islander (1992-1995)
+432                 Other Asian or Pacific Islander (1996)
+433                 Other Asian or Pacific Islander (1997-1998)
+434                 Other Asian (1999 forward)
+500                 Other Race
+510                 Other Race (1963-1977)
+520                 Other Race (1978)
+530                 Other Race (1979-1991)
+540                 Other Race (1992-1995)
+550                 Other Race (1996)
+560                 Other Race (1997-1998)
+570                 Other Race (1999-2002)
+580                 Primary Race not releasable
+600                 Multiple Race, No Primary Race Selected
+610                 Multiple Race, including Asian, excluding Black and White
+611                 Multiple Race, including Asian and Black, excluding White
+612                 Multiple Race, including Asian and White, excluding Black
+613                 Multiple Race, including Black, excluding Asian and White
+614                 Multiple Race, including Black and White, excluding Asian
+615                 Multiple Race, including White, excluding Asian and Black
+616                 Multiple Race, including Asian, White, and Black
+617                 Multiple Race, excluding Asian, White, and Black
+900                 Unknown
+970                 Unknown-refused
+980                 Unknown-not ascertained
+990                 Unknown (1997 forward: Don't know)
+
+HISPETH             Hispanic ethnicity
+10                  Not Hispanic/Spanish origin
+20                  Mexican
+21                  Mexican-Mexicano
+22                  Mexicano
+23                  Mexican-American
+24                  Chicano
+30                  Puerto Rican
+40                  Cuban/Cuban American
+50                  Dominican (Republic)
+60                  Other Hispanic
+61                  Central or South American
+62                  Other Latin American, type not specified
+63                  Other Spanish
+64                  Hispanic/Latino/Spanish, non-specific type
+65                  Hispanic/Latino/Spanish, type refused
+66                  Hispanic/Latino/Spanish, type not ascertained
+67                  Hispanic/Spanish, type don't know
+70                  Multiple Hispanic
+90                  Unknown
+91                  Unknown if Hispanic/Spanish origin
+92                  Two origins, unknown which is the main
+93                  Origin unknown, refused or not reported
+99                  NIU
+
+RACESR              Self-Reported Main Racial Background (Pre-1997 Revised OMB Standards)
+100                 White
+200                 Black/African American
+300                 Aleut, Alaskan Native, or American Indian
+310                 Alaskan Native or American Indian
+320                 Alaskan Native
+330                 Aleut
+340                 American Indian
+400                 Asian or Pacific Islander
+410                 Asian
+411                 Chinese
+412                 Filipino
+413                 Korean
+414                 Vietnamese
+415                 Japanese
+416                 Asian Indian
+417                 Other Asian (1999-2005)
+420                 Pacific Islander
+421                 Hawaiian
+422                 Samoan
+423                 Guamanian
+430                 Other Asian or Pacific Islander
+431                 Other Asian or Pacific Islander (1992-1995)
+432                 Other Asian or Pacific Islander (1996)
+433                 Other Asian or Pacific Islander (1997-1998)
+500                 Other race
+510                 Other race (1978)
+520                 Other race (1979-1991)
+530                 Other race (1992-1995)
+540                 Other race (1996)
+550                 Other race (1997-1998)
+560                 Other race (1999-2002)
+570                 Primary race not releasable
+600                 Multiple race, no primary race selected
+900                 Unknown
+970                 Unknown-refused
+980                 Unknown-not ascertained
+990                 Unknown-don't know
+
+EDUCREC2            Educational attainment recode, intervalled
+00                  NIU
+10                  Never attended/kindergarten only
+20                  Grade 1, 2, 3, or 4
+30                  Grade 5, 6, 7, or 8
+31                  Grade 5, 6, or 7
+32                  Grade 8
+40                  Grade 9, 10, 11, or 12
+41                  Grade 9, 10, or 11
+42                  Grade 12
+50                  1 to 4 years of college
+51                  1 to 3 years of college
+52                  1 to 2 years of college
+53                  3 to 4 years of college
+54                  4 years college/Bachelor's degree
+60                  5+ years of college
+96                  Unknown-not reported
+97                  Unknown-refused
+98                  Unknown-not ascertained
+99                  Unknown (1996 forward - Don't know)
+
+EDUCREC1            Educational attainment recode, nonintervalled
+00                  NIU
+01                  Never attended/kindergarten only
+02                  Grade 1
+03                  Grade 2
+04                  Grade 3
+05                  Grade 4
+06                  Grade 5
+07                  Grade 6
+08                  Grade 7
+09                  Grade 8
+10                  Grade 9
+11                  Grade 10
+12                  Grade 11
+13                  Grade 12
+14                  1 to 3 years of college
+15                  4 years college/Bachelor's degree
+16                  5+ years of college
+96                  Unknown--all causes
+97                  Unknown--refused
+98                  Unknown--not ascertained
+99                  Unknown--not known
+
+MORTELIG            Eligibility status for mortality follow-up
+1                   Eligible
+2                   Under age 18
+3                   Ineligible
+9                   NIU
+
+MORTSTAT            Final mortality status
+1                   Assumed deceased
+2                   Assumed alive
+9                   NIU
+
+MORTDODQ            Quarter of death
+1                   January-March
+2                   April-June
+3                   July-September
+4                   October-December
+9                   NIU
+
+MORTDODY            Year of death
+1986                1986
+1987                1987
+1988                1988
+1989                1989
+1990                1990
+1991                1991
+1992                1992
+1993                1993
+1994                1994
+1995                1995
+1996                1996
+1997                1997
+1998                1998
+1999                1999
+2000                2000
+2001                2001
+2002                2002
+2003                2003
+2004                2004
+2005                2005
+2006                2006
+2007                2007
+2008                2008
+2009                2009
+2010                2010
+2011                2011
+2012                2012
+2013                2013
+2014                2014
+2015                2015
+2016                2016
+2017                2017
+2018                2018
+2019                2019
+9999                NIU
+
+MORTUCOD            Underlying cause of death (ICD-10)
+001                 Salmonella infections
+002                 Shigellosis and amebiasis
+003                 Other intestinal infections
+005                 Respiratory tuberculosis
+006                 Other tuberculosis
+007                 Whooping cough
+008                 Scarlet fever and erysipelas
+009                 Meningococcal infection
+010                 Septicemia
+011                 Syphilis
+012                 Acute poliomyelitis
+013                 Arthropod-borne encephalitis
+014                 Measles
+015                 Viral hepatitis
+016                 Human immunodeficiency virus
+017                 Malaria
+018                 Other infectious parasitic disease
+020                 Cancer of lip, oral cavity, pharynx
+021                 Cancer of esophagus
+022                 Cancer of stomach
+023                 Cancer of colon, rectum, anus
+024                 Cancer of liver and bile ducts
+025                 Cancer of pancreas
+026                 Cancer of larynx
+027                 Cancer of trachea, bronchus, lung
+028                 Malignant melanoma of skin
+029                 Cancer of breast
+030                 Cancer of cervix uteri
+031                 Cancer of uterus
+032                 Cancer of ovary
+033                 Cancer of prostate
+034                 Cancer of kidney and renal pelvis
+035                 Cancer of bladder
+036                 Cancer of brain, nervous system
+038                 Hodgkin's disease
+039                 Non-Hodgkin's lymphoma
+040                 Leukemia
+041                 Multiple myeloma
+042                 Other lymph and blood cancer
+043                 Other, unspecified neoplasms
+044                 In situ and benign neoplasms
+045                 Anemias
+046                 Diabetes mellitus
+048                 Malnutrition
+049                 Other nutritional deficiencies
+050                 Meningitis
+051                 Parkinson's disease
+052                 Alzheimer's disease
+055                 Rheumatic fever/heart disease
+056                 Hypertensive heart disease
+057                 Hypertensive heart, renal disease
+059                 Acute myocardial infarction
+060                 Other acute ischemic heart disease
+062                 Atherosclerotic cardiovascular disease
+063                 Other chronic ischemic heart disease
+065                 Acute and subacute endocarditis
+066                 Pericardium disease, myocarditis
+067                 Heart failure
+068                 All other forms of heart disease
+069                 Primary hypertension, renal disease
+070                 Cerebrovascular diseases
+071                 Atherosclerosis
+073                 Aortic aneurysm and dissection
+074                 Other diseases of arteries, capillaries
+075                 Other disorders of circulatory system
+077                 Influenza
+078                 Pneumonia
+080                 Acute bronchitis and bronchiolitis
+081                 Acute lower resp. infection, unspec
+083                 Bronchitis, chronic and unspecified
+084                 Emphysema
+085                 Asthma
+086                 Other chronic lower resp. disease
+087                 Pneumoconioses
+088                 Pneumonitis from solids, liquids
+089                 Other respiratory system diseases
+090                 Peptic ulcer
+091                 Diseases of appendix
+092                 Hernia
+094                 Alcoholic liver disease
+095                 Other chronic liver disease
+096                 Cholelithiasis, gallbladder disease
+098                 Acute nephrotic syndrome
+099                 Chronic glomerulonephritis
+100                 Renal failure
+101                 Other disorders of kidney
+102                 Infections of kidney
+103                 Hyperplasia of prostate
+104                 Female pelvic inflammatory disease
+106                 Pregnancy with abortive outcome
+107                 Other pregnancy, birth complications
+108                 Certain perinatal conditions
+109                 Congenital mal or deformations
+110                 Abnormal clinical, lab findings, nec
+111                 All other diseases (Residual)
+114                 Motor vehicle accidents
+115                 Other land transport accidents
+116                 Water, air, space transport accidents
+118                 Falls
+119                 Accidental discharge of firearms
+120                 Accidental drowning
+121                 Accidental fire, smoke exposure
+122                 Accidental poisoning
+123                 Other nontransport accidents
+125                 Suicide by discharge of firearms
+126                 Suicide by other or means
+128                 Homicide by firearm discharge
+129                 Homicide by other means
+130                 Legal intervention
+132                 Firearm discharge, unknown intent
+133                 Other, unspecified events
+134                 War operations, their sequelae
+135                 Medical, surgical complications
+999                 NIU
+
+MORTUCODLD          Leading underlying cause of death (ICD-10)
+01                  Diseases of heart
+02                  Malignant neoplasms
+03                  Chronic lower respiratory diseases
+04                  Accidents (unintentional injuries)
+05                  Cerebrovascular diseases
+06                  Alzheimer's disease
+07                  Diabetes mellitus
+08                  Influenza and pneumonia
+09                  Nephritis, nephrotic syndrome and nephrosis
+10                  All other causes (residual)
+96                  NIU
+
