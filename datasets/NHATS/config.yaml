@@ -1,0 +1,29 @@
+dataset:
+  name: NHATS
+  full_name: National Health and Aging Trends Study
+  description: NIA-funded longitudinal study of late-life disability and functioning
+    in a national sample of Medicare beneficiaries 65+ (2011-present).
+source:
+  type: study_website_citations
+  collection_url: https://www.nhats.org/publications/search
+  expected_paper_count: ~
+  last_fetched: '2026-07-06'
+  funding:
+    funder: NIA (NIH)
+    confirmed: yes
+    note: NIA U01AG032947; publications page lists author/title/year/DOI per card.
+  coverage_query: '"National Health and Aging Trends Study"[tiab] OR "NHATS"[tiab]'
+  automated_fetch_count: 1166
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

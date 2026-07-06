@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+NHATS,n_central_pmid,0,2026-07-06
+NHATS,n_central_no_pmid,1162,2026-07-06
+NHATS,n_query_hits,1002,2026-07-06
+NHATS,n_overlap,0,2026-07-06
+NHATS,n_central_only,0,2026-07-06
+NHATS,n_search_only,1002,2026-07-06
+NHATS,n_union,1002,2026-07-06
+NHATS,coverage_ratio,NA,2026-07-06
+NHATS,curated_share_of_query,0,2026-07-06

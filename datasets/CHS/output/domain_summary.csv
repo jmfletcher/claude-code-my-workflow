@@ -1,0 +1,7 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 2: loci, genetic, variants, genome",NA,NA,NA,2,"Domain 2: loci, genetic, variants, genome",493,7489,4.974815777888744,0.7789046653144016
+"Domain 8: acid, fatty, acids, phospholipid",NA,NA,NA,8,"Domain 8: acid, fatty, acids, phospholipid",60,287,3.9175000000000106,0.9333333333333333
+"Domain 1: fracture, hip, bone, mineral",NA,NA,NA,1,"Domain 1: fracture, hip, bone, mineral",43,318,2.481882098431595,0.8837209302325582
+"Domain 5: dementia, cognitive, cognition, alzheimer",NA,NA,NA,5,"Domain 5: dementia, cognitive, cognition, alzheimer",64,367,1.73779296875,0.953125
+"Domain 4: sleep, breathing, disordered, apnea",NA,NA,NA,4,"Domain 4: sleep, breathing, disordered, apnea",85,633,1.3813148788927148,0.7764705882352941
+"Domain 3: cvd, stroke, mortality, older",NA,NA,NA,3,"Domain 3: cvd, stroke, mortality, older",1119,3577,0.4051579629137284,0.5281501340482574

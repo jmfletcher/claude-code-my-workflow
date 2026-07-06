@@ -45,42 +45,27 @@ parse_year <- function(article) {
 
 parse_authors <- function(article, pmid, title, pub_year) {
   author_nodes <- xml_find_all(article, ".//AuthorList/Author")
-  if (length(author_nodes) == 0) {
-    return(tibble(
-      pmid = character(), title = character(), pub_year = integer(),
-      author_raw = character(), author_id = character(),
-      author_position = integer(), affiliation = character()
-    ))
-  }
+  if (length(author_nodes) == 0) return(NULL)
 
-  map_dfr(seq_along(author_nodes), function(i) {
-    node <- author_nodes[[i]]
-    last_name <- xml_text(xml_find_first(node, "./LastName"))
-    initials <- xml_text(xml_find_first(node, "./Initials"))
-    collective <- xml_text(xml_find_first(node, "./CollectiveName"))
+  last_name <- xml_text(xml_find_first(author_nodes, "./LastName"))
+  initials <- xml_text(xml_find_first(author_nodes, "./Initials"))
+  collective <- xml_text(xml_find_first(author_nodes, "./CollectiveName"))
+  aff <- xml_text(xml_find_first(author_nodes, ".//Affiliation"))
 
-    if (!is.na(collective) && collective != "") {
-      author_raw <- collective
-    } else if (!is.na(last_name) && last_name != "") {
-      author_raw <- paste(last_name, initials)
-      author_raw <- trimws(author_raw)
-    } else {
-      author_raw <- NA_character_
-    }
+  author_raw <- trimws(paste(last_name, ifelse(is.na(initials), "", initials)))
+  use_collective <- !is.na(collective) & collective != ""
+  author_raw[use_collective] <- collective[use_collective]
+  author_raw[is.na(last_name) & !use_collective] <- NA_character_
 
-    aff <- xml_text(xml_find_first(node, ".//Affiliation"))
-    if (is.na(aff)) aff <- ""
-
-    tibble(
-      pmid = pmid,
-      title = title,
-      pub_year = pub_year,
-      author_raw = author_raw,
-      author_id = author_raw,
-      author_position = i,
-      affiliation = aff
-    )
-  })
+  tibble(
+    pmid = pmid,
+    title = title,
+    pub_year = pub_year,
+    author_raw = author_raw,
+    author_id = author_raw,
+    author_position = seq_along(author_nodes),
+    affiliation = ifelse(is.na(aff), "", aff)
+  )
 }
 
 records <- map_dfr(articles, function(article) {

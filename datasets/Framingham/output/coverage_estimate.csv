@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+Framingham,n_central_pmid,4535,2026-07-06
+Framingham,n_central_no_pmid,0,2026-07-06
+Framingham,n_query_hits,4609,2026-07-06
+Framingham,n_overlap,2864,2026-07-06
+Framingham,n_central_only,1671,2026-07-06
+Framingham,n_search_only,1745,2026-07-06
+Framingham,n_union,6280,2026-07-06
+Framingham,coverage_ratio,0.7221,2026-07-06
+Framingham,curated_share_of_query,0.6214,2026-07-06

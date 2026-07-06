@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 8: stroke, care, disability, incident",NA,NA,NA,8,"Domain 8: stroke, care, disability, incident",13,33,1.6627218934911248,0.7692307692307693
+"Domain 5: frailty, mortality, relationship, physical",NA,NA,NA,5,"Domain 5: frailty, mortality, relationship, physical",19,58,0.7174515235457054,0.42105263157894735
+"Domain 3: population, vision, dementia, term",NA,NA,NA,3,"Domain 3: population, vision, dementia, term",14,80,0.7142857142857124,0.5714285714285714
+"Domain 6: age, subjective, frailty, associations",NA,NA,NA,6,"Domain 6: age, subjective, frailty, associations",14,31,0.6683673469387744,0.42857142857142855
+"Domain 1: medicare, beneficiaries, outcomes, home",NA,NA,NA,1,"Domain 1: medicare, beneficiaries, outcomes, home",56,219,0.20918367346938946,0.19642857142857142
+"Domain 4: caregiver, burden, caregiving, care",NA,NA,NA,4,"Domain 4: caregiver, burden, caregiving, care",57,155,0.10772545398584149,0.19298245614035087
+"Domain 7: caregivers, caregiving, dementia, family",NA,NA,NA,7,"Domain 7: caregivers, caregiving, dementia, family",149,389,0.10621143191748042,0.26174496644295303
+"Domain 2: adults, older, aging, cognitive",NA,NA,NA,2,"Domain 2: adults, older, aging, cognitive",840,1608,0.03848356009070451,0.11071428571428571

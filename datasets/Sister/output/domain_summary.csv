@@ -1,0 +1,8 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 8: cancers, consumption, incidence, use",NA,NA,NA,8,"Domain 8: cancers, consumption, incidence, use",5,119,14.35999999999994,1
+"Domain 5: ovarian, consortium, genetic, use",NA,NA,NA,5,"Domain 5: ovarian, consortium, genetic, use",22,422,5.245867768595132,0.9090909090909091
+"Domain 3: age, epigenetic, young, exposures",NA,NA,NA,3,"Domain 3: age, epigenetic, young, exposures",9,27,2.4074074074074083,1
+"Domain 7: length, telomere, term, long",NA,NA,NA,7,"Domain 7: length, telomere, term, long",15,53,1.8133333333333335,0.9333333333333333
+"Domain 1: breast, women, sister, cancer",NA,NA,NA,1,"Domain 1: breast, women, sister, cancer",311,1246,1.5138180953463944,0.9485530546623794
+"Domain 2: exposure, patterns, childhood, incident",NA,NA,NA,2,"Domain 2: exposure, patterns, childhood, incident",18,64,1.4382716049382722,0.9444444444444444
+"Domain 4: case, studies, gene, variants",NA,NA,NA,4,"Domain 4: case, studies, gene, variants",10,30,1.2400000000000002,0.6

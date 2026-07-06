@@ -1,0 +1,7 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 4: variants, genetic, loci, genome",NA,NA,NA,4,"Domain 4: variants, genetic, loci, genome",1190,11019,1.948819292422558,0.3873949579831933
+"Domain 7: stroke, ischemic, prevention, american",NA,NA,NA,7,"Domain 7: stroke, ischemic, prevention, american",103,804,1.0157413516825446,0.7766990291262136
+"Domain 6: atherosclerosis, significance, carotid, report",NA,NA,NA,6,"Domain 6: atherosclerosis, significance, carotid, report",5,9,0.9600000000000004,1
+"Domain 8: atrial, fibrillation, stroke, cancer",NA,NA,NA,8,"Domain 8: atrial, fibrillation, stroke, cancer",19,80,0.8919667590027682,0.8421052631578947
+"Domain 3: hypertension, elderly, cardiovascular, prevention",NA,NA,NA,3,"Domain 3: hypertension, elderly, cardiovascular, prevention",28,48,0.41836734693877503,0.75
+"Domain 5: coronary, cvd, cardiovascular, men",NA,NA,NA,5,"Domain 5: coronary, cvd, cardiovascular, men",3174,7655,0.2527193021117606,0.36074354127284186

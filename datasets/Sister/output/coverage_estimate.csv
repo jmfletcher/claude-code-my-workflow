@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+Sister,n_central_pmid,0,2026-07-06
+Sister,n_central_no_pmid,393,2026-07-06
+Sister,n_query_hits,199,2026-07-06
+Sister,n_overlap,0,2026-07-06
+Sister,n_central_only,0,2026-07-06
+Sister,n_search_only,199,2026-07-06
+Sister,n_union,199,2026-07-06
+Sister,coverage_ratio,NA,2026-07-06
+Sister,curated_share_of_query,0,2026-07-06

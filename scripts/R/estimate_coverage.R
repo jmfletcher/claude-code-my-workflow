@@ -77,7 +77,11 @@ central_only <- setdiff(central_pmids, search_pmids)   # on list, missed by quer
 search_only <- setdiff(search_pmids, central_pmids)    # in literature, not on list
 union_n <- length(union(central_pmids, search_pmids))
 
-coverage_ratio <- if (union_n > 0) length(central_pmids) / union_n else NA_real_
+coverage_ratio <- if (length(central_pmids) > 0 && union_n > 0) {
+  length(central_pmids) / union_n
+} else {
+  NA_real_
+}
 recall_of_query <- if (length(search_pmids) > 0) length(overlap) / length(search_pmids) else NA_real_
 
 result <- tibble(
@@ -101,5 +105,11 @@ cat("Overlap:                ", length(overlap), "\n")
 cat("On list, not in query:  ", length(central_only), "\n")
 cat("In query, not on list:  ", length(search_only), "\n")
 cat("Union (PMID):           ", union_n, "\n")
-cat(sprintf("Curated list covers ~%.1f%% of the PMID union.\n", 100 * coverage_ratio))
+if (!is.na(coverage_ratio)) {
+  cat(sprintf("Curated list covers ~%.1f%% of the PMID union.\n", 100 * coverage_ratio))
+} else {
+  cat("Curated list has no PubMed IDs (citation-only source);",
+      "cannot compute PMID overlap.\n")
+  cat("Curated papers:", central_no_pmid, "| PubMed query hits:", n_search_total, "\n")
+}
 cat("Output:", out_path, "\n")

@@ -1,0 +1,29 @@
+dataset:
+  name: CHS
+  full_name: Cardiovascular Health Study
+  description: NHLBI observational cohort of cardiovascular disease risk factors in
+    adults 65+ (recruited 1989-1990, ongoing follow-up).
+source:
+  type: study_docx_pmid
+  collection_url: https://chs-nhlbi.org/CurrentBibliography
+  docx_url: https://chs-nhlbi.org/sites/chs-nhlbi.org/files/page/CHS%20Bibliography-June%2011%2C%202026%20%28n2315%29.docx
+  expected_paper_count: 2315
+  last_fetched: null
+  funding:
+    funder: NHLBI (NIH)
+    confirmed: yes
+    note: NHLBI-funded; docx bibliography lists PM:{PMID} for most entries.
+  coverage_query: '"Cardiovascular Health Study"[tiab]'
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

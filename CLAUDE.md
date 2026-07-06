@@ -147,6 +147,10 @@ See `.claude/rules/authorship-monopoly-metrics.md` for full definitions.
 | EdShare (≤2014) | EdSHARe bibliography subset | 63 auto-aliases | 884 | 2.3% | 6.0% | 20.5% |
 | EdShare (≥2015) | EdSHARe bibliography subset | 8 auto-aliases | 105 | 23.8% | 25.7% | 34.3% |
 | HCHS/SOL | [HCHS/SOL publications](https://sites9.cscc.unc.edu/hchs/res-publications) | 296 auto-aliases; ~79% coverage | 642 | 56.4% | 79.0% | 91.0% |
+| CHS | [CHS bibliography](https://chs-nhlbi.org/CurrentBibliography) | 1,757 auto-aliases; ~66% coverage | 1,866 | 35.6% | 58.2% | 71.2% |
+| Framingham | [FHS bibliography](https://www.framinghamheartstudy.org/fhs-bibliography/) | 2,835 auto-aliases; ~72% coverage | 4,523 | 19.4% | 35.4% | 67.4% |
+| Sister | [Sister Study articles](https://sisterstudy.niehs.nih.gov/English/articles.htm) | 130 auto-aliases; citation-only | 393 | 88.8% | 93.4% | 97.2% |
+| NHATS | [NHATS publications](https://www.nhats.org/publications/search) | 218 auto-aliases; citation-only | 1,162 | 6.3% | 15.2% | 25.7% |
 
 ---
 
