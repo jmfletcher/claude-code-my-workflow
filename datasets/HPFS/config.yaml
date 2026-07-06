@@ -1,0 +1,25 @@
+dataset:
+  name: HPFS
+  full_name: Health Professionals Follow-up Study
+  description: NCI-funded prospective cohort of male health professionals studying
+    nutrition and chronic disease (enrolled 1986).
+source:
+  type: pubmed_name_search
+  collection_url: https://www.hsph.harvard.edu/hpfs/
+  entrez_query: '"Health Professionals Follow-up Study"[tiab] OR "Health Professionals Follow up Study"[tiab]'
+  expected_paper_count: null
+  last_fetched: null
+  funding:
+    funder: NCI (NIH)
+    confirmed: yes
+    note: Grant U01CA167552. Study site lists only selected papers; acquired via PubMed name search.
+  coverage_query: '"Health Professionals Follow-up Study"[tiab] OR "Health Professionals Follow up Study"[tiab]'
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

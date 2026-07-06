@@ -1,0 +1,823 @@
+pmid,title,pub_year,cluster,domain,has_abstract
+42341602,A balance-weighted gait score (BWGS) reflects biomechanical and control features of gait in older adults.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+42276069,Circulating cell type senescence signatures track distinct dimensions of health status and trajectories in human longitudinal cohorts.,2026,6,"Domain 6: intake, diet, proteins, cell",TRUE
+42266433,Modeling a Shared Reality of Tractography through Varied Structural Imaging.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+42262909,The impact of upper gastrointestinal disorders on frailty: insights from the Baltimore Longitudinal Study of Aging.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+42237575,Longitudinal associations of the gut microbiome with arterial stiffness in US adults: findings from the Baltimore Longitudinal Study of Aging.,2026,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+42132137,A sensorimotor function construct to assess mild cognitive impairment risk.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+42105919,Disproportionately elevated sulcal index (DESI): An automatically driven index representing disproportionate subarachnoid space enlargement in brain MRI scans.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+42082094,Tooth loss is associated with subsequent brain white matter degradation up to over a decade.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+42040514,Fully Automated Deep Learning-Based Pipeline for Evans Index Measurement from Raw 3D MRI.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41992251,CMV titer associations with cognition and the plasma proteome implicate FLT1 and neurovascular mechanisms as potential moderators.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41979393,Frailty and Brain Myelin Across Adulthood: Multimodal MRI Insights From the BLSA.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41937125,Skeletal and cardiac muscle longitudinal associations in the Baltimore Longitudinal Study of Aging (BLSA).,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41919773,Eye movement features are associated with cognitive and mobility decline.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41900362,Gut Microbiota Affects Age-Related Plasma Metabolites.,2026,6,"Domain 6: intake, diet, proteins, cell",TRUE
+41807519,Plasma lipids connecting olfaction with cognition and physical function.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41759304,"Nerve, muscle and adiposity: Associations with gait speed across adulthood in the Baltimore Longitudinal Study of Aging.",2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41757064,Modeling a Shared Reality of Tractography through Varied Structural Imaging.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41741350,Can infections drive frailty? Insights from the Baltimore Longitudinal Study of Aging.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41728302,Circulating Cell Type Senescence Signatures Reveal High-Resolution Health Status and Trajectories in Human Longitudinal Studies.,2026,6,"Domain 6: intake, diet, proteins, cell",TRUE
+41645608,Initiation of proton pump inhibitors is associated with gut microbiome diversity and composition: a new-user target trial emulation within the Baltimore Longitudinal Study of Aging.,2026,6,"Domain 6: intake, diet, proteins, cell",FALSE
+41630640,An MRI-based macro- and microstructural neuroimaging-wide association study of subsequent cognitive impairment.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41482563,Shared and specific blood biomarkers for multimorbidity.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41467738,Oral health conditions and domain-specific cognitive decline in older adults: evidence from the Baltimore Longitudinal Study of Aging 2005-2024.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41456015,Automated deep learning pipeline for callosal angle quantification.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41445917,A technical assessment of latent diffusion for Alzheimer's Disease progression.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41440727,"Pet Ownership, Pet Attachment, and Longitudinal Changes in Psychological Health-Evidence from the Baltimore Longitudinal Study of Aging.",2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41409679,Fully Automated Deep Learning-Based Pipeline for Evans Index Measurement from Raw 3D MRI.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41404281,Disproportionately Elevated Sulcal Index (DESI): An automatically driven index representing disproportionate subarachnoid space enlargement in brain MRI scans.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41393810,Data-driven neuropsychological phenotypes in the Baltimore Longitudinal Study of Aging.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41350755,Post-infection brain atrophy accelerates cognitive and molecular changes underlying dementia.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41274863,"DNA Methylation Signatures of Systemic Inflammation Are Associated With Brain Volume, Cognitive Trajectories, and Long-Term Dementia Risk.",2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41129302,The predictive power of brain-predicted age and leg strength on mobility decline in aging: findings from the Baltimore Longitudinal Study of Aging.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40950442,Associations Between Vestibular Function and White Matter Microstructure in Healthy Older Adults.,2025,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+40896725,Alzheimer's disease neuropathology and longitudinal change in subjective cognitive complaints.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40894175,Automated Deep Learning Pipeline for Callosal Angle Quantification.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40855137,Hormone replacement therapy and muscle loss: repeated measures analysis from the Baltimore Longitudinal Study of Aging using DXA.,2026,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40760763,A Frailty-Based Plasma Proteomic Signature Capturing Overall Health and Well-Being in Older Adults.,2025,6,"Domain 6: intake, diet, proteins, cell",TRUE
+40718790,Plasma longitudinal metabolic changes with acute maximal aerobic exercise and one-hour recovery.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40631647,Reduced Vestibular Function is Associated With Cortical Surface Shape Changes in the Frontal Cortex.,2025,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+40595038,Prognostic significance of the QuickSIN score for future hearing threshold deterioration.,2025,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+40585072,"Brain-heart-eye axis revealed by multi-organ imaging, genetics and proteomics.",2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40577079,Associations of accelerometer-estimated sleep with cardiorespiratory fitness and energetic efficiency among middle-aged and older adults.,2026,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+40526703,Prediction of future aging-related slow gait and its determinants with deep learning and logistic regression.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40498559,Longitudinal associations between medication use and phenotypic aging: insights from the Baltimore longitudinal study of aging.,2025,6,"Domain 6: intake, diet, proteins, cell",TRUE
+40461807,The secretome of senescent monocytes predicts age-related clinical outcomes in humans.,2025,6,"Domain 6: intake, diet, proteins, cell",TRUE
+40386943,"Narrow Walk, Condition II, Semi-Tandem, Tandem, and Single Leg Stance Test Failure Could Predict Falls in Older Adults.",2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40296368,Associations Between Female Sex Hormones and Skeletal Muscle Ageing: The Baltimore Longitudinal Study of Aging.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40225241,"Physical activity complexity, cognition, and risk of cognitive impairment and dementia in the Baltimore Longitudinal Study of Aging.",2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40225238,Directionality between cognitive function and daily physical activity patterns.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+40064424,Cross-Sectional Associations between Clinical Biochemistry and Nutritional Biomarkers and Sarcopenic Indices of Skeletal Muscle in the Baltimore Longitudinal Study of Aging.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39994083,The Inner Ear and Aging Brain: A Cross-Sectional Study of Vestibular Function and Morphometric Variations in the Entorhinal and Trans-Entorhinal Cortex.,2025,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+39988983,Longitudinal patterns of brain aging and neurodegeneration among older adults with dual decline in memory and gait.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39889254,Association of Plasma Biomarkers of Alzheimer Disease and Neurodegeneration With Longitudinal Intra-Network Functional Brain Connectivity.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39885512,The association of previous and current non-chronic low back pain with daily physical activity in middle- and older-aged adults.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39789091,Associations of personality traits with actigraphic sleep in middle-aged and older adults.,2025,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+39697833,Cerebral white matter myelination is associated with longitudinal changes in processing speed across the adult lifespan.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39683645,Plant-Based Diets and Their Associations with Physical Performance in the Baltimore Longitudinal Study of Aging.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39609257,"Sex differences in the trajectories of plasma biomarkers, brain atrophy, and cognitive decline relative to amyloid onset.",2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39606396,Reduced Vestibular Function is Associated with Cortical Surface Shape Changes in the Frontal Cortex.,2024,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+39594651,An Insulin Upstream Open Reading Frame (INSU) Is Present in Skeletal Muscle Satellite Cells: Changes with Age.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+39566360,Cross-sectional analysis of speed-up mechanism in normal gait among healthy older adults with and without falls - Results from the Baltimore Longitudinal Study of Aging.,2025,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39473295,Variability of 7K and 11K SomaScan Plasma Proteomics Assays.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+39416426,Body Mass Index and Diabetes Incidence Across the Adult Lifespan: The Baltimore Longitudinal Study of Aging.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39371126,A plasma proteomic signature links secretome of senescent monocytes to aging- and obesity-related clinical outcomes in humans.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+39220211,Tractography with T1-weighted MRI and associated anatomical constraints on clinical quality diffusion MRI.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39185477,Characterizing patterns of diffusion tensor imaging variance in aging brains.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+39129354,Proteomic analyses reveal plasma EFEMP1 and CXCL12 as biomarkers and determinants of neurodegeneration.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+39076610,Age and objectively measured sleep: investigating associations and interactions by sex and race in middle-aged and older adults.,2024,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+38977137,Proteome-wide analysis identifies plasma immune regulators of amyloid-beta progression.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+38874616,Longitudinal decline in peak V̇o2 with aging in a healthy population is associated with a reduction in peripheral oxygen utilization but not in cardiac output.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38809390,Relationship between skeletal mitochondrial function and digital markers of free-living physical activity in older adults.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38758045,"Commentaries on ""Associations of Lower Extremity Muscle Strength, Area, and Specific Force With Lower Urinary Tract Symptoms in Older Men: The Baltimore Longitudinal Study of Aging"".",2024,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+38742659,Differences in Daily Physical Activity by Alzheimer's Risk Markers Among Older Adults.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38689358,Alzheimer's and neurodegenerative disease biomarkers in blood predict brain atrophy and cognitive decline.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38653745,Cross-sectional associations between multisensory impairment and brain volumes in older adults: Baltimore Longitudinal Study of Aging.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38615247,Plasma metabolomic markers underlying skeletal muscle mitochondrial function relationships with cognition and motor function.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38571764,Deep conditional generative model for longitudinal single-slice abdominal computed tomography harmonization.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38493767,Utricular Dysfunction and Hearing Impairment Affect Spatial Navigation in Community-Dwelling Healthy Adults: Analysis from the Baltimore Longitudinal Study of Aging.,2024,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+38493525,Investigating balance-related gait patterns and their relationship with maximum torques generated by the hamstrings and quadriceps in older adults - Results from the Baltimore longitudinal study of aging.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38447686,Associations between dietary indices and hearing status among middle-older aged adults - results from the Baltimore Longitudinal Study of Aging.,2024,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+38429931,"The cellular bases of mobility from the Study of Muscle, Mobility and Aging (SOMMA).",2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38428731,"Development, validation, and transportability of several machine-learned, non-exercise-based VO2max prediction models for older adults.",2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38381532,Evaluating a novel 24-hour rest/activity rhythm marker of preclinical β-amyloid deposition.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38375574,Sensory and motor deficits as contributors to early cognitive impairment.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38347745,Sleep Duration Polygenic Risk and Phenotype: Associations with Biomarkers of Accelerated Aging in the Baltimore Longitudinal Study of Aging.,2025,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+38343809,Longitudinal progression of blood biomarkers reveals a key role of astrocyte reactivity in preclinical Alzheimer's disease.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38332659,Longitudinal association between muscle and bone loss: Results of US and Japanese cohort studies.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38310640,Musculoskeletal Pain Characteristics and Objectively Measured Physical Activity in Older Adults.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38226778,Correlates of life course physical activity in participants of the Baltimore longitudinal study of aging.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38219723,Serum Proteomic Signatures of Common Health Outcomes among Older Adults.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+38218318,Plant-based diets and the gut microbiome: findings from the Baltimore Longitudinal Study of Aging.,2024,6,"Domain 6: intake, diet, proteins, cell",TRUE
+38195151,"Associations of Lower Extremity Muscle Strength, Area, and Specific Force With Lower Urinary Tract Symptoms in Older Men: The Baltimore Longitudinal Study of Aging.",2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38188934,Robust fiber orientation distribution function estimation using deep constrained spherical deconvolution for diffusion-weighted magnetic resonance imaging.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38183599,"Neutrophil, lymphocyte count, and neutrophil to lymphocyte ratio predict multimorbidity and mortality-results from the Baltimore Longitudinal Study on Aging follow-up study.",2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41179000,"Vestibular Function is Associated with Prefrontal and Sensorimotor Cortical Gray Matter Volumes in a Cross-Sectional Study of Healthy, Older Adults.",2024,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+38133681,Loss of TDP-43 splicing repression occurs early in the aging population and is associated with Alzheimer's disease neuropathologic changes and cognitive decline.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+38116708,The mediation roles of intermuscular fat and inflammation in muscle mitochondrial associations with cognition and mobility.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37847074,"Perceived Fatigability, Fatigue, and Mortality in Mid-to-Late Life in the Baltimore Longitudinal Study of Aging.",2024,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+37837441,Shared and Distinct Associations of Manual Dexterity and Gross Motor Function With Brain Atrophy.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37836476,Plant Protein but Not Animal Protein Consumption Is Associated with Frailty through Plasma Metabolites.,2023,6,"Domain 6: intake, diet, proteins, cell",TRUE
+37814955,Identification of Clinically Relevant Brain Endothelial Cell Biomarkers in Plasma.,2023,6,"Domain 6: intake, diet, proteins, cell",TRUE
+37780863,Leveraging longitudinal diffusion MRI data to quantify differences in white matter microstructural decline in normal and abnormal aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37679499,Pet ownership and maintenance of cognitive function in community-residing older adults: evidence from the Baltimore Longitudinal Study of Aging (BLSA).,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37662348,Characterizing patterns of diffusion tensor imaging variance in aging brains.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37528742,Impact of balance on the energetic cost of walking and gait speed.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37465095,Batch size: go big or go home? Counterintuitive improvement in medical autoencoders with smaller batch size.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37414805,"Unbiased proteomics and multivariable regularized regression techniques identify SMOC1, NOG, APCS, and NTN1 in an Alzheimer's disease brain proteomic signature.",2023,6,"Domain 6: intake, diet, proteins, cell",TRUE
+37391043,Levothyroxine Dosing in Older Adults: Recommendations Derived From The Baltimore Longitudinal Study of Aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37369886,Higher testosterone and testosterone/estradiol ratio in men are associated with decreased Pheno-/GrimAge and DNA-methylation based PAI1.,2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37354067,Application and validation of an algorithmic classification of early impairment in cognitive performance.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37324643,Association of Shoulder Dysfunction with Mobility Limitation Among Older Adults in the Baltimore Longitudinal Study of Aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37292885,Leveraging longitudinal diffusion MRI data to quantify differences in white matter microstructural decline in normal and abnormal aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37283066,Hypertensive Adults Exhibit Lower Myelin Content: A Multicomponent Relaxometry and Diffusion Magnetic Resonance Imaging Study.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37257489,Comparison of sleep parameters from wrist-worn ActiGraph and Actiwatch devices.,2024,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+37235639,Relationships of GDF8 and 11 and Their Antagonists With Decline of Grip Strength Among Older Adults in the Baltimore Longitudinal Study of Aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37213219,White matter microstructural metrics are sensitively associated with clinical staging in Alzheimer's disease.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37139098,Sensory impairment and beta-amyloid deposition in the Baltimore longitudinal study of aging.,2023,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+37123017,Comparing voxel- and feature-wise harmonization of complex graph measures from multiple sites for structural brain network investigation of aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37114095,Higher thyroid hormone has a negative association with lower limb lean body mass in euthyroid older adults: Analysis from the Baltimore Longitudinal study of aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37089081,"Examining the Role of Physical Function on Future Fall Likelihood in Older Adults With a Fear of Falling, With and Without Activity Restriction.",2024,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37063388,Sensory impairment and algorithmic classification of early cognitive impairment.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37052768,Plasma metabolomic signatures of dual decline in memory and gait in older adults.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+37016727,The gut microbiome and regional fat distribution: Findings from the Baltimore Longitudinal Study of Aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36958620,Associations of baseline and longitudinal change in cerebellum volume with age-related changes in verbal learning and memory.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36915903,Pet Ownership and Maintenance of Physical Function in Older Adults-Evidence From the Baltimore Longitudinal Study of Aging (BLSA).,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36910594,Longitudinal phenotypic aging metrics in the Baltimore Longitudinal Study of Aging.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36897060,Association between comorbidities and longitudinal changes in total testosterone among men from the Baltimore Longitudinal Study of Aging.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36865294,Higher testosterone and testosterone/estradiol ratio in men are associated with better epigenetic estimators of mortality risk.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36798178,Application and validation of an algorithmic classification of early impairment in cognitive performance.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36739565,Metabolomic markers mediate erythrocyte anisocytosis in older adults: Results from three independent aging cohorts.,2023,6,"Domain 6: intake, diet, proteins, cell",TRUE
+36571773,Association between walking energy utilisation and longitudinal cognitive performance in older adults.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36571386,Health Conditions Associated with Alzheimer's Disease and Vascular Dementia.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36570462,Associations of audiometric hearing and speech-in-noise performance with cognitive decline among older adults: The Baltimore Longitudinal Study of Aging (BLSA).,2022,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+36537669,Personality traits are consistently associated with blood mitochondrial DNA copy number estimated from genome sequences in two genetic cohort studies.,2022,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+36501101,Quality Specific Associations of Carbohydrate Consumption and Frailty Index.,2022,6,"Domain 6: intake, diet, proteins, cell",TRUE
+36460474,Associations of Olfaction With Longitudinal Trajectories of Brain Volumes and Neuropsychological Function in Older Adults.,2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36355756,"Association of non-chronic low back pain with physical function, endurance, fatigability, and quality of life in middle- and older-aged adults: Findings from Baltimore Longitudinal Study of Aging.",2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36343625,"Longitudinal and Cross-Sectional Association Between Gait Speed, Ankle Proprioception, and LE Numbness-Results From the Baltimore Longitudinal Study of Aging.",2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36325254,Cranial Meninges Reconstruction Based on Convolutional Networks and Deformable Models: Applications to Longitudinal Study of Normal Aging.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36312032,Associations of circadian rest/activity rhythms with cognition in middle-aged and older adults: Demographic and genetic interactions.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36303572,"Quantification of muscle, bones, and fat on single slice thigh CT.",2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36241170,"Wrist-Worn Accelerometry, Aging, and Gait Speed in the Baltimore Longitudinal Study of Aging.",2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36115133,"Association of liver disease with brain volume loss, cognitive decline, and plasma neurodegenerative disease biomarkers.",2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36082967,Associations Between Objectively Measured Sleep and Cognition: Main Effects and Interactions With Race in Adults Aged ≥50 Years.,2023,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+36069964,"Validation, Recalibration, and Predictive Accuracy of Published V̇O 2max Prediction Equations for Adults Ages 50-96 Yr.",2023,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+41451322,Reducing Positional Variance in Cross-sectional Abdominal CT Slices with Deep Conditional Generative Models.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35997888,A metabolomic signature of the APOE2 allele.,2023,6,"Domain 6: intake, diet, proteins, cell",TRUE
+35985823,"Herpes Viruses in the Baltimore Longitudinal Study of Aging: Associations With Brain Volumes, Cognitive Performance, and Plasma Biomarkers.",2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35938073,"Causal links among amyloid, tau, and neurodegeneration.",2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35856240,Multi-method investigation of factors influencing amyloid onset and impairment in three cohorts.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35784395,Registration of 24-hour accelerometric rest-activity profiles and its application to human chronotypes.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35684039,Metabolomic Profile of Different Dietary Patterns and Their Association with Frailty Index in Community-Dwelling Older Men and Women.,2022,6,"Domain 6: intake, diet, proteins, cell",TRUE
+35604444,Aging and white matter microstructure and macrostructure: a longitudinal multi-site diffusion MRI study of 1218 participants.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35599480,Daily Physical Activity Patterns as a Window on Cognitive Diagnosis in the Baltimore Longitudinal Study of Aging (BLSA).,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35506128,Longitudinal changes of connectomes and graph theory measures in aging.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35471695,Prior psychosocial profile and perceived impact of the COVID-19 pandemic: insights from the Baltimore Longitudinal Study of Aging.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35440799,Longitudinal associations between energy utilization and brain volumes in cognitively normal middle aged and older adults.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35389191,Longitudinal associations between blood lysophosphatidylcholines and skeletal muscle mitochondrial function.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35361249,An objective metric of individual health and aging for population surveys.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35311240,Free Thyroxine Distinguishes Subclinical Hypothyroidism From Other Aging-Related Changes in Those With Isolated Elevated Thyrotropin.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35262657,"Characterizing Heterogeneity in Neuroimaging, Cognition, Clinical Symptoms, and Genetics Among Patients With Late-Life Depression.",2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35253449,Ankle-Brachial Index and Energy Production in People Without Peripheral Artery Disease: The BLSA.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35226729,Hearing and Mobility in Aging-The Moderating Role of Neuropsychological Function.,2022,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+35099848,Five-factor model personality traits and 24-h urinary cortisol in the Baltimore Longitudinal Study of Aging.,2022,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+35090192,Learning white matter subject-specific segmentation from structural MRI.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+35048491,Muscle mitochondrial energetics predicts mobility decline in well-functioning older adults: The baltimore longitudinal study of aging.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34984437,Motor and Physical Function Impairments as Contributors to Slow Gait Speed and Mobility Difficulty in Middle-Aged and Older Adults.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34975461,Epigenetic Age Acceleration and Hearing: Observations From the Baltimore Longitudinal Study of Aging.,2021,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+34953465,An integrated brain-specific network identifies genes associated with neuropathologic and clinical traits of Alzheimer's disease.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34927122,Vascular risk is not associated with PET measures of Alzheimer's disease neuropathology among cognitively normal older adults.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34857670,Longitudinal trajectories and determinants of human fungiform papillae density.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34792590,Association of Combined Slow Gait and Low Activity Fragmentation With Later Onset of Cognitive Impairment.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34757788,A brain proteomic signature of incipient Alzheimer's disease in young APOE ε4 carriers identifies novel drug targets.,2021,6,"Domain 6: intake, diet, proteins, cell",TRUE
+40837009,Linking Vestibular Function and Subcortical Gray Matter Volume Changes in a Longitudinal Study of Aging Adults.,2021,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+34666161,TractEM: Evaluation of protocols for deterministic tractography white matter atlas.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34663503,Personality Associations With Amyloid and Tau: Results From the Baltimore Longitudinal Study of Aging and Meta-analysis.,2022,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+34637504,The Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) diet is associated with physical function and grip strength in older men and women.,2022,6,"Domain 6: intake, diet, proteins, cell",TRUE
+34628503,Energetic Cost of Walking and Brain Atrophy in Mid-to-Late Life.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34612579,Mitochondrial DNA copy number and heteroplasmy load correlate with skeletal muscle oxidative capacity by P31 MR spectroscopy.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34608938,Patterns of Prevalence of Multiple Sensory Impairments Among Community-dwelling Older Adults.,2022,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+34516645,Longitudinal Associations of Subclinical Hearing Loss With Cognitive Decline.,2022,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+34516174,Traits and treadmills: Association between personality and perceived fatigability in well-functioning community-dwelling older adults.,2021,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+34458552,Association of walking energetics with amyloid beta status: Findings from the Baltimore Longitudinal Study of Aging.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34354323,Joint cortical surface and structural connectivity analysis of Alzheimer's Disease.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34346072,Functional decline among older cancer survivors in the Baltimore longitudinal study of aging.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34329447,Disease Burden Affects Aging Brain Function.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34276390,Contribution of Intramyocellular Lipids to Decreased Computed Tomography Muscle Density With Age.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34269806,Association of Vision Impairment With Cognitive Decline Across Multiple Domains in Older Adults.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34075056,Abnormal brain cholesterol homeostasis in Alzheimer's disease-a targeted metabolomic and transcriptomic study.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34043628,"Bile acid synthesis, modulation, and dementia: A metabolomic, transcriptomic, and pharmacoepidemiologic study.",2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+34003883,Association of Hearing Impairment With Higher-Level Physical Functioning and Walking Endurance: Results From the Baltimore Longitudinal Study of Aging.,2021,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+33963748,Association Between Walking Energetics and Fragmented Physical Activity in Mid- to Late-Life.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33896441,Assessing Bias in Cognitive Testing for Older Adults with Sensory Impairment: An Analysis of Differential Item Functioning in the Baltimore Longitudinal Study on Aging (BLSA) and the Atherosclerosis Risk in Communities Neurocognitive Study (ARIC-NCS).,2022,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+33837407,Visual Impairment and Objectively Measured Physical Activity in Middle-Aged and Older Adults.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33791794,Personality and insomnia symptoms in older adults: the Baltimore Longitudinal Study of Aging.,2021,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+33745492,Prognostic Value of Learning and Retention Measures from the Free and Cued Selective Reminding Test to Identify Incident Mild Cognitive Impairment.,2022,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33598853,Longitudinal uncoupling of the heart and arteries with aging in a community-dwelling population.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33579887,Association between vestibular function and rotational spatial orientation perception in older adults.,2021,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+33469914,Validation of Perceived Mental Fatigability Using the Pittsburgh Fatigability Scale.,2021,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+33449237,Self-Reported Sense of Direction and Vestibular Function in the Baltimore Longitudinal Study of Aging (BLSA).,2021,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+33428023,Plasma metabolites associated with chronic kidney disease and renal function in adults from the Baltimore Longitudinal Study of Aging.,2021,6,"Domain 6: intake, diet, proteins, cell",TRUE
+33418603,Thyroid Hormone Supplementation and All-Cause Mortality in Community-Dwelling Older Adults: Results from the Baltimore Longitudinal Study of Aging.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33249505,Cardiovascular Health and Mitochondrial Function: Testing an Association.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33230557,Association Between Brain Volumes and Patterns of Physical Activity in Community-Dwelling Older Adults.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33216872,Dietary Pattern Trajectories in Middle Age and Physical Function in Older Age.,2021,6,"Domain 6: intake, diet, proteins, cell",TRUE
+33211821,Study of Longitudinal Aging in Mice: Presentation of Experimental Techniques.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33195297,Microstructural Neuroimaging of Frailty in Cognitively Normal Older Adults.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33152563,Cognitive and neuroimaging profiles of older adults with dual decline in memory and gait speed.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+33036360,Longitudinal Changes in Resting Metabolic Rates with Aging Are Accelerated by Diseases.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32904672,Vestibular function and cortical and sub-cortical alterations in an aging population.,2020,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+32880621,Association of Poorer Hearing With Longitudinal Change in Cerebral White Matter Microstructure.,2020,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+32835822,Associations between cognitive and brain volume changes in cognitively normal older adults.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32702483,Lasting consequences of concussion on the aging brain: Findings from the Baltimore Longitudinal Study of Aging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32671105,Pet Ownership Patterns and Successful Aging Outcomes in Community Dwelling Older Adults.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32666006,The Relationship of Lean Body Mass With Aging to the Development of Diabetes.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32618359,Fatigability as a Predictor of Subclinical and Clinical Anemia in Well-Functioning Older Adults.,2020,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+32595588,Psychometric Tests and Spatial Navigation: Data From the Baltimore Longitudinal Study of Aging.,2020,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+32593031,Association of hippocampal volume polygenic predictor score with baseline and change in brain volumes and cognition among cognitively healthy older adults.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32592850,Longitudinal analysis of regional cerebellum volumes during normal aging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32572752,Poor mitochondrial health and systemic inflammation? Test of a classic hypothesis in the Baltimore Longitudinal Study of Aging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32568366,"Association Between Common Variants in RBFOX1, an RNA-Binding Protein, and Brain Amyloidosis in Early and Preclinical Alzheimer Disease.",2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32502253,Associations of Actigraphic Sleep Parameters With Fatigability in Older Adults.,2020,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+32440309,"Joint and Individual Representation of Domains of Physical Activity, Sleep, and Circadian Rhythmicity.",2019,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+32333769,Longitudinal Associations Between Brain Volume and Knee Extension Peak Torque.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32314198,Hippocampal activation and connectivity in the aging brain.,2021,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32250307,Interaction between Apolipoprotein E and Butyrylcholinesterase Genes on Risk of Alzheimer's Disease in a Prospective Cohort Study.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32211504,Prediction of rapid amyloid and phosphorylated‐Tau accumulation in cognitively healthy individuals.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32201887,Greater Skeletal Muscle Oxidative Capacity Is Associated With Higher Resting Metabolic Rate: Results From the Baltimore Longitudinal Study of Aging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32145292,Sex differences in the association between antinuclear antibody positivity with diabetes and multimorbidity in older adults: Results from the Baltimore Longitudinal Study of Aging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32107805,A roadmap to build a phenotypic metric of ageing: insights from the Baltimore Longitudinal Study of Aging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32089583,Harmonizing 1.5T/3T Diffusion Weighted MRI through Development of Deep Learning Stabilized Microarchitecture Estimators.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32084628,Obstacle-Crossing Task-Related Usual Gait Patterns of Older Adults Differentiating Falls and Gait Ability.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+32079087,Blood Metabolite Signatures of Metabolic Syndrome in Two Cross-Cultural Older Adult Cohorts.,2020,6,"Domain 6: intake, diet, proteins, cell",TRUE
+32070008,Blood Metabolite Signature of Metabolic Syndrome Implicates Alterations in Amino Acid Metabolism: Findings from the Baltimore Longitudinal Study of Aging (BLSA) and the Tsuruoka Metabolomics Cohort Study (TMCS).,2020,6,"Domain 6: intake, diet, proteins, cell",TRUE
+31978055,Dysregulation of multiple metabolic networks related to brain transmethylation and polyamine pathways in Alzheimer disease: A targeted metabolomic and transcriptomic study.,2020,6,"Domain 6: intake, diet, proteins, cell",TRUE
+31945054,A proteomic atlas of senescence-associated secretomes for aging biomarker development.,2020,6,"Domain 6: intake, diet, proteins, cell",TRUE
+31942600,Longitudinal Association Between Energy Regulation and Fatigability in Mid-to-Late Life.,2020,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+31828289,Longitudinal Association Between Perceived Fatigability and Cognitive Function in Older Adults: Results from the Baltimore Longitudinal Study of Aging.,2020,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+31827445,"Age and Muscle Function Are More Closely Associated With Intracellular Magnesium, as Assessed by 31P Magnetic Resonance Spectroscopy, Than With Serum Magnesium.",2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31825084,The Roles of Body Composition and Specific Strength in the Relationship Between Race and Physical Performance in Older Adults.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31714574,Longitudinal Change in Cortisol Levels Across the Adult Life Span.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31577355,Association of Total Daily Physical Activity and Fragmented Physical Activity With Mortality in Older Adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31569041,Saccular function is associated with both angular and distance errors on the triangle completion test.,2019,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+31567562,Association Between Saccule and Semicircular Canal Impairments and Cognitive Performance Among Vestibular Patients.,2020,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+31517026,Tau pathology in cognitively normal older adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31441513,Bimanual Gesture Imitation Links to Cognition and Olfaction.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31409206,Association Between Cardiovascular Risk and Perceived Fatigability in Mid-to-Late Life.,2019,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+31379300,Subclinical Longitudinal Change in Ankle-Brachial Index With Aging in a Community-Dwelling Population Is Associated With Central Arterial Stiffening.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31305918,Association of Extracellular Vesicle Biomarkers With Alzheimer Disease in the Baltimore Longitudinal Study of Aging.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31303354,Cellular aging over 13 years associated with incident antinuclear antibody positivity in the Baltimore Longitudinal Study of Aging.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31280118,Sex differences in brain aging and predictors of neurodegeneration in cognitively healthy older adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31273957,Changes in knee extension peak torque and body composition and their relationship with change in gait speed.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31268512,Association of Midlife Hearing Impairment With Late-Life Temporal Lobe Volume Loss.,2019,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+31227471,Lap Time Variability From a 400-m Walk Is Associated With Future Mild Cognitive Impairment and Alzheimer's Disease.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31116422,Moderate-to-Vigorous Physical Activity Is Associated With Higher Muscle Oxidative Capacity in Older Adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+31094304,Timing of onset and rate of decline in learning and retention in the pre-dementia phase of Alzheimer's disease.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30927602,Sex differences in the association between amyloid and longitudinal brain volume change in cognitively normal older adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30874790,Elevated Plasma Growth and Differentiation Factor 15 Is Associated With Slower Gait Speed and Lower Physical Performance in Healthy Community-Dwelling Adults.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30861232,"A prospective study of focal brain atrophy, mobility and fitness.",2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30755135,Longitudinal evaluation of surrogates of regional cerebral blood flow computed from dynamic amyloid PET imaging.,2020,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30719830,Low plasma lysophosphatidylcholines are associated with impaired mitochondrial oxidative capacity in adults in the Baltimore Longitudinal Study of Aging.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30682379,A fiber coherence index for quality control of B-table orientation in diffusion MRI scans.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30618715,Vestibular Function and Beta-Amyloid Deposition in the Baltimore Longitudinal Study of Aging.,2018,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+30616180,"Prediagnostic markers of idiopathic Parkinson's disease: Gait, visuospatial ability and executive function.",2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30604020,Community-dwelling adults with a history of falling report lower perceived postural stability during a foam eyes closed test than non-fallers.,2019,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+30580127,Predictors of neurodegeneration differ between cognitively normal and subsequently impaired older adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30576978,"Reduced vestibular function is associated with longer, slower steps in healthy adults during normal speed walking.",2019,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+30557663,Vascular burden and APOE ε4 are associated with white matter microstructural decline in cognitively normal older adults.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30500877,Temporal Sequence of Hearing Impairment and Cognition in the Baltimore Longitudinal Study of Aging.,2020,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+30475224,"IGFBP-2 and aging: a 20-year longitudinal study on IGFBP-2, IGF-I, BMI, insulin sensitivity and mortality in an aging population.",2019,6,"Domain 6: intake, diet, proteins, cell",TRUE
+30465754,"Neuropathologic, genetic, and longitudinal cognitive profiles in primary age-related tauopathy (PART) and Alzheimer's disease.",2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30357322,"Active-to-Sedentary Behavior Transitions, Fatigability, and Physical Functioning in Older Adults.",2019,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+30315707,Pittsburgh Fatigability Scale: One-Page Predictor of Mobility Decline in Mobility-Intact Older Adults.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30276791,Contrasting characteristics of daily physical activity in older adults by cancer history.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30218708,Knee extension rate of velocity development affects walking performance differently in men and women.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30192978,Excessive daytime sleepiness and napping in cognitively normal adults: associations with subsequent amyloid deposition measured by PiB PET.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30103324,Metabolic Syndrome and Amyloid Accumulation in the Aging Brain.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30077821,Heterogeneity of structural and functional imaging patterns of advanced brain aging revealed via machine learning methods.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+30076276,"White matter lesions: Spatial heterogeneity, links to risk factors, cognition, genetics, and atrophy.",2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29947780,Altered Plasma Amino Acids and Lipids Associated With Abnormal Glucose Metabolism and Insulin Resistance in Older Adults.,2018,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+29901697,Effects of amyloid pathology and neurodegeneration on cognitive change in cognitively normal adults.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29894381,Failure on the Foam Eyes Closed Test of Standing Balance Associated With Reduced Semicircular Canal Function in Healthy Older Adults.,2019,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+29889787,Vestibular Function and Hippocampal Volume in the Baltimore Longitudinal Study of Aging (BLSA).,2018,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+29846512,Longitudinal Relationship Between Interleukin-6 and Perceived Fatigability Among Well-Functioning Adults in Mid-to-Late Life.,2019,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+29788121,Targeted Metabolomics Shows Low Plasma Lysophosphatidylcholine 18:2 Predicts Greater Decline of Gait Speed in Older Adults: The Baltimore Longitudinal Study of Aging.,2019,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29723649,Differential associations between dual-task walking abilities and usual gait patterns in healthy older adults-Results from the Baltimore Longitudinal Study of Aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29687583,Regular low-calorie sweetener consumption is associated with increased secretion of glucose-dependent insulinotropic polypeptide.,2018,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+29627740,Fatigability and functional performance among older adults with low-normal ankle-brachial index: Cross-sectional findings from the Baltimore Longitudinal Study of Aging.,2018,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+29569834,Knee extension rate of torque development and peak torque: associations with lower extremity function.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29552631,Temporal unfolding of declining episodic memory on the Free and Cued Selective Reminding Test in the predementia phase of Alzheimer's disease: Implications for clinical trials.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29509832,Using Heart Rate and Accelerometry to Define Quantity and Intensity of Physical Activity in Older Adults.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29428714,β-amyloid deposition is associated with gait variability in usual aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29419879,Fatigability and endurance performance in cancer survivors: Analyses from the Baltimore Longitudinal Study of Aging.,2018,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+29411349,Lumbopelvic Pain and Threats to Walking Ability in Well-Functioning Older Adults: Findings from the Baltimore Longitudinal Study of Aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29379433,Ventricular and Periventricular Anomalies in the Aging and Cognitively Impaired Brain.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29370177,Brain and blood metabolite signatures of pathology and progression in Alzheimer disease: A targeted metabolomics study.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29356348,"Skeletal muscle ex vivo mitochondrial respiration parallels decline in vivo oxidative capacity, cardiorespiratory fitness, and muscle strength: The Baltimore Longitudinal Study of Aging.",2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29345526,Differential Gait Patterns by History of Falls and Knee Pain Status in Healthy Older Adults: Results From the Baltimore Longitudinal Study of Aging.,2018,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+29304217,Elevated Markers of Inflammation Are Associated With Longitudinal Changes in Brain Function in Older Adults.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29188896,Vitamin B12 and Homocysteine Associations with Gait Speed in Older Adults: The Baltimore Longitudinal Study of Aging.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29165533,"Muscle Quality, Strength, and Lower Extremity Physical Performance in the Baltimore Longitudinal Study of Aging.",2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29154276,SPARCL1 Accelerates Symptom Onset in Alzheimer's Disease and Influences Brain Structure and Function During Aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29107121,Longitudinally and inter-site consistent multi-atlas based parcellation of brain anatomy using harmonized atlases.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29067353,"Midlife anticholinergic drug use, risk of Alzheimer's disease, and brain atrophy in community-dwelling older adults.",2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29055815,Evidence for brain glucose dysregulation in Alzheimer's disease.,2018,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+29036541,Simple fixed-effects inference for complex functional models.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+29028920,Perceived Fatigability and Objective Physical Activity in Mid- to Late-Life.,2018,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+29023644,A two-stage model for wearable device data.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28975188,Personality Change in the Preclinical Phase of Alzheimer Disease.,2017,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+28958086,Relationship between Homocysteine and Muscle Strength Decline: The Baltimore Longitudinal Study of Aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28927581,Differential Aging Signals in Abdominal CT Scans.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28922153,Sex-Dependent Associations of Serum Uric Acid with Brain Function During Aging.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28915202,Objectively Measured Physical Activity and Falls in Well-Functioning Older Adults: Findings From the Baltimore Longitudinal Study of Aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28855165,Lower Mitochondrial Energy Production of the Thigh Muscles in Patients With Low-Normal Ankle-Brachial Index.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28854871,Unstable Thyroid Function in Older Adults Is Caused by Alterations in Both Thyroid and Pituitary Physiology and Is Associated with Increased Mortality.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28843509,Walking speed decline in older adults is associated with elevated pro-BDNF in plasma extracellular vesicles.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+36118996,Falls and Orthostatic Hypotension in Older Adults: Re-examining Limits.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28731452,Temporal Order of Alzheimer's Disease-Related Cognitive Marker Changes in BLSA and WRAP Longitudinal Studies.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28676758,Loss of Peripheral Sensory Function Explains Much of the Increase in Postural Sway in Healthy Older Adults.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28655715,Incretin secretion in humans is under the influence of cannabinoid receptors.,2017,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+28559842,Cross-Sectional and Longitudinal Effects of CREB1 Genotypes on Individual Differences in Memory and Executive Function: Findings from the BLSA.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28482100,APOE Genotype and Nonrespiratory Sleep Parameters in Cognitively Intact Older Adults.,2017,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+28329301,Association Between Non-Iron-Deficient Anemia and Insomnia Symptoms in Community-Dwelling Older Adults: The Baltimore Longitudinal Study of Aging.,2018,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28323825,Association between fatty acid metabolism in the brain and Alzheimer disease neuropathology and cognitive performance: A nontargeted metabolomic study.,2017,6,"Domain 6: intake, diet, proteins, cell",TRUE
+28198113,"Early body composition, but not body mass, is associated with future accelerated decline in muscle quality.",2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28192379,Compensatory Saccades Are Associated With Physical Performance in Older Adults: Data From the Baltimore Longitudinal Study of Aging.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28181388,Muscle strength mediates the relationship between mitochondrial energetics and walking performance.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28035934,The Association Between Plasma Ceramides and Sphingomyelins and Risk of Alzheimer's Disease Differs by Sex and APOE in the Baltimore Longitudinal Study of Aging.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28024092,Agreement and Predictive Validity Using Less-Conservative Foundation for the National Institutes of Health Sarcopenia Project Weakness Cutpoints.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27986873,Long-term cortisol measures predict Alzheimer disease risk.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27956574,Longitudinal Association Between Serum Uric Acid and Arterial Stiffness: Results From the Baltimore Longitudinal Study of Aging.,2017,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+27880832,Chronic Low-Calorie Sweetener Use and Risk of Abdominal Obesity among Older Adults: A Cohort Study.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27824314,A serum miRNA profile of human longevity: findings from the Baltimore Longitudinal Study of Aging (BLSA).,2016,6,"Domain 6: intake, diet, proteins, cell",TRUE
+27811155,Olfaction Is Related to Motor Function in Older Adults.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27785691,Basal body temperature as a biomarker of healthy aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27774319,Does Sensory Function Decline Independently or Concomitantly with Age? Data from the Baltimore Longitudinal Study of Aging.,2016,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+27327030,Ankle Proprioception-Associated Gait Patterns in Older Adults: Results from the Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27744302,The relative temporal sequence of decline in mobility and cognition among initially unimpaired older adults: Results from the Baltimore Longitudinal Study of Aging.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27737951,Insulin Resistance Is Associated With Reduced Mitochondrial Oxidative Capacity Measured by 31P-Magnetic Resonance Spectroscopy in Participants Without Diabetes From the Baltimore Longitudinal Study of Aging.,2017,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+27486430,Aging Increases Compensatory Saccade Amplitude in the Video Head Impulse Test.,2016,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+27466890,Vestibular Impairment in Dementia.,2016,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+27447468,Impaired Vestibular Function and Low Bone Mineral Density: Data from the Baltimore Longitudinal Study of Aging.,2016,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+27445793,VOR Gain Is Related to Compensatory Saccades in Healthy Older Adults.,2016,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+27321338,Association of abdominal fat with serum amylase in an older cohort: The Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27319002,Brain network changes and memory decline in aging.,2017,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27279664,A pairwise interaction model for multivariate functional and longitudinal data.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27253228,"Fatigued, but Not Frail: Perceived Fatigability as a Marker of Impending Decline in Mobility-Intact Older Adults.",2016,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+27146830,"Ankle proprioceptive acuity is associated with objective as well as self-report measures of balance, mobility, and physical function.",2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27135629,Circulating ceramides are inversely associated with cardiorespiratory fitness in participants aged 54-96 years from the Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27131225,Association Between Accelerated Multimorbidity and Age-Related Cognitive Decline in Older Baltimore Longitudinal Study of Aging Participants without Dementia.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27075894,31P Magnetic Resonance Spectroscopy Assessment of Muscle Bioenergetics as a Predictor of Gait Speed in the Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27066316,SARC-F: a symptom score to predict persons with sarcopenia at risk for poor functional outcomes.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27029859,Plasma Biomarkers of Poor Muscle Quality in Older Men and Women from the Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26984392,Cross-Sectional and Longitudinal Associations Between Adiposity and Walking Endurance in Adults Age 60-79.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26951390,Sleep Duration and Subsequent Cortical Thinning in Cognitively Normal Older Adults.,2016,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+26923400,State- and trait-dependent associations of vitamin-D with brain function during aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26921861,Bioavailable Testosterone Linearly Declines Over A Wide Age Spectrum in Men and Women From The Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26899565,Lower gray matter integrity is associated with greater lap time variation in high-functioning older adults.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26866590,"""A Culture-Brain Link: Negative Age Stereotypes Predict Alzheimer's Disease Biomarkers"": Correction to Levy et al. (2016).",2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26850913,Rising Energetic Cost of Walking Predicts Gait Speed Decline With Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26806385,Blood metabolite markers of preclinical Alzheimer's disease in two longitudinally followed cohorts of older individuals.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26796792,Sex differences in cognitive trajectories in clinically normal older adults.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26791089,"Free Thyroxine and Functional Mobility, Fitness, and Fatigue in Euthyroid Older Men and Women in the Baltimore Longitudinal Study of Aging.",2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26661209,Blood metabolite markers of cognitive performance and brain function in aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26641877,A culture-brain link: Negative age stereotypes predict Alzheimer's disease biomarkers.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26624210,Validation of Nutrient Intake Estimates Derived Using a Semi-Quantitative FFQ against 3 Day Diet Records in the Baltimore Longitudinal Study of Aging.,2015,6,"Domain 6: intake, diet, proteins, cell",TRUE
+26588863,Individual estimates of age at detectable amyloid onset for risk factor assessment.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26561401,"Intra-individual lap time variation of the 400-m walk, an early mobility indicator of executive function decline in high-functioning older adults?",2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26525656,Capturing heterogeneous group differences using mixture-of-experts: Application to a study of aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26399234,The effect of age and microstructural white matter integrity on lap time variation and fast-paced walking speed.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26324099,"Midlife adiposity predicts earlier onset of Alzheimer's dementia, neuropathology and presymptomatic cerebral amyloid accumulation.",2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26311169,Association Between Visuospatial Ability and Vestibular Function in the Baltimore Longitudinal Study of Aging.,2015,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+26201453,Renal function and long-term decline in cognitive function: the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26193443,Demographic and clinical variables affecting mid- to late-life trajectories of plasma ceramide and dihydroceramide species.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26177259,Thyroid Hormone Therapy and Risk of Thyrotoxicosis in Community-Resident Older Adults: Findings from the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26175286,"Body mass estimation from knee breadth, with application to early hominins.",2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26173468,Vitamin D deficiency and airflow limitation in the Baltimore Longitudinal Study of Ageing.,2015,6,"Domain 6: intake, diet, proteins, cell",TRUE
+26082177,Lap time variation and executive function in older adults: the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26004017,Changes in Aβ biomarkers and associations with APOE genotype in 2 longitudinal cohorts.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25977462,Voxelwise Relationships Between Distribution Volume Ratio and Cerebral Blood Flow: Implications for Analysis of β-Amyloid Images.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25896993,Midlife and Late-Life Cardiorespiratory Fitness and Brain Volume Changes in Late Adulthood: Results From the Baltimore Longitudinal Study of Aging.,2016,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25703943,Epidemiology of vestibular evoked myogenic potentials: Data from the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25693060,Longitudinal changes in cortical thinning associated with hypertension.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25666574,Gait energetic efficiency in older adults with and without knee pain: results from the Baltimore Longitudinal Study of Aging.,2015,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+25637144,Sex-specific age associations of ankle proprioception test performance in older adults: results from the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25619633,Sex-specific differences in progressive glucose intolerance and hip geometry: the Baltimore Longitudinal Study of Aging.,2015,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+25614178,Gait characteristics associated with walking speed decline in older adults: results from the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25569369,Association between saccular function and gait speed: data from the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25556993,The Pittsburgh Fatigability scale for older adults: development and validation.,2015,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+25409892,Energy Metabolism and the Burden of Multimorbidity in Older Adults: Results From the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25392294,Hyperglycemia predicts persistently lower muscle strength with aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25345489,Factors affecting longitudinal trajectories of plasma sphingomyelins: the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25275869,Epidemiology of vestibulo-ocular reflex function: data from the Baltimore Longitudinal Study of Aging.,2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25150940,Vitamin D modulates the association of circulating insulin-like growth factor-1 with carotid artery intima-media thickness.,2014,6,"Domain 6: intake, diet, proteins, cell",TRUE
+25129067,"Prevalence, clinical correlates, and functional impact of subaortic ventricular septal bulge (from the Baltimore Longitudinal Study of Aging).",2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25035155,Trajectories of Alzheimer disease-related cognitive measures in a longitudinal sample.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24863145,"FTO genotype and aging: pleiotropic longitudinal effects on adiposity, brain function, impulsivity and diet.",2015,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24842457,Role of bone mineral density in the inverse relationship between body size and aortic calcification: results from the Baltimore Longitudinal Study of Aging.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24800719,Association between energy availability and physical activity in older adults.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24787146,Estimating energy expenditure from heart rate in older adults: a case for calibration.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24744319,Caffeine and alcohol intakes and overall nutrient adequacy are associated with longitudinal cognitive performance among U.S. adults.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24712564,GIP contributes to islet trihormonal abnormalities in type 2 diabetes.,2014,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+24706564,Analysis of spatio-temporal brain imaging patterns by Hidden Markov Models and serial MRI images.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24637912,Impact of central obesity on the estimation of carotid-femoral pulse wave velocity.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24636496,The association between leptin and depressive symptoms is modulated by abdominal adiposity.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24635835,"""IDEAL"" aging is associated with lower resting metabolic rate: the Baltimore Longitudinal Study of Aging.",2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24607960,Mild cognitive impairment and asymptomatic Alzheimer disease subjects: equivalent β-amyloid and tau loads with divergent cognitive outcomes.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+27066268,Interleukin-6 is linked to longitudinal rates of cortical thinning in aging.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24561745,Pulse wave velocity testing in the Baltimore longitudinal study of aging.,2014,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+24438020,Difference in muscle quality over the adult life span and biological correlates in the Baltimore Longitudinal Study of Aging.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24417536,Assessing fatigability in mobility-intact older adults.,2014,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+24412398,Association of hearing impairment with brain volume changes in older adults.,2014,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+24392010,Imaging-based biomarkers of cognitive performance in older adults constructed via high-dimensional pattern regression applied to MRI and PET.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24336819,"Assessing the ""physical cliff"": detailed quantification of age-related differences in daily patterns of physical activity.",2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24299691,Relationship between inter-arm difference in systolic blood pressure and arterial stiffness in community-dwelling older adults.,2013,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+24227712,Changes in brain function occur years before the onset of cognitive impairment.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24211028,"Depressive symptoms, symptom dimensions, and white matter lesion volume in older adults: a longitudinal study.",2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24188111,Nonlinear longitudinal trajectories of cholesterol and neuropsychological function.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24158764,Validation study of the body adiposity index as a predictor of percent body fat in older individuals: findings from the BLSA.,2014,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+24145859,Self-reported sleep and β-amyloid deposition in community-dwelling older adults.,2013,7,"Domain 7: sleep, fatigability, perceived, reported",TRUE
+24001897,Longitudinal trajectories of arterial stiffness and the role of blood pressure: the Baltimore Longitudinal Study of Aging.,2013,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+23959543,Sex and age differences in the relation of depressive symptoms with blood pressure.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23897112,"Glucose intolerance, insulin resistance, and pathological features of Alzheimer disease in the Baltimore Longitudinal Study of Aging.",2013,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+23859610,Memory decline shows stronger associations with estimated spatial patterns of amyloid deposition progression than total amyloid burden.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23809149,The relationship between visceral adiposity and left ventricular diastolic function: results from the Baltimore Longitudinal Study of Aging.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23760442,The trajectory of depressive symptoms across the adult life span.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23747767,Prevalence and prognostic significance of exercise-induced nonsustained ventricular tachycardia in asymptomatic volunteers: BLSA (Baltimore Longitudinal Study of Aging).,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23685925,Personality traits and chronic disease: implications for adult personality development.,2013,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+23658558,Genome-wide association study of personality traits in the long life family study.,2013,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+23637519,Recent Changes Leading to Subsequent Changes: Extensions of Multivariate Latent Difference Score Models.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23625813,Glomerular filtration rate equations overestimate creatinine clearance in older individuals enrolled in the Baltimore Longitudinal Study on Aging: impact on renal drug dosing.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23608110,Impaired glucose tolerance in midlife and longitudinal changes in brain function during aging.,2013,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+23581910,Apolipoprotein E ε4 allele interacts with sex and cognitive status to influence all-cause and cause-specific mortality in U.S. older adults.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23372763,"Personality, metabolic rate and aerobic capacity.",2013,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+23301873,Relationship between mean corpuscular volume and cognitive performance in older adults.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+25191583,Vitamin D receptor and megalin gene polymorphisms are associated with central adiposity status and changes among US adults.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23266746,Frontal function and executive processing in older adults: process and region specific age-related longitudinal functional changes.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23229081,"Biological aging and social characteristics: gerontology, the Baltimore city hospitals, and the National Institutes of Health.",2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23190795,Elevated serum fibroblast growth factor 21 is associated with hypertension in community-dwelling adults.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23103489,Carotid atherosclerosis and prospective risk of dementia.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23021624,Cerebral white matter disease is associated with Alzheimer pathology in a prospective cohort.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23061475,Relationship between vitamin D status and left ventricular geometry in a healthy population: results from the Baltimore Longitudinal Study of Aging.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23035640,The role of energetic cost in the age-related slowing of gait speed.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23029205,Age-related disease association of endogenous γ-H2AX foci in mononuclear cells derived from leukapheresis.,2012,6,"Domain 6: intake, diet, proteins, cell",TRUE
+23022416,Effect of complement CR1 on brain amyloid burden during aging and its modification by APOE genotype.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22887828,Midlife obesity and trajectories of brain volume changes in older adults.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22864813,"Correspondence between in vivo (11)C-PiB-PET amyloid imaging and postmortem, region-matched assessment of plaques.",2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22854908,The relationship of the energetic cost of slow walking and peak energy expenditure to gait speed in mid-to-late life.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22795969,Alzheimer risk variant CLU and brain function during aging.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22787856,[The Baltimore Longitudinal Study of Aging (BLSA)].,2011,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+22767638,Arterial stiffness and vitamin D levels: the Baltimore longitudinal study of aging.,2012,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+22746310,Variability in performance: identifying early signs of future cognitive impairment.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22741095,Longitudinal brain activity changes in asymptomatic Alzheimer disease.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+23966753,"Associations between personality traits, physical activity level, and muscle strength.",2012,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+22649714,The Relationship between Heart Rate Variability and Adiposity Differs for Central and Overall Adiposity.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22610513,The five factors of personality and regional cortical variability in the Baltimore longitudinal study of aging.,2013,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+22564361,Age-associated gait patterns and the role of lower extremity strength - results from the Baltimore Longitudinal Study of Aging.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22552368,Patterns of regional cerebral blood flow associated with low hemoglobin in the Baltimore Longitudinal Study of Aging.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22523577,"Plasma BDNF is associated with age-related white matter atrophy but not with cognitive function in older, non-demented adults.",2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22515884,Validity of self-reported history of endodontic treatment in the Baltimore Longitudinal Study of Aging.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22492519,Baseline cardiovascular risk predicts subsequent changes in resting brain function.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22475128,Depressive symptoms are associated with weight gain among women.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22417789,"Selective contribution of regional adiposity, skeletal muscle, and adipokines to glucose disposal in older adults.",2012,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+22415749,Temporal relationships between depressive symptoms and white matter hyperintensities in older men and women.,2013,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22414634,Relative equilibrium plot improves graphical analysis and allows bias correction of standardized uptake value ratio in quantitative 11C-PiB PET studies.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22401959,Alcohol consumption and premotor corpus callosum in older adults.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22365049,Longitudinal imaging pattern analysis (SPARE-CD index) detects early structural and functional changes before cognitive decline in healthy older adults.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22344195,Relationship of serum fibroblast growth factor 21 with abnormal glucose metabolism and insulin resistance: the Baltimore Longitudinal Study of Aging.,2012,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+22257709,Contribution of central adiposity to left ventricular diastolic function (from the Baltimore Longitudinal Study of Aging).,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22228923,Flavonoid intakes in the Baltimore Longitudinal Study of Aging.,2011,6,"Domain 6: intake, diet, proteins, cell",TRUE
+22201331,Differential trajectories of age-related changes in components of executive and memory processes.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22170372,Vitamin D receptor and megalin gene polymorphisms and their associations with longitudinal cognitive change in US adults.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+22093443,The relationship between prostate volume and prostate-specific antigen variability: data from the Baltimore Longitudinal Study of Aging and the Johns Hopkins Active Surveillance Program.,2012,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+22056832,Memory shaped by age stereotypes over time.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21963916,Dynamic Bayesian network modeling for longitudinal brain morphometry.,2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21873064,Gait pattern alterations in older adults associated with type 2 diabetes in the absence of peripheral neuropathy--results from the Baltimore Longitudinal Study of Aging.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21802636,"'Population laboratories' or 'laboratory populations'? Making sense of the Baltimore Longitudinal Study of Aging, 1965-1987.",2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21775524,"Fat mass is inversely associated with serum carboxymethyl-lysine, an advanced glycation end product, in adults.",2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21765825,Sex-specific gait patterns of older adults with knee osteoarthritis: results from the Baltimore longitudinal study of aging.,2011,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+21743292,"Relationship between plasma ghrelin, insulin, leptin, interleukin 6, adiponectin, testosterone and longevity in the Baltimore Longitudinal Study of Aging.",2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21728425,Hearing loss and cognition in the Baltimore Longitudinal Study of Aging.,2011,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+21614452,Personality typology in relation to muscle strength.,2012,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+21601861,Sex-specific differences in gait patterns of healthy older adults: results from the Baltimore Longitudinal Study of Aging.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21555640,Longitudinal patterns of β-amyloid deposition in nondemented older adults.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21544148,Arterial stiffness and bone demineralization: the Baltimore longitudinal study of aging.,2011,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+21389141,Cross-sectional evidence of a signaling pathway from bone homeostasis to glucose metabolism.,2011,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+21373920,A computer analysis method for correlating knee X-rays with continuous indicators.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21350243,Glucose and insulin measurements from the oral glucose tolerance test and relationship to muscle mass.,2012,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+21320990,In vivo fibrillar beta-amyloid detected using [11C]PiB positron emission tomography and neuropathologic assessment in older adults.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21320988,Hearing loss and incident dementia.,2011,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+21255742,Operationalizing diagnostic criteria for Alzheimer's disease and other age-related cognitive impairment-Part 2.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21195835,Distribution of PSA velocity by total PSA levels: data from the Baltimore Longitudinal Study of Aging.,2011,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+21195361,Gender differences in the accuracy of time-dependent blood pressure indices for predicting coronary heart disease: A random-effects modeling approach.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21145241,Gait patterns during different walking conditions in older adults with and without knee osteoarthritis--results from the Baltimore Longitudinal Study of Aging.,2011,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+21088672,Greater coffee intake in men is associated with steeper age-related increases in blood pressure.,2011,6,"Domain 6: intake, diet, proteins, cell",TRUE
+21063444,Comprehensive fine mapping of chr12q12-14 and follow-up replication identify activin receptor 1B (ACVR1B) as a muscle strength gene.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+21029063,The energetic pathway to mobility loss: an emerging new framework for longitudinal studies on aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20841372,Statins and serum cholesterol's associations with incident dementia and mild cognitive impairment.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20833863,Age-associated differences in the gait pattern changes of older adults during fast-speed and fatigue conditions: results from the Baltimore longitudinal study of ageing.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20818463,"Relationship of a dominant advanced glycation end product, serum carboxymethyl-lysine, and abnormal glucose metabolism in adults: the Baltimore Longitudinal Study of Aging.",2010,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+20800221,Genome-wide association scan of trait depression.,2010,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+20695015,"Atherosclerosis, dementia, and Alzheimer disease in the Baltimore Longitudinal Study of Aging cohort.",2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20682520,Changes in weight at the end of life: characterizing weight loss by time to death in a cohort study of older men.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20634647,Association of periodontitis and metabolic syndrome in the Baltimore Longitudinal Study of Aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20619505,"Sex differences in the association of the apolipoprotein E epsilon 4 allele with incidence of dementia, cognitive impairment, and decline.",2012,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20603482,Recurrent depressive symptoms and the incidence of dementia and mild cognitive impairment.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20603455,"Association of plasma clusterin concentration with severity, pathology, and progression in Alzheimer disease.",2010,6,"Domain 6: intake, diet, proteins, cell",TRUE
+20441796,Longitudinal changes in cortical thickness associated with normal aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20404913,Circulating brain-derived neurotrophic factor and indices of metabolic and cardiovascular health: data from the Baltimore Longitudinal Study of Aging.,2010,6,"Domain 6: intake, diet, proteins, cell",TRUE
+20353537,Serum testosterone is associated with aggressive prostate cancer in older men: results from the Baltimore Longitudinal Study of Aging.,2010,3,"Domain 3: prostate, psa, cancer, antigen",FALSE
+20345896,"Plasma BDNF concentration, Val66Met genetic variant and depression-related personality traits.",2010,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+20299802,Longitudinal examination of obesity and cognitive function: results from the Baltimore longitudinal study of aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20176414,Lack of association between 11C-PiB and longitudinal brain atrophy in non-demented older individuals.,2011,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20161651,Frontal Atrophy and Attention Deficits in Older Adults with a History of Elevated Depressive Symptoms.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20150891,"Influence of leptin, adiponectin, and resistin on the association between abdominal adiposity and arterial stiffness.",2010,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+20147655,Longitudinal cognitive decline is associated with fibrillar amyloid-beta measured by [11C]PiB.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20126297,Whole grain intake: The Baltimore Longitudinal Study of Aging.,2009,6,"Domain 6: intake, diet, proteins, cell",TRUE
+20122039,"Nonsteroidal anti-inflammatory drugs, aspirin, and cognitive function in the Baltimore longitudinal study of aging.",2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20080238,Characteristic gait patterns in older adults with obesity--results from the Baltimore Longitudinal Study of Aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20067459,Bone mineral content and prostate cancer risk: data from the Baltimore Longitudinal Study of Aging.,2010,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+20065135,APOE epsilon4 genotype and longitudinal changes in cerebral blood flow in normal aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20044526,Intima-media thickness and regional cerebral blood flow in older adults.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+26162067,Secular Trends and Personality: Perspectives From Longitudinal and Cross-Cultural Studies-Commentary on Trzesniewski & Donnellan (2010).,2010,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+20042999,BDNF Val66Met is associated with introversion and interacts with 5-HTTLPR to influence neuroticism.,2010,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+20031606,The 9p21 myocardial infarction risk allele increases risk of peripheral artery disease in older people.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+20006797,Longitudinal measurements of renal function.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19933750,Secular trends in body weight in older men born between 1877 and 1941: the Baltimore Longitudinal Study of Aging.,2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19880490,A genome-wide association analysis of serum iron concentrations.,2010,6,"Domain 6: intake, diet, proteins, cell",TRUE
+19853477,"Serum carboxymethyl-lysine, a dominant advanced glycation end product, is associated with chronic kidney disease: the Baltimore longitudinal study of aging.",2010,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19836806,Should prostate specific antigen be adjusted for body mass index? Data from the Baltimore Longitudinal Study of Aging.,2009,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+19834535,"Sequential use of transcriptional profiling, expression quantitative trait mapping, and gene association implicates MMP20 in human kidney aging.",2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19751256,Serum testosterone is associated with aggressive prostate cancer in older men: results from the Baltimore Longitudinal Study of Aging.,2010,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+19751091,Blood pressure reactivity and cognitive function in the Baltimore Longitudinal Study of Aging.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19721847,Depressive symptoms and brain volumes in older adults: a longitudinal magnetic resonance imaging study.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19683305,Prostate volume changes over time: results from the Baltimore Longitudinal Study of Aging.,2009,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+19661626,Neuropathologic studies of the Baltimore Longitudinal Study of Aging (BLSA).,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19646705,Age-related mechanical work expenditure during normal walking: the Baltimore Longitudinal Study of Aging.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19644063,Carotid intimal medial thickness predicts cognitive decline among adults without clinical vascular disease.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19577038,Age-associated changes in motor unit physiology: observations from the Baltimore Longitudinal Study of Aging.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19568331,Stability Of Default-Mode Network Activity In The Aging Brain.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19487648,Longitudinal pattern of regional brain volume change differentiates normal aging from MCI.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19484709,Longitudinal study of chronic depressive symptoms and regional cerebral blood flow in older men and women.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19450841,Single nucleotide polymorphisms and the likelihood of prostate cancer at a given prostate specific antigen level.,2009,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+19416949,Longitudinal progression of Alzheimer's-like patterns of atrophy in normal older adults: the SPARE-AD index.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19375623,Risk of developing prostate cancer in the future: overview of prognostic biomarkers.,2009,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+19282984,"Measures of autozygosity in decline: globalization, urbanization, and its implications for medical genetics.",2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19270183,Longitudinal paths to the metabolic syndrome: can the incidence of the metabolic syndrome be predicted? The Baltimore Longitudinal Study of Aging.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19246059,Prostate specific antigen testing among the elderly--when to stop?,2009,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+19199283,Variants of the serotonin transporter gene and NEO-PI-R Neuroticism: No association in the BLSA and SardiNIA samples.,2009,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+19126858,The Baltimore Longitudinal Study of Aging (BLSA): a 50-year-long journey and plans for the future.,2008,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+19028201,Immunity from smallpox vaccine persists for decades: a longitudinal study.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19023277,"Serum carboxymethyl-lysine, an advanced glycation end product, is associated with increased aortic pulse wave velocity in adults.",2009,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+19016950,"Association between serum carboxymethyl-lysine, a dominant advanced glycation end product, and anemia in adults: the Baltimore longitudinal study of aging.",2008,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+18842746,Absence of relation between depressive symptoms and carotid intimal medial thickness in the Baltimore Longitudinal Study of Aging.,2009,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18835864,Association of adiposity status and changes in early to mid-adulthood with incidence of Alzheimer's disease.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18707733,Does prostate growth confound prostate specific antigen velocity? Data from the Baltimore longitudinal study of aging.,2008,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+18703614,Longitudinal cerebral blood flow and amyloid deposition: an emerging pattern?,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18693229,Number of teeth and mortality risk in the Baltimore Longitudinal Study of Aging.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18693224,High basal metabolic rate is a risk factor for mortality: the Baltimore Longitudinal Study of Aging.,2008,6,"Domain 6: intake, diet, proteins, cell",TRUE
+18635873,TNF promoter polymorphisms associated with muscle phenotypes in humans.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18614274,PSA doubling time versus PSA velocity to predict high-risk prostate cancer: data from the Baltimore Longitudinal Study of Aging.,2008,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+18596250,"Personality predictors of longevity: activity, emotional stability, and conscientiousness.",2008,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+18571442,Serum protein signatures detect early radiographic osteoarthritis.,2009,6,"Domain 6: intake, diet, proteins, cell",TRUE
+18520776,Neuronal hypertrophy in asymptomatic Alzheimer disease.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18496870,Effect of infarcts on dementia in the Baltimore longitudinal study of aging.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18400519,Structural and functional biomarkers of prodromal Alzheimer's disease: a high-dimensional pattern classification study.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18400500,The effects of age on medio-lateral stability during normal and narrow base walking.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18387440,Pulse wave velocity is an independent predictor of the longitudinal increase in systolic blood pressure and of incident hypertension in the Baltimore Longitudinal Study of Aging.,2008,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+18378557,"Differential association of concurrent, baseline, and average depressive symptoms with cognitive decline in older adults.",2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18297291,Morphometry of the human substantia nigra in ageing and Parkinson's disease.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18282324,"Memory impairment, executive dysfunction, and intellectual decline in preclinical Alzheimer's disease.",2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18268070,Glucose and insulin measurements from the oral glucose tolerance test and mortality prediction.,2008,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+24453387,Modeling Disease Progression with Longitudinal Markers.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+18065595,"Intake of whole grains, refined grains, and cereal fiber measured with 7-d diet records and associations with risk factors for chronic disease.",2007,6,"Domain 6: intake, diet, proteins, cell",TRUE
+18025297,Pulse pressure and pulse wave velocity are related to cognitive decline in the Baltimore Longitudinal Study of Aging.,2008,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+17964048,"White cell count, mortality, and metabolic syndrome in the Baltimore longitudinal study of aging.",2007,6,"Domain 6: intake, diet, proteins, cell",FALSE
+17884459,Contribution of nonesterified fatty acids to insulin resistance in the elderly with normal fasting but diabetic 2-hour postchallenge plasma glucose levels: the Baltimore Longitudinal Study of Aging.,2007,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+17846159,Vulnerability of the orbitofrontal cortex to age-associated structural and functional brain changes.,2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17804951,Rates of depression in individuals with pathologic but not clinical Alzheimer disease are lower than those in individuals without the disease: findings from the Baltimore Longitudinal Study on Aging (BLSA).,2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17631385,Changes in leisure time physical activity and risk of all-cause mortality in men and women: the Baltimore Longitudinal Study of Aging.,2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17595254,"Aging, androgens, and the metabolic syndrome in a longitudinal study of aging.",2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17534385,The impact of magnetic resonance imaging-detected white matter hyperintensities on longitudinal changes in regional cerebral blood flow.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17510458,Longitudinal changes in cerebral blood flow in the older hypertensive brain.,2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17499473,A validated liquid chromatography method for the simultaneous determination of vitamins A and E in human plasma.,2007,6,"Domain 6: intake, diet, proteins, cell",TRUE
+17481443,White blood cell count and mortality in the Baltimore Longitudinal Study of Aging.,2007,6,"Domain 6: intake, diet, proteins, cell",TRUE
+17347381,Activin-type II receptor B (ACVR2B) and follistatin haplotype associations with muscle mass and strength in humans.,2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17222481,Physiological correlates of age-related decline in vibrotactile sensitivity.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17192929,Impact of Alzheimer's pathology on cognitive trajectories in nondemented elderly.,2006,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17184881,I. Longitudinal changes in aging brain function.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17178430,II. Temporal patterns of longitudinal change in aging brain function.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17174012,Detection of prodromal Alzheimer's disease via pattern classification of magnetic resonance imaging.,2008,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+17097316,Arterial stiffness and hand osteoarthritis: a novel relationship?,2007,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+17077354,Detection of life-threatening prostate cancer with prostate-specific antigen velocity during a window of curability.,2006,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+17070423,Suppressed anger is associated with increased carotid arterial stiffness in older adults.,2006,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+17060561,Effect of a clinical stroke on the risk of dementia in a prospective cohort.,2006,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16817661,Comparison of arterial compliance indices derived via beat-to-beat blood pressure waveforms: aging and ethnicity.,2006,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+16806996,MRI of bone marrow edema-like signal in the pathogenesis of subchondral cysts.,2006,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+16608892,Metabolic factors associated with benign prostatic hyperplasia.,2006,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+16497954,Longitudinal trajectories in Guilford-Zimmerman temperament survey data: results from the Baltimore longitudinal study of aging.,2006,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16464595,Age associated differences in postural equilibrium control: a comparison between EQscore and minimum time to contact (TTC(min)).,2007,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16420209,Estimating cardiorespiratory fitness in well-functioning older adults: treadmill validation of the long distance corridor walk.,2006,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16306238,Predicting Alzheimer's disease in the Baltimore longitudinal study of aging.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16249530,The relation of fasting and 2-h postchallenge plasma glucose concentrations to mortality: data from the Baltimore Longitudinal Study of Aging with a critical review of the literature.,2005,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+16248708,Hierarchical linear modeling analyses of the NEO-PI-R scales in the Baltimore Longitudinal Study of Aging.,2005,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+16193071,Male hypogonadism. Part I: Epidemiology of hypogonadism.,2006,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16174724,Peptide YY is secreted after oral glucose administration in a gender-specific manner.,2005,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+16172240,Serum testosterone and the risk of prostate cancer: potential implications for testosterone therapy.,2005,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+16159908,"Relationship between androgenic hormones and arterial stiffness, based on longitudinal hormone measurements.",2006,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+16079205,Evaluation of movement speed and reaction time as predictors of all-cause mortality in men.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+16043637,Accelerated longitudinal decline of aerobic capacity in healthy older adults.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+19595811,Reduced risk of Alzheimer's disease with high folate intake: the Baltimore Longitudinal Study of Aging.,2005,6,"Domain 6: intake, diet, proteins, cell",TRUE
+15977648,"Alpha-synuclein lesions in normal aging, Parkinson disease, and Alzheimer disease: evidence from the Baltimore Longitudinal Study of Aging (BLSA).",2005,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+15925292,Prediagnostic plasma vitamin C levels and the subsequent risk of prostate cancer.,2005,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+15879821,Can a baseline prostate specific antigen level identify men who will have lower urinary tract symptoms later in life?,2005,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+15798964,Contribution of impaired glucose tolerance in subjects with the metabolic syndrome: Baltimore Longitudinal Study of Aging.,2005,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+15769795,apoE4 allele and the natural history of cardiovascular risk factors.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15764865,Brief screening tests for the diagnosis of dementia: comparison with the mini-mental state exam.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15751230,"Alpha-synuclein lesions in normal aging, Parkinson disease, and Alzheimer disease: evidence from the Baltimore Longitudinal Study of Aging (BLSA).",2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15735093,The combination of high fruit and vegetable and low saturated fat intakes is more protective against mortality in aging men than is either alone: the Baltimore Longitudinal Study of Aging.,2005,6,"Domain 6: intake, diet, proteins, cell",TRUE
+15734963,Nonsteroidal anti-inflammatory drugs and risk of prostate cancer in the Baltimore Longitudinal Study of Aging.,2005,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+15732103,"Depressive symptoms, sex, and risk for Alzheimer's disease.",2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15699446,Nonlinear relations of blood pressure to cognitive function: the Baltimore Longitudinal Study of Aging.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15582745,Calcium channel blockers and risk of AD: the Baltimore Longitudinal Study of Aging.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15576854,Change in depressive symptoms in the Baltimore longitudinal study of aging.,2004,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15570315,Differences in the relationship between lipid CHD risk factors and body composition in Caucasians and Japanese.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15377647,Androgen receptor CAG repeat polymorphism is associated with fat-free mass in men.,2005,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15321819,Associations of empirically derived eating patterns with plasma lipid biomarkers: a comparison of factor and cluster analysis methods.,2004,6,"Domain 6: intake, diet, proteins, cell",TRUE
+15312966,Hippocampal neurons in pre-clinical Alzheimer's disease.,2004,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15298990,"Insulin-like growth factor-2 genotype, fat-free mass, and muscle performance across the adult life span.",2004,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+15277177,Food patterns measured by factor analysis and anthropometric changes in adults.,2004,6,"Domain 6: intake, diet, proteins, cell",TRUE
+15246744,Werner syndrome protein 1367 variants and disposition towards coronary artery disease in Caucasian patients.,2004,6,"Domain 6: intake, diet, proteins, cell",TRUE
+15078059,Predictors of tooth loss in two US adult populations.,2004,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+14972466,"Association of prostate cancer risk with insulin, glucose, and anthropometry in the Baltimore longitudinal study of aging.",2004,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+14745052,Free testosterone and risk for Alzheimer disease in older men.,2004,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+14698641,Bone mineral density and osteoarthritis: data from the Baltimore Longitudinal Study of Aging.,2004,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+12959897,Adult height corrected for shrinking and secular trend.,2003,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12807897,C174T polymorphism in the CNTF receptor gene is associated with fat-free mass in men and women.,2003,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12799129,Secular trends in leisure-time physical activity in men and women across four decades.,2003,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12791618,Dietary patterns and changes in body mass index and waist circumference in adults.,2003,6,"Domain 6: intake, diet, proteins, cell",TRUE
+12765960,The natural history of progression from normal glucose tolerance to type 2 diabetes in the Baltimore Longitudinal Study of Aging.,2003,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+12716936,Longitudinal magnetic resonance imaging studies of older adults: a shrinking brain.,2003,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12682311,Visual memory predicts Alzheimer's disease more than a decade before diagnosis.,2003,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12597934,Association of energy intake with prostate cancer in a long-term aging study: Baltimore Longitudinal Study of Aging (United States).,2003,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+12566930,Cyclooxygenase as a target for the antiamyloidogenic activities of nonsteroidal anti-inflammatory drugs in Alzheimer's disease.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12525723,Longitudinal changes in verbal memory in older adults: distinguishing the effects of age from repeat testing.,2003,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12475694,Calcium intake and prostate cancer risk in a long-term aging study: the Baltimore Longitudinal Study of Aging.,2002,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+12451004,Role of nondiagnostic exercise-induced ST-segment abnormalities in predicting future coronary events in asymptomatic volunteers.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12433264,Survival following a diagnosis of Alzheimer disease.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12414864,Longitudinal assessment of serum free testosterone concentration predicts memory performance and cognitive status in elderly men.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12110533,Interrelationships of serum testosterone and free testosterone index with FFM and strength in aging men.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+12031375,PSA velocity for assessing prostate cancer risk in men with PSA levels between 2.0 and 4.0 ng/ml.,2002,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+12023260,Relationship between in vivo age and in vitro aging: assessment of 669 cell cultures derived from members of the Baltimore Longitudinal Study of Aging.,2002,6,"Domain 6: intake, diet, proteins, cell",TRUE
+12008173,Comparison of cardiorespiratory fitness versus leisure time physical activity as predictors of coronary events in men aged < or = 65 years and > 65 years.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11992063,Prostate specific antigen predicts the long-term risk of prostate enlargement: results from the Baltimore Longitudinal Study of Aging.,2002,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+11880103,Low levels of PSA predict long-term risk of prostate cancer: results from the Baltimore longitudinal study of aging.,2002,3,"Domain 3: prostate, psa, cancer, antigen",FALSE
+11834645,Body mass index and the risk of COPD.,2002,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11813737,The physical functioning inventory: a procedure for assessing physical function in adults.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11795355,Effects of hormone replacement therapy on cognitive and brain aging.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11707535,Does waist circumference add to the predictive power of the body mass index for coronary risk?,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11696701,Plasma selenium level before diagnosis and the risk of prostate cancer development.,2001,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+11549490,Low levels of prostate-specific antigen predict long-term risk of prostate cancer: results from the Baltimore Longitudinal Study of Aging.,2001,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+11524441,Relationship between muscle strength and the time taken to complete a standardized walk-turn-walk test.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11511137,Hormone replacement therapy and longitudinal changes in blood pressure in postmenopausal women.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11405385,Effect of estrogen and progestin replacement on arterial stiffness indices in postmenopausal women.,2001,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+11297889,The effect of gender on the relationship between body fat distribution and lung function.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11250994,Recommendations for cancer prevention trials using potentially ototoxic test agents.,2001,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+11158037,Longitudinal effects of aging on serum total and free testosterone levels in healthy men. Baltimore Longitudinal Study of Aging.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11156805,Enhanced verbal memory in nondemented elderly women receiving hormone-replacement therapy.,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11156044,"Cigar, pipe, and cigarette smoking as risk factors for periodontal disease and tooth loss.",2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11152862,Is the apoE4 allele an independent predictor of coronary events?,2001,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+11068313,Today men with prostate cancer have larger prostates.,2000,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+11023539,A new xeroderma pigmentosum group C poly(AT) insertion/deletion polymorphism.,2000,6,"Domain 6: intake, diet, proteins, cell",TRUE
+10955390,Early repolarization: an electrocardiographic predictor of enhanced aerobic fitness.,2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10910792,Do the dimensions of the temperament and character inventory map a simple genetic architecture? Evidence from molecular genetics and factor analysis.,2000,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+10904463,The relationship between longitudinal declines in dehydroepiandrosterone sulfate concentrations and cognitive performance in older men.,2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10894318,Effect of aging on the relationship between multiple risk factors and waist circumference.,2000,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+10851365,Age-specific incidence rates of Alzheimer's disease: the Baltimore Longitudinal Study of Aging.,2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10847596,One-year age changes in MRI brain volumes in older adults.,2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10719771,"Longitudinal influence of age, menopause, hormone replacement therapy, and other medications on parotid flow rates in healthy women.",2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10694126,Leisure-time physical activities and their relationship to cardiorespiratory fitness in healthy men and women 18-95 years old.,2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10682942,The relationship between aerobic exercise capacity and circulating IGF-1 levels in healthy men and women.,2000,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10547143,Longitudinal change in height of men and women: implications for interpretation of the body mass index: the Baltimore Longitudinal Study of Aging.,1999,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10513484,The relationship of anxiety and depression with self-reported knee pain in the community: data from the Baltimore Longitudinal Study of Aging.,1999,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+10464819,The effect of gestational parity on FEV1 in a group of healthy volunteer women.,1999,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10452590,Prostatic growth rate determined from MRI data: age-related longitudinal changes.,1999,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10362000,Muscle quality and age: cross-sectional and longitudinal comparisons.,1999,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+10325979,Influence of age and postmenopausal estrogen replacement therapy on carotid arterial stiffness in women.,1999,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+10078317,The relationship of peripheral motor nerve conduction velocity to age-associated loss of grip strength.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9927081,The influence of hypothyroidism and thyroid replacement therapy on stimulated parotid flow rates.,1999,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9876393,An association between an aggrecan polymorphic allele and bilateral hand osteoarthritis in elderly white men: data from the Baltimore Longitudinal Study of Aging (BLSA).,1998,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+9817693,Determinants of maximal inspiratory pressure. The Baltimore Longitudinal Study of Aging.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9799627,Effects of estrogen replacement therapy on PET cerebral blood flow and neuropsychological performance.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9769303,Increased carotid artery intimal-medial thickness in asymptomatic older subjects with exercise-induced myocardial ischemia.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9754125,An image-processing system for qualitative and quantitative volumetric analysis of brain images.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9724752,Relationship between donor age and the replicative lifespan of human cells in culture: a reevaluation.,1998,6,"Domain 6: intake, diet, proteins, cell",TRUE
+9682327,The detection of residual serial correlation in linear mixed models.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9626171,Independent prognostic significance of ischemic ST-segment response limited to recovery from treadmill exercise in asymptomatic subjects.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9597048,Serum levels of insulin-like growth factor-I are related to age and not to body composition in healthy women and men.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9533483,'Life begins' for Baltimore Longitudinal Study of Aging--research group has 40th birthday.,1998,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+9436013,Effects of estrogen status and aging on salivary flow rates in healthy Caucasian women.,1998,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9375323,Age and gender comparisons of muscle strength in 654 women and men aged 20-93 yr.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+28561473,"Longitudinal change in forced expiratory volume in healthy, non-smoking men and women: The Baltimore Longitudinal Study of Aging.",1998,4,"Domain 4: cognitive, brain, gait, muscle",FALSE
+9409335,Estrogen replacement therapy and longitudinal decline in visual memory. A possible protective effect?,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9364655,Construction of hearing percentiles in women with non-constant variance from the linear mixed-effects model.,1997,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+9322238,No association between novelty seeking and dopamine D4 receptor (D4DR) exon III seven repeat alleles in Baltimore Longitudinal Study of Aging participants.,1997,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+9310077,Age-associated loss of power and strength in the upper extremities in women and men.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9226632,Abundance of alpha 1(I) and alpha 1(III) procollagen and p21 mRNAs in fibroblasts cultured from fetal and postnatal dermis.,1997,6,"Domain 6: intake, diet, proteins, cell",TRUE
+9272853,Describing the natural heterogeneity of aging using multilevel regression models.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9191758,A prospective study of estrogen replacement therapy and the risk of developing Alzheimer's disease: the Baltimore Longitudinal Study of Aging.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9145718,Recommended prostate-specific antigen testing intervals for the detection of curable prostate cancer.,1997,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+9158560,Age-associated changes in blood pressure in a longitudinal study of healthy men and women.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9101505,Metabolic correlates of obesity and radiographic features of knee osteoarthritis: data from the Baltimore Longitudinal Study of Aging.,1997,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+9065537,Risk of Alzheimer's disease and duration of NSAID use.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9177595,Do echocardiographic changes explain the age-associated increase in exercise-induced supraventricular arrhythmias?,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+9055133,Acetylator phenotype in relation to age and gender in the Baltimore Longitudinal Study of Aging.,1997,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8923372,Axial and hip bone mineral density and radiographic changes of osteoarthritis of the knee: data from the Baltimore Longitudinal Study of Aging.,1996,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8865630,Age- and gender-specific reference ranges for hearing level and longitudinal changes in hearing level.,1996,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+8808997,Tongue strength and endurance in different aged individuals.,1996,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8780987,Risk factors related to age-associated hearing loss in the speech frequencies.,1996,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+8725897,Neuropathology in controls and demented subjects from the Baltimore Longitudinal Study of Aging.,1996,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8653461,Ten-year longitudinal study of periodontal attachment loss in healthy adults.,1996,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8612109,Longitudinal changes in smell identification.,1996,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8695671,"Insulin response during the oral glucose tolerance test: the role of age, sex, body fat and the pattern of fat distribution.",1996,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+8572729,Association of hand and knee osteoarthritis: evidence for a polyarticular disease subset.,1996,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8548521,Age differences and age changes in activities: Baltimore Longitudinal Study of Aging.,1996,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8548509,Why do exercise-induced ventricular arrhythmias increase with age? Role of M-mode echocardiographic aging changes.,1996,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8619373,Radial and ulnar cortical thickness of the second metacarpal.,1995,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+7493216,"Age, gender, and muscular strength.",1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7654803,Association of radiographic features of osteoarthritis of the knee with knee pain: data from the Baltimore Longitudinal Study of Aging.,1995,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+7541528,Longitudinal evaluation of serum androgen levels in men with and without prostate cancer.,1995,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+7715063,Left ventricular diastolic filling performance in older male athletes.,1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7767695,Age-associated changes in specific errors on the Benton Visual Retention Test.,1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7717280,Prevalence and prognostic significance of exercise-induced supraventricular tachycardia in apparently healthy volunteers.,1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7536366,Prostate-specific antigen variability in men without prostate cancer: effect of sampling interval on prostate-specific antigen velocity.,1995,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+14589733,Changes in immediate visual memory predict cognitive impairment.,1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7785465,Upper extremity bone mass and osteoarthritis of the knees: data from the Baltimore Longitudinal Study of Aging.,1995,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+7783067,"The association of body weight, body fatness and body fat distribution with osteoarthritis of the knee: data from the Baltimore Longitudinal Study of Aging.",1995,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+7775334,Impact of age on the cardiovascular response to dynamic upright exercise in healthy men and women.,1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7876442,Gender differences in a longitudinal study of age-associated hearing loss.,1995,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+7842197,Rapid decline in FEV1. A new risk factor for coronary heart disease mortality.,1995,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7955191,Effects of acute beta-adrenergic receptor blockade on age-associated changes in cardiovascular performance during dynamic exercise.,1994,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+7523722,Natural history of changes in prostate specific antigen in early stage prostate cancer.,1994,3,"Domain 3: prostate, psa, cancer, antigen",TRUE
+7893781,The relationship of age and gender to prevalence and pattern of radiographic changes of osteoarthritis of the knee: data from Caucasian participants in the Baltimore Longitudinal Study of Aging.,1994,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8080390,A validation study of the Dementia Questionnaire.,1994,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8053956,Serum levels of insulin-like growth factor in subjects with osteoarthritis of the knee. Data from the Baltimore Longitudinal Study of Aging.,1994,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8030594,"Vitamin A and E intakes and plasma concentrations of retinol, beta-carotene, and alpha-tocopherol in men and women of the Baltimore Longitudinal Study of Aging.",1994,6,"Domain 6: intake, diet, proteins, cell",TRUE
+7983660,Appendicular bone mass and osteoarthritis of the hands in women: data from the Baltimore Longitudinal Study of Aging.,1994,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8014399,Age differences and changes in reaction time: the Baltimore Longitudinal Study of Aging.,1994,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8085612,Hand dominance and bilateral asymmetry in the structure of the second metacarpal.,1994,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8311777,Are antioxidants or supplements protective for age-related macular degeneration?,1994,6,"Domain 6: intake, diet, proteins, cell",TRUE
+8277436,"Stimulated parotid gland flow rates in healthy, elderly dentulous and edentulous individuals.",1993,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8403292,Effects of age and aerobic capacity on arterial stiffness in healthy adults.,1993,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8378045,A characterization of major salivary gland flow rates in the presence of medications and systemic diseases.,1993,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8351119,Old age in health and disease. Lessons from the oral cavity.,1993,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8224043,"Does diet provide adequate amounts of calcium, iron, magnesium, and zinc in a well-educated adult population?",1993,6,"Domain 6: intake, diet, proteins, cell",TRUE
+8224037,The effect of age on insulin response and glucose utilization during four hyperglycemic plateaus.,1993,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+8320066,Reliability of grading scales for individual radiographic features of osteoarthritis of the knee. The Baltimore longitudinal study of aging atlas of knee osteoarthritis.,1993,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8337906,Psychological research in the Baltimore Longitudinal Study of Aging.,1993,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+8886089,Obesity and osteoarthritis of the hands in women.,1993,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+8462394,Oral health in patients with type II diabetes and impaired glucose tolerance.,1993,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+8445009,An epidemiological test of the hyperinsulinemia-hypertension hypothesis.,1993,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+8418141,"Age, gender, medical treatment, and medication effects on smell identification.",1993,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1400863,Long-term longitudinal measurements of plasma dehydroepiandrosterone sulfate in normal men.,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1381549,Long-term prognostic significance of ambulatory electrocardiographic findings in apparently healthy subjects greater than or equal to 60 years of age.,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1624696,Salivary gland function and glucose metabolic status.,1992,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+1634704,"Glucose tolerance in women: the effects of age, body composition, and sex hormones.",1992,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+1614065,Does essential hypertension cause end-stage renal disease?,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1573187,How comparable are healthy 60- and 80-year-old men?,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1627676,Response stability and reliability in longitudinal health evaluations.,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1543136,Prevalence and prognostic significance of exercise-induced silent myocardial ischemia in apparently healthy subjects.,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1342266,Cholesterol as a risk factor for coronary heart disease in elderly men. The Baltimore Longitudinal Study of Aging.,1992,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1841608,Effect of age of entry to a longitudinal study on cross-sectional determination of cardiovascular disease.,1991,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1746522,Factors associated with osteoarthritis of the hand in males: data from the Baltimore Longitudinal Study of Aging.,1991,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+1952799,A longitudinal study of osteoarthritis of the hand: the effect of age.,1991,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+1911061,Epidemiology and genetics of osteoarthritis.,1991,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+2005688,Normative patterns of diurnal urination across 6 age decades.,1991,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2027125,Epidemiology of osteoarthritis: current concepts and new insights.,1991,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+2015973,Age as independent determinant of glucose tolerance.,1991,1,"Domain 1: glucose, insulin, tolerance, oral",TRUE
+1714657,Natural history of benign prostatic hyperplasia and risk of prostatectomy. The Baltimore Longitudinal Study of Aging.,1991,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2287703,Predicting personality in adulthood from college MMPI scores: implications for follow-up studies in psychosomatic medicine.,1990,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+2172358,Continuing diet trends in men: the Baltimore Longitudinal Study of Aging (1961-1987).,1990,6,"Domain 6: intake, diet, proteins, cell",TRUE
+2220770,Overview: renal physiology and pathophysiology of aging.,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2403398,The longitudinal course of hand osteoarthritis in a male population.,1990,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+2212307,Age changes in pure-tone hearing thresholds in a longitudinal study of normal human aging.,1990,2,"Domain 2: hearing, vestibular, function, spatial",TRUE
+2195103,Next steps in describing aging and disease in longitudinal studies.,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2335725,Age-associated changes in the components of atrioventricular conduction in apparently healthy volunteers.,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2335723,The role of muscle loss in the age-related decline of grip strength: cross-sectional and longitudinal perspectives.,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2361814,"Body weight variability in men: metabolic rate, health and longevity.",1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2319274,"Misclassification of ""probable senile dementia--Alzheimer's type"" in the Baltimore Longitudinal Study of Aging.",1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2297826,Can serial exercise testing improve the prediction of coronary events in asymptomatic individuals?,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1700403,Cumulative prevalence of prostatism matches the autopsy prevalence of benign prostatic hyperplasia.,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+1691843,Symptoms and signs of prostatism as risk factors for prostatectomy.,1990,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2490851,New radiographic grading scales for osteoarthritis of the hand. Reliability for determining prevalence and progression.,1989,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+2741904,Validation of a retrospective questionnaire assessing diet 10-15 years ago.,1989,6,"Domain 6: intake, diet, proteins, cell",TRUE
+2735669,Changes in dietary patterns over a 6-year period in an elderly population.,1989,6,"Domain 6: intake, diet, proteins, cell",TRUE
+2676875,Studies in the distribution of body fat. II. Longitudinal effects of change in weight.,1989,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3182484,Role of muscle loss in the age-associated reduction in VO2 max.,1988,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2834432,"Fiber intake, age, and other coronary risk factors in men of the Baltimore Longitudinal Study (1959-1975).",1988,6,"Domain 6: intake, diet, proteins, cell",TRUE
+3254313,Oral physiology and the Baltimore longitudinal study of aging.,1988,1,"Domain 1: glucose, insulin, tolerance, oral",FALSE
+3688210,Toe and plantar dermatoglyphics in adult American Caucasians.,1987,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+2442239,Reproductive hormones in aging men. III: Basal and LHRH-stimulated serum concentrations of the common alpha-subunit of the glycoprotein hormones.,1987,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3612472,"Neuroticism, somatic complaints, and disease: is the bark worse than the bite?",1987,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+3490781,Unexplained sinus bradycardia: clinical significance and long-term prognosis in apparently healthy persons older than 40 years.,1986,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3098384,Longitudinal study of bone loss in the second metacarpal.,1986,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+3734313,Absolute peripheral blood lymphocyte count and subsequent mortality of elderly men. The Baltimore Longitudinal Study of Aging.,1986,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3267391,"Cross-sectional studies of personality in a national sample: 2. Stability in neuroticism, extraversion, and openness.",1986,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+3267390,Cross-sectional studies of personality in a national sample: 1. Development and validation of survey measures.,1986,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+3080468,Responses of growth hormone (GH) and somatomedin-C to GH-releasing hormone in healthy aging men.,1986,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3817041,Factors affecting attrition in the Baltimore Longitudinal Study of Aging.,1986,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3493169,A longitudinal study of cognitive performance in noninsulin dependent (type II) diabetic men.,1986,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3493168,Age related changes in visual acuity.,1986,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+4055584,Age-related augmentation of plasma catecholamines during dynamic exercise in healthy males.,1985,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+3989190,Longitudinal studies on the rate of decline in renal function with age.,1985,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+4019706,Effects of pulmonary function on mortality.,1985,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+6690093,Exercise cardiac output is maintained with advancing age in healthy human subjects: cardiac dilatation and increased stroke volume compensate for a diminished heart rate.,1984,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+6600763,A longitudinal study of nutritional intake in men.,1983,6,"Domain 6: intake, diet, proteins, cell",TRUE
+7056835,Longitudinal changes in serum cholesterol in man: an epidemiologic search for an etiology.,1982,6,"Domain 6: intake, diet, proteins, cell",TRUE
+7173698,"Age, sex and bilateral variability in cortical bone loss and measurements of the second metacarpal.",1982,5,"Domain 5: knee, osteoarthritis, stiffness, hand",TRUE
+6946895,Characteristics of participants in the oral physiology component of the Baltimore longitudinal study of aging.,1981,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+6969272,"Constancy of adult personality structure in males: longitudinal, cross-sectional and times-of-measurement analyses.",1980,8,"Domain 8: personality, neuroticism, traits, neo",TRUE
+7441726,Somatic complaints in males as a function of age and neuroticism: a longitudinal analysis.,1980,4,"Domain 4: cognitive, brain, gait, muscle",TRUE
+499195,Age-related differences in lactate distribution kinetics following maximal exercise.,1979,4,"Domain 4: cognitive, brain, gait, muscle",TRUE

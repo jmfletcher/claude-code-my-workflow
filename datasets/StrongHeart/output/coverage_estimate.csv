@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+StrongHeart,n_central_pmid,373,2026-07-06
+StrongHeart,n_central_no_pmid,0,2026-07-06
+StrongHeart,n_query_hits,373,2026-07-06
+StrongHeart,n_overlap,373,2026-07-06
+StrongHeart,n_central_only,0,2026-07-06
+StrongHeart,n_search_only,0,2026-07-06
+StrongHeart,n_union,373,2026-07-06
+StrongHeart,coverage_ratio,1,2026-07-06
+StrongHeart,curated_share_of_query,1,2026-07-06

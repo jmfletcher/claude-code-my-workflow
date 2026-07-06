@@ -1,0 +1,8 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 8: colorectal, crc, cancer, colon",NA,NA,NA,8,"Domain 8: colorectal, crc, cancer, colon",253,504,3.0737708759705566,0.9723320158102767
+"Domain 3: shift, night, work, sleep",NA,NA,NA,3,"Domain 3: shift, night, work, sleep",46,143,1.2315689981096476,0.8695652173913043
+"Domain 5: breast, cancer, premenopausal, density",NA,NA,NA,5,"Domain 5: breast, cancer, premenopausal, density",429,693,1.01022598225395,0.7552447552447552
+"Domain 7: cognitive, decline, function, global",NA,NA,NA,7,"Domain 7: cognitive, decline, function, global",87,203,0.9988109393579037,0.8390804597701149
+"Domain 4: sexual, childhood, physical, likely",NA,NA,NA,4,"Domain 4: sexual, childhood, physical, likely",48,142,0.9926215277777799,0.8958333333333334
+"Domain 2: intake, chd, dietary, consumption",NA,NA,NA,2,"Domain 2: intake, chd, dietary, consumption",902,1389,0.6164903319059625,0.6740576496674058
+"Domain 6: use, diabetes, weight, bmi",NA,NA,NA,6,"Domain 6: use, diabetes, weight, bmi",1684,2802,0.18232096411100993,0.24346793349168647

@@ -1,0 +1,25 @@
+dataset:
+  name: BLSA
+  full_name: Baltimore Longitudinal Study of Aging
+  description: NIA intramural study of human aging, one of the longest-running
+    longitudinal aging studies (began 1958).
+source:
+  type: pubmed_name_search
+  collection_url: https://www.blsa.nih.gov/
+  entrez_query: '"Baltimore Longitudinal Study of Aging"[tiab]'
+  expected_paper_count: null
+  last_fetched: null
+  funding:
+    funder: NIA (NIH, intramural)
+    confirmed: yes
+    note: NIA Intramural Research Program; acquired via PubMed name search.
+  coverage_query: '"Baltimore Longitudinal Study of Aging"[tiab]'
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

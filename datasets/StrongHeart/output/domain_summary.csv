@@ -1,0 +1,6 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 2: arsenic, exposure, urine, dma",NA,NA,NA,2,"Domain 2: arsenic, exposure, urine, dma",33,157,4.217630853994521,1
+"Domain 1: left, ventricular, mass, pressure",NA,NA,NA,1,"Domain 1: left, ventricular, mass, pressure",74,112,4.028670562454367,0.9864864864864865
+"Domain 4: cognitive, brain, depression, symptoms",NA,NA,NA,4,"Domain 4: cognitive, brain, depression, symptoms",40,97,2.6262499999999935,0.9
+"Domain 3: cancer, mortality, cause, ecg",NA,NA,NA,3,"Domain 3: cancer, mortality, cause, ecg",22,100,2.117768595041318,0.7272727272727273
+"Domain 6: cvd, chd, diabetes, health",NA,NA,NA,6,"Domain 6: cvd, chd, diabetes, health",199,575,1.2290346203378282,0.7939698492462312

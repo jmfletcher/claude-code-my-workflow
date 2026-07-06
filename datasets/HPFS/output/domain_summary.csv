@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 3: crc, colorectal, mortality, screening",NA,NA,NA,3,"Domain 3: crc, colorectal, mortality, screening",70,256,3.44326530612247,0.9857142857142858
+"Domain 5: chd, coronary, heart, disease",NA,NA,NA,5,"Domain 5: chd, coronary, heart, disease",62,169,1.728147762747129,0.9838709677419355
+"Domain 4: melanoma, skin, snps, carcinoma",NA,NA,NA,4,"Domain 4: melanoma, skin, snps, carcinoma",41,87,1.7055324211778689,0.8292682926829268
+"Domain 6: prostate, lethal, cancer, expression",NA,NA,NA,6,"Domain 6: prostate, lethal, cancer, expression",178,407,1.6533266001767382,0.9775280898876404
+"Domain 7: diabetes, cvd, mortality, type",NA,NA,NA,7,"Domain 7: diabetes, cvd, mortality, type",328,615,1.1156491671624098,0.7682926829268293
+"Domain 8: weight, gain, change, bmi",NA,NA,NA,8,"Domain 8: weight, gain, change, bmi",57,209,1.103416435826407,0.6666666666666666
+"Domain 1: coffee, caffeine, consumption, tea",NA,NA,NA,1,"Domain 1: coffee, caffeine, consumption, tea",27,124,0.8751714677640572,0.7037037037037037
+"Domain 2: colorectal, cancer, use, vitamin",NA,NA,NA,2,"Domain 2: colorectal, cancer, use, vitamin",621,1177,0.5904896004315224,0.5410628019323671

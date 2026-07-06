@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+NHS,n_central_pmid,3453,2026-07-06
+NHS,n_central_no_pmid,0,2026-07-06
+NHS,n_query_hits,3453,2026-07-06
+NHS,n_overlap,3453,2026-07-06
+NHS,n_central_only,0,2026-07-06
+NHS,n_search_only,0,2026-07-06
+NHS,n_union,3453,2026-07-06
+NHS,coverage_ratio,1,2026-07-06
+NHS,curated_share_of_query,1,2026-07-06

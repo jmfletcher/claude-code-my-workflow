@@ -137,3 +137,37 @@ it per dataset. Grant numbers already captured above feed the Entrez query direc
 
 Fetched count reconciled to source; `papers_authors.csv` populated; coverage estimate
 recorded; metrics + figures generated; README + CLAUDE.md updated; committed.
+
+---
+
+## 9. Completion summary (2026-07-06)
+
+All 15 target datasets processed. Acquisition split by what each source exposed:
+
+- **Curated-list scrape / file (7):** HCHS/SOL, CHS, Framingham (PMID sources);
+  Sister, NHATS, ADNI (citation/table scrapes). CHS/Framingham/HCHS-SOL also carry a
+  real curated-vs-search coverage ratio (66–79%).
+- **PubMed name search (8):** HRS, WHI, Add Health, JHS, SWAN, NHS, HPFS, Strong Heart —
+  study sites were 403-blocked, JS-rendered, or curated-subset only. For these the
+  name search *is* the source, so coverage = 1.0 by construction; the operative caveat
+  is query recall, not curation gaps.
+
+**Headline finding — a clean bimodal split in authorship concentration:**
+
+| Concentration tier | Top-1 share | Datasets |
+|--------------------|------------|----------|
+| High (single-team / intramural / branded cohorts) | 40–90% | Strong Heart (59%), HCHS/SOL (56%), BLSA (48%), HPFS (42%) |
+| Moderate | 17–37% | CHS (36%), JHS (27%), NHS (25%), SWAN (23%), Framingham (19%), WHI (18%) |
+| Low (public-use / open resources) | <7% | HRS (4.1%), Add Health (4.2%), NHATS (6.3%), ADNI (2.7%) |
+
+The pattern lines up with **data-access regime**: intramural or single-center cohorts
+with gatekept access concentrate authorship around a small founding team, while
+public-use/open-data resources (HRS, Add Health, NHATS, ADNI) show the most dispersed,
+democratized authorship. Full comparison in `output/cross_dataset_concentration.csv`
+(`scripts/R/build_cross_dataset_summary.R`).
+
+**Pipeline improvements this phase:** vectorized `parse_pubmed_xml.R` (removed an
+O(n²) per-author tibble build that stalled on 4k+ paper sets); `estimate_coverage.R`
+handles citation-only sources; new reusable driver `scripts/run_pubmed_dataset.sh`;
+dual-format author parser for ADNI (`rebuild_adni_authors.R`).
+

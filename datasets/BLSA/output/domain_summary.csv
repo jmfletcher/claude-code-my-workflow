@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 7: sleep, fatigability, perceived, reported",NA,NA,NA,7,"Domain 7: sleep, fatigability, perceived, reported",27,82,3.1893004115226304,0.9629629629629629
+"Domain 3: prostate, psa, cancer, antigen",NA,NA,NA,3,"Domain 3: prostate, psa, cancer, antigen",30,54,2.3766666666666696,0.9
+"Domain 8: personality, neuroticism, traits, neo",NA,NA,NA,8,"Domain 8: personality, neuroticism, traits, neo",26,82,1.7233727810650925,1
+"Domain 1: glucose, insulin, tolerance, oral",NA,NA,NA,1,"Domain 1: glucose, insulin, tolerance, oral",29,101,1.2378121284185508,0.6206896551724138
+"Domain 2: hearing, vestibular, function, spatial",NA,NA,NA,2,"Domain 2: hearing, vestibular, function, spatial",45,104,1.1644444444444402,0.8444444444444444
+"Domain 5: knee, osteoarthritis, stiffness, hand",NA,NA,NA,5,"Domain 5: knee, osteoarthritis, stiffness, hand",47,106,0.9705749207786345,0.5106382978723404
+"Domain 6: intake, diet, proteins, cell",NA,NA,NA,6,"Domain 6: intake, diet, proteins, cell",67,357,0.912898195589205,0.7761194029850746
+"Domain 4: cognitive, brain, gait, muscle",NA,NA,NA,4,"Domain 4: cognitive, brain, gait, muscle",550,1114,0.5889421487603368,0.7018181818181818

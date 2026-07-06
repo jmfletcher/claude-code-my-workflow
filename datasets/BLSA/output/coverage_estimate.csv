@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+BLSA,n_central_pmid,822,2026-07-06
+BLSA,n_central_no_pmid,0,2026-07-06
+BLSA,n_query_hits,822,2026-07-06
+BLSA,n_overlap,822,2026-07-06
+BLSA,n_central_only,0,2026-07-06
+BLSA,n_search_only,0,2026-07-06
+BLSA,n_union,822,2026-07-06
+BLSA,coverage_ratio,1,2026-07-06
+BLSA,curated_share_of_query,1,2026-07-06

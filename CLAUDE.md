@@ -157,6 +157,10 @@ See `.claude/rules/authorship-monopoly-metrics.md` for full definitions.
 | JHS | [Jackson Heart Study](https://www.jacksonheartstudy.org/) (PubMed name search) | JS site; PubMed tiab | 657 | 27.2% | 57.1% | 72.6% |
 | SWAN | [SWAN](https://www.swanstudy.org/publications/) (PubMed name search) | site not scrapable; PubMed tiab | 707 | 22.9% | 52.8% | 75.5% |
 | ADNI | [ADNI publications](https://adni.loni.usc.edu/news-publications/publications/) | 3,516 auto-aliases; scraped table | 5,332 | 2.7% | 6.7% | 15.3% |
+| NHS | [Nurses' Health Study](https://nurseshealthstudy.org/) (PubMed name search) | selected-only site; PubMed tiab | 3,450 | 24.7% | 41.9% | 64.2% |
+| HPFS | [HPFS](https://www.hsph.harvard.edu/hpfs/) (PubMed name search) | selected-only site; PubMed tiab | 1,384 | 41.6% | 68.9% | 77.7% |
+| Strong Heart | [Strong Heart Study](https://strongheartstudy.org/) (PubMed name search) | no scrapable list; PubMed tiab | 371 | 58.8% | 67.7% | 90.0% |
+| BLSA | [BLSA](https://www.blsa.nih.gov/) (PubMed name search) | no scrapable list; PubMed tiab | 821 | 47.6% | 65.8% | 77.5% |
 
 ---
 

@@ -1,0 +1,25 @@
+dataset:
+  name: NHS
+  full_name: Nurses' Health Study (NHS/NHSII)
+  description: NCI/NHLBI prospective cohorts of female registered nurses studying
+    chronic disease risk factors (NHS from 1976, NHSII from 1989).
+source:
+  type: pubmed_name_search
+  collection_url: https://nurseshealthstudy.org/
+  entrez_query: '"Nurses'' Health Study"[tiab]'
+  expected_paper_count: null
+  last_fetched: null
+  funding:
+    funder: NCI / NHLBI (NIH)
+    confirmed: yes
+    note: Grant UM1CA186107. Study site lists only selected papers; acquired via PubMed name search.
+  coverage_query: '"Nurses'' Health Study"[tiab]'
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output
