@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+SWAN,n_central_pmid,709,2026-07-06
+SWAN,n_central_no_pmid,0,2026-07-06
+SWAN,n_query_hits,709,2026-07-06
+SWAN,n_overlap,709,2026-07-06
+SWAN,n_central_only,0,2026-07-06
+SWAN,n_search_only,0,2026-07-06
+SWAN,n_union,709,2026-07-06
+SWAN,coverage_ratio,1,2026-07-06
+SWAN,curated_share_of_query,1,2026-07-06

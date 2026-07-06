@@ -1,0 +1,25 @@
+dataset:
+  name: AddHealth
+  full_name: National Longitudinal Study of Adolescent to Adult Health (Add Health)
+  description: NICHD/NIA cohort following a nationally representative sample from
+    adolescence into adulthood (Wave I 1994-95; ongoing).
+source:
+  type: pubmed_name_search
+  collection_url: https://addhealth.cpc.unc.edu/publications/
+  entrez_query: '"Add Health"[tiab] OR "National Longitudinal Study of Adolescent Health"[tiab] OR "National Longitudinal Study of Adolescent to Adult Health"[tiab]'
+  expected_paper_count: null
+  last_fetched: null
+  funding:
+    funder: NICHD / NIA (NIH)
+    confirmed: yes
+    note: Publications page JS-rendered (ajax-search-lite); acquired via PubMed title/abstract name search.
+  coverage_query: '"Add Health"[tiab] OR "National Longitudinal Study of Adolescent Health"[tiab] OR "National Longitudinal Study of Adolescent to Adult Health"[tiab]'
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

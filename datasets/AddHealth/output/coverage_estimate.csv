@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+AddHealth,n_central_pmid,2668,2026-07-06
+AddHealth,n_central_no_pmid,0,2026-07-06
+AddHealth,n_query_hits,2668,2026-07-06
+AddHealth,n_overlap,2668,2026-07-06
+AddHealth,n_central_only,0,2026-07-06
+AddHealth,n_search_only,0,2026-07-06
+AddHealth,n_union,2668,2026-07-06
+AddHealth,coverage_ratio,1,2026-07-06
+AddHealth,curated_share_of_query,1,2026-07-06

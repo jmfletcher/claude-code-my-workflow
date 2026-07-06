@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+WHI,n_central_pmid,3493,2026-07-06
+WHI,n_central_no_pmid,0,2026-07-06
+WHI,n_query_hits,3493,2026-07-06
+WHI,n_overlap,3493,2026-07-06
+WHI,n_central_only,0,2026-07-06
+WHI,n_search_only,0,2026-07-06
+WHI,n_union,3493,2026-07-06
+WHI,coverage_ratio,1,2026-07-06
+WHI,curated_share_of_query,1,2026-07-06

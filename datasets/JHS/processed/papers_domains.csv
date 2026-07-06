@@ -1,0 +1,663 @@
+pmid,title,pub_year,cluster,domain,has_abstract
+42334559,Relations of Life's Essential 8 score with arterial and microvascular function: The Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+42225279,Identification of Frailty Subtypes in African American Adults With and Without Type 2 Diabetes: A Latent Class Analysis From the Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+42094175,LANTERN: Leveraging Local Ancestry Tracts to Enhance Rare-Variant Aggregate Association Testing.,2026,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+42047114,Association between high likelihood of obstructive sleep apnea and masked hypertension: findings from the Jackson heart and coronary artery risk development in young adults studies.,2026,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+42006437,Associations of noninvasive measures of adiposity with aortic stiffness and microvascular function: The Jackson Heart Study.,2026,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+41951851,The association of urinary sodium with incident apparent treatment resistant hypertension among African Americans: findings from the Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41932314,Multi-ancestry transcriptome prediction with functionally informed variants in TOPMed MESA improves performance of transcriptome-wide association studies.,2026,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+41884897,Plasma Proteins Associated With Psychosocial Factors and Heart Disease: The Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41843656,"Socioeconomic Disadvantage, John Henryism, and Incident Heart Failure in the Jackson Heart Study.",2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41651069,Dietary Intake and Plasma Concentration of B Vitamins in Relation to Incident Coronary Artery Disease in African-American Adults: The Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41548946,Association Between Age at Menarche and Cardiovascular Disease Among African American Women in the Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41351263,Epigenome-wide association study meta-analysis of BMI in African Americans.,2026,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+41314685,Analysis of left ventricular mass for African American individuals using multi-ancestry polygenic risk scores: the Jackson Heart Study.,2025,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+41273767,Association of Physical Activity With Aortic Stiffness in the Jackson Heart Study.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41252377,Influence of serum adiponectin on baseline albuminuria and subsequent decline in eGFR in African Americans: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41221589,N-Palmitoyl Glutamine Is a Candidate Mediator of Cardiorespiratory Fitness.,2026,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41133805,P-Wave Indices and the Risks of Incident Atrial Fibrillation and Ischemic Stroke in Black Adults: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41069105,Admixture-mapping analysis reveals genetic determinants of the human plasma proteome.,2026,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+41046247,Role of hypertension in the cardiovascular-kidney-metabolic syndrome among black adults: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+41037836,"Aldosterone, Subclinical Cardiac Dysfunction, and Heart Failure Subtypes: The Jackson Heart Study.",2025,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+41013308,A multi-ethnic polygenic risk score for chronic kidney disease is associated with increased risk of hypertension in African American individuals.,2025,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+40961823,SECTM1 Regulates Monocyte Levels and Is Associated With Incident Coronary Heart Disease.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40891821,Integrated trajectories of systolic and diastolic function differentially associate with risk for heart failure with preserved and reduced ejection fraction and proteomic profiles.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40775568,Experiences of In-Group and Out-Group Skin Tone Discrimination and Their Associations with Incident Cardiovascular Disease Among African American Adults in the Jackson Heart Study.,2026,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+40768955,"Discrimination, chronic stress, and cardiovascular health among African American men and women in the Jackson Heart Study: A cross-sectional study.",2025,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+40766114,Relations of Life's Essential 8 Score with Arterial and Microvascular Function: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40758858,Methylation profile of individuals with sickle cell trait.,2025,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+40678210,A multi-ethnic polygenic risk score for chronic kidney disease is associated with increased risk of hypertension in African American individuals.,2025,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+40658760,Physical Activity and Incident Atrial Fibrillation in African Americans: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+40640959,Protein quantitative trait locus analysis in African American and non-Hispanic White individuals.,2025,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+40616581,Independent and Joint Associations of Obesity and Hypertension on Incident Heart Failure: A Pooled Cohort Analysis.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40512780,"Longitudinal, prospective cohort study of social relationships and self-rated health in the Atherosclerosis Risk in Communities (ARIC) Study cohort and ARIC/Jackson Heart Study (JHS) shared cohort.",2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40393957,Epigenome-wide DNA methylation association study of CHIP provides insight into perturbed gene regulation.,2025,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+40378539,Outcomes and evaluation of a National Institutes of Health funded training program for doctoral students: The Jackson Heart Study Graduate Education and Training Center at the University of Mississippi Medical Center.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40374966,Association of ambient temperature and blood pressure in the Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40161232,"Associations between potassium, arterial stiffness, and risk of cardiovascular disease in the Jackson Heart Study: Potassium, arterial stiffness, and CVD risk.",2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40124641,Stroke Incidence and High-Sensitivity C-Reactive Protein Among African Americans: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40111553,Relationship of Lung Function and the Preserved Ratio Impaired Spirometry Pattern with Aortic and Left Ventricular Structure and Function on Magnetic Resonance Imaging: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+40008433,Hypertension Prevention and Healthy Life Expectancy in Black Adults: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39889299,Machine Learning-Based Risk Factor Analysis and Prediction Model Construction for the Occurrence of Chronic Heart Failure: Health Ecologic Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39867370,Epigenome-wide association study meta-analysis of BMI in African American Adults.,2025,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+39830278,Soluble Immune Checkpoint Protein and Lipid Network Associations with All-Cause Mortality Risk: Trans-Omics for Precision Medicine (TOPMed) Program.,2025,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+39761430,"Diabetes, Subclinical Myocardial Injury or Stress, and Risk of Heart Failure Subtypes: The Jackson Heart Study.",2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39759441,United States Pooled Cohort Cardiovascular Disease Risk Scores in Adults With Diabetes Mellitus.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39704229,Multilevel Mediators on the Associations of Neighborhood Social Environmental Factors and Severity of Metabolic Syndrome: The Jackson Heart Study.,2025,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+39680601,Adjusting for principal components can induce collider bias in genome-wide association studies.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+39677465,Integrating Whole Genome and Transcriptome Sequencing to Characterize the Genetic Architecture of Isoform Variation and its Implications for Health and Disease.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+39604030,"Cigarette Smoking, Smoking Cessation, and Heart Failure Subtypes: Insights From the Jackson Heart Study.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39601135,Abdominal Compared With Coronary Artery Calcification and Incident Cardiovascular Events and Mortality in Black Adults.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39601131,Caregiving and Hypertension in Younger Black Women: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39596582,"The Relationship of Duffy Gene Polymorphism with High-Sensitivity C-Reactive Protein, Mortality, and Cardiovascular Outcomes in Black Individuals.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39581831,Statin use and its association with all-cause mortality and incident diabetes/prediabetes in African Americans: Findings from the jackson heart study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39566683,Proteomic analysis identifies novel biological pathways that may link dietary quality to type 2 diabetes risk: evidence from African American and Asian cohorts.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39544376,Prediction of cardiovascular events and all-cause mortality using race and race-free estimated glomerular filtration rate in African Americans: the Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39543511,"Effect of fasting on cardiovascular risk factors among healthy adult Muslims attending primary care, Kano, Northern Nigerian.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39476232,Resting Heart Rate and Incident Atrial Fibrillation in Black Adults in the Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39475417,"Associations Among Experiences With Racial Discrimination, Religion/Spirituality, and Cigarette Smoking Among African American Adults: The Jackson Heart Study.",2025,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+39455520,Empowering Early Career Researchers: The Jackson Heart Study Smith Scholars Program.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39413006,"Correction to: ""The Association of Adiposity and RAAS With Incident Diabetes in African Americans: The Jackson Heart Study"".",2024,7,"Domain 7: vat, adipose, adiposity, tissue",FALSE
+39400064,Blood Pressure on Ambulatory Monitoring and Risk for Cardiovascular Disease and All-Cause Mortality: Ecological Validity or Measurement Reliability?,2025,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+39316441,Proteogenomic analysis integrated with electronic health records data reveals disease-associated variants in Black Americans.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+39239865,"Predictors of incident stroke among individuals without coronary artery calcification: A pooled cohort analysis from the Multi-Ethnic Study of Atherosclerosis, Jackson Heart Study, and Framingham Heart Study.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39225160,Metabolic dysfunction and incidence of heart failure subtypes among Black individuals: The Jackson Heart Study.,2025,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+39119707,Trajectory of C-Reactive Protein and Incident Heart Failure in Black Adults: The Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39117574,A data harmonization project of 3 large prospective cardiovascular health-focused cohorts.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39079086,"DNA methylation near MAD1L1, KDM2B, and SOCS3 mediates the effect of socioeconomic status on elevated body mass index in African American adults.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+39056362,Gene expression and splicing QTL analysis of blood cells in African American participants from the Jackson Heart Study.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+38966903,A genome-wide association study of alloimmunization in the TOPMed OMG-SCD cohort identifies a locus on chromosome 12.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+38909092,Subclinical association of aortic stiffness with cardiac structure and function in African-Americans: The Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38885313,The Association of Adiposity and RAAS With Incident Diabetes in African Americans: The Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38865108,Plasma Proteomics of Exercise Blood Pressure and Incident Hypertension.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38845739,"Contributors to Early Mortality in African Americans, the Jackson Heart Study.",2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38795746,Association Between Dietary Intake of Phosphorus and Measures of Obesity in the Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38720460,A parametric bootstrap approach for computing confidence intervals for genetic correlations with application to genetically determined protein-protein networks.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+38673353,User Manual for Coping Strategies Inventory Short Form (CSI-SF)-The Jackson Heart Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38662804,"Proteomics, Human Environmental Exposure, and Cardiometabolic Risk.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38631771,Lipoprotein(a) and Long-Term Cardiovascular Risk in a Multi-Ethnic Pooled Prospective Cohort.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38617337,Adjusting for principal components can induce spurious associations in genome-wide association studies in admixed populations.,2024,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+38586429,Microvascular vasoregulatory dysfunction in African Americans - An enhanced opportunity for early prevention and treatment of atherosclerotic cardiovascular disease.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38562763,"Heterogeneity in elevated glucose and A1C as predictors of the prediabetes to diabetes transition: Framingham Heart Study, Multi-Ethnic Study on Atherosclerosis, Jackson Heart Study, and Atherosclerosis Risk In Communities.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38361460,Adherence to the healthy eating index-2010 and alternative healthy eating index-2010 in relation to metabolic syndrome among African Americans in the Jackson heart study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38329795,Epidemiology and Prognostic Implications of Coronary Artery Calcium in Asymptomatic Individuals With Prediabetes: A Multicohort Study.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38294787,Familial Hypercholesterolemia Variant and Cardiovascular Risk in Individuals With Elevated Cholesterol.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38270950,Clonal Hematopoiesis and Incident Heart Failure With Preserved Ejection Fraction.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38236147,Carotid Intima-Media Thickness and Improved Stroke Risk Assessment in Hypertensive Black Adults.,2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+38222852,Clinical and Laboratory Correlates of QTc Duration in Adult and Pediatric Sickle Cell Disease.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+38038179,Role of Sex in the Association of Socioeconomic Status With Cardiovascular Health in Black Americans: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37961678,A parametric bootstrap approach for computing confidence intervals for genetic correlations with application to genetically-determined protein-protein networks.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37948388,Predicting incident cardiovascular disease among African-American adults: A deep learning approach to evaluate social determinants of health in the Jackson heart study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37947082,Social Networks and Cardiovascular Disease Events in the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37698806,Promoting Cardiovascular Health in the Community: Training the Next Generation of Scientists in the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37693576,Associations of cardiometabolic polygenic risk scores with cardiovascular disease in African Americans.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37609271,"The Relationship of Duffy Gene Polymorphism, High Sensitivity C-Reactive Protein, and Long-term Outcomes.",2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37591789,"The Relationship of Neighborhood Disadvantage, Biological Aging, and Psychosocial Risk and Resilience Factors in Heart Failure Incidence Among Black Persons: A Moderated Mediation Analysis.",2024,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37588880,Neighborhood factors and survival to old age: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37563237,Expression quantitative trait methylation analysis elucidates gene regulatory effects of DNA methylation: the Framingham Heart Study.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37533140,Differences in the Circulating Proteome in Individuals with versus without Sickle Cell Trait.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37479517,Cross-sectional and longitudinal analyses of variations of anthropometric measures of obesity with age in the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37475850,The association of aldosterone and endothelin-1 with incident diabetes among African Americans: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37475849,"Adiposity, aldosterone and plasma renin activity among African Americans: The Jackson Heart Study.",2023,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+37442807,"Examining the Relationship Between Multilevel Resilience Resources and Cardiovascular Disease Incidence, Overall and by Psychosocial Risks, Among Participants in the Jackson Heart Study, the Multi-Ethnic Study of Atherosclerosis, and the Mediators of Atherosclerosis in South Asians Living in America (MASALA) Study.",2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37351609,Systemic Markers of Lung Function and Forced Expiratory Volume in 1 Second Decline across Diverse Cohorts.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37293738,Lower extremity symptoms and ankle-brachial index screening as predictors of cardiovascular outcomes in Black adults.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37286633,Large scale proteomic studies create novel privacy considerations.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37218405,The association of perceived discrimination with dementia risk in Black older adults.,2023,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+37216410,Canonical correlation analysis for multi-omics: Application to cross-cohort analysis.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37193908,Social integration and risk of mortality among African-Americans: the Jackson heart study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37193404,Relationships between neighborhood social stressors and sleep among Jackson Heart Study participants: mediation through physical activity and psychosocial stressors.,2022,4,"Domain 4: sleep, duration, quality, short",TRUE
+37192710,Sex Differences in Cardiovascular Risk Associated With Prediabetes and Undiagnosed Diabetes.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37168250,Cumulative socioeconomic status and incident type 2 diabetes among African American adults from the Jackson heart study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37163084,Gene Expression and Splicing QTL Analysis of Blood Cells in African American Participants from the Jackson Heart Study.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37121548,CYP4F2 is a human-specific determinant of circulating N-acyl amino acid levels.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+37114212,The role of aldosterone and ideal cardiovascular health in incident cardiovascular disease: The Jackson heart study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+37090882,Jackson Heart Study: Aggregate cardiovascular disease risk and auditory profiles.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36966225,Association of blood pressure variability with Endothelin-1 by menopause status among Black women: findings from the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36945564,Social Networks and Cardiovascular Disease Events in the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36945562,CYP4F2 is a human-specific determinant of circulating N-acyl amino acid levels.,2023,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+36880997,Impact of Diabetes and Hypertension on Left Ventricular Structure and Function: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36811472,Mixed meal tolerance testing highlights in diabetes altered branched-chain ketoacid metabolism and pathways associated with all-cause mortality.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36798725,The role of aldosterone and ideal cardiovascular health in incident diabetes: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36796615,Exposure to Volatile Organic Compounds Is Associated with Hypertension in Black Adults: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36774203,Hostility and prevalent diabetes among black adults: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36728682,Central Auditory Processing and the Relationship to Perceived Hearing Difficulty: The Jackson Heart Study.,2023,6,"Domain 6: central, perceived, relationship, heart",FALSE
+36728620,"Letter to the Editor on Central Auditory Processing and the Relationship to Perceived Hearing Difficulty: The Jackson Heart Study (Shepherd et al., 2022).",2023,6,"Domain 6: central, perceived, relationship, heart",FALSE
+36689225,Measures of Food Inadequacy and Cardiovascular Disease Risk in Black Individuals in the US From the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36630488,Protein Markers of Diabetes Discovered in an African American Cohort.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36597615,Neighborhood characteristics and arterial stiffness among Black adults - Results from the Jackson Heart Study and Morehouse-Emory Cardiovascular Center for Health Equity.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36531868,Population-Based Limits of Urine Creatinine Excretion.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36506244,Tubular Secretion and Estimated GFR Decline in the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36454286,The Association Between Cardiovascular Health with Internet and Mobile Technology Use Among Jackson Heart Study Participants.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36418363,Protein biomarkers of cardiac remodeling and inflammation associated with HFpEF and incident events.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36409531,Digital Connectedness in the Jackson Heart Study: Cross-sectional Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36387655,A bibliometric review on the top 20 cited articles in the Jackson heart study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36387018,"Social support, psychosocial risks, and cardiovascular health: Using harmonized data from the Jackson Heart Study, Mediators of Atherosclerosis in South Asians Living in America Study, and Multi-Ethnic Study of Atherosclerosis.",2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36373825,Plasma Metabolites Link Dietary Patterns to Stroke Risk.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36282500,Associations of Cardiometabolic Multimorbidity With All-Cause and Coronary Heart Disease Mortality Among Black Adults in the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36280888,Significant variation in the performance of DNA methylation predictors across data preprocessing and normalization strategies.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36278567,Evaluating Levels of Community Participation in a University-Community Partnership: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36245164,Goal-Striving Stress and Cardiovascular Risk Factors in the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36229458,The association of serum vitamin D with incident diabetes in an African American population.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36221065,"Examining relationships between perceived neighborhood social cohesion and ideal cardiovascular health and whether psychosocial stressors modify observed relationships among JHS, MESA, and MASALA participants.",2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36210008,Compositional analysis of movement behaviors' association on high-sensitivity c-reactive protein: the Jackson heart study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36197118,Association Between Social Determinants of Health and Glycemic Control Among African American People with Type 2 diabetes: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36136291,The Modifying Role of Resilience on Allostatic Load and Cardiovascular Disease Risk in the Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36107422,Subclinical Risk Factors for Heart Failure With Preserved and Reduced Ejection Fraction Among Black Adults.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36052690,Differences in Metabolomic Profiles Between Black and White Women and Risk of Coronary Heart Disease: an Observational Study of Women From Four US Cohorts.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36000432,Religiosity/Spirituality and Cardiovascular Health: The American Heart Association Life's Simple 7 in African Americans of the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35999027,Identification of a SGCD × Discrimination Interaction Effect on Systolic Blood Pressure in African American Adults in the Jackson Heart Study.,2022,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+35998269,Nontargeted and Targeted Metabolomic Profiling Reveals Novel Metabolite Biomarkers of Incident Diabetes in African Americans.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35995766,Whole Genome Association Study of the Plasma Metabolome Identifies Metabolites Linked to Cardiometabolic Disease in Black Individuals.,2022,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+35984888,Proteomic profiling platforms head to head: Leveraging genetics and clinical traits to compare aptamer- and antibody-based methods.,2022,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+40248663,The Association of Sedentary Behavior and Physical Activity with Different Measurements of Metabolic Syndrome: The Jackson Heart Study.,2025,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+35930588,"Prevalence, risk factors, and cardiovascular disease outcomes associated with persistent blood pressure control: The Jackson Heart Study.",2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35912661,Reconsidering Community-Engaged Research Through a Syndemic Theoretical Framework: Lessons from COVID-19.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35909644,Glucometabolic State Transitions: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35905866,Vitamin D Levels in Black Americans and the Association With Left Ventricular Remodeling and Incident Heart Failure With Preserved Ejectin Fraction: The Jackson Heart Study.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35901013,"Relationship Between Risks for Obstructive Sleep Apnea, Resistant Hypertension, and Aldosterone Among African American Adults in the Jackson Heart Study.",2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35733368,"Red meat consumption, incident CVD and the influence of dietary quality in the Jackson Heart Study.",2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35725140,Obesity-Related Health Lifestyles of Late-Middle Age Black Americans: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35699180,"Corin Missense Variants, Blood Pressure, and Hypertension in 11 322 Black Individuals: Insights From REGARDS and the Jackson Heart Study.",2022,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+35690315,Longitudinal Changes in Cardiac Troponin and Risk of Heart Failure Among Black Adults.,2023,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35650579,Patients phenotypes and cardiovascular risk in type 2 diabetes: the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35639386,High-density lipoprotein-cholesterol and incident type 2 diabetes mellitus among African Americans: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35621206,Genetic Architecture of Plasma Alpha-Aminoadipic Acid Reveals a Relationship With High-Density Lipoprotein Cholesterol.,2022,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+35600110,Relation of glycemic status with unrecognized MI and the subsequent risk of mortality: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35528825,Determinants of Metabolic Syndrome and Type 2 Diabetes in the Absence of Obesity: The Jackson Heart Study.,2022,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+35511217,Bioavailability of phosphorus and kidney function in the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35448969,"Glycemic status, non-traditional risk and left ventricular structure and function in the Jackson Heart Study.",2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35381348,Associations between perceived discrimination and immune cell composition in the Jackson Heart Study.,2022,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+35303061,Impact of Asleep and 24-Hour Blood Pressure Data on the Prevalence of Masked Hypertension by Race/Ethnicity.,2022,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+35301208,Relationship between social support and incident hypertension in the Jackson Heart Study: a cohort study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35264422,Nucleosides Associated With Incident Ischemic Stroke in the REGARDS and JHS Cohorts.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35191315,Depressive Symptoms and Incident Heart Failure in the Jackson Heart Study: Differential Risk Among Black Men and Women.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35147604,Central Auditory Processing and the Relationship to Perceived Hearing Difficulty: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35115086,"Transthyretin V142I Genetic Variant and Cardiac Remodeling, Injury, and Heart Failure Risk in Black Adults.",2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35114556,Menopausal hormone therapy and risk of cardiovascular events in women with prediabetes or type 2 diabetes: A pooled analysis of 2917 postmenopausal women.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34986393,Association of plasma endothelin-1 with blood pressure progression among Blacks: The Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34986145,Plant-based diets and incident cardiovascular disease and all-cause mortality in African Americans: A cohort study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34977194,"Examining Optimism, Psychosocial Risks, and Cardiovascular Health Using Life's Simple 7 Metrics in the Multi-Ethnic Study of Atherosclerosis and the Jackson Heart Study.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34939005,"APOL1, Sickle Cell Trait, and CKD in the Jackson Heart Study.",2021,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+39822315,Association Between Occupational Sitting With High Sensitivity C-Reactive Protein: The Jackson Heart Study.,2025,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34863812,Optimism and risk of mortality among African-Americans: The Jackson heart study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34851361,Metabolomic Analysis of Coronary Heart Disease in an African American Cohort From the Jackson Heart Study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34814699,Whole Genome Sequence Analysis of the Plasma Proteome in Black Adults Provides Novel Insights Into Cardiovascular Disease.,2022,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+34808103,Dysglycemia and incident heart failure among blacks: The jackson heart study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34766590,APOL1 renal risk variants are associated with obesity and body composition in African ancestry adults: An observational genotype-phenotype association study.,2021,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+34763649,Psychosocial determinants of cardiovascular events among black Americans with chronic kidney disease or associated risk factors in the Jackson heart study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34706549,Soluble Urokinase Plasminogen Activator Receptor: Genetic Variation and Cardiovascular Disease Risk in Black Adults.,2021,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+34693252,"Kidney Function and Aortic Stiffness, Pulsatility, and Endothelial Function in African Americans: The Jackson Heart Study.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34643027,Goal-striving stress and repeated measures of adiposity in the Jackson heart study.,2022,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34495422,What the Jackson Heart Study Has Taught Us About Diabetes and Cardiovascular Disease in the African American Community: a 20-year Appreciation.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34493073,Association of Adiposity With Incident Diabetes Among Black Adults in the Jackson Heart Study.,2021,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+34475032,"Early Menopause and Cardiovascular Disease Risk in Women With or Without Type 2 Diabetes: A Pooled Analysis of 9,374 Postmenopausal Women.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34347846,Genetic underpinnings of regional adiposity distribution in African Americans: Assessments from the Jackson Heart Study.,2021,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+34334729,A Longitudinal Evaluation of Goal-Striving Stress and Sleep Duration Among African Americans in the Jackson Heart Study.,2021,4,"Domain 4: sleep, duration, quality, short",TRUE
+34295134,Weight Misperception among African American Adolescents: The Jackson Heart KIDS Pilot Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34295133,Social and Behavioral Factors Associated with BMI and Waist Circumference among Adolescents: The Jackson Heart KIDS Pilot Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34283244,Perceived home sleep environment: associations of household-level factors and in-bed behaviors with actigraphy-based sleep duration and continuity in the Jackson Heart Sleep Study.,2021,4,"Domain 4: sleep, duration, quality, short",TRUE
+34272853,Stress and Depression Are Associated With Life's Simple 7 Among African Americans With Hypertension: Findings From the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34270687,Lifestyle Behaviors Among Adults Recommended for Ambulatory Blood Pressure Monitoring According to the 2017 ACC/AHA Blood Pressure Guideline.,2021,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+34238024,Regional Adiposity and Risk of Heart Failure and Mortality: The Jackson Heart Study.,2021,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+34197610,Associations between everyday discrimination and sleep quality and duration among African-Americans over time in the Jackson Heart Study.,2021,4,"Domain 4: sleep, duration, quality, short",TRUE
+34173799,"Insulin resistance, metabolic syndrome, and blood pressure progression among Blacks: the Jackson Heart Study.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34166486,Plasma Adiponectin and Blood Pressure Progression in African Americans: The Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34152588,"Discrimination, High-Effort Coping, and Cardiovascular Risk Profiles in the Jackson Heart Study: a Latent Profile Analysis.",2022,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+34119468,"Physical Activity, Subclinical Myocardial Injury, and Risk of Heart Failure Subtypes in Black Adults.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34117112,The role of perceived discrimination in predicting changes in health behaviours among African Americans in the Jackson Heart Study.,2021,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+34071160,Discrimination and Leukocyte Telomere Length by Depressive Symptomatology: The Jackson Heart Study.,2021,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+34067473,Application of a Lifestyle-Based Score to Predict Cardiovascular Risk in African Americans: The Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34066464,The Comprehensive Machine Learning Analytics for Heart Failure.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34054053,Impact of dietary intake of sodium and potassium on short-term blood pressure variability.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34048510,Electrocardiogram machine learning for detection of cardiovascular disease in African Americans: the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34030194,Association Between Cardiometabolic Factors and Dizziness in African Americans: The Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+34020621,Association between MTNR1B polymorphisms and obesity in African American: findings from the Jackson Heart Study.,2021,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+34019435,Multiomic Profiling in Black and White Populations Reveals Novel Candidate Pathways in Left Ventricular Hypertrophy and Incident Heart Failure Specific to Black Adults.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33958426,"Erratum. Relations Between Subclinical Disease Markers and Type 2 Diabetes, Metabolic Syndrome, and Incident Cardiovascular Disease: The Jackson Heart Study. Diabetes Care 2015;38:1082-1088.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+33912784,"Associations between air pollution indicators and prevalent and incident diabetes in an African American cohort, the Jackson Heart Study.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33910371,Soluble CD14 Levels in the Jackson Heart Study: Associations With Cardiovascular Disease Risk and Genetic Variants.,2021,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+33845593,Development and Validation of Machine Learning-Based Race-Specific Models to Predict 10-Year Risk of Heart Failure: A Multicohort Analysis.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33787504,Telehealth Diabetes Prevention Intervention for the Next Generation of African American Youth: Protocol for a Pilot Trial.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33754833,"Cigarette Smoking, Incident Coronary Heart Disease, and Coronary Artery Calcification in Black Adults: The Jackson Heart Study.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33714604,"Physical Activity, Inflammation, Coronary Artery Calcification, and Incident Coronary Heart Disease in African Americans: Insights From the Jackson Heart Study.",2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33681448,The Mediating role of perceived discrimination and stress in the associations between neighborhood social environment and TV Viewing among Jackson Heart Study participants.,2021,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+33641359,Plasma Leptin and Blood Pressure Progression in Blacks: The Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33629508,Metabolomic Markers of Southern Dietary Patterns in the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33605160,Association of Serum Aldosterone and Plasma Renin Activity With Ambulatory Blood Pressure in African Americans: The Jackson Heart Study.,2021,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+33518522,Sex differences in vectorcardiogram of African-Americans with and without cardiovascular disease: a cross-sectional study in the Jackson Heart Study cohort.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33491313,Adiposity Measures and Morning Serum Cortisol in African Americans: Jackson Heart Study.,2021,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+33478866,Long-Term Air Pollution and Blood Pressure in an African American Cohort: the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33467408,Twenty Years of Leading the Way among Cohort Studies in Community-Driven Outreach and Engagement: Jackson State University/Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33464957,Metabolomic Profiles and Heart Failure Risk in Black Adults: Insights From the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33434830,Optimism and telomere length among African American adults in the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33407308,Obesity and overall mortality: findings from the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33399855,Association of Sickle Cell Trait With Incidence of Coronary Heart Disease Among African American Individuals.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33335024,Association between goal-striving stress and rapid kidney function decline among African Americans: the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33292663,"High fructose corn syrup, excess-free-fructose, and risk of coronary heart disease among African Americans- the Jackson Heart Study.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33272219,Joint modelling of longitudinal lipids and time to coronary heart disease in the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33240486,"Association of plasma adiponectin with pulmonary hypertension, mortality and heart failure in African Americans: Jackson Heart Study.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33236370,Plasma adipokines and glycaemic progression among African Americans: Findings from the Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33144360,Occupational standing and change in the Ankle-Brachial Index: the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33131312,Cardiovascular Health and Transition From Controlled Blood Pressure to Apparent Treatment Resistant Hypertension: The Jackson Heart Study and the REGARDS Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33129011,Suboptimal sleep and incident cardiovascular disease among African Americans in the Jackson Heart Study (JHS).,2020,4,"Domain 4: sleep, duration, quality, short",TRUE
+33075819,Recovery From Mobility Limitation in Middle-Aged African Americans: The Jackson Heart Study.,2021,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+33069050,Optimism is associated with chronic kidney disease and rapid kidney function decline among African Americans in the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32958645,Circulating testican-2 is a podocyte-derived marker of kidney health.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32954899,"Correction to: Clinical Associations of Vascular Stiffness, Microvascular Dysfunction, and Prevalent Cardiovascular Disease in a Black Cohort: The Jackson Heart Study.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+32933769,Socioeconomic status in relation to metabolic syndrome from the Jackson heart study.,2020,8,"Domain 8: mets, severity, syndrome, metabolic",FALSE
+32924633,Underutilization of Treatment for Black Adults With Apparent Treatment-Resistant Hypertension: JHS and the REGARDS Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32913073,Transcriptomic signatures across human tissues identify functional rare genetic variation.,2020,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+32910930,Relation of Low Normal Left Ventricular Ejection Fraction to Heart Failure Hospitalization in Blacks (From the Jackson Heart Study).,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32873113,"Clinical Associations of Vascular Stiffness, Microvascular Dysfunction, and Prevalent Cardiovascular Disease in a Black Cohort: The Jackson Heart Study.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32686818,Experiences of Discrimination Are Associated With Worse Metabolic Syndrome Severity Among African Americans in the Jackson Heart Study.,2021,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+32673258,Preventing Cardiovascular Disease Among Urban African Americans With a Mobile Health App (the MOYO App): Protocol for a Usability Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32657334,Using Predicted Atherosclerotic Cardiovascular Disease Risk for Discrimination of Awake or Nocturnal Hypertension.,2020,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+32650787,Physical activity-mediated associations between perceived neighborhood social environment and depressive symptoms among Jackson Heart Study participants.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32605388,Discrimination and Hypertension Risk Among African Americans in the Jackson Heart Study.,2020,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+32583270,"Response to letter to the editor for ""Self-reported snoring and incident cardiovascular disease events: results from the Jackson Heart Study"".",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+32552367,Risk of Ischemic Stroke Increases Over the Spectrum of Metabolic Syndrome Severity.,2020,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+32537565,Associations of adiponectin and leptin with brain natriuretic peptide in African Americans: the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32533945,Population-Specific Recombination Maps from Segments of Identity by Descent.,2020,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+32517526,Cigarette Smoking and Incident Stroke in Blacks of the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32492711,Association of Obstructive Sleep Apnea With Nighttime Blood Pressure in African Americans: The Jackson Heart Study.,2020,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+32436940,"The Association of ARMC5 with the Renin-Angiotensin-Aldosterone System, Blood Pressure, and Glycemia in African Americans.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32434217,"Response to ""Socioeconomic Status and Hypertension in African Americans From the Jackson Heart Study"".",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+32401264,Cost-effectiveness of Contemporary Statin Use Guidelines With or Without Coronary Artery Calcium Assessment in African American Individuals.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32361636,Objective and subjective socioeconomic status associated with metabolic syndrome severity among African American adults in Jackson Heart Study.,2020,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+32345300,Cumulative psychosocial factors are associated with cardiovascular disease risk factors and management among African Americans in the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32342760,Sleep Characteristics and Measures of Glucose Metabolism in Blacks: The Jackson Heart Study.,2020,4,"Domain 4: sleep, duration, quality, short",TRUE
+32342735,Goal-Striving Stress and Incident Cardiovascular Disease in Blacks: The Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32250182,Stroke risk in African Americans with subclinical auditory dysfuntion evidenced by Distortion Product Otoacoustic Emissions: the Jackson heart study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32248895,A sleep apnea prediction model developed for African Americans: the Jackson Heart Sleep Study.,2020,4,"Domain 4: sleep, duration, quality, short",TRUE
+32240245,Interferon gamma-induced protein 10 (IP-10) and cardiovascular disease in African Americans.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32217635,Ambulatory Blood Pressure Phenotypes in Adults Taking Antihypertensive Medication with and without CKD.,2020,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+32193845,Letter to the editor: snoring and incident cardiovascular disease in the Jackson heart study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+32179911,Socioeconomic Status and Hypertension in African American From the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+32131811,Associations of leptin and adiponectin with incident type 2 diabetes and interactions among African Americans: the Jackson heart study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32075808,"Life Course Socioeconomic Status, Allostatic Load, and Kidney Health in Black Americans.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32049421,Association of West African ancestry and blood pressure control among African Americans taking antihypertensive medication in the Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32037312,Operational and Management Structure of the Jackson Heart Study Community Outreach Center.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+32008430,Morning Blood Pressure Surge and Cardiovascular Disease Events and All-Cause Mortality in Blacks: The Jackson Heart Study.,2020,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+31985870,Coagulation factor VIII: Relationship to cardiovascular disease risk and whole genome sequence and epigenome-wide analysis in African Americans.,2020,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+31969782,The Role of Public Health Partnerships in the Success of the Jackson Heart Study Undergraduate Training and Education Center.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31969780,The Jackson Heart Study: Preparing African American High School Students for Health Careers and Research.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31959651,Comment on Hubbard et al. Prediabetes and Risk for Cardiovascular Disease by Hypertension Status in Black Adults: The Jackson Heart Study. Diabetes Care 2019;42:2322-2329.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+31914878,Development of Predictive Equations for Nocturnal Hypertension and Nondipping Systolic Blood Pressure.,2020,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+31902323,"Gender Differences in Risk Factors Associated With Pulmonary Artery Systolic Pressure, Heart Failure, and Mortality in Blacks: Jackson Heart Study.",2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31876299,Relationship of Overall Cardiovascular Health and Hearing Loss in The Jackson Heart Study Population.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31871895,Association between obesity phenotypes of insulin resistance and risk of type 2 diabetes in African Americans: The Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31831294,Perceived Discrimination and Trajectories of C-Reactive Protein: The Jackson Heart Study.,2020,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+31756304,Preferences for Return of Genetic Results Among Participants in the Jackson Heart Study and Framingham Heart Study.,2019,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+31734287,The association of goal-striving stress with sleep duration and sleep quality among African Americans in the Jackson Heart Study.,2020,4,"Domain 4: sleep, duration, quality, short",TRUE
+31642869,Population-Attributable Risk for Cardiovascular Disease Associated With Hypertension in Black Adults.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31615321,Association Between High Perceived Stress Over Time and Incident Hypertension in Black Adults: Findings From the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31591089,Prediabetes and Risk for Cardiovascular Disease by Hypertension Status in Black Adults: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31566693,Association Between Sleep and Obesity in African Americans in the Jackson Heart Study.,2019,4,"Domain 4: sleep, duration, quality, short",TRUE
+31511234,hs-CRP Is Associated With Incident Diabetic Nephropathy: Findings From the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31473218,Optimism and cardiovascular health among African Americans in the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+36704751,OBLIQUE RANDOM SURVIVAL FORESTS.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31461406,Epigenome-wide association study of leukocyte telomere length.,2019,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+31431453,"Sickle Cell Trait, European Ancestry, and Longitudinal Tracking of HbA1c Among African Americans: The Jackson Heart Study.",2019,2,"Domain 2: genetic, ancestry, variants, genome",FALSE
+31422385,DNA methylation-based estimator of telomere length.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31420642,Life Course Socioeconomic Status and Hypertension in African American Adults: The Jackson Heart Study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31411629,Association of Daytime and Nighttime Blood Pressure With Cardiovascular Disease Events Among African American Individuals.,2019,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+31407619,Inappropriate Left Ventricular Mass and Cardiovascular Disease Events and Mortality in Blacks: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31386152,"Evening intake of alcohol, caffeine, and nicotine: night-to-night associations with sleep duration and continuity among African Americans in the Jackson Heart Sleep Study.",2019,4,"Domain 4: sleep, duration, quality, short",TRUE
+31328900,Impact of Abdominal Obesity on Proximal and Distal Aorta Wall Thickness in African Americans: The Jackson Heart Study.,2019,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+31307430,Association of functional and structural social support with chronic kidney disease among African Americans: the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31307010,Allostatic load in the association of depressive symptoms with incident coronary heart disease: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31266601,Physical activity and postural balance in rural community dwelling older adults.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31238767,Types of Sedentary Behavior and Risk of Cardiovascular Events and Mortality in Blacks: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31216868,Genomics-First Evaluation of Heart Disease Associated With Titin-Truncating Variants.,2019,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+31196828,Distribution of Cardiovascular Health by Individual- and Neighborhood-Level Socioeconomic Status: Findings From the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+31187128,DASH Diet and Blood Pressure Among Black Americans With and Without CKD: The Jackson Heart Study.,2019,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+31068049,Attitudes Toward Genetics and Genetic Testing Among Participants in the Jackson and Framingham Heart Studies.,2019,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+31035479,The Association of Life's Simple 7 with Aldosterone among African Americans in the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30998553,Calibration of blood pressure measurements in the Jackson Heart Study.,2019,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+30954832,Neck circumference and cardiovascular outcomes: Insights from the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30899870,Evaluation of Allostatic Load as a Mediator of Sleep and Kidney Outcomes in Black Americans.,2019,4,"Domain 4: sleep, duration, quality, short",TRUE
+30889290,Audiologic profile of the jackson heart study cohort and comparison to other cohorts.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30879330,Glycemic Markers and Subclinical Cardiovascular Disease: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30862633,Influence of individual life course and neighbourhood socioeconomic position on dietary intake in African Americans: the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30756321,Self-reported snoring and incident cardiovascular disease events: results from the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30729226,Glycoproteomic Profiling Provides Candidate Myocardial Infarction Predictors of Later Progression to Heart Failure.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30715142,"Health Behaviors, Nocturnal Hypertension, and Non-dipping Blood Pressure: The Coronary Artery Risk Development in Young Adults and Jackson Heart Study.",2019,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+30713415,"Life Course Socioeconomic Position, Allostatic Load, and Incidence of Type 2 Diabetes among African American Adults: The Jackson Heart Study, 2000-04 to 2012.",2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30672360,Cigarette Smoking and Subclinical Peripheral Arterial Disease in Blacks of the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30668751,Modifiers of Plasma 25-Hydroxyvitamin D and Chronic Kidney Disease Outcomes in Black Americans: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30661571,Financial Stress and Risk of Coronary Heart Disease in the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30630437,Low use of routine medical care among African Americans with high CKD risk: the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30623794,The association of morning serum cortisol with glucose metabolism and diabetes: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30608191,Clinical Correlates of Aortic Stiffness and Wave Amplitude in Black Men and Women in the Community.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30595115,Cardiovascular Disease and Mortality in Adults Aged ≥60 Years According to Recommendations by the American College of Cardiology/American Heart Association and American College of Physicians/American Academy of Family Physicians.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30591520,Patterns of Beverages Consumed and Risk of Incident Kidney Disease.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30571505,"Relations of Microvascular Function, Cardiovascular Disease Risk Factors, and Aortic Stiffness in Blacks: The Jackson Heart Study.",2018,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+30571193,Association Between Regional Adipose Tissue Distribution and Risk of Heart Failure Among Blacks.,2018,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+30566191,Association of Cardiac Injury and Malignant Left Ventricular Hypertrophy With Risk of Heart Failure in African Americans: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30545559,Sex differences in the association of psychosocial resources with prevalent type 2 diabetes among African Americans: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30526309,The Relationship of Cardiometabolic Risk and Auditory Processing among African Americans: The Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30420726,Long-term exposure to ambient air pollution and renal function in African Americans: the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30407711,Association of psychosocial factors with leukocyte telomere length among African Americans in the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30371273,"Relations of Microvascular Function, Cardiovascular Disease Risk Factors, and Aortic Stiffness in Blacks: The Jackson Heart Study.",2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30343723,Cardiovascular Disease in African Americans: Innovative Community Engagement for Research Recruitment and Impact.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30333852,Lack of Association of a Functional Polymorphism in the Serotonin Receptor Gene With Body Mass Index and Depressive Symptoms in a Large Meta-Analysis of Population Based Studies.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30307499,Whole genome sequence association with E-selectin levels reveals loss-of-function variant in African Americans.,2019,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+30236068,Relation of multi-marker panel to incident chronic kidney disease and rapid kidney function decline in African Americans: the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30169531,KCNJ11 variants and their effect on the association between serum potassium and diabetes risk in the Atherosclerosis Risk in Communities (ARIC) Study and Jackson Heart Study (JHS) cohorts.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30132266,LXR/RXR signaling and neutrophil phenotype following myocardial infarction classify sex differences in remodeling.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+30107444,Dietary Phosphorus and Ambulatory Blood Pressure in African Americans: The Jackson Heart Study.,2019,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+30011374,"Restrictive Spirometry Pattern, Cardiac Structure and Function, and Incident Heart Failure in African Americans. The Jackson Heart Study.",2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29978543,The importance of using 24-hour and nighttime blood pressure for the identification of white coat hypertension: Data from the Jackson Heart Study.,2018,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+29968356,Atrial fibrillation in an African-American cohort: The Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29959760,Correction to: Goal-Striving Stress is Associated with Chronic Kidney Disease Among Participants in the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29955105,Genomic characterization of the RH locus detects complex and novel structural variation in multi-ethnic cohorts.,2019,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+29898849,Intentional and unintentional medication non-adherence in African Americans: Insights from the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29871857,Stress and Achievement of Cardiovascular Health Metrics: The American Heart Association Life's Simple 7 in Blacks of the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29866580,Relation of Early Repolarization (J Point Elevation) to Mortality in Blacks (from the Jackson Heart Study).,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29801037,Association of Neutrophil-to-Lymphocyte Ratio With Mortality and Cardiovascular Disease in the Jackson Heart Study and Modification by the Duffy Antigen Variant.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29796112,Assessing the added predictive ability of a metabolic syndrome severity score in predicting incident cardiovascular disease and type 2 diabetes: the Atherosclerosis Risk in Communities Study and Jackson Heart Study.,2018,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+29785706,Goal-Striving Stress Is Associated with Chronic Kidney Disease Among Participants in the Jackson Heart Study.,2019,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29751994,Dietary Potential Renal Acid Load and Risk of Albuminuria and Reduced Kidney Function in the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29710269,Association of Sickle Cell Trait With Ischemic Stroke Among African Americans: A Meta-analysis.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29661945,Cigarette Smoking and Incident Heart Failure: Insights From the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29642060,Metabolic Syndrome Severity and Risk of CKD and Worsened GFR: The Jackson Heart Study.,2018,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+29611712,Recruitment and enrollment of African Americans into health promoting programs: the effects of health promoting programs on cardiovascular disease risk study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29609480,Adherence and retention of African Americans in a randomized controlled trial with a yoga-based intervention: the effects of health promoting programs on cardiovascular disease risk study.,2020,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29601413,Masked hypertension and kidney function decline: the Jackson Heart Study.,2018,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+29590102,Common α-globin variants modify hematologic and other clinical phenotypes in sickle cell trait and disease.,2018,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+29546301,The Dietary Fructose:Vitamin C Intake Ratio Is Associated with Hyperuricemia in African-American Adults.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29538177,Genetic Determinants for Leisure-Time Physical Activity.,2018,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+29528363,West African Ancestry and Nocturnal Blood Pressure in African Americans: The Jackson Heart Study.,2018,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+29494952,Association of psychosocial stressors with metabolic syndrome severity among African Americans in the Jackson Heart Study.,2018,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+29452887,Protein Intake and Long-term Change in Glomerular Filtration Rate in the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29450959,Relation of uric acid level to rapid kidney function decline and development of kidney disease: The Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29436105,The association of nocturnal hypertension and nondipping blood pressure with treatment-resistant hypertension: The Jackson Heart Study.,2018,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+29427252,Comparison of Measures of Adiposity and Cardiovascular Disease Risk Factors Among African American Adults: the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29410278,Use of BMI as the marker of adiposity in a metabolic syndrome severity score: Derivation and validation in predicting long-term disease outcomes.,2018,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+29346062,"Television Viewing Time, Physical Activity, and Mortality Among African Americans.",2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29330255,High-Intensity Cigarette Smoking Is Associated With Incident Diabetes Mellitus In Black Adults: The Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29321517,"Genome-wide association study of homocysteine in African Americans from the Jackson Heart Study, the Multi-Ethnic Study of Atherosclerosis, and the Coronary Artery Risk in Young Adults study.",2018,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+29313298,Dimensions of and Responses to Perceived Discrimination and Subclinical Disease Among African-Americans in the Jackson Heart Study.,2018,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+29298761,Nondepressive Psychosocial Factors and CKD Outcomes in Black Americans.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+35321415,"Association Between Hemoglobin A1c and Glycemia in African Americans with and without Sickle Cell trait and Whites, Results from CARDIA and the Jackson Heart Study.",2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29269511,Validation of Risk Equations for Complications of Type 2 Diabetes (RECODe) Using Individual Participant Data From Diverse Longitudinal Cohorts in the U.S.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29264501,"Fatty Liver Disease, Women, and Aldosterone: Finding a Link in the Jackson Heart Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29240564,Evaluating different criteria for defining a complete ambulatory blood pressure monitoring recording: data from the Jackson Heart Study.,2018,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+29229625,"Letter by Triantafyllou and Straub Regarding Article, ""Thresholds for Ambulatory Blood Pressure Among African Americans in the Jackson Heart Study"".",2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",FALSE
+29221444,Genome-wide association study of coronary artery calcified atherosclerotic plaque in African Americans with type 2 diabetes.,2017,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+29218498,The Epidemiology of Coping in African American Adults in the Jackson Heart Study (JHS).,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29198934,Novel polymorphisms associated with hyperalphalipoproteinemia and apparent cardioprotection.,2018,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+29193110,Tinnitus and its risk factors in african americans: The Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29127938,Caregiver feeding practices and weight status among African American adolescents: The Jackson Heart KIDS Pilot Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+29069027,The combined effects of genetic risk and perceived discrimination on blood pressure among African Americans in the Jackson Heart Study.,2017,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+28992354,Obesity and synergistic risk factors for chronic kidney disease in African American adults: the Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28990660,Relationship of stroke risk and hearing loss in African Americans: The Jackson Heart Study.,2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28950166,Leukocyte telomere length and cardiovascular disease in African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28943662,Causal Mediation Analysis for the Cox Proportional Hazards Model with a Smooth Baseline Hazard Estimator.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28921875,Chronic kidney disease and incident apparent treatment-resistant hypertension among blacks: Data from the Jackson Heart Study.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28912365,D-Dimer in African Americans: Whole Genome Sequence Analysis and Relationship to Cardiovascular Disease Risk in the Jackson Heart Study.,2017,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+28895842,Adherence to antihypertensive medications and associations with blood pressure among African Americans with hypertension in the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28882818,Prospective Association of Physical Activity and Heart Failure Hospitalizations Among Black Adults With Normal Ejection Fraction: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28865891,Serum Ferritin Levels in Blacks Without Known Cardiovascular Disease (from the Jackson Heart Study).,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28844515,Relation of Carotid Intima-Media Thickness to Cardiovascular Events in Black Americans (From the Jackson Heart Study).,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28822744,"Aldosterone, Renin, Cardiovascular Events, and All-Cause Mortality Among African Americans: The Jackson Heart Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28818415,Modifiable Lifestyle Risk Factors and Incident Diabetes in African Americans.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28811731,Perceived Discrimination and Reported Trust and Satisfaction with Providers in African Americans: The Jackson Heart Study.,2017,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+28798221,"eGFR and Albuminuria in Relation to Risk of Incident Atrial Fibrillation: A Meta-Analysis of the Jackson Heart Study, the Multi-Ethnic Study of Atherosclerosis, and the Cardiovascular Health Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28778943,Cardiovascular Disease Burden and Socioeconomic Correlates: Findings From the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28768301,Representativeness of Medicare Participants in the Jackson Heart Study for African American Medicare Beneficiaries.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28730854,"Physical activity, body mass index and waist circumference change, and normal-range glycated hemoglobin on incident diabetes: Jackson Heart Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28698270,Association between Endothelin-1 Levels and Kidney Disease among Blacks.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28698190,Predicted Atherosclerotic Cardiovascular Disease Risk and Masked Hypertension Among Blacks in the Jackson Heart Study.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28652461,Cardiovascular Health and Incident Hypertension in Blacks: JHS (The Jackson Heart Study).,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28645730,The relation of digital vascular function to cardiovascular risk factors in African-Americans using digital tonometry: the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28645331,Circadian CLOCK gene polymorphisms in relation to sleep patterns and obesity in African Americans: findings from the Jackson heart study.,2017,4,"Domain 4: sleep, duration, quality, short",TRUE
+28637777,The American Heart Association Ideal Cardiovascular Health and Incident Type 2 Diabetes Mellitus Among Blacks: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28637775,Increased Proximal Aortic Diameter is Associated With Risk of Cardiovascular Events and All-Cause Mortality in Blacks The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28634217,Incident Cardiovascular Disease Among Adults With Blood Pressure <140/90 mm Hg.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28626009,Abdominal Aortic Calcification Among Individuals With and Without Diabetes: The Jackson Heart Study.,2017,7,"Domain 7: vat, adipose, adiposity, tissue",FALSE
+28611127,Pulmonary Hypertension Is Associated With a Higher Risk of Heart Failure Hospitalization and Mortality in Patients With Chronic Kidney Disease: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28593118,Ideal cardiovascular health and peripheral artery disease in African Americans: Results from the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28588315,Psychosocial correlates of apparent treatment-resistant hypertension in the Jackson Heart Study.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28475962,Neighborhood social environment as risk factors to health behavior among African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28473034,Perceived Discrimination and Cardiovascular Outcomes in Older African Americans: Insights From the Jackson Heart Study.,2017,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+28452401,Pericardial fat volume and incident atrial fibrillation in the Multi-Ethnic Study of Atherosclerosis and Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28433449,"Diabetes, depressive symptoms, and functional disability in African Americans: the Jackson Heart Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28428231,Thresholds for Ambulatory Blood Pressure Among African Americans in the Jackson Heart Study.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28414066,Factors associated with maintenance of body mass index in the Jackson Heart Study: A prospective cohort study secondary analysis.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28412277,The association of endothelial function and tone by digital arterial tonometry with MRI left ventricular mass in African Americans: the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28408709,Heritability of the Severity of the Metabolic Syndrome in Whites and Blacks in 3 Large Cohorts.,2017,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+28381465,Associations of Blood Pressure Dipping Patterns With Left Ventricular Mass and Left Ventricular Hypertrophy in Blacks: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28378033,Independent associations between a metabolic syndrome severity score and future diabetes by sex and race: the Atherosclerosis Risk In Communities Study and Jackson Heart Study.,2017,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+28338886,"RE: ""RESIDENTIAL PROXIMITY TO TRAFFIC-RELATED POLLUTION AND ATHEROSCLEROSIS IN 4 VASCULAR BEDS AMONG AFRICAN-AMERICAN ADULTS: RESULTS FROM THE JACKSON HEART STUDY"".",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+28320850,Hypertension in Blacks: Unanswered Questions and Future Directions for the JHS (Jackson Heart Study).,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+28315622,"Subclinical Atherosclerosis, Statin Eligibility, and Outcomes in African American Individuals: The Jackson Heart Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28285829,Clinic and ambulatory blood pressure in a population-based sample of African Americans: the Jackson Heart Study.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28270143,Residential distance to major roadways and cardiac structure in African Americans: cross-sectional results from the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28254124,Left Ventricular Function Across the Spectrum of Body Mass Index in African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28222733,Educational health disparities in hypertension and diabetes mellitus among African descent populations in the Caribbean and the USA: a comparative analysis from the Spanish town cohort (Jamaica) and the Jackson heart study (USA).,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28209767,"Ideal Cardiovascular Health, Cardiovascular Remodeling, and Heart Failure in Blacks: The Jackson Heart Study.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28179220,Modifiable Risk Factors Versus Age on Developing High Predicted Cardiovascular Disease Risk in Blacks.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28170479,Association of Sickle Cell Trait With Hemoglobin A1c in African Americans.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28165190,Metabolic syndrome and masked hypertension among African Americans: The Jackson Heart Study.,2017,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28154164,Sex Differences in the Association Between Insulin Resistance and Incident Coronary Heart Disease and Stroke Among Blacks Without Diabetes Mellitus: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28143672,Echocardiographic Measures and Estimated GFR Decline Among African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28137988,Physical Activity and Incident Hypertension in African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28124682,Psychosocial correlates of apparent treatment-resistant hypertension in the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28033588,Neighborhood social and physical environments and type 2 diabetes mellitus in African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+28002548,"Absolute Rates of Heart Failure, Coronary Heart Disease, and Stroke in Chronic Kidney Disease: An Analysis of 3 Community-Based Cohort Studies.",2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27989296,The Role of Perceived Discrimination in Obesity Among African Americans.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27989292,Psychosocial Factors and Behaviors in African Americans: The Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27974310,Serum potassium is a predictor of incident diabetes in African Americans with normal aldosterone: the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27973582,Relationship of Iron Deficiency and Serum Ferritin Levels with Pulmonary Hypertension: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27927632,Associations Between Blood Pressure and Outcomes Among Blacks in the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27856456,"Inflammatory Obesity Phenotypes, Gender Effects, and Subclinical Atherosclerosis in African Americans: The Jackson Heart Study.",2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27831900,Aggregate penetrance of genomic variants for actionable disorders in European and African Americans.,2016,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+27798347,Associations between Vitamin D and Cardiovascular Disease Risk Factors in African Americans Are Partly Explained by Circulating Adipokines and C-Reactive Protein: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27789446,Residential Proximity to Traffic-Related Pollution and Atherosclerosis in 4 Vascular Beds Among African-American Adults: Results From the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27777359,Cardiovascular Risk Factors and Masked Hypertension: The Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+27736207,"Neighborhood Disadvantage, Poor Social Conditions, and Cardiovascular Disease Incidence Among African American Adults in the Jackson Heart Study.",2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27727289,Prediction of Incident Diabetes in the Jackson Heart Study Using High-Dimensional Machine Learning.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27681113,Resting Heart Rate and Long-term Outcomes Among the African American Population: Insights From the Jackson Heart Study.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27575456,Multi-variant study of obesity risk genes in African Americans: The Jackson Heart Study.,2016,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+27552478,Sudden Vision Loss and Mortality: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27550622,"Dietary choline and betaine; associations with subclinical markers of cardiovascular disease risk and incidence of CVD, coronary heart disease and stroke: the Jackson Heart Study.",2018,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27539974,Ideal Cardiovascular Health and Incident Cardiovascular Events: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27473665,The impact of neighborhood on physical activity in the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27440981,Capacity-Building for Career Paths in Public Health and Biomedical Research for Undergraduate Minority Students: A Jackson Heart Study Success Model.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27440975,Life Course Socioeconomic Position and Subclinical Disease: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27438323,"Association of Elevated Plasma Endothelin-1 Levels With Pulmonary Hypertension, Mortality, and Heart Failure in African American Individuals: The Jackson Heart Study.",2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27437649,Development and Validation of Risk Prediction Models for Cardiovascular Events in Black Adults: The Jackson Heart Study Cohort.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27422940,Association of Exome Sequences With Cardiovascular Traits Among Blacks in the Jackson Heart Study.,2016,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+27358421,Vitamin D Receptor Gene Polymorphisms Are Associated with Abdominal Visceral Adipose Tissue Volume and Serum Adipokine Concentrations but Not with Body Mass Index or Waist Circumference in African Americans: The Jackson Heart Study.,2016,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+27354424,Masked Hypertension and Cardiovascular Disease Events in a Prospective Cohort of Blacks: The Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+27340284,"Diabetes, Kidney Disease, and Cardiovascular Outcomes in the Jackson Heart Study.",2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27339075,Hypertension and alterations in left ventricular structure and geometry in African Americans: the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27304962,Residential Proximity to Major Roadways Is Not Associated with Cardiac Function in African Americans: Results from the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27301295,Association of adiponectin and socioeconomic status in African American men and women: the Jackson heart study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27297846,Comparison of risk scores for the prediction of stroke in African Americans: Findings from the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27294413,"Human genome meeting 2016 : Houston, TX, USA. 28 February - 2 March 2016.",2016,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+27294737,Neighborhood Disadvantage and Cumulative Biological Risk Among a Socioeconomically Diverse Sample of African American Adults: An Examination in the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27257276,Markers of kidney disease and risk of subclinical and clinical heart failure in African Americans: the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27253767,The Social Patterning of Sleep in African Americans: Associations of Socioeconomic Position and Neighborhood Characteristics with Sleep in the Jackson Heart Study.,2016,4,"Domain 4: sleep, duration, quality, short",TRUE
+27229898,Association Between Absolute Neutrophil Count and Variation at TCIRG1: The NHLBI Exome Sequencing Project.,2016,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+27225196,Cigarette Smoking and Chronic Kidney Disease in African Americans in the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27208374,"Cardiovascular Risk Factor Targets and Cardiovascular Disease Event Risk in Diabetes: A Pooling Project of the Atherosclerosis Risk in Communities Study, Multi-Ethnic Study of Atherosclerosis, and Jackson Heart Study.",2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27185746,Masked Hypertension and Incident Clinic Hypertension Among Blacks in the Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+27169827,Ambulatory blood pressure monitoring phenotypes among individuals with and without diabetes taking antihypertensive medication: the Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+27166234,The Contribution of Psychosocial Stressors to Sleep among African Americans in the Jackson Heart Study.,2016,4,"Domain 4: sleep, duration, quality, short",TRUE
+27130348,Remnant Lipoprotein Cholesterol and Incident Coronary Heart Disease: The Jackson Heart and Framingham Offspring Cohort Studies.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27129858,The Jackson Heart KIDS Pilot Study: Theory-Informed Recruitment in an African American Population.,2017,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27111987,Correa Named Leader of Renowned Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+27066930,Risk Factors for Rapid Kidney Function Decline Among African Americans: The Jackson Heart Study (JHS).,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27056880,Relation of Magnesium Intake With Cardiac Function and Heart Failure Hospitalizations in Black Adults: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+27025968,Prevalence of Masked Hypertension and Its Association With Subclinical Cardiovascular Disease in African Americans: Results From the Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+26975941,The Obesity and Heart Failure Epidemics Among African Americans: Insights From the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26964661,Psychosocial Factors Are Associated With Blood Pressure Progression Among African Americans in the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26963374,Depressive symptoms are associated with worsened severity of the metabolic syndrome in African American women independent of lifestyle factors: A consideration of mechanistic links from the Jackson heart study.,2016,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+26949662,Diagnostic Value of Coronary Artery Calcium Score for Cardiovascular Disease in African Americans: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26928285,Sedentary behavior and subclinical atherosclerosis in African Americans: cross-sectional analysis of the Jackson heart study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26928239,Relationships among measures of physical activity and hearing in African Americans: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26908112,"Aldosterone, Renin, and Diabetes Mellitus in African Americans: The Jackson Heart Study.",2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26894941,Double-jeopardy: The joint impact of neighborhood disadvantage and low social cohesion on cumulative risk of disease among African American men and women in the Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26869251,Psychosocial Correlates of Nocturnal Blood Pressure Dipping in African Americans: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26819252,Forced Expiratory Volume in the First Second and Aldosterone as Mediators of Smoking Effect on Stroke in African Americans: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26754344,The association of reduced lung function with blood pressure variability in African Americans: data from the Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+28255292,Assessing natural direct and indirect effects for a continuous exposure and a dichotomous outcome.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26703701,Implementing a Graduate Certificate Program in Cardiovascular Epidemiology: The Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26703681,Building Collaborative Health Promotion Partnerships: The Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26703645,User-Friendly Data-Sharing Practices for Fostering Collaboration within a Research Network: Roles of a Vanguard Center for a Community-Based Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26699120,Association of ADIPOQ gene with type 2 diabetes and related phenotypes in African American men and women: the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26672894,Weight Status and Blood Pressure among Adolescent African American Males: The Jackson Heart KIDS Pilot Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26578621,Depressive Symptoms and Risk of Cardiovascular Events in Blacks: Findings From the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26525420,"Prevalence, associated factors and heritabilities of metabolic syndrome and its individual components in African Americans: the Jackson Heart Study.",2015,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+26481445,The utility of the apolipoprotein A1 remnant ratio in predicting incidence coronary heart disease in a primary prevention cohort: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26425869,"Evaluating the Effects of Coping Style on Allostatic Load, by Sex: The Jackson Heart Study, 2000-2004.",2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26417003,Perceived discrimination is associated with health behaviours among African-Americans in the Jackson Heart Study.,2016,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+26377243,Genome- and exome-wide association study of serum lipoprotein (a) in the Jackson Heart Study.,2015,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+26290432,Gender-specific associations between ADIPOQ gene polymorphisms and adiponectin levels and obesity in the Jackson Heart Study cohort.,2015,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+26279070,White-Coat Effect Among Older Adults: Data From the Jackson Heart Study.,2016,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+26123279,Prevalence of the amyloidogenic transthyretin (TTR) V122I allele in 14 333 African-Americans.,2015,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+26110451,Association Between Periodontal Disease and Kidney Function Decline in African Americans: The Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26099630,Association between 24-hour blood pressure variability and chronic kidney disease: a cross-sectional analysis of African Americans participating in the Jackson heart study.,2015,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+26068864,High-Sensitivity C-Reactive Protein Is Associated With Incident Type 2 Diabetes Among African Americans: The Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+26066645,Prospective analysis of the association of ambulatory blood pressure characteristics with incident chronic kidney disease.,2015,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+26019130,The impact of lifecourse socioeconomic position on cardiovascular disease events in African Americans: the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25971658,Egg consumption and risk of type 2 diabetes among African Americans: The Jackson Heart Study.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25885320,Association of adiponectin with type 2 diabetes and hypertension in African American men and women: the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25806862,Effects of serum creatinine calibration on estimated renal function in african americans: the Jackson heart study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25794792,P-selectin Plasma Levels and Genetic Variant Associated With Diabetic Retinopathy in African Americans.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25777311,Sudden vision loss and cardiovascular risk factors in African Americans: the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25765357,"Relations between subclinical disease markers and type 2 diabetes, metabolic syndrome, and incident cardiovascular disease: the Jackson Heart Study.",2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25745061,Genetic ancestry is associated with measures of subclinical atherosclerosis in African Americans: the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25712326,Prevalence and changes over time of ideal cardiovascular health metrics among African-Americans: the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25561047,Genome-wide association analysis of plasma B-type natriuretic peptide in blacks: the Jackson Heart Study.,2015,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+25550439,Ventricular conduction and long-term heart failure outcomes and mortality in African Americans: insights from the Jackson Heart Study.,2015,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25499058,"Prevalence, Determinants, and Clinical Significance of Masked Hypertension in a Population-Based Sample of African Americans: The Jackson Heart Study.",2015,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+25417429,"Stress, longevity and cardiovascular outcomes among African American families in the Jackson Heart Study.",2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25393378,Association of sickle cell trait with chronic kidney disease and albuminuria in African Americans.,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25224454,"Genome-wide admixture and association study of serum iron, ferritin, transferrin saturation and total iron binding capacity in African Americans.",2015,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+25166297,Neighborhood safety and adipose tissue distribution in African Americans: the Jackson Heart Study.,2014,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+25065297,A common SCN5A variant is associated with PR interval and atrial fibrillation among African Americans.,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+25065069,Research participants' opinions on genetic research and reasons for participation: a Jackson Heart Study focus group analysis.,2014,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+25062744,Association of high-density lipoprotein subclasses and incident coronary heart disease: The Jackson Heart and Framingham Offspring Cohort Studies.,2016,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24991817,The association between individual and combined components of metabolic syndrome and chronic kidney disease among African Americans: the Jackson Heart Study.,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24902739,Elevated pulmonary artery systolic pressure predicts heart failure admissions in African Americans: Jackson Heart Study.,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24751480,C-reactive protein and subclinical cardiovascular disease among African-Americans: (the Jackson Heart Study).,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24575123,Associations of adiponectin with individual European ancestry in African Americans: the Jackson Heart Study.,2014,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+24477212,Joint effects of smoking and sedentary lifestyle on lung function in African Americans: the Jackson Heart Study cohort.,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24379297,Increased burden of cardiovascular disease in carriers of APOL1 genetic variants.,2014,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+24358351,Prevalence and clinical characteristics associated with pulmonary hypertension in African-Americans.,2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24350185,Associations of adiponectin and leptin with incident coronary heart disease and ischemic stroke in african americans: the jackson heart study.,2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24332150,Gene-environment interaction between SCN5A-1103Y and hypokalemia influences QT interval prolongation in African Americans: the Jackson Heart Study.,2014,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+24096141,Steps/day and metabolic syndrome in African American adults: the Jackson Heart Study.,2013,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+23906131,"Socioeconomic status, John Henryism and blood pressure among African-Americans in the Jackson Heart Study.",2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23757435,"Aldosterone, C-reactive protein, and plasma B-type natriuretic peptide are associated with the development of metabolic syndrome and longitudinal changes in metabolic syndrome components: findings from the Jackson Heart Study.",2013,8,"Domain 8: mets, severity, syndrome, metabolic",TRUE
+23730984,Treatment of hypertension among African Americans: the Jackson Heart Study.,2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23730982,Improving approaches to hypertension treatment in African Americans: lessons learned from the Jackson Heart Study.,2013,3,"Domain 3: masked, sbp, hypertension, nocturnal",FALSE
+23691005,"Neighborhood disadvantage, neighborhood safety and cardiometabolic risk factors in African Americans: biosocial associations in the Jackson Heart study.",2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23676475,Correlates of isolated nocturnal hypertension and target organ damage in a population-based cohort of African Americans: the Jackson Heart Study.,2013,3,"Domain 3: masked, sbp, hypertension, nocturnal",TRUE
+23592674,"Dietary patterns, abdominal visceral adipose tissue, and cardiometabolic risk factors in African Americans: the Jackson heart study.",2013,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+23524947,"Sex, weight status, and chronic kidney disease among African Americans: the Jackson Heart Study.",2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23433085,Gender differences in the association of visceral and subcutaneous adiposity with adiponectin in African Americans: the Jackson Heart Study.,2013,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+23408700,"Differential associations of abdominal visceral, subcutaneous adipose tissue with cardiometabolic risk factors between African and European Americans.",2014,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+23184379,Association of plasma B-type natriuretic peptide concentrations with longitudinal blood pressure tracking in African Americans: findings from the Jackson Heart Study.,2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23156839,The Jackson Heart Study of the future.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+23156838,Genes and environments: moving toward personalized medicine in the context of health disparities.,2012,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+23156836,The impact of traditional risk factor development on the life course of cardiovascular diseases.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23156835,The revolution in risk assessment and disease detection made possible with non-invasive imaging: implications for population science.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23156834,The social context of cardiovascular disease: challenges and opportunities for the Jackson Heart Study.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+23156832,"Introduction: Jackson Heart Study--building a 21st century platform for discovery, service and training to address an American health priority.",2012,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+23156829,Foreword: celebrating the first ten years of research excellence from the Jackson Heart Study.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+23111408,"Ankle-brachial index (ABI), abdominal aortic calcification (AAC), and coronary artery calcification (CAC): the Jackson heart study.",2013,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22958901,Burden of rare sarcomere gene variants in the Framingham and Jackson Heart Study cohorts.,2012,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+22902209,"Fatty liver, abdominal adipose tissue and atherosclerotic calcification in African Americans: the Jackson Heart Study.",2012,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+22841454,The contribution of stress to the social patterning of clinical and subclinical CVD risk factors in African Americans: the Jackson Heart Study.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22841028,Sleep-disordered breathing symptoms among African-Americans in the Jackson Heart Study.,2012,4,"Domain 4: sleep, duration, quality, short",TRUE
+22594727,Social patterning of cumulative biological risk by education and income among African Americans.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22512833,Pedometer determined physical activity tracks in African American adults: the Jackson Heart Study.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22438884,African ancestry and its correlation to type 2 diabetes in African Americans: a genetic admixture analysis in three U.S. population cohorts.,2012,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+22401510,Perceived discrimination and hypertension among African Americans in the Jackson Heart Study.,2012,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+22381684,Subjective social status and psychosocial and metabolic risk factors for cardiovascular disease among African Americans in the Jackson Heart Study.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22278393,The associations of multiple dimensions of discrimination and abdominal fat in African American adults: the Jackson Heart Study.,2012,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+22186255,Heritability of serum sodium concentration: evidence for sex- and ethnic-specific effects.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22173042,Suppression of homocysteine levels by vitamin B12 and folates: age and gender dependency in the Jackson Heart Study.,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+22065213,Are religiosity and spirituality associated with obesity among African Americans in the Southeastern United States (the Jackson Heart Study)?,2012,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21885852,"Fatty liver, abdominal visceral fat, and cardiometabolic risk factors: the Jackson Heart Study.",2011,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+21840935,Association of adiponectin with left ventricular mass in blacks: the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21824924,Relation of obesity to circulating B-type natriuretic peptide concentrations in blacks: the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21776242,Relationship between medication use and cardiovascular disease health outcomes in the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21776241,Association of the joint effect of menopause and hormone replacement therapy and cancer in African American women: the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21737489,Pericardial fat is associated with impaired lung function and a restrictive lung pattern in adults: the Jackson Heart Study.,2011,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+21737303,"The socioeconomic gradient of diabetes prevalence, awareness, treatment, and control among African Americans in the Jackson Heart Study.",2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21654853,Socioeconomic position is positively associated with blood pressure dipping among African-American adults: the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21600522,Age is positively associated with high-density lipoprotein cholesterol among African Americans in cross-sectional analysis: the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21567165,"Diabetes, impaired glucose tolerance, and metabolic biomarkers in individuals with normal glucose tolerance are inversely associated with lung function: the Jackson Heart Study.",2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21551382,"Associations of fast food restaurant availability with dietary intake and weight among African Americans in the Jackson Heart Study, 2000-2004.",2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21547011,Jackson Heart Study: A Perspective at Ten Years.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+21325150,SCN5A variation is associated with electrocardiographic traits in the Jackson Heart Study.,2011,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+21305845,For the patient. Physical activity and obesity in the Jackson Heart Study population.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+21305826,Physical activity and obesity in African Americans: the Jackson Heart Study.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21283670,Single-nucleotide polymorphisms in LPA explain most of the ancestry-specific variation in Lp(a) levels in African Americans.,2011,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+21228247,Pericardial fat and echocardiographic measures of cardiac abnormalities: the Jackson Heart Study.,2011,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+21216853,"The relation of diabetes, impaired fasting blood glucose, and insulin resistance to left ventricular structure and function in African Americans: the Jackson Heart Study.",2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+21076050,"Geographic representation of the jackson heart study cohort to the African-American population in Jackson, Mississippi.",2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+20966906,"Leptin is inversely associated with lung function in African Americans, independent of adiposity: the Jackson Heart Study.",2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+20843952,Impact of abdominal visceral and subcutaneous adipose tissue on cardiometabolic risk factors: the Jackson Heart Study.,2010,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+20805269,"Pericardial adipose tissue, atherosclerosis, and cardiovascular disease risk factors: the Jackson Heart Study: comment on Liu et Al.",2010,7,"Domain 7: vat, adipose, adiposity, tissue",FALSE
+20715971,The triglyceride/high-density lipoprotein cholesterol ratio fails to predict insulin resistance in African-American women: an analysis of Jackson Heart Study.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+20570916,Fine-mapping in African Americans of 8 recently discovered genetic loci for plasma lipids: the Jackson Heart Study.,2010,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+20413524,"Pericardial adipose tissue, atherosclerosis, and cardiovascular disease risk factors: the Jackson heart study.",2010,7,"Domain 7: vat, adipose, adiposity, tissue",TRUE
+20381223,Association of socioeconomic status and CKD among African Americans: the Jackson Heart Study.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+20187277,Methods for retrospective geocoding in population studies: the Jackson Heart Study.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+20078870,The relation of C--reactive protein to chronic kidney disease in African Americans: the Jackson Heart Study.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19998858,Validation of the Jackson Heart Study Physical Activity Survey in African Americans.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19927137,Relationships of BMI to cardiovascular risk factors differ by ethnicity.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19808499,Clinical correlates and heritability of QT interval duration in blacks: the Jackson Heart Study.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19710166,Total antioxidant performance is associated with diet and serum antioxidants in participants of the diet and physical activity substudy of the Jackson Heart Study.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19693673,Psychometric testing of the daily spiritual experiences scale among African Americans in the Jackson Heart Study.,2011,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19619696,Distribution and determinants of Doppler-derived diastolic flow indices in African Americans: the Jackson Heart Study (JHS).,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19559135,Validity and calibration of food frequency questionnaires used with African-American adults in the Jackson Heart Study.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19543408,Development of the Jackson Heart Study Coordinating Center.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19484681,Asthma and asthma severity among African American adults in the Jackson Heart Study.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19473179,Leptinemia and its association with stroke and coronary heart disease in the Jackson Heart Study.,2010,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19375555,Dyslipidemia and the treatment of lipid disorders in African Americans.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19341164,Development and psychometric testing of a multidimensional instrument of perceived discrimination among African Americans in the Jackson Heart Study.,2009,5,"Domain 5: discrimination, lifetime, perceived, everyday",TRUE
+19180233,Reduced neutrophil count in people of African descent is due to a regulatory variant in the Duffy antigen receptor for chemokines gene.,2009,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+19166799,Prevalence and awareness of CKD among African Americans: the Jackson Heart Study.,2009,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+19148283,Genetic differences between the determinants of lipid profile phenotypes in African and European Americans: the Jackson Heart Study.,2009,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+19027404,Serum carotenoid and tocopherol concentrations vary by dietary pattern among African Americans.,2008,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+18805107,"Epidemiology, heritability, and genetic linkage of C-reactive protein in African Americans (from the Jackson Heart Study).",2008,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+18332154,Distinct component profiles and high risk among African Americans with metabolic syndrome: the Jackson Heart Study.,2008,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+18268140,"Prevalence, awareness, treatment, and control of hypertension in the Jackson Heart Study.",2008,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+18180539,Psychometric evaluation of a Coping Strategies Inventory Short-Form (CSI-SF) in the Jackson Heart Study cohort.,2007,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+18179887,Admixture mapping of white cell count: genetic locus responsible for lower white blood cell count in the Health ABC and Jackson Heart studies.,2008,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+18053294,"Carotenoid intakes, assessed by food-frequency questionnaires (FFQs), are associated with serum carotenoid concentrations in the Jackson Heart Study: validation of the Jackson Heart Study Delta NIRI Adult FFQs.",2008,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+18004091,Cardiovascular complications of respiratory diseases.,2007,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+17885014,Total alpha-tocopherol intakes are associated with serum alpha-tocopherol concentrations in African American adults.,2007,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16320381,Toward resolution of cardiovascular health disparities in African Americans: design and methods of the Jackson Heart Study.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317988,Preparing African Americans for careers in health care: the Jackson Heart Study.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317987,Cardiovascular disease event classification in the Jackson Heart Study: methods and procedures.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317986,Physical activity assessment methods in the Jackson Heart Study.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317985,Dietary assessment in African Americans: methods used in the Jackson Heart Study.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317984,Sociocultural methods in the Jackson Heart Study: conceptual and descriptive overview.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317983,Study design for genetic analysis in the Jackson Heart Study.,2005,2,"Domain 2: genetic, ancestry, variants, genome",TRUE
+16317982,"Recruiting African-American research participation in the Jackson Heart Study: methods, response rates, and sample description.",2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+16317981,The Jackson Heart Study: an overview.,2005,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+15367870,"Laboratory, reading center, and coordinating center data management methods in the Jackson Heart Study.",2004,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+14632263,A community-driven model of research participation: the Jackson Heart Study Participant Recruitment and Retention Study.,2003,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+14632260,Establishing a foundation for cardiovascular disease research in an African-American community--the Jackson Heart Study.,2003,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+12811230,Lipid abnormalities and renal disease: is dyslipidemia a predictor of progression of renal disease?,2003,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+12811228,Racism and cardiovascular disease in African Americans.,2003,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+12811227,"From 1960s Evans County Georgia to present-day Jackson, Mississippi: an exploration of the evolution of cardiovascular disease in African Americans.",2003,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+12811226,Traditional and nontraditional risk factors for cardiovascular and renal disease in African Americans (Part 2): a project of the Jackson Heart Study investigators.,2003,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+12240710,Mechanisms of obesity-associated cardiovascular and renal disease.,2002,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+12240709,"Obesity, physical inactivity, and risk for cardiovascular disease.",2002,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+12240708,Traditional and non-traditional risk factors for cardiovascular and renal disease in African Americans: a project of the Jackson Heart Study investigators.,2002,1,"Domain 1: cvd, incident, diabetes, hypertension",FALSE
+11876182,Capacity for research in minority health: the need for infrastructure plus will.,2001,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+11721802,Capacity for research in minority health: the need for infrastructure plus will.,2001,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+10100692,"The role of hypertension, obesity, and diabetes in causing renal vascular disease.",1999,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+10100690,Why is left ventricular hypertrophy so predictive of morbidity and mortality?,1999,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+10100687,What is the role of obesity in hypertension and target organ injury in African Americans?,1999,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE
+10100686,Overview of the Jackson Heart Study: a study of cardiovascular diseases in African American men and women.,1999,1,"Domain 1: cvd, incident, diabetes, hypertension",TRUE

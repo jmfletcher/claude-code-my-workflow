@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 3: frailty, index, charls, elsa",NA,NA,NA,3,"Domain 3: frailty, index, charls, elsa",91,400,0.14104576741939245,0.32967032967032966
+"Domain 2: discrimination, perceived, weight, black",NA,NA,NA,2,"Domain 2: discrimination, perceived, weight, black",89,260,0.12208054538568452,0.20224719101123595
+"Domain 5: neighborhood, perceived, social, environment",NA,NA,NA,5,"Domain 5: neighborhood, perceived, social, environment",88,214,0.0866477272727266,0.2159090909090909
+"Domain 7: dementia, cognitive, impairment, incident",NA,NA,NA,7,"Domain 7: dementia, cognitive, impairment, incident",348,1045,0.08451413660985471,0.21264367816091953
+"Domain 6: medicare, coverage, insurance, spending",NA,NA,NA,6,"Domain 6: medicare, coverage, insurance, spending",185,454,0.06880934989043108,0.14594594594594595
+"Domain 4: loneliness, social, symptoms, depressive",NA,NA,NA,4,"Domain 4: loneliness, social, symptoms, depressive",154,515,0.055279136447968856,0.12987012987012986
+"Domain 8: caregiving, children, parents, care",NA,NA,NA,8,"Domain 8: caregiving, children, parents, care",206,441,0.043830709774720415,0.20388349514563106
+"Domain 1: cognitive, symptoms, depressive, life",NA,NA,NA,1,"Domain 1: cognitive, symptoms, depressive, life",3491,5878,0.014047908600919274,0.08478945860784876

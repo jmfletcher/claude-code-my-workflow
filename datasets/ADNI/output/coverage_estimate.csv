@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+ADNI,n_central_pmid,0,2026-07-06
+ADNI,n_central_no_pmid,5332,2026-07-06
+ADNI,n_query_hits,5365,2026-07-06
+ADNI,n_overlap,0,2026-07-06
+ADNI,n_central_only,0,2026-07-06
+ADNI,n_search_only,5365,2026-07-06
+ADNI,n_union,5365,2026-07-06
+ADNI,coverage_ratio,NA,2026-07-06
+ADNI,curated_share_of_query,0,2026-07-06

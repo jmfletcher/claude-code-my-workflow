@@ -1,0 +1,8 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 3: masked, sbp, hypertension, nocturnal",NA,NA,NA,3,"Domain 3: masked, sbp, hypertension, nocturnal",42,149,2.2363945578231186,0.8095238095238095
+"Domain 4: sleep, duration, quality, short",NA,NA,NA,4,"Domain 4: sleep, duration, quality, short",15,67,1.8933333333333342,0.8666666666666667
+"Domain 8: mets, severity, syndrome, metabolic",NA,NA,NA,8,"Domain 8: mets, severity, syndrome, metabolic",18,73,1.7808641975308654,0.7222222222222222
+"Domain 2: genetic, ancestry, variants, genome",NA,NA,NA,2,"Domain 2: genetic, ancestry, variants, genome",75,1287,1.4218666666667272,0.7466666666666667
+"Domain 7: vat, adipose, adiposity, tissue",NA,NA,NA,7,"Domain 7: vat, adipose, adiposity, tissue",21,95,1.3854875283446657,0.47619047619047616
+"Domain 5: discrimination, lifetime, perceived, everyday",NA,NA,NA,5,"Domain 5: discrimination, lifetime, perceived, everyday",20,96,1.3199999999999958,0.95
+"Domain 1: cvd, incident, diabetes, hypertension",NA,NA,NA,1,"Domain 1: cvd, incident, diabetes, hypertension",464,1441,0.33289517687276715,0.5625

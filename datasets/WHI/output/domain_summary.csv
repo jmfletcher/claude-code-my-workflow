@@ -1,0 +1,8 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 5: fracture, bmd, hip, fractures",NA,NA,NA,5,"Domain 5: fracture, bmd, hip, fractures",157,484,0.7909854355146384,0.643312101910828
+"Domain 3: cee, mpa, placebo, alone",NA,NA,NA,3,"Domain 3: cee, mpa, placebo, alone",90,383,0.7529629629629713,0.5111111111111111
+"Domain 1: cancer, breast, colorectal, lung",NA,NA,NA,1,"Domain 1: cancer, breast, colorectal, lung",568,1598,0.4716481104939474,0.49119718309859156
+"Domain 2: diabetes, dietary, physical, intake",NA,NA,NA,2,"Domain 2: diabetes, dietary, physical, intake",1446,3493,0.30694729008719507,0.4190871369294606
+"Domain 6: sleep, insomnia, duration, quality",NA,NA,NA,6,"Domain 6: sleep, insomnia, duration, quality",91,463,0.27472527472527897,0.3956043956043956
+"Domain 8: hrt, replacement, therapy, hormone",NA,NA,NA,8,"Domain 8: hrt, replacement, therapy, hormone",207,617,0.024247940442016853,0.10628019323671498
+"Domain 7: estrogen, therapy, hormone, menopause",NA,NA,NA,7,"Domain 7: estrogen, therapy, hormone, menopause",908,2261,0.022990694560344936,0.10242290748898679

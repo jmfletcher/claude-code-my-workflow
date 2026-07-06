@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 2: segmentation, multi, hippocampal, mri",NA,NA,NA,2,"Domain 2: segmentation, multi, hippocampal, mri",109,568,0.10184327918525535,0.22018348623853212
+"Domain 8: clinical, alzheimer, disease, progression",NA,NA,NA,8,"Domain 8: clinical, alzheimer, disease, progression",190,1288,0.09443213296399385,0.11052631578947368
+"Domain 7: neuroimaging, initiative, disease, alzheimer",NA,NA,NA,7,"Domain 7: neuroimaging, initiative, disease, alzheimer",191,900,0.0894986431292968,0.21465968586387435
+"Domain 6: imaging, magnetic, genetic, brain",NA,NA,NA,6,"Domain 6: imaging, magnetic, genetic, brain",222,1282,0.0860319779238642,0.11261261261261261
+"Domain 1: regression, models, functional, longitudinal",NA,NA,NA,1,"Domain 1: regression, models, functional, longitudinal",46,122,0.08412098298676754,0.2826086956521739
+"Domain 4: brain, amyloid, disease, alzheimer",NA,NA,NA,4,"Domain 4: brain, amyloid, disease, alzheimer",2388,8694,0.0347730767180586,0.08835845896147404
+"Domain 3: cognitive, impairment, mild, decline",NA,NA,NA,3,"Domain 3: cognitive, impairment, mild, decline",959,3981,0.03343659377545684,0.12200208550573514
+"Domain 5: learning, classification, diagnosis, mri",NA,NA,NA,5,"Domain 5: learning, classification, diagnosis, mri",1227,4034,0.021035131173167146,0.08231458842705787

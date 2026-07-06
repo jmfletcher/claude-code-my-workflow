@@ -151,6 +151,12 @@ See `.claude/rules/authorship-monopoly-metrics.md` for full definitions.
 | Framingham | [FHS bibliography](https://www.framinghamheartstudy.org/fhs-bibliography/) | 2,835 auto-aliases; ~72% coverage | 4,523 | 19.4% | 35.4% | 67.4% |
 | Sister | [Sister Study articles](https://sisterstudy.niehs.nih.gov/English/articles.htm) | 130 auto-aliases; citation-only | 393 | 88.8% | 93.4% | 97.2% |
 | NHATS | [NHATS publications](https://www.nhats.org/publications/search) | 218 auto-aliases; citation-only | 1,162 | 6.3% | 15.2% | 25.7% |
+| HRS | [HRS publications](https://hrs.isr.umich.edu/publications) (PubMed name search) | 403-blocked; PubMed tiab | 4,652 | 4.1% | 9.0% | 14.7% |
+| WHI | [WHI](https://www.whi.org/) (PubMed name search) | 403-blocked; PubMed tiab | 3,467 | 17.7% | 27.8% | 44.0% |
+| Add Health | [Add Health publications](https://addhealth.cpc.unc.edu/publications/) (PubMed name search) | JS site; PubMed tiab | 2,664 | 4.2% | 9.9% | 16.8% |
+| JHS | [Jackson Heart Study](https://www.jacksonheartstudy.org/) (PubMed name search) | JS site; PubMed tiab | 657 | 27.2% | 57.1% | 72.6% |
+| SWAN | [SWAN](https://www.swanstudy.org/publications/) (PubMed name search) | site not scrapable; PubMed tiab | 707 | 22.9% | 52.8% | 75.5% |
+| ADNI | [ADNI publications](https://adni.loni.usc.edu/news-publications/publications/) | 3,516 auto-aliases; scraped table | 5,332 | 2.7% | 6.7% | 15.3% |
 
 ---
 

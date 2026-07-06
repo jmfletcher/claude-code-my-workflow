@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 5: hdl, size, large, cholesterol",NA,NA,NA,5,"Domain 5: hdl, size, large, cholesterol",5,16,8.12,1
+"Domain 2: cac, carotid, subclinical, progression",NA,NA,NA,2,"Domain 2: cac, carotid, subclinical, progression",47,105,1.8601177003168867,0.9148936170212766
+"Domain 8: sleep, duration, actigraphy, disturbances",NA,NA,NA,8,"Domain 8: sleep, duration, actigraphy, disturbances",47,112,1.7768220914440926,0.723404255319149
+"Domain 7: bone, bmd, fracture, loss",NA,NA,NA,7,"Domain 7: bone, bmd, fracture, loss",65,137,1.6849704142011823,0.8307692307692308
+"Domain 1: vms, frequent, vasomotor, symptoms",NA,NA,NA,1,"Domain 1: vms, frequent, vasomotor, symptoms",34,115,1.2759515570934226,0.7941176470588235
+"Domain 4: discrimination, perceived, experiences, racial",NA,NA,NA,4,"Domain 4: discrimination, perceived, experiences, racial",13,37,0.9822485207100602,0.6923076923076923
+"Domain 3: concentrations, fmp, hormone, menopause",NA,NA,NA,3,"Domain 3: concentrations, fmp, hormone, menopause",295,539,0.48058603849467796,0.5389830508474577
+"Domain 6: depressive, symptoms, physical, functioning",NA,NA,NA,6,"Domain 6: depressive, symptoms, physical, functioning",201,358,0.4345436994133834,0.5472636815920398

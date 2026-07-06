@@ -1,0 +1,25 @@
+dataset:
+  name: SWAN
+  full_name: Study of Women's Health Across the Nation
+  description: NIA/NINR/ORWH multi-site longitudinal study of the menopausal
+    transition in a multi-ethnic cohort of women (enrolled 1996-1997).
+source:
+  type: pubmed_name_search
+  collection_url: https://www.swanstudy.org/publications/
+  entrez_query: '"Study of Women''s Health Across the Nation"[tiab]'
+  expected_paper_count: null
+  last_fetched: null
+  funding:
+    funder: NIA / NINR / ORWH (NIH)
+    confirmed: yes
+    note: Study website is JS-rendered; acquired via PubMed title/abstract name search.
+  coverage_query: '"Study of Women''s Health Across the Nation"[tiab]'
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

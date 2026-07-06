@@ -1,0 +1,25 @@
+dataset:
+  name: WHI
+  full_name: Women's Health Initiative
+  description: NHLBI study of strategies to prevent heart disease, cancer, and
+    osteoporotic fractures in postmenopausal women (enrolled 1993-1998).
+source:
+  type: pubmed_name_search
+  collection_url: https://www.whi.org/
+  entrez_query: '"Women''s Health Initiative"[tiab]'
+  expected_paper_count: null
+  last_fetched: null
+  funding:
+    funder: NHLBI (NIH)
+    confirmed: yes
+    note: Publications DB behind bot protection (403); acquired via PubMed title/abstract name search.
+  coverage_query: '"Women''s Health Initiative"[tiab]'
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

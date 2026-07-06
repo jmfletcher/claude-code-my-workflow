@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 4: food, consumption, living, young",NA,NA,NA,4,"Domain 4: food, consumption, living, young",18,36,0.6358024691358031,0.6111111111111112
+"Domain 5: sleep, duration, short, hours",NA,NA,NA,5,"Domain 5: sleep, duration, short, hours",46,142,0.13941398865784552,0.2826086956521739
+"Domain 7: bmi, obesity, body, mass",NA,NA,NA,7,"Domain 7: bmi, obesity, body, mass",151,382,0.13696767685628006,0.2582781456953642
+"Domain 3: weight, overweight, birth, body",NA,NA,NA,3,"Domain 3: weight, overweight, birth, body",83,189,0.08898243576716473,0.2289156626506024
+"Domain 8: victimization, violence, ipv, perpetration",NA,NA,NA,8,"Domain 8: victimization, violence, ipv, perpetration",151,341,0.061225384851541366,0.15894039735099338
+"Domain 6: smoking, genetic, network, friends",NA,NA,NA,6,"Domain 6: smoking, genetic, network, friends",277,527,0.0570579572260811,0.20577617328519857
+"Domain 2: sexual, suicide, sex, suicidal",NA,NA,NA,2,"Domain 2: sexual, suicide, sex, suicidal",415,828,0.028294382348672868,0.1614457831325301
+"Domain 1: use, school, symptoms, alcohol",NA,NA,NA,1,"Domain 1: use, school, symptoms, alcohol",1523,2752,0.013561805004378247,0.0912672357189757

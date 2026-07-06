@@ -1,0 +1,710 @@
+pmid,title,pub_year,cluster,domain,has_abstract
+42336651,"Letter: Associations between vasomotor symptoms, sleep disturbances, and frequent mood changes individually and within symptom groups across the menopausal transition and early postmenopause: observations from the Study of Women's Health Across the Nation.",2026,8,"Domain 8: sleep, duration, actigraphy, disturbances",FALSE
+42320873,Anti-Mullerian Hormone Rebound and Estradiol Changes in the Study of Women's Health Across the Nation.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+42311599,An index of net bone formation relative to resorption is associated with incident fracture during the menopause transition and postmenopause.,2026,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+42210082,Cardiovascular disease risk factors in women with O-desmethylangolensin producing and non-producing gut microbial metabotypes: an observational study.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+42166190,Joint modeling of multiple longitudinal biomarkers and survival outcomes via threshold regression: variability as a predictor.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+42154531,Childhood maltreatment and 20-year trajectories of sleep disturbance among midlife women: the Study of Women's Health Across the Nation.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+42147258,"Residential green space, walkability, and cardiometabolic biomarkers in midlife women: a longitudinal cohort study.",2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+42130815,Association between loneliness and social isolation and health outcomes among cancer survivors and non-cancer controls.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+42112893,Dual trajectories of allostatic load and depression among perimenopausal women.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+42084915,Menopausal symptom network differences between women with and without waist-to-height ratio-defined abdominal obesity.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+42076794,Post-stroke cognitive decline among women in midlife.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+42074990,Phosphorus Intake and Cancer Risk: A Theoretical-Conceptual Model and Hypothesis for Population-Study Replication.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+41967749,Per- and polyfluoroalkyl substances and incident metabolic syndrome in midlife women: The Study of Women's Health Across the Nation (SWAN).,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41837362,Metabolic syndrome duration and risk of frailty among midlife women: the Study of Women's Health Across the Nation.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41779076,Grip strength but not stair climb power is associated with injurious falls in middle-aged and older women: The Study of Women's Health Across the Nation (SWAN).,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41763333,Per- and polyfluoroalkyl substances (PFAS) and menstrual cycle characteristics in midlife women: The Study of Women's Health Across the Nation.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41735798,The Incidence of Cardiovascular Disease Events in Women with Hypothyroidism: The Study of Women's Health Across the Nation.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41709438,Over 50% of women affected by menopausal sleep disorders: urgent need to integrate sleep management into menopause guidelines.,2026,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+41569823,Sociodemographic and Health-Related Disparities in 24-Hr Movement Cycles Among Older Adult Women: The Study of Women's Health Across the Nation.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+41529146,"Associations between vasomotor symptoms, sleep disturbances, and frequent mood changes individually and within symptom groups across the menopausal transition and early postmenopause: observations from the Study of Women's Health Across the Nation.",2026,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+41482729,Insulin Levels Early in Perimenopause Inform Vasomotor Symptom Incidence Across the Menopausal Transition.,2026,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41415139,Transitions in Silence: Menopause and Well-being Among Midlife Women.,2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+41399290,"Anti-Mullerian Hormone and Collagen Type I C-telopeptide Predict Fast, Imminent Bone Loss in Early Perimenopause: SWAN.",2026,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+41389332,"Insomnia symptoms, sleep duration, and risk of falls in older adult women: findings from the Study of Women's Health Across the Nation.",2026,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+41354933,Hepatic steatosis in postmenopausal women is characterized by distinct serum extracellular vesicle proteomic signatures.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+41202392,"Everyday discrimination frequency, intersectional attributions, and C-reactive Protein for Black midlife women who experience discrimination.",2026,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+41167717,Association Between Depressive Symptoms and Insulin Resistance and the Impact of the Menopausal Transition.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40994265,Polycystic Ovary Syndrome and Sleep Disturbance in Postmenopausal Women: Study of Women's Health Across the Nation.,2026,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+40988242,Associations of depressive symptoms with fracture in midlife women: An observational study from the Study of Women's Health Across the Nation.,2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40963750,Insulin levels early in perimenopause inform vasomotor symptom incidence across the menopausal transition.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+40961004,"The bidirectional dynamics of social support, role stress, and anxiety: a longitudinal study of Middle-aged women.",2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40946752,Longitudinal association of change in physical activity and cognitive performance in midlife women: Study of women's health across the nation.,2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40820391,Minimum wear time criteria for reliable estimates of device-measured 24-hour movement in older women.,2025,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+40757575,The risk of fracture among women starting selective serotonin reuptake inhibitors.,2025,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+40637738,The relation of heavy or prolonged bleeding during the menopause transition to risk of hysterectomy.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+40627720,"Prospective associations of American Heart Association Life's Essential 8 with subclinical measures of vascular health, cardiovascular disease events, and all-cause mortality in women traversing menopause: The Study of Women's Health Across the Nation study.",2025,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+40520530,Blood essential trace elements and Alzheimer's disease biomarkers in midlife.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+40505800,Association between urinary incontinence and device-measured physical activity: a cross-sectional study.,2026,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40219976,Comparison of Symptoms Between Midlife Women in Perimenopause and Postmenopause Using Network Comparison Test.,2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40189810,Exposure to neighborhood concentrated poverty is associated with faster decline in episodic memory among midlife women.,2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+40123296,The Relation Between Systemic Inflammation and the Menopause Transition: The Study of Women's Health Across the Nation.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+40120090,Semiparametric mixture regression for asynchronous longitudinal data using multivariate functional principal component analysis.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+40067756,Abnormal uterine bleeding is associated with fatigue during the menopause transition.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+40041303,Different temporal relationship between sex hormones and sleep status in midlife women: a longitudinal cohort study.,2025,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+40027225,Allostatic load score and lifestyle factors in the SWAN cohort: A longitudinal analysis.,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+39955263,"Sleep timing, sleep timing regularity, and cognitive performance in women entering late adulthood: the Study of Women's Health Across the Nation (SWAN).",2025,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+39847409,Using a Composite Summary of Daily Sex Hormones to Gauge Time Until Menopause: A Focus on Pregnanediol Glucuronide (PDG).,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+39839137,Association between gynecological disorders and insomnia and depression trajectories: a longitudinal study of middle-aged women.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+39815016,Physical activity and quality of life among breast cancer survivors: Pink SWAN.,2025,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+39707890,Self-reported history of physical intimate partner violence and longitudinal cognitive performance in midlife women.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+39657000,Estimating Net Bone Formation Relative to Resorption Using Reference Bone Turnover Markers.,2025,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+39630215,"Religious and Spiritual Experiences, Discrimination, and Stress Among Midlife Women in the USA: The Study of Women's Health Across the Nation.",2025,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+39615013,Actigraphy-derived multidimensional sleep health among breast cancer survivors and controls: Pink SWAN.,2026,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+39488293,Exposure to air pollution is associated with adipokines in midlife women: The Study of Women's Health Across the Nation.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+39437822,[What is new on peri- and postmenopause?].,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+39367567,High-density Lipoprotein Over Midlife and Future Cognition in Women: The SWAN HDL Ancillary Study.,2025,5,"Domain 5: hdl, size, large, cholesterol",TRUE
+39261530,Blood PAI-1 and cardiovascular and metabolic risk factors among the middle-aged women from SWAN study.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+39257183,Diabetes and Uterine Fibroid Diagnosis in Midlife: Study of Women's Health Across the Nation (SWAN).,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+39233250,Depressive symptoms over the final menstrual period: Study of Women's Health Across the Nation (SWAN).,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+39225158,The Association Between Hypothyroidism and Cognitive Function Change in Women across the Menopause Transition: The Study of Women's Health Across the Nation.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+39078663,Dietary choline and betaine intake minimally impacts rate of annualized cognitive performance throughout the menopause transition: data from the Study of Women's Health Across the Nation.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+39042583,Crucial Considerations on Race/Ethnicity and Incidence of Pelvic Organ Prolapse in Midlife Women: The Study of Women's Health Across the Nation.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",FALSE
+38992756,Associations of serum persistent organic pollutant concentrations with incident diabetes in midlife women: The Study of Women's Health Across the Nation Multi-Pollutant Study.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38946622,Longitudinal Exposure to Neighborhood Concentrated Poverty Contributes to Differences in Adiposity in Midlife Women.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38884052,Sleep Health and Anxiety Symptoms in Midlife Women: The Study of Women's Health Across the Nation (SWAN).,2024,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+40740693,VARIANCE AS A PREDICTOR OF HEALTH OUTCOMES: SUBJECT-LEVEL TRAJECTORIES AND VARIABILITY OF SEX HORMONES TO PREDICT BODY FAT CHANGES IN PERI- AND POSTMENOPAUSAL WOMEN.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38809719,Uncovering gaps in management of vasomotor symptoms: findings from a national need assessment.,2025,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+38743910,High-density lipoprotein metrics during midlife and future subclinical atherosclerosis in women: the SWAN HDL study.,2024,5,"Domain 5: hdl, size, large, cholesterol",TRUE
+38719906,Determinants of urinary dialkyl phosphate metabolites in midlife women: the Study of Women's Health Across the Nation Multi-Pollutant Study (SWAN-MPS).,2025,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38696876,Neighborhood physical environments and change in cardiometabolic risk factors over 14 years in the study of Women's health across the nation.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38660427,Changes in Adipose Tissue and Circulating Concentrations of Persistent Organic Pollutants in Midlife Women.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38656121,"Cardiovascular Health, Race, and Decline in Cognitive Function in Midlife Women: The Study of Women's Health Across the Nation.",2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+38625699,"Hypertension, Cardiovascular Risk Factors, and Uterine Fibroid Diagnosis in Midlife.",2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38595299,Does everyday discrimination account for the increased risk of vasomotor symptoms in Black women?: the Study of Women's Health Across the Nation (SWAN).,2024,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+38595203,Daily spiritual experiences and allostatic load trajectories: a longitudinal study of midlife African American women.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38551169,Race/Ethnicity and Incidence of Pelvic Organ Prolapse in Midlife Women: The Study of Women's Health Across the Nation.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38330428,The Role of Sexual Function in Quality of Life Among Midlife and Older Women: The Study of Women's Health Across the Nation.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+38327583,Association between alcohol consumption and latent fasting blood glucose trajectories among midlife women.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38320264,Longitudinal Changes in Sex Hormone Binding Globulin (SHBG) and Risk of Incident Diabetes: The Study of Women's Health Across the Nation (SWAN).,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38284249,Trajectories of Sleep Over Midlife and Incident Cardiovascular Disease Events in the Study of Women's Health Across the Nation.,2024,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+38280354,Trauma and its implications for women's cardiovascular health during the menopause transition: Lessons from MsHeart/MsBrain and SWAN studies.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+38271266,Heavy Metals and Trajectories of Anti-Müllerian Hormone During the Menopausal Transition.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38179184,The adverse association of animal zinc intake with cardio-cerebrovascular and metabolic risk factors.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38165061,Discrimination and Cognition in Midlife Black Women: The Roles of Social Support and Spirituality.,2024,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+38126555,Blood-based biomarkers for Alzheimer's disease and cognitive function from mid- to late life.,2024,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+38087944,Changes in Collagen Type I C-Telopeptide and Procollagen Type I N-Terminal Propeptide During the Menopause Transition.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+38016162,The association of urinary incontinence and disability among a diverse sample of midlife Study of Women's Health Across the Nation women.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37949144,Associations between exposure to air pollution and sex hormones during the menopausal transition.,2024,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37947109,Trajectories of Blood Lipids Profile in Midlife Women: Does Menopause Matter?,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37934935,Carotid intima media thickness and cardiometabolic dysfunction: the Study of Women's Health Across the Nation.,2023,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+37894460,Breast Cancer and Bone Mineral Density in a U.S. Cohort of Middle-Aged Women: Associations with Phosphate Toxicity.,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+37788422,Relationships between the vaginal microbiota and genitourinary syndrome of menopause symptoms in postmenopausal women: the Study of Women's Health Across the Nation.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+37731055,The effect of starting metformin on bone mineral density among women with type 2 diabetes in the Study of Women's Health Across the Nation (SWAN).,2024,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+37686766,High Dietary Phosphorus Is Associated with Increased Breast Cancer Risk in a U.S. Cohort of Middle-Aged Women.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+37614302,Self-Reported Sleep Disturbances over the Menopausal Transition and Fracture Risk: The Study of Women's Health Across the Nation.,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+37577812,Vasomotor symptoms and cardiovascular health: findings from the SWAN and the MsHeart/MsBrain studies.,2024,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+37558437,Derivation and external validation of a risk score for clinically important declines in health and function among two longitudinal cohorts of women in the mid-life.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+37552133,Per- and Polyfluoroalkyl Substances (PFAS) and Lipid Trajectories in Women 45-56 Years of Age: The Study of Women's Health Across the Nation.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37382579,Systematic exclusion at study commencement masks earlier menopause for Black women in the Study of Women's Health Across the Nation (SWAN).,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37314873,Association between vasomotor symptom frequency and weight gain in the Study of Women's Health Across the Nation.,2023,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+37273115,A clinical prediction model for 10-year risk of self-reported osteoporosis diagnosis in pre- and perimenopausal women.,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+37219902,Prediabetes and Fracture Risk Among Midlife Women in the Study of Women's Health Across the Nation.,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+37141837,Longitudinal profiles of neighborhood socioeconomic vulnerability influence blood pressure changes across the female midlife period.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37126345,Physical and Behavioral Factors Associated With Improvement in Physical Health and Function Among US Women During Midlife.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+37042741,Asynchronous and error-prone longitudinal data analysis via functional calibration.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+37008197,Leisure time physical activity and bone mineral density preservation during the menopause transition and postmenopause: a longitudinal cohort analysis from the Study of Women's Health Across the Nation (SWAN).,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+37004857,The role of exposure to per- and polyfluoroalkyl substances in racial/ethnic disparities in hypertension: Results from the study of Women's health across the nation.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36999312,Identification of high-risk symptom cluster burden group among midlife peri-menopausal and post-menopausal women with metabolic syndrome using latent class growth analysis.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+36846211,Associations Between Repeated Measures of Urinary Phthalate Metabolites With Hormones and Timing of Natural Menopause.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36780235,Dietary Inflammatory Index and Fractures in Midlife Women: Study of Women's Health Across the Nation.,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+36767197,Association between Body Mass Index and Diabetes Mellitus Are Mediated through Endogenous Serum Sex Hormones among Menopause Transition Women: A Longitudinal Cohort Study.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36752637,Phthalates and Incident Diabetes in Midlife Women: The Study of Women's Health Across the Nation (SWAN).,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36735600,Childhood Sexual Abuse and Pelvic Floor Dysfunction in Midlife Women in the Study of Women's Health Across the Nation.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+36649324,Anti-Müllerian Hormone Level Decline in Patients Undergoing Hysterectomy With and Without Oophorectomy Compared With Natural Menopause.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36568060,Factors associated with poor sleep quality in midlife Singaporean women: The Integrated Women's Health program (IWHP).,2023,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+36542065,Menopause-Related Changes in Body Composition Are Associated With Subsequent Bone Mineral Density and Fractures: Study of Women's Health Across the Nation.,2023,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+36534511,Isomer-Specific Serum Concentrations of Perfluorooctane Sulfonic Acid among U.S. Adults: Results from the National Health and Nutrition Examination Survey (NHANES) and the Study of Women's Health Across the Nation Multi-Pollutant Study (SWAN-MPS).,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36517413,The independent associations of anti-Müllerian hormone and estradiol levels over the menopause transition with lipids/lipoproteins: The Study of Women's health Across the Nation.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36509657,"Sleep timing, sleep regularity, and psychological health in early late life women: Findings from the Study of Women's Health Across the Nation (SWAN).",2023,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+36498153,Using Tree-Based Machine Learning for Health Studies: Literature Review and Case Series.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+36463566,Psychosocial impacts of the COVID-19 pandemic on women with trauma histories: Study of Women's Health Across the Nation (SWAN).,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+36440508,Sexual functioning among breast cancer survivors and non-cancer controls over 5 years post diagnosis: Pink SWAN.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+36436662,Exposure to heavy metals and hormone levels in midlife women: The Study of Women's Health Across the Nation (SWAN).,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36342714,Study Selection Bias and Racial or Ethnic Disparities in Estimated Age at Onset of Cardiometabolic Disease Among Midlife Women in the US.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36341787,Phthalate exposure is associated with more rapid body fat gain in midlife women: The Study of Women's Health Across the Nation (SWAN) Multi-Pollutant Study.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36285790,Early Midlife Cardiovascular Health Influences Future HDL Metrics in Women: The SWAN HDL Study.,2022,5,"Domain 5: hdl, size, large, cholesterol",TRUE
+36278482,Longitudinal associations of insulin resistance with change in bone mineral density in midlife women.,2022,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+36271444,Correction: Disparities in Reproductive Aging and Midlife Health between Black and White women: The Study of Women's Health Across the Nation (SWAN).,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",FALSE
+36261074,Recurrent pregnancy loss and incident arthritis in midlife: an exploratory longitudinal analysis of the Study of Women's Health Across the Nation.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36260527,The Association of Inflammatory Factors With Peripheral Neuropathy: The Study of Women's Health Across the Nation.,2023,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36256923,"Menopause hormone therapy and complementary alternative medicine, quality of life, and racial/ethnic differences: the Study of Women's Health Across the Nation (SWAN).",2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36250945,Pre- and Early Peri-menopausal Physical Function and Risk of Cardiovascular Events: The Study of Women's Health Across the Nation.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+36084038,Longitudinal Associations of Air Pollution With Body Size and Composition in Midlife Women: The Study of Women's Health Across the Nation.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36067386,Association of lifetime lactation and age at natural menopause: a prospective cohort study.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+36030997,Associations of dietary Provitamin A carotenoid intake with depressive symptoms in midlife women: Results from the study of Women's Health Across the Nation.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35993429,Impact of lifetime lactation on the risk and duration of frequent vasomotor symptoms: A longitudinal dose-response analysis.,2023,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+35982358,Sleep disturbance among breast cancer survivors and controls from midlife to early older adulthood: Pink SWAN.,2024,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+35905469,The longitudinal relation of inflammation to incidence of vasomotor symptoms.,2022,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+35804816,Association of Allostatic Load and All Cancer Risk in the SWAN Cohort.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35796553,Risk of high depressive symptoms after the final menstrual period: the Study of Women's Health Across the Nation (SWAN).,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35769201,Coronary artery calcium and atherosclerotic cardiovascular disease risk in women with early menopause: The Multi-Ethnic Study of Atherosclerosis (MESA).,2022,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+35768642,Anti-Müllerian hormone levels and breast cancer risk in the study of women's health across the nation.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35759720,Symptom Clusters and Key Symptoms Among Midlife Perimenopausal and Postmenopausal Women With and Without Metabolic Syndrome.,2022,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+35757579,Quantifying physical activity across the midlife: Does consideration of perceived exertion matter?,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35751986,Development of symptomatic pelvic organ prolapse over 10 years of mid-life follow-up is affected by occupational lifting and/or pushing for parous women.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35714876,Longitudinal associations of mid-life employment status with impaired physical function in the Study of Women's Health Across the Nation.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35695012,Per- and Polyfluoroalkyl Substances and Incident Hypertension in Multi-Racial/Ethnic Women: The Study of Women's Health Across the Nation.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35675610,Patterns of Sexual Activity and the Development of Sexual Pain Across the Menopausal Transition.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35612528,"Disparities in Vision Impairment and Eye Diseases among Early Late-Life Women: The Study of Women's Health Across the Nation, Michigan Site.",2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35534458,A cross-lagged prospective network analysis of depression and anxiety and cognitive functioning components in midlife community adult women.,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35508974,A flexible approach for variable selection in large-scale healthcare database studies with missing covariate and outcome data.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35442810,Excessive Gestational Weight Gain and Long-Term Maternal Cardiovascular Risk Profile: The Study of Women's Health Across the Nation.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35399113,Per- and polyfluoroalkyl substances and incident diabetes in midlife women: the Study of Women's Health Across the Nation (SWAN).,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35373854,Anti-Mullerian Hormone as Predictor of Future and Ongoing Bone Loss During the Menopause Transition.,2022,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+35351687,Temporal sequence of blood lipids and insulin resistance in perimenopausal women: the study of women's health across the nation.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35306088,Race-specific associations of urinary phenols and parabens with adipokines in midlife women: The Study of Women's Health Across the Nation (SWAN).,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35298649,Associations of Abdominal and Cardiovascular Adipose Tissue Depots With HDL Metrics in Midlife Women: the SWAN Study.,2022,5,"Domain 5: hdl, size, large, cholesterol",TRUE
+35296109,"Comparing polysomnography, actigraphy, and sleep diary in the home environment: The Study of Women's Health Across the Nation (SWAN) Sleep Study.",2022,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+35292812,Perfluoroalkyl Substances and Incident Natural Menopause in Midlife Women: The Mediating Role of Sex Hormones.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35274129,Genome-wide association study meta-analysis identifies three novel loci for circulating anti-Müllerian hormone levels in women.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35202625,Metals and risk of incident metabolic syndrome in a prospective cohort of midlife women in the United States.,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35195674,Health Behavior Profiles Among Midlife Women: Identifying At-Risk Subgroups for Metabolic Syndrome Using Latent Class Analysis.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35191325,Psychosocial Well-Being and Progression of Coronary Artery Calcification in Midlife Women.,2022,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+35179313,"Multivariate, region-based genetic analyses of facets of reproductive aging in White and Black women.",2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35178609,Prediabetes and insulin resistance are associated with lower trabecular bone score (TBS): cross-sectional results from the Study of Women's Health Across the Nation TBS Study.,2022,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+35138201,Racial/ethnic differences in social support and health among Asian American and non-Hispanic White midlife women: Results from the Study of Women's Health Across the Nation (SWAN).,2023,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+35130984,Disparities in Reproductive Aging and Midlife Health between Black and White women: The Study of Women's Health Across the Nation (SWAN).,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35113663,Trajectories of Blood Pressure in Midlife Women: Does Menopause Matter?,2022,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+35083507,"RE: ""Race/ethnic differences in trabecular bone score in mid-life women: the Study of Women's Health Across the Nation (SWAN)"".",2022,7,"Domain 7: bone, bmd, fracture, loss",FALSE
+35075498,"Comment on article ""Race/ethnic difference in trabecular bone score in midlife women: The Study of Women's Health Across the Nation (SWAN)"".",2022,7,"Domain 7: bone, bmd, fracture, loss",FALSE
+35006247,Factors Associated With 10-Year Declines in Physical Health and Function Among Women During Midlife.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34942225,Ascorbic acid intake is inversely associated with prevalence of depressive symptoms in US midlife women: A cross-sectional  study.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34934892,Urinary concentrations of phenols and parabens and incident diabetes in midlife women: The Study of Women's Health Across the Nation.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34706437,Association between migraine and anxiety symptoms: Results from the study of women's health across the nation.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34698674,"Longitudinal association of midlife vision impairment and depressive symptoms: the study of Women's Health Across the Nation, Michigan site.",2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34696650,Variable selection with missing data in both covariates and outcomes: Imputation and machine learning.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34694536,Vasomotor symptoms in midlife women with incident breast cancer: pink SWAN.,2022,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+34647644,"Age-Related Changes in Bone Density, Microarchitecture, and Strength in Postmenopausal Black and White Women: The SWAN Longitudinal HR-pQCT Study.",2022,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+34636354,Patterns of menstrual cycle length over the menopause transition are associated with subclinical atherosclerosis after menopause.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34604281,Intake of Dietary Fiber From Grains and the Risk of Hypertension in Late Midlife Women: Results From the SWAN Study.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34537850,Associations of Age at Menopause With Postmenopausal Bone Mineral Density and Fracture Risk in Women.,2022,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+34496108,The relationship between 19-year trends in medication use and changes in physical function among women in the mid-life: A Study of Women's Health Across the Nation pharmacoepidemiology study.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34482713,Age at Menopause in Relationship to Lipid Changes and Subclinical Carotid Disease Across 20 Years: Study of Women's Health Across the Nation.,2021,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+34469936,Impact of sleep disturbances on employment and work productivity among midlife women in the US SWAN database: a brief report.,2021,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+34390340,Associations of Endogenous Hormones With HDL Novel Metrics Across the Menopause Transition: The SWAN HDL Study.,2022,5,"Domain 5: hdl, size, large, cholesterol",TRUE
+34311223,Urinary metals and metal mixtures and timing of natural menopause in midlife women: The Study of Women's Health Across the Nation.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34216218,Metabolic Syndrome Trajectories and Objective Physical Performance in Mid-to-Early Late Life: The Study of Women's Health Across the Nation (SWAN).,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34181018,Per- and Polyfluoroalkyl Substances and Hormone Levels During the Menopausal Transition.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34153092,"Midlife Vision Impairment and Cognitive Function in Later Life: The Study of Women's Health Across the Nation, Michigan Cohort.",2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34148361,Urinary Heavy Metals and Longitudinal Changes in Blood Pressure in Midlife Women: The Study of Women's Health Across the Nation.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34123715,Associations of accelerometer-determined sedentary behavior and physical activity with physical performance outcomes by race/ethnicity in older women.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34101033,Race/ethnic difference in trabecular bone score in midlife women: The Study of Women's Health Across the Nation (SWAN).,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34090141,Associations of perfluoroalkyl and polyfluoroalkyl substances (PFAS) and PFAS mixtures with adipokines in midlife women.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34081126,Influence of the menopausal transition on polysomnographic sleep characteristics: a longitudinal analysis.,2021,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+34061966,Changes in Regional Fat Distribution and Anthropometric Measures Across the Menopause Transition.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34039103,Identification of Symptom Clusters Among Midlife Menopausal Women with Metabolic Syndrome.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+34027342,Infertility and the Risk of Cardiovascular Disease: Findings From the Study of Women's Health Across the Nation (SWAN).,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+34014752,Predictors of cognitive decline in a multi-racial sample of midlife women: A longitudinal study.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33986457,Perfluoroalkyl and polyfluoroalkyl substances and body size and composition trajectories in midlife women: the study of women's health across the nation 1999-2018.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33973662,Paper towel test as independently self-administered to quantify cough-related urine loss: Compliance and comparisons with survey-only data in SWAN.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33967942,Allostatic Load in Perimenopausal Women With Migraine.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33906203,Genetic variants predictive of reproductive aging are associated with vasomotor symptoms in a multiracial/ethnic cohort.,2021,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+33903908,Faster Lumbar Spine Bone Loss in Midlife Predicts Subsequent Fracture Independent of Starting Bone Mineral Density.,2021,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+33878091,"Associations between polygenic risk score for age at menarche and menopause, reproductive timing, and serum hormone levels in multiple race/ethnic groups.",2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33869996,Increase in C-Reactive Protein Predicts Increase in Rate of Bone Mineral Density Loss: The Study of Women's Health Across the Nation.,2021,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+33832644,Lowered progesterone metabolite excretion and a variable LH excretion pattern are associated with vasomotor symptoms but not negative mood in the early perimenopausal transition: Study of Women's Health Across the Nation.,2021,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+33793454,Clustering of Social and Physical Pain Variables and Their Association With Mortality in Two Population-Based Cohorts.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33787912,Longitudinal Assessment of Physical Activity and Cognitive Outcomes Among Women at Midlife.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33779242,Adipokines and Subclinical Cardiovascular Disease in Post-Menopausal Women: Study of Women's Health Across the Nation.,2021,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+33774321,Dietary beta-carotene intake is inversely associated with anxiety in US midlife women.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33722364,Dual trajectories of physical activity and blood lipids in midlife women: The Study of Women's Health Across the Nation.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33710770,Cardiovascular risk and midlife cognitive decline in the Study of Women's Health Across the Nation.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33705558,Associations between longitudinal trajectories of insomnia symptoms and sleep duration with objective physical function in postmenopausal women: the Study of Women's Health Across the Nation.,2021,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+33651743,Women with Type 1 diabetes (T1D) experience a shorter reproductive period compared with nondiabetic women: the Pittsburgh Epidemiology of Diabetes Complications (EDC) study and the Study of Women's Health Across the Nation (SWAN).,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33651741,Abdominal visceral adipose tissue over the menopause transition and carotid atherosclerosis: the SWAN heart study.,2021,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+33631313,Symptom clusters predict risk of metabolic-syndrome and diabetes in midlife: the Study of Women's Health Across the Nation.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33570873,Impact of prior preterm or term small for gestational age birth on maternal blood pressure during the menopause transition in the Study of Women's Health Across the Nation.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33560407,Racial/Ethnic Differences in Women's Life Event Exposure Across Midlife.,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33517822,Association of Physical Activity and Physical Functioning Phenotypes With Fall Risk Among Women.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33503073,"The relationship between social support, stressful events, and menopause symptoms.",2021,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+33470142,Menopausal Vasomotor Symptoms and Risk of Incident Cardiovascular Disease Events in SWAN.,2021,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+33410460,Longitudinal Association Between Depressive Symptoms and Multidimensional Sleep Health: The SWAN Sleep Study.,2021,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+33350671,High-density lipoprotein cholesterol and arterial calcification in midlife women: the contribution of estradiol and C-reactive protein.,2020,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+33302752,"Social Role Stress, Reward, and the American Heart Association Life's Simple 7 in Midlife Women: The Study of Women's Health Across the Nation.",2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33298219,Does childhood maltreatment or current stress contribute to increased risk for major depression during the menopause transition?,2022,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33284167,Gestational Weight Gain and Long-term Maternal Obesity Risk: A Multiple-Bias Analysis.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33157106,Urinary metals and adipokines in midlife women: The Study of Women's Health Across the nation (SWAN).,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33153486,Association between coarse particulate matter and inflammatory and hemostatic markers in a cohort of midlife women.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33094207,Melatonin Patterns and Levels During the Human Menstrual Cycle and After Menopause.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+33090934,Midlife Factors Related to Psychological Well-Being at an Older Age: Study of Women's Health Across the Nation.,2021,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+33038144,"Identifying women who share patterns of reproductive hormones, vasomotor symptoms, and sleep maintenance problems across the menopause transition: group-based multi-trajectory modeling in the Study of Women's Health Across the Nation.",2020,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+33034337,"Race/Ethnicity, Cumulative Midlife Loss, and Carotid Atherosclerosis in Middle-Aged Women.",2021,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+32944260,Association of lean body mass to menopausal symptoms: The Study of Women's Health Across the Nation.,2020,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+32927284,Urinary metal mixtures and longitudinal changes in glucose homeostasis: The Study of Women's Health Across the Nation (SWAN).,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32918472,Associations between sleep and cognitive performance in a racially/ethnically diverse cohort: the Study of Women's Health Across the Nation.,2021,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+32862481,Is race or ethnicity associated with under-utilization of statins among women in the United States: The study of women's health across the nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32852461,Changes in kidney function during the menopausal transition: the Study of Women's Health Across the Nation (SWAN) - Michigan site.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32796290,"Impact of nulliparity, hypertensive disorders of pregnancy, and gestational diabetes on vasomotor symptoms in midlife women.",2020,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+32754846,A Longitudinal Analysis of Patient-Level Factors Associated with Pap Test Uptake Among Chinese American Women.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32747380,Urinary metals and incident diabetes in midlife women: Study of Women's Health Across the Nation (SWAN).,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32747311,Vasomotor symptoms and lipids/lipoprotein subclass metrics in midlife women: Does level of endogenous estradiol matter? The SWAN HDL Ancillary Study.,2020,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+32742664,Contribution of common chronic conditions to midlife physical function decline: The Study of Women's Health Across the Nation.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32739710,Dietary manganese intake is inversely associated with depressive symptoms in midlife women: A cross-sectional study.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32730933,Premenopausal and early postmenopausal trabecular bone score (TBS) and fracture risk: Study of Women's Health Across the Nation (SWAN).,2020,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+32680819,Multidimensional sleep health is not cross-sectionally or longitudinally associated with adiposity in the Study of Women's Health Across the Nation (SWAN).,2020,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+32665024,Changes in excessive alcohol use among older women across the menopausal transition: a longitudinal analysis of the Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32627598,Follicle stimulating hormone and estradiol trajectories from menopausal transition to late postmenopause in indigenous Chinese women.,2021,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32536251,Bayesian nonparametric latent class model for longitudinal data.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32491182,Associations of Perfluoroalkyl Substances with Incident Natural Menopause: The Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32435179,Dietary Fiber Is Inversely Associated With Depressive Symptoms in Premenopausal Women.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32404792,Dairy intake is not associated with improvements in bone mineral density or risk of fractures across the menopause transition: data from the Study of Women's Health Across the Nation.,2020,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+32307019,Is menopause still evolving? Evidence from a longitudinal study of multiethnic populations and its relevance to women's health.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32232722,The impact of breast cancer on physical activity from midlife to early older adulthood and predictors of change post-diagnosis.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32218936,Sexual frequency is associated with age of natural menopause: results from the Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+32198701,Association of Depression with Subclinical Coronary Atherosclerosis: a Systematic Review.,2021,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+32105350,Health-related quality of life among breast cancer survivors and noncancer controls over 10 years: Pink SWAN.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32083676,Is Midlife Metabolic Syndrome Associated With Cognitive Function Change? The Study of Women's Health Across the Nation.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32063568,Association between saturated fatty acid intake and depressive symptoms in midlife women: A prospective study.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+32063114,Cardiovascular Disease Risk Factor Burden During the Menopause Transition and Late Midlife Subclinical Vascular Disease: Does Race/Ethnicity Matter?,2020,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+32056759,Prospective association between trans fatty acid intake and depressive symptoms: Results from the study of women's health across the nation.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31969013,Arterial Stiffness Accelerates Within 1 Year of the Final Menstrual Period: The SWAN Heart Study.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31965189,Antimullerian Hormone and Impending Menopause in Late Reproductive Age: The Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31956850,"Calcium Supplement Use Is Associated With Less Bone Mineral Density Loss, But Does Not Lessen the Risk of Bone Fracture Across the Menopause Transition: Data From the Study of Women's Health Across the Nation.",2020,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+31934947,Trajectory analysis of sleep maintenance problems in midlife women before and after surgical menopause: the Study of Women's Health Across the Nation (SWAN).,2020,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+31841808,Longitudinal trends in perfluoroalkyl and polyfluoroalkyl substances among multiethnic midlife women from 1999 to 2011: The Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31840764,The Association between Fast Increase in Bone Turnover During the Menopause Transition and Subsequent Fracture.,2020,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+31837641,Associations between dietary oleic acid and linoleic acid and depressive symptoms in perimenopausal women: The Study of Women's Health Across the Nation.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31830000,"Gut permeability, inflammation, and bone density across the menopause transition.",2020,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+31794501,Daily luteal serum and urinary hormone profiles in the menopause transition: Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31794347,The Effect of Gestational Weight Gain Across Reproductive History on Maternal Body Mass Index in Midlife: The Study of Women's Health Across the Nation.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31732730,Impact of Chronic Medical Condition Development on Longitudinal Physical Function from Mid- to Early Late-Life: The Study of Women's Health Across the Nation.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31687759,Western Dietary Pattern Derived by Multiple Statistical Methods Is Prospectively Associated with Subclinical Carotid Atherosclerosis in Midlife Women.,2020,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+31641731,Factors Influencing Longitudinal Stair Climb Performance from Midlife to Early Late Life: The Study of Women's Health Across the Nation Chicago and Michigan Sites.,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31633180,"Does midlife aging impact women's sleep duration, continuity, and timing?: A longitudinal analysis from the Study of Women's Health Across the Nation.",2020,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+31630038,Association of dietary n-3 polyunsaturated fatty acids intake with depressive symptoms in midlife women.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31613958,Trabecular Bone Score Declines During the Menopause Transition: The Study of Women's Health Across the Nation (SWAN).,2020,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+31584147,Body mass index versus bioelectrical impedance analysis for classifying physical function impairment in a racially diverse cohort of midlife women: the Study of Women's Health Across the Nation (SWAN).,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31568098,The menopause transition and women's health at midlife: a progress report from the Study of Women's Health Across the Nation (SWAN).,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31567864,"Monthly variation of hot flashes, night sweats, and trouble sleeping: effect of season and proximity to the final menstrual period (FMP) in the SWAN Menstrual Calendar substudy.",2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31549141,Peripheral Nerve Impairment and Recurrent Falls Among Women: Results From the Study of Women's Health Across the Nation.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31499375,Associations of dietary trans fatty acid intake with depressive symptoms in midlife women.,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31473793,A bone resorption marker as predictor of rate of change in femoral neck size and strength during the menopause transition.,2019,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+31447292,The association between perceived discrimination in midlife and peripheral neuropathy in a population-based cohort of women: the Study of Women's Health Across the Nation.,2019,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+31446211,Pregnancy-related events associated with subclinical cardiovascular disease burden in late midlife: SWAN.,2019,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+31442329,Estradiol and Follicle-Stimulating Hormone as Predictors of Onset of Menopause Transition-Related Bone Loss in Pre- and Perimenopausal Women.,2019,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+31412129,Understanding Racial/Ethnic Disparities in Physical Performance in Midlife Women: Findings From SWAN (Study of Women's Health Across the Nation).,2020,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31411130,Factors Associated with Adherence to Preventive Breast Cancer Screenings among Middle-aged African American Women.,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31368755,"""The relationship between cumulative unfair treatment and intima media thickness and adventitial diameter: The moderating role of race in the study of women's health across the nation"": Correction to Peterson et al. (2016).",2019,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+31299023,Social Role-Related Stress and Social Role-Related Reward as Related to Subsequent Subclinical Cardiovascular Disease in a Longitudinal Study of Midlife Women: The Study of Women's Health Across the Nation.,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31291324,Prospective associations between beverage intake during the midlife and subclinical carotid atherosclerosis: The Study of Women's Health Across the Nation.,2019,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+31229931,Associations of α-carotenoid and β-carotenoid with depressive symptoms in late midlife women.,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+31129528,Determinants of per- and polyfluoroalkyl substances (PFAS) in midlife women: Evidence of racial/ethnic and geographic differences in PFAS exposure.,2019,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31103473,Urinary metals and metal mixtures in midlife women: The Study of Women's Health Across the Nation (SWAN).,2019,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31058288,Smoking Across the Menopausal Transition in a 10-Year Longitudinal Sample: The Role of Sex Hormones and Depressive Symptoms.,2020,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+31044185,Urinary N-Telopeptide as Predictor of Onset of Menopause-Related Bone Loss in Pre- and Perimenopausal Women.,2019,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+30977813,Greater Periaortic Fat Volume at Midlife Is Associated with Slower Gait Speed Later in Life in Women: The SWAN Cardiovascular Fat Ancillary Study.,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+30972777,Temporal increases in 25-hydroxyvitamin D in midlife women: Longitudinal results from the Study of Women's Health Across the Nation.,2019,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+30937949,Longitudinal course of vasomotor symptoms in perimenopausal migraineurs.,2019,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+30905255,Healthy Lifestyle During the Midlife Is Prospectively Associated With Less Subclinical Carotid Atherosclerosis: The Study of Women's Health Across the Nation.,2019,2,"Domain 2: cac, carotid, subclinical, progression",FALSE
+30843880,Changes in body composition and weight during the menopause transition.,2019,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+30841392,Associations between fine particulate matter and changes in lipids/lipoproteins among midlife women.,2019,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+30840919,Longitudinal changes in hip geometry in relation to the final menstrual period: Study of Women's Health Across the Nation (SWAN).,2019,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+30778560,"Racial/ethnic disparities in women's sleep duration, continuity, and quality, and their statistical mediators: Study of Women's Health Across the Nation.",2019,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+30730252,Residential Exposure to PM2.5 and Ozone and Progression of Subclinical Atherosclerosis Among Women Transitioning Through Menopause: The Study of Women's Health Across the Nation.,2019,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+30690517,Serum Sex Hormones and the Risk of Fracture Across the Menopausal Transition: Study of Women's Health Across the Nation.,2019,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+30586004,Menopausal hormone therapy trends before versus after 2002: impact of the Women's Health Initiative Study Results.,2018,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+30482079,Healthy Lifestyle During the Midlife Is Prospectively Associated With Less Subclinical Carotid Atherosclerosis: The Study of Women's Health Across the Nation.,2018,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+30358720,Correlates of sexual function among multi-ethnic middle-aged women: results from the Study of Women's Health Across the Nation (SWAN).,2018,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+30277919,The association of an alpha2C adrenoreceptor gene polymorphism with vasomotor symptoms in African American women.,2019,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+30247506,Everyday Discrimination Prospectively Predicts Blood Pressure Across 10 Years in Racially/Ethnically Diverse Midlife Women: Study of Women's Health Across the Nation.,2019,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+30236459,Five-year exposure to PM2.5 and ozone and subclinical atherosclerosis in late midlife women: The Study of Women's Health Across the Nation.,2019,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+30121897,Child maltreatment as a social determinant of midlife health-related quality of life in women: do psychosocial factors explain this association?,2018,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+30085049,"FSH, Bone Mass, Body Fat, and Biological Aging.",2018,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+30077316,Serial Studies in Subclinical Atherosclerosis During Menopausal Transition (from the Study of Women's Health Across the Nation).,2018,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+30005278,Depressive symptoms and adipokines in women: Study of women's health across the nation.,2018,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+29973982,"Perceived stress across the midlife: longitudinal changes among a diverse sample of women, the Study of Women's health Across the Nation (SWAN).",2018,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+29916947,Factors associated with developing vaginal dryness symptoms in women transitioning through menopause: a longitudinal study.,2018,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+29726885,Low grip strength predicts incident diabetes among mid-life women: the Michigan Study of Women's Health Across the Nation.,2018,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+29704912,Religiosity and faith in relation to time to metabolic syndrome for Hispanic women in a multiethnic cohort of women-Findings from the Study of Women's Health Across the Nation (SWAN).,2018,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+29622056,Psychosocial and health-related risk factors for depressive symptom trajectories among midlife women over 15 years: Study of Women's Health Across the Nation (SWAN).,2019,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+29596565,Midlife Predictors of Health-Related Quality of Life in Older Women.,2018,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+29333273,"Changes in androstenedione, dehydroepiandrosterone, testosterone, estradiol, and estrone over the menopausal transition.",2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+29326841,It is not just menopause: symptom clustering in the Study of Women's Health Across the Nation.,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+29288157,"History of Adverse Pregnancy Outcomes, Blood Pressure, and Subclinical Vascular Measures in Late Midlife: SWAN (Study of Women's Health Across the Nation).",2017,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+29229436,A Longitudinal Analysis of Allostatic Load among a Multi-Ethnic Sample of Midlife Women: Findings from the Study of Women's Health Across the Nation.,2018,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+29075805,The effect of insulin on bone mineral density among women with type 2 diabetes: a SWAN Pharmacoepidemiology study.,2018,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+29036550,"Perceived Interpersonal Discrimination and Older Women's Mental Health: Accumulation Across Domains, Attributions, and Time.",2018,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+28987336,Physical activity trajectories during midlife and subsequent risk of physical functioning decline in late mid-life: The Study of Women's Health Across the Nation (SWAN).,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+28944165,Sleep Trajectories Before and After the Final Menstrual Period in The Study of Women's Health Across the Nation (SWAN).,2017,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+28915061,Prevalence of Complementary and Alternative Medicine and Herbal Remedy Use in Hispanic and Non-Hispanic White Women: Results from the Study of Women's Health Across the Nation.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+28787363,Everyday Discrimination and Metabolic Syndrome Incidence in a Racially/Ethnically Diverse Sample: Study of Women's Health Across the Nation.,2018,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+28763399,Factors associated with reasons incontinent midlife women report for not seeking urinary incontinence treatment over 9 years across the menopausal transition.,2018,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+28763398,"Cardiovascular fat in women at midlife: effects of race, overall adiposity, and central adiposity. The SWAN Cardiovascular Fat Study.",2018,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+28753588,Chronic discrimination and bodily pain in a multiethnic cohort of midlife women in the Study of Women's Health Across the Nation.,2017,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+28732305,"Association between gaseous air pollutants and inflammatory, hemostatic and lipid markers in a cohort of midlife women.",2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+28660469,Childhood socioeconomic circumstances and depressive symptom burden across 15 years of follow-up during midlife: Study of Women's Health Across the Nation (SWAN).,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+28489293,The role of family history of depression and the menopausal transition in the development of major depression in midlife women: Study of women's health across the nation mental health study (SWAN MHS).,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+28368525,Menstrual Cycle Hormone Changes in Women Traversing Menopause: Study of Women's Health Across the Nation.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+28232324,Effect of Race and Ethnicity on Antihypertensive Medication Utilization Among Women in the United States: Study of Women's Health Across the Nation (SWAN).,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+28137715,Postmenopausal Women With Greater Paracardial Fat Have More Coronary Artery Calcification Than Premenopausal Women: The Study of Women's Health Across the Nation (SWAN) Cardiovascular Fat Ancillary Study.,2017,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+28127441,Chronic vulvar pain in a cohort of post-menopausal women: Atrophy or Vulvodynia?,2016,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+28045986,Evidence for Cognitive Aging in Midlife Women: Study of Women's Health Across the Nation.,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+28041592,"Visual impairment at baseline is associated with future poor physical functioning among middle-aged women: The Study of Women's Health Across the Nation, Michigan Site.",2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+27973745,Association between changes in oestradiol and follicle-stimulating hormone levels during the menopausal transition and risk of diabetes.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27958659,Differences in Trabecular Microstructure Between Black and White Women Assessed by Individual Trabecular Segmentation Analysis of HR-pQCT Images.,2017,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+27938940,Beverage Intake and Metabolic Syndrome Risk Over 14 Years: The Study of Women's Health Across the Nation.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27909203,Lipid Changes Around the Final Menstrual Period Predict Carotid Subclinical Disease in Postmenopausal Women.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27836812,Pain Severity in Relation to the Final Menstrual Period in a Prospective Multiethnic Observational Cohort: Results From the Study of Women's Health Across the Nation.,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+27835857,"Estimating the associations of apparent temperature and inflammatory, hemostatic, and lipid markers in a cohort of midlife women.",2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27801705,Change in sexual functioning over the menopausal transition: results from the Study of Women's Health Across the Nation.,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+27801534,Race/ethnic comparisons of waist-to-height ratio for cardiometabolic screening: The study of women's health across the nation.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27633615,A Multimethod Investigation Into Physical Activity in Midlife Women.,2016,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+27455356,Patterns of depressive disorders across 13 years and their determinants among midlife women: SWAN mental health study.,2016,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+27322414,Urinary N-telopeptide and Rate of Bone Loss Over the Menopause Transition and Early Postmenopause.,2016,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+27749738,Longitudinal analysis of changes in weight and waist circumference in relation to incident vasomotor symptoms: the Study of Women's Health Across the Nation (SWAN).,2017,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+27680016,Menopausal vasomotor symptoms and incident breast cancer risk in the Study of Women's Health Across the Nation.,2016,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+27676632,Duration of the menopausal transition is longer in women with young age at onset: the multiethnic Study of Women's Health Across the Nation.,2017,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27669444,The Effect of a Healthy Lifestyle on Future Physical Functioning in Midlife Women.,2017,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+27657693,Prevalent and Incident Vertebral Deformities in Midlife Women: Results from the Study of Women's Health Across the Nation (SWAN).,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27578129,Increase HDL-C level over the menopausal transition is associated with greater atherosclerotic progression.,2016,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+27445196,Environmental tobacco smoke and risk of late-diagnosis incident fibroids in the Study of Women's Health across the Nation (SWAN).,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27404767,Hot Flash Frequency and Blood Pressure: Data from the Study of Women's Health Across the Nation.,2016,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+27404029,Characterizing the trajectories of vasomotor symptoms across the menopausal transition.,2016,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+27336357,Quantifying the Balance Between Total Bone Formation and Total Bone Resorption: An Index of Net Bone Formation.,2016,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+27294327,Triglyceride Levels and Fracture Risk in Midlife Women: Study of Women's Health Across the Nation (SWAN).,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27289291,"Inflammatory/Hemostatic Biomarkers and Coronary Artery Calcium Progression in Women at Midlife (from the Study of Women's Health Across the Nation, Heart Study).",2016,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+27251885,Sex hormones in women with and without migraine: Evidence of migraine-specific hormone profiles.,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27243136,Association Between Insulin Resistance and Bone Structure in Nondiabetic Postmenopausal Women.,2016,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+27138181,Relation of Persistent Depressive Symptoms to Coronary Artery Calcification in Women Aged 46 to 59 Years.,2016,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+27135720,The Association of Inflammation with Premenstrual Symptoms.,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27091639,Bedtime Variability and Metabolic Health in Midlife Women: The SWAN Sleep Study.,2016,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+27028503,Medication Use by Race and Ethnicity in Women Transitioning Through the Menopause: A Study of Women's Health Across the Nation Drug Epidemiology Study.,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+27023861,Inflammatory/hemostatic biomarkers and coronary artery calcification in midlife women of African-American and White race/ethnicity: the Study of Women's Health Across the Nation (SWAN) heart study.,2016,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+27018722,The relationship between cumulative unfair treatment and intima media thickness and adventitial diameter: The moderating role of race in the study of women's health across the nation.,2016,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+26926957,Life-Course Socioeconomic Status and Metabolic Syndrome Among Midlife Women.,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26905421,FMR1 CGG Repeats: Reference Levels and Race-Ethnic Variation in Women With Normal Fertility (Study of Women's Health Across the Nation).,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26886885,The longitudinal relation of stress during the menopausal transition to fibrinogen concentrations: results from the Study of Women's Health Across the Nation.,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26716815,"Childhood Socioeconomic Circumstances, Inflammation, and Hemostasis Among Midlife Women: Study of Women's Health Across the Nation.",2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26670127,Circulating Sex Hormones and Risk of Uterine Fibroids: Study of Women's Health Across the Nation (SWAN).,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26600256,Long- and Short-term Exposure to Air Pollution and Inflammatory/Hemostatic Markers in Midlife Women.,2016,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26578657,Trajectories of Vasomotor Symptoms and Carotid Intima Media Thickness in the Study of Women's Health Across the Nation.,2016,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+26523990,Complement proteins and arterial calcification in middle aged women: Cross-sectional effect of cardiovascular fat. The SWAN Cardiovascular Fat Ancillary Study.,2015,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+26523609,Abdominal adiposity change in white and black midlife women: The study of women's health across the nation.,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26518120,Is self-reported physical functioning associated with incident cardiometabolic abnormalities or the metabolic syndrome?,2016,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+26449354,Bone mineral density changes among women initiating blood pressure lowering drugs: a SWAN cohort study.,2016,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+26385249,Trajectories of estradiol and follicle-stimulating hormone over the menopause transition and early markers of atherosclerosis after menopause.,2016,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+26382317,Health-related quality of life in midlife women in Qatar: relation to arthritis and symptoms of joint pain.,2016,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+26302979,Higher Leptin and Adiponectin Concentrations Predict Poorer Performance-based Physical Functioning in Midlife Women: the Michigan Study of Women's Health Across the Nation.,2016,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+26176800,"Cardiovascular Fat, Menopause, and Sex Hormones in Women: The SWAN Cardiovascular Fat Ancillary Study.",2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+26039965,Chronic Stress is Prospectively Associated with Sleep in Midlife Women: The SWAN Sleep Study.,2015,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+25932834,Factors associated with seeking treatment for urinary incontinence during the menopausal transition.,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25886828,"A Longitudinal Investigation of Race, Socioeconomic Status, and Psychosocial Mediators of Allostatic Load in Midlife Women: Findings From the Study of Women's Health Across the Nation.",2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25803669,Associations between body mass index and sexual functioning in midlife women: the Study of Women's Health Across the Nation.,2015,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+25714237,Consistent ovulation may not be enough to make women healthy when approaching menopause: an update from the Study of Women's Health Across the Nation.,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25706182,An actigraphy study of sleep and pain in midlife women: the Study of Women's Health Across the Nation Sleep Study.,2015,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+25705320,Moderate wine consumption is associated with lower hemostatic and inflammatory risk factors over 8 years: The study of women's health across the nation (SWAN).,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25686030,Duration of menopausal vasomotor symptoms over the menopause transition.,2015,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+25621768,"Symptoms of depressed mood, disturbed sleep, and sexual problems in midlife women: cross-sectional data from the Study of Women's Health Across the Nation.",2015,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+25604866,Association between high-sensitivity C-reactive protein (hsCRP) and change in mammographic density over time in the SWAN mammographic density subcohort.,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25577747,Simple physical performance measures and vascular health in late midlife women: the Study of Women's Health across the nation.,2015,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+25557490,Covariation of change in bioavailable testosterone and adiposity in midlife women.,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25548857,Reproductive history and chronic hepatic steatosis in the Michigan Study of Women's Health Across the Nation.,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25528102,"Parity, lactation, bone strength, and 16-year fracture risk in adult women: findings from the Study of Women's Health Across the Nation (SWAN).",2015,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+25490602,Meal preparation and cleanup time and cardiometabolic risk over 14 years in the Study of Women's Health Across the Nation (SWAN).,2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+25466300,Associations between aspects of pain and cognitive performance and the contribution of depressive symptoms in mid-life women: a cross-sectional analysis.,2015,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+25427423,"Chronic pain, body mass index and cardiovascular disease risk factors: tests of moderation, unique and shared relationships in the Study of Women's Health Across the Nation (SWAN).",2015,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+25417760,Risk factors for major depression during midlife among a community sample of women with and without prior major depression: are they the same or different?,2015,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+25412335,Masturbation frequency and sexual function domains are associated with serum reproductive hormone levels across the menopausal transition.,2015,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+25353709,Sleep hygiene behaviors among midlife women with insomnia or sleep-disordered breathing: the SWAN sleep study.,2014,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+25342861,Everyday Discrimination Prospectively Predicts Inflammation Across 7-Years in Racially Diverse Midlife Women: Study of Women's Health Across the Nation.,2014,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+25156141,Bone mineral density changes among women initiating proton pump inhibitors or H2 receptor antagonists: a SWAN cohort study.,2015,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+25116050,Dietary isoflavones and bone mineral density during midlife and the menopausal transition: cross-sectional and longitudinal results from the Study of Women's Health Across the Nation Phytoestrogen Study.,2015,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+25034715,Abuse and subclinical cardiovascular disease among midlife women: the study of women's health across the nation.,2014,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+25026113,"Influence of race/ethnicity, body mass index, and proximity of menopause on menstrual cycle patterns in the menopausal transition: the Study of Women's Health Across the Nation.",2015,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24986773,Pleiotropic effects of obesity on fracture risk: the Study of Women's Health Across the Nation.,2014,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+24952069,Does family history of depression predict major depression in midlife women? Study of Women's Health Across the Nation Mental Health Study (SWAN MHS).,2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24852168,Lipoprotein subclasses and endogenous sex hormones in women at midlife.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24846534,Progression from metabolically benign to at-risk obesity in perimenopausal women: a longitudinal analysis of study of women across the nation (SWAN).,2014,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+24845393,Actigraphy-defined measures of sleep and movement across the menstrual cycle in midlife menstruating women: Study of Women's Health Across the Nation Sleep Study.,2015,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+24735184,Bleeding patterns during the menopausal transition in the multi-ethnic Study of Women's Health Across the Nation (SWAN): a prospective cohort study.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24623160,Body image satisfaction and depression in midlife women: the Study of Women's Health Across the Nation (SWAN).,2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24578209,Low socioeconomic status over 12 years and subclinical cardiovascular disease: the study of women's health across the nation.,2014,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+24517154,Hyperandrogenic oligomenorrhea and metabolic risks across menopausal transition.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24504101,Socioeconomic status in relation to incident fracture risk in the Study of Women's Health Across the Nation.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24497659,Acculturation and sleep among a multiethnic sample of women: the Study of Women's Health Across the Nation (SWAN).,2014,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+24491454,Daily physical activity and hot flashes in the Study of Women's Health Across the Nation (SWAN) Flashes Study.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24467997,Do anxiety symptoms predict major depressive disorder in midlife women? The Study of Women's Health Across the Nation (SWAN) Mental Health Study (MHS).,2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24465026,"Longitudinal assessment of the menopausal transition, endogenous sex hormones, and perception of physical functioning: the Study of Women's Health Across the Nation.",2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24462272,"Employment status, depressive symptoms, and waist circumference change in midlife women: the Study of Women's Health Across the Nation (SWAN).",2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24360982,Sleep and risk for high blood pressure and hypertension in midlife women: the SWAN (Study of Women's Health Across the Nation) Sleep Study.,2014,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+24261647,Perceived discrimination is associated with reduced breast and cervical cancer screening: the Study of Women's Health Across the Nation (SWAN).,2014,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+24212978,The relationship of violence and traumatic stress to changes in weight and waist circumference: longitudinal analyses from the study of women's health across the nation.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24212137,Prospective associations between inflammatory and hemostatic markers and physical functioning limitations in mid-life women: Longitudinal results of the Study of Women's Health Across the Nation (SWAN).,2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24125410,"Menopause, complement, and hemostatic markers in women at midlife: the Study of Women's Health Across the Nation.",2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+24076375,Child abuse is related to inflammation in mid-life women: role of obesity.,2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+24043549,A 24-hour approach to the study of health behaviors: temporal relationships between waking health behaviors and sleep.,2014,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+24001746,Rates of bone loss among women initiating antidepressant medication use in midlife.,2013,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+23997360,"Consistently high sports/exercise activity is associated with better sleep quality, continuity and depth in midlife women: the SWAN sleep study.",2013,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+23896181,Monofilament insensitivity and small and large nerve fiber symptoms in impaired fasting glucose.,2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23880794,How well do different measurement modalities estimate the number of vasomotor symptoms? Findings from the Study of Women's Health Across the Nation FLASHES Study.,2014,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+23813123,Correlates of 15-year maintenance of physical activity in middle-aged women.,2014,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23812598,Physical activity as determinant of femoral neck strength relative to load in adult women: findings from the hip strength across the menopause transition study.,2014,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+23788671,Factors related to age at natural menopause: longitudinal analyses from SWAN.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23784907,Liver fat and SHBG affect insulin resistance in midlife women: the Study of Women's Health Across the Nation (SWAN).,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23755948,"Adipokines, adiposity, and vasomotor symptoms during the menopause transition: findings from the Study of Women's Health Across the Nation.",2013,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+23694761,"Relationship of race-ethnicity, body mass index, and economic strain with longitudinal self-report of physical functioning: the Study of Women's Health Across the Nation.",2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23684687,Changes in cardiovascular risk factors by hysterectomy status with and without oophorectomy: Study of Women's Health Across the Nation.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23676712,Prevalence and correlates of disability in a late middle-aged population of women.,2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23659546,Racial/ethnic differences in hepatic steatosis in a population-based cohort of post-menopausal women: the Michigan Study of Women's Health Across the Nation.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23615639,Does risk for anxiety increase during the menopausal transition? Study of women's health across the nation.,2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23592672,Associations of testosterone and sex hormone binding globulin with adipose tissue hormones in midlife women.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23576710,The relationship between longitudinal serum leptin measures and measures of magnetic resonance imaging-assessed knee joint damage in a population of mid-life women.,2014,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23572415,Differences in skeletal microarchitecture and strength in African-American and white women.,2013,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+23533245,Predicting the timeline to the final menstrual period: the study of women's health across the nation.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23531686,Physical activity and sleep among midlife women with vasomotor symptoms.,2013,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+23524038,Performance-based physical functioning and peripheral neuropathy in a population-based cohort of women at midlife.,2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23505171,Sleep duration and weight change in midlife women: the SWAN sleep study.,2013,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+23481122,Classifying menopause stage by menstrual calendars and annual interviews: need for improved questionnaires.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23456822,"C-reactive protein, bone strength, and nine-year fracture risk: data from the Study of Women's Health Across the Nation (SWAN).",2013,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+23443812,Serum sex steroid levels and longitudinal changes in bone density in relation to the final menstrual period.,2013,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+23436075,Trajectories of femoral neck strength in relation to the final menstrual period in a multi-ethnic cohort.,2013,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+23435028,Phytoestrogen and fiber intakes in relation to incident vasomotor symptoms: results from the Study of Women's Health Across the Nation.,2013,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+23352690,"Menopause, atherosclerosis, and coronary artery disease.",2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23352420,Do reports of sleep disturbance relate to coronary and aortic calcification in healthy middle-aged women?: Study of women's health across the nation.,2013,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+23281224,Association of leptin levels with radiographic knee osteoarthritis among a cohort of midlife women.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23161607,Serial anthropometry predicts peripheral nerve dysfunction in a community cohort.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23096248,Relationship between dietary phytoestrogens and development of urinary incontinence in midlife women.,2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+23088174,Chronic exposure to everyday discrimination and sleep in a multiethnic sample of middle-aged women.,2013,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+23015468,How well does the body adiposity index capture adiposity change in midlife women?: The SWAN fat patterning study.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+23007036,Body mass index following natural menopause and hysterectomy with and without bilateral oophorectomy.,2013,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22990755,Progression rates of carotid intima-media thickness and adventitial diameter during the menopausal transition.,2013,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+22981430,Endogenous sex hormones impact the progression of subclinical atherosclerosis in women during the menopausal transition.,2012,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+22930404,Psychosocial features associated with lifetime comorbidity of major depression and anxiety disorders among a community sample of mid-life women: the SWAN mental health study.,2012,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22851488,Vasomotor symptoms and insulin resistance in the study of women's health across the nation.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22850443,Bone resorption and fracture across the menopausal transition: the Study of Women's Health Across the Nation.,2012,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+22810918,A comparison of DXA and CT based methods for estimating the strength of the femoral neck in post-menopausal women.,2013,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+22775234,Childhood physical abuse is associated with incident metabolic syndrome in mid-life women.,2013,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22760087,The association of menopause status with physical function: the Study of Women's Health Across the Nation.,2012,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22723312,Do changes in sex steroid hormones precede or follow increases in body weight during the menopause transition? Results from the Study of Women's Health Across the Nation.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22659249,Trajectory clustering of estradiol and follicle-stimulating hormone during the menopausal transition among women in the Study of Women's Health across the Nation (SWAN).,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22566580,Lifetime history of depression and anxiety disorders as a predictor of quality of life in midlife women in the absence of current illness episodes.,2012,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22525904,Mood symptoms after natural menopause and hysterectomy with and without bilateral oophorectomy among women in midlife.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22510936,Association of past and recent major depression and menstrual characteristics in midlife: Study of Women's Health Across the Nation.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22466350,Relative contributions of oligomenorrhea and hyperandrogenemia to the risk of metabolic syndrome in midlife women.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22444780,Race-ethnic differences in adipokine levels: the Study of Women's Health Across the Nation (SWAN).,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22433339,Vasomotor symptoms and lipid profiles in women transitioning through menopause.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22415568,Are vasomotor symptoms associated with sleep characteristics among symptomatic midlife women? Comparisons of self-report and objective measures.,2012,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+22415567,Dietary phytoestrogen intakes and cognitive function during the menopausal transition: results from the Study of Women's Health Across the Nation Phytoestrogen Study.,2012,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22415563,Androstenediol complements estrogenic bioactivity during the menopausal transition.,2012,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22360697,"Role stress, role reward, and mental health in a multiethnic sample of midlife women: results from the Study of Women's Health Across the Nation (SWAN).",2012,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22334814,Sources of variability in epidemiological studies of sleep using repeated nights of in-home polysomnography: SWAN Sleep Study.,2012,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+22306556,Racial/ethnic differences in responses to the everyday discrimination scale: a differential item functioning analysis.,2012,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+22211850,"Development of an updated phytoestrogen database for use with the SWAN food frequency questionnaire: intakes and food sources in a community-based, multiethnic cohort study.",2012,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+22043127,Evaluation of the association of menopausal status with delta and beta EEG activity during sleep.,2011,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+22037218,Racial differences in the association between carotid plaque and aortic and coronary artery calcification among women transitioning through menopause.,2012,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21982676,"Regarding ""Depressive symptoms are related to progression of coronary calcium in midlife women: the Study of Women's Health Across the Nation (SWAN) Heart Study"".",2011,2,"Domain 2: cac, carotid, subclinical, progression",FALSE
+21976317,Bone mineral density loss in relation to the final menstrual period in a multiethnic cohort: results from the Study of Women's Health Across the Nation (SWAN).,2012,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+21961725,The Study of Women's Health Across the Nation (SWAN) .,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",FALSE
+21961723,Mood and menopause: findings from the Study of Women's Health Across the Nation (SWAN) over 10 years.,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21961722,Menstruation and the menopausal transition.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21961720,Sleep during the perimenopause: a SWAN story.,2011,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+21961717,Bone and the perimenopause.,2011,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+21961716,Vasomotor symptoms and menopause: findings from the Study of Women's Health across the Nation.,2011,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+21961714,Adrenal androgens and the menopausal transition.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21961713,Reproductive hormones and the menopause transition.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21961710,The SWAN song: Study of Women's Health Across the Nation's recurring themes.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21958690,Association of ethnicity with involuntary childlessness and perceived reasons for infertility: baseline data from the Study of Women's Health Across the Nation (SWAN).,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21927926,Ethnic differences in composite indices of femoral neck strength.,2012,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+21926929,Are vasomotor symptoms associated with alterations in hemostatic and inflammatory markers? Findings from the Study of Women's Health Across the Nation.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21900850,Negative affect and vasomotor symptoms in the Study of Women's Health Across the Nation Daily Hormone Study.,2011,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+21892111,C-reactive protein is associated with aortic stiffness in a cohort of African American and white women transitioning through menopause.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21886360,Relationships between menopausal and mood symptoms and EEG sleep measures in a multi-ethnic sample of middle-aged women: the SWAN sleep study.,2011,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+21871743,Methods used in cross-cultural comparisons of vasomotor symptoms and their determinants.,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21840658,Methods used in cross-cultural comparisons of sexual symptoms and their determinants.,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21840655,Methods used in cross-cultural comparisons of psychological symptoms and their determinants.,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21785372,Serum estradiol levels are not associated with urinary incontinence in midlife women transitioning through menopause.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21778220,Adiposity and hot flashes in midlife women: a modifying role of age.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21720436,Breastfeeding and subsequent maternal visceral adiposity.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21641367,Depressive symptoms are related to progression of coronary calcium in midlife women: the Study of Women's Health Across the Nation (SWAN) Heart Study.,2011,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21490691,African-American ethnicity and cardiovascular risk factors are related to aortic pulse-wave velocity progression.,2011,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21471825,Effect modification of obesity on associations between endogenous steroid sex hormones and arterial calcification in women at midlife.,2011,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21414245,Neighbourhood immigrant acculturation and diet among Hispanic female residents of New York City.,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21376277,A method to estimate off-schedule observations in a longitudinal study.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21354991,Self-reported experiences of discrimination and visceral fat in middle-aged African-American and Caucasian women.,2011,4,"Domain 4: discrimination, perceived, experiences, racial",TRUE
+21310415,"Burden of subclinical cardiovascular disease in ""metabolically benign"" and ""at-risk"" overweight and obese women: the Study of Women's Health Across the Nation (SWAN).",2011,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21306662,Major depression during and after the menopausal transition: Study of Women's Health Across the Nation (SWAN).,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21305828,"Cardiovascular risk factor variation within a Hispanic cohort: SWAN, the Study of Women's Health Across the Nation.",2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21266638,"Associations of anatomical measures from MRI with radiographically defined knee osteoarthritis score, pain, and physical functioning.",2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21242820,Hot flashes and carotid intima media thickness among midlife women.,2011,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21228728,Negative attitudes and affect do not predict elective hysterectomy: a prospective analysis from the Study of Women's Health Across the Nation.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21198743,Genetic polymorphisms and obesity influence estradiol decline during the menopause.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+22639493,Moderate Wine Consumption Inhibits the Development of the Metabolic Syndrome: The Study of Women's Health Across the Nation (SWAN).,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21178790,Circulating dehydroepiandrosterone sulfate levels in women who underwent bilateral salpingo-oophorectomy during the menopausal transition.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21175393,Gonadal hormones and cognitive aging: a midlife perspective.,2011,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+21159842,Change in follicle-stimulating hormone and estradiol across the menopausal transition: effect of age at the final menstrual period.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+21120127,Are inflammatory and coagulation biomarkers related to sleep characteristics in mid-life women?: Study of Women's Health across the Nation sleep study.,2010,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+21107300,"Lipids, menopause, and early atherosclerosis in Study of Women's Health Across the Nation Heart women.",2011,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+21105041,Metabolic syndrome and mammographic density: the Study of Women's Health Across the Nation.,2011,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20878774,Association of menopausal vasomotor symptoms with increased bone turnover during the menopausal transition.,2011,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+20841562,Cortisol and depressive symptoms in a population-based cohort of midlife women.,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20692082,Physical functioning among mid-life women: associations with trajectory of depressive symptoms.,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20668281,Recurrent major depression predicts progression of coronary calcification in healthy women: Study of Women's Health Across the Nation.,2010,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+20658126,Menopausal bone changes and incident fractures in diabetic women: a cohort study.,2011,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+20530009,Longitudinal change in reproductive hormones and depressive symptoms across the menopausal transition: results from the Study of Women's Health Across the Nation (SWAN).,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20516263,"Dietary glycemic load, glycemic index, and associated factors in a multiethnic cohort of midlife women.",2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20442205,Menopause-associated symptoms and cognitive performance: results from the study of women's health across the nation.,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20436780,Do US Black Women Experience Stress-Related Accelerated Biological Aging?: A Novel Theory and First Population-Based Test of Black-White Differences in Telomere Length.,2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20427327,Reproductive hormones and obesity: 9 years of observation from the Study of Women's Health Across the Nation.,2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20392219,Bone loss across the menopausal transition.,2010,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+20354074,Physical activity and change in mammographic density: the Study of Women's Health Across the Nation.,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20210631,"The relationship between psychosocial status, acculturation and country of origin in mid-life Hispanic women: data from the Study of Women's Health Across the Nation (SWAN).",2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20168098,Association between menopausal transition stages and developing urinary incontinence.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20136411,"Menopausal symptoms within a Hispanic cohort: SWAN, the Study of Women's Health Across the Nation.",2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+20082925,Are changes in cardiovascular disease risk factors in midlife women due to chronological aging or to the menopausal transition?,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20064904,Childhood abuse is associated with adiposity in midlife women: possible pathways through trait anger and reproductive hormones.,2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+20007906,Qualifications of Physicians Performing Hysterectomy: The Study of Women's Health Across the Nation.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19915951,"Active, but not passive cigarette smoking was inversely associated with mammographic density.",2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19876007,Physical activity and reduced intra-abdominal fat in midlife African-American and white women.,2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19828933,Cognitive functioning is related to physical functioning in a longitudinal study of women at midlife.,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19819323,Physical functioning related to C-reactive protein and fibrinogen levels in mid-life women.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19713542,"Hopelessness, depressive symptoms, and carotid atherosclerosis in women: the Study of Women's Health Across the Nation (SWAN) heart study.",2009,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+19696765,Testosterone and visceral fat in midlife women: the Study of Women's Health Across the Nation (SWAN) fat patterning study.,2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19683568,Are there bi-directional associations between depressive symptoms and C-reactive protein in mid-life women?,2010,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19675142,Gains in body fat and vasomotor symptom reporting over the menopausal transition: the study of women's health across the nation.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19662465,"Daily spiritual experiences, systolic blood pressure, and hypertension among midlife women in SWAN.",2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19630952,Sex steroid metabolism polymorphisms and mammographic density in pre- and early perimenopausal women.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19592520,"Hostility is associated with visceral, but not subcutaneous, fat in middle-aged African American and white women.",2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19563924,Longitudinal changes of serum COMP and urinary CTX-II predict X-ray defined knee osteoarthritis severity and stiffness in women.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19318218,"Impact of hormone therapy for women aged 35 to 65 years, from contraception to hormone replacement.",2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19470968,Effects of the menopause transition and hormone use on cognitive performance in midlife women.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19436224,Change in health-related quality of life over the menopausal transition in a multiethnic cohort of middle-aged women: Study of Women's Health Across the Nation.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19398501,Depressive symptoms and increased visceral fat in middle-aged women.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19357323,Lipid changes during the menopause transition in relation to age and weight: the Study of Women's Health Across the Nation.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19317380,Psychometric evaluation of the Insomnia Symptom Questionnaire: a self-report measure to identify chronic insomnia.,2009,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+19245351,Menopausal symptoms and ethnicity: the Study of Women's Health Across the Nation.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19212271,Longitudinal changes in sexual functioning as women transition through menopause: results from the Study of Women's Health Across the Nation.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19211956,The impact of physical activity level on SF-36 role-physical and bodily pain indices in midlife women.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19188528,Lifetime history of major depression predicts the development of the metabolic syndrome in middle-aged women.,2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+19185860,Association of adolescent obesity and lifetime nulliparity--the Study of Women's Health Across the Nation (SWAN).,2010,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19116797,Marital happiness and sleep disturbances in a multi-ethnic sample of middle-aged women.,2009,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+19065651,Longitudinal association of anthropometry with mammographic breast density in the Study of Women's Health Across the Nation.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19046236,Education eclipses ethnicity in predicting the development of the metabolic syndrome in different ethnic groups in midlife: the Study of Women's Health Across the Nation (SWAN).,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+19002017,Presence of vasomotor symptoms is associated with lower bone mineral density: a longitudinal analysis.,2009,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+18971793,Relative androgen excess during the menopausal transition predicts incident metabolic syndrome in midlife women: study of Women's Health Across the Nation.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18955645,"Levels of sex steroid and cardiovascular disease measures in premenopausal and hormone-treated women at midlife: implications for the ""timing hypothesis"".",2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18953064,Sensitivity and specificity of recalled vasomotor symptoms in a multiethnic cohort.,2008,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+18853931,Sex steroid hormone profiles are related to sleep measures from polysomnography and the Pittsburgh Sleep Quality Index.,2008,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+18792428,Use of complementary and alternative medicine during the menopause transition: longitudinal results from the Study of Women's Health Across the Nation.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",FALSE
+18765392,Hot flashes and subclinical cardiovascular disease: findings from the Study of Women's Health Across the Nation Heart Study.,2008,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+18663170,Menopause and the metabolic syndrome: the Study of Women's Health Across the Nation.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18652093,Sleep disturbance during the menopausal transition in a multi-ethnic community sample of women.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18521049,Beyond frequency: who is most bothered by vasomotor symptoms?,2008,8,"Domain 8: sleep, duration, actigraphy, disturbances",TRUE
+18499105,Longitudinal changes in hypothalamic and ovarian function in perimenopausal women with anovulatory cycles: relationship with vasomotor symptoms.,2009,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18467950,The impact of hormone therapy on health-related quality of life: longitudinal results from the Study of Women's Health Across the Nation.,2008,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+18403563,Ethnic differences in C-reactive protein concentrations.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18310370,Factors associated with worsening and improving urinary incontinence across the menopausal transition.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18285413,Factors related to declining luteal function in women during the menopausal transition.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18257140,Childhood abuse or neglect is associated with increased vasomotor symptom reporting among midlife women.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18250080,Dietary intake related to prevalent functional limitations in midlife women.,2008,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+18243177,"Adenomyosis a variant, not a disease? Evidence from hysterectomized menopausal women in the Study of Women's Health Across the Nation (SWAN).",2009,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+18209686,Associations of endogenous sex hormones with the vasculature in menopausal women: the Study of Women's Health Across the Nation (SWAN).,2008,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+18204407,Abdominal adiposity and hot flashes among midlife women.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18191796,"Duration of lactation is associated with lower prevalence of the metabolic syndrome in midlife--SWAN, the study of women's health across the nation.",2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18160467,Bone mineral density changes during the menopause transition in a multiethnic cohort of women.,2008,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+18090037,Use of complementary and alternative medicine during the menopause transition: longitudinal results from the Study of Women's Health Across the Nation.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+18089597,Relation of daily urinary hormone patterns to vasomotor symptoms in a racially/ethnically diverse sample of midlife women: study of women's health across the nation.,2007,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+18066689,Menstrual and reproductive factors in relation to mammographic density: the Study of Women's Health Across the Nation (SWAN).,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17980014,Oestrogen metabolites in relation to isoprostanes as a measure of oxidative stress.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17951478,"Dietary fat subgroups, zinc, and vegetable components are related to urine F2a-isoprostane concentration, a measure of oxidative stress, in midlife women.",2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17881385,Adiposity and reporting of vasomotor symptoms among midlife women: the study of women's health across the nation.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17688488,Two-stage functional mixed models for evaluating the effect of longitudinal covariate profiles on a scalar outcome.,2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17681300,The ReSTAGE Collaboration: defining optimal bleeding criteria for onset of early menopausal transition.,2008,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17627400,Diet and lifestyle factors associated with premenstrual symptoms in a racially diverse community sample: Study of Women's Health Across the Nation (SWAN).,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17600454,Prevalence and selected correlates of eating disorder symptoms among a multiethnic community sample of midlife women.,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17532645,The association between mammographic breast density and bone mineral density in the study of women's health across the nation.,2007,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+17453859,Recommendations from a multi-study evaluation of proposed criteria for staging reproductive aging.,2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17439378,Menopause transition stage and endogenous estradiol and follicle-stimulating hormone levels are not related to cognitive performance: cross-sectional results from the study of women's health across the nation (SWAN).,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17414171,Mammographic density in a multiethnic cohort.,2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17331589,Depressive symptoms during the menopausal transition: the Study of Women's Health Across the Nation (SWAN).,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17327812,Cross-sectional analysis of specific complementary and alternative medicine (CAM) use by racial/ethnic group and menopausal status: the Study of Women's Health Across the Nation (SWAN).,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17327811,Disentangling cultural issues in quality of life data.,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17303963,"Helping midlife women predict the onset of the final menses: SWAN, the Study of Women's Health Across the Nation.",2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17289830,Associations between depressive symptoms and inflammatory/hemostatic markers in women during the menopausal transition.,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17279061,The roles of biologic and nonbiologic factors in cultural differences in vasomotor symptoms measured by surveys.,2007,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+17267418,Characterizing daily urinary hormone profiles for women at midlife using functional data analysis.,2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17199459,Comparison of SWAN and WISE menopausal status classification algorithms.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17192296,Changes in body composition in women over six years at midlife: ovarian and chronological aging.,2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17132698,Factors associated with prevalent and incident urinary incontinence in a cohort of midlife women: a longitudinal analysis of data: study of women's health across the nation.,2007,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+17070176,Cynical hostility and carotid atherosclerosis in African American and white women: the Study of Women's Health Across the Nation (SWAN) Heart Study.,2006,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+17002567,Volumetric BMD and vascular calcification in middle-aged women: the Study of Women's Health Across the Nation.,2006,2,"Domain 2: cac, carotid, subclinical, progression",TRUE
+16949394,Cognitive functioning and sex steroid hormone gene polymorphisms in women at midlife.,2006,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16949393,Sex steroid hormone gene polymorphisms and depressive symptoms in women at midlife.,2006,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16949392,The association of bone mineral density with estrogen receptor gene polymorphisms.,2006,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+16949391,The association of genetic polymorphisms in sex hormone biosynthesis and action with insulin sensitivity and diabetes mellitus in women at midlife.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16949390,"Sex steroid hormone polymorphisms, high-density lipoprotein cholesterol, and apolipoprotein A-1 from the Study of Women's Health Across the Nation (SWAN).",2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16949389,Vasomotor symptom prevalence is associated with polymorphisms in sex steroid-metabolizing enzymes and receptors.,2006,1,"Domain 1: vms, frequent, vasomotor, symptoms",TRUE
+16949388,CYP1A1 and CYP1B1 polymorphisms and their association with estradiol and estrogen metabolites in women who are premenopausal and perimenopausal.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16949386,Characterizing variation in sex steroid hormone pathway genes in women of 4 races/ethnicities: the Study of Women's Health Across the Nation (SWAN).,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16949385,"Aromatase gene (CYP 19) polymorphisms and endogenous androgen concentrations in a multiracial/multiethnic, multisite study of women at midlife.",2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16949384,Endogenous estradiol and its association with estrogen receptor gene polymorphisms.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16949383,Sex steroid hormone pathway genes and health-related measures in women of 4 races/ethnicities: the Study of Women's Health Across the Nation (SWAN).,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16849878,Application of national screening criteria for blood pressure and cholesterol to perimenopausal women: prevalence of hypertension and hypercholesterolemia in the Study of Women's Health Across the Nation.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16837884,Dietary genistein intake and cognitive performance in a multiethnic cohort of midlife women.,2006,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16835283,Low bone mineral density in the early menopausal transition: role for ovulatory function.,2006,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+16777930,The relation between perceived unfair treatment and blood pressure in a racially/ethnically diverse sample of women.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16776878,Validation of a food frequency questionnaire for Hispanics.,2006,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16772350,Evaluation of four proposed bleeding criteria for the onset of late menopausal transition.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16735636,Longitudinal analysis of the association between vasomotor symptoms and race/ethnicity across the menopausal transition: study of women's health across the nation.,2006,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16720656,The value of follicle-stimulating hormone concentration and clinical findings as markers of the late menopausal transition.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16702326,Selected diet and lifestyle factors are associated with estrogen metabolites in a multiracial/ethnic population of women.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16691084,Musculoskeletal pain and menopausal status.,2006,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16492698,Relation of cardiovascular risk factors in women approaching menopause to menstrual cycle characteristics and reproductive hormones in the follicular and luteal phases.,2006,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16414323,"Symptoms during the perimenopause: prevalence, severity, trajectory, and significance in women's lives.",2005,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16414322,The menopausal transition.,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16403818,Hormone predictors of bone mineral density changes during the menopausal transition.,2006,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+16287766,Relationship of day-to-day reproductive hormone levels to sleep in midlife women.,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16144985,Ethnic variation in hypertension among premenopausal and perimenopausal women: Study of Women's Health Across the Nation.,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16144949,The relationship of longitudinal change in reproductive hormones and vasomotor symptoms during the menopausal transition.,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16105968,Hemostatic factors and estrogen during the menopausal transition.,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16091487,Androgens are associated with hemostatic and inflammatory factors among women at the mid-life.,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+16037753,Correlates of sexual function among multi-ethnic middle-aged women: results from the Study of Women's Health Across the Nation (SWAN).,2005,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+16015138,"Menopause, physical activity, and body composition/fat distribution in midlife women.",2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15976790,Ethnic differences in cardiovascular risk factor burden among middle-aged women: Study of Women's Health Across the Nation (SWAN).,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15882767,History of depression and women's current health and functioning during midlife.,2005,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15840738,Correlates of circulating androgens in mid-life women: the study of women's health across the nation.,2005,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15767531,"Race, education, and weight change in a biracial sample of women at midlife.",2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15668598,Use of conventional and complementary health care during the transition to menopause: longitudinal results from the Study of Women's Health Across the Nation (SWAN).,2005,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15613667,Menopause and hypothalamic-pituitary sensitivity to estrogen.,2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15562197,"Depressive symptoms, insulin resistance, and risk of diabetes in women at midlife.",2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15496544,Physical activity and changes in weight and waist circumference in midlife women: findings from the Study of Women's Health Across the Nation.,2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15483368,Lifetime depression history and sexual function in women at midlife.,2004,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15333288,Depressive symptom burden as a barrier to screening for breast and cervical cancers.,2004,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15321846,"The effect of menopause on grip and pinch strength: results from the Chicago, Illinois, site of the Study of Women's Health Across the Nation.",2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15284047,Racial/ethnic differences in the prevalence of depressive symptoms among middle-aged women: The Study of Women's Health Across the Nation (SWAN).,2004,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15233507,"Quality of life in diverse groups of midlife women: assessing the influence of menopause, health status and psychosocial and demographic factors.",2004,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15191936,Lifestyle and demographic factors in relation to vasomotor symptoms: baseline results from the Study of Women's Health Across the Nation.,2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15181033,Body size and ethnicity are associated with menstrual cycle alterations in women in the early menopausal transition: The Study of Women's Health across the Nation (SWAN) Daily Hormone Study.,2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+15127915,On food frequency questionnaires: the contribution of open-ended questions and questions on ethnic foods.,2004,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+15070912,Change in estradiol and follicle-stimulating hormone across the early menopausal transition: effects of ethnicity and age.,2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+14747213,Ethnic differences in insulin sensitivity and beta-cell function in premenopausal or early perimenopausal women without diabetes: the Study of Women's Health Across the Nation (SWAN).,2004,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+14583689,Health-related quality of life in a multiethnic sample of middle-aged women: Study of Women's Health Across the Nation (SWAN).,2003,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+14557472,"Insulin resistance, hemostatic factors, and hormone interactions in pre- and perimenopausal women: SWAN.",2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12943872,"Association of lipoprotein(a), insulin resistance, and reproductive hormones in a multiethnic cohort of pre- and perimenopausal women (The SWAN Study).",2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12915500,Persistent mood symptoms in a multiethnic community cohort of pre- and perimenopausal women.,2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12730778,Endogenous hormones and bone turnover markers in pre- and perimenopausal women: SWAN.,2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12679432,"Reproductive hormones in the early menopausal transition: relationship to ethnicity, body size, and menopausal status.",2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12618583,Sport and home physical activity are independently associated with bone density.,2003,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+12608940,Thyroid stimulating hormone (TSH) concentrations and menopausal status in women at the mid-life: SWAN.,2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12577184,The association of endogenous hormone concentrations and bone mineral density measures in pre- and perimenopausal women of four ethnic groups: SWAN.,2003,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+12544673,Sleep difficulty in women at midlife: a community survey of sleep and the menopausal transition.,2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12468167,Urinary incontinence predictors and life impact in ethnically diverse perimenopausal women.,2002,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12441312,Assessing menstrual cycles with urinary hormone assays.,2003,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12406817,Ethnic differences in use of complementary and alternative medicine at midlife: longitudinal results from SWAN participants.,2002,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+12244037,Assessment of digit preference in self-reported year at menopause: choice of an appropriate reference distribution.,2002,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+12218719,Variation in nutrient intakes by ethnicity: results from the Study of Women's Health Across the Nation (SWAN).,2002,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+12107201,Ethnic variation in bone density in premenopausal and early perimenopausal women: effects of anthropometric and lifestyle factors.,2002,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+12107200,Ethnic variation in bone turnover in pre- and early perimenopausal women: effects of anthropometric and lifestyle factors.,2002,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+11943693,Dietary soy isoflavones and bone mineral density: results from the study of women's health across the nation.,2002,7,"Domain 7: bone, bmd, fracture, loss",TRUE
+11890587,The association of menopause and physical functioning in women at midlife.,2001,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+11833986,Functional status and hearing impairments in women at midlife.,2000,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+11704470,"Functional limitations in women at midlife: the role of health conditions, behavioral and environmental factors.",2001,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+11439301,"Body mass index in mid-life women: relative influence of menopause, hormone use, and ethnicity.",2001,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+11330770,Is there a menopausal syndrome? Menopausal status and symptoms across racial/ethnic groups.,2001,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+11323317,Factors associated with age at natural menopause in a multiethnic sample of midlife women.,2001,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+11032164,"Assessment of physical activity with a single global question in a large, multiethnic sample of midlife women.",2000,6,"Domain 6: depressive, symptoms, physical, functioning",TRUE
+11018364,Digit preference in year at menopause. Data from the study of women's health across the nation.,2000,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+11006497,Self-defined menopausal status in a multi-ethnic sample of midlife women.,2000,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+10981461,Relation of demographic and lifestyle factors to symptoms in a multi-racial/ethnic population of women 40-55 years of age.,2000,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
+10593640,Attitudes toward menopause and aging across ethnic/racial groups.,1999,3,"Domain 3: concentrations, fmp, hormone, menopause",TRUE
