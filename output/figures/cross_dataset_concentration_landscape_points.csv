@@ -1,0 +1,61 @@
+dataset_label,papers_per_year,share,series
+Sister,19.65,0.9338,Top-3 authors
+SHOW,7.24,0.7398,Top-3 authors
+PROSPER,9.56,0.8031,Top-3 authors
+StrongHeart,10.03,0.6765,Top-3 authors
+HCHS SOL,37.76,0.7897,Top-3 authors
+BLSA,17.1,0.6577,Top-3 authors
+NIH AARP,16.39,0.5468,Top-3 authors
+HPFS,37.41,0.6893,Top-3 authors
+REGARDS,34.35,0.7492,Top-3 authors
+CHS,36.59,0.582,Top-3 authors
+CARDIA,34.97,0.5513,Top-3 authors
+JHS,23.46,0.5708,Top-3 authors
+NHS,70.41,0.4186,Top-3 authors
+EdShare (≥2015),9.55,0.2571,Top-3 authors
+SWAN,25.25,0.5276,Top-3 authors
+ARIC,87.44,0.4818,Top-3 authors
+Framingham,59.51,0.3544,Top-3 authors
+WHI,96.31,0.2781,Top-3 authors
+MESA,75.08,0.2952,Top-3 authors
+WLS,14.57,0.2107,Top-3 authors
+ALSPAC,82.83,0.2626,Top-3 authors
+MIDUS,79.1,0.1857,Top-3 authors
+FFCWS,58.72,0.1316,Top-3 authors
+NHATS,77.47,0.1523,Top-3 authors
+ABCD,196.3,0.0779,Top-3 authors
+AddHealth,88.8,0.0995,Top-3 authors
+HRS,145.38,0.0899,Top-3 authors
+EdShare,18.31,0.0495,Top-3 authors
+ADNI,253.9,0.0737,Top-3 authors
+EdShare (≤2014),20.56,0.06,Top-3 authors
+Sister,19.65,0.972,Top-10 authors
+SHOW,7.24,0.813,Top-10 authors
+PROSPER,9.56,0.8803,Top-10 authors
+StrongHeart,10.03,0.9003,Top-10 authors
+HCHS SOL,37.76,0.9097,Top-10 authors
+BLSA,17.1,0.7747,Top-10 authors
+NIH AARP,16.39,0.7974,Top-10 authors
+HPFS,37.41,0.7775,Top-10 authors
+REGARDS,34.35,0.8981,Top-10 authors
+CHS,36.59,0.7122,Top-10 authors
+CARDIA,34.97,0.7485,Top-10 authors
+JHS,23.46,0.726,Top-10 authors
+NHS,70.41,0.642,Top-10 authors
+EdShare (≥2015),9.55,0.3429,Top-10 authors
+SWAN,25.25,0.7553,Top-10 authors
+ARIC,87.44,0.7155,Top-10 authors
+Framingham,59.51,0.6737,Top-10 authors
+WHI,96.31,0.4399,Top-10 authors
+MESA,75.08,0.5962,Top-10 authors
+WLS,14.57,0.3549,Top-10 authors
+ALSPAC,82.83,0.4742,Top-10 authors
+MIDUS,79.1,0.2507,Top-10 authors
+FFCWS,58.72,0.2626,Top-10 authors
+NHATS,77.47,0.2573,Top-10 authors
+ABCD,196.3,0.2318,Top-10 authors
+AddHealth,88.8,0.1682,Top-10 authors
+HRS,145.38,0.1466,Top-10 authors
+EdShare,18.31,0.1365,Top-10 authors
+ADNI,253.9,0.147,Top-10 authors
+EdShare (≤2014),20.56,0.2048,Top-10 authors

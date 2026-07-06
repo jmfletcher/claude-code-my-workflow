@@ -34,6 +34,25 @@ read_one <- function(d) {
     cr <- cov$value[cov$metric == "coverage_ratio"]
     if (length(cr) > 0) cov_ratio <- suppressWarnings(as.numeric(cr[1]))
   }
+  year_min <- NA_integer_
+  year_max <- NA_integer_
+  year_span <- NA_integer_
+  n_pub_years <- NA_integer_
+  papers_per_year <- NA_real_
+  pa_path <- file.path(d, "processed", "papers_authors.csv")
+  if (file.exists(pa_path)) {
+    pa <- read_csv(pa_path, show_col_types = FALSE)
+    paper_years <- pa %>%
+      distinct(pmid, pub_year) %>%
+      filter(!is.na(pub_year))
+    if (nrow(paper_years) > 0) {
+      year_min <- min(paper_years$pub_year)
+      year_max <- max(paper_years$pub_year)
+      year_span <- year_max - year_min + 1L
+      n_pub_years <- n_distinct(paper_years$pub_year)
+      papers_per_year <- nrow(paper_years) / year_span
+    }
+  }
   tibble(
     dataset = name,
     n_papers = as.integer(get_metric("n_papers")),
@@ -43,7 +62,12 @@ read_one <- function(d) {
     top3 = round(get_topx(3), 4),
     top5 = round(get_topx(5), 4),
     top10 = round(get_topx(10), 4),
-    coverage_ratio = if (is.na(cov_ratio)) NA_real_ else round(cov_ratio, 4)
+    coverage_ratio = if (is.na(cov_ratio)) NA_real_ else round(cov_ratio, 4),
+    year_min = year_min,
+    year_max = year_max,
+    year_span = year_span,
+    n_pub_years = n_pub_years,
+    papers_per_year = if (is.na(papers_per_year)) NA_real_ else round(papers_per_year, 2)
   )
 }
 
