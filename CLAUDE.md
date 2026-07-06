@@ -146,6 +146,7 @@ See `.claude/rules/authorship-monopoly-metrics.md` for full definitions.
 | EdShare | [EdSHARe bibliography](https://edshareproject.org/research-and-publications/bibliography) | 66 auto-aliases | 989 | 2.7% | 5.0% | 13.7% |
 | EdShare (≤2014) | EdSHARe bibliography subset | 63 auto-aliases | 884 | 2.3% | 6.0% | 20.5% |
 | EdShare (≥2015) | EdSHARe bibliography subset | 8 auto-aliases | 105 | 23.8% | 25.7% | 34.3% |
+| HCHS/SOL | [HCHS/SOL publications](https://sites9.cscc.unc.edu/hchs/res-publications) | 296 auto-aliases; ~79% coverage | 642 | 56.4% | 79.0% | 91.0% |
 
 ---
 

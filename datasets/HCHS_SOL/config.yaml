@@ -1,0 +1,28 @@
+dataset:
+  name: HCHS_SOL
+  full_name: Hispanic Community Health Study / Study of Latinos
+  description: Multi-center epidemiologic study of Hispanic/Latino health in the U.S.
+    (16,415 participants; Miami, San Diego, Chicago, Bronx), 2008-present.
+source:
+  type: study_website_pmid
+  collection_url: https://sites9.cscc.unc.edu/hchs/res-publications
+  expected_paper_count: 642
+  last_fetched: null
+  funding:
+    funder: NHLBI / NIMHD (NIH)
+    confirmed: yes
+    note: Co-funded by NHLBI and NIMHD; site lists PubMed IDs per manuscript.
+  coverage_query: '"Hispanic Community Health Study"[tiab] OR "Study of Latinos"[tiab]'
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

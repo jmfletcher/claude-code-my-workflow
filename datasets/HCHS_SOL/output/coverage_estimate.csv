@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+HCHS_SOL,n_central_pmid,642,2026-07-06
+HCHS_SOL,n_central_no_pmid,0,2026-07-06
+HCHS_SOL,n_query_hits,738,2026-07-06
+HCHS_SOL,n_overlap,570,2026-07-06
+HCHS_SOL,n_central_only,72,2026-07-06
+HCHS_SOL,n_search_only,168,2026-07-06
+HCHS_SOL,n_union,810,2026-07-06
+HCHS_SOL,coverage_ratio,0.7926,2026-07-06
+HCHS_SOL,curated_share_of_query,0.7724,2026-07-06

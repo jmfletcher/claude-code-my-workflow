@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 6: microbiome, gut, usa, dietary",NA,NA,NA,6,"Domain 6: microbiome, gut, usa, dietary",12,77,7.312500000000005,1
+"Domain 2: metabolites, metabolite, dietary, gut",NA,NA,NA,2,"Domain 2: metabolites, metabolite, dietary, gut",20,172,5.790000000000034,1
+"Domain 1: cognitive, neurocognitive, function, cognition",NA,NA,NA,1,"Domain 1: cognitive, neurocognitive, function, cognition",59,223,4.266015512783722,0.9830508474576272
+"Domain 4: youth, children, family, food",NA,NA,NA,4,"Domain 4: youth, children, family, food",38,118,4.022160664819959,1
+"Domain 7: loci, ancestry, genome, wide",NA,NA,NA,7,"Domain 7: loci, ancestry, genome, wide",66,1130,3.7633149678602873,0.9090909090909091
+"Domain 8: sleep, duration, apnea, insomnia",NA,NA,NA,8,"Domain 8: sleep, duration, apnea, insomnia",46,234,3.659262759924353,0.9347826086956522
+"Domain 3: asthma, stressors, ricans, symptoms",NA,NA,NA,3,"Domain 3: asthma, stressors, ricans, symptoms",10,86,3.3799999999999875,1
+"Domain 5: diabetes, prevalence, cvd, women",NA,NA,NA,5,"Domain 5: diabetes, prevalence, cvd, women",391,1250,1.429039579803849,0.7851662404092071
