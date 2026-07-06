@@ -1,0 +1,27 @@
+dataset:
+  name: FFCWS
+  full_name: Future of Families and Child Wellbeing Study
+  description: Birth cohort study of children born in large U.S. cities (1998–2000)
+    and their parents, formerly known as Fragile Families & Child Wellbeing Study.
+source:
+  type: drupal_bibcite_html
+  collection_url: https://ffcws.princeton.edu/publications
+  sitemap_url: https://ffcws.princeton.edu/sitemap.xml
+  expected_paper_count: 1723
+  last_fetched: '2026-06-24'
+  automated_fetch_count: 1710
+  fetch_script: scripts/ffcws/ingest_publications.py
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

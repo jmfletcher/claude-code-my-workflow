@@ -3,11 +3,25 @@ paths:
   - "Slides/**/*.tex"
   - "Quarto/**/*.qmd"
   - "docs/**"
+  - "datasets/**/*"
+  - "scripts/R/**/*"
 ---
 
 # Task Completion Verification Protocol
 
 **At the end of EVERY task, Claude MUST verify the output works correctly.** This is non-negotiable.
+
+## For Dataset Pipeline:
+1. Run `Rscript datasets/{name}/scripts/run_pipeline.R` (or individual stage scripts)
+2. Verify output files exist with non-zero size:
+   - `processed/papers_authors.csv`
+   - `output/monopoly_metrics.csv`
+   - `output/figures/*.pdf`
+3. Reconcile counts: distinct PMIDs in raw/manifest == distinct PMIDs in processed
+4. Spot-check HHI: hand-compute on 5-author subset, compare to pipeline output
+5. Verify top-x monotonicity: Top-1 ≤ Top-3 ≤ Top-5 ≤ Top-10
+6. Open 2–3 figures to confirm visual quality (labels readable, no clipping)
+7. Report verification results with counts and any discrepancies
 
 ## For Quarto/HTML Slides:
 1. Run `./scripts/sync_to_docs.sh` (or `./scripts/sync_to_docs.sh LectureN`) to render and deploy

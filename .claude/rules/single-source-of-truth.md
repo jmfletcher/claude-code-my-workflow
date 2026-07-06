@@ -5,9 +5,11 @@ paths:
   - "Slides/**/*.tex"
 ---
 
-# Single Source of Truth: Enforcement Protocol
+# Single Source of Truth: Slides & Papers (Secondary)
 
-**The Beamer `.tex` file is the authoritative source for ALL content.** Everything else is derived.
+> **Primary SSOT for this project:** Data pipeline files under `datasets/` — see `dataset-pipeline-protocol.md`.
+
+**The Beamer `.tex` file is the authoritative source for slide/paper content.** Everything else is derived.
 
 ## The SSOT Chain
 

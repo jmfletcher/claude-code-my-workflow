@@ -16,10 +16,10 @@ Run an end-to-end data analysis in R: load, explore, analyze, and produce public
 ## Constraints
 
 - **Follow R code conventions** in `.claude/rules/r-code-conventions.md`
-- **Save all scripts** to `scripts/R/` with descriptive names
-- **Save all outputs** (figures, tables, RDS) to `output/`
-- **Use `saveRDS()`** for every computed object — Quarto slides may need them
-- **Use project theme** for all figures (check for custom theme in `.claude/rules/`)
+- **Save all scripts** to `scripts/R/` (shared) or `datasets/{name}/scripts/` (dataset-specific)
+- **Save all outputs** (figures, tables, RDS) to `datasets/{name}/output/`
+- **For concentration metrics**, follow `.claude/rules/authorship-monopoly-metrics.md`
+- **Use project theme** for all figures (see `.claude/rules/visualization-standards.md`)
 - **Run r-reviewer** on the generated script before presenting results
 
 ---
@@ -43,7 +43,7 @@ Generate diagnostic outputs:
 - **Time patterns:** If panel data, plot trends over time
 - **Group comparisons:** If treatment/control, compare pre-treatment means
 
-Save all diagnostic figures to `output/diagnostics/`.
+Save all diagnostic figures to `datasets/{name}/output/diagnostics/`.
 
 ### Phase 3: Main Analysis
 
@@ -102,7 +102,7 @@ library(modelsummary)
 
 set.seed(42)
 
-dir.create("output/analysis", recursive = TRUE, showWarnings = FALSE)
+dir.create("datasets/{name}/output/analysis", recursive = TRUE, showWarnings = FALSE)
 
 # 1. Data Loading ----
 # [Load and clean data]

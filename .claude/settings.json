@@ -43,7 +43,11 @@
       "Bash(for *)",
       "Bash(gs *)",
       "Bash(pdftk *)",
-      "Bash(mkdir *)"
+      "Bash(mkdir *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(R -e *)",
+      "Bash(R CMD *)"
     ]
   },
   "hooks": {

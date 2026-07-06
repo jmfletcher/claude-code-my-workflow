@@ -1,0 +1,895 @@
+pmid,title,pub_year,cluster,domain,has_abstract
+42131939,Prior Myocardial Infarction and Cognitive Decline: The REGARDS Cohort.,2026,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+42082852,Reevaluating the Alcohol-Cancer Link: Long-Term Cancer Mortality Outcomes in the REGARDS Study.,2026,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+42015047,Blood mitochondrial heteroplasmic variants and cognitive performance in late midlife: REGARDS study.,2026,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+41952255,Lower Urinary Tract Symptoms and Cognitive Impairment Among Participants in the REGARDS Cohort Study.,2026,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+41938718,Development intensity and incident stroke risk: a longitudinal study of the REGARDS cohort.,2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41824925,Circulating Biomarkers of Neurodegeneration and All-Cause and Dementia-Specific Mortality.,2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41722898,Lexical and clinical predictors of verbal fluency interword intervals preceding cognitive impairment.,2026,7,"Domain 7: cognitive, impairment, function, decline",FALSE
+41646705,"A metabolite index of ultra-processed food intake is associated with stroke, cancer mortality, and all-cause mortality.",2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41542129,Association Between Markers of Atrial Cardiopathy and Cognitive Impairment Risk Among Adults with No Suggestive History of Atrial Fibrillation.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+41526367,Dark and camouflaged genomic regions remain challenging in CHM13.,2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41478446,Atrial Fibrillation and Risk of Incident Cognitive Impairment: The REasons for Geographic and Racial Differences in Stroke Study.,2026,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+41435906,"Integration of genetic risk, cardiometabolic diseases, and cognitive impairment among African American adults.",2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41349453,"Birthplace, perinatal loss, and the parity-post-reproductive mortality relationship: Evidence from the Jim Crow-era American South.",2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41307005,Soluble receptor for advanced glycation end products and diabetes in Black and White Americans: the REGARDS Study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41292653,Improving performance of polygenic risk scores for hypertension across two ancestry groups.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41282686,Cross-Ancestry Polygenic Risk Scores Enhance Alzheimer's Disease Risk Prediction in Multiethnic Cohorts.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41268856,The role of genomic-informed risk assessments in predicting dementia outcomes.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41258992,"Response to Comment on ""Soluble Receptor for Advanced Glycation End Products and Incident Hypertension in REGARDS"".",2026,2,"Domain 2: hypertension, antihypertensive, medication, resistant",FALSE
+41252354,"Association between cigarette smoking status, intensity, and cessation duration with long-term incidence of nine cardiovascular and mortality outcomes: The Cross-Cohort Collaboration (CCC).",2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41249037,Isolated non-specific electrocardiographic ST-T abnormalities and risk of incident heart failure and its subtypes.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41231230,Integrative multi-omics approaches identify molecular pathways and improve Alzheimer's disease risk prediction.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+41065614,Life's Essential 8 and Incident Heart Failure Among REGARDS Participants With and Without Diabetes.,2026,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+41025450,"Residential Racial Segregation, Socioeconomic Status, and Hypertension Risk in Black and White Americans: The REGARDS Prospective Cohort Study.",2025,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+40988999,Cognitive data harmonization across two racially diverse cohorts in the United States.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+40971549,Loneliness and Risk of 30-Day Hospital Readmission After Acute Myocardial Infarction.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40894023,Markers of left atrial cardiopathy and cognitive function trajectories in adults aged ≥45 years without atrial fibrillation: a population-based study.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+40774831,Circulating biomarkers and ischemic stroke risk in adults with atrial fibrillation taking anticoagulation: the Reasons for Geographic And Racial Differences in Stroke study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40774830,Improving stroke risk prediction in atrial fibrillation with circulating biomarkers: the CHA2DS2-VASc-Biomarkers model.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40728881,Association of Transthyretin Valine to Isoleucine Variant with Kidney Outcomes in Community-Dwelling Black Adults: The Reasons for Geographic and Racial Differences in Stroke Cohort.,2025,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+40704449,Exploring potential mechanisms of an African protective locus for Alzheimer's disease in APOEε4 carriers.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40668582,Self-Reported Resilience During the COVID-19 Pandemic.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40641286,"""Shaking the ladder"" reveals how analytic choices can influence associations in nutrition epidemiology: beef intake and coronary heart disease as a case study.",2026,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40611493,Understanding Participant Perspectives Toward the Formation of a Participant Advisory Board Within the Reasons for Geographic and Racial Differences in Stroke Study: A National Qualitative Study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40585132,Ancestry Calibration of Polygenic Risk Scores Improves Risk Stratification and Effect Estimation in African American Adults.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40545618,NIAGADS: A data repository for Alzheimer's disease and related dementia genomics.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40513855,Long-term exposure to extreme heat and cold and cognitive decline in older adults: Results from the Reasons for Geographic and Racial Differences in Stroke (REGARDS) cohort.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+40502591,Integrative multi-omics approaches identify molecular pathways and improve Alzheimer's Disease risk prediction.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40502163,Sequencing the gaps: dark genomic regions persist in CHM13 despite long-read advances.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40451158,Type 2 Diabetes Polygenic Risk Score Interactions with Lifestyle Risk Factors in Black Americans.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40407102,Alzheimer's Disease Sequencing Project release 4 whole genome sequencing dataset.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40394218,The association between smoking status and aging cognitive trajectory accounting for bias in attrition.,2026,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+40366089,Factor IX and incident hypertension in Black and White adults: the REasons for Geographic and Racial Differences in Stroke cohort.,2025,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+40295203,Association between Dietary Patterns and Incident Hypertension in Regards (Reasons for Geographic and Regional Differences in Stroke) Participants.,2025,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+40253926,Exploring trade-offs in equitable stroke risk prediction with parity-constrained and race-free models.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40247451,"Leptin, adiponectin, body mass index, and incident cognitive impairment.",2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+40207510,Association Between Residential Greenness and Risk of Stroke by Ecoregions: The REGARDS Study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40164932,Correlates of Patient Trust in Doctors: Demographic Factors and Experiences of Medical Care Discrimination.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40156350,Cell adhesion molecules and incident hypertension in black and white adults: the REGARDS study.,2025,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+40136300,Education Levels and Poststroke Cognitive Trajectories.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+40127909,Association between spatial social polarisation and high blood pressure in older adults.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40107919,Association of dietary fatty acids with longitudinal change in plasma-based biomarkers of Alzheimer's disease.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40085155,Defining Kidney Health Dimensions and Their Associations with Adverse Outcomes in Persons with Diabetes and CKD.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40074467,Association Between Cigarette Smoking and Subclinical Markers of Cardiovascular Harm.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40051084,Fragmented Ambulatory Care and Medication Count among Older Adults.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+40050322,Targeted Metabolomics in the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39928595,Classifying COVID-19 hospitalizations in epidemiology cohort studies: The C4R study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39927418,Adding social determinants of health to the equation: Development of a cardiometabolic disease staging model using clinical and social determinants of health to predict type 2 diabetes.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39921333,Measuring Hemoglobin A1C with Frozen Packed Cell and Frozen Whole Blood Samples in an Epidemiologic Study: The Reasons for Geographic and Racial Differences in Stroke Study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39875385,Polygenic burden of short tandem repeat expansions promotes risk for Alzheimer's disease.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39866105,"Differential Associations of Cigar, Pipe, and Smokeless Tobacco Use Versus Combustible Cigarette Use With Subclinical Markers of Inflammation, Thrombosis, and Atherosclerosis: The Cross-Cohort Collaboration-Tobacco Working Group.",2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39843671,"Kidney Function, Cognitive Impairment, and Trajectories: A Longitudinal Biracial Study.",2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+39839804,Racial residential segregation is associated with ambient air pollution exposure after adjustment for multilevel sociodemographic factors: Evidence from eight US-based cohorts.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39822590,LD-informed deep learning for Alzheimer's gene loci detection using WGS data.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39818266,Dietary Inflammatory Score and Incident Heart Failure in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39817332,Examining Healthy Lifestyles as a Mediator of the Association Between Socially Determined Vulnerabilities and Incident Heart Failure.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39804282,Caregiver Psychosocial Factors & Stroke Survivor Cognitive Outcomes: A REGARDS-CARES Cohort Study.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+39729264,Changes in Medication Complexity and Post-Hospitalization Outcomes in Older Adults Hospitalized for Heart Failure.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39677464,Alzheimer's Disease Sequencing Project Release 4 Whole Genome Sequencing Dataset.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39652331,Plasma Biomarkers of Kidney Health and Mortality in Diabetes and Chronic Kidney Disease in the REGARDS Study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39648907,Association of Duration of Recognized Hypertension and Stroke Risk: The REGARDS Study.,2025,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+39453943,Risk-enhancing factors and social determinants of health in risk assessment for atherosclerotic cardiovascular disease.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39450443,Race Differences in Purpose in Life Among Family Caregivers: Findings From the Caregiving Transitions Study.,2025,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+39444005,"Blood-derived mitochondrial DNA copy number is associated with Alzheimer disease, Alzheimer-related biomarkers and serum metabolites.",2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39441603,Utility of a Systolic Blood Pressure Polygenic Risk Score With Chlorthalidone Response.,2024,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+39417134,NIAGADS: A Comprehensive National Data Repository for Alzheimer's Disease and Related Dementia Genetics and Genomics Research.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39371140,LD-informed deep learning for Alzheimer's gene loci detection using WGS data.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39354067,The association of leptin and incident hypertension in the reasons for geographic and racial differences in stroke (REGARDS) cohort.,2024,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+39329415,State Schooling Policies and Cognitive Performance Trajectories: A Natural Experiment in a National US Cohort of Black and White Adults.,2025,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+39248269,Annual Cost of Implementing Intensive Systolic Blood Pressure Goals in the United States.,2024,2,"Domain 2: hypertension, antihypertensive, medication, resistant",FALSE
+39238828,"Race, Social Determinants of Health, and Comorbidity Patterns Among Participants with Heart Failure in the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39231381,Association of Urinary Cadmium Concentration With Cognitive Impairment in US Adults: A Longitudinal Cohort Study.,2024,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+39206730,Trajectory of Cognitive Decline After Incident Heart Failure Hospitalization: Findings From the REGARDS Study.,2024,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+39142705,Ambulatory Care Utilization Among Medicare Beneficiaries with Depression.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39125339,The Mediterranean-DASH Intervention for Neurodegenerative Delay (MIND) Diet and Metabolites in Chronic Kidney Disease.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39109807,Path-specific causal decomposition analysis with multiple correlated mediator variables.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39073889,Single-Ancestry versus Multi-Ancestry Polygenic Risk Scores for CKD in Black American Populations.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39056351,"Stroke Severity, Caregiver Feedback, and Cognition in the REGARDS-CARES Study.",2024,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+39038094,Trends in Black-White Differences of Antihypertensive Treatment in Individuals With and Without History of Stroke.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+39034653,Social Determinants of Health and Cardiovascular Risk among Adults with Diabetes: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38978676,Guilt by association: Plant-based foods can be incorporated into both healthy and unhealthy plant-based diet indices associated with coronary heart disease.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38903124,The Role of Genomic-Informed Risk Assessments in Predicting Dementia Outcomes.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38884994,Epidemiologic Features of Recovery From SARS-CoV-2 Infection.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38881790,Post-Processing Automatic Transcriptions with Machine Learning for Verbal Fluency Scoring.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+38795742,Intake of Snacks and Sweets in a National Study of Built and Social Environments: the REasons for Geographic And Racial Differences in Stroke Study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38765187,Cardiometabolic Disease Staging and Major Adverse Cardiovascular Event Prediction in 2 Prospective Cohorts.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38745470,Life-space mobility and cognitive function: The REasons for geographic and racial differences in stroke (REGARDS) study.,2024,7,"Domain 7: cognitive, impairment, function, decline",FALSE
+38734952,Cardiovascular Burden of the V142I Transthyretin Variant.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38729661,Development and validation of mortality prediction models based on the social determinants of health.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38725587,Adaptive Discretization for Event PredicTion (ADEPT).,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38712163,The Role of X Chromosome in Alzheimer's Disease Genetics.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38676880,Omega-3 Fatty Acids and Risk of Ischemic Stroke in REGARDS.,2025,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38669015,Cardiovascular Risk Associated With Social Determinants of Health at Individual and Area Levels.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38652672,Time-to-Event Genome-Wide Association Study for Incident Cardiovascular Disease in People With Type 2 Diabetes.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38642910,Factor VIII and Incident Hypertension in Black and White Adults: The REasons for Geographic and Racial Differences in Stroke (REGARDS) Cohort.,2024,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+38637330,Population-average mediation analysis for zero-inflated count outcomes.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38511198,Hepatocyte growth factor and risk of incident stroke in Black and White Americans in the Reasons for Geographic and Racial Differences in Stroke study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38487890,"Cytokines, C-Reactive Protein, and Risk of Incident Hypertension in the REGARDS Study.",2024,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+38482689,Plasma Metabolites and Life's Simple 7 in REGARDS.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38470993,Polygenic Risk for Type 2 Diabetes in African Americans.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38460116,Genetic associations with dementia-related proteinopathy: Application of item response theory.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38458986,Ambulatory Care Fragmentation and Total Health Care Costs.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38447086,Sleep Apnea and Incident Stroke in a National Cohort of Black and White Adults.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38390820,Association Between Pharmacy Proximity With Cardiovascular Medication Use and Risk Factor Control in the United States.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38374032,Demographic and Clinical Factors Associated With SARS-CoV-2 Spike 1 Antibody Response Among Vaccinated US Adults: the C4R Study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38328917,Neighborhood Disadvantage and Risk of Heart Failure: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38294520,Serum zinc concentration and dietary zinc intake in relation to cognitive function: an analysis of the REasons for Geographic and Racial Differences in Stroke (REGARDS) cohort.,2024,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+38280465,Long-term exposure to air pollution and risk of stroke by ecoregions: The REGARDS study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38237104,"Interleukin-6, Diabetes, and Metabolic Syndrome in a Biracial Cohort: The Reasons for Geographic and Racial Differences in Stroke Cohort.",2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38200454,Plasma proenkephalin A and incident chronic kidney disease and albuminuria in the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38190104,Genome-wide study investigating effector genes and polygenic prediction for kidney function in persons with ancestry from Africa and the Americas.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38176533,Association of Healthy Lifestyle and Incident Polypharmacy.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38155559,Application of marginalized zero-inflated models when mediators have excess zeroes.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38134240,Changes in Adiposity and Cognitive Function in Older Adults: The REGARDS Study.,2024,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+38125204,Atherosclerotic cardiovascular disease events among adults with high predicted risk without established risk factors.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38070817,Trans-Balance: Reducing demographic disparity for prediction models in the presence of class imbalance.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38064210,Sex and Race Differences in Obesity-Related Genetic Susceptibility and Risk of Cardiometabolic Disease in Older US Adults.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38055247,Risk Prediction for Atherosclerotic Cardiovascular Disease With and Without Race Stratification.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38036523,Strong protective effect of the APOL1 p.N264K variant against G2-associated focal segmental glomerulosclerosis and kidney disease.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+38014121,Polygenic burden of short tandem repeat expansions promote risk for Alzheimer's disease.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37990505,Subtypes of Transitions into a Family Caregiving Role: A Latent Class Analysis.,2024,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+37983029,Social Determinants of Health and Cardiologist Involvement in the Care of Adults Hospitalized for Heart Failure.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37954012,Association of educational attainment with cancer mortality in a national cohort study of black and white adults: A mediation analysis.,2023,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+37939143,A Segmented Regression Analysis of Household Income and Recurrent Falls Among Adults in a National Cohort Study.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37920711,Myocardial infarction and physical function: the REasons for Geographic And Racial Differences in Stroke prospective cohort study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37866793,Modification of Association of Cystatin C With Kidney and Cardiovascular Outcomes by Obesity.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37850400,"Facilitating Harmonization of Variables in Framingham, MESA, ARIC, and REGARDS Studies Through a Metadata Repository.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37846562,Smoking Modifies the Association Between Radon Exposure and Incident Ischemic Stroke: The REGARDS Study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37813482,"Shiftwork, long working hours and markers of inflammation in a national US population-based sample of employed black and white men and women aged ≥45 years.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37830200,Comparative Discrimination of Life's Simple 7 and Life's Essential 8 to Stratify Cardiovascular Risk: Is the Added Complexity Worth It?,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37801859,History of obstructive sleep apnea associated with incident cognitive impairment in white but not black individuals in a US national cohort study.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37780862,Early-onset Alzheimer's disease explained by polygenic risk of late-onset disease?,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37779905,"Metabolite profiles and DNA methylation in metabolic syndrome: a two-sample, bidirectional Mendelian randomization.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37773494,"Neighborhood Factors, Individual Stressors, and Cardiovascular Health Among Black and White Adults in the US: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37730612,Assessing the association between food environment and dietary inflammation by community type: a cross-sectional REGARDS study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37717468,Birth in the U.S. Plantation South and Racial Differences in all-cause mortality in later life.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37642037,Methods of a Study to Assess the Contribution of Cerebral Small Vessel Disease and Dementia Risk Alleles to Racial Disparities in Vascular Cognitive Impairment and Dementia.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37636583,"'My neighbourhood is fuzzy, not hard and fast': Individual and contextual associations with perceived residential neighbourhood boundaries among ageing Americans.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37622047,Alpha globin gene copy number and incident ischemic stroke risk among Black Americans.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37605862,Association of hypertension severity and control with risk of incident atrial fibrillation: The REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2023,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+37578203,DNA from multiple viral species is associated with Alzheimer's disease risk.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37547016,APOE loss-of-function variants: Compatible with longevity and associated with resistance to Alzheimer's Disease pathology.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37546893,Time-to-Event Genome-Wide Association Study for Incident Cardiovascular Disease in People with Type 2 Diabetes Mellitus.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37533144,Urinary Biomarkers of Kidney Tubule Health and Mortality in Persons with CKD and Diabetes Mellitus.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37531033,Acetylglutamine Differentially Associated with First-Time Versus Recurrent Stroke.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37495948,Prescribing patterns of fall risk-increasing drugs in older adults hospitalized for heart failure.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37480583,Life-Space Mobility: Normative Values From a National Cohort of U.S. Older Adults.,2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37471144,The predominant PAR4 variant in individuals of African ancestry worsens murine and human stroke outcomes.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37465869,Retirement and cognitive aging in a racially diverse sample of older Americans.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37428772,"Association between psychosocial factors and C-reactive protein across income, race, and sex.",2024,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37428734,The role of caregiving in cognitive function and change: The REGARDS study.,2023,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+37410623,Disparities in Guideline Concordant Statin Treatment in Individuals With Chronic Obstructive Pulmonary Disease.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37407675,"Urban-rural differences in hypertension prevalence, blood pressure control, and systolic blood pressure levels.",2023,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+37403029,Allostatic load and incident heart failure in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37378472,Estimated Population Health Benefits of Intensive Systolic Blood Pressure Treatment Among SPRINT-Eligible US Adults.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37341980,"Diabetes, gaps in care coordination, and preventable adverse events.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37340856,Associations of Telomere Length and Change With Cognitive Decline Were Modified by Sex and Race: The REGARDS Study.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37312569,Cumulative Experience of Neighborhood Walkability and Change in Weight and Waist Circumference in REGARDS.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37260023,Plasma Pro-Enkephalin A and Incident Cognitive Impairment: The Reasons for Geographic and Racial Differences in Stroke Cohort.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37260021,Novel loci for Alzheimer's disease identified by a genome-wide association study in Ashkenazi Jews.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37231876,Rural versus Urban Residence in Adulthood and Incident Cognitive Impairment.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37229446,"Dietary Patterns, Apolipoprotein L1 Risk Genotypes, and CKD Outcomes Among Black Adults in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Cohort Study.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37195662,Associations Between Vascular Risk Factor Levels and Cognitive Decline Among Stroke Survivors.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37182817,The association of baseline depressive symptoms and stress on withdrawal in a national longitudinal cohort: the REGARDS study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37168932,Estimated number and percentage of US adults with atherosclerotic cardiovascular disease recommended add-on lipid-lowering therapy by the 2018 AHA/ACC multi-society cholesterol guideline.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37119297,Associations of dietary patterns with risk of incident atrial fibrillation in the REasons for Geographic And Racial Differences in Stroke (REGARDS).,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37082942,Social Determinants of Health and Uncontrolled Blood Pressure in a National Cohort of Black and White US Adults: the REGARDS Study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37068957,Association of Circulating Metabolites With Racial Disparities in Hypertension and Stroke in the REGARDS Study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37058527,Nonalcoholic fatty liver disease and cognitive impairment: A prospective cohort study.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+37016935,"Hypertension severity, apparent treatment resistant hypertension and hyperuricemia in the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.",2023,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+37013813,Childhood Residential Mobility and Mental and Physical Health in Later Life: Findings From the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+37003081,Patient Awareness of Their Heart Failure Diagnosis and Its Implications for Epidemiologic Studies and Clinical Care.,2023,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+36993674,Alpha globin gene copy number and incident ischemic stroke risk among Black Americans.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36942589,When Will We Have What We Need to Advise Patients How to Manage Their Carotid Stenosis?: Lessons From SPACE-2.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36883380,Gut microbiota-associated metabolites and risk of ischemic stroke in REGARDS.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36881411,Association of Stress With Cognitive Function Among Older Black and White US Adults.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+36858436,Mediation of an association between neighborhood socioeconomic environment and type 2 diabetes through the leisure-time physical activity environment in an analysis of three independent samples.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36802918,Association Between Triglycerides and Incident Cognitive Impairment in Black and White Adults in the Reasons for Geographic and Racial Differences in Stroke Study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36800060,Implications of Under-Reporting Medication Side Effects: Beta-Blockers in Heart Failure as a Case Example.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36786273,Longitudinal associations of anticholinergic medications on cognition and possible mitigating role of physical activity.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+36767249,The Associations of Loneliness and Social Support with Cognitive Impairment among Middle-Aged and Older Individuals with Diabetes.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+36760775,D-dimer and the risk of hypertension: The REasons for Geographic And Racial Differences in Stroke Cohort Study.,2023,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+36717795,Neighborhood 'Disamenities': local barriers and cognitive function among Black and white aging adults.,2023,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+36692561,"Predictive Accuracy of Stroke Risk Prediction Models Across Black and White Race, Sex, and Age Groups.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36653179,Age-Related Differences in the Role of Risk Factors for Ischemic Stroke.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36621640,Risk Factors for Incident CKD in Black and White Americans: The REGARDS Study.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36583503,Association between peripheral blood cytopenia and cancer mortality: A race-specific risk factor for cancer death.,2023,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+36522626,"Lipid accumulation product, visceral adiposity index and risk of chronic kidney disease.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36468538,Self-reported gaps in care coordination and preventable adverse outcomes among older adults receiving home health care.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36440885,Duration of employment within occupations and incident stroke in a US general population cohort 45 years of age or older (REGARDS study).,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36423994,Race-Dependent Association of High-Density Lipoprotein Cholesterol Levels With Incident Coronary Artery Disease.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36417133,"Ambulatory Care Fragmentation, Emergency Department Visits, and Race: a Nationwide Cohort Study in the U.S.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36373825,Plasma Metabolites Link Dietary Patterns to Stroke Risk.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36330357,"Depressive symptoms, cognitive impairment, and all-cause mortality among REGARDS participants with heart failure.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36250097,SMOC2 gene interacts with APOL1 in the development of end-stage kidney disease: A genome-wide association study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36191742,Multiple gene variants linked to Alzheimer's-type clinical dementia via GWAS are also associated with non-Alzheimer's neuropathologic entities.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36186334,A comparison of techniques for deriving clustering and switching scores from verbal fluency word lists.,2022,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+36180795,Stroke genetics informs drug discovery and risk prediction across ancestries.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36155327,Growth hormone concentration and risk of all-cause and cardiovascular mortality: The REasons for Geographic And Racial Disparities in Stroke (REGARDS) study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36125972,Differences in the Association of Select Dietary Measures With Risk of Incident Type 2 Diabetes.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35966919,A Fast and Robust Strategy to Remove Variant-Level Artifacts in Alzheimer Disease Sequencing Project Data.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35942870,Association of an evolutionary-concordance lifestyle pattern score with incident CVD among Black and White men and women.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35932240,Correction to: Family caregivers emphasise patience and personal growth: a qualitative analysis from the Caregiving Transitions Study.,2022,4,"Domain 4: caregivers, caregiving, family, stress",FALSE
+35926362,Cognability: An Ecological Theory of neighborhoods and cognitive aging.,2022,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+35924680,Enhanced Street Crossing Features are Associated with Higher Post-Stroke Physical Quality of Life.,2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35896447,Nearly All Cancer Survivors Return to Primary Care.,2022,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+35834496,Alpha globin gene copy number and hypertension risk among Black Americans.,2022,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+35812302,Biomarkers of Kidney Tubule Disease and Risk of End-Stage Kidney Disease in Persons With Diabetes and CKD.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35797548,Sedentary Behavior and Physical Functioning in Middle-Age and Older Adults Living in the United States: The Reasons for Geographic and Racial Differences in Stroke Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35765100,Development and validation of a trans-ancestry polygenic risk score for type 2 diabetes in diverse populations.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35710995,Genome-wide polygenic score to predict chronic kidney disease across ancestries.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35699180,"Corin Missense Variants, Blood Pressure, and Hypertension in 11 322 Black Individuals: Insights From REGARDS and the Jackson Heart Study.",2022,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+35657918,Telomere shortening and the transition to family caregiving in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2022,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+35657680,Race and Sex Differences in Mortality in Individuals with Chronic Obstructive Pulmonary Disease.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35657625,Association of Accelerometer-Measured Sedentary Time and Physical Activity With Risk of Stroke Among US Adults.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35655193,"Frailty, gaps in care coordination, and preventable adverse events.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35652341,"Insights From a Large-Scale Whole-Genome Sequencing Study of Systolic Blood Pressure, Diastolic Blood Pressure, and Hypertension.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35621195,Lipoprotein(a) and the Risk for Coronary Heart Disease and Ischemic Stroke Events Among Black and White Adults With Cardiovascular Disease.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35571962,Verbal fluency response times predict incident cognitive impairment.,2022,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+35568129,Association of Perceived Stress With Incident Heart Failure.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35554593,"Insomnia Diagnosis, Prescribed Hypnotic Medication Use, and Risk for Serious Fall Injuries in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35551996,Home-to-hospital distance and outcomes among community-acquired sepsis hospitalizations.,2022,5,"Domain 5: sepsis, infection, community, events",TRUE
+35543307,"Associations of perceived stress, depressive symptoms, and caregiving with inflammation: a longitudinal study.",2023,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+35535479,"Associations of dietary and lifestyle inflammation scores with mortality due to CVD, cancer, and all causes among Black and White American men and women.",2023,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35446759,Individual and Neighborhood Influences on the Relationship Between Waist Circumference and Coronary Heart Disease in the REasons for Geographic and Racial Differences in Stroke Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35422166,Transitions to Family Caregiving and Latent Variables of Systemic Inflammation Over Time.,2023,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+35404546,Health care fragmentation and blood pressure control among adults taking antihypertensive medication.,2022,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+35377943,Association of Transthyretin Val122Ile Variant With Incident Heart Failure Among Black Individuals.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35361506,The Relationship Between Environmental Exposures and Post-Stroke Physical Activity.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35351578,Association of Uremic Solutes With Cardiovascular Death in Diabetic Kidney Disease.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35343285,Sleep Quality Reports From Family Caregivers and Matched Non-caregiving Controls in a Population-Based Study.,2022,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+35322678,Depressive Symptoms and Incident Hospitalization for Heart Failure: Findings From the REGARDS Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35264422,Nucleosides Associated With Incident Ischemic Stroke in the REGARDS and JHS Cohorts.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35234529,Walkable Neighborhoods and Cognition: Implications for the Design of Health Promoting Communities.,2022,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+35230623,Persistence of Depressive Symptoms and Risk of Incident Cardiovascular Disease With and Without Diabetes: Results from the REGARDS Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35210353,An association test of the spatial distribution of rare missense variants within protein structures identifies Alzheimer's disease-related patterns.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35179039,American Heart Association EPI|Lifestyle Scientific Sessions: 2021 Meeting Highlights.,2022,2,"Domain 2: hypertension, antihypertensive, medication, resistant",FALSE
+35151322,"A longitudinal examination of objective neighborhood walkability, body mass index, and waist circumference: the REasons for Geographic And Racial Differences in Stroke study.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35137178,C-reactive Protein and Racial Differences in Type 2 Diabetes Incidence: The REGARDS Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35120683,Spatially varying racial inequities in cardiovascular health and the contribution of individual- and neighborhood-level characteristics across the United States: The REasons for geographic and racial differences in stroke (REGARDS) study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35120553,Challenges at the APOE locus: a robust quality control approach for accurate APOE genotyping.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35104336,Neighborhood Socioeconomic Environment and Risk of Type 2 Diabetes: Associations and Mediation Through Food Environment Pathways in Three Independent Study Samples.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35103389,Replication study of AD-associated rare variants.,2022,1,"Domain 1: variants, acute, annual, assessed",FALSE
+35100591,APOL1 Risk Variants Associated with Serum Albumin in a Population-Based Cohort Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35023350,Atrial Fibrillation and Stroke Symptoms in the REGARDS Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34992631,"Genetic Contributors of Incident Stroke in 10,700 African Americans With Hypertension: A Meta-Analysis From the Genetics of Hypertension Associated Treatments and Reasons for Geographic and Racial Differences in Stroke Studies.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34951656,Multi-ethnic GWAS and fine-mapping of glycaemic traits identify novel loci in the PAGE Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34934895,Thrombo-inflammatory biomarkers and D-dimer in a biracial cohort study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34903337,Relation of Abdominal Obesity to Risk of Atrial Fibrillation (From the Reasons for Geographic and Racial Differences in Stroke [REGARDS] Study).,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34896817,Plasma Pro-Enkephalin A and Ischemic Stroke Risk: The Reasons for Geographic and Racial Differences in Stroke Cohort.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34895192,Health care experiences during the COVID-19 pandemic by race and social determinants of health among adults age ≥ 58 years in the REGARDS study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34865525,Social Determinants of Health and 30-Day Readmissions Among Adults Hospitalized for Heart Failure in the REGARDS Study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34818566,Prescriptions for Potentially Inappropriate Medications from the Beers Criteria Among Older Adults Hospitalized for Heart Failure.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34804120,"Copy Number Variation Identification on 3,800 Alzheimer's Disease Whole Genome Sequencing Data from the Alzheimer's Disease Sequencing Project.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34784734,Multiple Social Vulnerabilities to Health Disparities and Hypertension and Death in the REGARDS Study.,2022,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+34752914,"Associations of Plasma Biomarkers of Inflammation, Fibrosis, and Kidney Tubular Injury With Progression of Diabetic Kidney Disease: A Cohort Study.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34749554,Positive aspects of caregiving in incident and long-term caregivers: Role of social engagement and distress.,2023,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+34742867,"Biomarkers as MEDiators of racial disparities in risk factors (BioMedioR): Rationale, study design, and statistical considerations.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34706968,Alpha Globin Gene Copy Number Is Associated with Prevalent Chronic Kidney Disease and Incident End-Stage Kidney Disease among Black Americans.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34695226,Association of healthy lifestyle and all-cause mortality according to medication burden.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34673080,"Lifecourse socioeconomic position and diabetes incidence in the REasons for Geographic and Racial Differences in Stroke (REGARDS) study, 2003 to 2016.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34672390,Mendelian randomization in the multivariate general linear model framework.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34670519,Access to primary care and cognitive impairment: results from a national community study of aging Americans.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34657127,Evaluation of associations between estimates of particulate matter exposure and new onset type 2 diabetes in the REGARDS cohort.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34655288,Pro-neurotensin/Neuromedin N and Hypertension Risk: A Prospective Study.,2022,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+34611638,High triglyceride to HDL cholesterol ratio is associated with increased coronary heart disease among White but not Black adults.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34521111,How Selection Over Time Contributes to the Inconsistency of the Association Between Sex/Gender and Cognitive Decline Across Cognitive Aging Cohorts.,2022,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34514816,Peripheral Blood Cytopenia and Risk of Cardiovascular Disease and Mortality.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34478162,Social determinants of health and cancer mortality in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) cohort study.,2022,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+34470498,Racial Differences in Blood Pressure Control Following Stroke: The REGARDS Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34461676,"Socioeconomic status and psychological stress: Examining intersection with race, sex and US geographic region in the REasons for Geographic and Racial Differences in Stroke study.",2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34433306,Baseline Cognitive Impairment in Patients With Asymptomatic Carotid Stenosis in the CREST-2 Trial.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34431328,Relationship between diet and relative risk of pain in a cross-sectional analysis of the REGARDS longitudinal study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34412513,Serum Zinc Levels and Incidence of Ischemic Stroke: The Reasons for Geographic and Racial Differences in Stroke Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34387620,Racial Disparities in Preventable Adverse Events Attributed to Poor Care Coordination Reported in a National Study of Older US Adults.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34339112,Polypharmacy and mortality association by chronic kidney disease status: The REasons for Geographic And Racial Differences in Stroke Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34329187,Higher Serum Urate Levels Are Associated With an Increased Risk for Sudden Cardiac Death.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34325692,"Association between temperature exposure and cognition: a cross-sectional analysis of 20,687 aging adults in the United States.",2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34325516,Multiple Blood Biomarkers and Stroke Risk in Atrial Fibrillation: The REGARDS Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34301156,Can Neighborhood Social Infrastructure Modify Cognitive Function? A Mixed-Methods Study of Urban-Dwelling Aging Americans.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34270125,Rural/urban differences in the prevalence of stroke risk factors: A cross-sectional analysis from the REGARDS study.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34196573,Racial differences in persistence to secondary prevention medication regimens after ischemic stroke.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34189926,"Mediterranean Diet Score, Dietary Patterns, and Risk of Sudden Cardiac Death in the REGARDS Study.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34148364,Blood-Brain Barrier Crossing Renin-Angiotensin Drugs and Cognition in the Elderly: A Meta-Analysis.,2021,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+34137853,Racial Segregation and Cognitive Function Among Older Adults in the United States: Findings From the Reasons for Geographic and Racial Differences in Stroke Study.,2022,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34087323,Rural-urban differences in stroke risk.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34087319,Neighborhood active aging infrastructure and cognitive function: A mixed-methods study of older Americans.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+34077616,"Television viewing, physical activity and venous thromboembolism risk: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34051343,Comparing competing geospatial measures to capture the relationship between the neighborhood food environment and diet.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34045272,Sex and Race Differences in the Risk of Ischemic Stroke Associated With Fasting Blood Glucose in REGARDS.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34031160,Atrial fibrillation and risk of incident heart failure with reduced versus preserved ejection fraction.,2022,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34013344,Pro-Neurotensin/Neuromedin N and Risk of Incident Metabolic Syndrome and Diabetes Mellitus in the REGARDS Cohort.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+34006506,"Joint association between accelerometry-measured daily combination of time spent in physical activity, sedentary behaviour and sleep and all-cause mortality: a pooled analysis of six prospective cohorts using compositional analysis.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33962741,The Dietary Approaches to Stop Hypertension (DASH) Diet Pattern and Incident Heart Failure.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33958425,Does the Association Between Hemoglobin A1c and Risk of Cardiovascular Events Vary by Residential Segregation? The REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33932789,"Egg consumption, overall diet quality, and risk of type 2 diabetes and coronary heart disease: A pooling project of US prospective cohorts.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33899495,Ambulatory Care Fragmentation and Incident Stroke.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33866274,Liver Fibrosis is Associated with Ischemic Stroke Risk in Women but not Men: The REGARDS Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33684372,Relation of Atrial Fibrillation to Cognitive Decline (from the REasons for Geographic and Racial Differences in Stroke [REGARDS] Study).,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+33675389,"A novel evolutionary-concordance lifestyle score is inversely associated with all-cause, all-cancer, and all-cardiovascular disease mortality risk.",2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33666392,Trajectory of Cognitive Decline After Sepsis.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+33632366,Correlates of a southern diet pattern in a national cohort study of blacks and whites: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33615415,Plant food intake is associated with lower cadmium body burden in middle-aged adults.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33598444,Neighborhood Walkability as a Predictor of Incident Hypertension in a National Cohort Study.,2021,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+33596897,Differences in ambulatory care fragmentation by race.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33570574,Association Between Caregiver Strain and Self-Care Among Caregivers With Diabetes.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33467879,Change in Life's Simple 7 Measure of Cardiovascular Health After Incident Stroke: The REGARDS Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33415329,"Corrigendum to: Stress, Burden, and Well-Being in Dementia and Nondementia Caregivers: Insights From the Caregiving Transitions Study.",2021,4,"Domain 4: caregivers, caregiving, family, stress",FALSE
+33399855,Association of Sickle Cell Trait With Incidence of Coronary Heart Disease Among African American Individuals.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33382815,C-reactive protein and risk of cognitive decline: The REGARDS study.,2020,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+33378421,N-Terminal Pro-B-Type Natriuretic Peptide and Longitudinal Risk of Hypertension.,2021,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+33326556,C-Reactive Protein and Incident Hypertension in Black and White Americans in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort Study.,2021,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+33318134,Does a physical activity supportive environment ameliorate or exacerbate socioeconomic inequities in incident coronary heart disease?,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33302713,"Response by Pinheiro et al to Letter Regarding Article, ""Multiple Vulnerabilities to Health Disparities and Incident Heart Failure Hospitalization in the REGARDS Study"".",2020,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+33302710,Cardiovascular Disease Events and Mortality After Myocardial Infarction Among Black and White Adults: REGARDS Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33287278,Weather Woes? Exploring Potential Links between Precipitation and Age-Related Cognitive Decline.,2020,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+33279367,Sex Differences in Factors Contributing to the Racial Disparity in Diabetes Risk.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33273294,Ambulatory Care Fragmentation and Subsequent Hospitalization: Evidence From the REGARDS Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33269599,Number of Social Determinants of Health and Fatal and Nonfatal Incident Coronary Heart Disease in the REGARDS Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33251918,The Association of Neighborhood Medical Facilities with Aging in Place and Risk of Incident Myocardial Infarction.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33246926,Risk for cardiovascular events following 'microsize' versus usual myocardial infarctions.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33239356,Joint associations of accelero-meter measured physical activity and sedentary time with all-cause mortality: a harmonised meta-analysis in more than 44 000 middle-aged and older individuals.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33207166,Prompt Outpatient Care For Older Adults Discharged From The Emergency Department Reduces Recidivism.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33140281,Healthcare Fragmentation and Incident Acute Coronary Heart Disease Events: a Cohort Study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33131312,Cardiovascular Health and Transition From Controlled Blood Pressure to Apparent Treatment Resistant Hypertension: The Jackson Heart Study and the REGARDS Study.,2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+33129598,Magnesium intake is inversely associated with the risk of metabolic syndrome in the REasons for geographic and racial differences in stroke (REGARDS) cohort study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33119108,Performance of the Pooled Cohort Equations to Estimate Atherosclerotic Cardiovascular Disease Risk by Body Mass Index.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33104469,Identifying Genetic and Biological Determinants of Race-Ethnic Disparities in Stroke in the United States.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33089749,Pro-neurotensin/neuromedin N and risk of ischemic stroke: The REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33074163,"The Diabetes Location, Environmental Attributes, and Disparities Network: Protocol for Nested Case Control and Cohort Studies, Rationale, and Baseline Characteristics.",2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33045844,Polypharmacy in Older Adults Hospitalized for Heart Failure.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33024285,Diet pattern may affect fasting insulin in a large sample of black and white adults.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+33016101,Forty-Year Shifting Distribution of Systolic Blood Pressure With Population Hypertension Treatment and Control.,2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+32988759,Disparities in all-cause mortality with potentially inappropriate medication use: Analysis of the Reasons for Geographic and Racial Differences in Stroke study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32981424,Time-Varying Depressive Symptoms and Cardiovascular and All-Cause Mortality: Does the Risk Vary by Age or Sex?,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32962491,Change in Social Engagement among Incident Caregivers and Controls: Findings from the Caregiving Transitions Study.,2021,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+32960717,Neighborhood Participation Is Less Likely among Older Adults with Sidewalk Problems.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32928039,Life's Simple 7 and Incident Hypertension: The REGARDS Study.,2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+32924633,Underutilization of Treatment for Black Adults With Apparent Treatment-Resistant Hypertension: JHS and the REGARDS Study.,2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+32901370,Healthcare fragmentation and cardiovascular risk control among older cancer survivors in the Reasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2021,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+32838895,Fast-food for thought: Retail food environments as resources for cognitive health and wellbeing among aging Americans?,2020,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+32835436,Effects of Transitions to Family Caregiving on Well-Being: A Longitudinal Population-Based Study.,2020,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+32833020,Evaluation of Racial Disparities in Hospice Use and End-of-Life Treatment Intensity in the REGARDS Cohort.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32816014,"Stress, Burden, and Well-Being in Dementia and Nondementia Caregivers: Insights From the Caregiving Transitions Study.",2021,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+32764746,Development and validation of a model for predicting incident type 2 diabetes using quantitative clinical data and a Bayesian logistic model: A nationwide cohort and modeling study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32737612,Serum magnesium concentration and incident cognitive impairment: the reasons for geographic and racial differences in stroke study.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+32723295,Is adiposity associated with objectively measured physical activity and sedentary behaviors in older adults?,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+35369560,Association of FGF23 with Incident Sepsis in Community-Dwelling Adults: A Cohort Study.,2020,5,"Domain 5: sepsis, infection, community, events",TRUE
+32720240,Association Between Patients' Self-Reported Gaps in Care Coordination and Preventable Adverse Outcomes: a Cross-Sectional Survey.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32703013,Multiple Vulnerabilities to Health Disparities and Incident Heart Failure Hospitalization in the REGARDS Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32702350,Risk factor control among Black and White adults with diabetes onset in older adulthood: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32693751,Genome-Wide Association Study Meta-Analysis of Stroke in 22 000 Individuals of African Descent Identifies Novel Associations With Stroke.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32685900,N-Terminal pro-B-type natriuretic peptide and stroke risk across a spectrum of cerebrovascular disease: The REasons for Geographic and Racial Differences in Stroke cohort.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32684424,Elevated depressive symptoms and risk of all-cause and cardiovascular mortality among adults with and without diabetes: The REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32680814,Low-density lipoprotein cholesterol levels among individuals experiencing statin-associated symptoms: Data from the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32673521,Impact of Multiple Social Determinants of Health on Incident Stroke.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32650902,Objectively Measured Physical Activity and the Risk of Atrial Fibrillation (from the REGARDS Study).,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32623400,Pro-Neurotensin/Neuromedin N and Risk of Cognitive Impairment in a Prospective Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32613226,The relationship of cognitive change over time to the self-reported Ascertain Dementia 8-item Questionnaire in a general population.,2021,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+32604717,Association of Allostatic Load with All-Cause andCancer Mortality by Race and Body Mass Index in theREGARDS Cohort.,2020,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+32601040,"Racial differences in sleep duration intersect with sex, socioeconomic status, and U.S. geographic region: The REGARDS study.",2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32581123,The transition to family caregiving and its effect on biomarkers of inflammation.,2020,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+32495723,Association of Atrial Fibrillation Without Cardiovascular Comorbidities and Stroke Risk: From the REGARDS Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32451197,Depressive symptoms do not discriminate: racial and economic influences between time-varying depressive symptoms and mortality among REGARDS participants.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32349001,Chronic Kidney Disease Awareness and Longitudinal Health Outcomes: Results from the REasons for Geographic And Racial Differences in Stroke Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32340528,Exploring the Spatial Patterning in Racial Differences in Cardiovascular Health Between Blacks and Whites Across the United States: The REGARDS Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32316807,Social Determinants of Health and 90-Day Mortality After Hospitalization for Heart Failure in the REGARDS Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32299504,Gout is associated with an increased risk for incident heart failure among older adults: the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32286692,Differences in ambulatory care fragmentation between cancer survivors and noncancer controls.,2020,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+32282123,"The association of hypertension, hypertension duration, and control with incident heart failure in black and white adults.",2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+32240245,Interferon gamma-induced protein 10 (IP-10) and cardiovascular disease in African Americans.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32191519,"Black-White Differences in Cardiovascular Disease Mortality: A Prospective US Study, 2003-2017.",2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32157955,"Soluble CD14, Ischemic Stroke, and Coronary Heart Disease Risk in a Prospective Study: The REGARDS Cohort.",2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32139160,Factors Modifying the Risk of Atrial Fibrillation Associated With Atrial Premature Complexes in Patients With Hypertension.,2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+32131746,Agreement of claims-based methods for identifying sepsis with clinical criteria in the REasons for Geographic and Racial Differences in Stroke (REGARDS) cohort.,2020,5,"Domain 5: sepsis, infection, community, events",TRUE
+32126970,Assembling and validating a heart failure-free cohort from the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32126939,Electrocardiographic ST-T Abnormities Are Associated With Stroke Risk in the REGARDS Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32120131,Vascular-brain Injury Progression after Stroke (VIPS) study: concept for understanding racial and geographic determinants of cognitive decline after stroke.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32098707,Disparities in the appropriateness of medication use: Analysis of the REasons for Geographic And Racial Differences in Stroke (REGARDS) population-based cohort study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+32048856,Does Adherence to Mediterranean Diet Mediate the Association Between Food Environment and Obesity Among Non-Hispanic Black and White Older US Adults? A Path Analysis.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31985870,Coagulation factor VIII: Relationship to cardiovascular disease risk and whole genome sequence and epigenome-wide analysis in African Americans.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31954141,Physical health composite and risk of cancer mortality in the REasons for Geographic and Racial Differences in Stroke Study.,2020,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+31860382,Gender differences in association of prescription opioid use and mortality: A propensity-matched analysis from the REasons for Geographic And Racial Differences in Stroke (REGARDS) prospective cohort.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31840854,"Hemoglobin levels and coronary heart disease risk by age, race, and sex in the reasons for geographic and racial differences in stroke study (REGARDS).",2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31818230,Depressive Symptoms After Ischemic Stroke: Population-Based Comparisons of Patients and Caregivers With Matched Controls.,2020,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+31786980,Severity of Hypertension Mediates the Association of Hyperuricemia With Stroke in the REGARDS Case Cohort Study.,2020,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+31704668,APOL1 Nephropathy Risk Alleles and Risk of Sepsis in Blacks.,2019,5,"Domain 5: sepsis, infection, community, events",TRUE
+31684782,A Prospective Study of Community Mediators on the Risk of Sepsis After Cancer.,2020,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+31630377,Transitions to family caregiving: enrolling incident caregivers and matched non-caregiving controls from a population-based study.,2020,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+31629964,Association of 25-hydroxyvitamin D with incident coronary heart disease in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31624783,The risk of arterial thromboembolic events after cancer diagnosis.,2019,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+31595946,State School Policies as Predictors of Physical and Mental Health: A Natural Experiment in the REGARDS Cohort.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31590475,Calcium Intake and Serum Calcium Level in Relation to the Risk of Ischemic Stroke: Findings from the REGARDS Study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31566401,Job complexity and hazardous working conditions: How do they explain educational gradient in mortality?,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31566397,Life course biopsychosocial effects of retrospective childhood social support and later-life cognition.,2019,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+31563468,APOL1 Nephropathy Risk Alleles and Mortality in African American Adults: A Cohort Study.,2020,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31526122,Neighborhood Socioeconomic Status and Trajectories of Physical Health-Related Quality of Life Among Stroke Survivors.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31520899,C-reactive protein and stroke risk in blacks and whites: The REasons for Geographic And Racial Differences in Stroke cohort.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31511398,PCSK9 loss-of-function variants and Lp(a) phenotypes among black US adults.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+36704751,OBLIQUE RANDOM SURVIVAL FORESTS.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31448052,Association of baseline inflammatory biomarkers with cancer mortality in the REGARDS cohort.,2019,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+31405299,Sex Differences in Hypertension and Stroke Risk in the REGARDS Study: A Longitudinal Cohort Study.,2019,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+31402719,Association of formal and informal care with health-related quality of life and depressive symptoms: findings from the Caring for Adults Recovering from the Effects of Stroke study.,2021,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31391199,"Does the Association of Diabetes With Stroke Risk Differ by Age, Race, and Sex? Results From the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31373368,Development and Validation of Novel Dietary and Lifestyle Inflammation Scores.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31321281,Prevalence of workplace discrimination and mistreatment in a national sample of older U.S. workers: The REGARDS cohort study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31312804,Sickle cell trait and risk of cognitive impairment in African-Americans: The REGARDS cohort.,2019,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+31162140,Racial differences in the association of NT-proBNP with risk of incident heart failure in REGARDS.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31099861,Association of Sugary Beverage Consumption With Mortality Risk in US Adults: A Secondary Analysis of Data From the REGARDS Study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31095736,Indications for β-Blocker Prescriptions in Heart Failure with Preserved Ejection Fraction.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31079085,Determinants of cigarette smoking status in a national cohort of black and white adult ever smokers in the USA: a cross-sectional analysis of the REGARDS study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31047019,Association of Urine Albumin Excretion With Incident Heart Failure Hospitalization in Community-Dwelling Adults.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31028976,Association of sickle cell trait with atrial fibrillation: The REGARDS cohort.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31023426,Dietary Patterns and Incident Heart Failure in U.S. Adults Without Known Coronary Disease.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31004072,Inflammatory cytokines and ischemic stroke risk: The REGARDS cohort.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30944171,Walk Score and objectively measured physical activity within a national cohort.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30915889,The relationship of longitudinal cognitive change to self-reported IADL in a general population.,2020,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+30879609,Medication-Taking Behaviors and Perceptions Among Adults With Heart Failure (from the REasons for Geographic And Racial Differences in Stroke Study).,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30878238,"Race-based demographic, anthropometric and clinical correlates of N-terminal-pro B-type natriuretic peptide.",2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30852967,Sociodemographic Disparities in Long-Term Mortality Among Stroke Survivors in the United States.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30843051,Risk factors for 'microsize' vs. usual myocardial infarctions in the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30802456,Association between obesity and biomarkers of inflammation and metabolism with cancer mortality in a prospective cohort study.,2019,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+30799203,Association of secondhand tobacco smoke exposure during childhood on adult cardiovascular disease risk among never-smokers.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30786745,Lipoprotein(a) and Risk of Ischemic Stroke in the REGARDS Study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30771859,Sex Differences in Risk Factors for Incident Atrial Fibrillation (from the Reasons for Geographic and Racial Differences in Stroke [REGARDS] Study).,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30746585,Characteristics and Cardiovascular Disease Event Rates among African Americans and Whites Who Meet the Further Cardiovascular Outcomes Research with PCSK9 Inhibition in Subjects with Elevated Risk (FOURIER) Trial Inclusion Criteria.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30726226,PCSK9 loss-of-function variants and risk of infection and sepsis in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) cohort.,2019,5,"Domain 5: sepsis, infection, community, events",TRUE
+30704471,A PheWAS study of a large observational epidemiological cohort of African Americans from the REGARDS study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30643923,"Ideal cardiovascular health, glycaemic status and incident type 2 diabetes mellitus: the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30632050,Using health-related quality of life to predict cardiovascular disease events.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30624986,Blood Pressure and Cognitive Decline Over 8 Years in Middle-Aged and Older Black and White Americans.,2019,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+30595115,Cardiovascular Disease and Mortality in Adults Aged ≥60 Years According to Recommendations by the American College of Cardiology/American Heart Association and American College of Physicians/American Academy of Family Physicians.,2019,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+30588700,Verbal fluency in a national sample: Telephone administration methods.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30586736,Potential Cardiovascular Disease Events Prevented with Adoption of the 2017 American College of Cardiology/American Heart Association Blood Pressure Guideline.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30582968,"The Prevalence of Cognitive Impairment Among Adults With Incident Heart Failure: The ""Reasons for Geographic and Racial Differences in Stroke"" (REGARDS) Study.",2019,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+30576432,"Associations between cardiovascular disease, cancer, and very low high-density lipoprotein cholesterol in the REasons for Geographical and Racial Differences in Stroke (REGARDS) study.",2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30551177,Potential Effects on Mortality of Replacing Sedentary Time With Short Sedentary Bouts or Physical Activity: A National Cohort Study.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30518827,"Depressive symptoms, perceived stress, and metabolic health: The REGARDS study.",2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30452548,An Investigation of Selection Bias in Estimating Racial Disparity in Stroke Risk Factors.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30442286,Differences in Risk of Sudden Cardiac Death Between Blacks and Whites.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30397025,Association of community food environment and obesity among US adults: a geographical information system analysis.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30375291,Adherence to Mediterranean-style diet and risk of sepsis in the REasons for Geographic and Racial Differences in Stroke (REGARDS) cohort.,2018,5,"Domain 5: sepsis, infection, community, events",TRUE
+30363020,Use of Medicare Claims Data for the Identification of Myocardial Infarction: The Reasons for Geographic And Racial Differences in Stroke Study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30348535,Relationship of Estimated GFR and Albuminuria to Concurrent Laboratory Abnormalities: An Individual Participant Data Meta-analysis in a Global Consortium.,2019,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30282769,"Sleep duration and risk of incident stroke by age, sex, and race: The REGARDS study.",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30279696,Dietary Oxidative Balance Scores and Biomarkers of Inflammation among Individuals with and without Chronic Kidney Disease.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30239610,Plasma 25-Hydroxyvitamin D and the Longitudinal Risk of Sepsis in the REGARDS Cohort.,2019,5,"Domain 5: sepsis, infection, community, events",TRUE
+30197985,Urinary Tubular Injury Biomarkers Are Associated With ESRD and Death in the REGARDS Study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30189994,2017 ACC/AHA Blood Pressure Treatment Guideline Recommendations and Cardiovascular Risk.,2018,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+30176963,"Race, Sex, Age, and Regional Differences in the Association of Obstructive Sleep Apnea With Atrial Fibrillation: Reasons for Geographic and Racial Differences in Stroke Study.",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30165636,"Associations between very low concentrations of low density lipoprotein cholesterol, high sensitivity C-reactive protein, and health outcomes in the Reasons for Geographical and Racial Differences in Stroke (REGARDS) study.",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30083763,Participation in Get With The Guidelines-Stroke and Its Association With Quality of Care for Stroke.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30057227,Willingness to be Reinitiated on a Statin (from the REasons for Geographic and Racial Differences in Stroke Study).,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30005552,Dietary Patterns and Mediterranean Diet Score and Hazard of Recurrent Coronary Heart Disease Events and All-Cause Mortality in the REGARDS Study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29984467,Mechanisms and mitigating factors for venous thromboembolism in chronic kidney disease: the REGARDS study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29903604,Racial Differences in the Association Between Nonexercise Estimated Cardiorespiratory Fitness and Incident Stroke.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29899045,APOL1 Nephropathy Risk Variants and Incident Cardiovascular Disease Events in Community-Dwelling Black Adults.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29890521,"Factor VIII, Protein C and Cardiovascular Disease Risk: The REasons for Geographic and Racial Differences in Stroke Study (REGARDS).",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29866581,Usefulness of Proneurotensin to Predict Cardiovascular and All-Cause Mortality in a United States Population (from the Reasons for Geographic and Racial Differences in Stroke Study).,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29862879,Mediating Effects of Frailty Indicators on the Risk of Sepsis After Cancer.,2020,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29763753,A prospective study of cancer survivors and risk of sepsis within the REGARDS cohort.,2018,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29756004,"Galectin-3 and incident cognitive impairment in REGARDS, a cohort of blacks and whites.",2018,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+29738916,Serum mercury concentration and the risk of ischemic stroke: The REasons for Geographic and Racial Differences in Stroke Trace Element Study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29733497,Hemostasis biomarkers and incident cognitive impairment: the REGARDS study.,2018,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+29728524,New diagnosis of cancer and the risk of subsequent cerebrovascular events.,2018,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29723004,Reduced mortality rates among caregivers: Does family caregiving provide a stress-buffering effect?,2018,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+29710269,Association of Sickle Cell Trait With Ischemic Stroke Among African Americans: A Meta-analysis.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29690517,Fine Particulate Matter Pollution and Risk of Community-Acquired Sepsis.,2018,5,"Domain 5: sepsis, infection, community, events",TRUE
+29668690,Aspirin use and long-term rates of sepsis: A population-based cohort study.,2018,5,"Domain 5: sepsis, infection, community, events",TRUE
+29662629,Pre-diagnostic biomarkers of metabolic dysregulation and cancer mortality.,2018,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29661151,N-terminal pro-B-type natriuretic peptide and microsize myocardial infarction risk in the reasons for geographic and racial differences in stroke study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29643945,Epigenome-wide association study of metabolic syndrome in African-American adults.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29596498,"Analyses of genome wide association data, cytokines, and gene expression in African-Americans with benign ethnic neutropenia.",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29581343,Risk Factors for Poststroke Cognitive Decline: The REGARDS Study (Reasons for Geographic and Racial Differences in Stroke).,2018,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+29537120,Development of algorithms for identifying fatal cardiovascular disease in Medicare claims.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29529073,"Non-alcoholic fatty liver disease, liver biomarkers and stroke risk: The Reasons for Geographic and Racial Differences in Stroke cohort.",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29516098,Association of Fibroblast Growth Factor 23 With Risk of Incident Coronary Heart Disease in Community-Living Adults.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29447790,Fine particulate matter and incident coronary heart disease in the REGARDS cohort.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29306879,Observational study of the differential impact of time-varying depressive symptoms on all-cause and cause-specific mortality by health status in community-dwelling adults: the REGARDS study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+31467800,The Association between Residence in a Food Desert Census Tract and Adherence to Dietary Patterns in the REGARDS Cohort.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+30906097,Bayesian Bridge Regression.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29281114,Serum albumin concentration and risk of end-stage renal disease: the REGARDS study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29246121,Metabolic dysregulation and cancer mortality in a national cohort of blacks and whites.,2017,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29212736,Arsenic Exposure in Relation to Ischemic Stroke: The Reasons for Geographic and Racial Differences in Stroke Study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29178569,"A Prospective Study of Obesity, Metabolic Health, and Cancer Mortality.",2018,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29167879,Racial Differences in Plasma Levels of N-Terminal Pro-B-Type Natriuretic Peptide and Outcomes: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29153246,Usefulness of the American Heart Association's Life Simple 7 to Predict the Risk of Atrial Fibrillation (from the REasons for Geographic And Racial Differences in Stroke [REGARDS] Study).,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29146683,"PCSK9 Variants, Low-Density Lipoprotein Cholesterol, and Neurocognitive Impairment: Reasons for Geographic and Racial Differences in Stroke Study (REGARDS).",2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+29125314,Associations of Calcium and Dairy Products with All-Cause and Cause-Specific Mortality in the REasons for Geographic and Racial Differences in Stroke (REGARDS) Prospective Cohort Study.,2017,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+29121335,Community characteristics and regional variations in sepsis.,2017,5,"Domain 5: sepsis, infection, community, events",TRUE
+29071708,Men Lacking a Caregiver Have Greater Risk of Long-Term Nursing Home Placement After Stroke.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28991948,Outpatient Treatment of Deep Vein Thrombosis in the United States: The Reasons for Geographic and Racial Differences in Stroke Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28943688,Bayesian Group Bridge for Bi-level Variable Selection.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28915854,Medical therapy following hospitalization for heart failure with reduced ejection fraction and association with discharge to long-term care: a cross-sectional analysis of the REasons for Geographic And Racial Differences in Stroke (REGARDS) population.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28892811,Patterns of Sedentary Behavior and Mortality in U.S. Middle-Aged and Older Adults: A National Cohort Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28890281,"Participation in a US community-based cardiovascular health study: investigating nonrandom selection effects related to employment, perceived stress, work-related stress, and family caregiving.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28886993,Smoking and risk of atrial fibrillation in the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28872212,Galectin-3 and risk of ischaemic stroke: Reasons for Geographic and Racial Differences in Stroke cohort.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28847913,Vulnerabilities to Health Disparities and Statin Use in the REGARDS (Reasons for Geographic and Racial Differences in Stroke) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28838913,"Age, Sex, and Racial Differences in Neuroimaging Use in Acute Stroke: A Population-Based Study.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28822561,Comparison of Risk of Atrial Fibrillation Among Employed Versus Unemployed (from the REasons for Geographic and Racial Differences in Stroke Study).,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28768753,"PCSK9 Loss-of-Function Variants, Low-Density Lipoprotein Cholesterol, and Risk of Coronary Heart Disease and Stroke: Data From 9 Studies of Blacks and Whites.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28768644,Age and Sex Disparities in Discharge Statin Prescribing in the Stroke Belt: Evidence From the Reasons for Geographic and Racial Differences in Stroke Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28705381,Usefulness of Atrial Premature Complexes on Routine Electrocardiogram to Determine the Risk of Atrial Fibrillation (from the REGARDS Study).,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28701217,Association of baseline steroid use with long-term rates of infection and sepsis in the REGARDS cohort.,2017,5,"Domain 5: sepsis, infection, community, events",TRUE
+28701103,Lipid management among individuals with inflammatory arthritis in the national REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2018,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+28696265,"Black-White Differences in Incident Fatal, Nonfatal, and Total Coronary Heart Disease.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28692106,Haemostasis biomarkers and risk of intracerebral haemorrhage in the REasons for Geographic and Racial Differences in Stroke Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28675981,Frailty Syndrome and Risk of Sepsis in the REasons for Geographic And Racial Differences in Stroke (REGARDS) Cohort.,2019,5,"Domain 5: sepsis, infection, community, events",TRUE
+28652459,"Blood Pressure, Antihypertensive Polypharmacy, Frailty, and Risk for Serious Fall Injuries Among Older Treated Adults With Hypertension.",2017,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+28634217,Incident Cardiovascular Disease Among Adults With Blood Pressure <140/90 mm Hg.,2017,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+28626048,Contributors to the Excess Stroke Mortality in Rural Areas in the United States.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28595791,Association between trace elements in the environment and stroke risk: The reasons for geographic and racial differences in stroke (REGARDS) study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28526763,Self-Reported Stroke Risk Stratification: Reasons for Geographic and Racial Differences in Stroke Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28468785,Comparison of Expert Adjudicated Coronary Heart Disease and Cardiovascular Disease Mortality With the National Death Index: Results From the REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28456465,Fine Particulate Matter (PM2.5) and the Risk of Stroke in the REGARDS Cohort.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28454830,National patterns in intensity and frequency of outpatient care for apparent treatment-resistant hypertension.,2017,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+28430825,Discovery and fine-mapping of adiposity loci using high density imputation of genome-wide association studies in individuals of African ancestry: African Ancestry Anthropometry Genetics Consortium.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28410861,Prevalence of Cardiovascular Health by Occupation: A Cross-Sectional Analysis Among U.S. Workers Aged ≥45 Years.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28408440,Global Cardiovascular and Renal Outcomes of Reduced GFR.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28393470,Associations of coagulation factors IX and XI levels with incident coronary heart disease and ischemic stroke: the REGARDS study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28390681,Relation Between Estimated Cardiorespiratory Fitness and Atrial Fibrillation (from the Reasons for Geographic and Racial Differences in Stroke Study).,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28389611,"Stroke in Indigenous Africans, African Americans, and European Americans: Interplay of Racial and Geographic Factors.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28369197,Risk of Acute Coronary Heart Disease After Sepsis Hospitalization in the REasons for Geographic and Racial Differences in Stroke (REGARDS) Cohort.,2017,5,"Domain 5: sepsis, infection, community, events",TRUE
+28342520,Duplex velocity criteria for carotid endarterectomy.,2017,8,"Domain 8: criteria, acute, annual, assessed",FALSE
+28333708,Cost-effectiveness of Antihypertensive Medication: Exploring Race and Sex Differences Using Data From the REasons for Geographic and Racial Differences in Stroke Study.,2017,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+28314800,Performance of the Atherosclerotic Cardiovascular Disease Pooled Cohort Risk Equations by Social Deprivation Status.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28280138,Sickle Cell Trait and the Risk of ESRD in Blacks.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28268067,Application of the Third International Consensus Definitions for Sepsis (Sepsis-3) Classification: a retrospective population-based cohort study.,2017,5,"Domain 5: sepsis, infection, community, events",TRUE
+28259549,"Insurance, self-reported medication adherence and LDL cholesterol: The REasons for Geographic And Racial Differences in Stroke study.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28184880,Alcohol Consumption and Incident Stroke Among Older Adults.,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28179490,Paleolithic and Mediterranean Diet Pattern Scores Are Inversely Associated with All-Cause and Cause-Specific Mortality in Adults.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28159800,Revised Framingham Stroke Risk Profile to Reflect Temporal Trends.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28151403,Cardiovascular Health and Healthcare Utilization and Expenditures Among Medicare Beneficiaries: The REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28138888,The geographic distribution of trace elements in the environment: the REGARDS study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28126238,Measures of Kidney Disease and the Risk of Venous Thromboembolism in the REGARDS (Reasons for Geographic and Racial Differences in Stroke) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28073852,"Heat Maps of Hypertension, Diabetes Mellitus, and Smoking in the Continental United States.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28070913,Does Identification of Previously Undiagnosed Conditions Change Care-Seeking Behavior?,2018,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28061370,Fine particulate air pollution and premature ventricular contractions: The REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+28010729,Cholesterol levels and long-term rates of community-acquired sepsis.,2016,5,"Domain 5: sepsis, infection, community, events",TRUE
+28004063,D-dimer and the Risk of Stroke and Coronary Heart Disease. The REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27839767,Racial Differences in the Association between Parity and Incident Stroke: Results from the REasons for Geographic and Racial Differences in Stroke Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27833859,"Associations of 25-hydroxyvitamin D with markers of inflammation, insulin resistance and obesity in black and white community-dwelling adults.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27823692,"Diabetes, diabetes severity, and coronary heart disease risk equivalence: REasons for Geographic and Racial Differences in Stroke (REGARDS).",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27813265,Association of stroke risk biomarkers with stroke symptoms: the Reasons for Geographic and Racial Differences in Stroke cohort.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27812184,"Vitamin D, Fibroblast Growth Factor 23 and Incident Cognitive Impairment: Findings from the REGARDS Study.",2016,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+27655439,Dietary flavonoid intake and incident coronary heart disease: the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27792645,Effects of Concurrent Depressive Symptoms and Perceived Stress on Cardiovascular Risk in Low- and High-Income Participants: Findings From the Reasons for Geographical and Racial Differences in Stroke (REGARDS) Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27758949,"Response by Gutiérrez et al to Letter Regarding Article, ""Hemoglobin Concentration and Risk of Incident Stroke in Community-Living Adults"".",2016,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+27752305,Dietary patterns are associated with cognitive function in the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2016,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+27712649,High-Sensitivity C-Reactive Protein and Risk of Stroke in Atrial Fibrillation (from the Reasons for Geographic and Racial Differences in Stroke Study).,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27666895,Racial Differences in the Incidence of Cardiovascular Risk Factors in Older Black and White Adults.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27651383,Linkage of a Population-Based Cohort With Primary Data Collection to Medicare Claims: The Reasons for Geographic and Racial Differences in Stroke Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27649843,Fine particulate air pollution and premature atrial contractions: The REasons for Geographic And Racial Differences in Stroke study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27626792,Incidence and Case Fatality at the County Level as Contributors to Geographic Disparities in Stroke Mortality.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27618452,"The genetics of blood pressure regulation and its target organs from association studies in 342,415 individuals.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27580146,Objectively Measured Physical Activity and Cognitive Function in Older Adults.,2017,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+27567834,N-Terminal Pro-B-Type Natriuretic Peptide and Risk of Future Cognitive Impairment in the REGARDS Cohort.,2016,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+27531069,Differential Impact of Risk Factors in Blacks and Whites in the Development of Atrial Fibrillation: the Reasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27529786,Premature Atrial Contractions on the Screening Electrocardiogram and Risk of Ischemic Stroke: The Reasons for Geographic and Racial Differences in Stroke Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27523775,"Albuminuria, kidney function, and sudden cardiac death: Findings from The Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2017,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27521153,"Elucidating the Association Between Depressive Symptoms, Coronary Heart Disease, and Stroke in Black and White Adults: The REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27513580,"Multivitamin Use and Serum Vitamin B12 Concentrations in Older-Adult Metformin Users in REGARDS, 2003-2007.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27512924,Hemostasis biomarkers and risk of sepsis: the REGARDS cohort.,2016,5,"Domain 5: sepsis, infection, community, events",TRUE
+27480477,Investigation of selection bias in the association of race with prevalent atrial fibrillation in a national cohort study: REasons for Geographic And Racial Differences in Stroke (REGARDS).,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27461397,Prevalence of electrocardiographic abnormalities based on hypertension severity and blood pressure levels: the Reasons for Geographic and Racial Differences in Stroke study.,2016,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+27459634,A prospective study of dietary patterns and cancer mortality among Blacks and Whites in the REGARDS cohort.,2016,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+27435204,"Medicare claims indicators of healthcare utilization differences after hospitalization for ischemic stroke: Race, gender, and caregiving effects.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27400190,What is the association of lipid levels and incident stroke?,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27382006,Hemoglobin Concentration and Risk of Incident Stroke in Community-Living Adults.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27379541,"Associations of blood pressure, sunlight, and vitamin D in community-dwelling adults.",2016,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+27376567,Stroke symptoms and risk for incident coronary heart disease in the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27350188,"Gender, race, age, and regional differences in the association of pulse pressure with atrial fibrillation: the Reasons for Geographic and Racial Differences in Stroke study.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27338865,Dietary fried fish intake increases risk of CVD: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27324843,Is there an association between the prevalence of atrial fibrillation and severity and control of hypertension? The REasons for Geographic And Racial Differences in Stroke study.,2016,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+27294752,"US Mortality: Influence of Race, Geography and Cardiovascular Risk Among Participants in the Population-Based REGARDS Cohort.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27256672,Where to Focus Efforts to Reduce the Black-White Disparity in Stroke Mortality: Incidence Versus Case Fatality?,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27134256,Agreement between Rheumatologist and Patient-reported Adherence to Methotrexate in a US Rheumatoid Arthritis Registry.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27091516,Association of Reduced eGFR and Albuminuria with Serious Fall Injuries among Older Adults.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27066062,EM Adaptive LASSO-A Multilocus Modeling Strategy for Detecting SNPs Associated with Zero-inflated Count Phenotypes.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27031381,Derivation of Novel Risk Prediction Scores for Community-Acquired Sepsis and Severe Sepsis.,2016,5,"Domain 5: sepsis, infection, community, events",TRUE
+27015163,Distinct age and self-rated health crossover mortality effects for African Americans: Evidence from a national cohort study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26925119,The role of cystatin-C in the confirmation of reduced glomerular filtration rate among the oldest old.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26880475,Impact of Awareness and Patterns of Nonhospitalized Atrial Fibrillation on the Risk of Mortality: The Reasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26879810,Association between television viewing time and risk of incident stroke in a general population: Results from the REGARDS study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26823152,"Agreement between Medicare pharmacy claims, self-report, and medication inventory for assessing lipid-lowering medication use.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26818894,Calcium channel blocker use is associated with lower fasting serum glucose among adults with diabetes from the REGARDS study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26803243,Healthy lifestyle factors and incident heart disease and mortality in candidates for primary prevention with statin therapy.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26791153,Differences in the role of black race and stroke risk factors for first vs. recurrent stroke.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26783360,Antidepressant Medication Use and Its Association With Cardiovascular Disease and All-Cause Mortality in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26774871,Stroke Symptoms as a Predictor of Future Hospitalization.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26763025,Vitamin D deficiency and incident stroke risk in community-living black and white adults.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26757465,Multinational Assessment of Accuracy of Equations for Predicting Risk of Kidney Failure: A Meta-analysis.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26715537,The impact of the combination of income and education on the incidence of coronary heart disease in the prospective Reasons for Geographic and Racial Differences in Stroke (REGARDS) cohort study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26691697,Association Between Objectively Measured Physical Activity and Cognitive Function in Older Adults-The Reasons for Geographic and Racial Differences in Stroke Study.,2015,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+26688683,Prehospitalization Risk Factors for Acute Kidney Injury during Hospitalization for Serious Infections in the REGARDS Cohort.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26659948,Association of Serum Lipids and Coronary Heart Disease in Contemporary Observational Studies.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26577418,Consequences of Comorbidity of Elevated Stress and/or Depressive Symptoms and Incident Cardiovascular Outcomes in Diabetes: Results From the REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26569393,Oxidative Balance Score and Chronic Kidney Disease.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26539762,Environmental Tobacco Smoke and Atrial Fibrillation: The REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26487665,"Interrelationship between electrocardiographic left ventricular hypertrophy, QT prolongation, and ischaemic stroke: the REasons for Geographic and Racial Differences in Stroke Study.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26470778,Stroke Disparities: Large Global Problem That Must Be Addressed.,2015,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+26467999,Racial Disparities in Intravenous Recombinant Tissue Plasminogen Activator Use Persist at Primary Stroke Centers.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26460633,Patterns of Sedentary Behavior in US Middle-Age and Older Adults: The REGARDS Study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26443420,Optimal use of available claims to identify a Medicare population free of coronary heart disease.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26423733,Metabolically Healthy Obesity Is Not Associated with Food Intake in White or Black Men.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26398291,Inflammation and hemostasis in atrial fibrillation and coronary heart disease: The REasons for Geographic And Racial Differences in Stroke study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26381887,A Risk Score to Guide Cystatin C Testing to Detect Occult-Reduced Estimated Glomerular Filtration Rate.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26361245,"Prescription Opioid Use and Risk of Coronary Heart Disease, Stroke, and Cardiovascular Death Among Adults from a Prospective Cohort (REGARDS Study).",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26343870,"Oxidative stress, inflammation, and markers of cardiovascular health.",2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26306564,Heart rate and ischemic stroke: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26279105,Effect of Falls on Frequency of Atrial Fibrillation and Mortality Risk (from the REasons for Geographic And Racial Differences in Stroke Study).,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26260732,Southern Dietary Pattern is Associated With Hazard of Acute Coronary Heart Disease in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26187471,"Waist Circumference, Body Mass Index, and ESRD in the REGARDS (Reasons for Geographic and Racial Differences in Stroke) Study.",2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26159891,Black-white racial disparities in sepsis: a prospective analysis of the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2015,5,"Domain 5: sepsis, infection, community, events",TRUE
+26152403,APOL1 nephropathy risk variants are associated with altered high-density lipoprotein profiles in African Americans.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26151265,Trajectory of Cognitive Decline After Incident Stroke.,2015,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+26117341,Secondhand Smoke Exposure and Stroke: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26072206,Diet patterns and risk of sepsis in community-dwelling adults: a cohort study.,2015,5,"Domain 5: sepsis, infection, community, events",TRUE
+26044964,Perceived Stress and Atrial Fibrillation: The REasons for Geographic and Racial Differences in Stroke Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26028594,Estimated glomerular filtration rate and albuminuria for prediction of cardiovascular outcomes: a collaborative meta-analysis of individual participant data.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+27695707,Using baseline cognitive severity for enriching Alzheimer's disease clinical trials: How does Mini-Mental State Examination predict rate of change?,2015,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+25978342,Correlates of Incident Cognitive Impairment in the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2015,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+25953369,Is blood pressure control for stroke prevention the correct goal? The lost opportunity of preventing hypertension.,2015,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+25937313,Accelerometer measured sedentary behavior and physical activity in white and black adults: The REGARDS study.,2016,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25915479,Association Between Opioid Use and Atrial Fibrillation: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+25908300,Geographic region and racial variations in polypharmacy in the United States.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25904937,PCSK9 variation and association with blood pressure in African Americans: preliminary findings from the HyperGEN and REGARDS studies.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25903849,Cystatin C and long term risk of community-acquired sepsis: a population-based cohort study.,2015,5,"Domain 5: sepsis, infection, community, events",TRUE
+25891100,Depressive symptoms are associated with incident coronary heart disease or revascularization among blacks but not among whites in the Reasons for Geographical and Racial Differences in Stroke study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25891050,Race-sex differences in the management of hyperlipidemia: the REasons for Geographic and Racial Differences in Stroke study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25879803,Discharge diagnoses versus medical record review in the identification of community-acquired sepsis.,2015,5,"Domain 5: sepsis, infection, community, events",TRUE
+25873602,Premature ventricular complexes on screening electrocardiogram and risk of ischemic stroke.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25869232,Associations between socio-economic status and dietary patterns in US black and white adults.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25837217,Dietary contributors to glycemic load in the REasons for Geographic and Racial Differences in Stroke study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25811862,"Associations of fibroblast growth factor-23 with markers of inflammation, insulin resistance and obesity in adults.",2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25797681,Atrial fibrillation and incident end-stage renal disease: The REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25794955,Coronary heart disease risk factors and outcomes in the twenty-first century: findings from the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25791026,Educational attainment and longevity: results from the REGARDS U.S. national cohort study of blacks and whites.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25770061,Characteristics and prognosis of acute myocardial infarction by discharge diagnosis: the Reasons for Geographic and Racial Differences in Stroke study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25770032,Apparent Treatment-resistant Hypertension Among Individuals with History of Stroke or Transient Ischemic Attack.,2015,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+25759443,Perfect storm: concurrent stress and depressive symptoms increase risk of myocardial infarction or death.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25740862,Long-term impact of stroke on family caregiver well-being: a population-based case-control study.,2015,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+25725088,American Heart Association's Life's Simple 7 and risk of venous thromboembolism: the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25711434,Relation between cancer and atrial fibrillation (from the REasons for Geographic And Racial Differences in Stroke Study).,2015,3,"Domain 3: cancer, mortality, survivors, sepsis",TRUE
+25688615,Regular aspirin use does not reduce risk of cognitive decline.,2015,7,"Domain 7: cognitive, impairment, function, decline",FALSE
+25682727,"Oxidative balance score as predictor of all-cause, cancer, and noncancer mortality in a biracial US cohort.",2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25648963,Genome-wide studies of verbal declarative memory in nondemented older people: the Cohorts for Heart and Aging Research in Genomic Epidemiology consortium.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25628306,Adherence to a Mediterranean diet and prediction of incident stroke.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25588699,"Is Pulse Pressure an Independent Risk Factor for Incident Stroke, REasons for Geographic And Racial Differences in Stroke.",2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25567791,Cognitive function in adults aging with fabry disease: a case-control feasibility study using telephone-based assessments.,2015,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+25563643,Fibroblast growth factor 23 and risk of incident stroke in community-living adults.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25539758,Associations of neighborhood area level deprivation with the metabolic syndrome and inflammation among middle- and older- age adults.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25517912,"Obesity, metabolic health, and the risk of end-stage renal disease.",2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25497723,Family history of stroke and cardiovascular health in a national cohort.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25471628,"Low income, community poverty and risk of end stage renal disease.",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25469683,Psychosocial stress as a risk factor for sepsis: a population-based cohort study.,2015,5,"Domain 5: sepsis, infection, community, events",TRUE
+25411036,Food intake does not differ between obese women who are metabolically healthy or abnormal.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25395432,Contrasting Cholesterol Management Guidelines for Adults with CKD.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25378430,Pathogenic ischemic stroke phenotypes in the NINDS-stroke genetics network.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25333247,Obtaining Accelerometer Data in a National Cohort of Black and White Adults.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25292154,Inflammation markers and incident venous thromboembolism: the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25278551,Nondisease-specific problems and all-cause mortality among older adults with CKD: the REGARDS Study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25242367,Validation study of medicare claims to identify older US adults with CKD using the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2015,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25223827,Chronic Statin Use and Long-Term Rates of Sepsis: A Population-Based Cohort Study.,2016,5,"Domain 5: sepsis, infection, community, events",TRUE
+25209581,"ABO blood type, factor VIII, and incident cognitive impairment in the REGARDS cohort.",2014,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+25166350,Performance of the NINDS-CSN 5-minute protocol in a national population-based sample.,2014,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+25150057,The association between race and income on risk of mortality in patients with moderate chronic kidney disease.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25138342,Statins and ischemic stroke--reply.,2014,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+25130959,Validating laboratory results in a national observational cohort study without field centers: the Reasons for Geographic and Racial Differences in Stroke cohort.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25116884,"Response to letter regarding article, ""N-terminal pro-B-type natriuretic peptide and stroke risk: the Reasons for Geographic and Racial Differences in Stroke cohort"".",2014,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+25113086,Over-the-counter and prescription sleep medication and incident stroke: the REasons for Geographic and Racial Differences in Stroke study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25102180,Meta-analysis of genome-wide association studies in African Americans provides insights into the genetic architecture of type 2 diabetes.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25085381,Association of systolic blood pressure levels with cardiovascular events and all-cause mortality among older adults taking antihypertensive medication.,2014,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+25078566,"The contributions of selected diseases to disparities in death rates and years of life lost for racial/ethnic minorities in the United States, 1999-2010.",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24970491,Declines in coronary heart disease incidence and mortality among middle-aged adults with and without diabetes.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24968932,Racial differences in the association of insulin resistance with stroke risk: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24963021,Validity of claims-based stroke algorithms in contemporary Medicare data: reasons for geographic and racial differences in stroke (REGARDS) study linked with medicare claims.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24952653,"Apparent treatment-resistant hypertension and risk for stroke, coronary heart disease, and all-cause mortality.",2014,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+24946776,Sunlight exposure and cardiovascular risk factors in the REGARDS study: a cross-sectional split-sample analysis.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24919926,The American Heart Association Life's Simple 7 and incident cognitive impairment: The REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2014,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+24914189,Healthy lifestyle factors and risk of cardiovascular events and mortality in treatment-resistant hypertension: the Reasons for Geographic and Racial Differences in Stroke study.,2014,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+24910505,Environmental Public Health Applications Using Remotely Sensed Data.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24892511,Statin underuse and low prevalence of LDL-C control among U.S. adults at high risk of coronary heart disease.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24880195,"Benzodiazepine (BZD) use in community-dwelling older adults: Longitudinal associations with mobility, functioning, and pain.",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24879838,"Metabolic syndrome, C-reactive protein, and mortality in U.S. Blacks and Whites: the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24826374,Association of inflammatory and endothelial cell activation biomarkers with acute kidney injury after sepsis.,2014,5,"Domain 5: sepsis, infection, community, events",TRUE
+24793668,"Effect of sustaining lifestyle modifications (nonsmoking, weight reduction, physical activity, and mediterranean diet) after healing of myocardial infarction, percutaneous intervention, or coronary bypass (from the REasons for Geographic and Racial Differences in Stroke Study).",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24779477,Claims-based algorithms for identifying Medicare beneficiaries at high estimated risk for coronary heart disease events: a cross-sectional study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24768917,Physical inactivity and long-term rates of community-acquired sepsis.,2014,5,"Domain 5: sepsis, infection, community, events",TRUE
+24767755,"Secular changes in rates of coronary heart disease, fatal coronary heart disease, and out-of-hospital fatal coronary heart disease.",2014,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+24757730,Response to should more significance be granted to medication response to antihypertensives in patients with resistant hypertension?,2014,2,"Domain 2: hypertension, antihypertensive, medication, resistant",FALSE
+24757103,N-terminal pro-B-type natriuretic peptide and stroke risk: the reasons for geographic and racial differences in stroke cohort.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24736237,Assessing the performance of the Framingham Stroke Risk Score in the reasons for geographic and racial differences in stroke cohort.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24682252,Validation of the atherosclerotic cardiovascular disease Pooled Cohort risk equations.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24679894,Dietary patterns and risk of death and progression to ESRD in individuals with CKD: a cohort study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24594101,"Race, regionality and pre-diabetes in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24534599,Achievement of optimal medical therapy goals for U.S. adults with coronary artery disease: results from the REGARDS Study (REasons for Geographic And Racial Differences in Stroke).,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24522492,Relative risks of chronic kidney disease for mortality and end-stage renal disease across races are similar.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24522444,Intake of trans fat and incidence of stroke in the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24512119,Methods and feasibility of collecting occupational data for a large population-based cohort study in the United States: the reasons for geographic and racial differences in stroke study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24511433,Bayesian Methods for High Dimensional Linear Models.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24508826,Racial and regional differences in venous thromboembolism in the United States in 3 cohorts.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+26213591,Quantifying Maternal and Paternal Disease History Using Log-Rank Score with an Application to a National Cohort Study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24444093,ABO blood type and stroke risk: the REasons for Geographic And Racial Differences in Stroke Study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24441058,Long-term mortality after community-acquired sepsis: a longitudinal population-based cohort study.,2014,5,"Domain 5: sepsis, infection, community, events",TRUE
+24388119,Incident ESRD and treatment-resistant hypertension: the reasons for geographic and racial differences in stroke (REGARDS) study.,2014,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+27570577,A New Bayesian Lasso.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25988129,"Dietary Patterns Derived Using Exploratory and Confirmatory Factor Analysis are Stable and Generalizable Across Race, Region, and Gender Subgroups in the REGARDS Study.",2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24356528,Perceived stress is associated with incident coronary heart disease and all-cause mortality in low- but not high-income participants in the Reasons for Geographic And Racial Differences in Stroke study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24324035,"Refractory hypertension: determination of prevalence, risk factors, and comorbidities in a large, population-based cohort.",2014,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+24190905,Prehypertension and incident acute coronary heart disease in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24190540,Atrial fibrillation and the risk of myocardial infarction.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24178980,"Metabolic subtypes and risk of mortality in normal weight, overweight, and obese individuals with CKD.",2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24159061,Dietary patterns are associated with incident stroke and contribute to excess risk of stroke in black Americans.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24156309,Identifying accelerometer nonwear and wear time in older adults.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24119626,Self-reported sleep duration in relation to incident stroke symptoms: nuances by body mass and race from the REGARDS study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24115735,A risk algorithm for assessing short-term mortality for obese black and white men and women.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24091890,Family caregiving and all-cause mortality: findings from a population-based propensity-matched analysis.,2013,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+24086422,Fine particulate matter and incident cognitive impairment in the REasons for Geographic and Racial Differences in Stroke (REGARDS) cohort.,2013,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+24033751,Age differences in the association of obstructive sleep apnea risk with cognition and quality of life.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24029634,Ancel Keys Lecture: Adventures (and misadventures) in understanding (and reducing) disparities in stroke mortality.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24029164,Is pulse pressure an independent risk factor for incident acute coronary heart disease events? The REGARDS study.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24021684,Stroke Genetics Network (SiGN) study: design and rationale for a genome-wide association study of ischemic stroke subtypes.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+24004120,Cystatin C versus creatinine in determining risk based on kidney function.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23989654,Association between urinary albumin excretion and coronary heart disease in black vs white adults.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23969593,Measuring symptoms in community-dwelling older adults: the psychometric properties of a brief symptom screen.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23966867,Genome-wide association of body fat distribution in African ancestry populations suggests new loci.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23935961,High-sensitivity C-reactive protein and risk of sepsis.,2013,5,"Domain 5: sepsis, infection, community, events",TRUE
+23910009,Medication adherence and stroke/TIA risk in treated hypertensives: results from the REGARDS study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23895822,"Risk for recurrent coronary heart disease and all-cause mortality among individuals with chronic kidney disease compared with diabetes mellitus, metabolic syndrome, and cigarette smokers.",2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23868902,Prevalence of apparent treatment-resistant hypertension among individuals with CKD.,2013,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+23868271,Physical activity frequency and risk of incident stroke in a national US study of blacks and whites.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23783751,Report of stroke-like symptoms predicts incident cognitive impairment in a stroke-free cohort.,2013,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+23743971,Life's Simple 7 and risk of incident stroke: the reasons for geographic and racial differences in stroke study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23709708,Reasons underlying racial differences in stroke incidence and mortality.,2013,6,"Domain 6: chd, mortality, incident, diabetes",FALSE
+23704285,Cardiovascular risk factors in CKD associate with both ESRD and mortality.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23640827,Disparities in evaluation at certified primary stroke centers: reasons for geographic and racial differences in stroke.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23635044,Hospital laboratory reporting may be a barrier to detection of 'microsize' myocardial infarction in the US: an observational study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23628929,Adherence to a Mediterranean diet and risk of incident cognitive impairment.,2013,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+23617688,Nondisease-specific problems and all-cause mortality in the REasons for Geographic and Racial Differences in Stroke study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23616168,Effect of duration and age at exposure to the Stroke Belt on incident stroke in adulthood.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23583978,A meta-analysis identifies new loci associated with body mass index in individuals of African ancestry.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23553155,Intake of trans fat and all-cause mortality in the Reasons for Geographical and Racial Differences in Stroke (REGARDS) cohort.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23532012,Risk factors for intracerebral hemorrhage: the REasons for geographic and racial differences in stroke (REGARDS) study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23530553,Assessment tools for unrecognized myocardial infarction: a cross-sectional analysis of the REasons for Geographic and Racial Differences in Stroke population.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23526732,Obesity and risk of sepsis: a population-based cohort study.,2013,5,"Domain 5: sepsis, infection, community, events",TRUE
+23518004,Association of duration of residence in the southeastern United States with chronic kidney disease may differ by race: the REasons for Geographic and Racial Differences in Stroke (REGARDS) cohort study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23512879,The geographic distribution of obesity in the US and the potential regional differences in misreporting of obesity.,2014,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23437997,Correlates of health-related quality of life in African American and Caucasian stroke caregivers.,2013,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+23414982,Inflammatory and endothelial activation biomarkers and risk of sepsis: a nested case-control study.,2013,5,"Domain 5: sepsis, infection, community, events",TRUE
+23404361,Cardioprotective medication use and risk factor control among US adults with unrecognized myocardial infarction: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23392070,"Healthy behaviors, risk factor control and awareness of chronic kidney disease.",2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23340910,The relationship between long-term sunlight radiation and cognitive decline in the REGARDS cohort study.,2014,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+23340070,Does caregiver well-being predict stroke survivor depressive symptoms? A mediation analysis.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23328832,Low hemoglobin levels and recurrent falls in U.S. men and women: prospective findings from the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23303356,The contributions of unhealthy lifestyle factors to apparent resistant hypertension: findings from the Reasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2013,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+23300767,Depressive symptoms and cardiovascular health by the American Heart Association's definition in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23290548,"Behavioral mechanisms, elevated depressive symptoms, and the risk for myocardial infarction or death in individuals with coronary heart disease: the REGARDS (Reason for Geographic and Racial Differences in Stroke) study.",2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+25191561,High sodium:potassium intake ratio increases the risk for all-cause mortality: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23236364,"Gene-centric meta-analysis of lipid traits in African, East Asian and Hispanic populations.",2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23233382,"Self-report of stroke, transient ischemic attack, or stroke symptoms and risk of future stroke in the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.",2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23229778,Racial differences in the impact of elevated systolic blood pressure on stroke risk.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23228944,Geographic variation in CKD prevalence and ESRD incidence in the United States: results from the reasons for geographic and racial differences in stroke (REGARDS) study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23225379,Short- and long-term sunlight radiation and stroke incidence.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23150284,Generic medications and blood pressure control in diabetic hypertensive subjects: results from the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23118977,Chronic medical conditions and risk of sepsis.,2012,5,"Domain 5: sepsis, infection, community, events",TRUE
+23117777,Association of race and sex with risk of incident acute coronary heart disease events.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23111824,Age and association of kidney measures with mortality and end-stage renal disease.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23075828,Carotid artery stenosis as a cause of stroke.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23033358,Caregiving strain and all-cause mortality: evidence from the REGARDS study.,2013,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+23031147,Prevalence and correlates of low medication adherence in apparent treatment-resistant hypertension.,2012,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+23013602,Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without diabetes: a meta-analysis.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+23013600,Associations of kidney disease measures with mortality and end-stage renal disease in individuals with and without hypertension: a meta-analysis.,2012,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+22994216,Population shifts and the future of stroke: forecasts of the future burden of stroke.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22993285,"Racial differences in albuminuria, kidney function, and risk of stroke.",2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22818296,"Awareness and management of chronic disease, insurance status, and health professional shortage areas in the REasons for Geographic And Racial Differences in Stroke (REGARDS): a cross-sectional study.",2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22726606,What stroke symptoms tell us: association of risk factors and individual stroke symptoms in the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22699292,Association of prediabetes and diabetes with stroke symptoms: the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22694949,Low income and albuminuria among REGARDS (Reasons for Geographic and Racial Differences in Stroke) study participants.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22643632,"Awareness, treatment and control of hypertension, diabetes and hyperlipidemia and area-level mortality regions in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22573012,Blood pressure indexes and end-stage renal disease risk in adults with chronic kidney disease.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22570462,Comparison of risk prediction using the CKD-EPI equation and the MDRD study equation for estimated glomerular filtration rate.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22500645,Race and region have independent and synergistic effects on dietary intakes in black and white women.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22497826,Prolongation of QTc and risk of stroke: The REGARDS (REasons for Geographic and Racial Differences in Stroke) study.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22344513,Use of secondary prevention medications among adults with reduced kidney function.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22328552,Association between family risk of stroke and myocardial infarction with prevalent risk factors and coexisting diseases.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22245412,United States national prevalence of electrocardiographic abnormalities in black and white middle-age (45- to 64-Year) and older (≥65-Year) adults (from the Reasons for Geographic and Racial Differences in Stroke Study).,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22167594,Prevalence and prognosis of unrecognized myocardial infarctions in chronic kidney disease.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22142776,Identifying a high stroke risk subgroup in individuals with heart failure.,2013,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22080702,"Health Professional Shortage Areas, insurance status, and cardiovascular disease prevention in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22078058,"Association of family history of ESRD, prevalent albuminuria, and reduced GFR with incident ESRD.",2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+22067959,Vascular risk factors and cognitive impairment in a stroke-free cohort.,2011,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+21960581,Traditional risk factors as the underlying cause of racial disparities in stroke: lessons from the half-full (empty?) glass.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21921283,Self-reported stroke symptoms without a prior diagnosis of stroke or transient ischemic attack: a powerful new risk factor for stroke.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21880845,"Association of dietary sodium and potassium intakes with albuminuria in normal-weight, overweight, and obese participants in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21868498,Albuminuria and racial disparities in the risk for ESRD.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21843411,Regional and racial differences in smoking and exposure to secondhand smoke: the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21822024,"Racial and geographic differences in prevalence, awareness, treatment and control of dyslipidemia: the reasons for geographic and racial differences in stroke (REGARDS) study.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21817138,Self-reported atrial fibrillation and risk of stroke in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21816528,"Albuminuria, kidney function, and the incidence of cognitive impairment among adults in the United States.",2011,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+21804050,Imputation of incident events in longitudinal cohort studies.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21762360,Low medication adherence and the incidence of stroke symptoms among individuals with hypertension: the REGARDS study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21737849,Age-specific association of reduced estimated glomerular filtration rate and albuminuria with all-cause mortality.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21685411,Inflammation biomarkers and risk of all-cause mortality in the Reasons for Geographic And Racial Differences in Stroke cohort.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21663888,Racial and regional differences in age at menopause in the United States: findings from the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21655140,Heavy drinking is associated with poor blood pressure control in the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2011,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+21620547,Development and validation of a self-assessment tool for albuminuria: results from the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21618586,Incident cognitive impairment is elevated in the stroke belt: the REGARDS study.,2011,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+21601327,Association of waist circumference and body mass index with all-cause mortality in CKD: The REGARDS (Reasons for Geographic and Racial Differences in Stroke) Study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21551093,Incidence of stroke symptoms among adults with chronic kidney disease: results from the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2012,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21540327,"Agreement on cause of death between proxies, death certificates, and clinician adjudicators in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21530935,Association of the metabolic syndrome with atrial fibrillation among United States adults (from the REasons for Geographic and Racial Differences in Stroke [REGARDS] Study).,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21482744,"Detection of chronic kidney disease with creatinine, cystatin C, and urine albumin-to-creatinine ratio and association with progression to end-stage renal disease and mortality.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21454843,The association between self-reported tooth loss and cognitive function in the REasons for Geographic And Racial Differences in Stroke study: an assessment of potential pathways.,2011,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+21430022,"Adiposity, inflammation, and risk for death in black and white men and women in the United States: the Reasons for Geographic and Racial Differences in Stroke (REGARDS) study.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21416498,Disparities in stroke incidence contributing to disparities in stroke mortality.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21289597,Lower estimated GFR and higher albuminuria are associated with adverse kidney outcomes. A collaborative meta-analysis of general and high-risk population cohorts.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21257820,Race and gender differences in 1-year outcomes for community-dwelling stroke survivors with family caregivers.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21247466,"The association of remotely-sensed outdoor temperature with blood pressure levels in REGARDS: a cross-sectional study of a large, national cohort of African-American and white participants.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21233800,Moderate waist circumference and hypertension prevalence: the REGARDS Study.,2011,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+21178096,Racial and geographic differences in fish consumption: the REGARDS study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21178088,Race and region are associated with nutrient intakes among black and white men in the United States.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21136298,Quality of life after stroke: a prospective longitudinal study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+21076159,Association of chronic kidney disease with atrial fibrillation among adults in the United States: REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20864944,"Prehypertension, racial prevalence and its association with risk factors: Analysis of the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.",2011,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20828103,Trust in physicians and blood pressure control in blacks and whites being treated for hypertension in the REGARDS study.,2010,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+20702608,Associations of dietary fat with albuminuria and kidney dysfunction.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20692752,"Kidney function, albuminuria, and all-cause mortality in the REGARDS (Reasons for Geographic and Racial Differences in Stroke) study.",2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20634281,Hemoglobin concentration and cognitive impairment in the renal REasons for Geographic And Racial Differences in Stroke (REGARDS) Study.,2010,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+20625168,Use of anticholinergics and the risk of cognitive impairment in an African American population.,2010,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+20567914,Confirmatory factor analysis of the validity of the SF-12 for persons with and without a history of stroke.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20516678,Poverty and racial disparities in kidney disease: the REGARDS study.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20513066,The association of statin use and statin type and cognitive performance: analysis of the reasons for geographic and racial differences in stroke (REGARDS) study.,2010,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+20483451,Association of estimated glomerular filtration rate and albuminuria with all-cause and cardiovascular mortality in general population cohorts: a collaborative meta-analysis.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20472464,"Awareness, treatment, and control of vascular risk factors among stroke survivors.",2010,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+20471734,Low medication adherence and hypertension control among adults with CKD: data from the REGARDS (Reasons for Geographic and Racial Differences in Stroke) Study.,2010,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+20430582,Cardiovascular outcome ascertainment was similar using blinded and unblinded adjudicators in a national prospective study.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20374949,Prevalence of hypertension by duration and age at exposure to the stroke belt.,2010,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+20211299,Variations in prevalent cardiovascular disease and future risk by metabolic syndrome classification in the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20190000,Racial disparities in awareness and treatment of atrial fibrillation: the REasons for Geographic and Racial Differences in Stroke (REGARDS) study.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20164652,Physical and psychological burden of chronic kidney disease among older adults.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20156361,National variation in United States sepsis mortality: a descriptive study.,2010,5,"Domain 5: sepsis, infection, community, events",TRUE
+20102894,Eligibility for statin therapy by the JUPITER trial criteria and subsequent mortality.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20097785,Blood pressure control in diabetes: temporal progress yet persistent racial disparities: national results from the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20075357,Caregiving strain and estimated risk for stroke and coronary heart disease among spouse caregivers: differential effects by race and sex.,2010,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+20049200,Use of remotely sensed data to evaluate the relationship between living environment and blood pressure.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+20004413,Calculating Cornell voltage from nonstandard chest electrode recording site in the Reasons for Geographic And Racial Differences in Stroke study.,2010,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19887838,Racial differences in Parkinson's disease medication use in the reasons for geographic and racial differences in stroke cohort: a cross-sectional study.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19834015,Blood pressure and stroke in heart failure in the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19704077,Association of higher diastolic blood pressure levels with cognitive impairment.,2009,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+19643839,Implications of increased C-reactive protein for cardiovascular risk stratification in black and white men and women in the US.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19638195,Effect of sunlight exposure on cognitive function among depressed and non-depressed participants: a REGARDS cross-sectional study.,2009,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+19605769,Education research: Bias and poor interrater reliability in evaluating the neurology clinical skills examination.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19561382,The sensitivity of the method used to detect atrial fibrillation in population studies affects group-specific prevalence estimates: ethnic and regional distribution of atrial fibrillation in the REGARDS study.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19551449,Population-based fracture risk assessment and osteoporosis treatment disparities by race and gender.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19421895,Family caregiving and emotional strain: associations with quality of life in a large national sample of middle-aged and older adults.,2009,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+19407230,Problems and benefits reported by stroke family caregivers: results from a prospective epidemiological study.,2009,4,"Domain 4: caregivers, caregiving, family, stress",TRUE
+19285103,Advancing the hypothesis that geographic variations in risk factors contribute relatively little to observed geographic variations in heart disease and stroke mortality.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19170247,A new estimate of family disease history providing improved prediction of disease risks.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19067365,Estimated 10-year stroke risk by region and race in the United States: geographic and racial differences in stroke risk.,2008,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+19066309,Correlates of anemia in American blacks and whites: the REGARDS Renal Ancillary Study.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18801482,"Tooth loss, systemic inflammation, and prevalent stroke among participants in the reasons for geographic and racial difference in stroke (REGARDS) study.",2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18663284,Chronic kidney disease is often unrecognized among patients with coronary heart disease: The REGARDS Cohort Study.,2009,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18597839,Does differential prophylactic aspirin use contribute to racial and geographic disparities in stroke and coronary heart disease (CHD)?,2008,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18585836,Kidney function and cognitive impairment in US adults: the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study.,2008,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+18585504,An assessment of the joint associations of aspirin and statin use with C-reactive protein concentration.,2008,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18474341,Factors contributing to global cognitive impairment in heart failure: results from a population-based cohort.,2008,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+18437029,Exposure to the US Stroke Buckle as a risk factor for cerebrovascular mortality.,2008,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18388336,Regional differences in diabetes as a possible contributor to the geographic disparity in stroke mortality: the REasons for Geographic And Racial Differences in Stroke Study.,2008,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18360830,Care seeking after stroke symptoms.,2008,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+18192626,Race and gender differences in perceived caregiver availability for community-dwelling middle-aged and older adults.,2007,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+17985492,Understanding racial disparities in hypertension control: intensity of hypertension medication treatment in the REGARDS study.,2007,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+17719482,Regional differences in African Americans' high risk for stroke: the remarkable burden of stroke for Southern African Americans.,2007,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+17673720,Stroke symptoms in individuals reporting no prior stroke or transient ischemic attack are associated with a decrease in indices of mental and physical functioning.,2007,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+17536228,Obtaining medical records from healthcare facilities under the HIPAA Privacy Rule: the experience of a national longitudinal cohort study.,2007,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+17395861,Reduced medication access: a marker for vulnerability in US stroke survivors.,2007,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+17344425,Prevalence and characteristics of a family history of end-stage renal disease among adults in the United States population: Reasons for Geographic and Racial Differences in Stroke (REGARDS) renal cohort study.,2007,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+17322077,"Cognitive status, stroke symptom reports, and modifiable risk factors among individuals with no diagnosis of stroke or transient ischemic attack in the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study.",2007,7,"Domain 7: cognitive, impairment, function, decline",TRUE
+17030827,High prevalence of stroke symptoms among persons without a diagnosis of stroke or transient ischemic attack in a general population: the REasons for Geographic And Racial Differences in Stroke (REGARDS) study.,2006,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+16641151,Racial differences in the prevalence of chronic kidney disease among participants in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Cohort Study.,2006,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+16556884,"Racial and geographic differences in awareness, treatment, and control of hypertension: the REasons for Geographic And Racial Differences in Stroke study.",2006,2,"Domain 2: hypertension, antihypertensive, medication, resistant",TRUE
+15990444,The reasons for geographic and racial differences in stroke study: objectives and design.,2005,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+15084780,The confounding of race and geography: how much of the excess stroke mortality among African Americans is explained by geography?,2004,6,"Domain 6: chd, mortality, incident, diabetes",TRUE
+11763299,Ethnic disparities in stroke: the scope of the problem.,2001,6,"Domain 6: chd, mortality, incident, diabetes",TRUE

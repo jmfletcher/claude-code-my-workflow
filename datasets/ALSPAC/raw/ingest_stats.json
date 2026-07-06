@@ -1,0 +1,9 @@
+{
+  "pages_crawled": 36,
+  "raw_records": 2982,
+  "with_doi": 1895,
+  "with_et_al": 541,
+  "enriched": 977,
+  "partial_et_al": 7,
+  "failed_enrich": 7
+}

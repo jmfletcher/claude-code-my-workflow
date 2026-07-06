@@ -70,3 +70,33 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 [LEARN:meta] Dogfooding principles must be enforced: plan-first, spec-then-plan, quality gates, session logs → we follow our own guide.
 
 [LEARN:meta] Template development work (building infrastructure, docs) doesn't create session logs in quality_reports/ → those are for user work (slides, analysis), not meta-work. Keeps template clean for users who fork.
+
+---
+
+## Data Monopolies Project (Bootstrap)
+
+[LEARN:project] Data Monopolies measures authorship concentration (HHI, top-x share) in papers citing longitudinal datasets. First dataset: REGARDS via PubMed collection 46426411.
+
+[LEARN:project] Author identity: PubMed strings + manual alias table per dataset. Never merge without documented entry in author_aliases.csv.
+
+[LEARN:project] Language: R primary (rentrez, tidyverse). Python only when clearly needed.
+
+[LEARN:project] Pipeline SSOT: raw/ → processed/ → output/. Never hand-edit metrics without rerunning scripts.
+
+[LEARN:project] Bootstrap check-ins active for sessions 1–3. Checkpoint after config, download QC, first metrics. See bootstrap-checkins.md.
+
+[LEARN:project] REGARDS source: https://www.ncbi.nlm.nih.gov/myncbi/browse/collection/46426411/ (911 papers expected as of June 2026).
+
+[LEARN:project] Top-x default values: 1, 3, 5, 10. Configurable per dataset in config.yaml.
+
+[LEARN:project] Publication-ready figures required: ggplot2 + project theme, PDF + PNG at 300 DPI, source data as RDS.
+
+[LEARN:project] My NCBI collections (46426411) cannot be paginated via simple HTTP POST. Automated fallback: Entrez `"NS041588"[Grant Number]` yields 894 PMIDs vs 911 curated. Manual export to raw/pmid_list.csv for exact match.
+
+[LEARN:project] REGARDS pilot results (2026-06-23): 893 papers, HHI=0.693 (post-Judd merge), Top-3=71.9%. Top author: Judd SE (345). Domain-specific HHI much higher in niche areas (caregiving HHI=2.7) than main CHD cluster (0.74).
+
+[LEARN:project] HHI can exceed 1 with author-level paper-shares on multi-author papers — especially in small-N years/domains. Top-x share remains [0,1]. Use faceted plots for temporal trends.
+
+[LEARN:aliases] 18 merges applied from alias_suggestions.csv Combine-with column (2026-06-23). Same?=Y without combine target = same last name only, not merged. Judd S target line corrected 14→24 (Judd SE).
+
+[LEARN:project] Post-merge REGARDS: HHI=0.743, Top-3=74.9%, 3487 authors. Top: Judd SE (345), Safford MM (306), Howard VJ (296).

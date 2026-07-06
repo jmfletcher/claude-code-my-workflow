@@ -1,43 +1,59 @@
-# CLAUDE.MD -- Academic Project Development with Claude Code
+# CLAUDE.MD -- Data Monopolies Research Project
 
-<!-- HOW TO USE: Replace [BRACKETED PLACEHOLDERS] with your project info.
-     Customize Beamer environments and CSS classes for your theme.
-     Keep this file under ~150 lines — Claude loads it every session.
-     See the guide at docs/workflow-guide.html for full documentation. -->
-
-**Project:** [YOUR PROJECT NAME]
-**Institution:** [YOUR INSTITUTION]
-**Branch:** main
+**Project:** Data Monopolies
+**Institution:** University of Wisconsin–Madison
+**Branch:** Data-Monopolies
+**PI:** Jason Fletcher
 
 ---
 
 ## Core Principles
 
-- **Plan first** -- enter plan mode before non-trivial tasks; save plans to `quality_reports/plans/`
-- **Verify after** -- compile/render and confirm output at the end of every task
-- **Single source of truth** -- Beamer `.tex` is authoritative; Quarto `.qmd` derives from it
-- **Quality gates** -- nothing ships below 80/100
-- **[LEARN] tags** -- when corrected, save `[LEARN:category] wrong → right` to MEMORY.md
+- **Plan first** — enter plan mode before non-trivial tasks; save plans to `quality_reports/plans/`
+- **Verify after** — run scripts, reconcile counts, confirm outputs at the end of every task
+- **Pipeline SSOT** — `raw/` → `processed/` → `output/`; never hand-edit metrics without rerunning scripts
+- **Author aliases** — `author_aliases.csv` is authoritative for deduplication; document every merge
+- **Quality gates** — nothing ships below 80/100
+- **[LEARN] tags** — when corrected, save `[LEARN:category] wrong → right` to MEMORY.md
+- **Bootstrap check-ins** — first 3 sessions: checkpoint after config, download QC, and first metrics (see `.claude/rules/bootstrap-checkins.md`)
+
+---
+
+## Research Goal
+
+For each longitudinal/survey dataset, download all papers citing that dataset, extract all co-authors, and compute authorship concentration measures:
+
+- **HHI** (Herfindahl-Hirschman Index) over author paper-share distribution
+- **Top-x share:** fraction of all papers co-authored by the dataset's top *x* authors
+
+**First dataset:** REGARDS via [PubMed collection 46426411](https://www.ncbi.nlm.nih.gov/myncbi/browse/collection/46426411/)
+
+**Planned datasets:** MIDUS, Wisconsin Longitudinal Study, MESA, others
 
 ---
 
 ## Folder Structure
 
 ```
-[YOUR-PROJECT]/
+Data-Monopolies/
 ├── CLAUDE.MD                    # This file
 ├── .claude/                     # Rules, skills, agents, hooks
-├── Bibliography_base.bib        # Centralized bibliography
-├── Figures/                     # Figures and images
-├── Preambles/header.tex         # LaTeX headers
-├── Slides/                      # Beamer .tex files
-├── Quarto/                      # RevealJS .qmd files + theme
-├── docs/                        # GitHub Pages (auto-generated)
-├── scripts/                     # Utility scripts + R code
-├── quality_reports/             # Plans, session logs, merge reports
+├── datasets/                    # One subfolder per dataset
+│   ├── _template/               # Canonical structure for new datasets
+│   └── REGARDS/                 # First dataset (in progress)
+│       ├── config.yaml          # Collection URL, metadata, top-x values
+│       ├── raw/                 # Downloaded PubMed records
+│       ├── processed/           # papers_authors.csv, author_aliases.csv
+│       ├── output/              # monopoly_metrics.csv, figures/
+│       └── scripts/             # Dataset-specific orchestration
+├── scripts/R/                   # Shared utilities (fetch, parse, compute)
+├── output/                      # Cross-dataset comparisons (later)
+├── quality_reports/             # Plans, specs, session logs
 ├── explorations/                # Research sandbox (see rules)
 ├── templates/                   # Session log, quality report templates
-└── master_supporting_docs/      # Papers and existing slides
+├── Slides/                      # Beamer (secondary — future paper/talk)
+├── Quarto/                      # RevealJS (secondary — future paper/talk)
+└── master_supporting_docs/      # Reference papers
 ```
 
 ---
@@ -45,18 +61,31 @@
 ## Commands
 
 ```bash
-# LaTeX (3-pass, XeLaTeX only)
-cd Slides && TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-BIBINPUTS=..:$BIBINPUTS bibtex file
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
+# Run REGARDS pipeline (once implemented)
+Rscript datasets/REGARDS/scripts/run_pipeline.R
 
-# Deploy Quarto to GitHub Pages
-./scripts/sync_to_docs.sh LectureN
+# Shared utilities
+Rscript scripts/R/fetch_pubmed_collection.R --dataset REGARDS
+Rscript scripts/R/compute_monopoly_metrics.R --dataset REGARDS
 
-# Quality score
+# R environment
+R -e "renv::restore()"
+
+# Quality score (legacy — slides)
 python scripts/quality_score.py Quarto/file.qmd
 ```
+
+---
+
+## Metric Definitions (Summary)
+
+See `.claude/rules/authorship-monopoly-metrics.md` for full definitions.
+
+| Metric | Formula | Notes |
+|--------|---------|-------|
+| Author paper-share | \(s_i = \text{papers by author } i / N_{\text{papers}}\) | After alias merge |
+| HHI | \(\sum_i s_i^2\) | Report raw; normalized optional |
+| Top-x share | \(\#\{\text{papers with ≥1 of top-x authors}\} / N_{\text{papers}}\) | Each paper counted once |
 
 ---
 
@@ -74,63 +103,61 @@ python scripts/quality_score.py Quarto/file.qmd
 
 | Command | What It Does |
 |---------|-------------|
-| `/compile-latex [file]` | 3-pass XeLaTeX + bibtex |
-| `/deploy [LectureN]` | Render Quarto + sync to docs/ |
-| `/extract-tikz [LectureN]` | TikZ → PDF → SVG |
-| `/proofread [file]` | Grammar/typo/overflow review |
-| `/visual-audit [file]` | Slide layout audit |
-| `/pedagogy-review [file]` | Narrative, notation, pacing review |
+| `/data-monopoly [dataset]` | End-to-end citation download + monopoly metrics |
+| `/data-analysis [dataset]` | General R analysis within dataset folder |
 | `/review-r [file]` | R code quality review |
-| `/qa-quarto [LectureN]` | Adversarial Quarto vs Beamer QA |
-| `/slide-excellence [file]` | Combined multi-agent review |
-| `/translate-to-quarto [file]` | Beamer → Quarto translation |
-| `/validate-bib` | Cross-reference citations |
-| `/devils-advocate` | Challenge slide design |
-| `/create-lecture` | Full lecture creation |
-| `/commit [msg]` | Stage, commit, PR, merge |
 | `/lit-review [topic]` | Literature search + synthesis |
 | `/research-ideation [topic]` | Research questions + strategies |
-| `/interview-me [topic]` | Interactive research interview |
-| `/review-paper [file]` | Manuscript review |
-| `/data-analysis [dataset]` | End-to-end R analysis |
+| `/commit [msg]` | Stage, commit, PR, merge |
 | `/learn [skill-name]` | Extract discovery into persistent skill |
 | `/context-status` | Show session health + context usage |
 | `/deep-audit` | Repository-wide consistency audit |
+| `/compile-latex [file]` | 3-pass XeLaTeX + bibtex (secondary) |
+| `/deploy [LectureN]` | Render Quarto + sync to docs/ (secondary) |
 
 ---
 
-<!-- CUSTOMIZE: Replace the example entries below with your own
-     Beamer environments and Quarto CSS classes. These are examples
-     from the original project — delete them and add yours. -->
+## Author Identity Policy
 
-## Beamer Custom Environments
-
-| Environment       | Effect        | Use Case       |
-|-------------------|---------------|----------------|
-| `[your-env]`      | [Description] | [When to use]  |
-
-<!-- Example entries (delete and replace with yours):
-| `keybox` | Gold background box | Key points |
-| `highlightbox` | Gold left-accent box | Highlights |
-| `definitionbox[Title]` | Blue-bordered titled box | Formal definitions |
--->
-
-## Quarto CSS Classes
-
-| Class              | Effect        | Use Case       |
-|--------------------|---------------|----------------|
-| `[.your-class]`    | [Description] | [When to use]  |
-
-<!-- Example entries (delete and replace with yours):
-| `.smaller` | 85% font | Dense content slides |
-| `.positive` | Green bold | Good annotations |
--->
+1. Start with source author strings (PubMed, APA, or Vancouver format → `{LastName} {Initials}`)
+2. Maintain `author_aliases.csv` per dataset as the dedup authority
+3. **Default auto-merge:** same last name + same first initial → canonical ID with highest paper count
+4. Manual aliases override auto-merges when needed; every entry requires a `notes` rationale
+5. Never apply merges without recording them in `author_aliases.csv`
 
 ---
 
 ## Current Project State
 
-| Lecture | Beamer | Quarto | Key Content |
-|---------|--------|--------|-------------|
-| 1: [Topic] | `Lecture01_Topic.tex` | `Lecture1_Topic.qmd` | [Brief description] |
-| 2: [Topic] | `Lecture02_Topic.tex` | -- | [Brief description] |
+| Dataset | Source | Status | Papers | Top-1 | Top-3 | Top-10 |
+|---------|--------|--------|--------|-------|-------|--------|
+| REGARDS | [PubMed 46426411](https://www.ncbi.nlm.nih.gov/myncbi/browse/collection/46426411/) | 18 aliases applied | 893 | 38.6% | 74.9% | 89.8% |
+| MIDUS | [MIDUS pub database](https://midus.wisc.edu/pubdatabase.php) | 333 auto-aliases | 2,294 | 8.3% | 18.6% | 25.1% |
+| MESA | [NHLBI docx list](https://tools.mesa-nhlbi.org/MESA_Files/publications/MESA_Published_Papers_Chronological_5-6-2026.docx) | 1,181 auto-aliases | 1,877 | 16.7% | 29.5% | 59.6% |
+| PROSPER | [PPSI search + project biblio](https://drupal.ppsi.iastate.edu/publications?search=prosper&page=0) | 14 auto-aliases | 259 | 63.3% | 80.3% | 88.0% |
+| NIH_AARP | [PubMed 62019178](https://pubmed.ncbi.nlm.nih.gov/collections/62019178/?sort=pubdate) | 92 auto-aliases | 459 | 42.5% | 54.7% | 79.7% |
+| WLS | [Zotero group library](https://www.zotero.org/groups/5400572/wisconsinlongitudinalstudy/items/7DFUY4LF/library) | 128 auto-aliases | 1,006 | 13.2% | 21.1% | 35.5% |
+| FFCWS | [FFCWS publications](https://ffcws.princeton.edu/publications) | 39 auto-aliases | 1,710 | 7.2% | 13.2% | 26.3% |
+| ABCD | [ABCD research publications](https://abcdstudy.org/research-publications/) | 691 auto-aliases | 1,963 | 6.2% | 7.8% | 23.2% |
+| SHOW | [REACH SHOW publications](https://reach.med.wisc.edu/research/#publications) | 36 auto-aliases | 123 | 66.7% | 74.0% | 81.3% |
+| ALSPAC | [Bristol publications index](https://www.bristol.ac.uk/alspac/researchers/publications/) | 1,304 auto-aliases | 2,982 | 9.4% | 26.3% | 47.4% |
+| CARDIA | [Zenodo cardia-cc community](https://zenodo.org/communities/cardia-cc/records) | 459 auto-aliases | 1,364 | 31.8% | 55.1% | 74.9% |
+| ARIC | [ARIC published manuscripts](https://aric.cscc.unc.edu/aric9/publications/published_manuscripts) | 2,237 auto-aliases | 3,410 | 19.9% | 48.2% | 71.6% |
+| EdShare | [EdSHARe bibliography](https://edshareproject.org/research-and-publications/bibliography) | 66 auto-aliases | 989 | 2.7% | 5.0% | 13.7% |
+| EdShare (≤2014) | EdSHARe bibliography subset | 63 auto-aliases | 884 | 2.3% | 6.0% | 20.5% |
+| EdShare (≥2015) | EdSHARe bibliography subset | 8 auto-aliases | 105 | 23.8% | 25.7% | 34.3% |
+
+---
+
+## Key Rules (Read Before Working)
+
+| Rule | Purpose |
+|------|---------|
+| `constitutional-governance.md` | Non-negotiable project principles |
+| `dataset-pipeline-protocol.md` | File schemas, pipeline SSOT |
+| `authorship-monopoly-metrics.md` | HHI and top-x definitions |
+| `pubmed-collection-protocol.md` | PubMed download standards |
+| `visualization-standards.md` | Publication-ready figures |
+| `bootstrap-checkins.md` | Early-session checkpoint cadence |
+| `plan-first-workflow.md` | When and how to plan |
+| `orchestrator-protocol.md` | Contractor mode after approval |

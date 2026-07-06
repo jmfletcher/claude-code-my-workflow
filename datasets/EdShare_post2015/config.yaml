@@ -1,0 +1,26 @@
+dataset:
+  name: EdShare_post2015
+  full_name: EdSHARe bibliography (2015 onward)
+  description: EdSHARe bibliography publications with publication year 2015 or later.
+source:
+  type: edshare_bibliography
+  parent_dataset: EdShare
+  collection_url: https://edshareproject.org/research-and-publications/bibliography
+  pub_year_min: 2015
+  expected_paper_count: 105
+  last_fetched: '2026-06-25'
+  automated_fetch_count: 105
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 3
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

@@ -2,6 +2,8 @@
 
 **After a plan is approved, the orchestrator takes over autonomously.**
 
+**Bootstrap period:** During sessions 1–3, follow checkpoint cadence in `bootstrap-checkins.md` instead of full autonomous mode.
+
 ## The Loop
 
 ```

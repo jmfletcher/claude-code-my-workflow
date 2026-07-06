@@ -1,0 +1,26 @@
+dataset:
+  name: CARDIA
+  full_name: Coronary Artery Risk Development in Young Adults
+  description: Longitudinal cohort of Black and White adults recruited in 1985 from
+    four U.S. cities, followed for cardiovascular and related outcomes.
+source:
+  type: zenodo_community
+  community_id: cardia-cc
+  collection_url: https://zenodo.org/communities/cardia-cc/records
+  expected_paper_count: 1364
+  last_fetched: '2026-06-24'
+  automated_fetch_count: 1364
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

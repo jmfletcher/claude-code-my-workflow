@@ -29,7 +29,7 @@ explorations/
 2. **Develop** -- work entirely within the exploration folder
 3. **Decide:**
 
-   - **Graduate to production** -- copy to `R/`, `scripts/`; requires quality >= 80, tests pass, code clear. Move to `ARCHIVE/completed_[project]/`
+   - **Graduate to production** -- copy to `datasets/{name}/` following `dataset-pipeline-protocol.md`; requires quality >= 80, count reconciliation passes, code clear. Move to `ARCHIVE/completed_[project]/`
    - **Keep exploring** -- document next steps in README
    - **Abandon** -- move to `ARCHIVE/abandoned_[project]/` with explanation (use `templates/archive-readme.md`)
 

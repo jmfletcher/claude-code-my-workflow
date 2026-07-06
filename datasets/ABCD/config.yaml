@@ -1,0 +1,26 @@
+dataset:
+  name: ABCD
+  full_name: Adolescent Brain Cognitive Development Study
+  description: Nationally representative longitudinal study of brain development and
+    child health from late childhood through adolescence (~11,800 youth).
+source:
+  type: abcd_website_html
+  collection_url: https://abcdstudy.org/research-publications/
+  expected_paper_count: 1963
+  last_fetched: '2026-06-24'
+  automated_fetch_count: 1963
+  fetch_script: scripts/abcd/ingest_publications.py
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

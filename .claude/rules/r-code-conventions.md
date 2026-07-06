@@ -27,9 +27,11 @@ paths:
 
 ## 3. Domain Correctness
 
-<!-- Customize for your field's known pitfalls -->
-- Verify estimator implementations match slide formulas
-- Check known package bugs (document below in Common Pitfalls)
+- HHI computed as sum of squared author paper-shares (see `authorship-monopoly-metrics.md`)
+- Top-x share: each paper counted once; ties at x-th position include all tied authors
+- Author merges only via `author_aliases.csv` — never inline in scripts
+- PubMed author strings: `{LastName} {Initials}` format consistently
+- Count reconciliation required before metrics computation
 
 ## 4. Visual Identity
 
@@ -68,13 +70,48 @@ saveRDS(result, file.path(out_dir, "descriptive_name.rds"))
 
 ## 6. Common Pitfalls
 
-<!-- Add your field-specific pitfalls here -->
 | Pitfall | Impact | Prevention |
 |---------|--------|------------|
-| Missing `bg = "transparent"` | White boxes on slides | Always include in ggsave() |
-| Hardcoded paths | Breaks on other machines | Use relative paths |
+| Missing `bg = "white"` | Wrong background in figures | Always specify in ggsave() |
+| Hardcoded paths | Breaks on other machines | Use relative paths from repo root |
+| Inline author merges | Untraceable dedup | Use author_aliases.csv only |
+| Skipping count reconciliation | Silent data loss | QC check before metrics |
+| Missing alias notes | Undocumented merges | notes column required, non-empty |
 
-## 7. Line Length & Mathematical Exceptions
+## 7. Config and Alias Patterns
+
+### Loading Dataset Config
+
+```r
+library(yaml)
+
+load_dataset_config <- function(dataset_name) {
+  config_path <- file.path("datasets", dataset_name, "config.yaml")
+  yaml::read_yaml(config_path)
+}
+```
+
+### Applying Author Aliases
+
+```r
+apply_author_aliases <- function(papers_authors, aliases_path) {
+  aliases <- readr::read_csv(aliases_path, show_col_types = FALSE)
+  papers_authors %>%
+    dplyr::left_join(aliases, by = "author_raw") %>%
+    dplyr::mutate(author_id = dplyr::coalesce(author_id.y, author_raw)) %>%
+    dplyr::select(-author_id.y)
+}
+```
+
+### Output Directory Pattern
+
+```r
+dataset_dir <- file.path("datasets", dataset_name)
+out_dir <- file.path(dataset_dir, "output")
+dir.create(file.path(out_dir, "figures"), recursive = TRUE, showWarnings = FALSE)
+```
+
+## 8. Line Length & Mathematical Exceptions
 
 **Standard:** Keep lines <= 100 characters.
 
@@ -92,14 +129,16 @@ saveRDS(result, file.path(out_dir, "descriptive_name.rds"))
 - Long lines in non-mathematical code: minor penalty (-1 to -2 per line)
 - Long lines in documented mathematical sections: no penalty
 
-## 8. Code Quality Checklist
+## 9. Code Quality Checklist
 
 ```
 [ ] Packages at top via library()
 [ ] set.seed() once at top
 [ ] All paths relative
 [ ] Functions documented (Roxygen)
-[ ] Figures: transparent bg, explicit dimensions
+[ ] Figures: white bg, explicit dimensions, PDF + PNG
 [ ] RDS: every computed object saved
+[ ] Author aliases applied via CSV, not inline
+[ ] Count reconciliation before metrics
 [ ] Comments explain WHY not WHAT
 ```

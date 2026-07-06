@@ -1,0 +1,9 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 6: personality, traits, studies, longitudinal",NA,NA,NA,6,"Domain 6: personality, traits, studies, longitudinal",120,217,0.28520833333333473,0.25
+"Domain 2: sleep, quality, population, adults",NA,NA,NA,2,"Domain 2: sleep, quality, population, adults",57,158,0.12803939673745737,0.3333333333333333
+"Domain 1: well, self, health, mental",NA,NA,NA,1,"Domain 1: well, self, health, mental",96,239,0.10503472222222283,0.34375
+"Domain 7: age, differences, subjective, cognitive",NA,NA,NA,7,"Domain 7: age, differences, subjective, cognitive",130,349,0.08035502958579825,0.3076923076923077
+"Domain 3: psychological, well, social, health",NA,NA,NA,3,"Domain 3: psychological, well, social, health",114,282,0.06409664512157562,0.2543859649122807
+"Domain 5: life, satisfaction, purpose, later",NA,NA,NA,5,"Domain 5: life, satisfaction, purpose, later",156,407,0.06155489809336062,0.1346153846153846
+"Domain 8: adults, older, middle, aged",NA,NA,NA,8,"Domain 8: adults, older, middle, aged",202,600,0.05075482795804212,0.20297029702970298
+"Domain 4: health, social, daily, midlife",NA,NA,NA,4,"Domain 4: health, social, daily, midlife",1419,2800,0.023278162419715066,0.15997181113460182

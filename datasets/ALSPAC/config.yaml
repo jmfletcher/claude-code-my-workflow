@@ -1,0 +1,26 @@
+dataset:
+  name: ALSPAC
+  full_name: Avon Longitudinal Study of Parents and Children
+  description: UK birth cohort (Children of the 90s) publications indexed by the ALSPAC
+    study team at University of Bristol.
+source:
+  type: alspac_web_index
+  collection_url: https://www.bristol.ac.uk/alspac/researchers/publications/
+  expected_paper_count: 2982
+  last_fetched: '2026-06-24'
+  automated_fetch_count: 2982
+  enrich_et_al: yes
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

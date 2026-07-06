@@ -48,15 +48,15 @@ Repeat
 
 ---
 
-## Non-Negotiables (Customize These)
+## Non-Negotiables
 
-<!-- Replace with YOUR project's locked-in preferences -->
-
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+- **Dataset paths:** All data under `datasets/{name}/`; shared code in `scripts/R/`
+- **Author aliases:** Every merge documented in `author_aliases.csv` with notes
+- **Pipeline SSOT:** raw → processed → output; never hand-edit metrics
+- **Figure standards:** ggplot2 + project theme, PDF + PNG at 300 DPI, source data as RDS
+- **Count reconciliation:** Raw PMIDs must match processed PMIDs before metrics
+- **Seed convention:** `set.seed()` once at top for any stochastic code
+- **Tolerance:** HHI/top-x hand-check within 1e-10; paper counts must match exactly
 
 ---
 

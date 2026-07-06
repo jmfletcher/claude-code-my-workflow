@@ -1,0 +1,7 @@
+period,period_start,period_end,top_x,cluster,domain,n_papers,n_authors,hhi,top3_share
+"Domain 5: sepsis, infection, community, events",NA,NA,NA,5,"Domain 5: sepsis, infection, community, events",31,63,2.6919875130072914,1
+"Domain 4: caregivers, caregiving, family, stress",NA,NA,NA,4,"Domain 4: caregivers, caregiving, family, stress",23,53,2.6899810964083106,1
+"Domain 3: cancer, mortality, survivors, sepsis",NA,NA,NA,3,"Domain 3: cancer, mortality, survivors, sepsis",22,66,1.7913223140495849,0.8636363636363636
+"Domain 2: hypertension, antihypertensive, medication, resistant",NA,NA,NA,2,"Domain 2: hypertension, antihypertensive, medication, resistant",63,262,1.4567901234567866,0.8571428571428571
+"Domain 7: cognitive, impairment, function, decline",NA,NA,NA,7,"Domain 7: cognitive, impairment, function, decline",88,345,1.306818181818191,0.8295454545454546
+"Domain 6: chd, mortality, incident, diabetes",NA,NA,NA,6,"Domain 6: chd, mortality, incident, diabetes",664,3120,0.7935272717374381,0.7515060240963856

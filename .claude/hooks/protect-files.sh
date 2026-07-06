@@ -21,7 +21,6 @@ fi
 # ============================================================
 PROTECTED_PATTERNS=(
   "Bibliography_base.bib"
-  "settings.json"
 )
 
 BASENAME=$(basename "$FILE")

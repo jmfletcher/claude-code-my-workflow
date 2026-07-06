@@ -1,0 +1,29 @@
+dataset:
+  name: NIH_AARP
+  full_name: NIH-AARP Diet and Health Study
+  description: Prospective cohort of AARP members aged 50-71 examining diet, lifestyle,
+    and cancer/mortality outcomes. NIH/NCI-funded; papers curated in PubMed collection.
+
+source:
+  type: pubmed_collection
+  collection_id: '62019178'
+  collection_url: https://pubmed.ncbi.nlm.nih.gov/collections/62019178/?sort=pubdate
+  expected_paper_count: 459
+  last_fetched: '2026-06-24'
+  automated_fetch_count: 459
+
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

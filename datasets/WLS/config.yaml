@@ -1,0 +1,26 @@
+dataset:
+  name: WLS
+  full_name: Wisconsin Longitudinal Study
+  description: Longitudinal study of Wisconsin high school graduates (1957 cohort)
+    and siblings, with decades of social science, health, and aging follow-up.
+source:
+  type: zotero_group
+  zotero_group_id: '5400572'
+  collection_url: https://www.zotero.org/groups/5400572/wisconsinlongitudinalstudy/items/7DFUY4LF/library
+  expected_paper_count: 1006
+  last_fetched: '2026-06-24'
+  automated_fetch_count: 1006
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 10
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

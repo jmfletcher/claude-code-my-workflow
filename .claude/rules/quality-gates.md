@@ -3,6 +3,7 @@ paths:
   - "Slides/**/*.tex"
   - "Quarto/**/*.qmd"
   - "scripts/**/*.R"
+  - "datasets/**/*"
 ---
 
 # Quality Gates & Scoring Rubrics
@@ -37,6 +38,18 @@ paths:
 | Major | Missing set.seed() | -10 |
 | Major | Missing figure generation | -5 |
 
+## Dataset Pipeline (CSV + Scripts)
+
+| Severity | Issue | Deduction |
+|----------|-------|-----------|
+| Critical | Raw/processed paper count mismatch | -100 |
+| Critical | HHI outside [0, 1] range | -50 |
+| Critical | Top-x monotonicity violation | -30 |
+| Major | Alias merge without notes column | -15 |
+| Major | Missing QC reconciliation log | -10 |
+| Major | Figures missing PDF or PNG export | -10 |
+| Minor | Missing source data RDS for figures | -5 |
+
 ## Beamer Slides (.tex)
 
 | Severity | Issue | Deduction |
@@ -58,10 +71,8 @@ Save to `quality_reports/merges/YYYY-MM-DD_[branch-name].md`.
 
 ## Tolerance Thresholds (Research)
 
-<!-- Customize for your domain -->
-
 | Quantity | Tolerance | Rationale |
 |----------|-----------|-----------|
-| Point estimates | [e.g., 1e-6] | [Numerical precision] |
-| Standard errors | [e.g., 1e-4] | [MC variability] |
-| Coverage rates | [e.g., +/- 0.01] | [MC with B reps] |
+| HHI hand-check vs pipeline | 1e-10 | Floating point |
+| Paper count raw vs processed | 0 (exact match) | Data integrity |
+| Top-x share hand-check | 1e-10 | Floating point |
