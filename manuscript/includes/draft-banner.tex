@@ -1,0 +1,17 @@
+% "Draft" centered at the top of every page (including title page)
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{\small\textit{Draft}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+\makeatletter
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[C]{\small\textit{Draft}}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\makeatother

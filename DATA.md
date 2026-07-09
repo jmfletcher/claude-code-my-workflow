@@ -23,6 +23,63 @@ python3 analysis/00_download_data.py --era wkce
 
 Files land in `Data/raw/forward/` and `Data/raw/wkce/` (both gitignored).
 
+### Stanford SEDA 6.0 (national achievement context)
+
+**Portal:** [Educational Opportunity Project — Data downloads](https://edopportunity.org/opportunity/data/downloads/#testscore-6) (Version 6.0).
+
+**What to download for national comparison figures**
+
+- **`seda_geodist_poolsub_cs_6.0.csv`** (~100 MB) — Geographic school districts, pooled grades/years; includes **race-specific** ELA and math means (`subcat` = `race`, `subgroup` = `wht`, `blk`, `hsp`, …). Use this for White vs. Black / White vs. Hispanic scatters in **cohort-scale units** (not Wisconsin proficiency %).
+- **`seda_school_pool_cs_6.0.csv`** (very large) — School-level file has **all-student means only** (no race-specific columns in the public pool file). Do not expect a direct school × race national analog to DPI school cells from this file alone.
+
+**Automated download (recommended)**
+
+```bash
+python3 analysis/11_download_seda.py
+# Optional: also fetch all-student school pool (large; no race breakdown):
+# python3 analysis/11_download_seda.py --include-school-pool
+```
+
+Files land in `Data/raw/seda/` (gitignored). After download, build the national context figure:
+
+```bash
+python3 analysis/12_seda_national_scatter.py
+```
+
+**Citation:** Reardon, S. F., Ho, A. D., Shear, B. R., Fahle, E. M., Kalogrides, D., saliba, j. (2026). *Stanford Education Data Archive (Version 6.0)*. https://purl.stanford.edu/xh833nn4025
+
+---
+
+## Cross-state school-by-race files (Figure 12 replication)
+
+Used by `manuscript/cross-state.qmd`. Download with `python3 analysis/13_download_states.py`
+(per-state: `--state CA` etc.); files land in `Data/raw/states/{st}/` (gitignored).
+Harmonize with `python3 analysis/14_load_states.py` →
+`output/data/panel_school_race_multistate.parquet` + QC report
+`output/tables/multistate_qc.txt`. Figures: `python3 analysis/15_multistate_school_scatter.py`.
+
+### States with scripted downloads (working as of Jul 2026)
+
+| State | Source / URL pattern | Format | Quirks |
+|---|---|---|---|
+| CA | CAASPP research files, `caaspp-elpac.ets.org/caaspp/researchfiles/sb_ca{yyyy}_all_csv_v1.zip` + `sb_ca{yyyy}entities_csv.zip` | caret-delimited (`^`), latin-1 | Use the `_csv_` variant — the `_ascii_` variant is fixed-width. Schema changed in 2024: 2023 N column is `Students with Scores`, 2024+ is `Total Students Tested with Scores`. Student Group IDs: 74=Black, 78=Hispanic, 80=White. Test ID 1=ELA, 2=Math; Test Type `B` = Smarter Balanced. Suppression `*` (n<11). |
+| TX | TEA TAPR CGI (`rptsvr1.tea.texas.gov/cgi/sas/broker`), POST per year/set | CSV | Campus-level. `setpick=STAAR1` has race groups × grades 3-8 RE/MA. Column code: `C{grp}{gg}A{subj}{lvl}{yy}{N/D/R}`; `lvl` 10=denominator, 1S=Approaches, 12=Meets, 13=Masters. Form params changed with the 2024 redesign (2023 uses `prgopt={y}/tapr/tapr_download.sas` + `year4`/`year2`/`topic=acct`). 2023 vintage lacks name columns (merge from 2024). 2025 vintage not yet on this endpoint. Negative values = masked. |
+| IL | ISBE Report Card Public Data Set, `isbe.net/Documents/{...}.xlsx` (names vary by year) | xlsx, `IAR` sheet | School-level pooled by-race `IAR ELA/Math Proficiency Rate - {race}` columns exist 2024+ only (2023 file has per-grade level distributions only, no pooled rate). 2025 renamed `Type`→`Level` and dashed the RCDTS. No per-race N published. |
+| NY | NYSED `data.nysed.gov/files/essa/{yy-yy}/SRC{yyyy}.zip` (report-card Access DB, ~350 MB) | .mdb/.accdb | Requires `mdbtools` (brew) to export `Annual EM ELA`/`Annual EM MATH` tables to CSV. Each SRC file carries two years. Use per-grade rows ELA3-ELA8 (the `ELA3_8` combined rows exist for All Students only). Filter out district codes (end `0000`), aggregates (start `00000000`), and the statewide row `111111111111`. |
+| OH | Report-card blob store `reportcardstorage.education.ohio.gov/data-download-{yyyy}/BUILDING_ETHNIC_{yy}{yy}.xlsx` (2025 on `eduprdreportcardstorage1.blob.core.windows.net`) | xlsx, `RACE` sheet | URLs need the public SAS token embedded in the SPA bundle (in `13_download_states.py`). Per-grade percent proficient only, no N. `NC` = suppressed; `<`/`>` bounded values clipped. Column names carry the year span through 2023-24, dropped in 2024-25. |
+| GA | GOSA `download.gosa.ga.gov/{yyyy}/EOG_...csv` | CSV | School-level `ALL GRADES` pooled EOG rows by subgroup with N. Proficiency = `PROFICIENT_PCT + DISTINGUISHED_PCT`. 2023 file lacks the `ACDMC_LVL` column (EOG-only file). |
+| NC | `accrpt.tops.ncsu.edu/docs/disag_datasets/Disag_{yyyy-yy}.zip` | tab-delimited txt | Subjects RD/MA, grades 03-08, subgroups WHTE/BLCK/HISP; `pct_glp` = Grade Level Proficient (Level 3+). Drop aggregate school_codes containing `LEA`/`SEA`/`SB` (state + SBE regions + LEA rolls). District names not in file — district_id = first 3 chars of school_code (600=Charlotte-Mecklenburg, 681=Chapel Hill-Carrboro). Bounded values `<5`/`>95` clipped. |
+| NJ | `nj.gov/education/assessment/results/reports/{yy}{yy}/spring/{SUBJ}{GG}_NJSLA_DATA_{yyyy-yy}.xlsx` | xlsx per subject-grade | Header on row 3 (`skiprows=2`). Race labels: `White`, `African American`, `Hispanic` under `Subgroup == "Race/Ethnicity"`. Proficiency = L4+L5. 2024-25 filenames use spaces (`%20`) instead of underscores. Suppression `*`. |
+
+### States attempted, manual download required
+
+| State | Blocker | Manual path |
+|---|---|---|
+| FL | fldoe.org blocks scripted requests (Akamai 403 regardless of user agent) | Browser-download FAST/B.E.S.T. school-level by-subgroup Excel from FDOE → K-12 Student Assessment → Results; place in `Data/raw/states/fl/` and add a loader. |
+| MI | MI School Data is an interactive Power BI report; no static files | Grades 3-8 State Testing report → export table by race/ethnicity (150k row limit) while logged out; repeat per year. |
+| MN | MDE Data Center (`public.education.mn.gov/MDEAnalytics/`) timed out on repeated scripted attempts | Download "Assessment" data files manually from the MDE Data Reports and Analytics portal. |
+| MA | DESE `profiles.doe.mass.edu/statereport/nextgenmcas.aspx` is a session-based ASP.NET form | Select report options in browser and export; one file per year × subgroup. |
+
 ---
 
 ## 1. Forward Exam — Proficiency by Race (school level)

@@ -95,6 +95,10 @@ RACE_COLORS = {
 
 **Session logs:** Always — post-plan entry, incremental updates during long tasks, end-of-session summary. Save to `quality_reports/session_logs/YYYY-MM-DD_task-name.md`.
 
+**Manuscript PDF archive:** Before each `quarto render manuscript/main.qmd --to pdf` that replaces the working PDF, copy `manuscript/main.pdf` → `manuscript/archive/main_$(date +%Y-%m-%d_%H%M).pdf`. Do this routinely at milestones or end of manuscript-editing sessions. See `manuscript/archive/README.md`.
+
+**Draft PDF:** `quarto render manuscript/main-draft.qmd --to pdf` produces `manuscript/main-draft.pdf` with a centered *Draft* header on every page. After editing `main.qmd`, run `bash scripts/sync-main-draft-qmd.sh` to refresh `main-draft.qmd`. See `manuscript/README.md`.
+
 **Replication:** Scripts must be runnable from repo root with no arguments. All random seeds set explicitly if any stochastic step exists.
 
 **Check-in cadence:** More frequent check-ins during first few sessions; taper as patterns stabilize.

@@ -51,9 +51,15 @@ CLAUDE.local.md
 # Quarto rendering artifacts
 .quarto/
 
+# Timestamped manuscript PDF snapshots (keep README; ignore large binaries)
+manuscript/archive/*.pdf
+
 # Raw data directory — never commit raw DPI files
 Data/*
 !Data/.gitkeep
+
+# Raw MMSD/WKCE files from Keo (1.3 GB) — never commit raw data
+Keo Data/
 
 # Output artifacts — uncomment lines below based on your preference
 # *.rds

@@ -1,0 +1,50 @@
+
+[CA] rows=449,954  years=[np.int64(2023), np.int64(2024), np.int64(2025)]
+  schools=8,611  ELA rows=224,965  pct missing/suppressed=48.3%
+    White     non-missing=36,747  n-weighted state mean=61.4%  (total n=1,347,710)
+    Black     non-missing=9,709  n-weighted state mean=27.1%  (total n=216,154)
+    Hispanic  non-missing=69,850  n-weighted state mean=35.3%  (total n=4,133,401)
+
+[TX] rows=652,536  years=[np.int64(2023), np.int64(2024)]
+  schools=9,253  ELA rows=326,268  pct missing/suppressed=76.0%
+    White     non-missing=25,291  n-weighted state mean=67.3%  (total n=1,124,740)
+    Black     non-missing=18,332  n-weighted state mean=42.4%  (total n=497,407)
+    Hispanic  non-missing=34,802  n-weighted state mean=46.2%  (total n=2,171,597)
+
+[IL] rows=45,972  years=[np.int64(2024), np.int64(2025)]
+  schools=3,845  ELA rows=22,986  pct missing/suppressed=47.7%
+    White     non-missing=4,747  unweighted school mean=53.5%  (no N published)
+    Black     non-missing=3,137  unweighted school mean=29.5%  (no N published)
+    Hispanic  non-missing=4,139  unweighted school mean=39.2%  (no N published)
+
+[NY] rows=191,875  years=[np.int64(2023), np.int64(2024), np.int64(2025)]
+  schools=3,878  ELA rows=95,936  pct missing/suppressed=44.4%
+    White     non-missing=18,609  n-weighted state mean=55.8%  (total n=895,537)
+    Black     non-missing=13,742  n-weighted state mean=41.9%  (total n=348,219)
+    Hispanic  non-missing=20,942  n-weighted state mean=39.3%  (total n=721,972)
+
+[OH] rows=361,152  years=[np.int64(2023), np.int64(2024), np.int64(2025)]
+  schools=3,420  ELA rows=180,576  pct missing/suppressed=82.3%
+    White     non-missing=17,885  unweighted school mean=67.8%  (no N published)
+    Black     non-missing=9,613  unweighted school mean=37.5%  (no N published)
+    Hispanic  non-missing=4,475  unweighted school mean=48.3%  (no N published)
+
+[GA] rows=30,599  years=[np.int64(2023), np.int64(2024), np.int64(2025)]
+  schools=1,849  ELA rows=15,300  pct missing/suppressed=0.0%
+    White     non-missing=4,937  n-weighted state mean=53.5%  (total n=783,669)
+    Black     non-missing=5,238  n-weighted state mean=28.0%  (total n=816,417)
+    Hispanic  non-missing=5,125  n-weighted state mean=30.3%  (total n=436,434)
+
+[NC] rows=84,542  years=[np.int64(2023), np.int64(2024), np.int64(2025)]
+  schools=2,105  ELA rows=42,273  pct missing/suppressed=0.0%
+    White     non-missing=16,253  n-weighted state mean=63.9%  (total n=865,324)
+    Black     non-missing=13,023  n-weighted state mean=36.0%  (total n=481,593)
+    Hispanic  non-missing=12,997  n-weighted state mean=36.8%  (total n=412,329)
+
+[NJ] rows=90,729  years=[np.int64(2023), np.int64(2024), np.int64(2025)]
+  schools=1,871  ELA rows=45,597  pct missing/suppressed=34.7%
+    White     non-missing=12,462  n-weighted state mean=62.6%  (total n=624,900)
+    Black     non-missing=4,378  n-weighted state mean=32.9%  (total n=122,642)
+    Hispanic  non-missing=12,949  n-weighted state mean=37.1%  (total n=501,593)
+
+Saved output/data/panel_school_race_multistate.parquet  (1,907,359 rows)

@@ -90,8 +90,9 @@ State-level Black–White ELA gap (grade 5, district panel, primary years):
   2022-23        48.4     12.9     35.5
 
 OUTPUT FILES:
-  /Users/jasonfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_school_race.parquet
-  /Users/jasonfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_district_race.parquet
+  /Users/jmfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_school_race.parquet
+  /Users/jmfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_school_econ.parquet
+  /Users/jmfletcher/Dropbox/AI Agents/Cursor Projects/Wisconsin Schools/output/data/panel_district_race.parquet
 
 NEXT STEP:
   python3 analysis/03_state_gaps.py

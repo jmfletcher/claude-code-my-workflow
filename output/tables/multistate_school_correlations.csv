@@ -1,0 +1,73 @@
+state,panel,subsample,pearson_r,n_schools
+WI,White vs. Black,Overall,0.45640746598042664,368
+WI,White vs. Black,Madison (MMSD),0.22815137407160735,38
+WI,White vs. Black,Milwaukee,0.6158088888287865,38
+WI,White vs. Black,Other,0.538203987058325,292
+WI,White vs. Hispanic,Overall,0.6095238127926954,818
+WI,White vs. Hispanic,Madison (MMSD),0.6266410267684278,41
+WI,White vs. Hispanic,Milwaukee,0.7306585187710541,40
+WI,White vs. Hispanic,Other,0.6480905410319211,737
+CA,White vs. Black,Overall,0.6963329607849859,938
+CA,White vs. Black,Berkeley,,4
+CA,White vs. Black,Los Angeles,0.6452573610361445,63
+CA,White vs. Black,Other,0.7012052766361115,871
+CA,White vs. Hispanic,Overall,0.7582212307986931,3914
+CA,White vs. Hispanic,Berkeley,,12
+CA,White vs. Hispanic,Los Angeles,0.7330951067517828,200
+CA,White vs. Hispanic,Other,0.7588785208940614,3702
+TX,White vs. Black,Overall,0.5904363591379403,3342
+TX,White vs. Black,College Station,,15
+TX,White vs. Black,Houston,0.5615873922507375,63
+TX,White vs. Black,Other,0.5940949114570077,3264
+TX,White vs. Hispanic,Overall,0.698263062981434,4914
+TX,White vs. Hispanic,College Station,0.6223754108685049,16
+TX,White vs. Hispanic,Houston,0.6789936262468236,67
+TX,White vs. Hispanic,Other,0.6997369966929914,4831
+IL,White vs. Black,Overall,0.7219024847079978,1206
+IL,White vs. Black,Evanston,,15
+IL,White vs. Black,Chicago,0.6340933592790008,132
+IL,White vs. Black,Other,0.7450344663256772,1059
+IL,White vs. Hispanic,Overall,0.7690531198833287,1777
+IL,White vs. Hispanic,Evanston,,14
+IL,White vs. Hispanic,Chicago,0.7904303387605573,156
+IL,White vs. Hispanic,Other,0.7717052244912141,1607
+NY,White vs. Black,Overall,0.6240582188350066,1236
+NY,White vs. Black,Ithaca,,5
+NY,White vs. Black,New York City,0.44115741072611536,310
+NY,White vs. Black,Other,0.6230361188971737,921
+NY,White vs. Hispanic,Overall,0.7051936881924002,1994
+NY,White vs. Hispanic,Ithaca,,9
+NY,White vs. Hispanic,New York City,0.6210800934596972,496
+NY,White vs. Hispanic,Other,0.6950444148179691,1489
+OH,White vs. Black,Overall,0.7602751303114219,825
+OH,White vs. Black,Athens,,1
+OH,White vs. Black,Columbus,0.6199463282316202,47
+OH,White vs. Black,Other,0.7609551762087785,777
+OH,White vs. Hispanic,Overall,0.7472341003599325,750
+OH,White vs. Hispanic,Athens,,0
+OH,White vs. Hispanic,Columbus,0.5969990031297698,25
+OH,White vs. Hispanic,Other,0.7418044261831358,725
+GA,White vs. Black,Overall,0.5918985684193611,1778
+GA,White vs. Black,Athens (Clarke Co.),0.3294425485468716,18
+GA,White vs. Black,Atlanta,0.5393976071454989,57
+GA,White vs. Black,Other,0.6178944512747602,1703
+GA,White vs. Hispanic,Overall,0.6043151225905145,1767
+GA,White vs. Hispanic,Athens (Clarke Co.),0.6137737110884067,18
+GA,White vs. Hispanic,Atlanta,0.4409232729086944,57
+GA,White vs. Hispanic,Other,0.6247936450528868,1692
+NC,White vs. Black,Overall,0.5841114702822209,1297
+NC,White vs. Black,Chapel Hill-Carrboro,,11
+NC,White vs. Black,Charlotte-Mecklenburg,0.4503864109489263,87
+NC,White vs. Black,Other,0.5861233170025615,1199
+NC,White vs. Hispanic,Overall,0.5302426964567513,1456
+NC,White vs. Hispanic,Chapel Hill-Carrboro,,13
+NC,White vs. Hispanic,Charlotte-Mecklenburg,0.49556909086884054,82
+NC,White vs. Hispanic,Other,0.5451436549109472,1361
+NJ,White vs. Black,Overall,0.6387826992840422,551
+NJ,White vs. Black,Princeton,,1
+NJ,White vs. Black,Newark,,3
+NJ,White vs. Black,Other,0.6356494378264885,547
+NJ,White vs. Hispanic,Overall,0.7686211670092787,1192
+NJ,White vs. Hispanic,Princeton,,5
+NJ,White vs. Hispanic,Newark,,8
+NJ,White vs. Hispanic,Other,0.7672450014155421,1179

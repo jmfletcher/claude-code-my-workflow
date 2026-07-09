@@ -4,6 +4,7 @@ Load, filter, and clean all Forward Exam years into a single analysis-ready pane
 Inputs:  Data/raw/forward/forward_certified_*.zip
 Outputs:
   output/data/panel_school_race.parquet    — school-level, by race
+  output/data/panel_school_econ.parquet    — school-level, by economic status (ED / non-ED)
   output/data/panel_district_race.parquet  — district-level, by race (DPI pre-computed)
   output/tables/02_qc_summary.txt          — suppression rates, counts, MMSD check
 
@@ -215,10 +216,19 @@ def reshape_to_proficiency(df: pd.DataFrame) -> pd.DataFrame:
 # Main loader
 # ---------------------------------------------------------------------------
 
-def load_all_years(verbose: bool = True) -> pd.DataFrame:
+def load_all_years(verbose: bool = True, group_by: str = "Race/Ethnicity") -> pd.DataFrame:
     """
     Load, clean, and stack all Forward Exam years.
-    Returns a combined DataFrame (long, one row per school×grade×subject×race×year).
+
+    Parameters
+    ----------
+    group_by
+        DPI ``GROUP_BY`` value, e.g. ``\"Race/Ethnicity\"`` (main panel) or
+        ``\"Economic Status\"`` (ED vs. non-ED school panel).
+
+    Returns
+    -------
+    Combined long-format rows before school/district panel construction.
     """
     zips = sorted(FORWARD_DIR.glob("forward_certified_*.zip"))
     if not zips:
@@ -245,7 +255,7 @@ def load_all_years(verbose: bool = True) -> pd.DataFrame:
         # Core filters
         raw = raw[
             (raw["TEST_GROUP"] == "Forward") &
-            (raw["GROUP_BY"] == "Race/Ethnicity") &
+            (raw["GROUP_BY"] == group_by) &
             (raw["TEST_SUBJECT"].isin(ANALYSIS_SUBJECTS)) &
             (raw["GRADE_LEVEL"].isin(ANALYSIS_GRADES))
         ]
@@ -325,6 +335,21 @@ def make_school_panel(combined: pd.DataFrame) -> pd.DataFrame:
     panel = rename_race_labels(panel)
     panel = panel.rename(columns=RENAME_COLS)
     return panel
+
+
+def make_school_panel_econ(combined: pd.DataFrame) -> pd.DataFrame:
+    """
+    School-level panel by DPI economic status: ``Econ Disadv`` vs ``Not Econ Disadv``.
+    Excludes ``Unknown`` and ``[Data Suppressed]`` group labels.
+    """
+    school = combined[combined["AGENCY_TYPE"].isin(SCHOOL_AGENCY_TYPES)].copy()
+    panel = reshape_to_proficiency(school)
+    panel = add_analysis_flags(panel)
+    panel = panel.rename(columns=RENAME_COLS)
+    allowed = {"Econ Disadv", "Not Econ Disadv"}
+    panel = panel[panel["group_by_value"].isin(allowed)]
+    panel["econ_status"] = panel["group_by_value"]
+    return panel.drop(columns=["group_by", "group_by_value"], errors="ignore")
 
 
 def make_district_panel(combined: pd.DataFrame) -> pd.DataFrame:
@@ -454,6 +479,7 @@ def qc_report(school_panel: pd.DataFrame, district_panel: pd.DataFrame) -> str:
 
     log("OUTPUT FILES:")
     log(f"  {OUTPUT_DATA / 'panel_school_race.parquet'}")
+    log(f"  {OUTPUT_DATA / 'panel_school_econ.parquet'}")
     log(f"  {OUTPUT_DATA / 'panel_district_race.parquet'}")
     log()
     log("NEXT STEP:")
@@ -473,9 +499,9 @@ if __name__ == "__main__":
     print(f"\nForward Exam data: {FORWARD_DIR}")
     print(f"Output:            {OUTPUT_DATA}\n")
 
-    # 1. Load all years
-    print("Loading raw files...")
-    combined = load_all_years(verbose=True)
+    # 1. Load all years (race/ethnicity — main panel)
+    print("Loading raw files (Race/Ethnicity)...")
+    combined = load_all_years(verbose=True, group_by="Race/Ethnicity")
     print(f"\nTotal filtered rows (all years): {len(combined):,}")
 
     # 2. Build school and district panels
@@ -487,12 +513,20 @@ if __name__ == "__main__":
     district_panel = make_district_panel(combined)
     print(f"  District panel: {len(district_panel):,} rows")
 
+    # 2b. Economic status — school panel only (parallel ED / non-ED cut)
+    print("\nLoading Economic Status cut (school panel)...")
+    combined_econ = load_all_years(verbose=True, group_by="Economic Status")
+    school_econ = make_school_panel_econ(combined_econ)
+    print(f"  School econ panel: {len(school_econ):,} rows")
+
     # 3. Save
     print("\nSaving...")
     school_panel.to_parquet(OUTPUT_DATA / "panel_school_race.parquet", index=False)
     district_panel.to_parquet(OUTPUT_DATA / "panel_district_race.parquet", index=False)
+    school_econ.to_parquet(OUTPUT_DATA / "panel_school_econ.parquet", index=False)
     print(f"  Saved: panel_school_race.parquet  ({(OUTPUT_DATA / 'panel_school_race.parquet').stat().st_size / 1e6:.1f} MB)")
     print(f"  Saved: panel_district_race.parquet ({(OUTPUT_DATA / 'panel_district_race.parquet').stat().st_size / 1e6:.1f} MB)")
+    print(f"  Saved: panel_school_econ.parquet   ({(OUTPUT_DATA / 'panel_school_econ.parquet').stat().st_size / 1e6:.1f} MB)")
 
     # 4. QC report
     print("\n" + "=" * 70)
