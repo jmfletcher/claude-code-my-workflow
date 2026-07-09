@@ -1,0 +1,15 @@
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{etoolbox}
+% Body text: 1.5 lines (readable; full double spacing pushes abstract off page 1)
+\onehalfspacing
+% First page: slightly tighter abstract block without shrinking body text later
+\AtBeginEnvironment{abstract}{\vspace{-0.75em}\begin{spacing}{1.1}}
+\AtEndEnvironment{abstract}{\end{spacing}\vspace{-0.25em}}
+\usepackage{caption}
+\captionsetup[figure]{font=small}
+\captionsetup[table]{font=small,justification=raggedright,singlelinecheck=false}

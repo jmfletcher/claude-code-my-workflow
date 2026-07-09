@@ -22,8 +22,10 @@ format:
     linkcolor: "NavyBlue"
     citecolor: "NavyBlue"
     keep-tex: false
+    output-file: main-draft.pdf
     include-in-header:
       - file: includes/pdf-header.tex
+      - file: includes/draft-banner.tex
 
 bibliography: references.bib
 csl: chicago-author-date.csl
