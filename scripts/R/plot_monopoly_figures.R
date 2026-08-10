@@ -14,6 +14,8 @@ suppressPackageStartupMessages({
 
 source("scripts/R/utils.R")
 
+`%||%` <- function(x, y) if (is.null(x)) y else x
+
 args <- commandArgs(trailingOnly = TRUE)
 dataset_name <- if (length(args) >= 1) args[1] else "REGARDS"
 repo_root <- if (length(args) >= 2) args[2] else "."
@@ -127,21 +129,40 @@ if (compute_topx_by_year && nrow(topx_year) > 0) {
   save_publication_figure(p3b, "top_x_by_year", fig_dir, width = 9, height = 5)
 }
 
-# 4. Top 20 authors bar chart ----
-top20 <- head(rankings, 20) %>%
-  mutate(author_id = reorder(author_id, n_papers))
+# 4. Top-N authors bar charts ----
+top_author_rank_figures <- config$metrics$top_author_rank_figures %||% 20L
+if (!is.numeric(top_author_rank_figures) && !is.integer(top_author_rank_figures)) {
+  top_author_rank_figures <- as.integer(top_author_rank_figures)
+}
+if (length(top_author_rank_figures) == 1L) {
+  top_author_rank_figures <- as.integer(top_author_rank_figures)
+} else {
+  top_author_rank_figures <- as.integer(unique(top_author_rank_figures))
+}
 
-p4 <- ggplot(top20, aes(x = n_papers, y = author_id)) +
-  geom_col(fill = "#012169") +
-  labs(
-    title = "Top 20 authors by paper count",
-    subtitle = subtitle_base,
-    x = "Number of papers",
-    y = NULL
-  ) +
-  theme_monopoly()
+for (top_n in sort(top_author_rank_figures)) {
+  top_authors <- head(rankings, top_n) %>%
+    mutate(author_id = reorder(author_id, n_papers))
 
-save_publication_figure(p4, "top20_authors", fig_dir, width = 8, height = 7)
+  fig_height <- max(5, 0.22 * top_n + 1.5)
+  p_top <- ggplot(top_authors, aes(x = n_papers, y = author_id)) +
+    geom_col(fill = "#012169") +
+    labs(
+      title = paste0("Top ", top_n, " authors by paper count"),
+      subtitle = subtitle_base,
+      x = "Number of papers",
+      y = NULL
+    ) +
+    theme_monopoly()
+
+  save_publication_figure(
+    p_top,
+    paste0("top", top_n, "_authors"),
+    fig_dir,
+    width = 8,
+    height = fig_height
+  )
+}
 
 # 5. Papers by publication year ----
 papers_by_year <- papers %>%
@@ -170,12 +191,12 @@ p5 <- ggplot(papers_by_year, aes(x = pub_year, y = n_papers)) +
 
 save_publication_figure(p5, "papers_by_year", fig_dir, width = 9, height = 5)
 
-`%||%` <- function(x, y) if (is.null(x)) y else x
-
 cat("\n=== Figures saved to:", fig_dir, "===\n")
 cat("  author_rank_frequency.pdf/png\n")
 cat("  top_x_shares.pdf/png\n")
 if (do_compute_hhi && nrow(hhi_year) > 0) cat("  hhi_by_year.pdf/png\n")
 if (compute_topx_by_year && nrow(topx_year) > 0) cat("  top_x_by_year.pdf/png\n")
-cat("  top20_authors.pdf/png\n")
+for (top_n in sort(top_author_rank_figures)) {
+  cat("  top", top_n, "_authors.pdf/png\n", sep = "")
+}
 cat("  papers_by_year.pdf/png\n")

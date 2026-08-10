@@ -1,0 +1,29 @@
+dataset:
+  name: EdShare_post2017
+  full_name: EdSHARe bibliography (2017+ journal articles)
+  description: |
+    Journal articles from the EdSHARe bibliography search listing (July 2026), publication year 2017 or later. Excludes 2016 entries and non-journal items (e.g. working papers without a journal venue).
+source:
+  type: edshare_bibliography
+  parent_dataset: EdShare
+  collection_url: https://edshareproject.org/research-and-publications/bibliography
+  citation_list: bibliography_citations.txt
+  journal_articles_only: yes
+  pub_year_min: 2017
+  expected_paper_count: 54
+  last_fetched: '2026-07-06'
+  automated_fetch_count: 54
+metrics:
+  top_x_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 3
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

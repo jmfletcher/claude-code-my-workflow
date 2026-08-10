@@ -28,10 +28,12 @@ clean_label <- function(x) {
   x <- gsub("_", " ", x)
   x <- gsub("EdShare pre2015", "EdShare (<=2014)", x, fixed = TRUE)
   x <- gsub("EdShare post2015", "EdShare (>=2015)", x, fixed = TRUE)
+  x <- gsub("EdShare post2017", "EdShare (>=2017 journals)", x, fixed = TRUE)
   x
 }
 
 raw <- read_csv(in_path, show_col_types = FALSE) %>%
+  filter_cross_dataset_figure_datasets() %>%
   mutate(dataset_label = clean_label(dataset)) %>%
   filter(!is.na(papers_per_year), !is.na(n_pub_years))
 

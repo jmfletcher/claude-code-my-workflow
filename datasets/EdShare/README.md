@@ -9,6 +9,10 @@
 - Full corpus ~989 entries; split analyses:
   - **Pre-2015** (`EdShare_pre2015/`): pub_year ≤ 2014
   - **Post-2015** (`EdShare_post2015/`): pub_year ≥ 2015
+  - **Post-2017 journal articles** (`EdShare_post2017/`): curated bibliography listing, pub_year ≥ 2017
+
+Phase-1 snapshots (full + pre/post-2015) archived at
+`datasets/_archive/EdShare_phase1_2026-07-06/`.
 
 ```bash
 # Full corpus (ingest + metrics)
@@ -17,6 +21,7 @@ Rscript datasets/EdShare/scripts/run_pipeline.R
 # Period splits (reuse EdShare/raw/publications.json)
 Rscript datasets/EdShare_pre2015/scripts/run_pipeline.R
 Rscript datasets/EdShare_post2015/scripts/run_pipeline.R
+Rscript datasets/EdShare_post2017/scripts/run_pipeline.R
 ```
 
 ## Outputs

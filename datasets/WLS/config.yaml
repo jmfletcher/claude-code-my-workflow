@@ -17,6 +17,9 @@ metrics:
   - 5
   - 10
   - 20
+  top_author_rank_figures:
+  - 20
+  - 25
   compute_by_year: yes
   compute_topx_by_year: yes
   min_papers_per_year: 10

@@ -7,9 +7,7 @@ AddHealth,National Longitudinal Study of Adolescent to Adult Health (Add Health)
 BLSA,Baltimore Longitudinal Study of Aging,BLSA
 CARDIA,Coronary Artery Risk Development in Young Adults,CARDIA
 CHS,Cardiovascular Health Study,CHS
-EdShare,EdSHARe (NLS:72 and HS&B:80 harmonized data),EdShare
-EdShare (<=2014),EdSHARe bibliography (through 2014),EdShare_pre2015
-EdShare (>=2015),EdSHARe bibliography (2015 onward),EdShare_post2015
+EdShare (>=2017 journals),EdSHARe bibliography (2017+ journal articles),EdShare_post2017
 FFCWS,Future of Families and Child Wellbeing Study,FFCWS
 Framingham,Framingham Heart Study,Framingham
 HCHS SOL,Hispanic Community Health Study / Study of Latinos,HCHS_SOL

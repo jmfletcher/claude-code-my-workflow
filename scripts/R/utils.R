@@ -29,6 +29,13 @@ ensure_dataset_dirs <- function(dirs) {
   }
 }
 
+#' Filter datasets shown in cross-dataset summary figures
+filter_cross_dataset_figure_datasets <- function(df) {
+  df %>% dplyr::filter(
+    !grepl("^EdShare", .data$dataset) | .data$dataset == "EdShare_post2017"
+  )
+}
+
 #' Append line to fetch log
 log_fetch <- function(log_path, message) {
   line <- paste0(format(Sys.time(), "%Y-%m-%d %H:%M:%S UTC"), " | ", message, "\n")

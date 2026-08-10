@@ -11,7 +11,7 @@ suppressPackageStartupMessages({
 source("scripts/R/utils.R")
 
 ds_dirs <- list.dirs("datasets", recursive = FALSE)
-ds_dirs <- ds_dirs[!grepl("_template", ds_dirs)]
+ds_dirs <- ds_dirs[!grepl("_template|_archive", ds_dirs)]
 
 read_one <- function(d) {
   mpath <- file.path(d, "output", "monopoly_metrics.csv")
