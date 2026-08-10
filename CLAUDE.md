@@ -162,6 +162,7 @@ See `.claude/rules/authorship-monopoly-metrics.md` for full definitions.
 | HPFS | [HPFS](https://www.hsph.harvard.edu/hpfs/) (PubMed name search) | selected-only site; PubMed tiab | 1,384 | 41.6% | 68.9% | 77.7% |
 | Strong Heart | [Strong Heart Study](https://strongheartstudy.org/) (PubMed name search) | no scrapable list; PubMed tiab | 371 | 58.8% | 67.7% | 90.0% |
 | BLSA | [BLSA](https://www.blsa.nih.gov/) (PubMed name search) | no scrapable list; PubMed tiab | 821 | 47.6% | 65.8% | 77.5% |
+| PHRESH | [PHRESH (Pitt SPH)](https://www.publichealth.pitt.edu/epidemiology/research-practice/centers-and-laboratory-facilities/pittsburgh-hillhomewood-research) (PubMed name+grant) | 15 auto-aliases; PubMed tiab+grants | 56 | 100% | 100% | 100% |
 
 ---
 

@@ -10,9 +10,12 @@ suppressPackageStartupMessages({
   library(readr)
   library(dplyr)
   library(ggplot2)
-  library(ggrepel)
   library(scales)
 })
+has_ggrepel <- requireNamespace("ggrepel", quietly = TRUE)
+if (has_ggrepel) {
+  suppressPackageStartupMessages(library(ggrepel))
+}
 
 source("scripts/R/utils.R")
 
@@ -68,8 +71,7 @@ make_panel <- function(share_col, top_x, filename, out_csv) {
       )
     )
 
-  p <- ggplot(plot_df, aes(x = share, y = papers_per_year, size = n_pub_years)) +
-    geom_point(color = point_color, alpha = 0.82) +
+  label_layer <- if (has_ggrepel) {
     geom_text_repel(
       aes(label = dataset_label),
       data = plot_df,
@@ -94,7 +96,23 @@ make_panel <- function(share_col, top_x, filename, out_csv) {
       bg.color = "white",
       bg.r = 0.14,
       show.legend = FALSE
-    ) +
+    )
+  } else {
+    geom_text(
+      aes(label = dataset_label),
+      data = plot_df,
+      size = 2.7,
+      color = "#252525",
+      lineheight = 0.9,
+      nudge_x = plot_df$nudge_x,
+      nudge_y = plot_df$nudge_y,
+      show.legend = FALSE
+    )
+  }
+
+  p <- ggplot(plot_df, aes(x = share, y = papers_per_year, size = n_pub_years)) +
+    geom_point(color = point_color, alpha = 0.82) +
+    label_layer +
     scale_x_continuous(
       labels = percent_format(accuracy = 1),
       limits = c(-0.02, 1.08),

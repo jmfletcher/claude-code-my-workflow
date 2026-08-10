@@ -1,0 +1,10 @@
+dataset,metric,value,computed_date
+PHRESH,n_central_pmid,56,2026-08-10
+PHRESH,n_central_no_pmid,0,2026-08-10
+PHRESH,n_query_hits,56,2026-08-10
+PHRESH,n_overlap,56,2026-08-10
+PHRESH,n_central_only,0,2026-08-10
+PHRESH,n_search_only,0,2026-08-10
+PHRESH,n_union,56,2026-08-10
+PHRESH,coverage_ratio,1,2026-08-10
+PHRESH,curated_share_of_query,1,2026-08-10

@@ -1,0 +1,43 @@
+dataset:
+  name: PHRESH
+  full_name: Pittsburgh Hill/Homewood Research on Neighborhood Change and Health (PHRESH)
+  description: >
+    Longitudinal community-based cohort studying how neighborhood investments
+    (supermarkets, housing, green space) affect diet, sleep, heart health, and
+    aging in Pittsburgh's Hill District and Homewood (began 2011; includes
+    Think PHRESH and PHRESH Zzz extensions).
+source:
+  type: pubmed_name_search
+  collection_url: https://www.publichealth.pitt.edu/epidemiology/research-practice/centers-and-laboratory-facilities/pittsburgh-hillhomewood-research
+  entrez_query: >-
+    ("Pittsburgh Hill/Homewood"[tiab] OR "Think PHRESH"[tiab] OR "PHRESH Zzz"[tiab]
+    OR ("PHRESH"[tiab] AND (Pittsburgh[tiab] OR Homewood[tiab] OR Dubowitz[tiab]
+    OR "Hill District"[tiab]))) OR (("CA149105"[Grant Number] OR "CA164137"[Grant Number]
+    OR "HL122460"[Grant Number] OR "HL131531"[Grant Number] OR "AG072652"[Grant Number])
+    AND (PHRESH[tiab] OR Pittsburgh[tiab] OR Homewood[tiab] OR Dubowitz[tiab]
+    OR "Hill District"[tiab] OR "food desert"[tiab]))
+  expected_paper_count: 56
+  last_fetched: '2026-08-10'
+  funding:
+    funder: NCI / NHLBI / NIA (NIH)
+    confirmed: yes
+    note: >
+      R01CA149105, R01CA164137, R01HL122460, R01HL131531, R01AG072652;
+      RAND + University of Pittsburgh; PubMed name + grant search with tiab filters
+      to exclude unrelated grant co-citations.
+  coverage_query: >-
+    ("Pittsburgh Hill/Homewood"[tiab] OR "Think PHRESH"[tiab] OR "PHRESH Zzz"[tiab]
+    OR ("PHRESH"[tiab] AND (Pittsburgh[tiab] OR Homewood[tiab] OR Dubowitz[tiab]
+    OR "Hill District"[tiab]))) OR (("CA149105"[Grant Number] OR "CA164137"[Grant Number]
+    OR "HL122460"[Grant Number] OR "HL131531"[Grant Number] OR "AG072652"[Grant Number])
+    AND (PHRESH[tiab] OR Pittsburgh[tiab] OR Homewood[tiab] OR Dubowitz[tiab]
+    OR "Hill District"[tiab] OR "food desert"[tiab]))
+metrics:
+  top_x_values: [1, 3, 5, 10]
+  compute_by_year: yes
+  compute_topx_by_year: yes
+  min_papers_per_year: 5
+paths:
+  raw_dir: raw
+  processed_dir: processed
+  output_dir: output

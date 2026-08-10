@@ -1,4 +1,5 @@
 dataset,n_papers,n_authors,hhi,top1,top3,top5,top10,coverage_ratio,year_min,year_max,year_span,n_pub_years,papers_per_year
+PHRESH,56,80,2.5003,1,1,1,1,1,2014,2026,13,13,4.31
 Sister,393,1553,1.428,0.888,0.9338,0.9618,0.972,NA,2007,2026,20,19,19.65
 SHOW,123,339,0.7964,0.6667,0.7398,0.7805,0.813,NA,2010,2026,17,16,7.24
 PROSPER,259,193,NA,0.6332,0.8031,0.8378,0.8803,NA,1993,2019,27,27,9.56
